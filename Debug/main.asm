@@ -289,8 +289,8 @@ BB15_PU0:	// 0x88
 	     R4 = DS:[R4]             	// [3:930]  
 	     cmp R4, 61453            	// [5:930]  
 	     jbe BB16_PU0             	// [7:930]  
-BB81_PU0:	// 0x8f
-// BB:81 cycle count: 3
+BB82_PU0:	// 0x8f
+// BB:82 cycle count: 3
 	     goto Lt_0_22             	// [0:0]  
 BB16_PU0:	// 0x91
 // BB:16 cycle count: 3
@@ -326,8 +326,8 @@ BB21_PU0:	// 0xaa
 	     R4 = DS:[R4]             	// [3:930]  
 	     cmp R4, 61444            	// [5:930]  
 	     jbe BB22_PU0             	// [7:930]  
-BB68_PU0:	// 0xb1
-// BB:68 cycle count: 3
+BB69_PU0:	// 0xb1
+// BB:69 cycle count: 3
 	     goto Lt_0_12             	// [0:0]  
 BB22_PU0:	// 0xb3
 // BB:22 cycle count: 3
@@ -339,8 +339,8 @@ Lt_0_25:	// 0xb5
 	     R4 = DS:[R4]             	// [3:930]  
 	     cmp R4, 61443            	// [5:930]  
 	     je BB24_PU0              	// [7:930]  
-BB69_PU0:	// 0xbc
-// BB:69 cycle count: 3
+BB70_PU0:	// 0xbc
+// BB:70 cycle count: 3
 	     goto Lt_0_12             	// [0:0]  
 BB24_PU0:	// 0xbe
 // BB:24 cycle count: 3
@@ -359,8 +359,8 @@ BB26_PU0:	// 0xc7
 	     R4 = DS:[R4]             	// [3:930]  
 	     cmp R4, 61451            	// [5:930]  
 	     jbe BB27_PU0             	// [7:930]  
-BB70_PU0:	// 0xce
-// BB:70 cycle count: 3
+BB71_PU0:	// 0xce
+// BB:71 cycle count: 3
 	     goto Lt_0_12             	// [0:0]  
 BB27_PU0:	// 0xd0
 // BB:27 cycle count: 3
@@ -372,8 +372,8 @@ Lt_0_26:	// 0xd2
 	     R4 = DS:[R4]             	// [3:930]  
 	     cmp R4, 61450            	// [5:930]  
 	     je BB29_PU0              	// [7:930]  
-BB71_PU0:	// 0xd9
-// BB:71 cycle count: 3
+BB72_PU0:	// 0xd9
+// BB:72 cycle count: 3
 	     goto Lt_0_12             	// [0:0]  
 BB29_PU0:	// 0xdb
 // BB:29 cycle count: 4
@@ -409,8 +409,8 @@ BB34_PU0:	// 0xf3
 	     R4 = DS:[R4]             	// [3:930]  
 	     cmp R4, 61455            	// [5:930]  
 	     jbe BB35_PU0             	// [7:930]  
-BB72_PU0:	// 0xfa
-// BB:72 cycle count: 3
+BB73_PU0:	// 0xfa
+// BB:73 cycle count: 3
 	     goto Lt_0_12             	// [0:0]  
 BB35_PU0:	// 0xfc
 // BB:35 cycle count: 4
@@ -421,7 +421,7 @@ Lt_0_29:	// 0xfd
 	     R4 = (_gTemp)            	// [1:930]  gTemp
 	     R4 = DS:[R4]             	// [3:930]  
 	     cmp R4, 61454            	// [5:930]  
-	     jne BB72_PU0             	// [7:930]  
+	     jne BB73_PU0             	// [7:930]  
 BB37_PU0:	// 0x104
 // BB:37 cycle count: 4
 	     jmp Lt_0_8               	// [0:930]  
@@ -432,8 +432,8 @@ Lt_0_28:	// 0x105
 	     R4 = DS:[R4]             	// [3:930]  
 	     cmp R4, 65535            	// [5:930]  
 	     je BB39_PU0              	// [7:930]  
-BB73_PU0:	// 0x10c
-// BB:73 cycle count: 3
+BB74_PU0:	// 0x10c
+// BB:74 cycle count: 3
 	     goto Lt_0_12             	// [0:0]  
 BB39_PU0:	// 0x10e
 // BB:39 cycle count: 4
@@ -777,44 +777,59 @@ LM49:
 L_0_51:	// 0x19e
 L_0_49:	// 0x19e
 L_0_48:	// 0x19e
-// BB:63 cycle count: 15
+// BB:63 cycle count: 9
+//1040  		  		      	
 //1041  		  }	
 //1042  #endif	  	
 //1043  	  	
-//1044  		
-//1045  		PauseFlag =0;
+//1044  		BlinkFlag_Data =0;
 
 LM50:
-	     .stabn 68,0,1045,LM50-_main
-	     R3 = 0                   	// [0:1045]  
-	     DS = seg(_PauseFlag)     	// [1:1045]  PauseFlag
-	     R4 = (_PauseFlag)        	// [2:1045]  PauseFlag
-	     DS:[R4] = R3             	// [4:1045]  
-//1046  		Countdownflag =0;
+	     .stabn 68,0,1044,LM50-_main
+	     R3 = 0                   	// [0:1044]  
+	     DS = seg(_BlinkFlag_Data)	// [1:1044]  BlinkFlag_Data
+	     R4 = (_BlinkFlag_Data)   	// [2:1044]  BlinkFlag_Data
+	     DS:[R4] = R3             	// [4:1044]  
+//1045          Light_all_off();	
 
 LM51:
-	     .stabn 68,0,1046,LM51-_main
-	     R3 = 0                   	// [6:1046]  
-	     DS = seg(_Countdownflag) 	// [7:1046]  Countdownflag
-	     R4 = (_Countdownflag)    	// [8:1046]  Countdownflag
-	     DS:[R4] = R3             	// [10:1046]  
-//1047  		WatchdogClear();
+	     .stabn 68,0,1045,LM51-_main
+	     call _Light_all_off      	// [6:1045]  Light_all_off
+BB64_PU0:	// 0x1a5
+// BB:64 cycle count: 15
+//1046  		PauseFlag =0;
 
 LM52:
-	     .stabn 68,0,1047,LM52-_main
-	     call _WatchdogClear      	// [12:1047]  WatchdogClear
-BB64_PU0:	// 0x1aa
-// BB:64 cycle count: 3
-	     goto L_0_45              	// [0:1047]  
-L_0_46:	// 0x1ac
-// BB:65 cycle count: 6
-//1048  	}
-//1049     	return 0;	
+	     .stabn 68,0,1046,LM52-_main
+	     R3 = 0                   	// [0:1046]  
+	     DS = seg(_PauseFlag)     	// [1:1046]  PauseFlag
+	     R4 = (_PauseFlag)        	// [2:1046]  PauseFlag
+	     DS:[R4] = R3             	// [4:1046]  
+//1047  		Countdownflag =0;
 
 LM53:
-	     .stabn 68,0,1049,LM53-_main
-	     R1 = 0                   	// [0:1049]  
-	     pop BP, PC from [SP]     	// [1:1049]  
+	     .stabn 68,0,1047,LM53-_main
+	     R3 = 0                   	// [6:1047]  
+	     DS = seg(_Countdownflag) 	// [7:1047]  Countdownflag
+	     R4 = (_Countdownflag)    	// [8:1047]  Countdownflag
+	     DS:[R4] = R3             	// [10:1047]  
+//1048  		WatchdogClear();
+
+LM54:
+	     .stabn 68,0,1048,LM54-_main
+	     call _WatchdogClear      	// [12:1048]  WatchdogClear
+BB65_PU0:	// 0x1b1
+// BB:65 cycle count: 3
+	     goto L_0_45              	// [0:1048]  
+L_0_46:	// 0x1b3
+// BB:66 cycle count: 6
+//1049  	}
+//1050     	return 0;	
+
+LM55:
+	     .stabn 68,0,1050,LM55-_main
+	     R1 = 0                   	// [0:1050]  
+	     pop BP, PC from [SP]     	// [1:1050]  
 	.endp	
 LME1:
 	     .stabf LME1-_main
@@ -881,6 +896,8 @@ _Key_Debounce:	// 0x8
 .external _Game
 .external _End
 .external _Sleepflag
+.external _BlinkFlag_Data
+.external _Light_all_off
 .external _PauseFlag
 .external _Countdownflag
 .external _WatchdogClear

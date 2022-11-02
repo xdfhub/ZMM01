@@ -1041,7 +1041,8 @@ int main()
 		  }	
 #endif	  	
 	  	
-		
+		BlinkFlag_Data =0;
+        Light_all_off();	
 		PauseFlag =0;
 		Countdownflag =0;
 		WatchdogClear();

@@ -82,11 +82,11 @@ Define: CODE in "CTS_Sensor.obj" with _CODE_SPI_IN_FOLDER_SEC_CTS
 Define: DATA in "CTS_Sensor.obj" with _DATA_SPI_IN_FOLDER_SEC_CTS 
 Define: CODE in "CTS_User.obj" with _CODE_SPI_IN_FOLDER_SEC_CTS 
 Define: DATA in "CTS_User.obj" with _DATA_SPI_IN_FOLDER_SEC_CTS 
-Locate: _CODE_SPI_SEC at 204800
-Locate: _DATA_SPI_SEC after _CODE_SPI_SEC
 Locate: ROMCODE_SPI_Data at 201940
 Locate: __sn_init_table at 2034DB
 Locate: IRAM after __sn_init_table linkat #RAM
+Locate: _CODE_SPI_SEC at 204800
+Locate: _DATA_SPI_SEC after _CODE_SPI_SEC
 Locate: SleepCode_RAMCode_SEC in "System_2.obj" at 205200 linkat 10
 ;Align: SleepCode_RAMCode_SEC in "System_2.obj" with 0 
 Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
@@ -149,7 +149,7 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" with 0 
 ;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 20398E 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" with 0 
-;Locate: __sn_section_RES_ROM_ZMM_V04_BIN in "Rom_ZMM_V04_bin.res" at 207B45 
+;Locate: __sn_section_RES_ROM_ZMM_V04_BIN in "Rom_ZMM_V04_bin.res" at 207C72 
 ;Align: __sn_section_RES_ROM_ZMM_V04_BIN in "Rom_ZMM_V04_bin.res" with 0 
 ;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 20363D 
 ;Align: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
@@ -167,6 +167,10 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: CODE in "rshu1" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "_GPTag" of "CMacro1232.lib"  at 201902 
 ;Align: CODE in "_GPTag" of "CMacro1232.lib"  with 0 
+;Locate: ROMCODE_SPI_Data in "RomCodeOBJ_GPCE1_CE3.obj" at 201940 
+;Align: ROMCODE_SPI_Data in "RomCodeOBJ_GPCE1_CE3.obj" with 0 
+;Locate: __sn_init_table in "<internal obj.>" of "<internal lib.>"  at 2034DB 
+;Align: __sn_init_table in "<internal obj.>" of "<internal lib.>"  with 0 
 ;Locate: _CODE_SPI_SEC in "Resource.obj" at 204800 
 ;Align: _CODE_SPI_SEC in "Resource.obj" with 0 
 ;Locate: _CODE_SPI_SEC in "Calc.obj" at 204804 
@@ -201,11 +205,7 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: _CODE_SPI_SEC in "system.obj" with 0 
 ;Locate: _CODE_SPI_SEC in "main.obj" at 205621 
 ;Align: _CODE_SPI_SEC in "main.obj" with 0 
-;Locate: _CODE_SPI_SEC in "Play_Speech.obj" at 2057CB 
+;Locate: _CODE_SPI_SEC in "Play_Speech.obj" at 2057D2 
 ;Align: _CODE_SPI_SEC in "Play_Speech.obj" with 0 
-;Locate: _CODE_SPI_SEC in "Algorithm.obj" at 205BF9 
+;Locate: _CODE_SPI_SEC in "Algorithm.obj" at 205C0E 
 ;Align: _CODE_SPI_SEC in "Algorithm.obj" with 0 
-;Locate: ROMCODE_SPI_Data in "RomCodeOBJ_GPCE1_CE3.obj" at 201940 
-;Align: ROMCODE_SPI_Data in "RomCodeOBJ_GPCE1_CE3.obj" with 0 
-;Locate: __sn_init_table in "<internal obj.>" of "<internal lib.>"  at 2034DB 
-;Align: __sn_init_table in "<internal obj.>" of "<internal lib.>"  with 0 

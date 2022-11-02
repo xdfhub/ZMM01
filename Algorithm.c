@@ -361,7 +361,40 @@ volatile unsigned int PassTimeCnt_temp =0;
 #ifdef C_debugtest  
 unsigned testqueptr = 0;							
 
-const unsigned testque[] = {H09, H13, M17, A25, V04, A05, A01, M36, M11, V08, V06, A34
+const unsigned testque[] = {
+	
+A26	,
+M15	,
+M19	,
+H13	,
+V06	,
+V16	,
+A09	,
+H08	,
+H07	,
+A02	,
+A01	,
+V04	,
+M21	,
+M07	,
+H05	,
+V09	,
+H09	,
+H18	,
+V05	,
+V07	,
+A25	,
+M17	,
+M30	,
+A16	,
+H16	,
+A08	,
+A05	,
+M06	,
+V08	,
+M11	,
+M13	,
+//A06		
 }; //T10
 
 #endif 
@@ -1273,7 +1306,37 @@ void Supress_Question_CategoryLast2Cat()
 	}	
 	
 }
+/*********************************************************************
+************************************************************************/
+void Supress_Question_Category(unsigned int category)
+{
+	//unsigned temp;
+	unsigned i = 0;
+	
+	
 
+	
+	while(i<R_QuestionNum)
+	{
+	 	WatchdogClear();
+
+       if(BitMap[i%16]&QuestionStatus_LQA[i/16])
+       {
+			 
+			 	if((Get_Question_Category(i) ==  category))
+			 	{
+			 		QuestionStatus_LQA[i/16] &=~BitMap[i%16];				
+				//	QuestionStatus_Asked[i/16]&=~BitMap[i%16];//| xiang 20160330
+			 		
+			 	}
+	
+       }
+	 
+	     i++;	 
+		 
+	}	
+	
+}
 //==================================================
 //SQ7_2
 //==================================================
@@ -4341,6 +4404,8 @@ void Rest_Question_Asked()
 void Check_LQA()
 {
 	
+	  if(Cn==2)
+	  	   Supress_Question_Category(Get_Question_Category(gQuestionIdx));
 	    
 	    Supress_Question_CategoryLast2Cat();
 		LQA = Get_LQA();
@@ -4350,6 +4415,10 @@ void Check_LQA()
 		 	    Questions_init();
 		 	    Sub_QuestionAsked();
 	            Supress_Question_CategoryLast2Cat();
+	            	  
+	           if(Cn==2)
+	  	          Supress_Question_Category(Get_Question_Category(gQuestionIdx)); 
+	            
 		 	    LQA = Get_LQA();
 		 	     
 		 	  if(LQA==0)//xiang 20160318  
@@ -4357,12 +4426,19 @@ void Check_LQA()
 		        Rest_LQ_LQA();					  						 					
 			    Sub_QuestionAsked();
 	            Supress_Question_CategoryLast2Cat();
+	            
+	            if(Cn==2)
+	  	           Supress_Question_Category(Get_Question_Category(gQuestionIdx));
+	            
 	            LQA = Get_LQA();
 			   if(LQA==0)//xiang 20160318
 				{
 					     Rest_Question_Asked();
 						 Rest_LQA();//Rest_LQ_LQA
 						 Supress_Question_CategoryLast2Cat();
+						 
+						if(Cn==2)
+	  	                    Supress_Question_Category(Get_Question_Category(gQuestionIdx));
 						 
 						  LQA = Get_LQA();
 	     
@@ -6404,6 +6480,7 @@ unsigned  Step1()
 			      {  
 			      	   Key_Event =0;  
 			      	   Key_activeflag =0;	
+			      	   PlayA1800_Elements(SFX_Buzzer);
 			      	   PlayA1800_Elements(A_VLMMREN_ChoosePlayerEnd);
 			      	   
 			      	  if(Registerd_Num>2)
@@ -6574,6 +6651,11 @@ void Select_Sound()
    unsigned int cnt =1;
    unsigned int temp_Category;
    
+   
+   
+
+   
+   
    if(R_E ==C_TwoSounds)
        cnt=2;
      do
@@ -6606,12 +6688,12 @@ void Select_Sound()
         }
         
         
-		#ifdef C_debugtest
-			if (testqueptr<80)
-			{
-				gQuestionIdx = testque[testqueptr++];
-			}
-		#endif  
+//		#ifdef C_debugtest
+//			if (testqueptr<80)
+//			{
+//				gQuestionIdx = testque[testqueptr++];
+//			}
+//		#endif  
         
       
       	QuestionStatus_LQ[gQuestionIdx/16]&=~BitMap[gQuestionIdx%16];		//suppress Qx from LQ;	
@@ -6684,6 +6766,34 @@ unsigned int Game()
      
 	Key_Event =0;
 	Key_activeflag = ALL_Key_Enable;
+	
+	
+	   #ifdef C_debugtest
+        Rest_LQ_LQA();		
+        Rest_Question_Asked();
+        
+      		    temp = 0;///////////////!!!!!!!!!!!!!!!!!!
+			while(temp<(sizeof(testque)/sizeof(testque[0])))
+			{
+
+             
+              
+                           
+                   QuestionStatus_LQA[testque[temp]/16]&=~BitMap[testque[temp]%16];
+                   QuestionStatus_LQ[testque[temp]/16]&=~BitMap[testque[temp]%16];
+                   QuestionStatus_Asked[testque[temp]/16]&=~BitMap[testque[temp]%16];
+                  // QuestionStatus_NoAnswer[i/16]&=~BitMap[i%16];
+         
+			
+				temp++;	
+						
+			}    
+        
+        
+   #endif
+   
+	
+	
 	
     //Player_Activing_Cnt =*P_TimerB_CNTR % Registerd_Num ;
     
@@ -6808,7 +6918,7 @@ void Answer_F()
         else if((Cn ==3)&&(Registerd_Num>1))
         {
         	 PlayA1800_Elements(A_VLMMREN_Rule_12);
-        	
+        	 delay_time(8);
         }  	
      	
 
@@ -6977,9 +7087,11 @@ void Answer_F()
                               if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0))
                               	{
 							  	 //Chance();
+							  	 delay_time(8);
 								 SinceLastE  =0;
                                  Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
 								 PlayA1800_Elements(A_VLMMREN_Chance);
+								 Currentsound =0;
 								 
 								 continue;
 
@@ -6995,6 +7107,8 @@ void Answer_F()
 			                       {
 			                       	  
 			                       	  Add_ALL_InactivePlayer_Point(1,Rounds,Pingame);
+			                       	  Pingame[Player_Activing_Cnt/16]&=~BitMap[Player_Activing_Cnt%16];	
+			                       	  
 			                       	
 			                       	  PlayA1800_Elements(A_VLMMREN_2Outa);
 			                       	  PlayA1800_Elements(A_VLMMREN_Out); 
@@ -7119,7 +7233,8 @@ unsigned int End()
 
     if(End20flag ==0)
    	 {
-
+         if(Get_Num_Bigscore(Rounds,2,Registered_Play_Status)==0 )
+         {
 		    if(memory_length>100)
 		    {
 		    	
@@ -7155,6 +7270,7 @@ unsigned int End()
 				}	
 		         delay_time(8);
 		    }
+         }
    	}
 
      //PlayScoreOfwhichplay(Pingame);

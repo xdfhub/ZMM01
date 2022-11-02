@@ -1,6 +1,6 @@
 #####################################################################
 #																	 
-#	Created by u'nSP IDE V3.0.16.1		14:37:36	10/11/22
+#	Created by u'nSP IDE V3.0.16.1		18:47:14	10/26/22
 #
 #####################################################################
 
@@ -205,8 +205,8 @@ BEFOREBUILD :
 
 $(BINFILE) : $(OBJFILES) 
 	@echo Hint: The version of HDB file for boot packer and Rom code are Ver.1.0.0.2 and 002C.
-	$(LD) $(BINTYPE) $(ARYFILE) "$(OUTDIR)\GPCE3400A_Demo_SPI.bin" -tskMaxUsed $(LDFLAGS) $(BODY) $(EXTRAFLAGS) -exportvalues "C:\Users\xdf\AppData\Local\Temp\ini26F7.tmp" -defined "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GlobalSymbol_GPCE1_CE3.ini" -bootrominfo "BootCode_SEC;0100" -undefined-opt __TgP190708CM -undefined-opt __TgP190708CL -undefined-opt __TgP190708M
-	$(BOOTPACKER) "C:\Users\xdf\AppData\Local\Temp\ini26F7.tmp"
+	$(LD) $(BINTYPE) $(ARYFILE) "$(OUTDIR)\GPCE3400A_Demo_SPI.bin" -tskMaxUsed $(LDFLAGS) $(BODY) $(EXTRAFLAGS) -exportvalues "C:\Users\xdf\AppData\Local\Temp\ini1CA3.tmp" -defined "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GlobalSymbol_GPCE1_CE3.ini" -bootrominfo "BootCode_SEC;0100" -undefined-opt __TgP190708CM -undefined-opt __TgP190708CL -undefined-opt __TgP190708M
+	$(BOOTPACKER) "C:\Users\xdf\AppData\Local\Temp\ini1CA3.tmp"
 	if exist "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bin" del "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bin"
 	copy "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bintmp" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bin" /A /Y
 	if exist "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bintmp" del "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bintmp"

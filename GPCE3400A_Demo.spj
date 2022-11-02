@@ -252,7 +252,7 @@ EXPORT=3
 #PROP Default_Filter=
 USEPARAM=FALSE
 PARAM=
-EXPORT=3
+EXPORT=0
 # Begin Source File
 SOURCE=..\Include\A1800.inc
 USEPARAM=FALSE
@@ -370,7 +370,7 @@ SOURCE=..\Include\MS02.inc
 USEPARAM=FALSE
 PARAM=
 ID=
-EXPORT=0
+EXPORT=3
 # End Source File
 # Begin Source File
 SOURCE=..\Include\datatype.h
@@ -384,7 +384,7 @@ SOURCE=..\Include\SACM.h
 USEPARAM=FALSE
 PARAM=
 ID=
-EXPORT=26
+EXPORT=0
 # End Source File
 # End Group
 # End SubItem
@@ -635,7 +635,7 @@ EXPORT=3
 #PROP Default_Filter=
 USEPARAM=FALSE
 PARAM=
-EXPORT=3
+EXPORT=0
 # Begin Source File
 SOURCE=..\Include\A1800.inc
 USEPARAM=FALSE
@@ -753,7 +753,7 @@ SOURCE=..\Include\MS02.inc
 USEPARAM=FALSE
 PARAM=
 ID=
-EXPORT=0
+EXPORT=3
 # End Source File
 # Begin Source File
 SOURCE=..\Include\datatype.h
@@ -767,7 +767,7 @@ SOURCE=..\Include\SACM.h
 USEPARAM=FALSE
 PARAM=
 ID=
-EXPORT=26
+EXPORT=0
 # End Source File
 # End Group
 # End SubItem

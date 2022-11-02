@@ -350,8 +350,9 @@ unsigned int Pause_Process()
 
                          Blink_data_temp = BlinkFlag_Data;
 						 BlinkFlag_Data =0;
-                        
-					
+                         Light_all_off();
+					     BlinkFlag_Data = All_Led_data;
+					     
                    	    Key_Event =0;
                    	    
                    	  if(A1800_Flag)
@@ -500,6 +501,8 @@ unsigned int Pause_Process()
 						 T_Countdowncnt = temp_T_Countdowncnt;						 
 //						 FiveSec_cnt = temp_FiveSec_cnt;						
 //						 Key_buffer_First = Key_buffer_First_temp;
+                         BlinkFlag_Data =0;
+                         Light_all_off();
 						 BlinkFlag_Data = Blink_data_temp ;
 						 Key_activeflag = key_active_temp; 
 
