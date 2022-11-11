@@ -370,7 +370,7 @@ SOURCE=..\Include\MS02.inc
 USEPARAM=FALSE
 PARAM=
 ID=
-EXPORT=3
+EXPORT=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\datatype.h
@@ -753,7 +753,7 @@ SOURCE=..\Include\MS02.inc
 USEPARAM=FALSE
 PARAM=
 ID=
-EXPORT=3
+EXPORT=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\datatype.h

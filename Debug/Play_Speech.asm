@@ -698,7 +698,7 @@ L_2_1:	// 0x12d
 LM43:
 	     .stabn 68,0,321,LM43-_Volume
 	     SP = SP - 1              	// [0:321]  
-	     R3 = 131                 	// [1:321]  
+	     R3 = 132                 	// [1:321]  
 	     R4 = SP + 1              	// [3:321]  
 	     [R4] = R3                	// [5:321]  
 	     call _PlayA1800_Elements 	// [7:321]  PlayA1800_Elements
