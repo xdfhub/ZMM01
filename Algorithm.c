@@ -120,7 +120,7 @@ unsigned int Registered_Play_Status=0;
 //unsigned int Player_Actived_three[3]={0};
 unsigned int QuestionCycle[4] ={0};
 unsigned int Pre_Active_Player=0;//上一轮cylce的有效player
-unsigned int Cur_Active_Player=0;//当前cycle的有效player
+//unsigned int Cur_Active_Player=0;//当前cycle的有效player
 
 
 unsigned int Key_Event =0;
@@ -188,7 +188,7 @@ unsigned int Key_TrueFlase_Buffer =0;
 //unsigned int Question_Asked_Lascycle[5]={0xffff,0xffff,0xffff,0xffff,0xffff};
 unsigned int Question_Quality_Last[6]={0};
 
-#define Num_LastCat  8
+#define Num_LastCat  6
 unsigned int Last2Cat[Num_LastCat]={0};
 //unsigned int Player_Selectcnt[5]={0};
 
@@ -223,7 +223,7 @@ unsigned int FreeKick_Flag =0;
 
 
 //unsigned int OFFsideFlag =0;
-unsigned int Dis_Player =0;
+
 //unsigned int OffSide_Askflag =0;
 //unsigned int Que_Miroir[3]={0};//Y2,Y10
 //unsigned int Que_Miroir_Cnt[3]={0};//Y2,Y10
@@ -1128,33 +1128,33 @@ unsigned Select_Pingamerandom_4(unsigned Index)
 unsigned int SelectNextPingame(unsigned cnt)
 {
 			
-//	unsigned temp = 0;
-//	unsigned i = 0;
-//	
-//	cnt++;
-//	if(cnt>=Registerd_Num)
-//		 cnt = 0;
-//	
-//	while(cnt<Registerd_Num)
-//	{
-//		 if(BitMap[cnt%16]&Pingame[cnt/16]) 
-//		 { 		       
-//		    //	temp+=1;
-//		    	
-//		   //if(cnt==temp)	
-//		       return cnt;	
-//	 	
-//		 }
-//		 cnt++;
-//		 
-//	    if(cnt==Registerd_Num)	 
-//		    {
-//		       cnt =0;	
-//		       //temp = 0;	
-//		    }
-//		 
-//	}
-//	return temp;
+	unsigned temp = 0;
+	unsigned i = 0;
+	
+	cnt++;
+	if(cnt>=Registerd_Num)
+		 cnt = 0;
+	
+	while(cnt<Registerd_Num)
+	{
+		 if(BitMap[cnt%16]&Pingame[cnt/16]) 
+		 { 		       
+		    //	temp+=1;
+		    	
+		   //if(cnt==temp)	
+		       return cnt;	
+	 	
+		 }
+		 cnt++;
+		 
+	    if(cnt==Registerd_Num)	 
+		    {
+		       cnt =0;	
+		       //temp = 0;	
+		    }
+		 
+	}
+	return temp;
 }
 
 /*************************************************************
@@ -5981,10 +5981,10 @@ unsigned  Step1()
  #endif	
 	
 
-    Dis_Player=0;
 
-   
-//    OffSide_Askflag =0;
+
+  
+//   OffSide_Askflag =0;
 	firstFlag_23b =0;
 //	OFFsideFlag =0;
 //	HattickOrOffside_Flag =0;
@@ -6000,13 +6000,7 @@ unsigned  Step1()
 //	RandFof_Flag =0;
 	LED_Cnt =0;	
 	Tieflag =0;	
-//	Answered_Player_Lound1 =0;	
-		
-//	Event_List = Event_List_Init;
-//    Event_ThisGame =0;
-//	Event_cnt =0;  
-	
-//	Registered_Actived_status =0;//ALL_Play_Registed_Init;
+
 	Registered_Play_Status =0;
 	Question_Answer =0;
 	L14flag =0;
@@ -6015,42 +6009,19 @@ unsigned  Step1()
 	Eventflag =0;
 
 	Sleepflag =0;
-		
-	//Cycle_Timeout_cnt=1;  //在选定Players后再设
-//	Silent_updatedFlag =0;
 	
-
 	Leader_Player =0;
 	Lowest_Player =0;
 
-//	AnswerDuringQue =0;
-//	Qn = 0;
-
-//	Length_LQGame =0;
 	Round =0;
 	
     Key_Event =0;
     
 
-//	FiveSec_En =0;
-//	FiveSec_cnt =0;
-	
-    
-
-//
-
-//    R_Event_AddTo = Event_AddTo;
-
-	
-   //for(i=0;i<4;i++)
-   	{
-      Cur_Active_Player = 0;
-   	}
-
-	QuestionCycle[0]=0;
-	QuestionCycle[1]=0;
-	QuestionCycle[2]=0;
-	QuestionCycle[3]=0;
+//	QuestionCycle[0]=0;
+//	QuestionCycle[1]=0;
+//	QuestionCycle[2]=0;
+//	QuestionCycle[3]=0;
 
 
     CheaterFlag =0;
@@ -6320,6 +6291,9 @@ unsigned  Step1()
 						   
 					  	}
 
+					   Key_Event =0; 
+					   PlayA1800_Elements(SFX_Buzzer);
+					   delay_time(8);
 					   
                        Key_Event =0; 
 					  if(Restart ==0)
@@ -6568,7 +6542,7 @@ void Events()
 
        if(LastE!=C_OneMoreTime)
           R_E= C_OneMoreTime;
-	   else if((Registerd_Num ==1)||(LastE!=C_TwoSounds))
+	   else if((LastE!=C_TwoSounds))//(Registerd_Num ==1)||
 	   	{
              R_E =C_TwoSounds;
 	   	}
@@ -6684,16 +6658,18 @@ unsigned int Game()
 //		if((Get_Num_CategoryMemory()>100)&&(Tie ==0))
 //			break;
 
-        if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0))//&&(Registerd_Num>1)
-        	Events();
-        else             
-        {
+
            if(Registerd_Num==1)
            	     Player_Activing_Cnt=Get_Firstcnt_From_Play(Registered_Play_Status);
 //           else	if(CurrentRound ==1)
 //           	     Player_Activing_Cnt =Select_Pingamerandom(0);
-//           	else
-                 Player_Activing_Cnt =Select_Pingamerandom();//SelectNextPingame(Player_Activing_Cnt);
+        else             
+        {
+
+           if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0))//&&(Registerd_Num>1)
+        	   Events();
+           	else
+              Player_Activing_Cnt =Select_Pingamerandom();//SelectNextPingame(Player_Activing_Cnt);
             
         }
             
@@ -6900,9 +6876,9 @@ void Answer_F()
 							{				   
 
 		                       
-							   if(Cn<=5)//(((Cn-1)%2)== 0)
+							   if(Cn<=3)//(((Cn-1)%2)== 0)
 							  	   PlayA1800_Other(Serie_Correct1);//PlayA1800_Elements(VLMMREN_Congrate_02);
-							  	else if(Cn<=10)
+							  	else if(Cn<=8)
 		                           PlayA1800_Other(Serie_Correct2);
 							  	else
 							  	    PlayA1800_Other(Serie_Correct3);
@@ -6941,6 +6917,9 @@ void Answer_F()
 						  if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0))
 							{
 							 //Chance();
+							 PlayA1800_Elements(SFX_Wrong); 
+
+							 delay_time(8);
 							 PlayA1800_Elements(SFX_Event); 
 							 delay_time(8);
 							 SinceLastE  =0;
@@ -7104,11 +7083,19 @@ unsigned int End()
 	 if(temp_length>0)
 	 	 temp_length-=1;
  
- 
+ 	   Key_Event =0;
+	   Key_activeflag = 0;
 
  
   if(Registerd_Num>1)
   {
+
+
+      if(End20flag ==0)
+      {
+        Add_SomePlayer_Point(1,Rounds,Pingame);	
+	    Add_SomePlayer_Point(memory_length,Player_Point,Pingame);	
+      }
 
 
        if((Get_Num_Bigscore(Rounds,2,Registered_Play_Status)==0 ))//||(End20flag))
@@ -7116,11 +7103,10 @@ unsigned int End()
 
 		    if(End20flag ==0)
    	       {
-			    if(memory_length>100)
+			    if(memory_length>50)
 			    {
 			    	
-			       Add_SomePlayer_Point(1,Rounds,Pingame);	
-			       Add_SomePlayer_Point(memory_length,Player_Point,Pingame);	
+
 			    	
 			       Play_Serieplayer(0,Pingame,C_Play_StartAddr);	
 			       PlayA1800_Elements(A_VLMMREN_End_03c);	
@@ -7130,8 +7116,8 @@ unsigned int End()
 			    }
 			    else
 			    {
-			    	  Add_SomePlayer_Point(1,Rounds,Pingame);	
-			    	  Add_SomePlayer_Point(memory_length,Player_Point,Pingame);	
+//			    	  Add_SomePlayer_Point(1,Rounds,Pingame);	
+//			    	  Add_SomePlayer_Point(memory_length,Player_Point,Pingame);	
 			    	  
 				     Play_Serieplayer(0,Pingame,C_Play_StartAddr);
 				     PlayA1800_Elements(A_VLMMREN_End_01);
@@ -7163,6 +7149,9 @@ unsigned int End()
 		 Reset_Memory();	
          SetPingame();
 		 Reset_Pselected();
+		 
+		 randomflag =1;
+		 
        if(Get_All_SameNum(Rounds,1,Registered_Play_Status)==0)//(CurrentRound !=3)
        	{
        	   PlayA1800_Elements(SFX_Yeah);	
@@ -7174,8 +7163,29 @@ unsigned int End()
        	}
 	   else
 	   	{
-	   	    Key_CheckScores();	
+	   		 Key_Event =0;
+		     Key_activeflag =Playbutton;
+ 
+	   	   // Key_CheckScores();
+	   	      BlinkFlag_Data=0;	
+	   	      Light_all_off();
+              BlinkFlag_Data = All_Led_data;
+              
+	   	      delay_time(8);	
+              PlayA1800_Elements(A_VLMMREN_Score_01);
+              delay_time(8); 
+              Play_Serieplayer16bit(0,Registered_Play_Status,C_Play_StartAddr);
+              PlayA1800_Elements(A_VLMMREN_WinRound01c);
+
+			  BlinkFlag_Data =0;
+			  Light_all_off();
+
+			  
+              
+	   	    Key_Event =0;
+		    Key_activeflag =Playbutton;	   
 	   	    delay_time(16);	
+	   	    
 		    PlayA1800_Elements(A_VLMMREN_WinRound03);	 
 		    delay_time(16);
 		  
@@ -7194,7 +7204,7 @@ unsigned int End()
 			   
 			   timeovercnt++;
 			   
-			   if(timeovercnt>9)
+			   if(timeovercnt>18)
 				{
 			   
 						GameTimeout();	 
@@ -7207,8 +7217,15 @@ unsigned int End()
 		       delay_time(8);
                PlayA1800_Elements(A_VLMMREN_SetUp_04);	 
 		       PlayA1800_Elements(A_VLMMREN_Button_01a);	 
-               delay_time(20*16);
+               delay_time(10*16);
         	}
+
+		   Key_Event =0;
+		   PlayA1800_Elements(SFX_Buzzer);
+		   delay_time(16);
+
+
+		
 		 
      	   return C_Game;
 		    }
@@ -7296,8 +7313,8 @@ unsigned int End()
             	//PlayA1800_Elements(SFX_EndGame);            	
 	            //Play_Serieplayer16bit(0,Leader_Player,C_Play_StartAddr);//Play_Serieplayer(0,&Leader_Player,C_Play_StartAddr);
 	            Play_Serieplayer(0,Pingame,C_Play_StartAddr);
-	            PlayA1800_Elements(A_VLMMREN_WinRound01);	    	   
-	    	    Play_Seq(Higgest_T,C_RoundsTable);//PlayScores(Higgest_T);
+	            PlayA1800_Elements(A_VLMMREN_WinRound01d);	    	   
+	    	   // Play_Seq(Higgest_T,C_RoundsTable);//PlayScores(Higgest_T);
 	    	    PlayA1800_Elements(A_VLMMREN_End_03);           	
             	
             }
@@ -7312,7 +7329,7 @@ unsigned int End()
  else if(Registerd_Num==1)
  {
  	
- 	 if(memory_length>100)
+ 	 if(memory_length>50)
  	 {
  	 	 Record=memory_length;
  	 	 
@@ -7359,7 +7376,7 @@ unsigned int End()
  	 PlayA1800_Elements(SFX_Winner);
  	 delay_time(8);	
  	 
- 	 if((memory_length>=100)&&(Registerd_Num==1))
+ 	 if((memory_length>50)&&(Registerd_Num==1))
  	 {
  	   PlayA1800_Elements(A_VLMMREN_End_03c); 
        PlayA1800_Elements(SFX_Winner);

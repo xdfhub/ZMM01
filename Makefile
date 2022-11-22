@@ -1,6 +1,6 @@
 #####################################################################
 #																	 
-#	Created by u'nSP IDE V3.0.16.1		14:59:41	11/11/22
+#	Created by u'nSP IDE V3.0.16.1		14:46:02	11/22/22
 #
 #####################################################################
 
@@ -64,7 +64,7 @@ EXTRAFLAGS	=
 
 OBJFILES	= \
 	"$(OUTDIR)\RomCodeOBJ_GPCE1_CE3.obj" \
-	"$(OUTDIR)\Rom_ZMM_V05_bin.res" \
+	"$(OUTDIR)\Rom_ZMM_V06_bin.res" \
 	"$(OUTDIR)\main.obj" \
 	"$(OUTDIR)\isr.obj" \
 	"$(OUTDIR)\Resource.obj" \
@@ -88,8 +88,8 @@ OBJFILES	= \
 	"$(OUTDIR)\CTS_Sensor.obj" \
 	"$(OUTDIR)\CTS_User.obj" 
 
-"$(OUTDIR)\Rom_ZMM_V05_bin.res": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\Rom\Link_Data\Rom_ZMM_V05.bin"
-	$(RESC) "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\Rom\Link_Data\Rom_ZMM_V05.bin" "$(OUTDIR)\Rom_ZMM_V05_bin.res" RES_ROM_ZMM_V05_BIN 
+"$(OUTDIR)\Rom_ZMM_V06_bin.res": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\Rom\Link_Data\Rom_ZMM_V06.bin"
+	$(RESC) "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\Rom\Link_Data\Rom_ZMM_V06.bin" "$(OUTDIR)\Rom_ZMM_V06_bin.res" RES_ROM_ZMM_V06_BIN 
 
 "$(OUTDIR)\main.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\main.c" 
 	set PATH="$(APPDIR)\toolchain\";%PATH% & \
@@ -205,8 +205,8 @@ BEFOREBUILD :
 
 $(BINFILE) : $(OBJFILES) 
 	@echo Hint: The version of HDB file for boot packer and Rom code are Ver.1.0.0.2 and 002C.
-	$(LD) $(BINTYPE) $(ARYFILE) "$(OUTDIR)\GPCE3400A_Demo_SPI.bin" -tskMaxUsed $(LDFLAGS) $(BODY) $(EXTRAFLAGS) -exportvalues "C:\Users\xdf\AppData\Local\Temp\ini77F7.tmp" -defined "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GlobalSymbol_GPCE1_CE3.ini" -bootrominfo "BootCode_SEC;0100" -undefined-opt __TgP190708CM -undefined-opt __TgP190708CL -undefined-opt __TgP190708M
-	$(BOOTPACKER) "C:\Users\xdf\AppData\Local\Temp\ini77F7.tmp"
+	$(LD) $(BINTYPE) $(ARYFILE) "$(OUTDIR)\GPCE3400A_Demo_SPI.bin" -tskMaxUsed $(LDFLAGS) $(BODY) $(EXTRAFLAGS) -exportvalues "C:\Users\xdf\AppData\Local\Temp\ini6210.tmp" -defined "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GlobalSymbol_GPCE1_CE3.ini" -bootrominfo "BootCode_SEC;0100" -undefined-opt __TgP190708CM -undefined-opt __TgP190708CL -undefined-opt __TgP190708M
+	$(BOOTPACKER) "C:\Users\xdf\AppData\Local\Temp\ini6210.tmp"
 	if exist "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bin" del "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bin"
 	copy "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bintmp" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bin" /A /Y
 	if exist "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bintmp" del "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bintmp"
@@ -216,7 +216,7 @@ $(BINFILE) : $(OBJFILES)
 compile :	 $(OBJFILES)
 
 CLEANFILES = \
-	"$(OUTDIR)\Rom_ZMM_V05_bin.res" \
+	"$(OUTDIR)\Rom_ZMM_V06_bin.res" \
 	"$(OUTDIR)\main.obj" \
 	"$(OUTDIR)\main.lst" \
 	"$(OUTDIR)\main.asm" \

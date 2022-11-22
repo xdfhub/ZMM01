@@ -266,316 +266,306 @@ _QuestionCycle:	// 0xce
 _Pre_Active_Player:	// 0xd2
 	.dw	0
 	// end of initialization for Pre_Active_Player
-	     .stabs "Cur_Active_Player:G4",32,0,0,_Cur_Active_Player
-.public	_Cur_Active_Player
-_Cur_Active_Player:	// 0xd3
-	.dw	0
-	// end of initialization for Cur_Active_Player
 	     .stabs "Key_Event:G4",32,0,0,_Key_Event
 .public	_Key_Event
-_Key_Event:	// 0xd4
+_Key_Event:	// 0xd3
 	.dw	0
 	// end of initialization for Key_Event
 	     .stabs "BlinkFlag_Data:G4",32,0,0,_BlinkFlag_Data
 .public	_BlinkFlag_Data
-_BlinkFlag_Data:	// 0xd5
+_BlinkFlag_Data:	// 0xd4
 	.dw	0
 	// end of initialization for BlinkFlag_Data
 	     .stabs "Eventflag:G4",32,0,0,_Eventflag
 .public	_Eventflag
-_Eventflag:	// 0xd6
+_Eventflag:	// 0xd5
 	.dw	0
 	// end of initialization for Eventflag
 	     .stabs "Answer_Right_Player:G4",32,0,0,_Answer_Right_Player
 .public	_Answer_Right_Player
-_Answer_Right_Player:	// 0xd7
+_Answer_Right_Player:	// 0xd6
 	.dw	0
 	// end of initialization for Answer_Right_Player
 	     .stabs "Answer_Wrong_Player:G4",32,0,0,_Answer_Wrong_Player
 .public	_Answer_Wrong_Player
-_Answer_Wrong_Player:	// 0xd8
+_Answer_Wrong_Player:	// 0xd7
 	.dw	0
 	// end of initialization for Answer_Wrong_Player
 	     .stabs "No_Answer_Player:G4",32,0,0,_No_Answer_Player
 .public	_No_Answer_Player
-_No_Answer_Player:	// 0xd9
+_No_Answer_Player:	// 0xd8
 	.dw	0
 	// end of initialization for No_Answer_Player
 	     .stabs "Question_Answer:G4",32,0,0,_Question_Answer
 .public	_Question_Answer
-_Question_Answer:	// 0xda
+_Question_Answer:	// 0xd9
 	.dw	0
 	// end of initialization for Question_Answer
 	     .stabs "SeriesAcnt:G4",32,0,0,_SeriesAcnt
 .public	_SeriesAcnt
-_SeriesAcnt:	// 0xdb
+_SeriesAcnt:	// 0xda
 	.dw	0
 	// end of initialization for SeriesAcnt
 	     .stabs "SeriesBcnt:G4",32,0,0,_SeriesBcnt
 .public	_SeriesBcnt
-_SeriesBcnt:	// 0xdc
+_SeriesBcnt:	// 0xdb
 	.dw	0
 	// end of initialization for SeriesBcnt
 	     .stabs "Series_eventsolo:G4",32,0,0,_Series_eventsolo
 .public	_Series_eventsolo
-_Series_eventsolo:	// 0xdd
+_Series_eventsolo:	// 0xdc
 	.dw	0
 	// end of initialization for Series_eventsolo
 	     .stabs "Leader_Player:G4",32,0,0,_Leader_Player
 .public	_Leader_Player
-_Leader_Player:	// 0xde
+_Leader_Player:	// 0xdd
 	.dw	0
 	// end of initialization for Leader_Player
 	     .stabs "Lowest_Player:G4",32,0,0,_Lowest_Player
 .public	_Lowest_Player
-_Lowest_Player:	// 0xdf
+_Lowest_Player:	// 0xde
 	.dw	0
 	// end of initialization for Lowest_Player
 	     .stabs "Leader_Player_pre:G4",32,0,0,_Leader_Player_pre
 .public	_Leader_Player_pre
-_Leader_Player_pre:	// 0xe0
+_Leader_Player_pre:	// 0xdf
 	.dw	0
 	// end of initialization for Leader_Player_pre
 	     .stabs "Special_temp:G4",32,0,0,_Special_temp
 .public	_Special_temp
-_Special_temp:	// 0xe1
+_Special_temp:	// 0xe0
 	.dw	0
 	// end of initialization for Special_temp
 	     .stabs "L14flag:G4",32,0,0,_L14flag
 .public	_L14flag
-_L14flag:	// 0xe2
+_L14flag:	// 0xe1
 	.dw	0
 	// end of initialization for L14flag
 	     .stabs "Higgest_T:G1",32,0,0,_Higgest_T
 .public	_Higgest_T
-_Higgest_T:	// 0xe3
+_Higgest_T:	// 0xe2
 	.dw	0
 	// end of initialization for Higgest_T
 	     .stabs "Lowest_T:G1",32,0,0,_Lowest_T
 .public	_Lowest_T
-_Lowest_T:	// 0xe4
+_Lowest_T:	// 0xe3
 	.dw	0
 	// end of initialization for Lowest_T
 	     .stabs "Cycle_Timeout_cnt:G4",32,0,0,_Cycle_Timeout_cnt
 .public	_Cycle_Timeout_cnt
-_Cycle_Timeout_cnt:	// 0xe5
+_Cycle_Timeout_cnt:	// 0xe4
 	.dw	0
 	// end of initialization for Cycle_Timeout_cnt
 	     .stabs "Key_TrueFlase_Buffer:G4",32,0,0,_Key_TrueFlase_Buffer
 .public	_Key_TrueFlase_Buffer
-_Key_TrueFlase_Buffer:	// 0xe6
+_Key_TrueFlase_Buffer:	// 0xe5
 	.dw	0
 	// end of initialization for Key_TrueFlase_Buffer
 	     .stabs "Question_Quality_Last:G25=ar3;0;5;4",32,0,0,_Question_Quality_Last
 .public	_Question_Quality_Last
-_Question_Quality_Last:	// 0xe7
+_Question_Quality_Last:	// 0xe6
 	.dw	0
 	.dw 5 dup(0)
 	// end of initialization for Question_Quality_Last
-	     .stabs "Last2Cat:G26=ar3;0;7;4",32,0,0,_Last2Cat
+	     .stabs "Last2Cat:G25",32,0,0,_Last2Cat
 .public	_Last2Cat
-_Last2Cat:	// 0xed
+_Last2Cat:	// 0xec
 	.dw	0
-	.dw 7 dup(0)
+	.dw 5 dup(0)
 	// end of initialization for Last2Cat
 	     .stabs "PlayScoresFlag:G4",32,0,0,_PlayScoresFlag
 .public	_PlayScoresFlag
-_PlayScoresFlag:	// 0xf5
+_PlayScoresFlag:	// 0xf2
 	.dw	0
 	// end of initialization for PlayScoresFlag
 	     .stabs "Sleepflag:G4",32,0,0,_Sleepflag
 .public	_Sleepflag
-_Sleepflag:	// 0xf6
+_Sleepflag:	// 0xf3
 	.dw	0
 	// end of initialization for Sleepflag
 	     .stabs "Tieflag:G4",32,0,0,_Tieflag
 .public	_Tieflag
-_Tieflag:	// 0xf7
+_Tieflag:	// 0xf4
 	.dw	0
 	// end of initialization for Tieflag
 	     .stabs "Cheater_SeletQu_Flag:G4",32,0,0,_Cheater_SeletQu_Flag
 .public	_Cheater_SeletQu_Flag
-_Cheater_SeletQu_Flag:	// 0xf8
+_Cheater_SeletQu_Flag:	// 0xf5
 	.dw	0
 	// end of initialization for Cheater_SeletQu_Flag
 	     .stabs "VOL1Flag:G4",32,0,0,_VOL1Flag
 .public	_VOL1Flag
-_VOL1Flag:	// 0xf9
+_VOL1Flag:	// 0xf6
 	.dw	0
 	// end of initialization for VOL1Flag
 	     .stabs "Speed_BonusFlag:G4",32,0,0,_Speed_BonusFlag
 .public	_Speed_BonusFlag
-_Speed_BonusFlag:	// 0xfa
+_Speed_BonusFlag:	// 0xf7
 	.dw	0
 	// end of initialization for Speed_BonusFlag
 	     .stabs "Time_Countdown:G4",32,0,0,_Time_Countdown
 .public	_Time_Countdown
-_Time_Countdown:	// 0xfb
+_Time_Countdown:	// 0xf8
 	.dw	0
 	// end of initialization for Time_Countdown
 	     .stabs "firstFlag_23b:G4",32,0,0,_firstFlag_23b
 .public	_firstFlag_23b
-_firstFlag_23b:	// 0xfc
+_firstFlag_23b:	// 0xf9
 	.dw	0
 	// end of initialization for firstFlag_23b
 	     .stabs "FreeKick_Flag:G4",32,0,0,_FreeKick_Flag
 .public	_FreeKick_Flag
-_FreeKick_Flag:	// 0xfd
+_FreeKick_Flag:	// 0xfa
 	.dw	0
 	// end of initialization for FreeKick_Flag
-	     .stabs "Dis_Player:G4",32,0,0,_Dis_Player
-.public	_Dis_Player
-_Dis_Player:	// 0xfe
-	.dw	0
-	// end of initialization for Dis_Player
 	     .stabs "Countdownflag:G4",32,0,0,_Countdownflag
 .public	_Countdownflag
-_Countdownflag:	// 0xff
+_Countdownflag:	// 0xfb
 	.dw	0
 	// end of initialization for Countdownflag
 	     .stabs "Soloflag:G4",32,0,0,_Soloflag
 .public	_Soloflag
-_Soloflag:	// 0x100
+_Soloflag:	// 0xfc
 	.dw	0
 	// end of initialization for Soloflag
 	     .stabs "Difficulty:G4",32,0,0,_Difficulty
 .public	_Difficulty
-_Difficulty:	// 0x101
+_Difficulty:	// 0xfd
 	.dw	0
 	// end of initialization for Difficulty
 	     .stabs "Diff_int:G4",32,0,0,_Diff_int
 .public	_Diff_int
-_Diff_int:	// 0x102
+_Diff_int:	// 0xfe
 	.dw	0
 	// end of initialization for Diff_int
 	     .stabs "qestion_quality:G4",32,0,0,_qestion_quality
 .public	_qestion_quality
-_qestion_quality:	// 0x103
+_qestion_quality:	// 0xff
 	.dw	0
 	// end of initialization for qestion_quality
 	     .stabs "Ca:G1",32,0,0,_Ca
 .public	_Ca
-_Ca:	// 0x104
+_Ca:	// 0x100
 	.dw	0
 	// end of initialization for Ca
 	     .stabs "RecordV:G1",32,0,0,_RecordV
 .public	_RecordV
-_RecordV:	// 0x105
+_RecordV:	// 0x101
 	.dw	0
 	// end of initialization for RecordV
 	     .stabs "Temp_Registered_Play_Select:G4",32,0,0,_Temp_Registered_Play_Select
 .public	_Temp_Registered_Play_Select
-_Temp_Registered_Play_Select:	// 0x106
+_Temp_Registered_Play_Select:	// 0x102
 	.dw	0
 	// end of initialization for Temp_Registered_Play_Select
 	     .stabs "Key_buffer_First_temp:G4",32,0,0,_Key_buffer_First_temp
 .public	_Key_buffer_First_temp
-_Key_buffer_First_temp:	// 0x107
+_Key_buffer_First_temp:	// 0x103
 	.dw	0
 	// end of initialization for Key_buffer_First_temp
 	     .stabs "LFXFlag_Data:G4",32,0,0,_LFXFlag_Data
 .public	_LFXFlag_Data
-_LFXFlag_Data:	// 0x108
+_LFXFlag_Data:	// 0x104
 	.dw	0
 	// end of initialization for LFXFlag_Data
 	     .stabs "LFX_Data_Cnt:G4",32,0,0,_LFX_Data_Cnt
 .public	_LFX_Data_Cnt
-_LFX_Data_Cnt:	// 0x109
+_LFX_Data_Cnt:	// 0x105
 	.dw	0
 	// end of initialization for LFX_Data_Cnt
 	     .stabs "VolumeEnable:G4",32,0,0,_VolumeEnable
 .public	_VolumeEnable
-_VolumeEnable:	// 0x10a
+_VolumeEnable:	// 0x106
 	.dw	0
 	// end of initialization for VolumeEnable
 	     .stabs "NextCnt:G4",32,0,0,_NextCnt
 .public	_NextCnt
-_NextCnt:	// 0x10b
+_NextCnt:	// 0x107
 	.dw	0
 	// end of initialization for NextCnt
 	     .stabs "TooLate_Cnt:G4",32,0,0,_TooLate_Cnt
 .public	_TooLate_Cnt
-_TooLate_Cnt:	// 0x10c
+_TooLate_Cnt:	// 0x108
 	.dw	0
 	// end of initialization for TooLate_Cnt
 	     .stabs "TooLatesolo_Cnt:G4",32,0,0,_TooLatesolo_Cnt
 .public	_TooLatesolo_Cnt
-_TooLatesolo_Cnt:	// 0x10d
+_TooLatesolo_Cnt:	// 0x109
 	.dw	0
 	// end of initialization for TooLatesolo_Cnt
 	     .stabs "Record:G4",32,0,0,_Record
 .public	_Record
-_Record:	// 0x10e
+_Record:	// 0x10a
 	.dw	0
 	// end of initialization for Record
 	     .stabs "R_E:G4",32,0,0,_R_E
 .public	_R_E
-_R_E:	// 0x10f
+_R_E:	// 0x10b
 	.dw	0
 	// end of initialization for R_E
 	     .stabs "LastE:G4",32,0,0,_LastE
 .public	_LastE
-_LastE:	// 0x110
+_LastE:	// 0x10c
 	.dw	0
 	// end of initialization for LastE
 	     .stabs "NumRounds:G4",32,0,0,_NumRounds
 .public	_NumRounds
-_NumRounds:	// 0x111
+_NumRounds:	// 0x10d
 	.dw	0
 	// end of initialization for NumRounds
 	     .stabs "CurrentRound:G4",32,0,0,_CurrentRound
 .public	_CurrentRound
-_CurrentRound:	// 0x112
+_CurrentRound:	// 0x10e
 	.dw	0
 	// end of initialization for CurrentRound
 	     .stabs "SinceLastE:G4",32,0,0,_SinceLastE
 .public	_SinceLastE
-_SinceLastE:	// 0x113
+_SinceLastE:	// 0x10f
 	.dw	0
 	// end of initialization for SinceLastE
 	     .stabs "R_2SLoop:G4",32,0,0,_R_2SLoop
 .public	_R_2SLoop
-_R_2SLoop:	// 0x114
+_R_2SLoop:	// 0x110
 	.dw	0
 	// end of initialization for R_2SLoop
 	     .stabs "Tie:G4",32,0,0,_Tie
 .public	_Tie
-_Tie:	// 0x115
+_Tie:	// 0x111
 	.dw	0
 	// end of initialization for Tie
 	     .stabs "End20flag:G4",32,0,0,_End20flag
 .public	_End20flag
-_End20flag:	// 0x116
+_End20flag:	// 0x112
 	.dw	0
 	// end of initialization for End20flag
 	     .stabs "Answerflag:G4",32,0,0,_Answerflag
 .public	_Answerflag
-_Answerflag:	// 0x117
+_Answerflag:	// 0x113
 	.dw	0
 	// end of initialization for Answerflag
 	     .stabs "Last2Catcnt:G4",32,0,0,_Last2Catcnt
 .public	_Last2Catcnt
-_Last2Catcnt:	// 0x118
+_Last2Catcnt:	// 0x114
 	.dw	0
 	// end of initialization for Last2Catcnt
 	     .stabs "Timeout_cnt_En:G4",32,0,0,_Timeout_cnt_En
 .public	_Timeout_cnt_En
-_Timeout_cnt_En:	// 0x119
+_Timeout_cnt_En:	// 0x115
 	.dw	0
 	// end of initialization for Timeout_cnt_En
 	     .stabs "randomflag:G4",32,0,0,_randomflag
 .public	_randomflag
-_randomflag:	// 0x11a
+_randomflag:	// 0x116
 	.dw	0
 	// end of initialization for randomflag
-	     .stabs "Event_F:G27=ar3;0;11;19",32,0,0,_Event_F
+	     .stabs "Event_F:G26=ar3;0;11;19",32,0,0,_Event_F
 .public	_Event_F
-_Event_F:	// 0x11b
+_Event_F:	// 0x117
 	.dw 24 dup(0)
 	// end of initialization for Event_F
 	     .stabs "LFX_Data:G24",32,0,0,_LFX_Data
 .public	_LFX_Data
-_LFX_Data:	// 0x133
+_LFX_Data:	// 0x12f
 	.dw	1
 	.dw	2
 	.dw	4
@@ -583,7 +573,7 @@ _LFX_Data:	// 0x133
 	// end of initialization for LFX_Data
 
 .nb_data
-	     .stabs "Led_Data_Play:G28=ar3;0;4;4",32,0,0,_Led_Data_Play
+	     .stabs "Led_Data_Play:G27=ar3;0;4;4",32,0,0,_Led_Data_Play
 .public	_Led_Data_Play
 _Led_Data_Play:	// 0x0
 	.dw	1
@@ -592,7 +582,7 @@ _Led_Data_Play:	// 0x0
 	.dw	8
 	.dw	16
 	// end of initialization for Led_Data_Play
-	     .stabs "BitMap:G29=ar3;0;-1;4",32,0,0,_BitMap
+	     .stabs "BitMap:G28=ar3;0;-1;4",32,0,0,_BitMap
 .public	_BitMap
 _BitMap:	// 0x5
 	.dw	1
@@ -2299,11 +2289,11 @@ LM104:
 
 LM105:
 	     .stabn 68,0,1280,LM105-_Supress_Question_CategoryLast2Cat
-	     DS = seg(_Last2Cat+6)    	// [7:1280]  Last2Cat+6
-	     R4 = (_Last2Cat+6)       	// [8:1280]  Last2Cat+6
+	     DS = seg(_Last2Cat+4)    	// [7:1280]  Last2Cat+4
+	     R4 = (_Last2Cat+4)       	// [8:1280]  Last2Cat+4
 	     R3 = DS:[R4]             	// [10:1280]  
-	     DS = seg(_Last2Cat+7)    	// [12:1280]  Last2Cat+7
-	     R4 = (_Last2Cat+7)       	// [13:1280]  Last2Cat+7
+	     DS = seg(_Last2Cat+5)    	// [12:1280]  Last2Cat+5
+	     R4 = (_Last2Cat+5)       	// [13:1280]  Last2Cat+5
 	     R4 = DS:[R4]             	// [15:1280]  
 	     cmp R3, R4               	// [17:1280]  
 	     je L_15_12               	// [18:1280]  
@@ -2322,8 +2312,8 @@ L_15_12:	// 0x32a
 
 LM107:
 	     .stabn 68,0,1283,LM107-_Supress_Question_CategoryLast2Cat
-	     DS = seg(_Last2Cat+6)    	// [0:1283]  Last2Cat+6
-	     R4 = (_Last2Cat+6)       	// [1:1283]  Last2Cat+6
+	     DS = seg(_Last2Cat+4)    	// [0:1283]  Last2Cat+4
+	     R4 = (_Last2Cat+4)       	// [1:1283]  Last2Cat+4
 	     R4 = DS:[R4]             	// [3:1283]  
 	     cmp R4, 0                	// [5:1283]  
 	     jne L_15_13              	// [6:1283]  
@@ -2423,16 +2413,16 @@ BB10_PU15:	// 0x362
 
 LM114:
 	     .stabn 68,0,1298,LM114-_Supress_Question_CategoryLast2Cat
-	     DS = seg(_Last2Cat+6)    	// [2:1298]  Last2Cat+6
-	     R4 = (_Last2Cat+6)       	// [3:1298]  Last2Cat+6
+	     DS = seg(_Last2Cat+4)    	// [2:1298]  Last2Cat+4
+	     R4 = (_Last2Cat+4)       	// [3:1298]  Last2Cat+4
 	     R3 = DS:[R4]             	// [5:1298]  
 	     R4 = [BP + 1]            	// [7:1298]  temp
 	     cmp R3, R4               	// [9:1298]  
 	     je L_15_18               	// [10:1298]  
 BB11_PU15:	// 0x36b
 // BB:11 cycle count: 12
-	     DS = seg(_Last2Cat+7)    	// [0:1298]  Last2Cat+7
-	     R4 = (_Last2Cat+7)       	// [1:1298]  Last2Cat+7
+	     DS = seg(_Last2Cat+5)    	// [0:1298]  Last2Cat+5
+	     R4 = (_Last2Cat+5)       	// [1:1298]  Last2Cat+5
 	     R3 = DS:[R4]             	// [3:1298]  
 	     R4 = [BP + 1]            	// [5:1298]  temp
 	     cmp R3, R4               	// [7:1298]  
@@ -2582,7 +2572,7 @@ LM122:
 L_16_19:	// 0x3b3
 // BB:4 cycle count: 7
 	     R4 = [BP + 2]            	// [0:1326]  j
-	     cmp R4, 7                	// [2:1326]  
+	     cmp R4, 5                	// [2:1326]  
 	     ja L_16_20               	// [3:1326]  
 BB5_PU16:	// 0x3b6
 // BB:5 cycle count: 14
@@ -2718,7 +2708,7 @@ LM131:
 L_16_25:	// 0x3fc
 // BB:14 cycle count: 7
 	     R4 = [BP + 2]            	// [0:1347]  j
-	     cmp R4, 7                	// [2:1347]  
+	     cmp R4, 5                	// [2:1347]  
 	     ja L_16_26               	// [3:1347]  
 BB15_PU16:	// 0x3ff
 // BB:15 cycle count: 18
@@ -4607,7 +4597,7 @@ LM257:
 	     pop BP, PC from [SP]     	// [3:2951]  
 LBE29:
 	.endp	
-	     .stabs "roundsORpoint:p30=*1",160,0,0,5
+	     .stabs "roundsORpoint:p29=*1",160,0,0,5
 	     .stabs "score:p1",160,0,0,7
 	     .stabs "Play_status:p4",160,0,0,8
 	     .stabn 192,0,0,LBB29-_Get_Num_Bigscore
@@ -4731,7 +4721,7 @@ LM265:
 	     pop BP, PC from [SP]     	// [2:2979]  
 LBE30:
 	.endp	
-	     .stabs "roundsORpoint:p30",160,0,0,4
+	     .stabs "roundsORpoint:p29",160,0,0,4
 	     .stabs "score:p1",160,0,0,6
 	     .stabs "Play_status:p4",160,0,0,7
 	     .stabn 192,0,0,LBB30-_Get_All_SameNum
@@ -4981,7 +4971,7 @@ LM283:
 	     pop BP, PC from [SP]     	// [3:3023]  
 LBE31:
 	.endp	
-	     .stabs "roundsORpoint:p30",160,0,0,5
+	     .stabs "roundsORpoint:p29",160,0,0,5
 	     .stabs "Play_status:p4",160,0,0,7
 	     .stabn 192,0,0,LBB31-_Get_Num_Higgest_score
 	     .stabs "i:4",128,0,0,0
@@ -5257,7 +5247,7 @@ LM303:
 	     pop BP, PC from [SP]     	// [3:3074]  
 LBE32:
 	.endp	
-	     .stabs "roundsORpoint:p30",160,0,0,5
+	     .stabs "roundsORpoint:p29",160,0,0,5
 	     .stabs "Play_status:p4",160,0,0,7
 	     .stabn 192,0,0,LBB32-_Get_Num_Lowest_score
 	     .stabs "i:4",128,0,0,0
@@ -5562,8 +5552,8 @@ L_34_2:	// 0x896
 LBE34:
 	.endp	
 	     .stabs "point:p1",160,0,0,4
-	     .stabs "roundORpint:p31=*4",160,0,0,5
-	     .stabs "BitTable:p31",160,0,0,7
+	     .stabs "roundORpint:p30=*4",160,0,0,5
+	     .stabs "BitTable:p30",160,0,0,7
 	     .stabn 192,0,0,LBB34-_Add_SomePlayer_Point
 	     .stabs "i:4",128,0,0,0
 	     .stabn 224,0,0,LBE34-_Add_SomePlayer_Point
@@ -5686,8 +5676,8 @@ L_35_2:	// 0x8c8
 LBE35:
 	.endp	
 	     .stabs "point:p1",160,0,0,4
-	     .stabs "roundORpint:p31",160,0,0,5
-	     .stabs "BitTable:p31",160,0,0,7
+	     .stabs "roundORpint:p30",160,0,0,5
+	     .stabs "BitTable:p30",160,0,0,7
 	     .stabn 192,0,0,LBB35-_Add_ALL_InactivePlayer_Point
 	     .stabs "i:4",128,0,0,0
 	     .stabn 224,0,0,LBE35-_Add_ALL_InactivePlayer_Point
@@ -6220,8 +6210,8 @@ L_39_2:	// 0x9ba
 LBE39:
 	.endp	
 	     .stabs "Ledonflag:p4",160,0,0,4
-	     .stabs "BitTable:p31",160,0,0,5
-	     .stabs "SP_Table:p31",160,0,0,7
+	     .stabs "BitTable:p30",160,0,0,5
+	     .stabs "SP_Table:p30",160,0,0,7
 	     .stabn 192,0,0,LBB39-_Play_Serieplayer
 	     .stabs "i:4",128,0,0,0
 	     .stabn 224,0,0,LBE39-_Play_Serieplayer
@@ -6320,7 +6310,7 @@ LBE40:
 	.endp	
 	     .stabs "Ledonflag:p4",160,0,0,4
 	     .stabs "Player_buffer:p4",160,0,0,5
-	     .stabs "SP_Table:p31",160,0,0,6
+	     .stabs "SP_Table:p30",160,0,0,6
 	     .stabn 192,0,0,LBB40-_Play_Serieplayer16bit
 	     .stabs "temp:4",128,0,0,0
 	     .stabn 224,0,0,LBE40-_Play_Serieplayer16bit
@@ -8251,7 +8241,7 @@ LM494:
 L_51_2:	// 0xda9
 // BB:2 cycle count: 7
 	     R4 = [BP + 0]            	// [0:4303]  i
-	     cmp R4, 6                	// [2:4303]  
+	     cmp R4, 4                	// [2:4303]  
 	     ja L_51_3                	// [3:4303]  
 BB3_PU51:	// 0xdac
 // BB:3 cycle count: 26
@@ -8297,8 +8287,8 @@ L_51_3:	// 0xdc5
 LM497:
 	     .stabn 68,0,4308,LM497-_Save_Question_Category2Last
 	     R3 = [BP + 5]            	// [0:4308]  Category
-	     DS = seg(_Last2Cat+7)    	// [2:4308]  Last2Cat+7
-	     R4 = (_Last2Cat+7)       	// [3:4308]  Last2Cat+7
+	     DS = seg(_Last2Cat+5)    	// [2:4308]  Last2Cat+5
+	     R4 = (_Last2Cat+5)       	// [3:4308]  Last2Cat+5
 	     DS:[R4] = R3             	// [5:4308]  
 	     SP = SP + 2              	// [7:4308]  
 	     pop BP, PC from [SP]     	// [8:4308]  
@@ -8633,7 +8623,7 @@ BB20_PU53:	// 0xe43
 LM522:
 	     .stabn 68,0,4804,LM522-_Get_Key
 	     SP = SP - 1              	// [0:4804]  
-	     R3 = 130                 	// [1:4804]  
+	     R3 = 132                 	// [1:4804]  
 	     R4 = SP + 1              	// [3:4804]  
 	     [R4] = R3                	// [5:4804]  
 	     call _PlayA1800_ElementsInit	// [7:4804]  PlayA1800_ElementsInit
@@ -10234,7 +10224,7 @@ L_57_1:	// 0x118a
 LM642:
 	     .stabn 68,0,5899,LM642-_Ram_OnInit
 	     R4 = [BP + 0]            	// [0:5899]  i
-	     cmp R4, 7                	// [2:5899]  
+	     cmp R4, 5                	// [2:5899]  
 	     ja L_57_2                	// [3:5899]  
 BB3_PU57:	// 0x118d
 // BB:3 cycle count: 20
@@ -10537,7 +10527,7 @@ _Step1: .proc
 LM660:
 	     .stabn 68,0,5952,LM660-_Step1
 BB1_PU60:	// 0x1215
-// BB:1 cycle count: 222
+// BB:1 cycle count: 186
 	     push BP to [SP]          	// [0:5952]  
 	     SP = SP - 4              	// [2:5952]  
 	     BP = SP + 1              	// [3:5952]  
@@ -10635,2207 +10625,2174 @@ LM671:
 	     DS = seg(_gQuestionIdx_1)	// [58:5972]  gQuestionIdx_1
 	     R4 = (_gQuestionIdx_1)   	// [59:5972]  gQuestionIdx_1
 	     DS:[R4] = R3             	// [61:5972]  
-//5980      PassFlag =0;
-//5981   #endif	
-//5982  	
-//5983  
-//5984      Dis_Player=0;
-
-LM672:
-	     .stabn 68,0,5984,LM672-_Step1
-	     R3 = 0                   	// [63:5984]  
-	     DS = seg(_Dis_Player)    	// [64:5984]  Dis_Player
-	     R4 = (_Dis_Player)       	// [65:5984]  Dis_Player
-	     DS:[R4] = R3             	// [67:5984]  
+//5984  
 //5985  
-//5986     
-//5987  //    OffSide_Askflag =0;
+//5986    
+//5987  //   OffSide_Askflag =0;
 //5988  	firstFlag_23b =0;
 
-LM673:
-	     .stabn 68,0,5988,LM673-_Step1
-	     R3 = 0                   	// [69:5988]  
-	     DS = seg(_firstFlag_23b) 	// [70:5988]  firstFlag_23b
-	     R4 = (_firstFlag_23b)    	// [71:5988]  firstFlag_23b
-	     DS:[R4] = R3             	// [73:5988]  
+LM672:
+	     .stabn 68,0,5988,LM672-_Step1
+	     R3 = 0                   	// [63:5988]  
+	     DS = seg(_firstFlag_23b) 	// [64:5988]  firstFlag_23b
+	     R4 = (_firstFlag_23b)    	// [65:5988]  firstFlag_23b
+	     DS:[R4] = R3             	// [67:5988]  
 //5989  //	OFFsideFlag =0;
 //5990  //	HattickOrOffside_Flag =0;
 //5991  	FreeKick_Flag = 0;
 
-LM674:
-	     .stabn 68,0,5991,LM674-_Step1
-	     R3 = 0                   	// [75:5991]  
-	     DS = seg(_FreeKick_Flag) 	// [76:5991]  FreeKick_Flag
-	     R4 = (_FreeKick_Flag)    	// [77:5991]  FreeKick_Flag
-	     DS:[R4] = R3             	// [79:5991]  
+LM673:
+	     .stabn 68,0,5991,LM673-_Step1
+	     R3 = 0                   	// [69:5991]  
+	     DS = seg(_FreeKick_Flag) 	// [70:5991]  FreeKick_Flag
+	     R4 = (_FreeKick_Flag)    	// [71:5991]  FreeKick_Flag
+	     DS:[R4] = R3             	// [73:5991]  
 //5992  	
 //5993  //	QnAfter_Event5=0;
 //5994  	Speed_BonusFlag =0;
 
-LM675:
-	     .stabn 68,0,5994,LM675-_Step1
-	     R3 = 0                   	// [81:5994]  
-	     DS = seg(_Speed_BonusFlag)	// [82:5994]  Speed_BonusFlag
-	     R4 = (_Speed_BonusFlag)  	// [83:5994]  Speed_BonusFlag
-	     DS:[R4] = R3             	// [85:5994]  
+LM674:
+	     .stabn 68,0,5994,LM674-_Step1
+	     R3 = 0                   	// [75:5994]  
+	     DS = seg(_Speed_BonusFlag)	// [76:5994]  Speed_BonusFlag
+	     R4 = (_Speed_BonusFlag)  	// [77:5994]  Speed_BonusFlag
+	     DS:[R4] = R3             	// [79:5994]  
 //5995      Key_TrueFlase_Buffer =0;
 
-LM676:
-	     .stabn 68,0,5995,LM676-_Step1
-	     R3 = 0                   	// [87:5995]  
-	     DS = seg(_Key_TrueFlase_Buffer)	// [88:5995]  Key_TrueFlase_Buffer
-	     R4 = (_Key_TrueFlase_Buffer)	// [89:5995]  Key_TrueFlase_Buffer
-	     DS:[R4] = R3             	// [91:5995]  
+LM675:
+	     .stabn 68,0,5995,LM675-_Step1
+	     R3 = 0                   	// [81:5995]  
+	     DS = seg(_Key_TrueFlase_Buffer)	// [82:5995]  Key_TrueFlase_Buffer
+	     R4 = (_Key_TrueFlase_Buffer)	// [83:5995]  Key_TrueFlase_Buffer
+	     DS:[R4] = R3             	// [85:5995]  
 //5996  	
 //5997  	Soloflag =0;
 
-LM677:
-	     .stabn 68,0,5997,LM677-_Step1
-	     R3 = 0                   	// [93:5997]  
-	     DS = seg(_Soloflag)      	// [94:5997]  Soloflag
-	     R4 = (_Soloflag)         	// [95:5997]  Soloflag
-	     DS:[R4] = R3             	// [97:5997]  
+LM676:
+	     .stabn 68,0,5997,LM676-_Step1
+	     R3 = 0                   	// [87:5997]  
+	     DS = seg(_Soloflag)      	// [88:5997]  Soloflag
+	     R4 = (_Soloflag)         	// [89:5997]  Soloflag
+	     DS:[R4] = R3             	// [91:5997]  
 //5998  
 //5999  	Countdownflag =0;
 
-LM678:
-	     .stabn 68,0,5999,LM678-_Step1
-	     R3 = 0                   	// [99:5999]  
-	     DS = seg(_Countdownflag) 	// [100:5999]  Countdownflag
-	     R4 = (_Countdownflag)    	// [101:5999]  Countdownflag
-	     DS:[R4] = R3             	// [103:5999]  
+LM677:
+	     .stabn 68,0,5999,LM677-_Step1
+	     R3 = 0                   	// [93:5999]  
+	     DS = seg(_Countdownflag) 	// [94:5999]  Countdownflag
+	     R4 = (_Countdownflag)    	// [95:5999]  Countdownflag
+	     DS:[R4] = R3             	// [97:5999]  
 //6000  //	RandFof_Flag =0;
 //6001  	LED_Cnt =0;	
 
-LM679:
-	     .stabn 68,0,6001,LM679-_Step1
-	     R3 = 0                   	// [105:6001]  
-	     DS = seg(_LED_Cnt)       	// [106:6001]  LED_Cnt
-	     R4 = (_LED_Cnt)          	// [107:6001]  LED_Cnt
-	     DS:[R4] = R3             	// [109:6001]  
+LM678:
+	     .stabn 68,0,6001,LM678-_Step1
+	     R3 = 0                   	// [99:6001]  
+	     DS = seg(_LED_Cnt)       	// [100:6001]  LED_Cnt
+	     R4 = (_LED_Cnt)          	// [101:6001]  LED_Cnt
+	     DS:[R4] = R3             	// [103:6001]  
 //6002  	Tieflag =0;	
 
+LM679:
+	     .stabn 68,0,6002,LM679-_Step1
+	     R3 = 0                   	// [105:6002]  
+	     DS = seg(_Tieflag)       	// [106:6002]  Tieflag
+	     R4 = (_Tieflag)          	// [107:6002]  Tieflag
+	     DS:[R4] = R3             	// [109:6002]  
+//6003  
+//6004  	Registered_Play_Status =0;
+
 LM680:
-	     .stabn 68,0,6002,LM680-_Step1
-	     R3 = 0                   	// [111:6002]  
-	     DS = seg(_Tieflag)       	// [112:6002]  Tieflag
-	     R4 = (_Tieflag)          	// [113:6002]  Tieflag
-	     DS:[R4] = R3             	// [115:6002]  
-//6006  //    Event_ThisGame =0;
-//6007  //	Event_cnt =0;  
-//6008  	
-//6009  //	Registered_Actived_status =0;//ALL_Play_Registed_Init;
-//6010  	Registered_Play_Status =0;
+	     .stabn 68,0,6004,LM680-_Step1
+	     R3 = 0                   	// [111:6004]  
+	     DS = seg(_Registered_Play_Status)	// [112:6004]  Registered_Play_Status
+	     R4 = (_Registered_Play_Status)	// [113:6004]  Registered_Play_Status
+	     DS:[R4] = R3             	// [115:6004]  
+//6005  	Question_Answer =0;
 
 LM681:
-	     .stabn 68,0,6010,LM681-_Step1
-	     R3 = 0                   	// [117:6010]  
-	     DS = seg(_Registered_Play_Status)	// [118:6010]  Registered_Play_Status
-	     R4 = (_Registered_Play_Status)	// [119:6010]  Registered_Play_Status
-	     DS:[R4] = R3             	// [121:6010]  
-//6011  	Question_Answer =0;
+	     .stabn 68,0,6005,LM681-_Step1
+	     R3 = 0                   	// [117:6005]  
+	     DS = seg(_Question_Answer)	// [118:6005]  Question_Answer
+	     R4 = (_Question_Answer)  	// [119:6005]  Question_Answer
+	     DS:[R4] = R3             	// [121:6005]  
+//6006  	L14flag =0;
 
 LM682:
-	     .stabn 68,0,6011,LM682-_Step1
-	     R3 = 0                   	// [123:6011]  
-	     DS = seg(_Question_Answer)	// [124:6011]  Question_Answer
-	     R4 = (_Question_Answer)  	// [125:6011]  Question_Answer
-	     DS:[R4] = R3             	// [127:6011]  
-//6012  	L14flag =0;
+	     .stabn 68,0,6006,LM682-_Step1
+	     R3 = 0                   	// [123:6006]  
+	     DS = seg(_L14flag)       	// [124:6006]  L14flag
+	     R4 = (_L14flag)          	// [125:6006]  L14flag
+	     DS:[R4] = R3             	// [127:6006]  
+//6007  
+//6008  	TwoKeyflag =0;
 
 LM683:
-	     .stabn 68,0,6012,LM683-_Step1
-	     R3 = 0                   	// [129:6012]  
-	     DS = seg(_L14flag)       	// [130:6012]  L14flag
-	     R4 = (_L14flag)          	// [131:6012]  L14flag
-	     DS:[R4] = R3             	// [133:6012]  
-//6013  
-//6014  	TwoKeyflag =0;
+	     .stabn 68,0,6008,LM683-_Step1
+	     R3 = 0                   	// [129:6008]  
+	     DS = seg(_TwoKeyflag)    	// [130:6008]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [131:6008]  TwoKeyflag
+	     DS:[R4] = R3             	// [133:6008]  
+//6009  	Eventflag =0;
 
 LM684:
-	     .stabn 68,0,6014,LM684-_Step1
-	     R3 = 0                   	// [135:6014]  
-	     DS = seg(_TwoKeyflag)    	// [136:6014]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [137:6014]  TwoKeyflag
-	     DS:[R4] = R3             	// [139:6014]  
-//6015  	Eventflag =0;
+	     .stabn 68,0,6009,LM684-_Step1
+	     R3 = 0                   	// [135:6009]  
+	     DS = seg(_Eventflag)     	// [136:6009]  Eventflag
+	     R4 = (_Eventflag)        	// [137:6009]  Eventflag
+	     DS:[R4] = R3             	// [139:6009]  
+//6010  
+//6011  	Sleepflag =0;
 
 LM685:
-	     .stabn 68,0,6015,LM685-_Step1
-	     R3 = 0                   	// [141:6015]  
-	     DS = seg(_Eventflag)     	// [142:6015]  Eventflag
-	     R4 = (_Eventflag)        	// [143:6015]  Eventflag
-	     DS:[R4] = R3             	// [145:6015]  
-//6016  
-//6017  	Sleepflag =0;
+	     .stabn 68,0,6011,LM685-_Step1
+	     R3 = 0                   	// [141:6011]  
+	     DS = seg(_Sleepflag)     	// [142:6011]  Sleepflag
+	     R4 = (_Sleepflag)        	// [143:6011]  Sleepflag
+	     DS:[R4] = R3             	// [145:6011]  
+//6012  	
+//6013  	Leader_Player =0;
 
 LM686:
-	     .stabn 68,0,6017,LM686-_Step1
-	     R3 = 0                   	// [147:6017]  
-	     DS = seg(_Sleepflag)     	// [148:6017]  Sleepflag
-	     R4 = (_Sleepflag)        	// [149:6017]  Sleepflag
-	     DS:[R4] = R3             	// [151:6017]  
-//6019  	//Cycle_Timeout_cnt=1;  //在选定Players后再设
-//6020  //	Silent_updatedFlag =0;
-//6021  	
-//6022  
-//6023  	Leader_Player =0;
+	     .stabn 68,0,6013,LM686-_Step1
+	     R3 = 0                   	// [147:6013]  
+	     DS = seg(_Leader_Player) 	// [148:6013]  Leader_Player
+	     R4 = (_Leader_Player)    	// [149:6013]  Leader_Player
+	     DS:[R4] = R3             	// [151:6013]  
+//6014  	Lowest_Player =0;
 
 LM687:
-	     .stabn 68,0,6023,LM687-_Step1
-	     R3 = 0                   	// [153:6023]  
-	     DS = seg(_Leader_Player) 	// [154:6023]  Leader_Player
-	     R4 = (_Leader_Player)    	// [155:6023]  Leader_Player
-	     DS:[R4] = R3             	// [157:6023]  
-//6024  	Lowest_Player =0;
+	     .stabn 68,0,6014,LM687-_Step1
+	     R3 = 0                   	// [153:6014]  
+	     DS = seg(_Lowest_Player) 	// [154:6014]  Lowest_Player
+	     R4 = (_Lowest_Player)    	// [155:6014]  Lowest_Player
+	     DS:[R4] = R3             	// [157:6014]  
+//6015  
+//6016  	Round =0;
 
 LM688:
-	     .stabn 68,0,6024,LM688-_Step1
-	     R3 = 0                   	// [159:6024]  
-	     DS = seg(_Lowest_Player) 	// [160:6024]  Lowest_Player
-	     R4 = (_Lowest_Player)    	// [161:6024]  Lowest_Player
-	     DS:[R4] = R3             	// [163:6024]  
-//6026  //	AnswerDuringQue =0;
-//6027  //	Qn = 0;
-//6028  
-//6029  //	Length_LQGame =0;
-//6030  	Round =0;
+	     .stabn 68,0,6016,LM688-_Step1
+	     R3 = 0                   	// [159:6016]  
+	     DS = seg(_Round)         	// [160:6016]  Round
+	     R4 = (_Round)            	// [161:6016]  Round
+	     DS:[R4] = R3             	// [163:6016]  
+//6017  	
+//6018      Key_Event =0;
 
 LM689:
-	     .stabn 68,0,6030,LM689-_Step1
-	     R3 = 0                   	// [165:6030]  
-	     DS = seg(_Round)         	// [166:6030]  Round
-	     R4 = (_Round)            	// [167:6030]  Round
-	     DS:[R4] = R3             	// [169:6030]  
-//6031  	
-//6032      Key_Event =0;
+	     .stabn 68,0,6018,LM689-_Step1
+	     R3 = 0                   	// [165:6018]  
+	     DS = seg(_Key_Event)     	// [166:6018]  Key_Event
+	     R4 = (_Key_Event)        	// [167:6018]  Key_Event
+	     DS:[R4] = R3             	// [169:6018]  
+//6023  //	QuestionCycle[2]=0;
+//6024  //	QuestionCycle[3]=0;
+//6025  
+//6026  
+//6027      CheaterFlag =0;
 
 LM690:
-	     .stabn 68,0,6032,LM690-_Step1
-	     R3 = 0                   	// [171:6032]  
-	     DS = seg(_Key_Event)     	// [172:6032]  Key_Event
-	     R4 = (_Key_Event)        	// [173:6032]  Key_Event
-	     DS:[R4] = R3             	// [175:6032]  
-//6043  
-//6044  	
-//6045     //for(i=0;i<4;i++)
-//6046     	{
-//6047        Cur_Active_Player = 0;
+	     .stabn 68,0,6027,LM690-_Step1
+	     R3 = 0                   	// [171:6027]  
+	     DS = seg(_CheaterFlag)   	// [172:6027]  CheaterFlag
+	     R4 = (_CheaterFlag)      	// [173:6027]  CheaterFlag
+	     DS:[R4] = R3             	// [175:6027]  
+//6028  	Player_Activing_Bit =0;
 
 LM691:
-	     .stabn 68,0,6047,LM691-_Step1
-	     R3 = 0                   	// [177:6047]  
-	     DS = seg(_Cur_Active_Player)	// [178:6047]  Cur_Active_Player
-	     R4 = (_Cur_Active_Player)	// [179:6047]  Cur_Active_Player
-	     DS:[R4] = R3             	// [181:6047]  
-//6048     	}
-//6049  
-//6050  	QuestionCycle[0]=0;
+	     .stabn 68,0,6028,LM691-_Step1
+	     R3 = 0                   	// [177:6028]  
+	     DS = seg(_Player_Activing_Bit)	// [178:6028]  Player_Activing_Bit
+	     R4 = (_Player_Activing_Bit)	// [179:6028]  Player_Activing_Bit
+	     DS:[R4] = R3             	// [181:6028]  
+//6029    
+//6030     
+//6031          Questions_init();	
 
 LM692:
-	     .stabn 68,0,6050,LM692-_Step1
-	     R3 = 0                   	// [183:6050]  
-	     DS = seg(_QuestionCycle) 	// [184:6050]  QuestionCycle
-	     R4 = (_QuestionCycle)    	// [185:6050]  QuestionCycle
-	     DS:[R4] = R3             	// [187:6050]  
-//6051  	QuestionCycle[1]=0;
+	     .stabn 68,0,6031,LM692-_Step1
+	     call _Questions_init     	// [183:6031]  Questions_init
+BB2_PU60:	// 0x12b0
+// BB:2 cycle count: 3
+//6032  		Reset_Memory();	
 
 LM693:
-	     .stabn 68,0,6051,LM693-_Step1
-	     R3 = 0                   	// [189:6051]  
-	     DS = seg(_QuestionCycle+1)	// [190:6051]  QuestionCycle+1
-	     R4 = (_QuestionCycle+1)  	// [191:6051]  QuestionCycle+1
-	     DS:[R4] = R3             	// [193:6051]  
-//6052  	QuestionCycle[2]=0;
+	     .stabn 68,0,6032,LM693-_Step1
+	     call _Reset_Memory       	// [0:6032]  Reset_Memory
+BB3_PU60:	// 0x12b2
+// BB:3 cycle count: 2
+//6033        
+//6034  		 i = 0;///////////////!!!!!!!!!!!!!!!!!!
 
 LM694:
-	     .stabn 68,0,6052,LM694-_Step1
-	     R3 = 0                   	// [195:6052]  
-	     DS = seg(_QuestionCycle+2)	// [196:6052]  QuestionCycle+2
-	     R4 = (_QuestionCycle+2)  	// [197:6052]  QuestionCycle+2
-	     DS:[R4] = R3             	// [199:6052]  
-//6053  	QuestionCycle[3]=0;
+	     .stabn 68,0,6034,LM694-_Step1
+	     R4 = 0                   	// [0:6034]  
+	     [BP + 2] = R4            	// [1:6034]  i
+L_60_78:	// 0x12b4
+// BB:4 cycle count: 7
+//6035  		while(i<C_Player_Num)
 
 LM695:
-	     .stabn 68,0,6053,LM695-_Step1
-	     R3 = 0                   	// [201:6053]  
-	     DS = seg(_QuestionCycle+3)	// [202:6053]  QuestionCycle+3
-	     R4 = (_QuestionCycle+3)  	// [203:6053]  QuestionCycle+3
-	     DS:[R4] = R3             	// [205:6053]  
-//6054  
-//6055  
-//6056      CheaterFlag =0;
+	     .stabn 68,0,6035,LM695-_Step1
+	     R4 = [BP + 2]            	// [0:6035]  i
+	     cmp R4, 9                	// [2:6035]  
+	     ja L_60_79               	// [3:6035]  
+BB5_PU60:	// 0x12b7
+// BB:5 cycle count: 32
+//6036  		{
+//6037  			Player_Point[i] = 0;
 
 LM696:
-	     .stabn 68,0,6056,LM696-_Step1
-	     R3 = 0                   	// [207:6056]  
-	     DS = seg(_CheaterFlag)   	// [208:6056]  CheaterFlag
-	     R4 = (_CheaterFlag)      	// [209:6056]  CheaterFlag
-	     DS:[R4] = R3             	// [211:6056]  
-//6057  	Player_Activing_Bit =0;
+	     .stabn 68,0,6037,LM696-_Step1
+	     R4 = [BP + 2]            	// [0:6037]  i
+	     R3 = 0                   	// [2:6037]  
+	     R1 = (_Player_Point)     	// [3:6037]  Player_Point
+	     R2 = seg(_Player_Point)  	// [5:6037]  Player_Point
+	     R4 = R4 + R1             	// [6:6037]  
+	     R3 = R3 + R2, Carry      	// [7:6037]  
+	     DS = R3                  	// [8:6037]  
+	     R3 = 0                   	// [9:6037]  
+	     DS:[R4] = R3             	// [10:6037]  
+//6038  			Rounds[i] =0;
 
 LM697:
-	     .stabn 68,0,6057,LM697-_Step1
-	     R3 = 0                   	// [213:6057]  
-	     DS = seg(_Player_Activing_Bit)	// [214:6057]  Player_Activing_Bit
-	     R4 = (_Player_Activing_Bit)	// [215:6057]  Player_Activing_Bit
-	     DS:[R4] = R3             	// [217:6057]  
-//6058    
-//6059     
-//6060          Questions_init();	
+	     .stabn 68,0,6038,LM697-_Step1
+	     R4 = [BP + 2]            	// [12:6038]  i
+	     R3 = 0                   	// [14:6038]  
+	     R1 = (_Rounds)           	// [15:6038]  Rounds
+	     R2 = seg(_Rounds)        	// [17:6038]  Rounds
+	     R4 = R4 + R1             	// [18:6038]  
+	     R3 = R3 + R2, Carry      	// [19:6038]  
+	     DS = R3                  	// [20:6038]  
+	     R3 = 0                   	// [21:6038]  
+	     DS:[R4] = R3             	// [22:6038]  
+//6039  			i++;	
 
 LM698:
-	     .stabn 68,0,6060,LM698-_Step1
-	     call _Questions_init     	// [219:6060]  Questions_init
-BB2_PU60:	// 0x12ce
-// BB:2 cycle count: 3
-//6061  		Reset_Memory();	
+	     .stabn 68,0,6039,LM698-_Step1
+	     R4 = [BP + 2]            	// [24:6039]  i
+	     R4 = R4 + 1              	// [26:6039]  
+	     [BP + 2] = R4            	// [27:6039]  i
+	     jmp L_60_78              	// [28:6039]  
+L_60_79:	// 0x12cf
+// BB:6 cycle count: 2
+//6040  					
+//6041  		}
+//6042  		
+//6043  	     i = 0;///////////////!!!!!!!!!!!!!!!!!!
 
 LM699:
-	     .stabn 68,0,6061,LM699-_Step1
-	     call _Reset_Memory       	// [0:6061]  Reset_Memory
-BB3_PU60:	// 0x12d0
-// BB:3 cycle count: 2
-//6062        
-//6063  		 i = 0;///////////////!!!!!!!!!!!!!!!!!!
+	     .stabn 68,0,6043,LM699-_Step1
+	     R4 = 0                   	// [0:6043]  
+	     [BP + 2] = R4            	// [1:6043]  i
+L_60_80:	// 0x12d1
+// BB:7 cycle count: 7
+//6044  		while(i<C_ElementsRAM)
 
 LM700:
-	     .stabn 68,0,6063,LM700-_Step1
-	     R4 = 0                   	// [0:6063]  
-	     [BP + 2] = R4            	// [1:6063]  i
-L_60_78:	// 0x12d2
-// BB:4 cycle count: 7
-//6064  		while(i<C_Player_Num)
+	     .stabn 68,0,6044,LM700-_Step1
+	     R4 = [BP + 2]            	// [0:6044]  i
+	     cmp R4, 1                	// [2:6044]  
+	     ja L_60_81               	// [3:6044]  
+BB8_PU60:	// 0x12d4
+// BB:8 cycle count: 32
+//6045  		{
+//6046  			Pingame[i] = 0;
 
 LM701:
-	     .stabn 68,0,6064,LM701-_Step1
-	     R4 = [BP + 2]            	// [0:6064]  i
-	     cmp R4, 9                	// [2:6064]  
-	     ja L_60_79               	// [3:6064]  
-BB5_PU60:	// 0x12d5
-// BB:5 cycle count: 32
-//6065  		{
-//6066  			Player_Point[i] = 0;
+	     .stabn 68,0,6046,LM701-_Step1
+	     R4 = [BP + 2]            	// [0:6046]  i
+	     R3 = 0                   	// [2:6046]  
+	     R1 = (_Pingame)          	// [3:6046]  Pingame
+	     R2 = seg(_Pingame)       	// [5:6046]  Pingame
+	     R4 = R4 + R1             	// [6:6046]  
+	     R3 = R3 + R2, Carry      	// [7:6046]  
+	     DS = R3                  	// [8:6046]  
+	     R3 = 0                   	// [9:6046]  
+	     DS:[R4] = R3             	// [10:6046]  
+//6047  			Pselected[i] =0;
 
 LM702:
-	     .stabn 68,0,6066,LM702-_Step1
-	     R4 = [BP + 2]            	// [0:6066]  i
-	     R3 = 0                   	// [2:6066]  
-	     R1 = (_Player_Point)     	// [3:6066]  Player_Point
-	     R2 = seg(_Player_Point)  	// [5:6066]  Player_Point
-	     R4 = R4 + R1             	// [6:6066]  
-	     R3 = R3 + R2, Carry      	// [7:6066]  
-	     DS = R3                  	// [8:6066]  
-	     R3 = 0                   	// [9:6066]  
-	     DS:[R4] = R3             	// [10:6066]  
-//6067  			Rounds[i] =0;
+	     .stabn 68,0,6047,LM702-_Step1
+	     R4 = [BP + 2]            	// [12:6047]  i
+	     R3 = 0                   	// [14:6047]  
+	     R1 = (_Pselected)        	// [15:6047]  Pselected
+	     R2 = seg(_Pselected)     	// [17:6047]  Pselected
+	     R4 = R4 + R1             	// [18:6047]  
+	     R3 = R3 + R2, Carry      	// [19:6047]  
+	     DS = R3                  	// [20:6047]  
+	     R3 = 0                   	// [21:6047]  
+	     DS:[R4] = R3             	// [22:6047]  
+//6048  			i++;	
 
 LM703:
-	     .stabn 68,0,6067,LM703-_Step1
-	     R4 = [BP + 2]            	// [12:6067]  i
-	     R3 = 0                   	// [14:6067]  
-	     R1 = (_Rounds)           	// [15:6067]  Rounds
-	     R2 = seg(_Rounds)        	// [17:6067]  Rounds
-	     R4 = R4 + R1             	// [18:6067]  
-	     R3 = R3 + R2, Carry      	// [19:6067]  
-	     DS = R3                  	// [20:6067]  
-	     R3 = 0                   	// [21:6067]  
-	     DS:[R4] = R3             	// [22:6067]  
-//6068  			i++;	
+	     .stabn 68,0,6048,LM703-_Step1
+	     R4 = [BP + 2]            	// [24:6048]  i
+	     R4 = R4 + 1              	// [26:6048]  
+	     [BP + 2] = R4            	// [27:6048]  i
+	     jmp L_60_80              	// [28:6048]  
+L_60_81:	// 0x12ec
+// BB:9 cycle count: 9
+//6056  //    if(VOL1Flag==1)
+//6057  //   	   Supress_Question_Switch();  
+//6058     
+//6059  
+//6060          BlinkFlag_Data = 0;
 
 LM704:
-	     .stabn 68,0,6068,LM704-_Step1
-	     R4 = [BP + 2]            	// [24:6068]  i
-	     R4 = R4 + 1              	// [26:6068]  
-	     [BP + 2] = R4            	// [27:6068]  i
-	     jmp L_60_78              	// [28:6068]  
-L_60_79:	// 0x12ed
-// BB:6 cycle count: 2
-//6069  					
-//6070  		}
-//6071  		
-//6072  	     i = 0;///////////////!!!!!!!!!!!!!!!!!!
+	     .stabn 68,0,6060,LM704-_Step1
+	     R3 = 0                   	// [0:6060]  
+	     DS = seg(_BlinkFlag_Data)	// [1:6060]  BlinkFlag_Data
+	     R4 = (_BlinkFlag_Data)   	// [2:6060]  BlinkFlag_Data
+	     DS:[R4] = R3             	// [4:6060]  
+//6061          Light_all_off();
 
 LM705:
-	     .stabn 68,0,6072,LM705-_Step1
-	     R4 = 0                   	// [0:6072]  
-	     [BP + 2] = R4            	// [1:6072]  i
-L_60_80:	// 0x12ef
-// BB:7 cycle count: 7
-//6073  		while(i<C_ElementsRAM)
+	     .stabn 68,0,6061,LM705-_Step1
+	     call _Light_all_off      	// [6:6061]  Light_all_off
+BB10_PU60:	// 0x12f3
+// BB:10 cycle count: 3
+//6062  
+//6063          WatchdogClear();     
 
 LM706:
-	     .stabn 68,0,6073,LM706-_Step1
-	     R4 = [BP + 2]            	// [0:6073]  i
-	     cmp R4, 1                	// [2:6073]  
-	     ja L_60_81               	// [3:6073]  
-BB8_PU60:	// 0x12f2
-// BB:8 cycle count: 32
-//6074  		{
-//6075  			Pingame[i] = 0;
+	     .stabn 68,0,6063,LM706-_Step1
+	     call _WatchdogClear      	// [0:6063]  WatchdogClear
+BB11_PU60:	// 0x12f5
+// BB:11 cycle count: 34
+//6064       
+//6065  	    PlayScoresFlag =0;
 
 LM707:
-	     .stabn 68,0,6075,LM707-_Step1
-	     R4 = [BP + 2]            	// [0:6075]  i
-	     R3 = 0                   	// [2:6075]  
-	     R1 = (_Pingame)          	// [3:6075]  Pingame
-	     R2 = seg(_Pingame)       	// [5:6075]  Pingame
-	     R4 = R4 + R1             	// [6:6075]  
-	     R3 = R3 + R2, Carry      	// [7:6075]  
-	     DS = R3                  	// [8:6075]  
-	     R3 = 0                   	// [9:6075]  
-	     DS:[R4] = R3             	// [10:6075]  
-//6076  			Pselected[i] =0;
+	     .stabn 68,0,6065,LM707-_Step1
+	     R3 = 0                   	// [0:6065]  
+	     DS = seg(_PlayScoresFlag)	// [1:6065]  PlayScoresFlag
+	     R4 = (_PlayScoresFlag)   	// [2:6065]  PlayScoresFlag
+	     DS:[R4] = R3             	// [4:6065]  
+//6066  		
+//6067  		TimeCnt = 1;
 
 LM708:
-	     .stabn 68,0,6076,LM708-_Step1
-	     R4 = [BP + 2]            	// [12:6076]  i
-	     R3 = 0                   	// [14:6076]  
-	     R1 = (_Pselected)        	// [15:6076]  Pselected
-	     R2 = seg(_Pselected)     	// [17:6076]  Pselected
-	     R4 = R4 + R1             	// [18:6076]  
-	     R3 = R3 + R2, Carry      	// [19:6076]  
-	     DS = R3                  	// [20:6076]  
-	     R3 = 0                   	// [21:6076]  
-	     DS:[R4] = R3             	// [22:6076]  
-//6077  			i++;	
+	     .stabn 68,0,6067,LM708-_Step1
+	     R3 = 1                   	// [6:6067]  
+	     DS = seg(_TimeCnt)       	// [7:6067]  TimeCnt
+	     R4 = (_TimeCnt)          	// [8:6067]  TimeCnt
+	     DS:[R4] = R3             	// [10:6067]  
+//6071  //		BlinkFlag_Data = All_Led_data;
+//6072  //        FiveSec_En =1;
+//6073  //        FiveSec_cnt =0;
+//6074  
+//6075       Key_activeflag =Playbutton;//ALL_Key_Enable&(~(Key_True|Key_False));
 
 LM709:
-	     .stabn 68,0,6077,LM709-_Step1
-	     R4 = [BP + 2]            	// [24:6077]  i
-	     R4 = R4 + 1              	// [26:6077]  
-	     [BP + 2] = R4            	// [27:6077]  i
-	     jmp L_60_80              	// [28:6077]  
-L_60_81:	// 0x130a
-// BB:9 cycle count: 9
-//6085  //    if(VOL1Flag==1)
-//6086  //   	   Supress_Question_Switch();  
-//6087     
-//6088  
-//6089          BlinkFlag_Data = 0;
+	     .stabn 68,0,6075,LM709-_Step1
+	     R3 = 1                   	// [12:6075]  
+	     DS = seg(_Key_activeflag)	// [13:6075]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [14:6075]  Key_activeflag
+	     DS:[R4] = R3             	// [16:6075]  
+//6076  //     VolumeEnable =1;
+//6077       Key_Event =0; 
 
 LM710:
-	     .stabn 68,0,6089,LM710-_Step1
-	     R3 = 0                   	// [0:6089]  
-	     DS = seg(_BlinkFlag_Data)	// [1:6089]  BlinkFlag_Data
-	     R4 = (_BlinkFlag_Data)   	// [2:6089]  BlinkFlag_Data
-	     DS:[R4] = R3             	// [4:6089]  
-//6090          Light_all_off();
+	     .stabn 68,0,6077,LM710-_Step1
+	     R3 = 0                   	// [18:6077]  
+	     DS = seg(_Key_Event)     	// [19:6077]  Key_Event
+	     R4 = (_Key_Event)        	// [20:6077]  Key_Event
+	     DS:[R4] = R3             	// [22:6077]  
+//6078  
+//6079        if(Restart ==0)
 
 LM711:
-	     .stabn 68,0,6090,LM711-_Step1
-	     call _Light_all_off      	// [6:6090]  Light_all_off
-BB10_PU60:	// 0x1311
-// BB:10 cycle count: 3
-//6091  
-//6092          WatchdogClear();     
+	     .stabn 68,0,6079,LM711-_Step1
+	     DS = seg(_Restart)       	// [24:6079]  Restart
+	     R4 = (_Restart)          	// [25:6079]  Restart
+	     R4 = DS:[R4]             	// [27:6079]  
+	     cmp R4, 0                	// [29:6079]  
+	     jne L_60_82              	// [30:6079]  
+BB12_PU60:	// 0x130f
+// BB:12 cycle count: 18
+//6080        {
+//6081        	  LFX_Data_Cnt =0;
 
 LM712:
-	     .stabn 68,0,6092,LM712-_Step1
-	     call _WatchdogClear      	// [0:6092]  WatchdogClear
-BB11_PU60:	// 0x1313
-// BB:11 cycle count: 34
-//6093       
-//6094  	    PlayScoresFlag =0;
+	     .stabn 68,0,6081,LM712-_Step1
+	     R3 = 0                   	// [0:6081]  
+	     DS = seg(_LFX_Data_Cnt)  	// [1:6081]  LFX_Data_Cnt
+	     R4 = (_LFX_Data_Cnt)     	// [2:6081]  LFX_Data_Cnt
+	     DS:[R4] = R3             	// [4:6081]  
+//6082  		  LED_Cnt =0;
 
 LM713:
-	     .stabn 68,0,6094,LM713-_Step1
-	     R3 = 0                   	// [0:6094]  
-	     DS = seg(_PlayScoresFlag)	// [1:6094]  PlayScoresFlag
-	     R4 = (_PlayScoresFlag)   	// [2:6094]  PlayScoresFlag
-	     DS:[R4] = R3             	// [4:6094]  
-//6095  		
-//6096  		TimeCnt = 1;
+	     .stabn 68,0,6082,LM713-_Step1
+	     R3 = 0                   	// [6:6082]  
+	     DS = seg(_LED_Cnt)       	// [7:6082]  LED_Cnt
+	     R4 = (_LED_Cnt)          	// [8:6082]  LED_Cnt
+	     DS:[R4] = R3             	// [10:6082]  
+//6083  	      LFXFlag_Data =0x01;
 
 LM714:
-	     .stabn 68,0,6096,LM714-_Step1
-	     R3 = 1                   	// [6:6096]  
-	     DS = seg(_TimeCnt)       	// [7:6096]  TimeCnt
-	     R4 = (_TimeCnt)          	// [8:6096]  TimeCnt
-	     DS:[R4] = R3             	// [10:6096]  
-//6100  //		BlinkFlag_Data = All_Led_data;
-//6101  //        FiveSec_En =1;
-//6102  //        FiveSec_cnt =0;
-//6103  
-//6104       Key_activeflag =Playbutton;//ALL_Key_Enable&(~(Key_True|Key_False));
+	     .stabn 68,0,6083,LM714-_Step1
+	     R3 = 1                   	// [12:6083]  
+	     DS = seg(_LFXFlag_Data)  	// [13:6083]  LFXFlag_Data
+	     R4 = (_LFXFlag_Data)     	// [14:6083]  LFXFlag_Data
+	     DS:[R4] = R3             	// [16:6083]  
+L_60_83:	// 0x131e
+// BB:13 cycle count: 16
+//6084  	      do
+//6085  	      {	
+//6086  
+//6087  	      	PauseFlag =0;
 
 LM715:
-	     .stabn 68,0,6104,LM715-_Step1
-	     R3 = 1                   	// [12:6104]  
-	     DS = seg(_Key_activeflag)	// [13:6104]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [14:6104]  Key_activeflag
-	     DS:[R4] = R3             	// [16:6104]  
-//6105  //     VolumeEnable =1;
-//6106       Key_Event =0; 
+	     .stabn 68,0,6087,LM715-_Step1
+	     R3 = 0                   	// [0:6087]  
+	     DS = seg(_PauseFlag)     	// [1:6087]  PauseFlag
+	     R4 = (_PauseFlag)        	// [2:6087]  PauseFlag
+	     DS:[R4] = R3             	// [4:6087]  
+//6088  		    PlayA1800_Elements(SFX_On);	//SFX_ON
 
 LM716:
-	     .stabn 68,0,6106,LM716-_Step1
-	     R3 = 0                   	// [18:6106]  
-	     DS = seg(_Key_Event)     	// [19:6106]  Key_Event
-	     R4 = (_Key_Event)        	// [20:6106]  Key_Event
-	     DS:[R4] = R3             	// [22:6106]  
-//6107  
-//6108        if(Restart ==0)
+	     .stabn 68,0,6088,LM716-_Step1
+	     SP = SP - 1              	// [6:6088]  
+	     R3 = 129                 	// [7:6088]  
+	     R4 = SP + 1              	// [9:6088]  
+	     [R4] = R3                	// [11:6088]  
+	     call _PlayA1800_Elements 	// [13:6088]  PlayA1800_Elements
+BB14_PU60:	// 0x132b
+// BB:14 cycle count: 16
+	     SP = SP + 1              	// [0:6088]  
+//6089  		    //delay_time(8*16);
+//6090  			BlinkFlag_Data = 0;
 
 LM717:
-	     .stabn 68,0,6108,LM717-_Step1
-	     DS = seg(_Restart)       	// [24:6108]  Restart
-	     R4 = (_Restart)          	// [25:6108]  Restart
-	     R4 = DS:[R4]             	// [27:6108]  
-	     cmp R4, 0                	// [29:6108]  
-	     jne L_60_82              	// [30:6108]  
-BB12_PU60:	// 0x132d
-// BB:12 cycle count: 18
-//6109        {
-//6110        	  LFX_Data_Cnt =0;
+	     .stabn 68,0,6090,LM717-_Step1
+	     R3 = 0                   	// [1:6090]  
+	     DS = seg(_BlinkFlag_Data)	// [2:6090]  BlinkFlag_Data
+	     R4 = (_BlinkFlag_Data)   	// [3:6090]  BlinkFlag_Data
+	     DS:[R4] = R3             	// [5:6090]  
+//6091  		    LFXFlag_Data=0;
 
 LM718:
-	     .stabn 68,0,6110,LM718-_Step1
-	     R3 = 0                   	// [0:6110]  
-	     DS = seg(_LFX_Data_Cnt)  	// [1:6110]  LFX_Data_Cnt
-	     R4 = (_LFX_Data_Cnt)     	// [2:6110]  LFX_Data_Cnt
-	     DS:[R4] = R3             	// [4:6110]  
-//6111  		  LED_Cnt =0;
+	     .stabn 68,0,6091,LM718-_Step1
+	     R3 = 0                   	// [7:6091]  
+	     DS = seg(_LFXFlag_Data)  	// [8:6091]  LFXFlag_Data
+	     R4 = (_LFXFlag_Data)     	// [9:6091]  LFXFlag_Data
+	     DS:[R4] = R3             	// [11:6091]  
+//6092  	        Light_all_off();
 
 LM719:
-	     .stabn 68,0,6111,LM719-_Step1
-	     R3 = 0                   	// [6:6111]  
-	     DS = seg(_LED_Cnt)       	// [7:6111]  LED_Cnt
-	     R4 = (_LED_Cnt)          	// [8:6111]  LED_Cnt
-	     DS:[R4] = R3             	// [10:6111]  
-//6112  	      LFXFlag_Data =0x01;
+	     .stabn 68,0,6092,LM719-_Step1
+	     call _Light_all_off      	// [13:6092]  Light_all_off
+BB15_PU60:	// 0x1338
+// BB:15 cycle count: 9
+//6093  	//        FiveSec_En =0;
+//6094  	        PlayA1800_Elements(A_VLMMREN_Hello);	//SFX_ON
 
 LM720:
-	     .stabn 68,0,6112,LM720-_Step1
-	     R3 = 1                   	// [12:6112]  
-	     DS = seg(_LFXFlag_Data)  	// [13:6112]  LFXFlag_Data
-	     R4 = (_LFXFlag_Data)     	// [14:6112]  LFXFlag_Data
-	     DS:[R4] = R3             	// [16:6112]  
-L_60_83:	// 0x133c
-// BB:13 cycle count: 16
-//6113  	      do
-//6114  	      {	
-//6115  
-//6116  	      	PauseFlag =0;
+	     .stabn 68,0,6094,LM720-_Step1
+	     SP = SP - 1              	// [0:6094]  
+	     R3 = 34                  	// [1:6094]  
+	     R4 = SP + 1              	// [2:6094]  
+	     [R4] = R3                	// [4:6094]  
+	     call _PlayA1800_Elements 	// [6:6094]  PlayA1800_Elements
+BB16_PU60:	// 0x133f
+// BB:16 cycle count: 8
+//6095  	        delay_time(8);
 
 LM721:
-	     .stabn 68,0,6116,LM721-_Step1
-	     R3 = 0                   	// [0:6116]  
-	     DS = seg(_PauseFlag)     	// [1:6116]  PauseFlag
-	     R4 = (_PauseFlag)        	// [2:6116]  PauseFlag
-	     DS:[R4] = R3             	// [4:6116]  
-//6117  		    PlayA1800_Elements(SFX_On);	//SFX_ON
+	     .stabn 68,0,6095,LM721-_Step1
+	     R3 = 8                   	// [0:6095]  
+	     R4 = SP + 1              	// [1:6095]  
+	     [R4] = R3                	// [3:6095]  
+	     call _delay_time         	// [5:6095]  delay_time
+BB17_PU60:	// 0x1345
+// BB:17 cycle count: 1
+	     SP = SP + 1              	// [0:6095]  
+Lt_60_1:	// 0x1346
+// BB:18 cycle count: 10
+//6096  	      	}while(PauseFlag);
 
 LM722:
-	     .stabn 68,0,6117,LM722-_Step1
-	     SP = SP - 1              	// [6:6117]  
-	     R3 = 127                 	// [7:6117]  
-	     R4 = SP + 1              	// [9:6117]  
-	     [R4] = R3                	// [11:6117]  
-	     call _PlayA1800_Elements 	// [13:6117]  PlayA1800_Elements
-BB14_PU60:	// 0x1349
-// BB:14 cycle count: 16
-	     SP = SP + 1              	// [0:6117]  
-//6118  		    //delay_time(8*16);
-//6119  			BlinkFlag_Data = 0;
+	     .stabn 68,0,6096,LM722-_Step1
+	     DS = seg(_PauseFlag)     	// [0:6096]  PauseFlag
+	     R4 = (_PauseFlag)        	// [1:6096]  PauseFlag
+	     R4 = DS:[R4]             	// [3:6096]  
+	     cmp R4, 0                	// [5:6096]  
+	     jne L_60_83              	// [6:6096]  
+L_60_82:	// 0x134c
+// BB:19 cycle count: 28
+//6097        }
+//6098         VolumeEnable =0;
 
 LM723:
-	     .stabn 68,0,6119,LM723-_Step1
-	     R3 = 0                   	// [1:6119]  
-	     DS = seg(_BlinkFlag_Data)	// [2:6119]  BlinkFlag_Data
-	     R4 = (_BlinkFlag_Data)   	// [3:6119]  BlinkFlag_Data
-	     DS:[R4] = R3             	// [5:6119]  
-//6120  		    LFXFlag_Data=0;
+	     .stabn 68,0,6098,LM723-_Step1
+	     R3 = 0                   	// [0:6098]  
+	     DS = seg(_VolumeEnable)  	// [1:6098]  VolumeEnable
+	     R4 = (_VolumeEnable)     	// [2:6098]  VolumeEnable
+	     DS:[R4] = R3             	// [4:6098]  
+//6099       Key_activeflag =Only_Play_KeyEnable;//ALL_Key_Enable&(~(Key_True|Key_False));
 
 LM724:
-	     .stabn 68,0,6120,LM724-_Step1
-	     R3 = 0                   	// [7:6120]  
-	     DS = seg(_LFXFlag_Data)  	// [8:6120]  LFXFlag_Data
-	     R4 = (_LFXFlag_Data)     	// [9:6120]  LFXFlag_Data
-	     DS:[R4] = R3             	// [11:6120]  
-//6121  	        Light_all_off();
+	     .stabn 68,0,6099,LM724-_Step1
+	     R3 = 7                   	// [6:6099]  
+	     DS = seg(_Key_activeflag)	// [7:6099]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:6099]  Key_activeflag
+	     DS:[R4] = R3             	// [10:6099]  
+//6100       Key_Event =0;    
 
 LM725:
-	     .stabn 68,0,6121,LM725-_Step1
-	     call _Light_all_off      	// [13:6121]  Light_all_off
-BB15_PU60:	// 0x1356
-// BB:15 cycle count: 9
-//6122  	//        FiveSec_En =0;
-//6123  	        PlayA1800_Elements(A_VLMMREN_Hello);	//SFX_ON
+	     .stabn 68,0,6100,LM725-_Step1
+	     R3 = 0                   	// [12:6100]  
+	     DS = seg(_Key_Event)     	// [13:6100]  Key_Event
+	     R4 = (_Key_Event)        	// [14:6100]  Key_Event
+	     DS:[R4] = R3             	// [16:6100]  
+//6101        
+//6102  	  PlayA1800_Elements(A_VLMMREN_SetUp_01);
 
 LM726:
-	     .stabn 68,0,6123,LM726-_Step1
-	     SP = SP - 1              	// [0:6123]  
-	     R3 = 34                  	// [1:6123]  
-	     R4 = SP + 1              	// [2:6123]  
-	     [R4] = R3                	// [4:6123]  
-	     call _PlayA1800_Elements 	// [6:6123]  PlayA1800_Elements
-BB16_PU60:	// 0x135d
-// BB:16 cycle count: 8
-//6124  	        delay_time(8);
+	     .stabn 68,0,6102,LM726-_Step1
+	     SP = SP - 1              	// [18:6102]  
+	     R3 = 71                  	// [19:6102]  
+	     R4 = SP + 1              	// [21:6102]  
+	     [R4] = R3                	// [23:6102]  
+	     call _PlayA1800_Elements 	// [25:6102]  PlayA1800_Elements
+BB20_PU60:	// 0x1363
+// BB:20 cycle count: 9
+//6103        PlayA1800_Elements(A_VLMMREN_SetUp_04);
 
 LM727:
-	     .stabn 68,0,6124,LM727-_Step1
-	     R3 = 8                   	// [0:6124]  
-	     R4 = SP + 1              	// [1:6124]  
-	     [R4] = R3                	// [3:6124]  
-	     call _delay_time         	// [5:6124]  delay_time
-BB17_PU60:	// 0x1363
-// BB:17 cycle count: 1
-	     SP = SP + 1              	// [0:6124]  
-Lt_60_1:	// 0x1364
-// BB:18 cycle count: 10
-//6125  	      	}while(PauseFlag);
+	     .stabn 68,0,6103,LM727-_Step1
+	     R3 = 74                  	// [0:6103]  
+	     R4 = SP + 1              	// [2:6103]  
+	     [R4] = R3                	// [4:6103]  
+	     call _PlayA1800_Elements 	// [6:6103]  PlayA1800_Elements
+BB21_PU60:	// 0x136a
+// BB:21 cycle count: 8
+//6104        delay_time(8);
 
 LM728:
-	     .stabn 68,0,6125,LM728-_Step1
-	     DS = seg(_PauseFlag)     	// [0:6125]  PauseFlag
-	     R4 = (_PauseFlag)        	// [1:6125]  PauseFlag
-	     R4 = DS:[R4]             	// [3:6125]  
-	     cmp R4, 0                	// [5:6125]  
-	     jne L_60_83              	// [6:6125]  
-L_60_82:	// 0x136a
-// BB:19 cycle count: 28
-//6126        }
-//6127         VolumeEnable =0;
+	     .stabn 68,0,6104,LM728-_Step1
+	     R3 = 8                   	// [0:6104]  
+	     R4 = SP + 1              	// [1:6104]  
+	     [R4] = R3                	// [3:6104]  
+	     call _delay_time         	// [5:6104]  delay_time
+BB22_PU60:	// 0x1370
+// BB:22 cycle count: 8
+//6105        PlayA1800_Elements(A_VLMMREN_Button_01a);
 
 LM729:
-	     .stabn 68,0,6127,LM729-_Step1
-	     R3 = 0                   	// [0:6127]  
-	     DS = seg(_VolumeEnable)  	// [1:6127]  VolumeEnable
-	     R4 = (_VolumeEnable)     	// [2:6127]  VolumeEnable
-	     DS:[R4] = R3             	// [4:6127]  
-//6128       Key_activeflag =Only_Play_KeyEnable;//ALL_Key_Enable&(~(Key_True|Key_False));
+	     .stabn 68,0,6105,LM729-_Step1
+	     R3 = 7                   	// [0:6105]  
+	     R4 = SP + 1              	// [1:6105]  
+	     [R4] = R3                	// [3:6105]  
+	     call _PlayA1800_Elements 	// [5:6105]  PlayA1800_Elements
+BB23_PU60:	// 0x1376
+// BB:23 cycle count: 1
+	     SP = SP + 1              	// [0:6105]  
+L_60_84:	// 0x1377
+// BB:24 cycle count: 10
+//6106       while(1) 
+//6107       {  
+//6108  
+//6109  	      if(Sleepflag)
 
 LM730:
-	     .stabn 68,0,6128,LM730-_Step1
-	     R3 = 7                   	// [6:6128]  
-	     DS = seg(_Key_activeflag)	// [7:6128]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [8:6128]  Key_activeflag
-	     DS:[R4] = R3             	// [10:6128]  
-//6129       Key_Event =0;    
+	     .stabn 68,0,6109,LM730-_Step1
+	     DS = seg(_Sleepflag)     	// [0:6109]  Sleepflag
+	     R4 = (_Sleepflag)        	// [1:6109]  Sleepflag
+	     R4 = DS:[R4]             	// [3:6109]  
+	     cmp R4, 0                	// [5:6109]  
+	     je L_60_86               	// [6:6109]  
+BB25_PU60:	// 0x137d
+// BB:25 cycle count: 7
+//6110  		  	return 0;
 
 LM731:
-	     .stabn 68,0,6129,LM731-_Step1
-	     R3 = 0                   	// [12:6129]  
-	     DS = seg(_Key_Event)     	// [13:6129]  Key_Event
-	     R4 = (_Key_Event)        	// [14:6129]  Key_Event
-	     DS:[R4] = R3             	// [16:6129]  
-//6130        
-//6131  	  PlayA1800_Elements(A_VLMMREN_SetUp_01);
+	     .stabn 68,0,6110,LM731-_Step1
+	     R1 = 0                   	// [0:6110]  
+	     SP = SP + 4              	// [1:6110]  
+	     pop BP, PC from [SP]     	// [2:6110]  
+L_60_86:	// 0x1380
+// BB:26 cycle count: 10
+//6111  
+//6112  
+//6113  	      temp = delay_time(20*16);
 
 LM732:
-	     .stabn 68,0,6131,LM732-_Step1
-	     SP = SP - 1              	// [18:6131]  
-	     R3 = 71                  	// [19:6131]  
-	     R4 = SP + 1              	// [21:6131]  
-	     [R4] = R3                	// [23:6131]  
-	     call _PlayA1800_Elements 	// [25:6131]  PlayA1800_Elements
-BB20_PU60:	// 0x1381
-// BB:20 cycle count: 9
-//6132        PlayA1800_Elements(A_VLMMREN_SetUp_04);
+	     .stabn 68,0,6113,LM732-_Step1
+	     SP = SP - 1              	// [0:6113]  
+	     R3 = 320                 	// [1:6113]  
+	     R4 = SP + 1              	// [3:6113]  
+	     [R4] = R3                	// [5:6113]  
+	     call _delay_time         	// [7:6113]  delay_time
+BB27_PU60:	// 0x1388
+// BB:27 cycle count: 10
+	     SP = SP + 1              	// [0:6113]  
+	     [BP + 3] = R1            	// [1:6113]  temp
+//6114  	      
+//6115  	      if(temp == TimeOver)
 
 LM733:
-	     .stabn 68,0,6132,LM733-_Step1
-	     R3 = 74                  	// [0:6132]  
-	     R4 = SP + 1              	// [2:6132]  
-	     [R4] = R3                	// [4:6132]  
-	     call _PlayA1800_Elements 	// [6:6132]  PlayA1800_Elements
-BB21_PU60:	// 0x1388
-// BB:21 cycle count: 8
-//6133        delay_time(8);
+	     .stabn 68,0,6115,LM733-_Step1
+	     R4 = [BP + 3]            	// [2:6115]  temp
+	     cmp R4, 61452            	// [4:6115]  
+	     jne L_60_88              	// [6:6115]  
+BB28_PU60:	// 0x138e
+// BB:28 cycle count: 11
+//6116  	      {
+//6117  	      	      timeovercnt++;
 
 LM734:
-	     .stabn 68,0,6133,LM734-_Step1
-	     R3 = 8                   	// [0:6133]  
-	     R4 = SP + 1              	// [1:6133]  
-	     [R4] = R3                	// [3:6133]  
-	     call _delay_time         	// [5:6133]  delay_time
-BB22_PU60:	// 0x138e
-// BB:22 cycle count: 8
-//6134        PlayA1800_Elements(A_VLMMREN_Button_01a);
+	     .stabn 68,0,6117,LM734-_Step1
+	     R4 = [BP + 0]            	// [0:6117]  timeovercnt
+	     R4 = R4 + 1              	// [2:6117]  
+	     [BP + 0] = R4            	// [3:6117]  timeovercnt
+//6118  	      	  
+//6119  	      	  
+//6120  	      	
+//6121  	      	      if(timeovercnt<9)
 
 LM735:
-	     .stabn 68,0,6134,LM735-_Step1
-	     R3 = 7                   	// [0:6134]  
-	     R4 = SP + 1              	// [1:6134]  
-	     [R4] = R3                	// [3:6134]  
-	     call _PlayA1800_Elements 	// [5:6134]  PlayA1800_Elements
-BB23_PU60:	// 0x1394
-// BB:23 cycle count: 1
-	     SP = SP + 1              	// [0:6134]  
-L_60_84:	// 0x1395
-// BB:24 cycle count: 10
-//6135       while(1) 
-//6136       {  
-//6137  
-//6138  	      if(Sleepflag)
+	     .stabn 68,0,6121,LM735-_Step1
+	     R4 = [BP + 0]            	// [4:6121]  timeovercnt
+	     cmp R4, 8                	// [6:6121]  
+	     ja L_60_90               	// [7:6121]  
+BB29_PU60:	// 0x1394
+// BB:29 cycle count: 10
+//6122  	      	      {
+//6123  			         PlayA1800_Elements(A_VLMMREN_SetUp_01);
 
 LM736:
-	     .stabn 68,0,6138,LM736-_Step1
-	     DS = seg(_Sleepflag)     	// [0:6138]  Sleepflag
-	     R4 = (_Sleepflag)        	// [1:6138]  Sleepflag
-	     R4 = DS:[R4]             	// [3:6138]  
-	     cmp R4, 0                	// [5:6138]  
-	     je L_60_86               	// [6:6138]  
-BB25_PU60:	// 0x139b
-// BB:25 cycle count: 7
-//6139  		  	return 0;
+	     .stabn 68,0,6123,LM736-_Step1
+	     SP = SP - 1              	// [0:6123]  
+	     R3 = 71                  	// [1:6123]  
+	     R4 = SP + 1              	// [3:6123]  
+	     [R4] = R3                	// [5:6123]  
+	     call _PlayA1800_Elements 	// [7:6123]  PlayA1800_Elements
+BB30_PU60:	// 0x139c
+// BB:30 cycle count: 9
+//6124  			         PlayA1800_Elements(A_VLMMREN_SetUp_03);
 
 LM737:
-	     .stabn 68,0,6139,LM737-_Step1
-	     R1 = 0                   	// [0:6139]  
-	     SP = SP + 4              	// [1:6139]  
-	     pop BP, PC from [SP]     	// [2:6139]  
-L_60_86:	// 0x139e
-// BB:26 cycle count: 10
-//6140  
-//6141  
-//6142  	      temp = delay_time(20*16);
+	     .stabn 68,0,6124,LM737-_Step1
+	     R3 = 73                  	// [0:6124]  
+	     R4 = SP + 1              	// [2:6124]  
+	     [R4] = R3                	// [4:6124]  
+	     call _PlayA1800_Elements 	// [6:6124]  PlayA1800_Elements
+BB31_PU60:	// 0x13a3
+// BB:31 cycle count: 8
+//6125  			         PlayA1800_Elements(A_VLMMREN_Button_01a);
 
 LM738:
-	     .stabn 68,0,6142,LM738-_Step1
-	     SP = SP - 1              	// [0:6142]  
-	     R3 = 320                 	// [1:6142]  
-	     R4 = SP + 1              	// [3:6142]  
-	     [R4] = R3                	// [5:6142]  
-	     call _delay_time         	// [7:6142]  delay_time
-BB27_PU60:	// 0x13a6
-// BB:27 cycle count: 10
-	     SP = SP + 1              	// [0:6142]  
-	     [BP + 3] = R1            	// [1:6142]  temp
-//6143  	      
-//6144  	      if(temp == TimeOver)
+	     .stabn 68,0,6125,LM738-_Step1
+	     R3 = 7                   	// [0:6125]  
+	     R4 = SP + 1              	// [1:6125]  
+	     [R4] = R3                	// [3:6125]  
+	     call _PlayA1800_Elements 	// [5:6125]  PlayA1800_Elements
+BB32_PU60:	// 0x13a9
+// BB:32 cycle count: 5
+	     SP = SP + 1              	// [0:6125]  
+	     jmp L_60_89              	// [1:6125]  
+L_60_90:	// 0x13ab
+// BB:33 cycle count: 3
+//6126  			      
+//6127  	      	      }
+//6128  	      	     else
+//6129  	      	     {
+//6130  	      	        GameTimeout();	
 
 LM739:
-	     .stabn 68,0,6144,LM739-_Step1
-	     R4 = [BP + 3]            	// [2:6144]  temp
-	     cmp R4, 61452            	// [4:6144]  
-	     jne L_60_88              	// [6:6144]  
-BB28_PU60:	// 0x13ac
-// BB:28 cycle count: 11
-//6145  	      {
-//6146  	      	      timeovercnt++;
+	     .stabn 68,0,6130,LM739-_Step1
+	     call _GameTimeout        	// [0:6130]  GameTimeout
+BB34_PU60:	// 0x13ad
+// BB:34 cycle count: 2
+//6131  	      	     	timeovercnt=0;
 
 LM740:
-	     .stabn 68,0,6146,LM740-_Step1
-	     R4 = [BP + 0]            	// [0:6146]  timeovercnt
-	     R4 = R4 + 1              	// [2:6146]  
-	     [BP + 0] = R4            	// [3:6146]  timeovercnt
-//6147  	      	  
-//6148  	      	  
-//6149  	      	
-//6150  	      	      if(timeovercnt<9)
-
-LM741:
-	     .stabn 68,0,6150,LM741-_Step1
-	     R4 = [BP + 0]            	// [4:6150]  timeovercnt
-	     cmp R4, 8                	// [6:6150]  
-	     ja L_60_90               	// [7:6150]  
-BB29_PU60:	// 0x13b2
-// BB:29 cycle count: 10
-//6151  	      	      {
-//6152  			         PlayA1800_Elements(A_VLMMREN_SetUp_01);
-
-LM742:
-	     .stabn 68,0,6152,LM742-_Step1
-	     SP = SP - 1              	// [0:6152]  
-	     R3 = 71                  	// [1:6152]  
-	     R4 = SP + 1              	// [3:6152]  
-	     [R4] = R3                	// [5:6152]  
-	     call _PlayA1800_Elements 	// [7:6152]  PlayA1800_Elements
-BB30_PU60:	// 0x13ba
-// BB:30 cycle count: 9
-//6153  			         PlayA1800_Elements(A_VLMMREN_SetUp_03);
-
-LM743:
-	     .stabn 68,0,6153,LM743-_Step1
-	     R3 = 73                  	// [0:6153]  
-	     R4 = SP + 1              	// [2:6153]  
-	     [R4] = R3                	// [4:6153]  
-	     call _PlayA1800_Elements 	// [6:6153]  PlayA1800_Elements
-BB31_PU60:	// 0x13c1
-// BB:31 cycle count: 8
-//6154  			         PlayA1800_Elements(A_VLMMREN_Button_01a);
-
-LM744:
-	     .stabn 68,0,6154,LM744-_Step1
-	     R3 = 7                   	// [0:6154]  
-	     R4 = SP + 1              	// [1:6154]  
-	     [R4] = R3                	// [3:6154]  
-	     call _PlayA1800_Elements 	// [5:6154]  PlayA1800_Elements
-BB32_PU60:	// 0x13c7
-// BB:32 cycle count: 5
-	     SP = SP + 1              	// [0:6154]  
-	     jmp L_60_89              	// [1:6154]  
-L_60_90:	// 0x13c9
-// BB:33 cycle count: 3
-//6155  			      
-//6156  	      	      }
-//6157  	      	     else
-//6158  	      	     {
-//6159  	      	        GameTimeout();	
-
-LM745:
-	     .stabn 68,0,6159,LM745-_Step1
-	     call _GameTimeout        	// [0:6159]  GameTimeout
-BB34_PU60:	// 0x13cb
-// BB:34 cycle count: 2
-//6160  	      	     	timeovercnt=0;
-
-LM746:
-	     .stabn 68,0,6160,LM746-_Step1
-	     R4 = 0                   	// [0:6160]  
-	     [BP + 0] = R4            	// [1:6160]  timeovercnt
-L_60_89:	// 0x13cd
+	     .stabn 68,0,6131,LM740-_Step1
+	     R4 = 0                   	// [0:6131]  
+	     [BP + 0] = R4            	// [1:6131]  timeovercnt
+L_60_89:	// 0x13af
 // BB:35 cycle count: 4
 
-LM747:
-	     .stabn 68,0,6150,LM747-_Step1
-	     jmp L_60_87              	// [0:6150]  
-L_60_88:	// 0x13ce
+LM741:
+	     .stabn 68,0,6121,LM741-_Step1
+	     jmp L_60_87              	// [0:6121]  
+L_60_88:	// 0x13b0
 // BB:36 cycle count: 2
-//6162  	      	       
-//6163  	      	     }
-//6164  	      }
-//6165  	      else
-//6166  	           timeovercnt =0;  
+//6133  	      	       
+//6134  	      	     }
+//6135  	      }
+//6136  	      else
+//6137  	           timeovercnt =0;  
+
+LM742:
+	     .stabn 68,0,6137,LM742-_Step1
+	     R4 = 0                   	// [0:6137]  
+	     [BP + 0] = R4            	// [1:6137]  timeovercnt
+L_60_87:	// 0x13b2
+// BB:37 cycle count: 10
+//6138  	      
+//6139  	      if((Key_Event==PB_button))
+
+LM743:
+	     .stabn 68,0,6139,LM743-_Step1
+	     DS = seg(_Key_Event)     	// [0:6139]  Key_Event
+	     R4 = (_Key_Event)        	// [1:6139]  Key_Event
+	     R4 = DS:[R4]             	// [3:6139]  
+	     cmp R4, 2                	// [5:6139]  
+	     jne L_60_92              	// [6:6139]  
+BB38_PU60:	// 0x13b8
+// BB:38 cycle count: 16
+//6140  	      {  
+//6141  	           Key_Event =0;  
+
+LM744:
+	     .stabn 68,0,6141,LM744-_Step1
+	     R3 = 0                   	// [0:6141]  
+	     DS = seg(_Key_Event)     	// [1:6141]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6141]  Key_Event
+	     DS:[R4] = R3             	// [4:6141]  
+//6142  	         if(Registerd_Num<10)
+
+LM745:
+	     .stabn 68,0,6142,LM745-_Step1
+	     DS = seg(_Registerd_Num) 	// [6:6142]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [7:6142]  Registerd_Num
+	     R4 = DS:[R4]             	// [9:6142]  
+	     cmp R4, 9                	// [11:6142]  
+	     ja L_60_94               	// [12:6142]  
+BB39_PU60:	// 0x13c3
+// BB:39 cycle count: 30
+//6143  	         {   
+//6144  	      	  Registerd_Num++;
+
+LM746:
+	     .stabn 68,0,6144,LM746-_Step1
+	     DS = seg(_Registerd_Num) 	// [0:6144]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:6144]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:6144]  
+	     R4 = R4 + 1              	// [5:6144]  
+	     DS = seg(_Registerd_Num) 	// [6:6144]  Registerd_Num
+	     R3 = (_Registerd_Num)    	// [7:6144]  Registerd_Num
+	     DS:[R3] = R4             	// [9:6144]  
+//6145  			  //PlayA1800_Elements(SFX_Plus);
+//6146  			   Play_Seq(Registerd_Num,C_NX);//PlayA1800_Other(Serie_N_NumPlayers);
+
+LM747:
+	     .stabn 68,0,6146,LM747-_Step1
+	     SP = SP - 2              	// [11:6146]  
+	     DS = seg(_Registerd_Num) 	// [12:6146]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [13:6146]  Registerd_Num
+	     R3 = DS:[R4]             	// [15:6146]  
+	     R4 = SP + 1              	// [17:6146]  
+	     [R4] = R3                	// [19:6146]  
+	     R3 = 80                  	// [21:6146]  
+	     R4 = SP + 2              	// [23:6146]  
+	     [R4] = R3                	// [25:6146]  
+	     call _Play_Seq           	// [27:6146]  Play_Seq
+BB40_PU60:	// 0x13db
+// BB:40 cycle count: 5
+	     SP = SP + 2              	// [0:6146]  
+	     jmp L_60_93              	// [1:6146]  
+L_60_94:	// 0x13dd
+// BB:41 cycle count: 9
+//6147  	         }
+//6148  	        else 
+//6149  	            PlayA1800_Elements(A_VLMMREN_10Max);
 
 LM748:
-	     .stabn 68,0,6166,LM748-_Step1
-	     R4 = 0                   	// [0:6166]  
-	     [BP + 0] = R4            	// [1:6166]  timeovercnt
-L_60_87:	// 0x13d0
-// BB:37 cycle count: 10
-//6167  	      
-//6168  	      if((Key_Event==PB_button))
-
-LM749:
-	     .stabn 68,0,6168,LM749-_Step1
-	     DS = seg(_Key_Event)     	// [0:6168]  Key_Event
-	     R4 = (_Key_Event)        	// [1:6168]  Key_Event
-	     R4 = DS:[R4]             	// [3:6168]  
-	     cmp R4, 2                	// [5:6168]  
-	     jne L_60_92              	// [6:6168]  
-BB38_PU60:	// 0x13d6
-// BB:38 cycle count: 16
-//6169  	      {  
-//6170  	           Key_Event =0;  
-
-LM750:
-	     .stabn 68,0,6170,LM750-_Step1
-	     R3 = 0                   	// [0:6170]  
-	     DS = seg(_Key_Event)     	// [1:6170]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6170]  Key_Event
-	     DS:[R4] = R3             	// [4:6170]  
-//6171  	         if(Registerd_Num<10)
-
-LM751:
-	     .stabn 68,0,6171,LM751-_Step1
-	     DS = seg(_Registerd_Num) 	// [6:6171]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [7:6171]  Registerd_Num
-	     R4 = DS:[R4]             	// [9:6171]  
-	     cmp R4, 9                	// [11:6171]  
-	     ja L_60_94               	// [12:6171]  
-BB39_PU60:	// 0x13e1
-// BB:39 cycle count: 30
-//6172  	         {   
-//6173  	      	  Registerd_Num++;
-
-LM752:
-	     .stabn 68,0,6173,LM752-_Step1
-	     DS = seg(_Registerd_Num) 	// [0:6173]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6173]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6173]  
-	     R4 = R4 + 1              	// [5:6173]  
-	     DS = seg(_Registerd_Num) 	// [6:6173]  Registerd_Num
-	     R3 = (_Registerd_Num)    	// [7:6173]  Registerd_Num
-	     DS:[R3] = R4             	// [9:6173]  
-//6174  			  //PlayA1800_Elements(SFX_Plus);
-//6175  			   Play_Seq(Registerd_Num,C_NX);//PlayA1800_Other(Serie_N_NumPlayers);
-
-LM753:
-	     .stabn 68,0,6175,LM753-_Step1
-	     SP = SP - 2              	// [11:6175]  
-	     DS = seg(_Registerd_Num) 	// [12:6175]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [13:6175]  Registerd_Num
-	     R3 = DS:[R4]             	// [15:6175]  
-	     R4 = SP + 1              	// [17:6175]  
-	     [R4] = R3                	// [19:6175]  
-	     R3 = 80                  	// [21:6175]  
-	     R4 = SP + 2              	// [23:6175]  
-	     [R4] = R3                	// [25:6175]  
-	     call _Play_Seq           	// [27:6175]  Play_Seq
-BB40_PU60:	// 0x13f9
-// BB:40 cycle count: 5
-	     SP = SP + 2              	// [0:6175]  
-	     jmp L_60_93              	// [1:6175]  
-L_60_94:	// 0x13fb
-// BB:41 cycle count: 9
-//6176  	         }
-//6177  	        else 
-//6178  	            PlayA1800_Elements(A_VLMMREN_10Max);
-
-LM754:
-	     .stabn 68,0,6178,LM754-_Step1
-	     SP = SP - 1              	// [0:6178]  
-	     R3 = 1                   	// [1:6178]  
-	     R4 = SP + 1              	// [2:6178]  
-	     [R4] = R3                	// [4:6178]  
-	     call _PlayA1800_Elements 	// [6:6178]  PlayA1800_Elements
-BB42_PU60:	// 0x1402
+	     .stabn 68,0,6149,LM748-_Step1
+	     SP = SP - 1              	// [0:6149]  
+	     R3 = 1                   	// [1:6149]  
+	     R4 = SP + 1              	// [2:6149]  
+	     [R4] = R3                	// [4:6149]  
+	     call _PlayA1800_Elements 	// [6:6149]  PlayA1800_Elements
+BB42_PU60:	// 0x13e4
 // BB:42 cycle count: 1
-	     SP = SP + 1              	// [0:6178]  
-L_60_93:	// 0x1403
+	     SP = SP + 1              	// [0:6149]  
+L_60_93:	// 0x13e5
 // BB:43 cycle count: 3
 
-LM755:
-	     .stabn 68,0,6171,LM755-_Step1
-	     goto L_60_91             	// [0:6171]  
-L_60_92:	// 0x1405
+LM749:
+	     .stabn 68,0,6142,LM749-_Step1
+	     goto L_60_91             	// [0:6142]  
+L_60_92:	// 0x13e7
 // BB:44 cycle count: 10
-//6179  	      	
-//6180  	      }
-//6181        	  else if((Key_Event==MB_button))
+//6150  	      	
+//6151  	      }
+//6152        	  else if((Key_Event==MB_button))
 
-LM756:
-	     .stabn 68,0,6181,LM756-_Step1
-	     DS = seg(_Key_Event)     	// [0:6181]  Key_Event
-	     R4 = (_Key_Event)        	// [1:6181]  Key_Event
-	     R4 = DS:[R4]             	// [3:6181]  
-	     cmp R4, 4                	// [5:6181]  
-	     jne L_60_96              	// [6:6181]  
-BB45_PU60:	// 0x140b
+LM750:
+	     .stabn 68,0,6152,LM750-_Step1
+	     DS = seg(_Key_Event)     	// [0:6152]  Key_Event
+	     R4 = (_Key_Event)        	// [1:6152]  Key_Event
+	     R4 = DS:[R4]             	// [3:6152]  
+	     cmp R4, 4                	// [5:6152]  
+	     jne L_60_96              	// [6:6152]  
+BB45_PU60:	// 0x13ed
 // BB:45 cycle count: 16
-//6182  	      {  
-//6183  	           Key_Event =0;
+//6153  	      {  
+//6154  	           Key_Event =0;
 
-LM757:
-	     .stabn 68,0,6183,LM757-_Step1
-	     R3 = 0                   	// [0:6183]  
-	     DS = seg(_Key_Event)     	// [1:6183]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6183]  Key_Event
-	     DS:[R4] = R3             	// [4:6183]  
-//6184  	         if(Registerd_Num>1)  
+LM751:
+	     .stabn 68,0,6154,LM751-_Step1
+	     R3 = 0                   	// [0:6154]  
+	     DS = seg(_Key_Event)     	// [1:6154]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6154]  Key_Event
+	     DS:[R4] = R3             	// [4:6154]  
+//6155  	         if(Registerd_Num>1)  
 
-LM758:
-	     .stabn 68,0,6184,LM758-_Step1
-	     DS = seg(_Registerd_Num) 	// [6:6184]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [7:6184]  Registerd_Num
-	     R4 = DS:[R4]             	// [9:6184]  
-	     cmp R4, 1                	// [11:6184]  
-	     jbe L_60_98              	// [12:6184]  
-BB46_PU60:	// 0x1416
+LM752:
+	     .stabn 68,0,6155,LM752-_Step1
+	     DS = seg(_Registerd_Num) 	// [6:6155]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [7:6155]  Registerd_Num
+	     R4 = DS:[R4]             	// [9:6155]  
+	     cmp R4, 1                	// [11:6155]  
+	     jbe L_60_98              	// [12:6155]  
+BB46_PU60:	// 0x13f8
 // BB:46 cycle count: 30
-//6185  	          {   
-//6186  	      	   Registerd_Num--;
+//6156  	          {   
+//6157  	      	   Registerd_Num--;
 
-LM759:
-	     .stabn 68,0,6186,LM759-_Step1
-	     DS = seg(_Registerd_Num) 	// [0:6186]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6186]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6186]  
-	     R4 = R4 - 1              	// [5:6186]  
-	     DS = seg(_Registerd_Num) 	// [6:6186]  Registerd_Num
-	     R3 = (_Registerd_Num)    	// [7:6186]  Registerd_Num
-	     DS:[R3] = R4             	// [9:6186]  
-//6187  			  // PlayA1800_Elements(SFX_Minus);
-//6188  			   Play_Seq(Registerd_Num,C_NX);//PlayA1800_Other(Serie_N_NumPlayers);
+LM753:
+	     .stabn 68,0,6157,LM753-_Step1
+	     DS = seg(_Registerd_Num) 	// [0:6157]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:6157]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:6157]  
+	     R4 = R4 - 1              	// [5:6157]  
+	     DS = seg(_Registerd_Num) 	// [6:6157]  Registerd_Num
+	     R3 = (_Registerd_Num)    	// [7:6157]  Registerd_Num
+	     DS:[R3] = R4             	// [9:6157]  
+//6158  			  // PlayA1800_Elements(SFX_Minus);
+//6159  			   Play_Seq(Registerd_Num,C_NX);//PlayA1800_Other(Serie_N_NumPlayers);
 
-LM760:
-	     .stabn 68,0,6188,LM760-_Step1
-	     SP = SP - 2              	// [11:6188]  
-	     DS = seg(_Registerd_Num) 	// [12:6188]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [13:6188]  Registerd_Num
-	     R3 = DS:[R4]             	// [15:6188]  
-	     R4 = SP + 1              	// [17:6188]  
-	     [R4] = R3                	// [19:6188]  
-	     R3 = 80                  	// [21:6188]  
-	     R4 = SP + 2              	// [23:6188]  
-	     [R4] = R3                	// [25:6188]  
-	     call _Play_Seq           	// [27:6188]  Play_Seq
-BB47_PU60:	// 0x142e
+LM754:
+	     .stabn 68,0,6159,LM754-_Step1
+	     SP = SP - 2              	// [11:6159]  
+	     DS = seg(_Registerd_Num) 	// [12:6159]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [13:6159]  Registerd_Num
+	     R3 = DS:[R4]             	// [15:6159]  
+	     R4 = SP + 1              	// [17:6159]  
+	     [R4] = R3                	// [19:6159]  
+	     R3 = 80                  	// [21:6159]  
+	     R4 = SP + 2              	// [23:6159]  
+	     [R4] = R3                	// [25:6159]  
+	     call _Play_Seq           	// [27:6159]  Play_Seq
+BB47_PU60:	// 0x1410
 // BB:47 cycle count: 5
-	     SP = SP + 2              	// [0:6188]  
-	     jmp L_60_97              	// [1:6188]  
-L_60_98:	// 0x1430
+	     SP = SP + 2              	// [0:6159]  
+	     jmp L_60_97              	// [1:6159]  
+L_60_98:	// 0x1412
 // BB:48 cycle count: 9
-//6189  	          }
-//6190  	          else
-//6191  	             PlayA1800_Elements(A_VLMMREN_1Min);
+//6160  	          }
+//6161  	          else
+//6162  	             PlayA1800_Elements(A_VLMMREN_1Min);
 
-LM761:
-	     .stabn 68,0,6191,LM761-_Step1
-	     SP = SP - 1              	// [0:6191]  
-	     R3 = 2                   	// [1:6191]  
-	     R4 = SP + 1              	// [2:6191]  
-	     [R4] = R3                	// [4:6191]  
-	     call _PlayA1800_Elements 	// [6:6191]  PlayA1800_Elements
-BB49_PU60:	// 0x1437
+LM755:
+	     .stabn 68,0,6162,LM755-_Step1
+	     SP = SP - 1              	// [0:6162]  
+	     R3 = 2                   	// [1:6162]  
+	     R4 = SP + 1              	// [2:6162]  
+	     [R4] = R3                	// [4:6162]  
+	     call _PlayA1800_Elements 	// [6:6162]  PlayA1800_Elements
+BB49_PU60:	// 0x1419
 // BB:49 cycle count: 1
-	     SP = SP + 1              	// [0:6191]  
-L_60_97:	// 0x1438
+	     SP = SP + 1              	// [0:6162]  
+L_60_97:	// 0x141a
 // BB:50 cycle count: 4
 
-LM762:
-	     .stabn 68,0,6184,LM762-_Step1
-	     jmp L_60_95              	// [0:6184]  
-L_60_96:	// 0x1439
+LM756:
+	     .stabn 68,0,6155,LM756-_Step1
+	     jmp L_60_95              	// [0:6155]  
+L_60_96:	// 0x141b
 // BB:51 cycle count: 10
-//6192  	      	
-//6193  	      }
-//6194  		 else if((Key_Event==Playbutton))
+//6163  	      	
+//6164  	      }
+//6165  		 else if((Key_Event==Playbutton))
+
+LM757:
+	     .stabn 68,0,6165,LM757-_Step1
+	     DS = seg(_Key_Event)     	// [0:6165]  Key_Event
+	     R4 = (_Key_Event)        	// [1:6165]  Key_Event
+	     R4 = DS:[R4]             	// [3:6165]  
+	     cmp R4, 1                	// [5:6165]  
+	     jne L_60_99              	// [6:6165]  
+BB52_PU60:	// 0x1421
+// BB:52 cycle count: 16
+//6166  	      {  
+//6167  	           Key_Event =0;  
+
+LM758:
+	     .stabn 68,0,6167,LM758-_Step1
+	     R3 = 0                   	// [0:6167]  
+	     DS = seg(_Key_Event)     	// [1:6167]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6167]  Key_Event
+	     DS:[R4] = R3             	// [4:6167]  
+//6168  	           
+//6169  	         if(Registerd_Num>=1)   
+
+LM759:
+	     .stabn 68,0,6169,LM759-_Step1
+	     DS = seg(_Registerd_Num) 	// [6:6169]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [7:6169]  Registerd_Num
+	     R4 = DS:[R4]             	// [9:6169]  
+	     cmp R4, 0                	// [11:6169]  
+	     je L_60_100              	// [12:6169]  
+BB53_PU60:	// 0x142c
+// BB:53 cycle count: 4
+//6170                 break;
+
+LM760:
+	     .stabn 68,0,6170,LM760-_Step1
+	     jmp Lt_60_2              	// [0:6170]  
+L_60_100:	// 0x142d
+L_60_99:	// 0x142d
+L_60_95:	// 0x142d
+L_60_91:	// 0x142d
+// BB:54 cycle count: 3
+
+LM761:
+	     .stabn 68,0,6139,LM761-_Step1
+	     goto L_60_84             	// [0:6139]  
+L_60_85:	// 0x142f
+Lt_60_2:	// 0x142f
+// BB:55 cycle count: 3
+//6175  		  
+//6176        
+//6177       }
+//6178        
+//6179          SetPingame();
+
+LM762:
+	     .stabn 68,0,6179,LM762-_Step1
+	     call _SetPingame         	// [0:6179]  SetPingame
+BB56_PU60:	// 0x1431
+// BB:56 cycle count: 10
+//6180  		
+//6181  		PlayA1800_Elements(SFX_Buzzer);
 
 LM763:
-	     .stabn 68,0,6194,LM763-_Step1
-	     DS = seg(_Key_Event)     	// [0:6194]  Key_Event
-	     R4 = (_Key_Event)        	// [1:6194]  Key_Event
-	     R4 = DS:[R4]             	// [3:6194]  
-	     cmp R4, 1                	// [5:6194]  
-	     jne L_60_99              	// [6:6194]  
-BB52_PU60:	// 0x143f
-// BB:52 cycle count: 16
-//6195  	      {  
-//6196  	           Key_Event =0;  
+	     .stabn 68,0,6181,LM763-_Step1
+	     SP = SP - 1              	// [0:6181]  
+	     R3 = 124                 	// [1:6181]  
+	     R4 = SP + 1              	// [3:6181]  
+	     [R4] = R3                	// [5:6181]  
+	     call _PlayA1800_Elements 	// [7:6181]  PlayA1800_Elements
+BB57_PU60:	// 0x1439
+// BB:57 cycle count: 11
+	     SP = SP + 1              	// [0:6181]  
+//6184  		
+//6185  		
+//6186  		
+//6187  
+//6188    if(Registerd_Num>1)
 
 LM764:
-	     .stabn 68,0,6196,LM764-_Step1
-	     R3 = 0                   	// [0:6196]  
-	     DS = seg(_Key_Event)     	// [1:6196]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6196]  Key_Event
-	     DS:[R4] = R3             	// [4:6196]  
-//6197  	           
-//6198  	         if(Registerd_Num>=1)   
+	     .stabn 68,0,6188,LM764-_Step1
+	     DS = seg(_Registerd_Num) 	// [1:6188]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [2:6188]  Registerd_Num
+	     R4 = DS:[R4]             	// [4:6188]  
+	     cmp R4, 1                	// [6:6188]  
+	     ja BB58_PU60             	// [7:6188]  
+BB148_PU60:	// 0x1440
+// BB:148 cycle count: 3
+	     goto L_60_102            	// [0:0]  
+BB58_PU60:	// 0x1442
+// BB:58 cycle count: 20
+//6194  //  	       NumRounds = 5;
+//6195    	       
+//6196    	       
+//6197    	       
+//6198    	       SinceLastE  =0;
 
 LM765:
 	     .stabn 68,0,6198,LM765-_Step1
-	     DS = seg(_Registerd_Num) 	// [6:6198]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [7:6198]  Registerd_Num
-	     R4 = DS:[R4]             	// [9:6198]  
-	     cmp R4, 0                	// [11:6198]  
-	     je L_60_100              	// [12:6198]  
-BB53_PU60:	// 0x144a
-// BB:53 cycle count: 4
-//6199                 break;
+	     R3 = 0                   	// [0:6198]  
+	     DS = seg(_SinceLastE)    	// [1:6198]  SinceLastE
+	     R4 = (_SinceLastE)       	// [2:6198]  SinceLastE
+	     DS:[R4] = R3             	// [4:6198]  
+//6199    	        R_2SLoop =0;
 
 LM766:
 	     .stabn 68,0,6199,LM766-_Step1
-	     jmp Lt_60_2              	// [0:6199]  
-L_60_100:	// 0x144b
-L_60_99:	// 0x144b
-L_60_95:	// 0x144b
-L_60_91:	// 0x144b
-// BB:54 cycle count: 3
+	     R3 = 0                   	// [6:6199]  
+	     DS = seg(_R_2SLoop)      	// [7:6199]  R_2SLoop
+	     R4 = (_R_2SLoop)         	// [8:6199]  R_2SLoop
+	     DS:[R4] = R3             	// [10:6199]  
+//6200    	       
+//6201  		
+//6202  		   sp_offset = 0xffff;
 
 LM767:
-	     .stabn 68,0,6168,LM767-_Step1
-	     goto L_60_84             	// [0:6168]  
-L_60_85:	// 0x144d
-Lt_60_2:	// 0x144d
-// BB:55 cycle count: 3
-//6204  		  
-//6205        
-//6206       }
-//6207        
-//6208          SetPingame();
+	     .stabn 68,0,6202,LM767-_Step1
+	     R3 = - 1                 	// [12:6202]  
+	     DS = seg(_sp_offset)     	// [13:6202]  sp_offset
+	     R4 = (_sp_offset)        	// [14:6202]  sp_offset
+	     DS:[R4] = R3             	// [16:6202]  
+//6203  
+//6204  		   timeovercnt=0;
 
 LM768:
-	     .stabn 68,0,6208,LM768-_Step1
-	     call _SetPingame         	// [0:6208]  SetPingame
-BB56_PU60:	// 0x144f
-// BB:56 cycle count: 10
+	     .stabn 68,0,6204,LM768-_Step1
+	     R4 = 0                   	// [18:6204]  
+	     [BP + 0] = R4            	// [19:6204]  timeovercnt
+L_60_103:	// 0x1453
+// BB:59 cycle count: 10
+//6206  		   
+//6207  		   while(1) 
+//6208  		     {  
 //6209  		
-//6210  		PlayA1800_Elements(SFX_Buzzer);
+//6210  			      if(Sleepflag)
 
 LM769:
 	     .stabn 68,0,6210,LM769-_Step1
-	     SP = SP - 1              	// [0:6210]  
-	     R3 = 122                 	// [1:6210]  
-	     R4 = SP + 1              	// [3:6210]  
-	     [R4] = R3                	// [5:6210]  
-	     call _PlayA1800_Elements 	// [7:6210]  PlayA1800_Elements
-BB57_PU60:	// 0x1457
-// BB:57 cycle count: 11
-	     SP = SP + 1              	// [0:6210]  
-//6213  		
-//6214  		
-//6215  		
-//6216  
-//6217    if(Registerd_Num>1)
+	     DS = seg(_Sleepflag)     	// [0:6210]  Sleepflag
+	     R4 = (_Sleepflag)        	// [1:6210]  Sleepflag
+	     R4 = DS:[R4]             	// [3:6210]  
+	     cmp R4, 0                	// [5:6210]  
+	     je L_60_105              	// [6:6210]  
+BB60_PU60:	// 0x1459
+// BB:60 cycle count: 8
+//6211  				  	return C_Off_Mode;
 
 LM770:
-	     .stabn 68,0,6217,LM770-_Step1
-	     DS = seg(_Registerd_Num) 	// [1:6217]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [2:6217]  Registerd_Num
-	     R4 = DS:[R4]             	// [4:6217]  
-	     cmp R4, 1                	// [6:6217]  
-	     ja BB58_PU60             	// [7:6217]  
-BB146_PU60:	// 0x145e
-// BB:146 cycle count: 3
-	     goto L_60_102            	// [0:0]  
-BB58_PU60:	// 0x1460
-// BB:58 cycle count: 20
-//6223  //  	       NumRounds = 5;
-//6224    	       
-//6225    	       
-//6226    	       
-//6227    	       SinceLastE  =0;
+	     .stabn 68,0,6211,LM770-_Step1
+	     R1 = - 4085              	// [0:6211]  
+	     SP = SP + 4              	// [2:6211]  
+	     pop BP, PC from [SP]     	// [3:6211]  
+L_60_105:	// 0x145d
+// BB:61 cycle count: 18
+//6212  			      
+//6213  			      
+//6214  			    Key_activeflag =Playbutton;//Playbutton;//Only_Play_KeyEnable;//ALL_Key_Enable&(~(Key_True|Key_False));
 
 LM771:
-	     .stabn 68,0,6227,LM771-_Step1
-	     R3 = 0                   	// [0:6227]  
-	     DS = seg(_SinceLastE)    	// [1:6227]  SinceLastE
-	     R4 = (_SinceLastE)       	// [2:6227]  SinceLastE
-	     DS:[R4] = R3             	// [4:6227]  
-//6228    	        R_2SLoop =0;
+	     .stabn 68,0,6214,LM771-_Step1
+	     R3 = 1                   	// [0:6214]  
+	     DS = seg(_Key_activeflag)	// [1:6214]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [2:6214]  Key_activeflag
+	     DS:[R4] = R3             	// [4:6214]  
+//6215  		        Key_Event =0; 
 
 LM772:
-	     .stabn 68,0,6228,LM772-_Step1
-	     R3 = 0                   	// [6:6228]  
-	     DS = seg(_R_2SLoop)      	// [7:6228]  R_2SLoop
-	     R4 = (_R_2SLoop)         	// [8:6228]  R_2SLoop
-	     DS:[R4] = R3             	// [10:6228]  
-//6229    	       
-//6230  		
-//6231  		   sp_offset = 0xffff;
+	     .stabn 68,0,6215,LM772-_Step1
+	     R3 = 0                   	// [6:6215]  
+	     DS = seg(_Key_Event)     	// [7:6215]  Key_Event
+	     R4 = (_Key_Event)        	// [8:6215]  Key_Event
+	     DS:[R4] = R3             	// [10:6215]  
+//6216  		
+//6217  		        TwoKeyflag = Playbutton;
 
 LM773:
-	     .stabn 68,0,6231,LM773-_Step1
-	     R3 = - 1                 	// [12:6231]  
-	     DS = seg(_sp_offset)     	// [13:6231]  sp_offset
-	     R4 = (_sp_offset)        	// [14:6231]  sp_offset
-	     DS:[R4] = R3             	// [16:6231]  
-//6232  
-//6233  		   timeovercnt=0;
+	     .stabn 68,0,6217,LM773-_Step1
+	     R3 = 1                   	// [12:6217]  
+	     DS = seg(_TwoKeyflag)    	// [13:6217]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [14:6217]  TwoKeyflag
+	     DS:[R4] = R3             	// [16:6217]  
+L_60_106:	// 0x146c
+// BB:62 cycle count: 16
+//6218  		       
+//6219  			  do
+//6220  			  	{
+//6221  			        PauseFlag =0;
 
 LM774:
-	     .stabn 68,0,6233,LM774-_Step1
-	     R4 = 0                   	// [18:6233]  
-	     [BP + 0] = R4            	// [19:6233]  timeovercnt
-L_60_103:	// 0x1471
-// BB:59 cycle count: 10
-//6235  		   
-//6236  		   while(1) 
-//6237  		     {  
-//6238  		
-//6239  			      if(Sleepflag)
+	     .stabn 68,0,6221,LM774-_Step1
+	     R3 = 0                   	// [0:6221]  
+	     DS = seg(_PauseFlag)     	// [1:6221]  PauseFlag
+	     R4 = (_PauseFlag)        	// [2:6221]  PauseFlag
+	     DS:[R4] = R3             	// [4:6221]  
+//6222  			        //PlayA1800_Elements(SFX_Buzzer);
+//6223  			        //PlayA1800_Elements(A_VLMMREN_SetUp_04);
+//6224  			        //Play_Seq(Registerd_Num-1,C_NumP_StartAddr);
+//6225  			        //delay_time(8);
+//6226  			        PlayA1800_Elements(A_VLMMREN_SetUp_02);
 
 LM775:
-	     .stabn 68,0,6239,LM775-_Step1
-	     DS = seg(_Sleepflag)     	// [0:6239]  Sleepflag
-	     R4 = (_Sleepflag)        	// [1:6239]  Sleepflag
-	     R4 = DS:[R4]             	// [3:6239]  
-	     cmp R4, 0                	// [5:6239]  
-	     je L_60_105              	// [6:6239]  
-BB60_PU60:	// 0x1477
-// BB:60 cycle count: 8
-//6240  				  	return C_Off_Mode;
+	     .stabn 68,0,6226,LM775-_Step1
+	     SP = SP - 1              	// [6:6226]  
+	     R3 = 72                  	// [7:6226]  
+	     R4 = SP + 1              	// [9:6226]  
+	     [R4] = R3                	// [11:6226]  
+	     call _PlayA1800_Elements 	// [13:6226]  PlayA1800_Elements
+BB63_PU60:	// 0x1479
+// BB:63 cycle count: 12
+	     SP = SP + 1              	// [0:6226]  
+//6227  			        
+//6228  			      if(sp_offset==0xffff)  
 
 LM776:
-	     .stabn 68,0,6240,LM776-_Step1
-	     R1 = - 4085              	// [0:6240]  
-	     SP = SP + 4              	// [2:6240]  
-	     pop BP, PC from [SP]     	// [3:6240]  
-L_60_105:	// 0x147b
-// BB:61 cycle count: 18
-//6241  			      
-//6242  			      
-//6243  			    Key_activeflag =Playbutton;//Playbutton;//Only_Play_KeyEnable;//ALL_Key_Enable&(~(Key_True|Key_False));
+	     .stabn 68,0,6228,LM776-_Step1
+	     DS = seg(_sp_offset)     	// [1:6228]  sp_offset
+	     R4 = (_sp_offset)        	// [2:6228]  sp_offset
+	     R4 = DS:[R4]             	// [4:6228]  
+	     cmp R4, 65535            	// [6:6228]  
+	     jne L_60_108             	// [8:6228]  
+BB64_PU60:	// 0x1481
+// BB:64 cycle count: 9
+//6229  			        PlayA1800_Other(Serie_Player);//Play_Seq(Registerd_Num-1,C_Play_StartAddr);
 
 LM777:
-	     .stabn 68,0,6243,LM777-_Step1
-	     R3 = 1                   	// [0:6243]  
-	     DS = seg(_Key_activeflag)	// [1:6243]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [2:6243]  Key_activeflag
-	     DS:[R4] = R3             	// [4:6243]  
-//6244  		        Key_Event =0; 
+	     .stabn 68,0,6229,LM777-_Step1
+	     SP = SP - 1              	// [0:6229]  
+	     R3 = 3                   	// [1:6229]  
+	     R4 = SP + 1              	// [2:6229]  
+	     [R4] = R3                	// [4:6229]  
+	     call _PlayA1800_Other    	// [6:6229]  PlayA1800_Other
+BB65_PU60:	// 0x1488
+// BB:65 cycle count: 5
+	     SP = SP + 1              	// [0:6229]  
+	     jmp L_60_107             	// [1:6229]  
+L_60_108:	// 0x148a
+// BB:66 cycle count: 13
+//6230  			       else
+//6231  			        PlayA1800_Elements(sp_offset);
 
 LM778:
-	     .stabn 68,0,6244,LM778-_Step1
-	     R3 = 0                   	// [6:6244]  
-	     DS = seg(_Key_Event)     	// [7:6244]  Key_Event
-	     R4 = (_Key_Event)        	// [8:6244]  Key_Event
-	     DS:[R4] = R3             	// [10:6244]  
-//6245  		
-//6246  		        TwoKeyflag = Playbutton;
+	     .stabn 68,0,6231,LM778-_Step1
+	     SP = SP - 1              	// [0:6231]  
+	     DS = seg(_sp_offset)     	// [1:6231]  sp_offset
+	     R4 = (_sp_offset)        	// [2:6231]  sp_offset
+	     R3 = DS:[R4]             	// [4:6231]  
+	     R4 = SP + 1              	// [6:6231]  
+	     [R4] = R3                	// [8:6231]  
+	     call _PlayA1800_Elements 	// [10:6231]  PlayA1800_Elements
+BB67_PU60:	// 0x1494
+// BB:67 cycle count: 1
+	     SP = SP + 1              	// [0:6231]  
+L_60_107:	// 0x1495
+// BB:68 cycle count: 9
+//6232  			         
+//6233  			        delay_time(8);
 
 LM779:
-	     .stabn 68,0,6246,LM779-_Step1
-	     R3 = 1                   	// [12:6246]  
-	     DS = seg(_TwoKeyflag)    	// [13:6246]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [14:6246]  TwoKeyflag
-	     DS:[R4] = R3             	// [16:6246]  
-L_60_106:	// 0x148a
-// BB:62 cycle count: 16
-//6247  		       
-//6248  			  do
-//6249  			  	{
-//6250  			        PauseFlag =0;
+	     .stabn 68,0,6233,LM779-_Step1
+	     SP = SP - 1              	// [0:6233]  
+	     R3 = 8                   	// [1:6233]  
+	     R4 = SP + 1              	// [2:6233]  
+	     [R4] = R3                	// [4:6233]  
+	     call _delay_time         	// [6:6233]  delay_time
+BB69_PU60:	// 0x149c
+// BB:69 cycle count: 1
+	     SP = SP + 1              	// [0:6233]  
+Lt_60_3:	// 0x149d
+// BB:70 cycle count: 10
+//6234  			  	}while(PauseFlag);
 
 LM780:
-	     .stabn 68,0,6250,LM780-_Step1
-	     R3 = 0                   	// [0:6250]  
-	     DS = seg(_PauseFlag)     	// [1:6250]  PauseFlag
-	     R4 = (_PauseFlag)        	// [2:6250]  PauseFlag
-	     DS:[R4] = R3             	// [4:6250]  
-//6251  			        //PlayA1800_Elements(SFX_Buzzer);
-//6252  			        //PlayA1800_Elements(A_VLMMREN_SetUp_04);
-//6253  			        //Play_Seq(Registerd_Num-1,C_NumP_StartAddr);
-//6254  			        //delay_time(8);
-//6255  			        PlayA1800_Elements(A_VLMMREN_SetUp_02);
+	     .stabn 68,0,6234,LM780-_Step1
+	     DS = seg(_PauseFlag)     	// [0:6234]  PauseFlag
+	     R4 = (_PauseFlag)        	// [1:6234]  PauseFlag
+	     R4 = DS:[R4]             	// [3:6234]  
+	     cmp R4, 0                	// [5:6234]  
+	     jne L_60_106             	// [6:6234]  
+BB71_PU60:	// 0x14a3
+// BB:71 cycle count: 28
+//6235  		         TwoKeyflag =0; 
 
 LM781:
-	     .stabn 68,0,6255,LM781-_Step1
-	     SP = SP - 1              	// [6:6255]  
-	     R3 = 72                  	// [7:6255]  
-	     R4 = SP + 1              	// [9:6255]  
-	     [R4] = R3                	// [11:6255]  
-	     call _PlayA1800_Elements 	// [13:6255]  PlayA1800_Elements
-BB63_PU60:	// 0x1497
-// BB:63 cycle count: 12
-	     SP = SP + 1              	// [0:6255]  
-//6256  			        
-//6257  			      if(sp_offset==0xffff)  
+	     .stabn 68,0,6235,LM781-_Step1
+	     R3 = 0                   	// [0:6235]  
+	     DS = seg(_TwoKeyflag)    	// [1:6235]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [2:6235]  TwoKeyflag
+	     DS:[R4] = R3             	// [4:6235]  
+//6237  			      
+//6238  			      
+//6239  			      
+//6240  				  
+//6241  		     	  Key_activeflag =Playbutton;//ALL_Key_Enable&(~(Key_True|Key_False));
 
 LM782:
-	     .stabn 68,0,6257,LM782-_Step1
-	     DS = seg(_sp_offset)     	// [1:6257]  sp_offset
-	     R4 = (_sp_offset)        	// [2:6257]  sp_offset
-	     R4 = DS:[R4]             	// [4:6257]  
-	     cmp R4, 65535            	// [6:6257]  
-	     jne L_60_108             	// [8:6257]  
-BB64_PU60:	// 0x149f
-// BB:64 cycle count: 9
-//6258  			        PlayA1800_Other(Serie_Player);//Play_Seq(Registerd_Num-1,C_Play_StartAddr);
+	     .stabn 68,0,6241,LM782-_Step1
+	     R3 = 1                   	// [6:6241]  
+	     DS = seg(_Key_activeflag)	// [7:6241]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:6241]  Key_activeflag
+	     DS:[R4] = R3             	// [10:6241]  
+//6242  				  Key_Event =0; 
 
 LM783:
-	     .stabn 68,0,6258,LM783-_Step1
-	     SP = SP - 1              	// [0:6258]  
-	     R3 = 3                   	// [1:6258]  
-	     R4 = SP + 1              	// [2:6258]  
-	     [R4] = R3                	// [4:6258]  
-	     call _PlayA1800_Other    	// [6:6258]  PlayA1800_Other
-BB65_PU60:	// 0x14a6
-// BB:65 cycle count: 5
-	     SP = SP + 1              	// [0:6258]  
-	     jmp L_60_107             	// [1:6258]  
-L_60_108:	// 0x14a8
-// BB:66 cycle count: 13
-//6259  			       else
-//6260  			        PlayA1800_Elements(sp_offset);
+	     .stabn 68,0,6242,LM783-_Step1
+	     R3 = 0                   	// [12:6242]  
+	     DS = seg(_Key_Event)     	// [13:6242]  Key_Event
+	     R4 = (_Key_Event)        	// [14:6242]  Key_Event
+	     DS:[R4] = R3             	// [16:6242]  
+//6243  				  
+//6244  			      PlayA1800_Elements(A_VLMMREN_SetUp_04);
 
 LM784:
-	     .stabn 68,0,6260,LM784-_Step1
-	     SP = SP - 1              	// [0:6260]  
-	     DS = seg(_sp_offset)     	// [1:6260]  sp_offset
-	     R4 = (_sp_offset)        	// [2:6260]  sp_offset
-	     R3 = DS:[R4]             	// [4:6260]  
-	     R4 = SP + 1              	// [6:6260]  
-	     [R4] = R3                	// [8:6260]  
-	     call _PlayA1800_Elements 	// [10:6260]  PlayA1800_Elements
-BB67_PU60:	// 0x14b2
-// BB:67 cycle count: 1
-	     SP = SP + 1              	// [0:6260]  
-L_60_107:	// 0x14b3
-// BB:68 cycle count: 9
-//6261  			         
-//6262  			        delay_time(8);
+	     .stabn 68,0,6244,LM784-_Step1
+	     SP = SP - 1              	// [18:6244]  
+	     R3 = 74                  	// [19:6244]  
+	     R4 = SP + 1              	// [21:6244]  
+	     [R4] = R3                	// [23:6244]  
+	     call _PlayA1800_Elements 	// [25:6244]  PlayA1800_Elements
+BB72_PU60:	// 0x14ba
+// BB:72 cycle count: 8
+//6245  			      PlayA1800_Elements(A_VLMMREN_Button_01a);
 
 LM785:
-	     .stabn 68,0,6262,LM785-_Step1
-	     SP = SP - 1              	// [0:6262]  
-	     R3 = 8                   	// [1:6262]  
-	     R4 = SP + 1              	// [2:6262]  
-	     [R4] = R3                	// [4:6262]  
-	     call _delay_time         	// [6:6262]  delay_time
-BB69_PU60:	// 0x14ba
-// BB:69 cycle count: 1
-	     SP = SP + 1              	// [0:6262]  
-Lt_60_3:	// 0x14bb
-// BB:70 cycle count: 10
-//6263  			  	}while(PauseFlag);
+	     .stabn 68,0,6245,LM785-_Step1
+	     R3 = 7                   	// [0:6245]  
+	     R4 = SP + 1              	// [1:6245]  
+	     [R4] = R3                	// [3:6245]  
+	     call _PlayA1800_Elements 	// [5:6245]  PlayA1800_Elements
+BB73_PU60:	// 0x14c0
+// BB:73 cycle count: 9
+//6246  			      
+//6247  			      
+//6248  			     // Key_activeflag =Only_Play_KeyEnable;//ALL_Key_Enable&(~(Key_True|Key_False));
+//6249  				 // Key_Event =0;  
+//6250  			      delay_time(20*16);
 
 LM786:
-	     .stabn 68,0,6263,LM786-_Step1
-	     DS = seg(_PauseFlag)     	// [0:6263]  PauseFlag
-	     R4 = (_PauseFlag)        	// [1:6263]  PauseFlag
-	     R4 = DS:[R4]             	// [3:6263]  
-	     cmp R4, 0                	// [5:6263]  
-	     jne L_60_106             	// [6:6263]  
-BB71_PU60:	// 0x14c1
-// BB:71 cycle count: 28
-//6264  		         TwoKeyflag =0; 
+	     .stabn 68,0,6250,LM786-_Step1
+	     R3 = 320                 	// [0:6250]  
+	     R4 = SP + 1              	// [2:6250]  
+	     [R4] = R3                	// [4:6250]  
+	     call _delay_time         	// [6:6250]  delay_time
+BB74_PU60:	// 0x14c7
+// BB:74 cycle count: 11
+	     SP = SP + 1              	// [0:6250]  
+//6251  			      
+//6252  			      if(Key_Event==Playbutton)
 
 LM787:
-	     .stabn 68,0,6264,LM787-_Step1
-	     R3 = 0                   	// [0:6264]  
-	     DS = seg(_TwoKeyflag)    	// [1:6264]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [2:6264]  TwoKeyflag
-	     DS:[R4] = R3             	// [4:6264]  
-//6266  			      
-//6267  			      
-//6268  			      
-//6269  				  
-//6270  		     	  Key_activeflag =Playbutton;//ALL_Key_Enable&(~(Key_True|Key_False));
+	     .stabn 68,0,6252,LM787-_Step1
+	     DS = seg(_Key_Event)     	// [1:6252]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6252]  Key_Event
+	     R4 = DS:[R4]             	// [4:6252]  
+	     cmp R4, 1                	// [6:6252]  
+	     je BB75_PU60             	// [7:6252]  
+BB149_PU60:	// 0x14ce
+// BB:149 cycle count: 3
+	     goto L_60_109            	// [0:0]  
+BB75_PU60:	// 0x14d0
+// BB:75 cycle count: 22
+//6253  			      {  
+//6254  			      	   Key_Event =0;  
 
 LM788:
-	     .stabn 68,0,6270,LM788-_Step1
-	     R3 = 1                   	// [6:6270]  
-	     DS = seg(_Key_activeflag)	// [7:6270]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [8:6270]  Key_activeflag
-	     DS:[R4] = R3             	// [10:6270]  
-//6271  				  Key_Event =0; 
+	     .stabn 68,0,6254,LM788-_Step1
+	     R3 = 0                   	// [0:6254]  
+	     DS = seg(_Key_Event)     	// [1:6254]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6254]  Key_Event
+	     DS:[R4] = R3             	// [4:6254]  
+//6255  			      	   Key_activeflag =Playbutton;	
 
 LM789:
-	     .stabn 68,0,6271,LM789-_Step1
-	     R3 = 0                   	// [12:6271]  
-	     DS = seg(_Key_Event)     	// [13:6271]  Key_Event
-	     R4 = (_Key_Event)        	// [14:6271]  Key_Event
-	     DS:[R4] = R3             	// [16:6271]  
-//6272  				  
-//6273  			      PlayA1800_Elements(A_VLMMREN_SetUp_04);
+	     .stabn 68,0,6255,LM789-_Step1
+	     R3 = 1                   	// [6:6255]  
+	     DS = seg(_Key_activeflag)	// [7:6255]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:6255]  Key_activeflag
+	     DS:[R4] = R3             	// [10:6255]  
+//6256  			      	   PlayA1800_Elements(SFX_Buzzer);
 
 LM790:
-	     .stabn 68,0,6273,LM790-_Step1
-	     SP = SP - 1              	// [18:6273]  
-	     R3 = 74                  	// [19:6273]  
-	     R4 = SP + 1              	// [21:6273]  
-	     [R4] = R3                	// [23:6273]  
-	     call _PlayA1800_Elements 	// [25:6273]  PlayA1800_Elements
-BB72_PU60:	// 0x14d8
-// BB:72 cycle count: 8
-//6274  			      PlayA1800_Elements(A_VLMMREN_Button_01a);
+	     .stabn 68,0,6256,LM790-_Step1
+	     SP = SP - 1              	// [12:6256]  
+	     R3 = 124                 	// [13:6256]  
+	     R4 = SP + 1              	// [15:6256]  
+	     [R4] = R3                	// [17:6256]  
+	     call _PlayA1800_Elements 	// [19:6256]  PlayA1800_Elements
+BB76_PU60:	// 0x14e2
+// BB:76 cycle count: 8
+//6257  			      	   PlayA1800_Elements(A_VLMMREN_ChoosePlayerEnd);
 
 LM791:
-	     .stabn 68,0,6274,LM791-_Step1
-	     R3 = 7                   	// [0:6274]  
-	     R4 = SP + 1              	// [1:6274]  
-	     [R4] = R3                	// [3:6274]  
-	     call _PlayA1800_Elements 	// [5:6274]  PlayA1800_Elements
-BB73_PU60:	// 0x14de
-// BB:73 cycle count: 9
-//6275  			      
-//6276  			      
-//6277  			     // Key_activeflag =Only_Play_KeyEnable;//ALL_Key_Enable&(~(Key_True|Key_False));
-//6278  				 // Key_Event =0;  
-//6279  			      delay_time(20*16);
+	     .stabn 68,0,6257,LM791-_Step1
+	     R3 = 16                  	// [0:6257]  
+	     R4 = SP + 1              	// [1:6257]  
+	     [R4] = R3                	// [3:6257]  
+	     call _PlayA1800_Elements 	// [5:6257]  PlayA1800_Elements
+BB77_PU60:	// 0x14e8
+// BB:77 cycle count: 11
+	     SP = SP + 1              	// [0:6257]  
+//6258  			      	   
+//6259  			      	  if(Registerd_Num>2)
 
 LM792:
-	     .stabn 68,0,6279,LM792-_Step1
-	     R3 = 320                 	// [0:6279]  
-	     R4 = SP + 1              	// [2:6279]  
-	     [R4] = R3                	// [4:6279]  
-	     call _delay_time         	// [6:6279]  delay_time
-BB74_PU60:	// 0x14e5
-// BB:74 cycle count: 11
-	     SP = SP + 1              	// [0:6279]  
-//6280  			      
-//6281  			      if(Key_Event==Playbutton)
+	     .stabn 68,0,6259,LM792-_Step1
+	     DS = seg(_Registerd_Num) 	// [1:6259]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [2:6259]  Registerd_Num
+	     R4 = DS:[R4]             	// [4:6259]  
+	     cmp R4, 2                	// [6:6259]  
+	     jbe L_60_110             	// [7:6259]  
+BB78_PU60:	// 0x14ef
+// BB:78 cycle count: 9
+//6260  			      	  {
+//6261  			      	  	PlayA1800_Elements(A_VLMMREN_ChoosePlayerEnd02);
 
 LM793:
-	     .stabn 68,0,6281,LM793-_Step1
-	     DS = seg(_Key_Event)     	// [1:6281]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6281]  Key_Event
-	     R4 = DS:[R4]             	// [4:6281]  
-	     cmp R4, 1                	// [6:6281]  
-	     je BB75_PU60             	// [7:6281]  
-BB147_PU60:	// 0x14ec
-// BB:147 cycle count: 3
-	     goto L_60_109            	// [0:0]  
-BB75_PU60:	// 0x14ee
-// BB:75 cycle count: 22
-//6282  			      {  
-//6283  			      	   Key_Event =0;  
+	     .stabn 68,0,6261,LM793-_Step1
+	     SP = SP - 1              	// [0:6261]  
+	     R3 = 17                  	// [1:6261]  
+	     R4 = SP + 1              	// [2:6261]  
+	     [R4] = R3                	// [4:6261]  
+	     call _PlayA1800_Elements 	// [6:6261]  PlayA1800_Elements
+BB79_PU60:	// 0x14f6
+// BB:79 cycle count: 1
+	     SP = SP + 1              	// [0:6261]  
+L_60_110:	// 0x14f7
+// BB:80 cycle count: 6
+//6262  			      	  }
+//6263  					  
+//6264  
+//6265  	                   Key_Event =0; 
 
 LM794:
-	     .stabn 68,0,6283,LM794-_Step1
-	     R3 = 0                   	// [0:6283]  
-	     DS = seg(_Key_Event)     	// [1:6283]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6283]  Key_Event
-	     DS:[R4] = R3             	// [4:6283]  
-//6284  			      	   Key_activeflag =Playbutton;	
+	     .stabn 68,0,6265,LM794-_Step1
+	     R3 = 0                   	// [0:6265]  
+	     DS = seg(_Key_Event)     	// [1:6265]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6265]  Key_Event
+	     DS:[R4] = R3             	// [4:6265]  
+L_60_111:	// 0x14fc
+// BB:81 cycle count: 10
+//6266  
+//6267  					  while(Key_Event==0)
 
 LM795:
-	     .stabn 68,0,6284,LM795-_Step1
-	     R3 = 1                   	// [6:6284]  
-	     DS = seg(_Key_activeflag)	// [7:6284]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [8:6284]  Key_activeflag
-	     DS:[R4] = R3             	// [10:6284]  
-//6285  			      	   PlayA1800_Elements(SFX_Buzzer);
+	     .stabn 68,0,6267,LM795-_Step1
+	     DS = seg(_Key_Event)     	// [0:6267]  Key_Event
+	     R4 = (_Key_Event)        	// [1:6267]  Key_Event
+	     R4 = DS:[R4]             	// [3:6267]  
+	     cmp R4, 0                	// [5:6267]  
+	     jne L_60_112             	// [6:6267]  
+BB82_PU60:	// 0x1502
+// BB:82 cycle count: 10
+//6268  					  	{
+//6269  
+//6270  						   if(Sleepflag)
 
 LM796:
-	     .stabn 68,0,6285,LM796-_Step1
-	     SP = SP - 1              	// [12:6285]  
-	     R3 = 122                 	// [13:6285]  
-	     R4 = SP + 1              	// [15:6285]  
-	     [R4] = R3                	// [17:6285]  
-	     call _PlayA1800_Elements 	// [19:6285]  PlayA1800_Elements
-BB76_PU60:	// 0x1500
-// BB:76 cycle count: 8
-//6286  			      	   PlayA1800_Elements(A_VLMMREN_ChoosePlayerEnd);
+	     .stabn 68,0,6270,LM796-_Step1
+	     DS = seg(_Sleepflag)     	// [0:6270]  Sleepflag
+	     R4 = (_Sleepflag)        	// [1:6270]  Sleepflag
+	     R4 = DS:[R4]             	// [3:6270]  
+	     cmp R4, 0                	// [5:6270]  
+	     je L_60_113              	// [6:6270]  
+BB83_PU60:	// 0x1508
+// BB:83 cycle count: 8
+//6271  							 return C_Off_Mode;
 
 LM797:
-	     .stabn 68,0,6286,LM797-_Step1
-	     R3 = 16                  	// [0:6286]  
+	     .stabn 68,0,6271,LM797-_Step1
+	     R1 = - 4085              	// [0:6271]  
+	     SP = SP + 4              	// [2:6271]  
+	     pop BP, PC from [SP]     	// [3:6271]  
+L_60_113:	// 0x150c
+// BB:84 cycle count: 11
+//6272  						   
+//6273  						   timeovercnt1++;
+
+LM798:
+	     .stabn 68,0,6273,LM798-_Step1
+	     R4 = [BP + 1]            	// [0:6273]  timeovercnt1
+	     R4 = R4 + 1              	// [2:6273]  
+	     [BP + 1] = R4            	// [3:6273]  timeovercnt1
+//6274  						   
+//6275  						   if(timeovercnt1>9)
+
+LM799:
+	     .stabn 68,0,6275,LM799-_Step1
+	     R4 = [BP + 1]            	// [4:6275]  timeovercnt1
+	     cmp R4, 9                	// [6:6275]  
+	     jbe L_60_114             	// [7:6275]  
+BB85_PU60:	// 0x1512
+// BB:85 cycle count: 3
+//6276  							{
+//6277  						   
+//6278  									GameTimeout();	 
+
+LM800:
+	     .stabn 68,0,6278,LM800-_Step1
+	     call _GameTimeout        	// [0:6278]  GameTimeout
+BB86_PU60:	// 0x1514
+// BB:86 cycle count: 2
+//6279  									timeovercnt1=0;
+
+LM801:
+	     .stabn 68,0,6279,LM801-_Step1
+	     R4 = 0                   	// [0:6279]  
+	     [BP + 1] = R4            	// [1:6279]  timeovercnt1
+L_60_114:	// 0x1516
+// BB:87 cycle count: 9
+//6280  						     }
+//6281  
+//6282  						
+//6283  			      	       delay_time(8);
+
+LM802:
+	     .stabn 68,0,6283,LM802-_Step1
+	     SP = SP - 1              	// [0:6283]  
+	     R3 = 8                   	// [1:6283]  
+	     R4 = SP + 1              	// [2:6283]  
+	     [R4] = R3                	// [4:6283]  
+	     call _delay_time         	// [6:6283]  delay_time
+BB88_PU60:	// 0x151d
+// BB:88 cycle count: 9
+//6284  						   
+//6285  					       PlayA1800_Elements(A_VLMMREN_SetUp_04);
+
+LM803:
+	     .stabn 68,0,6285,LM803-_Step1
+	     R3 = 74                  	// [0:6285]  
+	     R4 = SP + 1              	// [2:6285]  
+	     [R4] = R3                	// [4:6285]  
+	     call _PlayA1800_Elements 	// [6:6285]  PlayA1800_Elements
+BB89_PU60:	// 0x1524
+// BB:89 cycle count: 8
+//6286  					       PlayA1800_Elements(A_VLMMREN_Button_01a);
+
+LM804:
+	     .stabn 68,0,6286,LM804-_Step1
+	     R3 = 7                   	// [0:6286]  
 	     R4 = SP + 1              	// [1:6286]  
 	     [R4] = R3                	// [3:6286]  
 	     call _PlayA1800_Elements 	// [5:6286]  PlayA1800_Elements
-BB77_PU60:	// 0x1506
-// BB:77 cycle count: 11
-	     SP = SP + 1              	// [0:6286]  
-//6287  			      	   
-//6288  			      	  if(Registerd_Num>2)
+BB90_PU60:	// 0x152a
+// BB:90 cycle count: 9
+//6287  						   delay_time(20*16);
 
-LM798:
-	     .stabn 68,0,6288,LM798-_Step1
-	     DS = seg(_Registerd_Num) 	// [1:6288]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [2:6288]  Registerd_Num
-	     R4 = DS:[R4]             	// [4:6288]  
-	     cmp R4, 2                	// [6:6288]  
-	     jbe L_60_110             	// [7:6288]  
-BB78_PU60:	// 0x150d
-// BB:78 cycle count: 9
-//6289  			      	  {
-//6290  			      	  	PlayA1800_Elements(A_VLMMREN_ChoosePlayerEnd02);
-
-LM799:
-	     .stabn 68,0,6290,LM799-_Step1
-	     SP = SP - 1              	// [0:6290]  
-	     R3 = 17                  	// [1:6290]  
-	     R4 = SP + 1              	// [2:6290]  
-	     [R4] = R3                	// [4:6290]  
-	     call _PlayA1800_Elements 	// [6:6290]  PlayA1800_Elements
-BB79_PU60:	// 0x1514
-// BB:79 cycle count: 1
-	     SP = SP + 1              	// [0:6290]  
-L_60_110:	// 0x1515
-// BB:80 cycle count: 6
-//6291  			      	  }
-//6292  					  
+LM805:
+	     .stabn 68,0,6287,LM805-_Step1
+	     R3 = 320                 	// [0:6287]  
+	     R4 = SP + 1              	// [2:6287]  
+	     [R4] = R3                	// [4:6287]  
+	     call _delay_time         	// [6:6287]  delay_time
+BB91_PU60:	// 0x1531
+// BB:91 cycle count: 5
+	     SP = SP + 1              	// [0:6287]  
+	     jmp L_60_111             	// [1:6287]  
+L_60_112:	// 0x1533
+// BB:92 cycle count: 16
+//6290  
+//6291  						   
+//6292  					  	}
 //6293  
-//6294  	                   Key_Event =0; 
+//6294  					   Key_Event =0; 
 
-LM800:
-	     .stabn 68,0,6294,LM800-_Step1
+LM806:
+	     .stabn 68,0,6294,LM806-_Step1
 	     R3 = 0                   	// [0:6294]  
 	     DS = seg(_Key_Event)     	// [1:6294]  Key_Event
 	     R4 = (_Key_Event)        	// [2:6294]  Key_Event
 	     DS:[R4] = R3             	// [4:6294]  
-L_60_111:	// 0x151a
-// BB:81 cycle count: 10
-//6295  
-//6296  					  while(Key_Event==0)
-
-LM801:
-	     .stabn 68,0,6296,LM801-_Step1
-	     DS = seg(_Key_Event)     	// [0:6296]  Key_Event
-	     R4 = (_Key_Event)        	// [1:6296]  Key_Event
-	     R4 = DS:[R4]             	// [3:6296]  
-	     cmp R4, 0                	// [5:6296]  
-	     jne L_60_112             	// [6:6296]  
-BB82_PU60:	// 0x1520
-// BB:82 cycle count: 10
-//6297  					  	{
-//6298  
-//6299  						   if(Sleepflag)
-
-LM802:
-	     .stabn 68,0,6299,LM802-_Step1
-	     DS = seg(_Sleepflag)     	// [0:6299]  Sleepflag
-	     R4 = (_Sleepflag)        	// [1:6299]  Sleepflag
-	     R4 = DS:[R4]             	// [3:6299]  
-	     cmp R4, 0                	// [5:6299]  
-	     je L_60_113              	// [6:6299]  
-BB83_PU60:	// 0x1526
-// BB:83 cycle count: 8
-//6300  							 return C_Off_Mode;
-
-LM803:
-	     .stabn 68,0,6300,LM803-_Step1
-	     R1 = - 4085              	// [0:6300]  
-	     SP = SP + 4              	// [2:6300]  
-	     pop BP, PC from [SP]     	// [3:6300]  
-L_60_113:	// 0x152a
-// BB:84 cycle count: 11
-//6301  						   
-//6302  						   timeovercnt1++;
-
-LM804:
-	     .stabn 68,0,6302,LM804-_Step1
-	     R4 = [BP + 1]            	// [0:6302]  timeovercnt1
-	     R4 = R4 + 1              	// [2:6302]  
-	     [BP + 1] = R4            	// [3:6302]  timeovercnt1
-//6303  						   
-//6304  						   if(timeovercnt1>9)
-
-LM805:
-	     .stabn 68,0,6304,LM805-_Step1
-	     R4 = [BP + 1]            	// [4:6304]  timeovercnt1
-	     cmp R4, 9                	// [6:6304]  
-	     jbe L_60_114             	// [7:6304]  
-BB85_PU60:	// 0x1530
-// BB:85 cycle count: 3
-//6305  							{
-//6306  						   
-//6307  									GameTimeout();	 
-
-LM806:
-	     .stabn 68,0,6307,LM806-_Step1
-	     call _GameTimeout        	// [0:6307]  GameTimeout
-BB86_PU60:	// 0x1532
-// BB:86 cycle count: 2
-//6308  									timeovercnt1=0;
+//6295  					   PlayA1800_Elements(SFX_Buzzer);
 
 LM807:
-	     .stabn 68,0,6308,LM807-_Step1
-	     R4 = 0                   	// [0:6308]  
-	     [BP + 1] = R4            	// [1:6308]  timeovercnt1
-L_60_114:	// 0x1534
-// BB:87 cycle count: 9
-//6309  						     }
-//6310  
-//6311  						
-//6312  			      	       delay_time(8);
+	     .stabn 68,0,6295,LM807-_Step1
+	     SP = SP - 1              	// [6:6295]  
+	     R3 = 124                 	// [7:6295]  
+	     R4 = SP + 1              	// [9:6295]  
+	     [R4] = R3                	// [11:6295]  
+	     call _PlayA1800_Elements 	// [13:6295]  PlayA1800_Elements
+BB93_PU60:	// 0x1540
+// BB:93 cycle count: 8
+//6296  					   delay_time(8);
 
 LM808:
-	     .stabn 68,0,6312,LM808-_Step1
-	     SP = SP - 1              	// [0:6312]  
-	     R3 = 8                   	// [1:6312]  
-	     R4 = SP + 1              	// [2:6312]  
-	     [R4] = R3                	// [4:6312]  
-	     call _delay_time         	// [6:6312]  delay_time
-BB88_PU60:	// 0x153b
-// BB:88 cycle count: 9
-//6313  						   
-//6314  					       PlayA1800_Elements(A_VLMMREN_SetUp_04);
+	     .stabn 68,0,6296,LM808-_Step1
+	     R3 = 8                   	// [0:6296]  
+	     R4 = SP + 1              	// [1:6296]  
+	     [R4] = R3                	// [3:6296]  
+	     call _delay_time         	// [5:6296]  delay_time
+BB94_PU60:	// 0x1546
+// BB:94 cycle count: 17
+	     SP = SP + 1              	// [0:6296]  
+//6297  					   
+//6298                         Key_Event =0; 
 
 LM809:
-	     .stabn 68,0,6314,LM809-_Step1
-	     R3 = 74                  	// [0:6314]  
-	     R4 = SP + 1              	// [2:6314]  
-	     [R4] = R3                	// [4:6314]  
-	     call _PlayA1800_Elements 	// [6:6314]  PlayA1800_Elements
-BB89_PU60:	// 0x1542
-// BB:89 cycle count: 8
-//6315  					       PlayA1800_Elements(A_VLMMREN_Button_01a);
+	     .stabn 68,0,6298,LM809-_Step1
+	     R3 = 0                   	// [1:6298]  
+	     DS = seg(_Key_Event)     	// [2:6298]  Key_Event
+	     R4 = (_Key_Event)        	// [3:6298]  Key_Event
+	     DS:[R4] = R3             	// [5:6298]  
+//6299  					  if(Restart ==0)
 
 LM810:
-	     .stabn 68,0,6315,LM810-_Step1
-	     R3 = 7                   	// [0:6315]  
-	     R4 = SP + 1              	// [1:6315]  
-	     [R4] = R3                	// [3:6315]  
-	     call _PlayA1800_Elements 	// [5:6315]  PlayA1800_Elements
-BB90_PU60:	// 0x1548
-// BB:90 cycle count: 9
-//6316  						   delay_time(20*16);
+	     .stabn 68,0,6299,LM810-_Step1
+	     DS = seg(_Restart)       	// [7:6299]  Restart
+	     R4 = (_Restart)          	// [8:6299]  Restart
+	     R4 = DS:[R4]             	// [10:6299]  
+	     cmp R4, 0                	// [12:6299]  
+	     jne L_60_115             	// [13:6299]  
+BB95_PU60:	// 0x1552
+// BB:95 cycle count: 21
+//6300  					  {
+//6301  					  	  		     	 
+//6302  				          Key_Event =0; 
 
 LM811:
-	     .stabn 68,0,6316,LM811-_Step1
-	     R3 = 320                 	// [0:6316]  
-	     R4 = SP + 1              	// [2:6316]  
-	     [R4] = R3                	// [4:6316]  
-	     call _delay_time         	// [6:6316]  delay_time
-BB91_PU60:	// 0x154f
-// BB:91 cycle count: 5
-	     SP = SP + 1              	// [0:6316]  
-	     jmp L_60_111             	// [1:6316]  
-L_60_112:	// 0x1551
-// BB:92 cycle count: 16
-//6320  						   
-//6321  					  	}
-//6322  
-//6323  					   
-//6324                         Key_Event =0; 
+	     .stabn 68,0,6302,LM811-_Step1
+	     R3 = 0                   	// [0:6302]  
+	     DS = seg(_Key_Event)     	// [1:6302]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6302]  Key_Event
+	     DS:[R4] = R3             	// [4:6302]  
+//6303  				          Key_activeflag =Playbutton;//ALL_Key_Enable&(~(Key_True|Key_False));
 
 LM812:
-	     .stabn 68,0,6324,LM812-_Step1
-	     R3 = 0                   	// [0:6324]  
-	     DS = seg(_Key_Event)     	// [1:6324]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6324]  Key_Event
-	     DS:[R4] = R3             	// [4:6324]  
-//6325  					  if(Restart ==0)
+	     .stabn 68,0,6303,LM812-_Step1
+	     R3 = 1                   	// [6:6303]  
+	     DS = seg(_Key_activeflag)	// [7:6303]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:6303]  Key_activeflag
+	     DS:[R4] = R3             	// [10:6303]  
+//6304  					      PlayA1800_Elements(A_VLMMREN_Rule_01b);
 
 LM813:
-	     .stabn 68,0,6325,LM813-_Step1
-	     DS = seg(_Restart)       	// [6:6325]  Restart
-	     R4 = (_Restart)          	// [7:6325]  Restart
-	     R4 = DS:[R4]             	// [9:6325]  
-	     cmp R4, 0                	// [11:6325]  
-	     jne L_60_115             	// [12:6325]  
-BB93_PU60:	// 0x155c
-// BB:93 cycle count: 21
-//6326  					  {
-//6327  					  	  		     	 
-//6328  				          Key_Event =0; 
+	     .stabn 68,0,6304,LM813-_Step1
+	     SP = SP - 1              	// [12:6304]  
+	     R3 = 50                  	// [13:6304]  
+	     R4 = SP + 1              	// [14:6304]  
+	     [R4] = R3                	// [16:6304]  
+	     call _PlayA1800_Elements 	// [18:6304]  PlayA1800_Elements
+BB96_PU60:	// 0x1563
+// BB:96 cycle count: 1
+	     SP = SP + 1              	// [0:6304]  
+L_60_115:	// 0x1564
+// BB:97 cycle count: 4
+//6310  
+//6311  				 
+//6312  		
+//6313  			      	
+//6314  			      	   break;
 
 LM814:
-	     .stabn 68,0,6328,LM814-_Step1
-	     R3 = 0                   	// [0:6328]  
-	     DS = seg(_Key_Event)     	// [1:6328]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6328]  Key_Event
-	     DS:[R4] = R3             	// [4:6328]  
-//6329  				          Key_activeflag =Playbutton;//ALL_Key_Enable&(~(Key_True|Key_False));
+	     .stabn 68,0,6314,LM814-_Step1
+	     jmp Lt_60_4              	// [0:6314]  
+L_60_109:	// 0x1565
+// BB:98 cycle count: 11
+//6315  			        }	  
+//6316  
+//6317  
+//6318                        timeovercnt++;
 
 LM815:
-	     .stabn 68,0,6329,LM815-_Step1
-	     R3 = 1                   	// [6:6329]  
-	     DS = seg(_Key_activeflag)	// [7:6329]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [8:6329]  Key_activeflag
-	     DS:[R4] = R3             	// [10:6329]  
-//6330  					      PlayA1800_Elements(A_VLMMREN_Rule_01b);
+	     .stabn 68,0,6318,LM815-_Step1
+	     R4 = [BP + 0]            	// [0:6318]  timeovercnt
+	     R4 = R4 + 1              	// [2:6318]  
+	     [BP + 0] = R4            	// [3:6318]  timeovercnt
+//6319  
+//6320  					  if(timeovercnt>8)
 
 LM816:
-	     .stabn 68,0,6330,LM816-_Step1
-	     SP = SP - 1              	// [12:6330]  
-	     R3 = 50                  	// [13:6330]  
-	     R4 = SP + 1              	// [14:6330]  
-	     [R4] = R3                	// [16:6330]  
-	     call _PlayA1800_Elements 	// [18:6330]  PlayA1800_Elements
-BB94_PU60:	// 0x156d
-// BB:94 cycle count: 1
-	     SP = SP + 1              	// [0:6330]  
-L_60_115:	// 0x156e
-// BB:95 cycle count: 4
-//6336  
-//6337  				 
-//6338  		
-//6339  			      	
-//6340  			      	   break;
+	     .stabn 68,0,6320,LM816-_Step1
+	     R4 = [BP + 0]            	// [4:6320]  timeovercnt
+	     cmp R4, 8                	// [6:6320]  
+	     jbe L_60_116             	// [7:6320]  
+BB99_PU60:	// 0x156b
+// BB:99 cycle count: 3
+//6321  					  	{
+//6322  
+//6323  	      	               GameTimeout();	
 
 LM817:
-	     .stabn 68,0,6340,LM817-_Step1
-	     jmp Lt_60_4              	// [0:6340]  
-L_60_109:	// 0x156f
-// BB:96 cycle count: 11
-//6341  			        }	  
-//6342  
-//6343  
-//6344                        timeovercnt++;
+	     .stabn 68,0,6323,LM817-_Step1
+	     call _GameTimeout        	// [0:6323]  GameTimeout
+BB100_PU60:	// 0x156d
+// BB:100 cycle count: 2
+//6324  	      	     	       timeovercnt=0;
 
 LM818:
-	     .stabn 68,0,6344,LM818-_Step1
-	     R4 = [BP + 0]            	// [0:6344]  timeovercnt
-	     R4 = R4 + 1              	// [2:6344]  
-	     [BP + 0] = R4            	// [3:6344]  timeovercnt
-//6345  
-//6346  					  if(timeovercnt>8)
+	     .stabn 68,0,6324,LM818-_Step1
+	     R4 = 0                   	// [0:6324]  
+	     [BP + 0] = R4            	// [1:6324]  timeovercnt
+L_60_116:	// 0x156f
+// BB:101 cycle count: 3
 
 LM819:
-	     .stabn 68,0,6346,LM819-_Step1
-	     R4 = [BP + 0]            	// [4:6346]  timeovercnt
-	     cmp R4, 8                	// [6:6346]  
-	     jbe L_60_116             	// [7:6346]  
-BB97_PU60:	// 0x1575
-// BB:97 cycle count: 3
-//6347  					  	{
-//6348  
-//6349  	      	               GameTimeout();	
+	     .stabn 68,0,6320,LM819-_Step1
+	     goto L_60_103            	// [0:6320]  
+L_60_104:	// 0x1571
+Lt_60_4:	// 0x1571
+// BB:102 cycle count: 4
+//6326  					  
+//6327  
+//6328  				  
+//6329  		      
+//6330  		        }
 
 LM820:
-	     .stabn 68,0,6349,LM820-_Step1
-	     call _GameTimeout        	// [0:6349]  GameTimeout
-BB98_PU60:	// 0x1577
-// BB:98 cycle count: 2
-//6350  	      	     	       timeovercnt=0;
+	     .stabn 68,0,6330,LM820-_Step1
+	     jmp L_60_101             	// [0:6330]  
+L_60_102:	// 0x1572
+// BB:103 cycle count: 10
+//6331      }    
+//6332     else if(Registerd_Num ==1)
 
 LM821:
-	     .stabn 68,0,6350,LM821-_Step1
-	     R4 = 0                   	// [0:6350]  
-	     [BP + 0] = R4            	// [1:6350]  timeovercnt
-L_60_116:	// 0x1579
-// BB:99 cycle count: 3
+	     .stabn 68,0,6332,LM821-_Step1
+	     DS = seg(_Registerd_Num) 	// [0:6332]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:6332]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:6332]  
+	     cmp R4, 1                	// [5:6332]  
+	     jne L_60_117             	// [6:6332]  
+BB104_PU60:	// 0x1578
+// BB:104 cycle count: 10
+//6333     	{
+//6334     		if(Restart ==0)
 
 LM822:
-	     .stabn 68,0,6346,LM822-_Step1
-	     goto L_60_103            	// [0:6346]  
-L_60_104:	// 0x157b
-Lt_60_4:	// 0x157b
-// BB:100 cycle count: 4
-//6352  					  
-//6353  
-//6354  				  
-//6355  		      
-//6356  		        }
+	     .stabn 68,0,6334,LM822-_Step1
+	     DS = seg(_Restart)       	// [0:6334]  Restart
+	     R4 = (_Restart)          	// [1:6334]  Restart
+	     R4 = DS:[R4]             	// [3:6334]  
+	     cmp R4, 0                	// [5:6334]  
+	     jne L_60_118             	// [6:6334]  
+BB105_PU60:	// 0x157e
+// BB:105 cycle count: 21
+//6335     		{
+//6336  	         Key_Event =0;  
 
 LM823:
-	     .stabn 68,0,6356,LM823-_Step1
-	     jmp L_60_101             	// [0:6356]  
-L_60_102:	// 0x157c
-// BB:101 cycle count: 10
-//6357      }    
-//6358     else if(Registerd_Num ==1)
+	     .stabn 68,0,6336,LM823-_Step1
+	     R3 = 0                   	// [0:6336]  
+	     DS = seg(_Key_Event)     	// [1:6336]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6336]  Key_Event
+	     DS:[R4] = R3             	// [4:6336]  
+//6337  			 Key_activeflag =Playbutton;
 
 LM824:
-	     .stabn 68,0,6358,LM824-_Step1
-	     DS = seg(_Registerd_Num) 	// [0:6358]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6358]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6358]  
-	     cmp R4, 1                	// [5:6358]  
-	     jne L_60_117             	// [6:6358]  
-BB102_PU60:	// 0x1582
-// BB:102 cycle count: 10
-//6359     	{
-//6360     		if(Restart ==0)
+	     .stabn 68,0,6337,LM824-_Step1
+	     R3 = 1                   	// [6:6337]  
+	     DS = seg(_Key_activeflag)	// [7:6337]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:6337]  Key_activeflag
+	     DS:[R4] = R3             	// [10:6337]  
+//6338  	         PlayA1800_Elements(A_VLMMREN_Rule_01a);
 
 LM825:
-	     .stabn 68,0,6360,LM825-_Step1
-	     DS = seg(_Restart)       	// [0:6360]  Restart
-	     R4 = (_Restart)          	// [1:6360]  Restart
-	     R4 = DS:[R4]             	// [3:6360]  
-	     cmp R4, 0                	// [5:6360]  
-	     jne L_60_118             	// [6:6360]  
-BB103_PU60:	// 0x1588
-// BB:103 cycle count: 21
-//6361     		{
-//6362  	         Key_Event =0;  
+	     .stabn 68,0,6338,LM825-_Step1
+	     SP = SP - 1              	// [12:6338]  
+	     R3 = 49                  	// [13:6338]  
+	     R4 = SP + 1              	// [14:6338]  
+	     [R4] = R3                	// [16:6338]  
+	     call _PlayA1800_Elements 	// [18:6338]  PlayA1800_Elements
+BB106_PU60:	// 0x158f
+// BB:106 cycle count: 1
+	     SP = SP + 1              	// [0:6338]  
+L_60_118:	// 0x1590
+L_60_117:	// 0x1590
+L_60_101:	// 0x1590
+// BB:107 cycle count: 10
+//6340     	}
+//6341     	
+//6342  
+//6343  
+//6344                if(Restart ==0)
 
 LM826:
-	     .stabn 68,0,6362,LM826-_Step1
-	     R3 = 0                   	// [0:6362]  
-	     DS = seg(_Key_Event)     	// [1:6362]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6362]  Key_Event
-	     DS:[R4] = R3             	// [4:6362]  
-//6363  			 Key_activeflag =Playbutton;
+	     .stabn 68,0,6344,LM826-_Step1
+	     DS = seg(_Restart)       	// [0:6344]  Restart
+	     R4 = (_Restart)          	// [1:6344]  Restart
+	     R4 = DS:[R4]             	// [3:6344]  
+	     cmp R4, 0                	// [5:6344]  
+	     je BB108_PU60            	// [6:6344]  
+BB147_PU60:	// 0x1596
+// BB:147 cycle count: 3
+	     goto L_60_119            	// [0:0]  
+BB108_PU60:	// 0x1598
+// BB:108 cycle count: 18
+//6345                {
+//6346           			   //Key_Event =0;  
+//6347  			           Key_activeflag =Playbutton;//Only_Play_KeyEnable;
 
 LM827:
-	     .stabn 68,0,6363,LM827-_Step1
-	     R3 = 1                   	// [6:6363]  
-	     DS = seg(_Key_activeflag)	// [7:6363]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [8:6363]  Key_activeflag
-	     DS:[R4] = R3             	// [10:6363]  
-//6364  	         PlayA1800_Elements(A_VLMMREN_Rule_01a);
+	     .stabn 68,0,6347,LM827-_Step1
+	     R3 = 1                   	// [0:6347]  
+	     DS = seg(_Key_activeflag)	// [1:6347]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [2:6347]  Key_activeflag
+	     DS:[R4] = R3             	// [4:6347]  
+//6348  		               TwoKeyflag = Playbutton;
 
 LM828:
-	     .stabn 68,0,6364,LM828-_Step1
-	     SP = SP - 1              	// [12:6364]  
-	     R3 = 49                  	// [13:6364]  
-	     R4 = SP + 1              	// [14:6364]  
-	     [R4] = R3                	// [16:6364]  
-	     call _PlayA1800_Elements 	// [18:6364]  PlayA1800_Elements
-BB104_PU60:	// 0x1599
-// BB:104 cycle count: 1
-	     SP = SP + 1              	// [0:6364]  
-L_60_118:	// 0x159a
-L_60_117:	// 0x159a
-L_60_101:	// 0x159a
-// BB:105 cycle count: 10
-//6366     	}
-//6367     	
-//6368  
-//6369  
-//6370                if(Restart ==0)
+	     .stabn 68,0,6348,LM828-_Step1
+	     R3 = 1                   	// [6:6348]  
+	     DS = seg(_TwoKeyflag)    	// [7:6348]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [8:6348]  TwoKeyflag
+	     DS:[R4] = R3             	// [10:6348]  
+//6349  					   PauseFlag =0; 
 
 LM829:
-	     .stabn 68,0,6370,LM829-_Step1
-	     DS = seg(_Restart)       	// [0:6370]  Restart
-	     R4 = (_Restart)          	// [1:6370]  Restart
-	     R4 = DS:[R4]             	// [3:6370]  
-	     cmp R4, 0                	// [5:6370]  
-	     je BB106_PU60            	// [6:6370]  
-BB145_PU60:	// 0x15a0
-// BB:145 cycle count: 3
-	     goto L_60_119            	// [0:0]  
-BB106_PU60:	// 0x15a2
-// BB:106 cycle count: 18
-//6371                {
-//6372           			   //Key_Event =0;  
-//6373  			           Key_activeflag =Playbutton;//Only_Play_KeyEnable;
+	     .stabn 68,0,6349,LM829-_Step1
+	     R3 = 0                   	// [12:6349]  
+	     DS = seg(_PauseFlag)     	// [13:6349]  PauseFlag
+	     R4 = (_PauseFlag)        	// [14:6349]  PauseFlag
+	     DS:[R4] = R3             	// [16:6349]  
+L_60_120:	// 0x15a7
+// BB:109 cycle count: 10
+//6350  		
+//6351  		                do
+//6352  		                {
+//6353  		                	
+//6354  		                	if(PauseFlag)
 
 LM830:
-	     .stabn 68,0,6373,LM830-_Step1
-	     R3 = 1                   	// [0:6373]  
-	     DS = seg(_Key_activeflag)	// [1:6373]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [2:6373]  Key_activeflag
-	     DS:[R4] = R3             	// [4:6373]  
-//6374  		               TwoKeyflag = Playbutton;
+	     .stabn 68,0,6354,LM830-_Step1
+	     DS = seg(_PauseFlag)     	// [0:6354]  PauseFlag
+	     R4 = (_PauseFlag)        	// [1:6354]  PauseFlag
+	     R4 = DS:[R4]             	// [3:6354]  
+	     cmp R4, 0                	// [5:6354]  
+	     je L_60_121              	// [6:6354]  
+BB110_PU60:	// 0x15ad
+// BB:110 cycle count: 16
+//6355  		                	{
+//6356  		                		PauseFlag =0;
 
 LM831:
-	     .stabn 68,0,6374,LM831-_Step1
-	     R3 = 1                   	// [6:6374]  
-	     DS = seg(_TwoKeyflag)    	// [7:6374]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [8:6374]  TwoKeyflag
-	     DS:[R4] = R3             	// [10:6374]  
-//6375  					   PauseFlag =0; 
+	     .stabn 68,0,6356,LM831-_Step1
+	     R3 = 0                   	// [0:6356]  
+	     DS = seg(_PauseFlag)     	// [1:6356]  PauseFlag
+	     R4 = (_PauseFlag)        	// [2:6356]  PauseFlag
+	     DS:[R4] = R3             	// [4:6356]  
+//6357  		                		
+//6358  					              if(Restart ==0)
 
 LM832:
-	     .stabn 68,0,6375,LM832-_Step1
-	     R3 = 0                   	// [12:6375]  
-	     DS = seg(_PauseFlag)     	// [13:6375]  PauseFlag
-	     R4 = (_PauseFlag)        	// [14:6375]  PauseFlag
-	     DS:[R4] = R3             	// [16:6375]  
-L_60_120:	// 0x15b1
-// BB:107 cycle count: 10
-//6376  		
-//6377  		                do
-//6378  		                {
-//6379  		                	
-//6380  		                	if(PauseFlag)
+	     .stabn 68,0,6358,LM832-_Step1
+	     DS = seg(_Restart)       	// [6:6358]  Restart
+	     R4 = (_Restart)          	// [7:6358]  Restart
+	     R4 = DS:[R4]             	// [9:6358]  
+	     cmp R4, 0                	// [11:6358]  
+	     jne L_60_122             	// [12:6358]  
+BB111_PU60:	// 0x15b8
+// BB:111 cycle count: 22
+//6359  								  {
+//6360  								  	  		     	 
+//6361  							          Key_Event =0; 
 
 LM833:
-	     .stabn 68,0,6380,LM833-_Step1
-	     DS = seg(_PauseFlag)     	// [0:6380]  PauseFlag
-	     R4 = (_PauseFlag)        	// [1:6380]  PauseFlag
-	     R4 = DS:[R4]             	// [3:6380]  
-	     cmp R4, 0                	// [5:6380]  
-	     je L_60_121              	// [6:6380]  
-BB108_PU60:	// 0x15b7
-// BB:108 cycle count: 16
-//6381  		                	{
-//6382  		                		PauseFlag =0;
+	     .stabn 68,0,6361,LM833-_Step1
+	     R3 = 0                   	// [0:6361]  
+	     DS = seg(_Key_Event)     	// [1:6361]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6361]  Key_Event
+	     DS:[R4] = R3             	// [4:6361]  
+//6362  							          Key_activeflag =Playbutton;//ALL_Key_Enable&(~(Key_True|Key_False));
 
 LM834:
-	     .stabn 68,0,6382,LM834-_Step1
-	     R3 = 0                   	// [0:6382]  
-	     DS = seg(_PauseFlag)     	// [1:6382]  PauseFlag
-	     R4 = (_PauseFlag)        	// [2:6382]  PauseFlag
-	     DS:[R4] = R3             	// [4:6382]  
-//6383  		                		
-//6384  					              if(Restart ==0)
+	     .stabn 68,0,6362,LM834-_Step1
+	     R3 = 1                   	// [6:6362]  
+	     DS = seg(_Key_activeflag)	// [7:6362]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:6362]  Key_activeflag
+	     DS:[R4] = R3             	// [10:6362]  
+//6363  							          
+//6364  							         if(Registerd_Num ==1)  
 
 LM835:
-	     .stabn 68,0,6384,LM835-_Step1
-	     DS = seg(_Restart)       	// [6:6384]  Restart
-	     R4 = (_Restart)          	// [7:6384]  Restart
-	     R4 = DS:[R4]             	// [9:6384]  
-	     cmp R4, 0                	// [11:6384]  
-	     jne L_60_122             	// [12:6384]  
-BB109_PU60:	// 0x15c2
-// BB:109 cycle count: 22
-//6385  								  {
-//6386  								  	  		     	 
-//6387  							          Key_Event =0; 
+	     .stabn 68,0,6364,LM835-_Step1
+	     DS = seg(_Registerd_Num) 	// [12:6364]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [13:6364]  Registerd_Num
+	     R4 = DS:[R4]             	// [15:6364]  
+	     cmp R4, 1                	// [17:6364]  
+	     jne L_60_124             	// [18:6364]  
+BB112_PU60:	// 0x15c8
+// BB:112 cycle count: 9
+//6365  								        PlayA1800_Elements(A_VLMMREN_Rule_01a);
 
 LM836:
-	     .stabn 68,0,6387,LM836-_Step1
-	     R3 = 0                   	// [0:6387]  
-	     DS = seg(_Key_Event)     	// [1:6387]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6387]  Key_Event
-	     DS:[R4] = R3             	// [4:6387]  
-//6388  							          Key_activeflag =Playbutton;//ALL_Key_Enable&(~(Key_True|Key_False));
+	     .stabn 68,0,6365,LM836-_Step1
+	     SP = SP - 1              	// [0:6365]  
+	     R3 = 49                  	// [1:6365]  
+	     R4 = SP + 1              	// [2:6365]  
+	     [R4] = R3                	// [4:6365]  
+	     call _PlayA1800_Elements 	// [6:6365]  PlayA1800_Elements
+BB113_PU60:	// 0x15cf
+// BB:113 cycle count: 5
+	     SP = SP + 1              	// [0:6365]  
+	     jmp L_60_123             	// [1:6365]  
+L_60_124:	// 0x15d1
+// BB:114 cycle count: 9
+//6366  								      else
+//6367  								        PlayA1800_Elements(A_VLMMREN_Rule_01b); 
 
 LM837:
-	     .stabn 68,0,6388,LM837-_Step1
-	     R3 = 1                   	// [6:6388]  
-	     DS = seg(_Key_activeflag)	// [7:6388]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [8:6388]  Key_activeflag
-	     DS:[R4] = R3             	// [10:6388]  
-//6389  							          
-//6390  							         if(Registerd_Num ==1)  
+	     .stabn 68,0,6367,LM837-_Step1
+	     SP = SP - 1              	// [0:6367]  
+	     R3 = 50                  	// [1:6367]  
+	     R4 = SP + 1              	// [2:6367]  
+	     [R4] = R3                	// [4:6367]  
+	     call _PlayA1800_Elements 	// [6:6367]  PlayA1800_Elements
+BB115_PU60:	// 0x15d8
+// BB:115 cycle count: 1
+	     SP = SP + 1              	// [0:6367]  
+L_60_123:	// 0x15d9
+L_60_122:	// 0x15d9
+L_60_121:	// 0x15d9
+// BB:116 cycle count: 9
+//6373  		                  
+//6374  		                  
+//6375  		                  
+//6376  				      	  
+//6377  				      	  Led_ON_Some(LED0_BIT);
 
 LM838:
-	     .stabn 68,0,6390,LM838-_Step1
-	     DS = seg(_Registerd_Num) 	// [12:6390]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [13:6390]  Registerd_Num
-	     R4 = DS:[R4]             	// [15:6390]  
-	     cmp R4, 1                	// [17:6390]  
-	     jne L_60_124             	// [18:6390]  
-BB110_PU60:	// 0x15d2
-// BB:110 cycle count: 9
-//6391  								        PlayA1800_Elements(A_VLMMREN_Rule_01a);
+	     .stabn 68,0,6377,LM838-_Step1
+	     SP = SP - 1              	// [0:6377]  
+	     R3 = 1                   	// [1:6377]  
+	     R4 = SP + 1              	// [2:6377]  
+	     [R4] = R3                	// [4:6377]  
+	     call _Led_ON_Some        	// [6:6377]  Led_ON_Some
+BB117_PU60:	// 0x15e0
+// BB:117 cycle count: 8
+//6378  						  PlayA1800_Elements(A_VLMMREN_Rule_04);
 
 LM839:
-	     .stabn 68,0,6391,LM839-_Step1
-	     SP = SP - 1              	// [0:6391]  
-	     R3 = 49                  	// [1:6391]  
-	     R4 = SP + 1              	// [2:6391]  
-	     [R4] = R3                	// [4:6391]  
-	     call _PlayA1800_Elements 	// [6:6391]  PlayA1800_Elements
-BB111_PU60:	// 0x15d9
-// BB:111 cycle count: 5
-	     SP = SP + 1              	// [0:6391]  
-	     jmp L_60_123             	// [1:6391]  
-L_60_124:	// 0x15db
-// BB:112 cycle count: 9
-//6392  								      else
-//6393  								        PlayA1800_Elements(A_VLMMREN_Rule_01b); 
+	     .stabn 68,0,6378,LM839-_Step1
+	     R3 = 56                  	// [0:6378]  
+	     R4 = SP + 1              	// [1:6378]  
+	     [R4] = R3                	// [3:6378]  
+	     call _PlayA1800_Elements 	// [5:6378]  PlayA1800_Elements
+BB118_PU60:	// 0x15e6
+// BB:118 cycle count: 4
+	     SP = SP + 1              	// [0:6378]  
+//6379  						  Light_all_off();
 
 LM840:
-	     .stabn 68,0,6393,LM840-_Step1
-	     SP = SP - 1              	// [0:6393]  
-	     R3 = 50                  	// [1:6393]  
-	     R4 = SP + 1              	// [2:6393]  
-	     [R4] = R3                	// [4:6393]  
-	     call _PlayA1800_Elements 	// [6:6393]  PlayA1800_Elements
-BB113_PU60:	// 0x15e2
-// BB:113 cycle count: 1
-	     SP = SP + 1              	// [0:6393]  
-L_60_123:	// 0x15e3
-L_60_122:	// 0x15e3
-L_60_121:	// 0x15e3
-// BB:114 cycle count: 9
-//6399  		                  
-//6400  		                  
-//6401  		                  
-//6402  				      	  
-//6403  				      	  Led_ON_Some(LED0_BIT);
+	     .stabn 68,0,6379,LM840-_Step1
+	     call _Light_all_off      	// [1:6379]  Light_all_off
+BB119_PU60:	// 0x15e9
+// BB:119 cycle count: 9
+//6380  						  Led_ON_Some(LED3_BIT);
 
 LM841:
-	     .stabn 68,0,6403,LM841-_Step1
-	     SP = SP - 1              	// [0:6403]  
-	     R3 = 1                   	// [1:6403]  
-	     R4 = SP + 1              	// [2:6403]  
-	     [R4] = R3                	// [4:6403]  
-	     call _Led_ON_Some        	// [6:6403]  Led_ON_Some
-BB115_PU60:	// 0x15ea
-// BB:115 cycle count: 8
-//6404  						  PlayA1800_Elements(A_VLMMREN_Rule_04);
+	     .stabn 68,0,6380,LM841-_Step1
+	     SP = SP - 1              	// [0:6380]  
+	     R3 = 8                   	// [1:6380]  
+	     R4 = SP + 1              	// [2:6380]  
+	     [R4] = R3                	// [4:6380]  
+	     call _Led_ON_Some        	// [6:6380]  Led_ON_Some
+BB120_PU60:	// 0x15f0
+// BB:120 cycle count: 8
+//6381  						  PlayA1800_Elements(A_VLMMREN_Rule_05);
 
 LM842:
-	     .stabn 68,0,6404,LM842-_Step1
-	     R3 = 56                  	// [0:6404]  
-	     R4 = SP + 1              	// [1:6404]  
-	     [R4] = R3                	// [3:6404]  
-	     call _PlayA1800_Elements 	// [5:6404]  PlayA1800_Elements
-BB116_PU60:	// 0x15f0
-// BB:116 cycle count: 4
-	     SP = SP + 1              	// [0:6404]  
-//6405  						  Light_all_off();
+	     .stabn 68,0,6381,LM842-_Step1
+	     R3 = 57                  	// [0:6381]  
+	     R4 = SP + 1              	// [1:6381]  
+	     [R4] = R3                	// [3:6381]  
+	     call _PlayA1800_Elements 	// [5:6381]  PlayA1800_Elements
+BB121_PU60:	// 0x15f6
+// BB:121 cycle count: 4
+	     SP = SP + 1              	// [0:6381]  
+//6382  						  Light_all_off();
 
 LM843:
-	     .stabn 68,0,6405,LM843-_Step1
-	     call _Light_all_off      	// [1:6405]  Light_all_off
-BB117_PU60:	// 0x15f3
-// BB:117 cycle count: 9
-//6406  						  Led_ON_Some(LED3_BIT);
+	     .stabn 68,0,6382,LM843-_Step1
+	     call _Light_all_off      	// [1:6382]  Light_all_off
+BB122_PU60:	// 0x15f9
+// BB:122 cycle count: 9
+//6383  						  Led_ON_Some(LED2_BIT);				  
 
 LM844:
-	     .stabn 68,0,6406,LM844-_Step1
-	     SP = SP - 1              	// [0:6406]  
-	     R3 = 8                   	// [1:6406]  
-	     R4 = SP + 1              	// [2:6406]  
-	     [R4] = R3                	// [4:6406]  
-	     call _Led_ON_Some        	// [6:6406]  Led_ON_Some
-BB118_PU60:	// 0x15fa
-// BB:118 cycle count: 8
-//6407  						  PlayA1800_Elements(A_VLMMREN_Rule_05);
+	     .stabn 68,0,6383,LM844-_Step1
+	     SP = SP - 1              	// [0:6383]  
+	     R3 = 4                   	// [1:6383]  
+	     R4 = SP + 1              	// [2:6383]  
+	     [R4] = R3                	// [4:6383]  
+	     call _Led_ON_Some        	// [6:6383]  Led_ON_Some
+BB123_PU60:	// 0x1600
+// BB:123 cycle count: 8
+//6384  						  PlayA1800_Elements(A_VLMMREN_Rule_06);
 
 LM845:
-	     .stabn 68,0,6407,LM845-_Step1
-	     R3 = 57                  	// [0:6407]  
-	     R4 = SP + 1              	// [1:6407]  
-	     [R4] = R3                	// [3:6407]  
-	     call _PlayA1800_Elements 	// [5:6407]  PlayA1800_Elements
-BB119_PU60:	// 0x1600
-// BB:119 cycle count: 4
-	     SP = SP + 1              	// [0:6407]  
-//6408  						  Light_all_off();
+	     .stabn 68,0,6384,LM845-_Step1
+	     R3 = 58                  	// [0:6384]  
+	     R4 = SP + 1              	// [1:6384]  
+	     [R4] = R3                	// [3:6384]  
+	     call _PlayA1800_Elements 	// [5:6384]  PlayA1800_Elements
+BB124_PU60:	// 0x1606
+// BB:124 cycle count: 4
+	     SP = SP + 1              	// [0:6384]  
+//6385  						  Light_all_off();
 
 LM846:
-	     .stabn 68,0,6408,LM846-_Step1
-	     call _Light_all_off      	// [1:6408]  Light_all_off
-BB120_PU60:	// 0x1603
-// BB:120 cycle count: 9
-//6409  						  Led_ON_Some(LED2_BIT);				  
+	     .stabn 68,0,6385,LM846-_Step1
+	     call _Light_all_off      	// [1:6385]  Light_all_off
+BB125_PU60:	// 0x1609
+// BB:125 cycle count: 9
+//6386  						  Led_ON_Some(LED1_BIT);
 
 LM847:
-	     .stabn 68,0,6409,LM847-_Step1
-	     SP = SP - 1              	// [0:6409]  
-	     R3 = 4                   	// [1:6409]  
-	     R4 = SP + 1              	// [2:6409]  
-	     [R4] = R3                	// [4:6409]  
-	     call _Led_ON_Some        	// [6:6409]  Led_ON_Some
-BB121_PU60:	// 0x160a
-// BB:121 cycle count: 8
-//6410  						  PlayA1800_Elements(A_VLMMREN_Rule_06);
+	     .stabn 68,0,6386,LM847-_Step1
+	     SP = SP - 1              	// [0:6386]  
+	     R3 = 2                   	// [1:6386]  
+	     R4 = SP + 1              	// [2:6386]  
+	     [R4] = R3                	// [4:6386]  
+	     call _Led_ON_Some        	// [6:6386]  Led_ON_Some
+BB126_PU60:	// 0x1610
+// BB:126 cycle count: 8
+//6387  						  PlayA1800_Elements(A_VLMMREN_Rule_07);
 
 LM848:
-	     .stabn 68,0,6410,LM848-_Step1
-	     R3 = 58                  	// [0:6410]  
-	     R4 = SP + 1              	// [1:6410]  
-	     [R4] = R3                	// [3:6410]  
-	     call _PlayA1800_Elements 	// [5:6410]  PlayA1800_Elements
-BB122_PU60:	// 0x1610
-// BB:122 cycle count: 4
-	     SP = SP + 1              	// [0:6410]  
-//6411  						  Light_all_off();
+	     .stabn 68,0,6387,LM848-_Step1
+	     R3 = 59                  	// [0:6387]  
+	     R4 = SP + 1              	// [1:6387]  
+	     [R4] = R3                	// [3:6387]  
+	     call _PlayA1800_Elements 	// [5:6387]  PlayA1800_Elements
+BB127_PU60:	// 0x1616
+// BB:127 cycle count: 4
+	     SP = SP + 1              	// [0:6387]  
+//6388  						  Light_all_off();
 
 LM849:
-	     .stabn 68,0,6411,LM849-_Step1
-	     call _Light_all_off      	// [1:6411]  Light_all_off
-BB123_PU60:	// 0x1613
-// BB:123 cycle count: 9
-//6412  						  Led_ON_Some(LED1_BIT);
+	     .stabn 68,0,6388,LM849-_Step1
+	     call _Light_all_off      	// [1:6388]  Light_all_off
+Lt_60_5:	// 0x1619
+// BB:128 cycle count: 10
+//6389  				  	   }while(PauseFlag);
 
 LM850:
-	     .stabn 68,0,6412,LM850-_Step1
-	     SP = SP - 1              	// [0:6412]  
-	     R3 = 2                   	// [1:6412]  
-	     R4 = SP + 1              	// [2:6412]  
-	     [R4] = R3                	// [4:6412]  
-	     call _Led_ON_Some        	// [6:6412]  Led_ON_Some
-BB124_PU60:	// 0x161a
-// BB:124 cycle count: 8
-//6413  						  PlayA1800_Elements(A_VLMMREN_Rule_07);
+	     .stabn 68,0,6389,LM850-_Step1
+	     DS = seg(_PauseFlag)     	// [0:6389]  PauseFlag
+	     R4 = (_PauseFlag)        	// [1:6389]  PauseFlag
+	     R4 = DS:[R4]             	// [3:6389]  
+	     cmp R4, 0                	// [5:6389]  
+	     je BB129_PU60            	// [6:6389]  
+BB153_PU60:	// 0x161f
+// BB:153 cycle count: 3
+	     goto L_60_120            	// [0:0]  
+BB129_PU60:	// 0x1621
+// BB:129 cycle count: 6
+//6390  		                 TwoKeyflag =0;
 
 LM851:
-	     .stabn 68,0,6413,LM851-_Step1
-	     R3 = 59                  	// [0:6413]  
+	     .stabn 68,0,6390,LM851-_Step1
+	     R3 = 0                   	// [0:6390]  
+	     DS = seg(_TwoKeyflag)    	// [1:6390]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [2:6390]  TwoKeyflag
+	     DS:[R4] = R3             	// [4:6390]  
+L_60_119:	// 0x1626
+// BB:130 cycle count: 22
+//6391                }
+//6392  
+//6393           Key_Event =0;  
+
+LM852:
+	     .stabn 68,0,6393,LM852-_Step1
+	     R3 = 0                   	// [0:6393]  
+	     DS = seg(_Key_Event)     	// [1:6393]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6393]  Key_Event
+	     DS:[R4] = R3             	// [4:6393]  
+//6394           Key_activeflag =Playbutton;
+
+LM853:
+	     .stabn 68,0,6394,LM853-_Step1
+	     R3 = 1                   	// [6:6394]  
+	     DS = seg(_Key_activeflag)	// [7:6394]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:6394]  Key_activeflag
+	     DS:[R4] = R3             	// [10:6394]  
+//6395          if((Registerd_Num>1))//||(Record==0))
+
+LM854:
+	     .stabn 68,0,6395,LM854-_Step1
+	     DS = seg(_Registerd_Num) 	// [12:6395]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [13:6395]  Registerd_Num
+	     R4 = DS:[R4]             	// [15:6395]  
+	     cmp R4, 1                	// [17:6395]  
+	     jbe BB131_PU60           	// [18:6395]  
+BB146_PU60:	// 0x1636
+// BB:146 cycle count: 3
+	     goto L_60_125            	// [0:0]  
+BB131_PU60:	// 0x1638
+// BB:131 cycle count: 22
+//6401          	}
+//6402          else 
+//6403            { 
+//6404            	
+//6405            	    Key_Event =0;  
+
+LM855:
+	     .stabn 68,0,6405,LM855-_Step1
+	     R3 = 0                   	// [0:6405]  
+	     DS = seg(_Key_Event)     	// [1:6405]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6405]  Key_Event
+	     DS:[R4] = R3             	// [4:6405]  
+//6406                  Key_activeflag =Playbutton;
+
+LM856:
+	     .stabn 68,0,6406,LM856-_Step1
+	     R3 = 1                   	// [6:6406]  
+	     DS = seg(_Key_activeflag)	// [7:6406]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:6406]  Key_activeflag
+	     DS:[R4] = R3             	// [10:6406]  
+//6407           
+//6408                  PlayA1800_Elements(A_VLMMREN_Rule_11);
+
+LM857:
+	     .stabn 68,0,6408,LM857-_Step1
+	     SP = SP - 1              	// [12:6408]  
+	     R3 = 64                  	// [13:6408]  
+	     R4 = SP + 1              	// [15:6408]  
+	     [R4] = R3                	// [17:6408]  
+	     call _PlayA1800_Elements 	// [19:6408]  PlayA1800_Elements
+BB132_PU60:	// 0x164a
+// BB:132 cycle count: 12
+	     SP = SP + 1              	// [0:6408]  
+//6409                  
+//6410  		        if((Record>100))
+
+LM858:
+	     .stabn 68,0,6410,LM858-_Step1
+	     DS = seg(_Record)        	// [1:6410]  Record
+	     R4 = (_Record)           	// [2:6410]  Record
+	     R4 = DS:[R4]             	// [4:6410]  
+	     cmp R4, 100              	// [6:6410]  
+	     jbe L_60_127             	// [8:6410]  
+BB133_PU60:	// 0x1652
+// BB:133 cycle count: 9
+//6411  		           {
+//6412  		        	  PlayA1800_Elements(A_VLMMREN_Rule_03Max);
+
+LM859:
+	     .stabn 68,0,6412,LM859-_Step1
+	     SP = SP - 1              	// [0:6412]  
+	     R3 = 55                  	// [1:6412]  
+	     R4 = SP + 1              	// [2:6412]  
+	     [R4] = R3                	// [4:6412]  
+	     call _PlayA1800_Elements 	// [6:6412]  PlayA1800_Elements
+BB134_PU60:	// 0x1659
+// BB:134 cycle count: 8
+//6413  		        	  PlayA1800_Elements(A_VLMMREN_Rule_03b);
+
+LM860:
+	     .stabn 68,0,6413,LM860-_Step1
+	     R3 = 54                  	// [0:6413]  
 	     R4 = SP + 1              	// [1:6413]  
 	     [R4] = R3                	// [3:6413]  
 	     call _PlayA1800_Elements 	// [5:6413]  PlayA1800_Elements
-BB125_PU60:	// 0x1620
-// BB:125 cycle count: 4
+BB135_PU60:	// 0x165f
+// BB:135 cycle count: 5
 	     SP = SP + 1              	// [0:6413]  
-//6414  						  Light_all_off();
-
-LM852:
-	     .stabn 68,0,6414,LM852-_Step1
-	     call _Light_all_off      	// [1:6414]  Light_all_off
-Lt_60_5:	// 0x1623
-// BB:126 cycle count: 10
-//6415  				  	   }while(PauseFlag);
-
-LM853:
-	     .stabn 68,0,6415,LM853-_Step1
-	     DS = seg(_PauseFlag)     	// [0:6415]  PauseFlag
-	     R4 = (_PauseFlag)        	// [1:6415]  PauseFlag
-	     R4 = DS:[R4]             	// [3:6415]  
-	     cmp R4, 0                	// [5:6415]  
-	     je BB127_PU60            	// [6:6415]  
-BB151_PU60:	// 0x1629
-// BB:151 cycle count: 3
-	     goto L_60_120            	// [0:0]  
-BB127_PU60:	// 0x162b
-// BB:127 cycle count: 6
-//6416  		                 TwoKeyflag =0;
-
-LM854:
-	     .stabn 68,0,6416,LM854-_Step1
-	     R3 = 0                   	// [0:6416]  
-	     DS = seg(_TwoKeyflag)    	// [1:6416]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [2:6416]  TwoKeyflag
-	     DS:[R4] = R3             	// [4:6416]  
-L_60_119:	// 0x1630
-// BB:128 cycle count: 22
-//6417                }
-//6418  
-//6419           Key_Event =0;  
-
-LM855:
-	     .stabn 68,0,6419,LM855-_Step1
-	     R3 = 0                   	// [0:6419]  
-	     DS = seg(_Key_Event)     	// [1:6419]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6419]  Key_Event
-	     DS:[R4] = R3             	// [4:6419]  
-//6420           Key_activeflag =Playbutton;
-
-LM856:
-	     .stabn 68,0,6420,LM856-_Step1
-	     R3 = 1                   	// [6:6420]  
-	     DS = seg(_Key_activeflag)	// [7:6420]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [8:6420]  Key_activeflag
-	     DS:[R4] = R3             	// [10:6420]  
-//6421          if((Registerd_Num>1))//||(Record==0))
-
-LM857:
-	     .stabn 68,0,6421,LM857-_Step1
-	     DS = seg(_Registerd_Num) 	// [12:6421]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [13:6421]  Registerd_Num
-	     R4 = DS:[R4]             	// [15:6421]  
-	     cmp R4, 1                	// [17:6421]  
-	     jbe BB129_PU60           	// [18:6421]  
-BB144_PU60:	// 0x1640
-// BB:144 cycle count: 3
-	     goto L_60_125            	// [0:0]  
-BB129_PU60:	// 0x1642
-// BB:129 cycle count: 22
-//6427          	}
-//6428          else 
-//6429            { 
-//6430            	
-//6431            	    Key_Event =0;  
-
-LM858:
-	     .stabn 68,0,6431,LM858-_Step1
-	     R3 = 0                   	// [0:6431]  
-	     DS = seg(_Key_Event)     	// [1:6431]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6431]  Key_Event
-	     DS:[R4] = R3             	// [4:6431]  
-//6432                  Key_activeflag =Playbutton;
-
-LM859:
-	     .stabn 68,0,6432,LM859-_Step1
-	     R3 = 1                   	// [6:6432]  
-	     DS = seg(_Key_activeflag)	// [7:6432]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [8:6432]  Key_activeflag
-	     DS:[R4] = R3             	// [10:6432]  
-//6433           
-//6434                  PlayA1800_Elements(A_VLMMREN_Rule_11);
-
-LM860:
-	     .stabn 68,0,6434,LM860-_Step1
-	     SP = SP - 1              	// [12:6434]  
-	     R3 = 64                  	// [13:6434]  
-	     R4 = SP + 1              	// [15:6434]  
-	     [R4] = R3                	// [17:6434]  
-	     call _PlayA1800_Elements 	// [19:6434]  PlayA1800_Elements
-BB130_PU60:	// 0x1654
-// BB:130 cycle count: 12
-	     SP = SP + 1              	// [0:6434]  
-//6435                  
-//6436  		        if((Record>100))
+	     jmp L_60_126             	// [1:6413]  
+L_60_127:	// 0x1661
+// BB:136 cycle count: 10
+//6414  		           }
+//6415  			     else if(Record!=0)
 
 LM861:
-	     .stabn 68,0,6436,LM861-_Step1
-	     DS = seg(_Record)        	// [1:6436]  Record
-	     R4 = (_Record)           	// [2:6436]  Record
-	     R4 = DS:[R4]             	// [4:6436]  
-	     cmp R4, 100              	// [6:6436]  
-	     jbe L_60_127             	// [8:6436]  
-BB131_PU60:	// 0x165c
-// BB:131 cycle count: 9
-//6437  		           {
-//6438  		        	  PlayA1800_Elements(A_VLMMREN_Rule_03Max);
+	     .stabn 68,0,6415,LM861-_Step1
+	     DS = seg(_Record)        	// [0:6415]  Record
+	     R4 = (_Record)           	// [1:6415]  Record
+	     R4 = DS:[R4]             	// [3:6415]  
+	     cmp R4, 0                	// [5:6415]  
+	     je L_60_128              	// [6:6415]  
+BB137_PU60:	// 0x1667
+// BB:137 cycle count: 9
+//6416  			     	{
+//6417  					    PlayA1800_Elements(A_VLMMREN_Rule_03);
 
 LM862:
-	     .stabn 68,0,6438,LM862-_Step1
-	     SP = SP - 1              	// [0:6438]  
-	     R3 = 55                  	// [1:6438]  
-	     R4 = SP + 1              	// [2:6438]  
-	     [R4] = R3                	// [4:6438]  
-	     call _PlayA1800_Elements 	// [6:6438]  PlayA1800_Elements
-BB132_PU60:	// 0x1663
-// BB:132 cycle count: 8
-//6439  		        	  PlayA1800_Elements(A_VLMMREN_Rule_03b);
+	     .stabn 68,0,6417,LM862-_Step1
+	     SP = SP - 1              	// [0:6417]  
+	     R3 = 53                  	// [1:6417]  
+	     R4 = SP + 1              	// [2:6417]  
+	     [R4] = R3                	// [4:6417]  
+	     call _PlayA1800_Elements 	// [6:6417]  PlayA1800_Elements
+BB138_PU60:	// 0x166e
+// BB:138 cycle count: 19
+	     SP = SP - 1              	// [0:6417]  
+//6418  		                Play_Seq(Record,C_Point_A_StartAddr);//C_NX
 
 LM863:
-	     .stabn 68,0,6439,LM863-_Step1
-	     R3 = 54                  	// [0:6439]  
-	     R4 = SP + 1              	// [1:6439]  
-	     [R4] = R3                	// [3:6439]  
-	     call _PlayA1800_Elements 	// [5:6439]  PlayA1800_Elements
-BB133_PU60:	// 0x1669
-// BB:133 cycle count: 5
-	     SP = SP + 1              	// [0:6439]  
-	     jmp L_60_126             	// [1:6439]  
-L_60_127:	// 0x166b
-// BB:134 cycle count: 10
-//6440  		           }
-//6441  			     else if(Record!=0)
+	     .stabn 68,0,6418,LM863-_Step1
+	     DS = seg(_Record)        	// [1:6418]  Record
+	     R4 = (_Record)           	// [2:6418]  Record
+	     R3 = DS:[R4]             	// [4:6418]  
+	     R4 = SP + 1              	// [6:6418]  
+	     [R4] = R3                	// [8:6418]  
+	     R3 = 8000                	// [10:6418]  
+	     R4 = SP + 2              	// [12:6418]  
+	     [R4] = R3                	// [14:6418]  
+	     call _Play_Seq           	// [16:6418]  Play_Seq
+BB139_PU60:	// 0x167d
+// BB:139 cycle count: 10
+	     SP = SP + 1              	// [0:6418]  
+//6419  		                PlayA1800_Elements(A_VLMMREN_Score_02);
 
 LM864:
-	     .stabn 68,0,6441,LM864-_Step1
-	     DS = seg(_Record)        	// [0:6441]  Record
-	     R4 = (_Record)           	// [1:6441]  Record
-	     R4 = DS:[R4]             	// [3:6441]  
-	     cmp R4, 0                	// [5:6441]  
-	     je L_60_128              	// [6:6441]  
-BB135_PU60:	// 0x1671
-// BB:135 cycle count: 9
-//6442  			     	{
-//6443  					    PlayA1800_Elements(A_VLMMREN_Rule_03);
+	     .stabn 68,0,6419,LM864-_Step1
+	     R3 = 67                  	// [1:6419]  
+	     R4 = SP + 1              	// [3:6419]  
+	     [R4] = R3                	// [5:6419]  
+	     call _PlayA1800_Elements 	// [7:6419]  PlayA1800_Elements
+BB140_PU60:	// 0x1685
+// BB:140 cycle count: 8
+//6420  						PlayA1800_Elements(A_VLMMREN_Rule_03b);
 
 LM865:
-	     .stabn 68,0,6443,LM865-_Step1
-	     SP = SP - 1              	// [0:6443]  
-	     R3 = 53                  	// [1:6443]  
-	     R4 = SP + 1              	// [2:6443]  
-	     [R4] = R3                	// [4:6443]  
-	     call _PlayA1800_Elements 	// [6:6443]  PlayA1800_Elements
-BB136_PU60:	// 0x1678
-// BB:136 cycle count: 19
-	     SP = SP - 1              	// [0:6443]  
-//6444  		                Play_Seq(Record,C_Point_A_StartAddr);//C_NX
+	     .stabn 68,0,6420,LM865-_Step1
+	     R3 = 54                  	// [0:6420]  
+	     R4 = SP + 1              	// [1:6420]  
+	     [R4] = R3                	// [3:6420]  
+	     call _PlayA1800_Elements 	// [5:6420]  PlayA1800_Elements
+BB141_PU60:	// 0x168b
+// BB:141 cycle count: 1
+	     SP = SP + 1              	// [0:6420]  
+L_60_128:	// 0x168c
+L_60_126:	// 0x168c
+L_60_125:	// 0x168c
+// BB:142 cycle count: 15
+//6422  		
+//6423  			     	}
+//6424            }
+//6425  		
+//6426           Key_Event =0;  
 
 LM866:
-	     .stabn 68,0,6444,LM866-_Step1
-	     DS = seg(_Record)        	// [1:6444]  Record
-	     R4 = (_Record)           	// [2:6444]  Record
-	     R3 = DS:[R4]             	// [4:6444]  
-	     R4 = SP + 1              	// [6:6444]  
-	     [R4] = R3                	// [8:6444]  
-	     R3 = 8000                	// [10:6444]  
-	     R4 = SP + 2              	// [12:6444]  
-	     [R4] = R3                	// [14:6444]  
-	     call _Play_Seq           	// [16:6444]  Play_Seq
-BB137_PU60:	// 0x1687
-// BB:137 cycle count: 10
-	     SP = SP + 1              	// [0:6444]  
-//6445  		                PlayA1800_Elements(A_VLMMREN_Score_02);
+	     .stabn 68,0,6426,LM866-_Step1
+	     R3 = 0                   	// [0:6426]  
+	     DS = seg(_Key_Event)     	// [1:6426]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6426]  Key_Event
+	     DS:[R4] = R3             	// [4:6426]  
+//6427           delay_time(8);
 
 LM867:
-	     .stabn 68,0,6445,LM867-_Step1
-	     R3 = 67                  	// [1:6445]  
-	     R4 = SP + 1              	// [3:6445]  
-	     [R4] = R3                	// [5:6445]  
-	     call _PlayA1800_Elements 	// [7:6445]  PlayA1800_Elements
-BB138_PU60:	// 0x168f
-// BB:138 cycle count: 8
-//6446  						PlayA1800_Elements(A_VLMMREN_Rule_03b);
+	     .stabn 68,0,6427,LM867-_Step1
+	     SP = SP - 1              	// [6:6427]  
+	     R3 = 8                   	// [7:6427]  
+	     R4 = SP + 1              	// [8:6427]  
+	     [R4] = R3                	// [10:6427]  
+	     call _delay_time         	// [12:6427]  delay_time
+BB143_PU60:	// 0x1698
+// BB:143 cycle count: 9
+//6428           PlayA1800_Elements(A_VLMMREN_Start);
 
 LM868:
-	     .stabn 68,0,6446,LM868-_Step1
-	     R3 = 54                  	// [0:6446]  
-	     R4 = SP + 1              	// [1:6446]  
-	     [R4] = R3                	// [3:6446]  
-	     call _PlayA1800_Elements 	// [5:6446]  PlayA1800_Elements
-BB139_PU60:	// 0x1695
-// BB:139 cycle count: 1
-	     SP = SP + 1              	// [0:6446]  
-L_60_128:	// 0x1696
-L_60_126:	// 0x1696
-L_60_125:	// 0x1696
-// BB:140 cycle count: 15
-//6448  		
-//6449  			     	}
-//6450            }
-//6451  		
-//6452           Key_Event =0;  
+	     .stabn 68,0,6428,LM868-_Step1
+	     R3 = 75                  	// [0:6428]  
+	     R4 = SP + 1              	// [2:6428]  
+	     [R4] = R3                	// [4:6428]  
+	     call _PlayA1800_Elements 	// [6:6428]  PlayA1800_Elements
+BB144_PU60:	// 0x169f
+// BB:144 cycle count: 8
+//6429           delay_time(8);
 
 LM869:
-	     .stabn 68,0,6452,LM869-_Step1
-	     R3 = 0                   	// [0:6452]  
-	     DS = seg(_Key_Event)     	// [1:6452]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6452]  Key_Event
-	     DS:[R4] = R3             	// [4:6452]  
-//6453           delay_time(8);
+	     .stabn 68,0,6429,LM869-_Step1
+	     R3 = 8                   	// [0:6429]  
+	     R4 = SP + 1              	// [1:6429]  
+	     [R4] = R3                	// [3:6429]  
+	     call _delay_time         	// [5:6429]  delay_time
+BB145_PU60:	// 0x16a5
+// BB:145 cycle count: 14
+	     SP = SP + 5              	// [0:6429]  
+//6430  
+//6431  
+//6432  	 Round =1;
 
 LM870:
-	     .stabn 68,0,6453,LM870-_Step1
-	     SP = SP - 1              	// [6:6453]  
-	     R3 = 8                   	// [7:6453]  
-	     R4 = SP + 1              	// [8:6453]  
-	     [R4] = R3                	// [10:6453]  
-	     call _delay_time         	// [12:6453]  delay_time
-BB141_PU60:	// 0x16a2
-// BB:141 cycle count: 9
-//6454           PlayA1800_Elements(A_VLMMREN_Start);
+	     .stabn 68,0,6432,LM870-_Step1
+	     R3 = 1                   	// [1:6432]  
+	     DS = seg(_Round)         	// [2:6432]  Round
+	     R4 = (_Round)            	// [3:6432]  Round
+	     DS:[R4] = R3             	// [5:6432]  
+//6433  	 return C_Game;//C_SelectQuestion_Round1;
 
 LM871:
-	     .stabn 68,0,6454,LM871-_Step1
-	     R3 = 75                  	// [0:6454]  
-	     R4 = SP + 1              	// [2:6454]  
-	     [R4] = R3                	// [4:6454]  
-	     call _PlayA1800_Elements 	// [6:6454]  PlayA1800_Elements
-BB142_PU60:	// 0x16a9
-// BB:142 cycle count: 8
-//6455           delay_time(8);
-
-LM872:
-	     .stabn 68,0,6455,LM872-_Step1
-	     R3 = 8                   	// [0:6455]  
-	     R4 = SP + 1              	// [1:6455]  
-	     [R4] = R3                	// [3:6455]  
-	     call _delay_time         	// [5:6455]  delay_time
-BB143_PU60:	// 0x16af
-// BB:143 cycle count: 14
-	     SP = SP + 5              	// [0:6455]  
-//6456  
-//6457  
-//6458  	 Round =1;
-
-LM873:
-	     .stabn 68,0,6458,LM873-_Step1
-	     R3 = 1                   	// [1:6458]  
-	     DS = seg(_Round)         	// [2:6458]  Round
-	     R4 = (_Round)            	// [3:6458]  Round
-	     DS:[R4] = R3             	// [5:6458]  
-//6459  	 return C_Game;//C_SelectQuestion_Round1;
-
-LM874:
-	     .stabn 68,0,6459,LM874-_Step1
-	     R1 = - 4083              	// [7:6459]  
-	     pop BP, PC from [SP]     	// [9:6459]  
+	     .stabn 68,0,6433,LM871-_Step1
+	     R1 = - 4083              	// [7:6433]  
+	     pop BP, PC from [SP]     	// [9:6433]  
 LBE57:
 	.endp	
 	     .stabn 192,0,0,LBB57-_Step1
@@ -12867,520 +12824,520 @@ _Select_Sound: .proc
 	// lra_spill_temp_39 = 9
 	// lra_spill_temp_40 = 10
 	// lra_spill_temp_41 = 11
-//6479  **********************************************************************/
-//6480  
-//6481  
-//6482  void Select_Sound()
-//6483  {
+//6453  **********************************************************************/
+//6454  
+//6455  
+//6456  void Select_Sound()
+//6457  {
+
+LM872:
+	     .stabn 68,0,6457,LM872-_Select_Sound
+BB1_PU61:	// 0x16ae
+// BB:1 cycle count: 19
+	     push BP to [SP]          	// [0:6457]  
+	     SP = SP - 12             	// [2:6457]  
+	     BP = SP + 1              	// [3:6457]  
+LBB58:
+//6458     unsigned int cnt =1;
+
+LM873:
+	     .stabn 68,0,6458,LM873-_Select_Sound
+	     R4 = 1                   	// [5:6458]  
+	     [BP + 0] = R4            	// [6:6458]  cnt
+//6459     unsigned int temp_Category;
+//6460     unsigned int suppressflag=0;
+
+LM874:
+	     .stabn 68,0,6460,LM874-_Select_Sound
+	     R4 = 0                   	// [7:6460]  
+	     [BP + 1] = R4            	// [8:6460]  suppressflag
+//6462     
+//6463  
+//6464     
+//6465     
+//6466     if(R_E ==C_TwoSounds)
 
 LM875:
-	     .stabn 68,0,6483,LM875-_Select_Sound
-BB1_PU61:	// 0x16b8
-// BB:1 cycle count: 19
-	     push BP to [SP]          	// [0:6483]  
-	     SP = SP - 12             	// [2:6483]  
-	     BP = SP + 1              	// [3:6483]  
-LBB58:
-//6484     unsigned int cnt =1;
+	     .stabn 68,0,6466,LM875-_Select_Sound
+	     DS = seg(_R_E)           	// [9:6466]  R_E
+	     R4 = (_R_E)              	// [10:6466]  R_E
+	     R4 = DS:[R4]             	// [12:6466]  
+	     cmp R4, 2                	// [14:6466]  
+	     jne L_61_12              	// [15:6466]  
+BB2_PU61:	// 0x16bc
+// BB:2 cycle count: 2
+//6467         cnt=2;
 
 LM876:
-	     .stabn 68,0,6484,LM876-_Select_Sound
-	     R4 = 1                   	// [5:6484]  
-	     [BP + 0] = R4            	// [6:6484]  cnt
-//6485     unsigned int temp_Category;
-//6486     unsigned int suppressflag=0;
+	     .stabn 68,0,6467,LM876-_Select_Sound
+	     R4 = 2                   	// [0:6467]  
+	     [BP + 0] = R4            	// [1:6467]  cnt
+L_61_12:	// 0x16be
+L_61_13:	// 0x16be
+// BB:3 cycle count: 3
+//6468       do
+//6469       {
+//6470       	 Questions_init();
 
 LM877:
-	     .stabn 68,0,6486,LM877-_Select_Sound
-	     R4 = 0                   	// [7:6486]  
-	     [BP + 1] = R4            	// [8:6486]  suppressflag
-//6488     
-//6489  
-//6490     
-//6491     
-//6492     if(R_E ==C_TwoSounds)
+	     .stabn 68,0,6470,LM877-_Select_Sound
+	     call _Questions_init     	// [0:6470]  Questions_init
+BB4_PU61:	// 0x16c0
+// BB:4 cycle count: 3
+//6471           Sub_QuestionAsked();
 
 LM878:
-	     .stabn 68,0,6492,LM878-_Select_Sound
-	     DS = seg(_R_E)           	// [9:6492]  R_E
-	     R4 = (_R_E)              	// [10:6492]  R_E
-	     R4 = DS:[R4]             	// [12:6492]  
-	     cmp R4, 2                	// [14:6492]  
-	     jne L_61_12              	// [15:6492]  
-BB2_PU61:	// 0x16c6
-// BB:2 cycle count: 2
-//6493         cnt=2;
+	     .stabn 68,0,6471,LM878-_Select_Sound
+	     call _Sub_QuestionAsked  	// [0:6471]  Sub_QuestionAsked
+BB5_PU61:	// 0x16c2
+// BB:5 cycle count: 10
+//6472       	
+//6473       	
+//6474          Check_LQA(suppressflag);
 
 LM879:
-	     .stabn 68,0,6493,LM879-_Select_Sound
-	     R4 = 2                   	// [0:6493]  
-	     [BP + 0] = R4            	// [1:6493]  cnt
-L_61_12:	// 0x16c8
-L_61_13:	// 0x16c8
-// BB:3 cycle count: 3
-//6494       do
-//6495       {
-//6496       	 Questions_init();
+	     .stabn 68,0,6474,LM879-_Select_Sound
+	     SP = SP - 1              	// [0:6474]  
+	     R3 = [BP + 1]            	// [1:6474]  suppressflag
+	     R4 = SP + 1              	// [3:6474]  
+	     [R4] = R3                	// [5:6474]  
+	     call _Check_LQA          	// [7:6474]  Check_LQA
+BB6_PU61:	// 0x16c9
+// BB:6 cycle count: 27
+//6475          gQuestionIdx_1=gQuestionIdx;     
 
 LM880:
-	     .stabn 68,0,6496,LM880-_Select_Sound
-	     call _Questions_init     	// [0:6496]  Questions_init
-BB4_PU61:	// 0x16ca
-// BB:4 cycle count: 3
-//6497           Sub_QuestionAsked();
+	     .stabn 68,0,6475,LM880-_Select_Sound
+	     DS = seg(_gQuestionIdx)  	// [0:6475]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [1:6475]  gQuestionIdx
+	     R3 = DS:[R4]             	// [3:6475]  
+	     DS = seg(_gQuestionIdx_1)	// [5:6475]  gQuestionIdx_1
+	     R4 = (_gQuestionIdx_1)   	// [6:6475]  gQuestionIdx_1
+	     DS:[R4] = R3             	// [8:6475]  
+//6476          
+//6477         
+//6478          gQuestionIdx= Select_Questionrandom_4(*P_TimerB_CNTR % LQA);
 
 LM881:
-	     .stabn 68,0,6497,LM881-_Select_Sound
-	     call _Sub_QuestionAsked  	// [0:6497]  Sub_QuestionAsked
-BB5_PU61:	// 0x16cc
-// BB:5 cycle count: 10
-//6498       	
-//6499       	
-//6500          Check_LQA(suppressflag);
-
-LM882:
-	     .stabn 68,0,6500,LM882-_Select_Sound
-	     SP = SP - 1              	// [0:6500]  
-	     R3 = [BP + 1]            	// [1:6500]  suppressflag
-	     R4 = SP + 1              	// [3:6500]  
-	     [R4] = R3                	// [5:6500]  
-	     call _Check_LQA          	// [7:6500]  Check_LQA
-BB6_PU61:	// 0x16d3
-// BB:6 cycle count: 27
-//6501          gQuestionIdx_1=gQuestionIdx;     
-
-LM883:
-	     .stabn 68,0,6501,LM883-_Select_Sound
-	     DS = seg(_gQuestionIdx)  	// [0:6501]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [1:6501]  gQuestionIdx
-	     R3 = DS:[R4]             	// [3:6501]  
-	     DS = seg(_gQuestionIdx_1)	// [5:6501]  gQuestionIdx_1
-	     R4 = (_gQuestionIdx_1)   	// [6:6501]  gQuestionIdx_1
-	     DS:[R4] = R3             	// [8:6501]  
-//6502          
-//6503         
-//6504          gQuestionIdx= Select_Questionrandom_4(*P_TimerB_CNTR % LQA);
-
-LM884:
-	     .stabn 68,0,6504,LM884-_Select_Sound
-	     R3 = 12307               	// [10:6504]  
-	     R4 = 0                   	// [12:6504]  
-	     DS = R4                  	// [13:6504]  
-	     R3 = DS:[R3]             	// [14:6504]  
-	     DS = seg(_LQA)           	// [16:6504]  LQA
-	     R4 = (_LQA)              	// [17:6504]  LQA
-	     R4 = DS:[R4]             	// [19:6504]  
-	     push R4, R3 to [SP]      	// [21:6504]  
-	     call __modu1             	// [24:6504]  _modu1
-BB7_PU61:	// 0x16e7
+	     .stabn 68,0,6478,LM881-_Select_Sound
+	     R3 = 12307               	// [10:6478]  
+	     R4 = 0                   	// [12:6478]  
+	     DS = R4                  	// [13:6478]  
+	     R3 = DS:[R3]             	// [14:6478]  
+	     DS = seg(_LQA)           	// [16:6478]  LQA
+	     R4 = (_LQA)              	// [17:6478]  LQA
+	     R4 = DS:[R4]             	// [19:6478]  
+	     push R4, R3 to [SP]      	// [21:6478]  
+	     call __modu1             	// [24:6478]  _modu1
+BB7_PU61:	// 0x16dd
 // BB:7 cycle count: 8
 	     SP = SP + 2              	// [0:0]  
 	     R4 = SP + 1              	// [1:0]  
 	     [R4] = R1                	// [3:0]  
-	     call _Select_Questionrandom_4	// [5:6504]  Select_Questionrandom_4
-BB8_PU61:	// 0x16ed
+	     call _Select_Questionrandom_4	// [5:6478]  Select_Questionrandom_4
+BB8_PU61:	// 0x16e3
 // BB:8 cycle count: 17
-	     DS = seg(_gQuestionIdx)  	// [0:6504]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [1:6504]  gQuestionIdx
-	     DS:[R4] = R1             	// [3:6504]  
-//6505          
-//6506          temp_Category= Get_Question_Category(gQuestionIdx);
+	     DS = seg(_gQuestionIdx)  	// [0:6478]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [1:6478]  gQuestionIdx
+	     DS:[R4] = R1             	// [3:6478]  
+//6479          
+//6480          temp_Category= Get_Question_Category(gQuestionIdx);
+
+LM882:
+	     .stabn 68,0,6480,LM882-_Select_Sound
+	     DS = seg(_gQuestionIdx)  	// [5:6480]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [6:6480]  gQuestionIdx
+	     R3 = DS:[R4]             	// [8:6480]  
+	     R4 = SP + 1              	// [10:6480]  
+	     [R4] = R3                	// [12:6480]  
+	     call _Get_Question_Category	// [14:6480]  Get_Question_Category
+BB9_PU61:	// 0x16f0
+// BB:9 cycle count: 12
+	     SP = SP + 1              	// [0:6480]  
+	     [BP + 2] = R1            	// [1:6480]  temp_Category
+//6481          
+//6482          if(Last2Catcnt)
+
+LM883:
+	     .stabn 68,0,6482,LM883-_Select_Sound
+	     DS = seg(_Last2Catcnt)   	// [2:6482]  Last2Catcnt
+	     R4 = (_Last2Catcnt)      	// [3:6482]  Last2Catcnt
+	     R4 = DS:[R4]             	// [5:6482]  
+	     cmp R4, 0                	// [7:6482]  
+	     je L_61_14               	// [8:6482]  
+BB10_PU61:	// 0x16f8
+// BB:10 cycle count: 21
+//6483          {
+//6484          	 Last2Catcnt++;
+
+LM884:
+	     .stabn 68,0,6484,LM884-_Select_Sound
+	     DS = seg(_Last2Catcnt)   	// [0:6484]  Last2Catcnt
+	     R4 = (_Last2Catcnt)      	// [1:6484]  Last2Catcnt
+	     R4 = DS:[R4]             	// [3:6484]  
+	     R4 = R4 + 1              	// [5:6484]  
+	     DS = seg(_Last2Catcnt)   	// [6:6484]  Last2Catcnt
+	     R3 = (_Last2Catcnt)      	// [7:6484]  Last2Catcnt
+	     DS:[R3] = R4             	// [9:6484]  
+//6485          
+//6486            if(Last2Catcnt<4)	 
 
 LM885:
-	     .stabn 68,0,6506,LM885-_Select_Sound
-	     DS = seg(_gQuestionIdx)  	// [5:6506]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [6:6506]  gQuestionIdx
-	     R3 = DS:[R4]             	// [8:6506]  
-	     R4 = SP + 1              	// [10:6506]  
-	     [R4] = R3                	// [12:6506]  
-	     call _Get_Question_Category	// [14:6506]  Get_Question_Category
-BB9_PU61:	// 0x16fa
-// BB:9 cycle count: 12
-	     SP = SP + 1              	// [0:6506]  
-	     [BP + 2] = R1            	// [1:6506]  temp_Category
-//6507          
-//6508          if(Last2Catcnt)
+	     .stabn 68,0,6486,LM885-_Select_Sound
+	     DS = seg(_Last2Catcnt)   	// [11:6486]  Last2Catcnt
+	     R4 = (_Last2Catcnt)      	// [12:6486]  Last2Catcnt
+	     R4 = DS:[R4]             	// [14:6486]  
+	     cmp R4, 3                	// [16:6486]  
+	     ja L_61_16               	// [17:6486]  
+BB11_PU61:	// 0x1707
+// BB:11 cycle count: 12
+//6487             {
+//6488               if(temp_Category == Last2Cat[Num_LastCat-1])
 
 LM886:
-	     .stabn 68,0,6508,LM886-_Select_Sound
-	     DS = seg(_Last2Catcnt)   	// [2:6508]  Last2Catcnt
-	     R4 = (_Last2Catcnt)      	// [3:6508]  Last2Catcnt
-	     R4 = DS:[R4]             	// [5:6508]  
-	     cmp R4, 0                	// [7:6508]  
-	     je L_61_14               	// [8:6508]  
-BB10_PU61:	// 0x1702
-// BB:10 cycle count: 21
-//6509          {
-//6510          	 Last2Catcnt++;
+	     .stabn 68,0,6488,LM886-_Select_Sound
+	     DS = seg(_Last2Cat+5)    	// [0:6488]  Last2Cat+5
+	     R4 = (_Last2Cat+5)       	// [1:6488]  Last2Cat+5
+	     R3 = DS:[R4]             	// [3:6488]  
+	     R4 = [BP + 2]            	// [5:6488]  temp_Category
+	     cmp R3, R4               	// [7:6488]  
+	     jne L_61_17              	// [8:6488]  
+BB12_PU61:	// 0x170e
+// BB:12 cycle count: 10
+//6489                  {
+//6490               	    gQuestionIdx =  Select_Question_ModeStatus_Other(temp_Category);
 
 LM887:
-	     .stabn 68,0,6510,LM887-_Select_Sound
-	     DS = seg(_Last2Catcnt)   	// [0:6510]  Last2Catcnt
-	     R4 = (_Last2Catcnt)      	// [1:6510]  Last2Catcnt
-	     R4 = DS:[R4]             	// [3:6510]  
-	     R4 = R4 + 1              	// [5:6510]  
-	     DS = seg(_Last2Catcnt)   	// [6:6510]  Last2Catcnt
-	     R3 = (_Last2Catcnt)      	// [7:6510]  Last2Catcnt
-	     DS:[R3] = R4             	// [9:6510]  
-//6511          
-//6512            if(Last2Catcnt<4)	 
+	     .stabn 68,0,6490,LM887-_Select_Sound
+	     SP = SP - 1              	// [0:6490]  
+	     R3 = [BP + 2]            	// [1:6490]  temp_Category
+	     R4 = SP + 1              	// [3:6490]  
+	     [R4] = R3                	// [5:6490]  
+	     call _Select_Question_ModeStatus_Other	// [7:6490]  Select_Question_ModeStatus_Other
+BB13_PU61:	// 0x1715
+// BB:13 cycle count: 17
+	     DS = seg(_gQuestionIdx)  	// [0:6490]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [1:6490]  gQuestionIdx
+	     DS:[R4] = R1             	// [3:6490]  
+//6491               	    temp_Category= Get_Question_Category(gQuestionIdx);
 
 LM888:
-	     .stabn 68,0,6512,LM888-_Select_Sound
-	     DS = seg(_Last2Catcnt)   	// [11:6512]  Last2Catcnt
-	     R4 = (_Last2Catcnt)      	// [12:6512]  Last2Catcnt
-	     R4 = DS:[R4]             	// [14:6512]  
-	     cmp R4, 3                	// [16:6512]  
-	     ja L_61_16               	// [17:6512]  
-BB11_PU61:	// 0x1711
-// BB:11 cycle count: 12
-//6513             {
-//6514               if(temp_Category == Last2Cat[Num_LastCat-1])
+	     .stabn 68,0,6491,LM888-_Select_Sound
+	     DS = seg(_gQuestionIdx)  	// [5:6491]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [6:6491]  gQuestionIdx
+	     R3 = DS:[R4]             	// [8:6491]  
+	     R4 = SP + 1              	// [10:6491]  
+	     [R4] = R3                	// [12:6491]  
+	     call _Get_Question_Category	// [14:6491]  Get_Question_Category
+BB14_PU61:	// 0x1722
+// BB:14 cycle count: 8
+	     SP = SP + 1              	// [0:6491]  
+	     [BP + 2] = R1            	// [1:6491]  temp_Category
+//6492               	    Last2Catcnt =0;
 
 LM889:
-	     .stabn 68,0,6514,LM889-_Select_Sound
-	     DS = seg(_Last2Cat+7)    	// [0:6514]  Last2Cat+7
-	     R4 = (_Last2Cat+7)       	// [1:6514]  Last2Cat+7
-	     R3 = DS:[R4]             	// [3:6514]  
-	     R4 = [BP + 2]            	// [5:6514]  temp_Category
-	     cmp R3, R4               	// [7:6514]  
-	     jne L_61_17              	// [8:6514]  
-BB12_PU61:	// 0x1718
-// BB:12 cycle count: 10
-//6515                  {
-//6516               	    gQuestionIdx =  Select_Question_ModeStatus_Other(temp_Category);
-
-LM890:
-	     .stabn 68,0,6516,LM890-_Select_Sound
-	     SP = SP - 1              	// [0:6516]  
-	     R3 = [BP + 2]            	// [1:6516]  temp_Category
-	     R4 = SP + 1              	// [3:6516]  
-	     [R4] = R3                	// [5:6516]  
-	     call _Select_Question_ModeStatus_Other	// [7:6516]  Select_Question_ModeStatus_Other
-BB13_PU61:	// 0x171f
-// BB:13 cycle count: 17
-	     DS = seg(_gQuestionIdx)  	// [0:6516]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [1:6516]  gQuestionIdx
-	     DS:[R4] = R1             	// [3:6516]  
-//6517               	    temp_Category= Get_Question_Category(gQuestionIdx);
-
-LM891:
-	     .stabn 68,0,6517,LM891-_Select_Sound
-	     DS = seg(_gQuestionIdx)  	// [5:6517]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [6:6517]  gQuestionIdx
-	     R3 = DS:[R4]             	// [8:6517]  
-	     R4 = SP + 1              	// [10:6517]  
-	     [R4] = R3                	// [12:6517]  
-	     call _Get_Question_Category	// [14:6517]  Get_Question_Category
-BB14_PU61:	// 0x172c
-// BB:14 cycle count: 8
-	     SP = SP + 1              	// [0:6517]  
-	     [BP + 2] = R1            	// [1:6517]  temp_Category
-//6518               	    Last2Catcnt =0;
-
-LM892:
-	     .stabn 68,0,6518,LM892-_Select_Sound
-	     R3 = 0                   	// [2:6518]  
-	     DS = seg(_Last2Catcnt)   	// [3:6518]  Last2Catcnt
-	     R4 = (_Last2Catcnt)      	// [4:6518]  Last2Catcnt
-	     DS:[R4] = R3             	// [6:6518]  
-L_61_17:	// 0x1733
+	     .stabn 68,0,6492,LM889-_Select_Sound
+	     R3 = 0                   	// [2:6492]  
+	     DS = seg(_Last2Catcnt)   	// [3:6492]  Last2Catcnt
+	     R4 = (_Last2Catcnt)      	// [4:6492]  Last2Catcnt
+	     DS:[R4] = R3             	// [6:6492]  
+L_61_17:	// 0x1729
 // BB:15 cycle count: 4
 
-LM893:
-	     .stabn 68,0,6514,LM893-_Select_Sound
-	     jmp L_61_15              	// [0:6514]  
-L_61_16:	// 0x1734
+LM890:
+	     .stabn 68,0,6488,LM890-_Select_Sound
+	     jmp L_61_15              	// [0:6488]  
+L_61_16:	// 0x172a
 // BB:16 cycle count: 6
-//6519                  }
-//6520             	
-//6521             }
-//6522            else
-//6523               Last2Catcnt =0; 
+//6493                  }
+//6494             	
+//6495             }
+//6496            else
+//6497               Last2Catcnt =0; 
+
+LM891:
+	     .stabn 68,0,6497,LM891-_Select_Sound
+	     R3 = 0                   	// [0:6497]  
+	     DS = seg(_Last2Catcnt)   	// [1:6497]  Last2Catcnt
+	     R4 = (_Last2Catcnt)      	// [2:6497]  Last2Catcnt
+	     DS:[R4] = R3             	// [4:6497]  
+L_61_15:	// 0x172f
+L_61_14:	// 0x172f
+// BB:17 cycle count: 169
+//6506  //			}
+//6507  //		#endif  
+//6508          
+//6509        
+//6510        	QuestionStatus_LQ[gQuestionIdx/16]&=~BitMap[gQuestionIdx%16];		//suppress Qx from LQ;	
+
+LM892:
+	     .stabn 68,0,6510,LM892-_Select_Sound
+	     DS = seg(_gQuestionIdx)  	// [0:6510]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [1:6510]  gQuestionIdx
+	     R4 = DS:[R4]             	// [3:6510]  
+	     R4 = R4 lsr 4            	// [5:6510]  
+	     [BP + 3] = R4            	// [6:6510]  __save_expr_temp_15
+	     R4 = [BP + 3]            	// [7:6510]  __save_expr_temp_15
+	     R3 = 0                   	// [9:6510]  
+	     R1 = (_QuestionStatus_LQ)	// [10:6510]  QuestionStatus_LQ
+	     R2 = seg(_QuestionStatus_LQ)	// [12:6510]  QuestionStatus_LQ
+	     R4 = R4 + R1             	// [13:6510]  
+	     R3 = R3 + R2, Carry      	// [14:6510]  
+	     DS = R3                  	// [15:6510]  
+	     R4 = DS:[R4]             	// [16:6510]  
+	     [BP + 6] = R4            	// [18:6510]  lra_spill_temp_36
+	     DS = seg(_gQuestionIdx)  	// [19:6510]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [20:6510]  gQuestionIdx
+	     R4 = DS:[R4]             	// [22:6510]  
+	     R4 = R4 & 15             	// [24:6510]  
+	     R3 = 0                   	// [25:6510]  
+	     R1 = (_BitMap)           	// [26:6510]  BitMap
+	     R2 = seg(_BitMap)        	// [28:6510]  BitMap
+	     R4 = R4 + R1             	// [29:6510]  
+	     R3 = R3 + R2, Carry      	// [30:6510]  
+	     DS = R3                  	// [31:6510]  
+	     R4 = DS:[R4]             	// [32:6510]  
+	     R3 = R4 ^ 65535          	// [34:6510]  
+	     R4 = [BP + 6]            	// [36:6510]  lra_spill_temp_36
+	     R4 = R4 & R3             	// [38:6510]  
+	     [BP + 7] = R4            	// [39:6510]  lra_spill_temp_37
+	     R4 = [BP + 3]            	// [40:6510]  __save_expr_temp_15
+	     R3 = 0                   	// [42:6510]  
+	     R1 = (_QuestionStatus_LQ)	// [43:6510]  QuestionStatus_LQ
+	     R2 = seg(_QuestionStatus_LQ)	// [45:6510]  QuestionStatus_LQ
+	     R4 = R4 + R1             	// [46:6510]  
+	     R3 = R3 + R2, Carry      	// [47:6510]  
+	     DS = R3                  	// [48:6510]  
+	     R3 = [BP + 7]            	// [49:6510]  lra_spill_temp_37
+	     DS:[R4] = R3             	// [51:6510]  
+//6511  		QuestionStatus_LQA[gQuestionIdx/16]&=~BitMap[gQuestionIdx%16];	
+
+LM893:
+	     .stabn 68,0,6511,LM893-_Select_Sound
+	     DS = seg(_gQuestionIdx)  	// [53:6511]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [54:6511]  gQuestionIdx
+	     R4 = DS:[R4]             	// [56:6511]  
+	     R4 = R4 lsr 4            	// [58:6511]  
+	     [BP + 4] = R4            	// [59:6511]  __save_expr_temp_16
+	     R4 = [BP + 4]            	// [60:6511]  __save_expr_temp_16
+	     R3 = 0                   	// [62:6511]  
+	     R1 = (_QuestionStatus_LQA)	// [63:6511]  QuestionStatus_LQA
+	     R2 = seg(_QuestionStatus_LQA)	// [65:6511]  QuestionStatus_LQA
+	     R4 = R4 + R1             	// [66:6511]  
+	     R3 = R3 + R2, Carry      	// [67:6511]  
+	     DS = R3                  	// [68:6511]  
+	     R4 = DS:[R4]             	// [69:6511]  
+	     [BP + 8] = R4            	// [71:6511]  lra_spill_temp_38
+	     DS = seg(_gQuestionIdx)  	// [72:6511]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [73:6511]  gQuestionIdx
+	     R4 = DS:[R4]             	// [75:6511]  
+	     R4 = R4 & 15             	// [77:6511]  
+	     R3 = 0                   	// [78:6511]  
+	     R1 = (_BitMap)           	// [79:6511]  BitMap
+	     R2 = seg(_BitMap)        	// [81:6511]  BitMap
+	     R4 = R4 + R1             	// [82:6511]  
+	     R3 = R3 + R2, Carry      	// [83:6511]  
+	     DS = R3                  	// [84:6511]  
+	     R4 = DS:[R4]             	// [85:6511]  
+	     R3 = R4 ^ 65535          	// [87:6511]  
+	     R4 = [BP + 8]            	// [89:6511]  lra_spill_temp_38
+	     R4 = R4 & R3             	// [91:6511]  
+	     [BP + 9] = R4            	// [92:6511]  lra_spill_temp_39
+	     R4 = [BP + 4]            	// [93:6511]  __save_expr_temp_16
+	     R3 = 0                   	// [95:6511]  
+	     R1 = (_QuestionStatus_LQA)	// [96:6511]  QuestionStatus_LQA
+	     R2 = seg(_QuestionStatus_LQA)	// [98:6511]  QuestionStatus_LQA
+	     R4 = R4 + R1             	// [99:6511]  
+	     R3 = R3 + R2, Carry      	// [100:6511]  
+	     DS = R3                  	// [101:6511]  
+	     R3 = [BP + 9]            	// [102:6511]  lra_spill_temp_39
+	     DS:[R4] = R3             	// [104:6511]  
+//6512  		QuestionStatus_Asked[gQuestionIdx/16]&=~BitMap[gQuestionIdx%16];
 
 LM894:
-	     .stabn 68,0,6523,LM894-_Select_Sound
-	     R3 = 0                   	// [0:6523]  
-	     DS = seg(_Last2Catcnt)   	// [1:6523]  Last2Catcnt
-	     R4 = (_Last2Catcnt)      	// [2:6523]  Last2Catcnt
-	     DS:[R4] = R3             	// [4:6523]  
-L_61_15:	// 0x1739
-L_61_14:	// 0x1739
-// BB:17 cycle count: 169
-//6532  //			}
-//6533  //		#endif  
-//6534          
-//6535        
-//6536        	QuestionStatus_LQ[gQuestionIdx/16]&=~BitMap[gQuestionIdx%16];		//suppress Qx from LQ;	
+	     .stabn 68,0,6512,LM894-_Select_Sound
+	     DS = seg(_gQuestionIdx)  	// [106:6512]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [107:6512]  gQuestionIdx
+	     R4 = DS:[R4]             	// [109:6512]  
+	     R4 = R4 lsr 4            	// [111:6512]  
+	     [BP + 5] = R4            	// [112:6512]  __save_expr_temp_17
+	     R4 = [BP + 5]            	// [113:6512]  __save_expr_temp_17
+	     R3 = 0                   	// [115:6512]  
+	     R1 = (_QuestionStatus_Asked)	// [116:6512]  QuestionStatus_Asked
+	     R2 = seg(_QuestionStatus_Asked)	// [118:6512]  QuestionStatus_Asked
+	     R4 = R4 + R1             	// [119:6512]  
+	     R3 = R3 + R2, Carry      	// [120:6512]  
+	     DS = R3                  	// [121:6512]  
+	     R4 = DS:[R4]             	// [122:6512]  
+	     [BP + 10] = R4           	// [124:6512]  lra_spill_temp_40
+	     DS = seg(_gQuestionIdx)  	// [125:6512]  gQuestionIdx
+	     R4 = (_gQuestionIdx)     	// [126:6512]  gQuestionIdx
+	     R4 = DS:[R4]             	// [128:6512]  
+	     R4 = R4 & 15             	// [130:6512]  
+	     R3 = 0                   	// [131:6512]  
+	     R1 = (_BitMap)           	// [132:6512]  BitMap
+	     R2 = seg(_BitMap)        	// [134:6512]  BitMap
+	     R4 = R4 + R1             	// [135:6512]  
+	     R3 = R3 + R2, Carry      	// [136:6512]  
+	     DS = R3                  	// [137:6512]  
+	     R4 = DS:[R4]             	// [138:6512]  
+	     R3 = R4 ^ 65535          	// [140:6512]  
+	     R4 = [BP + 10]           	// [142:6512]  lra_spill_temp_40
+	     R4 = R4 & R3             	// [144:6512]  
+	     [BP + 11] = R4           	// [145:6512]  lra_spill_temp_41
+	     R4 = [BP + 5]            	// [146:6512]  __save_expr_temp_17
+	     R3 = 0                   	// [148:6512]  
+	     R1 = (_QuestionStatus_Asked)	// [149:6512]  QuestionStatus_Asked
+	     R2 = seg(_QuestionStatus_Asked)	// [151:6512]  QuestionStatus_Asked
+	     R4 = R4 + R1             	// [152:6512]  
+	     R3 = R3 + R2, Carry      	// [153:6512]  
+	     DS = R3                  	// [154:6512]  
+	     R3 = [BP + 11]           	// [155:6512]  lra_spill_temp_41
+	     DS:[R4] = R3             	// [157:6512]  
+//6513        
+//6514        
+//6515        Save_Question_Category2Last(temp_Category);
 
 LM895:
-	     .stabn 68,0,6536,LM895-_Select_Sound
-	     DS = seg(_gQuestionIdx)  	// [0:6536]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [1:6536]  gQuestionIdx
-	     R4 = DS:[R4]             	// [3:6536]  
-	     R4 = R4 lsr 4            	// [5:6536]  
-	     [BP + 3] = R4            	// [6:6536]  __save_expr_temp_15
-	     R4 = [BP + 3]            	// [7:6536]  __save_expr_temp_15
-	     R3 = 0                   	// [9:6536]  
-	     R1 = (_QuestionStatus_LQ)	// [10:6536]  QuestionStatus_LQ
-	     R2 = seg(_QuestionStatus_LQ)	// [12:6536]  QuestionStatus_LQ
-	     R4 = R4 + R1             	// [13:6536]  
-	     R3 = R3 + R2, Carry      	// [14:6536]  
-	     DS = R3                  	// [15:6536]  
-	     R4 = DS:[R4]             	// [16:6536]  
-	     [BP + 6] = R4            	// [18:6536]  lra_spill_temp_36
-	     DS = seg(_gQuestionIdx)  	// [19:6536]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [20:6536]  gQuestionIdx
-	     R4 = DS:[R4]             	// [22:6536]  
-	     R4 = R4 & 15             	// [24:6536]  
-	     R3 = 0                   	// [25:6536]  
-	     R1 = (_BitMap)           	// [26:6536]  BitMap
-	     R2 = seg(_BitMap)        	// [28:6536]  BitMap
-	     R4 = R4 + R1             	// [29:6536]  
-	     R3 = R3 + R2, Carry      	// [30:6536]  
-	     DS = R3                  	// [31:6536]  
-	     R4 = DS:[R4]             	// [32:6536]  
-	     R3 = R4 ^ 65535          	// [34:6536]  
-	     R4 = [BP + 6]            	// [36:6536]  lra_spill_temp_36
-	     R4 = R4 & R3             	// [38:6536]  
-	     [BP + 7] = R4            	// [39:6536]  lra_spill_temp_37
-	     R4 = [BP + 3]            	// [40:6536]  __save_expr_temp_15
-	     R3 = 0                   	// [42:6536]  
-	     R1 = (_QuestionStatus_LQ)	// [43:6536]  QuestionStatus_LQ
-	     R2 = seg(_QuestionStatus_LQ)	// [45:6536]  QuestionStatus_LQ
-	     R4 = R4 + R1             	// [46:6536]  
-	     R3 = R3 + R2, Carry      	// [47:6536]  
-	     DS = R3                  	// [48:6536]  
-	     R3 = [BP + 7]            	// [49:6536]  lra_spill_temp_37
-	     DS:[R4] = R3             	// [51:6536]  
-//6537  		QuestionStatus_LQA[gQuestionIdx/16]&=~BitMap[gQuestionIdx%16];	
+	     .stabn 68,0,6515,LM895-_Select_Sound
+	     SP = SP - 1              	// [159:6515]  
+	     R3 = [BP + 2]            	// [160:6515]  temp_Category
+	     R4 = SP + 1              	// [162:6515]  
+	     [R4] = R3                	// [164:6515]  
+	     call _Save_Question_Category2Last	// [166:6515]  Save_Question_Category2Last
+BB18_PU61:	// 0x17ba
+// BB:18 cycle count: 4
+	     SP = SP + 1              	// [0:6515]  
+//6516        Save_Question_CategoryMemory();
 
 LM896:
-	     .stabn 68,0,6537,LM896-_Select_Sound
-	     DS = seg(_gQuestionIdx)  	// [53:6537]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [54:6537]  gQuestionIdx
-	     R4 = DS:[R4]             	// [56:6537]  
-	     R4 = R4 lsr 4            	// [58:6537]  
-	     [BP + 4] = R4            	// [59:6537]  __save_expr_temp_16
-	     R4 = [BP + 4]            	// [60:6537]  __save_expr_temp_16
-	     R3 = 0                   	// [62:6537]  
-	     R1 = (_QuestionStatus_LQA)	// [63:6537]  QuestionStatus_LQA
-	     R2 = seg(_QuestionStatus_LQA)	// [65:6537]  QuestionStatus_LQA
-	     R4 = R4 + R1             	// [66:6537]  
-	     R3 = R3 + R2, Carry      	// [67:6537]  
-	     DS = R3                  	// [68:6537]  
-	     R4 = DS:[R4]             	// [69:6537]  
-	     [BP + 8] = R4            	// [71:6537]  lra_spill_temp_38
-	     DS = seg(_gQuestionIdx)  	// [72:6537]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [73:6537]  gQuestionIdx
-	     R4 = DS:[R4]             	// [75:6537]  
-	     R4 = R4 & 15             	// [77:6537]  
-	     R3 = 0                   	// [78:6537]  
-	     R1 = (_BitMap)           	// [79:6537]  BitMap
-	     R2 = seg(_BitMap)        	// [81:6537]  BitMap
-	     R4 = R4 + R1             	// [82:6537]  
-	     R3 = R3 + R2, Carry      	// [83:6537]  
-	     DS = R3                  	// [84:6537]  
-	     R4 = DS:[R4]             	// [85:6537]  
-	     R3 = R4 ^ 65535          	// [87:6537]  
-	     R4 = [BP + 8]            	// [89:6537]  lra_spill_temp_38
-	     R4 = R4 & R3             	// [91:6537]  
-	     [BP + 9] = R4            	// [92:6537]  lra_spill_temp_39
-	     R4 = [BP + 4]            	// [93:6537]  __save_expr_temp_16
-	     R3 = 0                   	// [95:6537]  
-	     R1 = (_QuestionStatus_LQA)	// [96:6537]  QuestionStatus_LQA
-	     R2 = seg(_QuestionStatus_LQA)	// [98:6537]  QuestionStatus_LQA
-	     R4 = R4 + R1             	// [99:6537]  
-	     R3 = R3 + R2, Carry      	// [100:6537]  
-	     DS = R3                  	// [101:6537]  
-	     R3 = [BP + 9]            	// [102:6537]  lra_spill_temp_39
-	     DS:[R4] = R3             	// [104:6537]  
-//6538  		QuestionStatus_Asked[gQuestionIdx/16]&=~BitMap[gQuestionIdx%16];
+	     .stabn 68,0,6516,LM896-_Select_Sound
+	     call _Save_Question_CategoryMemory	// [1:6516]  Save_Question_CategoryMemory
+BB19_PU61:	// 0x17bd
+// BB:19 cycle count: 9
+//6517        cnt--;
 
 LM897:
-	     .stabn 68,0,6538,LM897-_Select_Sound
-	     DS = seg(_gQuestionIdx)  	// [106:6538]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [107:6538]  gQuestionIdx
-	     R4 = DS:[R4]             	// [109:6538]  
-	     R4 = R4 lsr 4            	// [111:6538]  
-	     [BP + 5] = R4            	// [112:6538]  __save_expr_temp_17
-	     R4 = [BP + 5]            	// [113:6538]  __save_expr_temp_17
-	     R3 = 0                   	// [115:6538]  
-	     R1 = (_QuestionStatus_Asked)	// [116:6538]  QuestionStatus_Asked
-	     R2 = seg(_QuestionStatus_Asked)	// [118:6538]  QuestionStatus_Asked
-	     R4 = R4 + R1             	// [119:6538]  
-	     R3 = R3 + R2, Carry      	// [120:6538]  
-	     DS = R3                  	// [121:6538]  
-	     R4 = DS:[R4]             	// [122:6538]  
-	     [BP + 10] = R4           	// [124:6538]  lra_spill_temp_40
-	     DS = seg(_gQuestionIdx)  	// [125:6538]  gQuestionIdx
-	     R4 = (_gQuestionIdx)     	// [126:6538]  gQuestionIdx
-	     R4 = DS:[R4]             	// [128:6538]  
-	     R4 = R4 & 15             	// [130:6538]  
-	     R3 = 0                   	// [131:6538]  
-	     R1 = (_BitMap)           	// [132:6538]  BitMap
-	     R2 = seg(_BitMap)        	// [134:6538]  BitMap
-	     R4 = R4 + R1             	// [135:6538]  
-	     R3 = R3 + R2, Carry      	// [136:6538]  
-	     DS = R3                  	// [137:6538]  
-	     R4 = DS:[R4]             	// [138:6538]  
-	     R3 = R4 ^ 65535          	// [140:6538]  
-	     R4 = [BP + 10]           	// [142:6538]  lra_spill_temp_40
-	     R4 = R4 & R3             	// [144:6538]  
-	     [BP + 11] = R4           	// [145:6538]  lra_spill_temp_41
-	     R4 = [BP + 5]            	// [146:6538]  __save_expr_temp_17
-	     R3 = 0                   	// [148:6538]  
-	     R1 = (_QuestionStatus_Asked)	// [149:6538]  QuestionStatus_Asked
-	     R2 = seg(_QuestionStatus_Asked)	// [151:6538]  QuestionStatus_Asked
-	     R4 = R4 + R1             	// [152:6538]  
-	     R3 = R3 + R2, Carry      	// [153:6538]  
-	     DS = R3                  	// [154:6538]  
-	     R3 = [BP + 11]           	// [155:6538]  lra_spill_temp_41
-	     DS:[R4] = R3             	// [157:6538]  
-//6539        
-//6540        
-//6541        Save_Question_Category2Last(temp_Category);
-
-LM898:
-	     .stabn 68,0,6541,LM898-_Select_Sound
-	     SP = SP - 1              	// [159:6541]  
-	     R3 = [BP + 2]            	// [160:6541]  temp_Category
-	     R4 = SP + 1              	// [162:6541]  
-	     [R4] = R3                	// [164:6541]  
-	     call _Save_Question_Category2Last	// [166:6541]  Save_Question_Category2Last
-BB18_PU61:	// 0x17c4
-// BB:18 cycle count: 4
-	     SP = SP + 1              	// [0:6541]  
-//6542        Save_Question_CategoryMemory();
-
-LM899:
-	     .stabn 68,0,6542,LM899-_Select_Sound
-	     call _Save_Question_CategoryMemory	// [1:6542]  Save_Question_CategoryMemory
-BB19_PU61:	// 0x17c7
-// BB:19 cycle count: 9
-//6543        cnt--;
-
-LM900:
-	     .stabn 68,0,6543,LM900-_Select_Sound
-	     R4 = [BP + 0]            	// [0:6543]  cnt
-	     R4 = R4 - 1              	// [2:6543]  
-	     [BP + 0] = R4            	// [3:6543]  cnt
+	     .stabn 68,0,6517,LM897-_Select_Sound
+	     R4 = [BP + 0]            	// [0:6517]  cnt
+	     R4 = R4 - 1              	// [2:6517]  
+	     [BP + 0] = R4            	// [3:6517]  cnt
 	//;;
 	INT OFF
 	//;;
-//6544        
-//6545        
-//6546  	   __asm("INT OFF");
-//6547        MoveSPIDriverToRAM();		
+//6518        
+//6519        
+//6520  	   __asm("INT OFF");
+//6521        MoveSPIDriverToRAM();		
+
+LM898:
+	     .stabn 68,0,6521,LM898-_Select_Sound
+	     call _MoveSPIDriverToRAM 	// [6:6521]  MoveSPIDriverToRAM
+BB20_PU61:	// 0x17c5
+// BB:20 cycle count: 15
+//6522        SPI_Flash_Sector_Erase(T_LQ_Secter_L,T_LQ_Secter_H);
+
+LM899:
+	     .stabn 68,0,6522,LM899-_Select_Sound
+	     SP = SP - 2              	// [0:6522]  
+	     R3 = - 12288             	// [1:6522]  
+	     R4 = SP + 1              	// [3:6522]  
+	     [R4] = R3                	// [5:6522]  
+	     R3 = 31                  	// [7:6522]  
+	     R4 = SP + 2              	// [8:6522]  
+	     [R4] = R3                	// [10:6522]  
+	     call _SPI_Flash_Sector_Erase	// [12:6522]  SPI_Flash_Sector_Erase
+BB21_PU61:	// 0x17d1
+// BB:21 cycle count: 29
+	     SP = SP - 3              	// [0:6522]  
+//6523        SPI_Flash_SendNWords(QuestionStatus_LQ,C_QuestionRAM,T_LQ_Secter_L,T_LQ_Secter_H);
+
+LM900:
+	     .stabn 68,0,6523,LM900-_Select_Sound
+	     R2 = (_QuestionStatus_LQ)	// [1:6523]  QuestionStatus_LQ
+	     R3 = seg(_QuestionStatus_LQ)	// [3:6523]  QuestionStatus_LQ
+	     R4 = SP + 1              	// [4:6523]  
+	     [R4++] = R2              	// [6:6523]  
+	     [R4] = R3                	// [8:6523]  
+	     R3 = 20                  	// [10:6523]  
+	     R4 = SP + 3              	// [11:6523]  
+	     [R4] = R3                	// [13:6523]  
+	     R3 = - 12288             	// [15:6523]  
+	     R4 = SP + 4              	// [17:6523]  
+	     [R4] = R3                	// [19:6523]  
+	     R3 = 31                  	// [21:6523]  
+	     R4 = SP + 5              	// [22:6523]  
+	     [R4] = R3                	// [24:6523]  
+	     call _SPI_Flash_SendNWords	// [26:6523]  SPI_Flash_SendNWords
+BB22_PU61:	// 0x17e8
+// BB:22 cycle count: 15
+	     SP = SP + 3              	// [0:6523]  
+//6524        
+//6525        SPI_Flash_Sector_Erase(T_Asked_Secter_L,T_Asked_Secter_H);
 
 LM901:
-	     .stabn 68,0,6547,LM901-_Select_Sound
-	     call _MoveSPIDriverToRAM 	// [6:6547]  MoveSPIDriverToRAM
-BB20_PU61:	// 0x17cf
-// BB:20 cycle count: 15
-//6548        SPI_Flash_Sector_Erase(T_LQ_Secter_L,T_LQ_Secter_H);
+	     .stabn 68,0,6525,LM901-_Select_Sound
+	     R3 = - 4096              	// [1:6525]  
+	     R4 = SP + 1              	// [3:6525]  
+	     [R4] = R3                	// [5:6525]  
+	     R3 = 31                  	// [7:6525]  
+	     R4 = SP + 2              	// [8:6525]  
+	     [R4] = R3                	// [10:6525]  
+	     call _SPI_Flash_Sector_Erase	// [12:6525]  SPI_Flash_Sector_Erase
+BB23_PU61:	// 0x17f4
+// BB:23 cycle count: 29
+	     SP = SP - 3              	// [0:6525]  
+//6526        SPI_Flash_SendNWords(QuestionStatus_Asked,C_QuestionRAM,T_Asked_Secter_L,T_Asked_Secter_H);   
 
 LM902:
-	     .stabn 68,0,6548,LM902-_Select_Sound
-	     SP = SP - 2              	// [0:6548]  
-	     R3 = - 12288             	// [1:6548]  
-	     R4 = SP + 1              	// [3:6548]  
-	     [R4] = R3                	// [5:6548]  
-	     R3 = 31                  	// [7:6548]  
-	     R4 = SP + 2              	// [8:6548]  
-	     [R4] = R3                	// [10:6548]  
-	     call _SPI_Flash_Sector_Erase	// [12:6548]  SPI_Flash_Sector_Erase
-BB21_PU61:	// 0x17db
-// BB:21 cycle count: 29
-	     SP = SP - 3              	// [0:6548]  
-//6549        SPI_Flash_SendNWords(QuestionStatus_LQ,C_QuestionRAM,T_LQ_Secter_L,T_LQ_Secter_H);
-
-LM903:
-	     .stabn 68,0,6549,LM903-_Select_Sound
-	     R2 = (_QuestionStatus_LQ)	// [1:6549]  QuestionStatus_LQ
-	     R3 = seg(_QuestionStatus_LQ)	// [3:6549]  QuestionStatus_LQ
-	     R4 = SP + 1              	// [4:6549]  
-	     [R4++] = R2              	// [6:6549]  
-	     [R4] = R3                	// [8:6549]  
-	     R3 = 20                  	// [10:6549]  
-	     R4 = SP + 3              	// [11:6549]  
-	     [R4] = R3                	// [13:6549]  
-	     R3 = - 12288             	// [15:6549]  
-	     R4 = SP + 4              	// [17:6549]  
-	     [R4] = R3                	// [19:6549]  
-	     R3 = 31                  	// [21:6549]  
-	     R4 = SP + 5              	// [22:6549]  
-	     [R4] = R3                	// [24:6549]  
-	     call _SPI_Flash_SendNWords	// [26:6549]  SPI_Flash_SendNWords
-BB22_PU61:	// 0x17f2
-// BB:22 cycle count: 15
-	     SP = SP + 3              	// [0:6549]  
-//6550        
-//6551        SPI_Flash_Sector_Erase(T_Asked_Secter_L,T_Asked_Secter_H);
-
-LM904:
-	     .stabn 68,0,6551,LM904-_Select_Sound
-	     R3 = - 4096              	// [1:6551]  
-	     R4 = SP + 1              	// [3:6551]  
-	     [R4] = R3                	// [5:6551]  
-	     R3 = 31                  	// [7:6551]  
-	     R4 = SP + 2              	// [8:6551]  
-	     [R4] = R3                	// [10:6551]  
-	     call _SPI_Flash_Sector_Erase	// [12:6551]  SPI_Flash_Sector_Erase
-BB23_PU61:	// 0x17fe
-// BB:23 cycle count: 29
-	     SP = SP - 3              	// [0:6551]  
-//6552        SPI_Flash_SendNWords(QuestionStatus_Asked,C_QuestionRAM,T_Asked_Secter_L,T_Asked_Secter_H);   
-
-LM905:
-	     .stabn 68,0,6552,LM905-_Select_Sound
-	     R2 = (_QuestionStatus_Asked)	// [1:6552]  QuestionStatus_Asked
-	     R3 = seg(_QuestionStatus_Asked)	// [3:6552]  QuestionStatus_Asked
-	     R4 = SP + 1              	// [4:6552]  
-	     [R4++] = R2              	// [6:6552]  
-	     [R4] = R3                	// [8:6552]  
-	     R3 = 20                  	// [10:6552]  
-	     R4 = SP + 3              	// [11:6552]  
-	     [R4] = R3                	// [13:6552]  
-	     R3 = - 4096              	// [15:6552]  
-	     R4 = SP + 4              	// [17:6552]  
-	     [R4] = R3                	// [19:6552]  
-	     R3 = 31                  	// [21:6552]  
-	     R4 = SP + 5              	// [22:6552]  
-	     [R4] = R3                	// [24:6552]  
-	     call _SPI_Flash_SendNWords	// [26:6552]  SPI_Flash_SendNWords
-BB24_PU61:	// 0x1815
+	     .stabn 68,0,6526,LM902-_Select_Sound
+	     R2 = (_QuestionStatus_Asked)	// [1:6526]  QuestionStatus_Asked
+	     R3 = seg(_QuestionStatus_Asked)	// [3:6526]  QuestionStatus_Asked
+	     R4 = SP + 1              	// [4:6526]  
+	     [R4++] = R2              	// [6:6526]  
+	     [R4] = R3                	// [8:6526]  
+	     R3 = 20                  	// [10:6526]  
+	     R4 = SP + 3              	// [11:6526]  
+	     [R4] = R3                	// [13:6526]  
+	     R3 = - 4096              	// [15:6526]  
+	     R4 = SP + 4              	// [17:6526]  
+	     [R4] = R3                	// [19:6526]  
+	     R3 = 31                  	// [21:6526]  
+	     R4 = SP + 5              	// [22:6526]  
+	     [R4] = R3                	// [24:6526]  
+	     call _SPI_Flash_SendNWords	// [26:6526]  SPI_Flash_SendNWords
+BB24_PU61:	// 0x180b
 // BB:24 cycle count: 5
-	     SP = SP + 5              	// [0:6552]  
+	     SP = SP + 5              	// [0:6526]  
 	//;;
 	INT FIQ,IRQ
 	//;;
-//6553        
-//6554          __asm("INT FIQ,IRQ");
-//6555        
-//6556        suppressflag=1;
+//6527        
+//6528          __asm("INT FIQ,IRQ");
+//6529        
+//6530        suppressflag=1;
 
-LM906:
-	     .stabn 68,0,6556,LM906-_Select_Sound
-	     R4 = 1                   	// [3:6556]  
-	     [BP + 1] = R4            	// [4:6556]  suppressflag
-Lt_61_1:	// 0x181b
+LM903:
+	     .stabn 68,0,6530,LM903-_Select_Sound
+	     R4 = 1                   	// [3:6530]  
+	     [BP + 1] = R4            	// [4:6530]  suppressflag
+Lt_61_1:	// 0x1811
 // BB:25 cycle count: 7
-//6557        
-//6558       }while(cnt>0);
+//6531        
+//6532       }while(cnt>0);
 
-LM907:
-	     .stabn 68,0,6558,LM907-_Select_Sound
-	     R4 = [BP + 0]            	// [0:6558]  cnt
-	     cmp R4, 0                	// [2:6558]  
-	     je BB26_PU61             	// [3:6558]  
-BB27_PU61:	// 0x181e
+LM904:
+	     .stabn 68,0,6532,LM904-_Select_Sound
+	     R4 = [BP + 0]            	// [0:6532]  cnt
+	     cmp R4, 0                	// [2:6532]  
+	     je BB26_PU61             	// [3:6532]  
+BB27_PU61:	// 0x1814
 // BB:27 cycle count: 3
 	     goto L_61_13             	// [0:0]  
-BB26_PU61:	// 0x1820
+BB26_PU61:	// 0x1816
 // BB:26 cycle count: 6
-	     SP = SP + 12             	// [0:6558]  
-	     pop BP, PC from [SP]     	// [1:6558]  
+	     SP = SP + 12             	// [0:6532]  
+	     pop BP, PC from [SP]     	// [1:6532]  
 LBE58:
 	.endp	
 	     .stabn 192,0,0,LBB58-_Select_Sound
@@ -13399,275 +13356,268 @@ _Events: .proc
 	     .stabn 0xa6,0,0,0
 	// old_frame_pointer = 0
 	// return_address = 1
-//6560  }
-//6561  /*******************************************************************
-//6562  **********************************************************************/
-//6563  void Events()
-//6564  {
+//6534  }
+//6535  /*******************************************************************
+//6536  **********************************************************************/
+//6537  void Events()
+//6538  {
+
+LM905:
+	     .stabn 68,0,6538,LM905-_Events
+BB1_PU62:	// 0x1812
+// BB:1 cycle count: 14
+	     push BP to [SP]          	// [0:6538]  
+	     BP = SP + 1              	// [2:6538]  
+//6539  	
+//6540  	//if((*P_TimerB_CNTR % 6)<3)
+//6541      // unsigned int E_now =0;
+//6542  
+//6543         if(LastE!=C_OneMoreTime)
+
+LM906:
+	     .stabn 68,0,6543,LM906-_Events
+	     DS = seg(_LastE)         	// [4:6543]  LastE
+	     R4 = (_LastE)            	// [5:6543]  LastE
+	     R4 = DS:[R4]             	// [7:6543]  
+	     cmp R4, 1                	// [9:6543]  
+	     je L_62_13               	// [10:6543]  
+BB2_PU62:	// 0x181b
+// BB:2 cycle count: 10
+//6544            R_E= C_OneMoreTime;
+
+LM907:
+	     .stabn 68,0,6544,LM907-_Events
+	     R3 = 1                   	// [0:6544]  
+	     DS = seg(_R_E)           	// [1:6544]  R_E
+	     R4 = (_R_E)              	// [2:6544]  R_E
+	     DS:[R4] = R3             	// [4:6544]  
+	     jmp L_62_12              	// [6:6544]  
+L_62_13:	// 0x1821
+// BB:3 cycle count: 10
+//6545  	   else if((LastE!=C_TwoSounds))//(Registerd_Num ==1)||
 
 LM908:
-	     .stabn 68,0,6564,LM908-_Events
-BB1_PU62:	// 0x181c
-// BB:1 cycle count: 14
-	     push BP to [SP]          	// [0:6564]  
-	     BP = SP + 1              	// [2:6564]  
-//6565  	
-//6566  	//if((*P_TimerB_CNTR % 6)<3)
-//6567      // unsigned int E_now =0;
-//6568  
-//6569         if(LastE!=C_OneMoreTime)
+	     .stabn 68,0,6545,LM908-_Events
+	     DS = seg(_LastE)         	// [0:6545]  LastE
+	     R4 = (_LastE)            	// [1:6545]  LastE
+	     R4 = DS:[R4]             	// [3:6545]  
+	     cmp R4, 2                	// [5:6545]  
+	     je L_62_14               	// [6:6545]  
+BB4_PU62:	// 0x1827
+// BB:4 cycle count: 6
+//6546  	   	{
+//6547               R_E =C_TwoSounds;
 
 LM909:
-	     .stabn 68,0,6569,LM909-_Events
-	     DS = seg(_LastE)         	// [4:6569]  LastE
-	     R4 = (_LastE)            	// [5:6569]  LastE
-	     R4 = DS:[R4]             	// [7:6569]  
-	     cmp R4, 1                	// [9:6569]  
-	     je L_62_14               	// [10:6569]  
-BB2_PU62:	// 0x1825
-// BB:2 cycle count: 10
-//6570            R_E= C_OneMoreTime;
+	     .stabn 68,0,6547,LM909-_Events
+	     R3 = 2                   	// [0:6547]  
+	     DS = seg(_R_E)           	// [1:6547]  R_E
+	     R4 = (_R_E)              	// [2:6547]  R_E
+	     DS:[R4] = R3             	// [4:6547]  
+L_62_14:	// 0x182c
+L_62_12:	// 0x182c
+// BB:5 cycle count: 10
+//6548  	   	}
+//6549  
+//6550  	   
+//6551  	    if((R_E!=C_OneMoreTime)&&(R_E!=C_TwoSounds))
 
 LM910:
-	     .stabn 68,0,6570,LM910-_Events
-	     R3 = 1                   	// [0:6570]  
-	     DS = seg(_R_E)           	// [1:6570]  R_E
-	     R4 = (_R_E)              	// [2:6570]  R_E
-	     DS:[R4] = R3             	// [4:6570]  
-	     jmp L_62_13              	// [6:6570]  
-L_62_14:	// 0x182b
-// BB:3 cycle count: 10
-//6571  	   else if((Registerd_Num ==1)||(LastE!=C_TwoSounds))
+	     .stabn 68,0,6551,LM910-_Events
+	     DS = seg(_R_E)           	// [0:6551]  R_E
+	     R4 = (_R_E)              	// [1:6551]  R_E
+	     R4 = DS:[R4]             	// [3:6551]  
+	     cmp R4, 1                	// [5:6551]  
+	     je L_62_15               	// [6:6551]  
+BB6_PU62:	// 0x1832
+// BB:6 cycle count: 10
+	     DS = seg(_R_E)           	// [0:6551]  R_E
+	     R4 = (_R_E)              	// [1:6551]  R_E
+	     R4 = DS:[R4]             	// [3:6551]  
+	     cmp R4, 2                	// [5:6551]  
+	     je L_62_15               	// [6:6551]  
+L_62_16:	// 0x1838
+// BB:7 cycle count: 13
+//6552  	    	{
+//6553                       if((*P_TimerB_CNTR % 6)<3)
 
 LM911:
-	     .stabn 68,0,6571,LM911-_Events
-	     DS = seg(_Registerd_Num) 	// [0:6571]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6571]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6571]  
-	     cmp R4, 1                	// [5:6571]  
-	     je L_62_16               	// [6:6571]  
-BB4_PU62:	// 0x1831
-// BB:4 cycle count: 10
-	     DS = seg(_LastE)         	// [0:6571]  LastE
-	     R4 = (_LastE)            	// [1:6571]  LastE
-	     R4 = DS:[R4]             	// [3:6571]  
-	     cmp R4, 2                	// [5:6571]  
-	     je L_62_15               	// [6:6571]  
-L_62_16:	// 0x1837
-// BB:5 cycle count: 6
-//6572  	   	{
-//6573               R_E =C_TwoSounds;
-
-LM912:
-	     .stabn 68,0,6573,LM912-_Events
-	     R3 = 2                   	// [0:6573]  
-	     DS = seg(_R_E)           	// [1:6573]  R_E
-	     R4 = (_R_E)              	// [2:6573]  R_E
-	     DS:[R4] = R3             	// [4:6573]  
-L_62_15:	// 0x183c
-L_62_13:	// 0x183c
-// BB:6 cycle count: 10
-//6574  	   	}
-//6575  
-//6576  	   
-//6577  	    if((R_E!=C_OneMoreTime)&&(R_E!=C_TwoSounds))
-
-LM913:
-	     .stabn 68,0,6577,LM913-_Events
-	     DS = seg(_R_E)           	// [0:6577]  R_E
-	     R4 = (_R_E)              	// [1:6577]  R_E
-	     R4 = DS:[R4]             	// [3:6577]  
-	     cmp R4, 1                	// [5:6577]  
-	     je L_62_17               	// [6:6577]  
-BB7_PU62:	// 0x1842
-// BB:7 cycle count: 10
-	     DS = seg(_R_E)           	// [0:6577]  R_E
-	     R4 = (_R_E)              	// [1:6577]  R_E
-	     R4 = DS:[R4]             	// [3:6577]  
-	     cmp R4, 2                	// [5:6577]  
-	     je L_62_17               	// [6:6577]  
-L_62_18:	// 0x1848
-// BB:8 cycle count: 13
-//6578  	    	{
-//6579                       if((*P_TimerB_CNTR % 6)<3)
-
-LM914:
-	     .stabn 68,0,6579,LM914-_Events
-	     R3 = 12307               	// [0:6579]  
-	     R4 = 0                   	// [2:6579]  
-	     DS = R4                  	// [3:6579]  
-	     R3 = DS:[R3]             	// [4:6579]  
-	     R4 = 6                   	// [6:6579]  
-	     push R4, R3 to [SP]      	// [7:6579]  
-	     call __modu1             	// [10:6579]  _modu1
-BB9_PU62:	// 0x1851
-// BB:9 cycle count: 6
+	     .stabn 68,0,6553,LM911-_Events
+	     R3 = 12307               	// [0:6553]  
+	     R4 = 0                   	// [2:6553]  
+	     DS = R4                  	// [3:6553]  
+	     R3 = DS:[R3]             	// [4:6553]  
+	     R4 = 6                   	// [6:6553]  
+	     push R4, R3 to [SP]      	// [7:6553]  
+	     call __modu1             	// [10:6553]  _modu1
+BB8_PU62:	// 0x1841
+// BB:8 cycle count: 6
 	     SP = SP + 2              	// [0:0]  
 	     cmp R1, 2                	// [1:0]  
-	     ja L_62_20               	// [2:0]  
-BB10_PU62:	// 0x1854
-// BB:10 cycle count: 10
-//6580  					 	 R_E = C_OneMoreTime;
+	     ja L_62_18               	// [2:0]  
+BB9_PU62:	// 0x1844
+// BB:9 cycle count: 10
+//6554  					 	 R_E = C_OneMoreTime;
+
+LM912:
+	     .stabn 68,0,6554,LM912-_Events
+	     R3 = 1                   	// [0:6554]  
+	     DS = seg(_R_E)           	// [1:6554]  R_E
+	     R4 = (_R_E)              	// [2:6554]  R_E
+	     DS:[R4] = R3             	// [4:6554]  
+	     jmp L_62_17              	// [6:6554]  
+L_62_18:	// 0x184a
+// BB:10 cycle count: 6
+//6555  					 else
+//6556  					 	R_E =C_TwoSounds;
+
+LM913:
+	     .stabn 68,0,6556,LM913-_Events
+	     R3 = 2                   	// [0:6556]  
+	     DS = seg(_R_E)           	// [1:6556]  R_E
+	     R4 = (_R_E)              	// [2:6556]  R_E
+	     DS:[R4] = R3             	// [4:6556]  
+L_62_17:	// 0x184f
+L_62_15:	// 0x184f
+// BB:11 cycle count: 10
+//6557  
+//6558  	    	}
+//6559  	
+//6560  
+//6561  		   if(R_E==C_OneMoreTime)
+
+LM914:
+	     .stabn 68,0,6561,LM914-_Events
+	     DS = seg(_R_E)           	// [0:6561]  R_E
+	     R4 = (_R_E)              	// [1:6561]  R_E
+	     R4 = DS:[R4]             	// [3:6561]  
+	     cmp R4, 1                	// [5:6561]  
+	     jne L_62_20              	// [6:6561]  
+BB12_PU62:	// 0x1855
+// BB:12 cycle count: 10
+//6562  			{
+//6563  	
+//6564  		        //R_E = C_OneMoreTime;
+//6565  				PlayA1800_Elements(SFX_Event);
 
 LM915:
-	     .stabn 68,0,6580,LM915-_Events
-	     R3 = 1                   	// [0:6580]  
-	     DS = seg(_R_E)           	// [1:6580]  R_E
-	     R4 = (_R_E)              	// [2:6580]  R_E
-	     DS:[R4] = R3             	// [4:6580]  
-	     jmp L_62_19              	// [6:6580]  
-L_62_20:	// 0x185a
-// BB:11 cycle count: 6
-//6581  					 else
-//6582  					 	R_E =C_TwoSounds;
+	     .stabn 68,0,6565,LM915-_Events
+	     SP = SP - 1              	// [0:6565]  
+	     R3 = 126                 	// [1:6565]  
+	     R4 = SP + 1              	// [3:6565]  
+	     [R4] = R3                	// [5:6565]  
+	     call _PlayA1800_Elements 	// [7:6565]  PlayA1800_Elements
+BB13_PU62:	// 0x185d
+// BB:13 cycle count: 19
+	     SP = SP - 1              	// [0:6565]  
+//6566  	            Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
 
 LM916:
-	     .stabn 68,0,6582,LM916-_Events
-	     R3 = 2                   	// [0:6582]  
-	     DS = seg(_R_E)           	// [1:6582]  R_E
-	     R4 = (_R_E)              	// [2:6582]  R_E
-	     DS:[R4] = R3             	// [4:6582]  
-L_62_19:	// 0x185f
-L_62_17:	// 0x185f
-// BB:12 cycle count: 10
-//6583  
-//6584  	    	}
-//6585  	
-//6586  
-//6587  		   if(R_E==C_OneMoreTime)
+	     .stabn 68,0,6566,LM916-_Events
+	     DS = seg(_Player_Activing_Cnt)	// [1:6566]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [2:6566]  Player_Activing_Cnt
+	     R3 = DS:[R4]             	// [4:6566]  
+	     R4 = SP + 1              	// [6:6566]  
+	     [R4] = R3                	// [8:6566]  
+	     R3 = 6000                	// [10:6566]  
+	     R4 = SP + 2              	// [12:6566]  
+	     [R4] = R3                	// [14:6566]  
+	     call _Play_Seq           	// [16:6566]  Play_Seq
+BB14_PU62:	// 0x186c
+// BB:14 cycle count: 9
+	     SP = SP + 1              	// [0:6566]  
+//6567  	            PlayA1800_Elements(A_VLMMREN_OneMore);	
 
 LM917:
-	     .stabn 68,0,6587,LM917-_Events
-	     DS = seg(_R_E)           	// [0:6587]  R_E
-	     R4 = (_R_E)              	// [1:6587]  R_E
-	     R4 = DS:[R4]             	// [3:6587]  
-	     cmp R4, 1                	// [5:6587]  
-	     jne L_62_22              	// [6:6587]  
-BB13_PU62:	// 0x1865
-// BB:13 cycle count: 10
-//6588  			{
-//6589  	
-//6590  		        //R_E = C_OneMoreTime;
-//6591  				PlayA1800_Elements(SFX_Event);
+	     .stabn 68,0,6567,LM917-_Events
+	     R3 = 35                  	// [1:6567]  
+	     R4 = SP + 1              	// [2:6567]  
+	     [R4] = R3                	// [4:6567]  
+	     call _PlayA1800_Elements 	// [6:6567]  PlayA1800_Elements
+BB15_PU62:	// 0x1873
+// BB:15 cycle count: 5
+	     SP = SP + 1              	// [0:6567]  
+	     jmp L_62_19              	// [1:6567]  
+L_62_20:	// 0x1875
+// BB:16 cycle count: 22
+//6568  			}
+//6569             else 
+//6570             	{
+//6571     
+//6572  		  	     R_E =C_TwoSounds;
 
 LM918:
-	     .stabn 68,0,6591,LM918-_Events
-	     SP = SP - 1              	// [0:6591]  
-	     R3 = 124                 	// [1:6591]  
-	     R4 = SP + 1              	// [3:6591]  
-	     [R4] = R3                	// [5:6591]  
-	     call _PlayA1800_Elements 	// [7:6591]  PlayA1800_Elements
-BB14_PU62:	// 0x186d
-// BB:14 cycle count: 19
-	     SP = SP - 1              	// [0:6591]  
-//6592  	            Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
+	     .stabn 68,0,6572,LM918-_Events
+	     R3 = 2                   	// [0:6572]  
+	     DS = seg(_R_E)           	// [1:6572]  R_E
+	     R4 = (_R_E)              	// [2:6572]  R_E
+	     DS:[R4] = R3             	// [4:6572]  
+//6573  		  	     R_2SLoop =0;
 
 LM919:
-	     .stabn 68,0,6592,LM919-_Events
-	     DS = seg(_Player_Activing_Cnt)	// [1:6592]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [2:6592]  Player_Activing_Cnt
-	     R3 = DS:[R4]             	// [4:6592]  
-	     R4 = SP + 1              	// [6:6592]  
-	     [R4] = R3                	// [8:6592]  
-	     R3 = 6000                	// [10:6592]  
-	     R4 = SP + 2              	// [12:6592]  
-	     [R4] = R3                	// [14:6592]  
-	     call _Play_Seq           	// [16:6592]  Play_Seq
-BB15_PU62:	// 0x187c
-// BB:15 cycle count: 9
-	     SP = SP + 1              	// [0:6592]  
-//6593  	            PlayA1800_Elements(A_VLMMREN_OneMore);	
+	     .stabn 68,0,6573,LM919-_Events
+	     R3 = 0                   	// [6:6573]  
+	     DS = seg(_R_2SLoop)      	// [7:6573]  R_2SLoop
+	     R4 = (_R_2SLoop)         	// [8:6573]  R_2SLoop
+	     DS:[R4] = R3             	// [10:6573]  
+//6574  				 
+//6575  				 PlayA1800_Elements(SFX_Event);	 
 
 LM920:
-	     .stabn 68,0,6593,LM920-_Events
-	     R3 = 35                  	// [1:6593]  
-	     R4 = SP + 1              	// [2:6593]  
-	     [R4] = R3                	// [4:6593]  
-	     call _PlayA1800_Elements 	// [6:6593]  PlayA1800_Elements
-BB16_PU62:	// 0x1883
-// BB:16 cycle count: 5
-	     SP = SP + 1              	// [0:6593]  
-	     jmp L_62_21              	// [1:6593]  
-L_62_22:	// 0x1885
-// BB:17 cycle count: 22
-//6594  			}
-//6595             else 
-//6596             	{
-//6597     
-//6598  		  	     R_E =C_TwoSounds;
+	     .stabn 68,0,6575,LM920-_Events
+	     SP = SP - 1              	// [12:6575]  
+	     R3 = 126                 	// [13:6575]  
+	     R4 = SP + 1              	// [15:6575]  
+	     [R4] = R3                	// [17:6575]  
+	     call _PlayA1800_Elements 	// [19:6575]  PlayA1800_Elements
+BB17_PU62:	// 0x1887
+// BB:17 cycle count: 9
+//6576  		  	     PlayA1800_Elements(A_VLMMREN_TwoSounds);
 
 LM921:
-	     .stabn 68,0,6598,LM921-_Events
-	     R3 = 2                   	// [0:6598]  
-	     DS = seg(_R_E)           	// [1:6598]  R_E
-	     R4 = (_R_E)              	// [2:6598]  R_E
-	     DS:[R4] = R3             	// [4:6598]  
-//6599  		  	     R_2SLoop =0;
+	     .stabn 68,0,6576,LM921-_Events
+	     R3 = 76                  	// [0:6576]  
+	     R4 = SP + 1              	// [2:6576]  
+	     [R4] = R3                	// [4:6576]  
+	     call _PlayA1800_Elements 	// [6:6576]  PlayA1800_Elements
+BB18_PU62:	// 0x188e
+// BB:18 cycle count: 4
+	     SP = SP + 1              	// [0:6576]  
+//6577  		  	     
+//6578  		  	     Player_Activing_Cnt =Select_Pingamerandom();	
 
 LM922:
-	     .stabn 68,0,6599,LM922-_Events
-	     R3 = 0                   	// [6:6599]  
-	     DS = seg(_R_2SLoop)      	// [7:6599]  R_2SLoop
-	     R4 = (_R_2SLoop)         	// [8:6599]  R_2SLoop
-	     DS:[R4] = R3             	// [10:6599]  
-//6600  				 
-//6601  				 PlayA1800_Elements(SFX_Event);	 
+	     .stabn 68,0,6578,LM922-_Events
+	     call _Select_Pingamerandom	// [1:6578]  Select_Pingamerandom
+BB19_PU62:	// 0x1891
+// BB:19 cycle count: 5
+	     DS = seg(_Player_Activing_Cnt)	// [0:6578]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [1:6578]  Player_Activing_Cnt
+	     DS:[R4] = R1             	// [3:6578]  
+L_62_19:	// 0x1895
+// BB:20 cycle count: 21
+//6579             	}
+//6580  
+//6581              
+//6582  		    LastE = R_E;
 
 LM923:
-	     .stabn 68,0,6601,LM923-_Events
-	     SP = SP - 1              	// [12:6601]  
-	     R3 = 124                 	// [13:6601]  
-	     R4 = SP + 1              	// [15:6601]  
-	     [R4] = R3                	// [17:6601]  
-	     call _PlayA1800_Elements 	// [19:6601]  PlayA1800_Elements
-BB18_PU62:	// 0x1897
-// BB:18 cycle count: 9
-//6602  		  	     PlayA1800_Elements(A_VLMMREN_TwoSounds);
+	     .stabn 68,0,6582,LM923-_Events
+	     DS = seg(_R_E)           	// [0:6582]  R_E
+	     R4 = (_R_E)              	// [1:6582]  R_E
+	     R3 = DS:[R4]             	// [3:6582]  
+	     DS = seg(_LastE)         	// [5:6582]  LastE
+	     R4 = (_LastE)            	// [6:6582]  LastE
+	     DS:[R4] = R3             	// [8:6582]  
+//6583              SinceLastE=0;
 
 LM924:
-	     .stabn 68,0,6602,LM924-_Events
-	     R3 = 76                  	// [0:6602]  
-	     R4 = SP + 1              	// [2:6602]  
-	     [R4] = R3                	// [4:6602]  
-	     call _PlayA1800_Elements 	// [6:6602]  PlayA1800_Elements
-BB19_PU62:	// 0x189e
-// BB:19 cycle count: 4
-	     SP = SP + 1              	// [0:6602]  
-//6603  		  	     
-//6604  		  	     Player_Activing_Cnt =Select_Pingamerandom();	
-
-LM925:
-	     .stabn 68,0,6604,LM925-_Events
-	     call _Select_Pingamerandom	// [1:6604]  Select_Pingamerandom
-BB20_PU62:	// 0x18a1
-// BB:20 cycle count: 5
-	     DS = seg(_Player_Activing_Cnt)	// [0:6604]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [1:6604]  Player_Activing_Cnt
-	     DS:[R4] = R1             	// [3:6604]  
-L_62_21:	// 0x18a5
-// BB:21 cycle count: 21
-//6605             	}
-//6606  
-//6607              
-//6608  		    LastE = R_E;
-
-LM926:
-	     .stabn 68,0,6608,LM926-_Events
-	     DS = seg(_R_E)           	// [0:6608]  R_E
-	     R4 = (_R_E)              	// [1:6608]  R_E
-	     R3 = DS:[R4]             	// [3:6608]  
-	     DS = seg(_LastE)         	// [5:6608]  LastE
-	     R4 = (_LastE)            	// [6:6608]  LastE
-	     DS:[R4] = R3             	// [8:6608]  
-//6609              SinceLastE=0;
-
-LM927:
-	     .stabn 68,0,6609,LM927-_Events
-	     R3 = 0                   	// [10:6609]  
-	     DS = seg(_SinceLastE)    	// [11:6609]  SinceLastE
-	     R4 = (_SinceLastE)       	// [12:6609]  SinceLastE
-	     DS:[R4] = R3             	// [14:6609]  
-	     pop BP, PC from [SP]     	// [16:6609]  
+	     .stabn 68,0,6583,LM924-_Events
+	     R3 = 0                   	// [10:6583]  
+	     DS = seg(_SinceLastE)    	// [11:6583]  SinceLastE
+	     R4 = (_SinceLastE)       	// [12:6583]  SinceLastE
+	     DS:[R4] = R3             	// [14:6583]  
+	     pop BP, PC from [SP]     	// [16:6583]  
 	.endp	
 LME63:
 	     .stabf LME63-_Events
@@ -13681,462 +13631,464 @@ _Game: .proc
 	// temp = 0
 	// old_frame_pointer = 1
 	// return_address = 2
-//6611  
-//6612  /*******************************************************************
-//6613  **********************************************************************/
-//6614  unsigned int Game()
-//6615  {
+//6585  
+//6586  /*******************************************************************
+//6587  **********************************************************************/
+//6588  unsigned int Game()
+//6589  {
+
+LM925:
+	     .stabn 68,0,6589,LM925-_Game
+BB1_PU63:	// 0x18a3
+// BB:1 cycle count: 53
+	     push BP to [SP]          	// [0:6589]  
+	     SP = SP - 1              	// [2:6589]  
+	     BP = SP + 1              	// [3:6589]  
+LBB59:
+//6590  	unsigned int temp;
+//6591  
+//6592      R_E =0;
+
+LM926:
+	     .stabn 68,0,6592,LM926-_Game
+	     R3 = 0                   	// [5:6592]  
+	     DS = seg(_R_E)           	// [6:6592]  R_E
+	     R4 = (_R_E)              	// [7:6592]  R_E
+	     DS:[R4] = R3             	// [9:6592]  
+//6593  
+//6594      firstFlag_23b&=~0x800;
+
+LM927:
+	     .stabn 68,0,6594,LM927-_Game
+	     DS = seg(_firstFlag_23b) 	// [11:6594]  firstFlag_23b
+	     R4 = (_firstFlag_23b)    	// [12:6594]  firstFlag_23b
+	     R4 = DS:[R4]             	// [14:6594]  
+	     R3 = R4 & 63487          	// [16:6594]  
+	     DS = seg(_firstFlag_23b) 	// [18:6594]  firstFlag_23b
+	     R4 = (_firstFlag_23b)    	// [19:6594]  firstFlag_23b
+	     DS:[R4] = R3             	// [21:6594]  
+//6595      CheaterFlag =0;
 
 LM928:
-	     .stabn 68,0,6615,LM928-_Game
-BB1_PU63:	// 0x18b3
-// BB:1 cycle count: 53
-	     push BP to [SP]          	// [0:6615]  
-	     SP = SP - 1              	// [2:6615]  
-	     BP = SP + 1              	// [3:6615]  
-LBB59:
-//6616  	unsigned int temp;
-//6617  
-//6618      R_E =0;
+	     .stabn 68,0,6595,LM928-_Game
+	     R3 = 0                   	// [23:6595]  
+	     DS = seg(_CheaterFlag)   	// [24:6595]  CheaterFlag
+	     R4 = (_CheaterFlag)      	// [25:6595]  CheaterFlag
+	     DS:[R4] = R3             	// [27:6595]  
+//6596      Eventflag =0;
 
 LM929:
-	     .stabn 68,0,6618,LM929-_Game
-	     R3 = 0                   	// [5:6618]  
-	     DS = seg(_R_E)           	// [6:6618]  R_E
-	     R4 = (_R_E)              	// [7:6618]  R_E
-	     DS:[R4] = R3             	// [9:6618]  
-//6619  
-//6620      firstFlag_23b&=~0x800;
+	     .stabn 68,0,6596,LM929-_Game
+	     R3 = 0                   	// [29:6596]  
+	     DS = seg(_Eventflag)     	// [30:6596]  Eventflag
+	     R4 = (_Eventflag)        	// [31:6596]  Eventflag
+	     DS:[R4] = R3             	// [33:6596]  
+//6597  	End20flag =0;
 
 LM930:
-	     .stabn 68,0,6620,LM930-_Game
-	     DS = seg(_firstFlag_23b) 	// [11:6620]  firstFlag_23b
-	     R4 = (_firstFlag_23b)    	// [12:6620]  firstFlag_23b
-	     R4 = DS:[R4]             	// [14:6620]  
-	     R3 = R4 & 63487          	// [16:6620]  
-	     DS = seg(_firstFlag_23b) 	// [18:6620]  firstFlag_23b
-	     R4 = (_firstFlag_23b)    	// [19:6620]  firstFlag_23b
-	     DS:[R4] = R3             	// [21:6620]  
-//6621      CheaterFlag =0;
+	     .stabn 68,0,6597,LM930-_Game
+	     R3 = 0                   	// [35:6597]  
+	     DS = seg(_End20flag)     	// [36:6597]  End20flag
+	     R4 = (_End20flag)        	// [37:6597]  End20flag
+	     DS:[R4] = R3             	// [39:6597]  
+//6598       
+//6599  	Key_Event =0;
 
 LM931:
-	     .stabn 68,0,6621,LM931-_Game
-	     R3 = 0                   	// [23:6621]  
-	     DS = seg(_CheaterFlag)   	// [24:6621]  CheaterFlag
-	     R4 = (_CheaterFlag)      	// [25:6621]  CheaterFlag
-	     DS:[R4] = R3             	// [27:6621]  
-//6622      Eventflag =0;
+	     .stabn 68,0,6599,LM931-_Game
+	     R3 = 0                   	// [41:6599]  
+	     DS = seg(_Key_Event)     	// [42:6599]  Key_Event
+	     R4 = (_Key_Event)        	// [43:6599]  Key_Event
+	     DS:[R4] = R3             	// [45:6599]  
+//6600  	Key_activeflag = ALL_Key_Enable;
 
 LM932:
-	     .stabn 68,0,6622,LM932-_Game
-	     R3 = 0                   	// [29:6622]  
-	     DS = seg(_Eventflag)     	// [30:6622]  Eventflag
-	     R4 = (_Eventflag)        	// [31:6622]  Eventflag
-	     DS:[R4] = R3             	// [33:6622]  
-//6623  	End20flag =0;
+	     .stabn 68,0,6600,LM932-_Game
+	     R3 = 7                   	// [47:6600]  
+	     DS = seg(_Key_activeflag)	// [48:6600]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [49:6600]  Key_activeflag
+	     DS:[R4] = R3             	// [51:6600]  
+L_63_26:	// 0x18cf
+// BB:2 cycle count: 3
+//6643       
+//6644     while(1)
+//6645     	{
+//6646  	    
+//6647  	    WatchdogClear();
 
 LM933:
-	     .stabn 68,0,6623,LM933-_Game
-	     R3 = 0                   	// [35:6623]  
-	     DS = seg(_End20flag)     	// [36:6623]  End20flag
-	     R4 = (_End20flag)        	// [37:6623]  End20flag
-	     DS:[R4] = R3             	// [39:6623]  
-//6624       
-//6625  	Key_Event =0;
+	     .stabn 68,0,6647,LM933-_Game
+	     call _WatchdogClear      	// [0:6647]  WatchdogClear
+BB3_PU63:	// 0x18d1
+// BB:3 cycle count: 10
+//6648     	  
+//6649     	  	if(Sleepflag) 
 
 LM934:
-	     .stabn 68,0,6625,LM934-_Game
-	     R3 = 0                   	// [41:6625]  
-	     DS = seg(_Key_Event)     	// [42:6625]  Key_Event
-	     R4 = (_Key_Event)        	// [43:6625]  Key_Event
-	     DS:[R4] = R3             	// [45:6625]  
-//6626  	Key_activeflag = ALL_Key_Enable;
+	     .stabn 68,0,6649,LM934-_Game
+	     DS = seg(_Sleepflag)     	// [0:6649]  Sleepflag
+	     R4 = (_Sleepflag)        	// [1:6649]  Sleepflag
+	     R4 = DS:[R4]             	// [3:6649]  
+	     cmp R4, 0                	// [5:6649]  
+	     je L_63_28               	// [6:6649]  
+BB4_PU63:	// 0x18d7
+// BB:4 cycle count: 7
+//6650  		     return C_Finish ;   
 
 LM935:
-	     .stabn 68,0,6626,LM935-_Game
-	     R3 = 7                   	// [47:6626]  
-	     DS = seg(_Key_activeflag)	// [48:6626]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [49:6626]  Key_activeflag
-	     DS:[R4] = R3             	// [51:6626]  
-L_63_26:	// 0x18df
-// BB:2 cycle count: 3
-//6669       
-//6670     while(1)
-//6671     	{
-//6672  	    
-//6673  	    WatchdogClear();
+	     .stabn 68,0,6650,LM935-_Game
+	     R1 = - 1                 	// [0:6650]  
+	     SP = SP + 1              	// [1:6650]  
+	     pop BP, PC from [SP]     	// [2:6650]  
+L_63_28:	// 0x18da
+// BB:5 cycle count: 44
+//6651  	    
+//6652  	    CheaterFlag =0;
 
 LM936:
-	     .stabn 68,0,6673,LM936-_Game
-	     call _WatchdogClear      	// [0:6673]  WatchdogClear
-BB3_PU63:	// 0x18e1
-// BB:3 cycle count: 10
-//6674     	  
-//6675     	  	if(Sleepflag) 
+	     .stabn 68,0,6652,LM936-_Game
+	     R3 = 0                   	// [0:6652]  
+	     DS = seg(_CheaterFlag)   	// [1:6652]  CheaterFlag
+	     R4 = (_CheaterFlag)      	// [2:6652]  CheaterFlag
+	     DS:[R4] = R3             	// [4:6652]  
+//6653  	    PauseFlag =0;
 
 LM937:
-	     .stabn 68,0,6675,LM937-_Game
-	     DS = seg(_Sleepflag)     	// [0:6675]  Sleepflag
-	     R4 = (_Sleepflag)        	// [1:6675]  Sleepflag
-	     R4 = DS:[R4]             	// [3:6675]  
-	     cmp R4, 0                	// [5:6675]  
-	     je L_63_28               	// [6:6675]  
-BB4_PU63:	// 0x18e7
-// BB:4 cycle count: 7
-//6676  		     return C_Finish ;   
+	     .stabn 68,0,6653,LM937-_Game
+	     R3 = 0                   	// [6:6653]  
+	     DS = seg(_PauseFlag)     	// [7:6653]  PauseFlag
+	     R4 = (_PauseFlag)        	// [8:6653]  PauseFlag
+	     DS:[R4] = R3             	// [10:6653]  
+//6654  	    
+//6655  	    Cn++;    
 
 LM938:
-	     .stabn 68,0,6676,LM938-_Game
-	     R1 = - 1                 	// [0:6676]  
-	     SP = SP + 1              	// [1:6676]  
-	     pop BP, PC from [SP]     	// [2:6676]  
-L_63_28:	// 0x18ea
-// BB:5 cycle count: 44
-//6677  	    
-//6678  	    CheaterFlag =0;
+	     .stabn 68,0,6655,LM938-_Game
+	     DS = seg(_Cn)            	// [12:6655]  Cn
+	     R4 = (_Cn)               	// [13:6655]  Cn
+	     R4 = DS:[R4]             	// [15:6655]  
+	     R4 = R4 + 1              	// [17:6655]  
+	     DS = seg(_Cn)            	// [18:6655]  Cn
+	     R3 = (_Cn)               	// [19:6655]  Cn
+	     DS:[R3] = R4             	// [21:6655]  
+//6656          SinceLastE++;
 
 LM939:
-	     .stabn 68,0,6678,LM939-_Game
-	     R3 = 0                   	// [0:6678]  
-	     DS = seg(_CheaterFlag)   	// [1:6678]  CheaterFlag
-	     R4 = (_CheaterFlag)      	// [2:6678]  CheaterFlag
-	     DS:[R4] = R3             	// [4:6678]  
-//6679  	    PauseFlag =0;
+	     .stabn 68,0,6656,LM939-_Game
+	     DS = seg(_SinceLastE)    	// [23:6656]  SinceLastE
+	     R4 = (_SinceLastE)       	// [24:6656]  SinceLastE
+	     R4 = DS:[R4]             	// [26:6656]  
+	     R4 = R4 + 1              	// [28:6656]  
+	     DS = seg(_SinceLastE)    	// [29:6656]  SinceLastE
+	     R3 = (_SinceLastE)       	// [30:6656]  SinceLastE
+	     DS:[R3] = R4             	// [32:6656]  
+//6658  //		if((Get_Num_CategoryMemory()>100)&&(Tie ==0))
+//6659  //			break;
+//6660  
+//6661  
+//6662             if(Registerd_Num==1)
 
 LM940:
-	     .stabn 68,0,6679,LM940-_Game
-	     R3 = 0                   	// [6:6679]  
-	     DS = seg(_PauseFlag)     	// [7:6679]  PauseFlag
-	     R4 = (_PauseFlag)        	// [8:6679]  PauseFlag
-	     DS:[R4] = R3             	// [10:6679]  
-//6680  	    
-//6681  	    Cn++;    
+	     .stabn 68,0,6662,LM940-_Game
+	     DS = seg(_Registerd_Num) 	// [34:6662]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [35:6662]  Registerd_Num
+	     R4 = DS:[R4]             	// [37:6662]  
+	     cmp R4, 1                	// [39:6662]  
+	     jne L_63_30              	// [40:6662]  
+BB6_PU63:	// 0x18fc
+// BB:6 cycle count: 13
+//6663             	     Player_Activing_Cnt=Get_Firstcnt_From_Play(Registered_Play_Status);
 
 LM941:
-	     .stabn 68,0,6681,LM941-_Game
-	     DS = seg(_Cn)            	// [12:6681]  Cn
-	     R4 = (_Cn)               	// [13:6681]  Cn
-	     R4 = DS:[R4]             	// [15:6681]  
-	     R4 = R4 + 1              	// [17:6681]  
-	     DS = seg(_Cn)            	// [18:6681]  Cn
-	     R3 = (_Cn)               	// [19:6681]  Cn
-	     DS:[R3] = R4             	// [21:6681]  
-//6682          SinceLastE++;
+	     .stabn 68,0,6663,LM941-_Game
+	     SP = SP - 1              	// [0:6663]  
+	     DS = seg(_Registered_Play_Status)	// [1:6663]  Registered_Play_Status
+	     R4 = (_Registered_Play_Status)	// [2:6663]  Registered_Play_Status
+	     R3 = DS:[R4]             	// [4:6663]  
+	     R4 = SP + 1              	// [6:6663]  
+	     [R4] = R3                	// [8:6663]  
+	     call _Get_Firstcnt_From_Play	// [10:6663]  Get_Firstcnt_From_Play
+BB7_PU63:	// 0x1906
+// BB:7 cycle count: 10
+	     SP = SP + 1              	// [0:6663]  
+	     DS = seg(_Player_Activing_Cnt)	// [1:6663]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [2:6663]  Player_Activing_Cnt
+	     DS:[R4] = R1             	// [4:6663]  
+	     jmp L_63_29              	// [6:6663]  
+L_63_30:	// 0x190c
+// BB:8 cycle count: 10
+//6665  //           	     Player_Activing_Cnt =Select_Pingamerandom(0);
+//6666          else             
+//6667          {
+//6668  
+//6669             if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0))//&&(Registerd_Num>1)
 
 LM942:
-	     .stabn 68,0,6682,LM942-_Game
-	     DS = seg(_SinceLastE)    	// [23:6682]  SinceLastE
-	     R4 = (_SinceLastE)       	// [24:6682]  SinceLastE
-	     R4 = DS:[R4]             	// [26:6682]  
-	     R4 = R4 + 1              	// [28:6682]  
-	     DS = seg(_SinceLastE)    	// [29:6682]  SinceLastE
-	     R3 = (_SinceLastE)       	// [30:6682]  SinceLastE
-	     DS:[R3] = R4             	// [32:6682]  
-//6683          
-//6684  //		if((Get_Num_CategoryMemory()>100)&&(Tie ==0))
-//6685  //			break;
-//6686  
-//6687          if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0))//&&(Registerd_Num>1)
-
-LM943:
-	     .stabn 68,0,6687,LM943-_Game
-	     DS = seg(_Cn)            	// [34:6687]  Cn
-	     R4 = (_Cn)               	// [35:6687]  Cn
-	     R4 = DS:[R4]             	// [37:6687]  
-	     cmp R4, 4                	// [39:6687]  
-	     jbe L_63_30              	// [40:6687]  
-BB6_PU63:	// 0x190c
-// BB:6 cycle count: 10
-	     DS = seg(_SinceLastE)    	// [0:6687]  SinceLastE
-	     R4 = (_SinceLastE)       	// [1:6687]  SinceLastE
-	     R4 = DS:[R4]             	// [3:6687]  
-	     cmp R4, 4                	// [5:6687]  
-	     jbe L_63_30              	// [6:6687]  
-L_63_32:	// 0x1912
-// BB:7 cycle count: 13
-	     R3 = 12307               	// [0:6687]  
-	     R4 = 0                   	// [2:6687]  
-	     DS = R4                  	// [3:6687]  
-	     R3 = DS:[R3]             	// [4:6687]  
-	     R4 = 3                   	// [6:6687]  
-	     push R4, R3 to [SP]      	// [7:6687]  
-	     call __modu1             	// [10:6687]  _modu1
-BB8_PU63:	// 0x191b
-// BB:8 cycle count: 6
+	     .stabn 68,0,6669,LM942-_Game
+	     DS = seg(_Cn)            	// [0:6669]  Cn
+	     R4 = (_Cn)               	// [1:6669]  Cn
+	     R4 = DS:[R4]             	// [3:6669]  
+	     cmp R4, 4                	// [5:6669]  
+	     jbe L_63_32              	// [6:6669]  
+BB9_PU63:	// 0x1912
+// BB:9 cycle count: 10
+	     DS = seg(_SinceLastE)    	// [0:6669]  SinceLastE
+	     R4 = (_SinceLastE)       	// [1:6669]  SinceLastE
+	     R4 = DS:[R4]             	// [3:6669]  
+	     cmp R4, 4                	// [5:6669]  
+	     jbe L_63_32              	// [6:6669]  
+L_63_34:	// 0x1918
+// BB:10 cycle count: 13
+	     R3 = 12307               	// [0:6669]  
+	     R4 = 0                   	// [2:6669]  
+	     DS = R4                  	// [3:6669]  
+	     R3 = DS:[R3]             	// [4:6669]  
+	     R4 = 3                   	// [6:6669]  
+	     push R4, R3 to [SP]      	// [7:6669]  
+	     call __modu1             	// [10:6669]  _modu1
+BB11_PU63:	// 0x1921
+// BB:11 cycle count: 6
 	     SP = SP + 2              	// [0:0]  
 	     cmp R1, 0                	// [1:0]  
-	     jne L_63_30              	// [2:0]  
-L_63_31:	// 0x191e
-// BB:9 cycle count: 3
-//6688          	Events();
+	     jne L_63_32              	// [2:0]  
+L_63_33:	// 0x1924
+// BB:12 cycle count: 3
+//6670          	   Events();
+
+LM943:
+	     .stabn 68,0,6670,LM943-_Game
+	     call _Events             	// [0:6670]  Events
+BB13_PU63:	// 0x1926
+// BB:13 cycle count: 4
+	     jmp L_63_31              	// [0:6670]  
+L_63_32:	// 0x1927
+// BB:14 cycle count: 3
+//6671             	else
+//6672                Player_Activing_Cnt =Select_Pingamerandom();//SelectNextPingame(Player_Activing_Cnt);
 
 LM944:
-	     .stabn 68,0,6688,LM944-_Game
-	     call _Events             	// [0:6688]  Events
-BB10_PU63:	// 0x1920
-// BB:10 cycle count: 4
-	     jmp L_63_29              	// [0:6688]  
-L_63_30:	// 0x1921
-// BB:11 cycle count: 10
-//6689          else             
-//6690          {
-//6691             if(Registerd_Num==1)
+	     .stabn 68,0,6672,LM944-_Game
+	     call _Select_Pingamerandom	// [0:6672]  Select_Pingamerandom
+BB15_PU63:	// 0x1929
+// BB:15 cycle count: 5
+	     DS = seg(_Player_Activing_Cnt)	// [0:6672]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [1:6672]  Player_Activing_Cnt
+	     DS:[R4] = R1             	// [3:6672]  
+L_63_31:	// 0x192d
+L_63_29:	// 0x192d
+// BB:16 cycle count: 3
+//6673              
+//6674          }
+//6675              
+//6676              
+//6677  		    Select_Sound();
 
 LM945:
-	     .stabn 68,0,6691,LM945-_Game
-	     DS = seg(_Registerd_Num) 	// [0:6691]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6691]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6691]  
-	     cmp R4, 1                	// [5:6691]  
-	     jne L_63_33              	// [6:6691]  
-BB12_PU63:	// 0x1927
-// BB:12 cycle count: 13
-//6692             	     Player_Activing_Cnt=Get_Firstcnt_From_Play(Registered_Play_Status);
+	     .stabn 68,0,6677,LM945-_Game
+	     call _Select_Sound       	// [0:6677]  Select_Sound
+BB17_PU63:	// 0x192f
+// BB:17 cycle count: 10
+//6678  		    
+//6679  		   if(Tie ==0) 
 
 LM946:
-	     .stabn 68,0,6692,LM946-_Game
-	     SP = SP - 1              	// [0:6692]  
-	     DS = seg(_Registered_Play_Status)	// [1:6692]  Registered_Play_Status
-	     R4 = (_Registered_Play_Status)	// [2:6692]  Registered_Play_Status
-	     R3 = DS:[R4]             	// [4:6692]  
-	     R4 = SP + 1              	// [6:6692]  
-	     [R4] = R3                	// [8:6692]  
-	     call _Get_Firstcnt_From_Play	// [10:6692]  Get_Firstcnt_From_Play
-BB13_PU63:	// 0x1931
-// BB:13 cycle count: 6
-	     SP = SP + 1              	// [0:6692]  
-	     DS = seg(_Player_Activing_Cnt)	// [1:6692]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [2:6692]  Player_Activing_Cnt
-	     DS:[R4] = R1             	// [4:6692]  
-L_63_33:	// 0x1936
-// BB:14 cycle count: 3
-//6693  //           else	if(CurrentRound ==1)
-//6694  //           	     Player_Activing_Cnt =Select_Pingamerandom(0);
-//6695  //           	else
-//6696                   Player_Activing_Cnt =Select_Pingamerandom();//SelectNextPingame(Player_Activing_Cnt);
+	     .stabn 68,0,6679,LM946-_Game
+	     DS = seg(_Tie)           	// [0:6679]  Tie
+	     R4 = (_Tie)              	// [1:6679]  Tie
+	     R4 = DS:[R4]             	// [3:6679]  
+	     cmp R4, 0                	// [5:6679]  
+	     jne L_63_35              	// [6:6679]  
+BB18_PU63:	// 0x1935
+// BB:18 cycle count: 6
+//6680  		     Answerflag =1;
 
 LM947:
-	     .stabn 68,0,6696,LM947-_Game
-	     call _Select_Pingamerandom	// [0:6696]  Select_Pingamerandom
-BB15_PU63:	// 0x1938
-// BB:15 cycle count: 5
-	     DS = seg(_Player_Activing_Cnt)	// [0:6696]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [1:6696]  Player_Activing_Cnt
-	     DS:[R4] = R1             	// [3:6696]  
-L_63_29:	// 0x193c
-// BB:16 cycle count: 3
-//6697              
-//6698          }
-//6699              
-//6700              
-//6701  		    Select_Sound();
+	     .stabn 68,0,6680,LM947-_Game
+	     R3 = 1                   	// [0:6680]  
+	     DS = seg(_Answerflag)    	// [1:6680]  Answerflag
+	     R4 = (_Answerflag)       	// [2:6680]  Answerflag
+	     DS:[R4] = R3             	// [4:6680]  
+L_63_35:	// 0x193a
+// BB:19 cycle count: 3
+//6681  		     
+//6682  			Answer_F();
 
 LM948:
-	     .stabn 68,0,6701,LM948-_Game
-	     call _Select_Sound       	// [0:6701]  Select_Sound
-BB17_PU63:	// 0x193e
-// BB:17 cycle count: 10
-//6702  		    
-//6703  		   if(Tie ==0) 
+	     .stabn 68,0,6682,LM948-_Game
+	     call _Answer_F           	// [0:6682]  Answer_F
+BB20_PU63:	// 0x193c
+// BB:20 cycle count: 22
+//6683              Answerflag =0;
 
 LM949:
-	     .stabn 68,0,6703,LM949-_Game
-	     DS = seg(_Tie)           	// [0:6703]  Tie
-	     R4 = (_Tie)              	// [1:6703]  Tie
-	     R4 = DS:[R4]             	// [3:6703]  
-	     cmp R4, 0                	// [5:6703]  
-	     jne L_63_34              	// [6:6703]  
-BB18_PU63:	// 0x1944
-// BB:18 cycle count: 6
-//6704  		     Answerflag =1;
+	     .stabn 68,0,6683,LM949-_Game
+	     R3 = 0                   	// [0:6683]  
+	     DS = seg(_Answerflag)    	// [1:6683]  Answerflag
+	     R4 = (_Answerflag)       	// [2:6683]  Answerflag
+	     DS:[R4] = R3             	// [4:6683]  
+//6684              
+//6685             
+//6686  		    R_E =0;
 
 LM950:
-	     .stabn 68,0,6704,LM950-_Game
-	     R3 = 1                   	// [0:6704]  
-	     DS = seg(_Answerflag)    	// [1:6704]  Answerflag
-	     R4 = (_Answerflag)       	// [2:6704]  Answerflag
-	     DS:[R4] = R3             	// [4:6704]  
-L_63_34:	// 0x1949
-// BB:19 cycle count: 3
-//6705  		     
-//6706  			Answer_F();
+	     .stabn 68,0,6686,LM950-_Game
+	     R3 = 0                   	// [6:6686]  
+	     DS = seg(_R_E)           	// [7:6686]  R_E
+	     R4 = (_R_E)              	// [8:6686]  R_E
+	     DS:[R4] = R3             	// [10:6686]  
+//6687  		   
+//6688  		    	
+//6689  		   if(Sleepflag) 
 
 LM951:
-	     .stabn 68,0,6706,LM951-_Game
-	     call _Answer_F           	// [0:6706]  Answer_F
-BB20_PU63:	// 0x194b
-// BB:20 cycle count: 22
-//6707              Answerflag =0;
+	     .stabn 68,0,6689,LM951-_Game
+	     DS = seg(_Sleepflag)     	// [12:6689]  Sleepflag
+	     R4 = (_Sleepflag)        	// [13:6689]  Sleepflag
+	     R4 = DS:[R4]             	// [15:6689]  
+	     cmp R4, 0                	// [17:6689]  
+	     je L_63_36               	// [18:6689]  
+BB21_PU63:	// 0x194c
+// BB:21 cycle count: 7
+//6690  		     return C_Finish ;  
 
 LM952:
-	     .stabn 68,0,6707,LM952-_Game
-	     R3 = 0                   	// [0:6707]  
-	     DS = seg(_Answerflag)    	// [1:6707]  Answerflag
-	     R4 = (_Answerflag)       	// [2:6707]  Answerflag
-	     DS:[R4] = R3             	// [4:6707]  
-//6708              
-//6709             
-//6710  		    R_E =0;
+	     .stabn 68,0,6690,LM952-_Game
+	     R1 = - 1                 	// [0:6690]  
+	     SP = SP + 1              	// [1:6690]  
+	     pop BP, PC from [SP]     	// [2:6690]  
+L_63_36:	// 0x194f
+// BB:22 cycle count: 10
+//6691  		  
+//6692  		  if(End20flag)
 
 LM953:
-	     .stabn 68,0,6710,LM953-_Game
-	     R3 = 0                   	// [6:6710]  
-	     DS = seg(_R_E)           	// [7:6710]  R_E
-	     R4 = (_R_E)              	// [8:6710]  R_E
-	     DS:[R4] = R3             	// [10:6710]  
-//6711  		   
-//6712  		    	
-//6713  		   if(Sleepflag) 
+	     .stabn 68,0,6692,LM953-_Game
+	     DS = seg(_End20flag)     	// [0:6692]  End20flag
+	     R4 = (_End20flag)        	// [1:6692]  End20flag
+	     R4 = DS:[R4]             	// [3:6692]  
+	     cmp R4, 0                	// [5:6692]  
+	     je L_63_37               	// [6:6692]  
+BB23_PU63:	// 0x1955
+// BB:23 cycle count: 8
+//6693  		  	  return C_End;
 
 LM954:
-	     .stabn 68,0,6713,LM954-_Game
-	     DS = seg(_Sleepflag)     	// [12:6713]  Sleepflag
-	     R4 = (_Sleepflag)        	// [13:6713]  Sleepflag
-	     R4 = DS:[R4]             	// [15:6713]  
-	     cmp R4, 0                	// [17:6713]  
-	     je L_63_35               	// [18:6713]  
-BB21_PU63:	// 0x195b
-// BB:21 cycle count: 7
-//6714  		     return C_Finish ;  
+	     .stabn 68,0,6693,LM954-_Game
+	     R1 = - 4077              	// [0:6693]  
+	     SP = SP + 1              	// [2:6693]  
+	     pop BP, PC from [SP]     	// [3:6693]  
+L_63_37:	// 0x1959
+// BB:24 cycle count: 3
+//6694  		
+//6695          temp=Get_Length_Pingame();
 
 LM955:
-	     .stabn 68,0,6714,LM955-_Game
-	     R1 = - 1                 	// [0:6714]  
-	     SP = SP + 1              	// [1:6714]  
-	     pop BP, PC from [SP]     	// [2:6714]  
-L_63_35:	// 0x195e
-// BB:22 cycle count: 10
-//6715  		  
-//6716  		  if(End20flag)
+	     .stabn 68,0,6695,LM955-_Game
+	     call _Get_Length_Pingame 	// [0:6695]  Get_Length_Pingame
+BB25_PU63:	// 0x195b
+// BB:25 cycle count: 11
+	     [BP + 0] = R1            	// [0:6695]  temp
+//6696          
+//6697          if((Registerd_Num>1)&&(temp<=1))
 
 LM956:
-	     .stabn 68,0,6716,LM956-_Game
-	     DS = seg(_End20flag)     	// [0:6716]  End20flag
-	     R4 = (_End20flag)        	// [1:6716]  End20flag
-	     R4 = DS:[R4]             	// [3:6716]  
-	     cmp R4, 0                	// [5:6716]  
-	     je L_63_36               	// [6:6716]  
-BB23_PU63:	// 0x1964
-// BB:23 cycle count: 8
-//6717  		  	  return C_End;
+	     .stabn 68,0,6697,LM956-_Game
+	     DS = seg(_Registerd_Num) 	// [1:6697]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [2:6697]  Registerd_Num
+	     R4 = DS:[R4]             	// [4:6697]  
+	     cmp R4, 1                	// [6:6697]  
+	     jbe L_63_38              	// [7:6697]  
+BB26_PU63:	// 0x1962
+// BB:26 cycle count: 7
+	     R4 = [BP + 0]            	// [0:6697]  temp
+	     cmp R4, 1                	// [2:6697]  
+	     ja L_63_38               	// [3:6697]  
+L_63_39:	// 0x1965
+// BB:27 cycle count: 4
+//6698          	break;
 
 LM957:
-	     .stabn 68,0,6717,LM957-_Game
+	     .stabn 68,0,6698,LM957-_Game
+	     jmp Lt_63_1              	// [0:6698]  
+L_63_38:	// 0x1966
+// BB:28 cycle count: 10
+//6699          	
+//6700         if((Registerd_Num==1)&&(temp==0))
+
+LM958:
+	     .stabn 68,0,6700,LM958-_Game
+	     DS = seg(_Registerd_Num) 	// [0:6700]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:6700]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:6700]  
+	     cmp R4, 1                	// [5:6700]  
+	     jne L_63_40              	// [6:6700]  
+BB29_PU63:	// 0x196c
+// BB:29 cycle count: 7
+	     R4 = [BP + 0]            	// [0:6700]  temp
+	     cmp R4, 0                	// [2:6700]  
+	     jne L_63_40              	// [3:6700]  
+L_63_41:	// 0x196f
+// BB:30 cycle count: 4
+//6701  	   	     break;
+
+LM959:
+	     .stabn 68,0,6701,LM959-_Game
+	     jmp Lt_63_1              	// [0:6701]  
+L_63_40:	// 0x1970
+// BB:31 cycle count: 3
+
+LM960:
+	     .stabn 68,0,6700,LM960-_Game
+	     goto L_63_26             	// [0:6700]  
+L_63_27:	// 0x1972
+Lt_63_1:	// 0x1972
+// BB:32 cycle count: 22
+//6706  
+//6707  	
+//6708  	
+//6709  
+//6710  	Key_Event =0;
+
+LM961:
+	     .stabn 68,0,6710,LM961-_Game
+	     R3 = 0                   	// [0:6710]  
+	     DS = seg(_Key_Event)     	// [1:6710]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6710]  Key_Event
+	     DS:[R4] = R3             	// [4:6710]  
+//6711  	Key_activeflag = 0;
+
+LM962:
+	     .stabn 68,0,6711,LM962-_Game
+	     R3 = 0                   	// [6:6711]  
+	     DS = seg(_Key_activeflag)	// [7:6711]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:6711]  Key_activeflag
+	     DS:[R4] = R3             	// [10:6711]  
+//6712  
+//6713  
+//6714  //   Save_Some_data();
+//6715     
+//6716     if(Tie ==0)
+
+LM963:
+	     .stabn 68,0,6716,LM963-_Game
+	     DS = seg(_Tie)           	// [12:6716]  Tie
+	     R4 = (_Tie)              	// [13:6716]  Tie
+	     R4 = DS:[R4]             	// [15:6716]  
+	     cmp R4, 0                	// [17:6716]  
+	     jne L_63_42              	// [18:6716]  
+BB33_PU63:	// 0x1982
+// BB:33 cycle count: 8
+//6717   	   return C_End;
+
+LM964:
+	     .stabn 68,0,6717,LM964-_Game
 	     R1 = - 4077              	// [0:6717]  
 	     SP = SP + 1              	// [2:6717]  
 	     pop BP, PC from [SP]     	// [3:6717]  
-L_63_36:	// 0x1968
-// BB:24 cycle count: 3
-//6718  		
-//6719          temp=Get_Length_Pingame();
-
-LM958:
-	     .stabn 68,0,6719,LM958-_Game
-	     call _Get_Length_Pingame 	// [0:6719]  Get_Length_Pingame
-BB25_PU63:	// 0x196a
-// BB:25 cycle count: 11
-	     [BP + 0] = R1            	// [0:6719]  temp
-//6720          
-//6721          if((Registerd_Num>1)&&(temp<=1))
-
-LM959:
-	     .stabn 68,0,6721,LM959-_Game
-	     DS = seg(_Registerd_Num) 	// [1:6721]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [2:6721]  Registerd_Num
-	     R4 = DS:[R4]             	// [4:6721]  
-	     cmp R4, 1                	// [6:6721]  
-	     jbe L_63_37              	// [7:6721]  
-BB26_PU63:	// 0x1971
-// BB:26 cycle count: 7
-	     R4 = [BP + 0]            	// [0:6721]  temp
-	     cmp R4, 1                	// [2:6721]  
-	     ja L_63_37               	// [3:6721]  
-L_63_38:	// 0x1974
-// BB:27 cycle count: 4
-//6722          	break;
-
-LM960:
-	     .stabn 68,0,6722,LM960-_Game
-	     jmp Lt_63_1              	// [0:6722]  
-L_63_37:	// 0x1975
-// BB:28 cycle count: 10
-//6723          	
-//6724         if((Registerd_Num==1)&&(temp==0))
-
-LM961:
-	     .stabn 68,0,6724,LM961-_Game
-	     DS = seg(_Registerd_Num) 	// [0:6724]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6724]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6724]  
-	     cmp R4, 1                	// [5:6724]  
-	     jne L_63_39              	// [6:6724]  
-BB29_PU63:	// 0x197b
-// BB:29 cycle count: 7
-	     R4 = [BP + 0]            	// [0:6724]  temp
-	     cmp R4, 0                	// [2:6724]  
-	     jne L_63_39              	// [3:6724]  
-L_63_40:	// 0x197e
-// BB:30 cycle count: 4
-//6725  	   	     break;
-
-LM962:
-	     .stabn 68,0,6725,LM962-_Game
-	     jmp Lt_63_1              	// [0:6725]  
-L_63_39:	// 0x197f
-// BB:31 cycle count: 3
-
-LM963:
-	     .stabn 68,0,6724,LM963-_Game
-	     goto L_63_26             	// [0:6724]  
-L_63_27:	// 0x1981
-Lt_63_1:	// 0x1981
-// BB:32 cycle count: 22
-//6730  
-//6731  	
-//6732  	
-//6733  
-//6734  	Key_Event =0;
-
-LM964:
-	     .stabn 68,0,6734,LM964-_Game
-	     R3 = 0                   	// [0:6734]  
-	     DS = seg(_Key_Event)     	// [1:6734]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6734]  Key_Event
-	     DS:[R4] = R3             	// [4:6734]  
-//6735  	Key_activeflag = 0;
-
-LM965:
-	     .stabn 68,0,6735,LM965-_Game
-	     R3 = 0                   	// [6:6735]  
-	     DS = seg(_Key_activeflag)	// [7:6735]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [8:6735]  Key_activeflag
-	     DS:[R4] = R3             	// [10:6735]  
-//6736  
-//6737  
-//6738  //   Save_Some_data();
-//6739     
-//6740     if(Tie ==0)
-
-LM966:
-	     .stabn 68,0,6740,LM966-_Game
-	     DS = seg(_Tie)           	// [12:6740]  Tie
-	     R4 = (_Tie)              	// [13:6740]  Tie
-	     R4 = DS:[R4]             	// [15:6740]  
-	     cmp R4, 0                	// [17:6740]  
-	     jne L_63_41              	// [18:6740]  
-BB33_PU63:	// 0x1991
-// BB:33 cycle count: 8
-//6741   	   return C_End;
-
-LM967:
-	     .stabn 68,0,6741,LM967-_Game
-	     R1 = - 4077              	// [0:6741]  
-	     SP = SP + 1              	// [2:6741]  
-	     pop BP, PC from [SP]     	// [3:6741]  
-L_63_41:	// 0x1995
+L_63_42:	// 0x1986
 // BB:34 cycle count: 6
-	     SP = SP + 1              	// [0:6741]  
-	     pop BP, PC from [SP]     	// [1:6741]  
+	     SP = SP + 1              	// [0:6717]  
+	     pop BP, PC from [SP]     	// [1:6717]  
 LBE59:
 	.endp	
 	     .stabn 192,0,0,LBB59-_Game
@@ -14164,1810 +14116,1837 @@ _Answer_F: .proc
 	// lra_spill_temp_42 = 8
 	// lra_spill_temp_43 = 9
 	// lgra_spill_temp_44 = 10
-//6748  
-//6749  
-//6750  
-//6751  void Answer_F()
-//6752  {
+//6724  
+//6725  
+//6726  
+//6727  void Answer_F()
+//6728  {
+
+LM965:
+	     .stabn 68,0,6728,LM965-_Answer_F
+BB1_PU64:	// 0x1988
+// BB:1 cycle count: 31
+	     push BP to [SP]          	// [0:6728]  
+	     SP = SP - 11             	// [2:6728]  
+	     BP = SP + 1              	// [3:6728]  
+LBB60:
+//6729      unsigned int temp =0;
+
+LM966:
+	     .stabn 68,0,6729,LM966-_Answer_F
+	     R4 = 0                   	// [5:6729]  
+	     [BP + 0] = R4            	// [6:6729]  temp
+//6730      unsigned int temp1=0;   
+
+LM967:
+	     .stabn 68,0,6730,LM967-_Answer_F
+	     R4 = 0                   	// [7:6730]  
+	     [BP + 1] = R4            	// [8:6730]  temp1
+//6731  	unsigned int  round =0;//Get_Num_CategoryMemory();
 
 LM968:
-	     .stabn 68,0,6752,LM968-_Answer_F
-BB1_PU64:	// 0x1997
-// BB:1 cycle count: 31
-	     push BP to [SP]          	// [0:6752]  
-	     SP = SP - 11             	// [2:6752]  
-	     BP = SP + 1              	// [3:6752]  
-LBB60:
-//6753      unsigned int temp =0;
+	     .stabn 68,0,6731,LM968-_Answer_F
+	     R4 = 0                   	// [9:6731]  
+	     [BP + 2] = R4            	// [10:6731]  round
+//6732      unsigned int  Currentsound =0;
 
 LM969:
-	     .stabn 68,0,6753,LM969-_Answer_F
-	     R4 = 0                   	// [5:6753]  
-	     [BP + 0] = R4            	// [6:6753]  temp
-//6754      unsigned int temp1=0;   
+	     .stabn 68,0,6732,LM969-_Answer_F
+	     R4 = 0                   	// [11:6732]  
+	     [BP + 3] = R4            	// [12:6732]  Currentsound
+//6733      unsigned int  timeout_t =0;
 
 LM970:
-	     .stabn 68,0,6754,LM970-_Answer_F
-	     R4 = 0                   	// [7:6754]  
-	     [BP + 1] = R4            	// [8:6754]  temp1
-//6755  	unsigned int  round =0;//Get_Num_CategoryMemory();
+	     .stabn 68,0,6733,LM970-_Answer_F
+	     R4 = 0                   	// [13:6733]  
+	     [BP + 4] = R4            	// [14:6733]  timeout_t
+//6734      //unsigned int Category= Get_Question_Category(gQuestionIdx);
+//6735  
+//6736  	//LastCategory_Series[Currentsound] = Category;
+//6737       End20flag =0;
 
 LM971:
-	     .stabn 68,0,6755,LM971-_Answer_F
-	     R4 = 0                   	// [9:6755]  
-	     [BP + 2] = R4            	// [10:6755]  round
-//6756      unsigned int  Currentsound =0;
+	     .stabn 68,0,6737,LM971-_Answer_F
+	     R3 = 0                   	// [15:6737]  
+	     DS = seg(_End20flag)     	// [16:6737]  End20flag
+	     R4 = (_End20flag)        	// [17:6737]  End20flag
+	     DS:[R4] = R3             	// [19:6737]  
+//6738    
+//6739  
+//6740       if((Restart ==0)&&(CurrentRound==1))//(Cn ==2)&&
 
 LM972:
-	     .stabn 68,0,6756,LM972-_Answer_F
-	     R4 = 0                   	// [11:6756]  
-	     [BP + 3] = R4            	// [12:6756]  Currentsound
-//6757      unsigned int  timeout_t =0;
+	     .stabn 68,0,6740,LM972-_Answer_F
+	     DS = seg(_Restart)       	// [21:6740]  Restart
+	     R4 = (_Restart)          	// [22:6740]  Restart
+	     R4 = DS:[R4]             	// [24:6740]  
+	     cmp R4, 0                	// [26:6740]  
+	     je BB2_PU64              	// [27:6740]  
+BB136_PU64:	// 0x19a1
+// BB:136 cycle count: 3
+	     goto L_64_67             	// [0:0]  
+BB2_PU64:	// 0x19a3
+// BB:2 cycle count: 10
+	     DS = seg(_CurrentRound)  	// [0:6740]  CurrentRound
+	     R4 = (_CurrentRound)     	// [1:6740]  CurrentRound
+	     R4 = DS:[R4]             	// [3:6740]  
+	     cmp R4, 1                	// [5:6740]  
+	     je L_64_68               	// [6:6740]  
+BB137_PU64:	// 0x19a9
+// BB:137 cycle count: 3
+	     goto L_64_67             	// [0:0]  
+L_64_68:	// 0x19ab
+// BB:3 cycle count: 22
+//6741       {
+//6742       	Key_activeflag =Only_Play_KeyEnable;
 
 LM973:
-	     .stabn 68,0,6757,LM973-_Answer_F
-	     R4 = 0                   	// [13:6757]  
-	     [BP + 4] = R4            	// [14:6757]  timeout_t
-//6758      //unsigned int Category= Get_Question_Category(gQuestionIdx);
-//6759  
-//6760  	//LastCategory_Series[Currentsound] = Category;
-//6761       End20flag =0;
+	     .stabn 68,0,6742,LM973-_Answer_F
+	     R3 = 7                   	// [0:6742]  
+	     DS = seg(_Key_activeflag)	// [1:6742]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [2:6742]  Key_activeflag
+	     DS:[R4] = R3             	// [4:6742]  
+//6743       	Key_Event =0;  
 
 LM974:
-	     .stabn 68,0,6761,LM974-_Answer_F
-	     R3 = 0                   	// [15:6761]  
-	     DS = seg(_End20flag)     	// [16:6761]  End20flag
-	     R4 = (_End20flag)        	// [17:6761]  End20flag
-	     DS:[R4] = R3             	// [19:6761]  
-//6762    
-//6763  
-//6764       if((Restart ==0)&&(CurrentRound==1))//(Cn ==2)&&
+	     .stabn 68,0,6743,LM974-_Answer_F
+	     R3 = 0                   	// [6:6743]  
+	     DS = seg(_Key_Event)     	// [7:6743]  Key_Event
+	     R4 = (_Key_Event)        	// [8:6743]  Key_Event
+	     DS:[R4] = R3             	// [10:6743]  
+//6744       	//delay_time(8);
+//6745       	
+//6746       	if(Cn ==2)
 
 LM975:
-	     .stabn 68,0,6764,LM975-_Answer_F
-	     DS = seg(_Restart)       	// [21:6764]  Restart
-	     R4 = (_Restart)          	// [22:6764]  Restart
-	     R4 = DS:[R4]             	// [24:6764]  
-	     cmp R4, 0                	// [26:6764]  
-	     je BB2_PU64              	// [27:6764]  
-BB133_PU64:	// 0x19b0
-// BB:133 cycle count: 3
-	     goto L_64_67             	// [0:0]  
-BB2_PU64:	// 0x19b2
-// BB:2 cycle count: 10
-	     DS = seg(_CurrentRound)  	// [0:6764]  CurrentRound
-	     R4 = (_CurrentRound)     	// [1:6764]  CurrentRound
-	     R4 = DS:[R4]             	// [3:6764]  
-	     cmp R4, 1                	// [5:6764]  
-	     je L_64_68               	// [6:6764]  
-BB134_PU64:	// 0x19b8
-// BB:134 cycle count: 3
-	     goto L_64_67             	// [0:0]  
-L_64_68:	// 0x19ba
-// BB:3 cycle count: 22
-//6765       {
-//6766       	Key_activeflag =Only_Play_KeyEnable;
+	     .stabn 68,0,6746,LM975-_Answer_F
+	     DS = seg(_Cn)            	// [12:6746]  Cn
+	     R4 = (_Cn)               	// [13:6746]  Cn
+	     R4 = DS:[R4]             	// [15:6746]  
+	     cmp R4, 2                	// [17:6746]  
+	     jne L_64_70              	// [18:6746]  
+BB4_PU64:	// 0x19bb
+// BB:4 cycle count: 10
+//6747       	{
+//6748       	  	 if(Registerd_Num==1)	
 
 LM976:
-	     .stabn 68,0,6766,LM976-_Answer_F
-	     R3 = 7                   	// [0:6766]  
-	     DS = seg(_Key_activeflag)	// [1:6766]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [2:6766]  Key_activeflag
-	     DS:[R4] = R3             	// [4:6766]  
-//6767       	Key_Event =0;  
+	     .stabn 68,0,6748,LM976-_Answer_F
+	     DS = seg(_Registerd_Num) 	// [0:6748]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:6748]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:6748]  
+	     cmp R4, 1                	// [5:6748]  
+	     jne L_64_72              	// [6:6748]  
+BB5_PU64:	// 0x19c1
+// BB:5 cycle count: 9
+//6749       	  	 {  
+//6750       	  	 	delay_time(8);
 
 LM977:
-	     .stabn 68,0,6767,LM977-_Answer_F
-	     R3 = 0                   	// [6:6767]  
-	     DS = seg(_Key_Event)     	// [7:6767]  Key_Event
-	     R4 = (_Key_Event)        	// [8:6767]  Key_Event
-	     DS:[R4] = R3             	// [10:6767]  
-//6768       	//delay_time(8);
-//6769       	
-//6770       	if(Cn ==2)
+	     .stabn 68,0,6750,LM977-_Answer_F
+	     SP = SP - 1              	// [0:6750]  
+	     R3 = 8                   	// [1:6750]  
+	     R4 = SP + 1              	// [2:6750]  
+	     [R4] = R3                	// [4:6750]  
+	     call _delay_time         	// [6:6750]  delay_time
+BB6_PU64:	// 0x19c8
+// BB:6 cycle count: 8
+//6751  		 	    PlayA1800_Elements(A_VLMMREN_Rule_02b);
 
 LM978:
-	     .stabn 68,0,6770,LM978-_Answer_F
-	     DS = seg(_Cn)            	// [12:6770]  Cn
-	     R4 = (_Cn)               	// [13:6770]  Cn
-	     R4 = DS:[R4]             	// [15:6770]  
-	     cmp R4, 2                	// [17:6770]  
-	     jne L_64_70              	// [18:6770]  
-BB4_PU64:	// 0x19ca
-// BB:4 cycle count: 10
-//6771       	{
-//6772       	  	 if(Registerd_Num==1)	
+	     .stabn 68,0,6751,LM978-_Answer_F
+	     R3 = 52                  	// [0:6751]  
+	     R4 = SP + 1              	// [1:6751]  
+	     [R4] = R3                	// [3:6751]  
+	     call _PlayA1800_Elements 	// [5:6751]  PlayA1800_Elements
+BB7_PU64:	// 0x19ce
+// BB:7 cycle count: 5
+	     SP = SP + 1              	// [0:6751]  
+	     jmp L_64_71              	// [1:6751]  
+L_64_72:	// 0x19d0
+// BB:8 cycle count: 9
+//6752       	  	 }
+//6753  		  else
+//6754  		 	 PlayA1800_Elements(A_VLMMREN_Rule_02);	
 
 LM979:
-	     .stabn 68,0,6772,LM979-_Answer_F
-	     DS = seg(_Registerd_Num) 	// [0:6772]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6772]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6772]  
-	     cmp R4, 1                	// [5:6772]  
-	     jne L_64_72              	// [6:6772]  
-BB5_PU64:	// 0x19d0
-// BB:5 cycle count: 9
-//6773       	  	 {  
-//6774       	  	 	delay_time(8);
-
-LM980:
-	     .stabn 68,0,6774,LM980-_Answer_F
-	     SP = SP - 1              	// [0:6774]  
-	     R3 = 8                   	// [1:6774]  
-	     R4 = SP + 1              	// [2:6774]  
-	     [R4] = R3                	// [4:6774]  
-	     call _delay_time         	// [6:6774]  delay_time
-BB6_PU64:	// 0x19d7
-// BB:6 cycle count: 8
-//6775  		 	    PlayA1800_Elements(A_VLMMREN_Rule_02b);
-
-LM981:
-	     .stabn 68,0,6775,LM981-_Answer_F
-	     R3 = 52                  	// [0:6775]  
-	     R4 = SP + 1              	// [1:6775]  
-	     [R4] = R3                	// [3:6775]  
-	     call _PlayA1800_Elements 	// [5:6775]  PlayA1800_Elements
-BB7_PU64:	// 0x19dd
-// BB:7 cycle count: 5
-	     SP = SP + 1              	// [0:6775]  
-	     jmp L_64_71              	// [1:6775]  
-L_64_72:	// 0x19df
-// BB:8 cycle count: 9
-//6776       	  	 }
-//6777  		  else
-//6778  		 	 PlayA1800_Elements(A_VLMMREN_Rule_02);	
-
-LM982:
-	     .stabn 68,0,6778,LM982-_Answer_F
-	     SP = SP - 1              	// [0:6778]  
-	     R3 = 51                  	// [1:6778]  
-	     R4 = SP + 1              	// [2:6778]  
-	     [R4] = R3                	// [4:6778]  
-	     call _PlayA1800_Elements 	// [6:6778]  PlayA1800_Elements
-BB9_PU64:	// 0x19e6
+	     .stabn 68,0,6754,LM979-_Answer_F
+	     SP = SP - 1              	// [0:6754]  
+	     R3 = 51                  	// [1:6754]  
+	     R4 = SP + 1              	// [2:6754]  
+	     [R4] = R3                	// [4:6754]  
+	     call _PlayA1800_Elements 	// [6:6754]  PlayA1800_Elements
+BB9_PU64:	// 0x19d7
 // BB:9 cycle count: 1
-	     SP = SP + 1              	// [0:6778]  
-L_64_71:	// 0x19e7
+	     SP = SP + 1              	// [0:6754]  
+L_64_71:	// 0x19d8
 // BB:10 cycle count: 4
 
-LM983:
-	     .stabn 68,0,6772,LM983-_Answer_F
-	     jmp L_64_69              	// [0:6772]  
-L_64_70:	// 0x19e8
+LM980:
+	     .stabn 68,0,6748,LM980-_Answer_F
+	     jmp L_64_69              	// [0:6748]  
+L_64_70:	// 0x19d9
 // BB:11 cycle count: 10
-//6779    		
-//6780       	}
-//6781          else if((Cn ==3)&&(Registerd_Num>1))
+//6755    		
+//6756       	}
+//6757          else if((Cn ==3)&&(Registerd_Num>1))
+
+LM981:
+	     .stabn 68,0,6757,LM981-_Answer_F
+	     DS = seg(_Cn)            	// [0:6757]  Cn
+	     R4 = (_Cn)               	// [1:6757]  Cn
+	     R4 = DS:[R4]             	// [3:6757]  
+	     cmp R4, 3                	// [5:6757]  
+	     jne L_64_73              	// [6:6757]  
+BB12_PU64:	// 0x19df
+// BB:12 cycle count: 10
+	     DS = seg(_Registerd_Num) 	// [0:6757]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:6757]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:6757]  
+	     cmp R4, 1                	// [5:6757]  
+	     jbe L_64_73              	// [6:6757]  
+L_64_74:	// 0x19e5
+// BB:13 cycle count: 10
+//6758          {
+//6759          	 PlayA1800_Elements(A_VLMMREN_Rule_12);
+
+LM982:
+	     .stabn 68,0,6759,LM982-_Answer_F
+	     SP = SP - 1              	// [0:6759]  
+	     R3 = 65                  	// [1:6759]  
+	     R4 = SP + 1              	// [3:6759]  
+	     [R4] = R3                	// [5:6759]  
+	     call _PlayA1800_Elements 	// [7:6759]  PlayA1800_Elements
+BB14_PU64:	// 0x19ed
+// BB:14 cycle count: 8
+//6760          	 delay_time(8);
+
+LM983:
+	     .stabn 68,0,6760,LM983-_Answer_F
+	     R3 = 8                   	// [0:6760]  
+	     R4 = SP + 1              	// [1:6760]  
+	     [R4] = R3                	// [3:6760]  
+	     call _delay_time         	// [5:6760]  delay_time
+BB15_PU64:	// 0x19f3
+// BB:15 cycle count: 1
+	     SP = SP + 1              	// [0:6760]  
+L_64_73:	// 0x19f4
+L_64_69:	// 0x19f4
+L_64_67:	// 0x19f4
+// BB:16 cycle count: 24
+//6761          }  	
+//6762       	
+//6763  
+//6764       }
+//6765             Key_activeflag =0;
 
 LM984:
-	     .stabn 68,0,6781,LM984-_Answer_F
-	     DS = seg(_Cn)            	// [0:6781]  Cn
-	     R4 = (_Cn)               	// [1:6781]  Cn
-	     R4 = DS:[R4]             	// [3:6781]  
-	     cmp R4, 3                	// [5:6781]  
-	     jne L_64_73              	// [6:6781]  
-BB12_PU64:	// 0x19ee
-// BB:12 cycle count: 10
-	     DS = seg(_Registerd_Num) 	// [0:6781]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6781]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6781]  
-	     cmp R4, 1                	// [5:6781]  
-	     jbe L_64_73              	// [6:6781]  
-L_64_74:	// 0x19f4
-// BB:13 cycle count: 10
-//6782          {
-//6783          	 PlayA1800_Elements(A_VLMMREN_Rule_12);
+	     .stabn 68,0,6765,LM984-_Answer_F
+	     R3 = 0                   	// [0:6765]  
+	     DS = seg(_Key_activeflag)	// [1:6765]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [2:6765]  Key_activeflag
+	     DS:[R4] = R3             	// [4:6765]  
+//6766             Key_Event=0;
 
 LM985:
-	     .stabn 68,0,6783,LM985-_Answer_F
-	     SP = SP - 1              	// [0:6783]  
-	     R3 = 65                  	// [1:6783]  
-	     R4 = SP + 1              	// [3:6783]  
-	     [R4] = R3                	// [5:6783]  
-	     call _PlayA1800_Elements 	// [7:6783]  PlayA1800_Elements
-BB14_PU64:	// 0x19fc
-// BB:14 cycle count: 8
-//6784          	 delay_time(8);
+	     .stabn 68,0,6766,LM985-_Answer_F
+	     R3 = 0                   	// [6:6766]  
+	     DS = seg(_Key_Event)     	// [7:6766]  Key_Event
+	     R4 = (_Key_Event)        	// [8:6766]  Key_Event
+	     DS:[R4] = R3             	// [10:6766]  
+//6767             PlayQuestionflag =1;
 
 LM986:
-	     .stabn 68,0,6784,LM986-_Answer_F
-	     R3 = 8                   	// [0:6784]  
-	     R4 = SP + 1              	// [1:6784]  
-	     [R4] = R3                	// [3:6784]  
-	     call _delay_time         	// [5:6784]  delay_time
-BB15_PU64:	// 0x1a02
-// BB:15 cycle count: 1
-	     SP = SP + 1              	// [0:6784]  
-L_64_73:	// 0x1a03
-L_64_69:	// 0x1a03
-L_64_67:	// 0x1a03
-// BB:16 cycle count: 24
-//6785          }  	
-//6786       	
-//6787  
-//6788       }
-//6789             Key_activeflag =0;
+	     .stabn 68,0,6767,LM986-_Answer_F
+	     R3 = 1                   	// [12:6767]  
+	     DS = seg(_PlayQuestionflag)	// [13:6767]  PlayQuestionflag
+	     R4 = (_PlayQuestionflag) 	// [14:6767]  PlayQuestionflag
+	     DS:[R4] = R3             	// [16:6767]  
+//6768             TwoKeyflag = Playbutton;
 
 LM987:
-	     .stabn 68,0,6789,LM987-_Answer_F
-	     R3 = 0                   	// [0:6789]  
-	     DS = seg(_Key_activeflag)	// [1:6789]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [2:6789]  Key_activeflag
-	     DS:[R4] = R3             	// [4:6789]  
-//6790             Key_Event=0;
+	     .stabn 68,0,6768,LM987-_Answer_F
+	     R3 = 1                   	// [18:6768]  
+	     DS = seg(_TwoKeyflag)    	// [19:6768]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [20:6768]  TwoKeyflag
+	     DS:[R4] = R3             	// [22:6768]  
+L_64_75:	// 0x1a08
+// BB:17 cycle count: 15
+//6769             
+//6770            
+//6771             do
+//6772             {
+//6773             	   PauseFlag =0;
 
 LM988:
-	     .stabn 68,0,6790,LM988-_Answer_F
-	     R3 = 0                   	// [6:6790]  
-	     DS = seg(_Key_Event)     	// [7:6790]  Key_Event
-	     R4 = (_Key_Event)        	// [8:6790]  Key_Event
-	     DS:[R4] = R3             	// [10:6790]  
-//6791             PlayQuestionflag =1;
+	     .stabn 68,0,6773,LM988-_Answer_F
+	     R3 = 0                   	// [0:6773]  
+	     DS = seg(_PauseFlag)     	// [1:6773]  PauseFlag
+	     R4 = (_PauseFlag)        	// [2:6773]  PauseFlag
+	     DS:[R4] = R3             	// [4:6773]  
+//6774             	  
+//6775             	   delay_time(8);
 
 LM989:
-	     .stabn 68,0,6791,LM989-_Answer_F
-	     R3 = 1                   	// [12:6791]  
-	     DS = seg(_PlayQuestionflag)	// [13:6791]  PlayQuestionflag
-	     R4 = (_PlayQuestionflag) 	// [14:6791]  PlayQuestionflag
-	     DS:[R4] = R3             	// [16:6791]  
-//6792             TwoKeyflag = Playbutton;
+	     .stabn 68,0,6775,LM989-_Answer_F
+	     SP = SP - 1              	// [6:6775]  
+	     R3 = 8                   	// [7:6775]  
+	     R4 = SP + 1              	// [8:6775]  
+	     [R4] = R3                	// [10:6775]  
+	     call _delay_time         	// [12:6775]  delay_time
+BB18_PU64:	// 0x1a14
+// BB:18 cycle count: 4
+	     SP = SP + 1              	// [0:6775]  
+//6776                 Ask_Question();//PlayA1800_Elements(Get_Question_Sound(gQuestionIdx));
 
 LM990:
-	     .stabn 68,0,6792,LM990-_Answer_F
-	     R3 = 1                   	// [18:6792]  
-	     DS = seg(_TwoKeyflag)    	// [19:6792]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [20:6792]  TwoKeyflag
-	     DS:[R4] = R3             	// [22:6792]  
-L_64_75:	// 0x1a17
-// BB:17 cycle count: 15
-//6793             
-//6794            
-//6795             do
-//6796             {
-//6797             	   PauseFlag =0;
+	     .stabn 68,0,6776,LM990-_Answer_F
+	     call _Ask_Question       	// [1:6776]  Ask_Question
+BB19_PU64:	// 0x1a17
+// BB:19 cycle count: 10
+//6777                
+//6778              if(Registerd_Num>1)	
 
 LM991:
-	     .stabn 68,0,6797,LM991-_Answer_F
-	     R3 = 0                   	// [0:6797]  
-	     DS = seg(_PauseFlag)     	// [1:6797]  PauseFlag
-	     R4 = (_PauseFlag)        	// [2:6797]  PauseFlag
-	     DS:[R4] = R3             	// [4:6797]  
-//6798             	  
-//6799             	   delay_time(8);
+	     .stabn 68,0,6778,LM991-_Answer_F
+	     DS = seg(_Registerd_Num) 	// [0:6778]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:6778]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:6778]  
+	     cmp R4, 1                	// [5:6778]  
+	     jbe L_64_76              	// [6:6778]  
+BB20_PU64:	// 0x1a1d
+// BB:20 cycle count: 19
+//6779                 Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
 
 LM992:
-	     .stabn 68,0,6799,LM992-_Answer_F
-	     SP = SP - 1              	// [6:6799]  
-	     R3 = 8                   	// [7:6799]  
-	     R4 = SP + 1              	// [8:6799]  
-	     [R4] = R3                	// [10:6799]  
-	     call _delay_time         	// [12:6799]  delay_time
-BB18_PU64:	// 0x1a23
-// BB:18 cycle count: 4
-	     SP = SP + 1              	// [0:6799]  
-//6800                 Ask_Question();//PlayA1800_Elements(Get_Question_Sound(gQuestionIdx));
+	     .stabn 68,0,6779,LM992-_Answer_F
+	     SP = SP - 2              	// [0:6779]  
+	     DS = seg(_Player_Activing_Cnt)	// [1:6779]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [2:6779]  Player_Activing_Cnt
+	     R3 = DS:[R4]             	// [4:6779]  
+	     R4 = SP + 1              	// [6:6779]  
+	     [R4] = R3                	// [8:6779]  
+	     R3 = 6000                	// [10:6779]  
+	     R4 = SP + 2              	// [12:6779]  
+	     [R4] = R3                	// [14:6779]  
+	     call _Play_Seq           	// [16:6779]  Play_Seq
+BB21_PU64:	// 0x1a2c
+// BB:21 cycle count: 1
+	     SP = SP + 2              	// [0:6779]  
+L_64_76:	// 0x1a2d
+Lt_64_1:	// 0x1a2d
+// BB:22 cycle count: 10
+//6780                //PlayA1800_Elements(A_VLMMREN_Player_01+Player_Activing_Cnt);
+//6781             }while(PauseFlag); 
 
 LM993:
-	     .stabn 68,0,6800,LM993-_Answer_F
-	     call _Ask_Question       	// [1:6800]  Ask_Question
-BB19_PU64:	// 0x1a26
-// BB:19 cycle count: 10
-//6801                
-//6802              if(Registerd_Num>1)	
+	     .stabn 68,0,6781,LM993-_Answer_F
+	     DS = seg(_PauseFlag)     	// [0:6781]  PauseFlag
+	     R4 = (_PauseFlag)        	// [1:6781]  PauseFlag
+	     R4 = DS:[R4]             	// [3:6781]  
+	     cmp R4, 0                	// [5:6781]  
+	     jne L_64_75              	// [6:6781]  
+BB23_PU64:	// 0x1a33
+// BB:23 cycle count: 15
+//6782             
+//6783             PlayQuestionflag =0;
 
 LM994:
-	     .stabn 68,0,6802,LM994-_Answer_F
-	     DS = seg(_Registerd_Num) 	// [0:6802]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6802]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6802]  
-	     cmp R4, 1                	// [5:6802]  
-	     jbe L_64_76              	// [6:6802]  
-BB20_PU64:	// 0x1a2c
-// BB:20 cycle count: 19
-//6803                 Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
+	     .stabn 68,0,6783,LM994-_Answer_F
+	     R3 = 0                   	// [0:6783]  
+	     DS = seg(_PlayQuestionflag)	// [1:6783]  PlayQuestionflag
+	     R4 = (_PlayQuestionflag) 	// [2:6783]  PlayQuestionflag
+	     DS:[R4] = R3             	// [4:6783]  
+//6784  		   TwoKeyflag =0;
 
 LM995:
-	     .stabn 68,0,6803,LM995-_Answer_F
-	     SP = SP - 2              	// [0:6803]  
-	     DS = seg(_Player_Activing_Cnt)	// [1:6803]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [2:6803]  Player_Activing_Cnt
-	     R3 = DS:[R4]             	// [4:6803]  
-	     R4 = SP + 1              	// [6:6803]  
-	     [R4] = R3                	// [8:6803]  
-	     R3 = 6000                	// [10:6803]  
-	     R4 = SP + 2              	// [12:6803]  
-	     [R4] = R3                	// [14:6803]  
-	     call _Play_Seq           	// [16:6803]  Play_Seq
-BB21_PU64:	// 0x1a3b
-// BB:21 cycle count: 1
-	     SP = SP + 2              	// [0:6803]  
-L_64_76:	// 0x1a3c
-Lt_64_1:	// 0x1a3c
-// BB:22 cycle count: 10
-//6804                //PlayA1800_Elements(A_VLMMREN_Player_01+Player_Activing_Cnt);
-//6805             }while(PauseFlag); 
+	     .stabn 68,0,6784,LM995-_Answer_F
+	     R3 = 0                   	// [6:6784]  
+	     DS = seg(_TwoKeyflag)    	// [7:6784]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [8:6784]  TwoKeyflag
+	     DS:[R4] = R3             	// [10:6784]  
+//6785  
+//6786       
+//6787         round =Get_Num_CategoryMemory();
 
 LM996:
-	     .stabn 68,0,6805,LM996-_Answer_F
-	     DS = seg(_PauseFlag)     	// [0:6805]  PauseFlag
-	     R4 = (_PauseFlag)        	// [1:6805]  PauseFlag
-	     R4 = DS:[R4]             	// [3:6805]  
-	     cmp R4, 0                	// [5:6805]  
-	     jne L_64_75              	// [6:6805]  
-BB23_PU64:	// 0x1a42
-// BB:23 cycle count: 15
-//6806             
-//6807             PlayQuestionflag =0;
+	     .stabn 68,0,6787,LM996-_Answer_F
+	     call _Get_Num_CategoryMemory	// [12:6787]  Get_Num_CategoryMemory
+BB24_PU64:	// 0x1a3f
+// BB:24 cycle count: 11
+	     [BP + 2] = R1            	// [0:6787]  round
+//6788         
+//6789        if(Cn<=5)  
 
 LM997:
-	     .stabn 68,0,6807,LM997-_Answer_F
-	     R3 = 0                   	// [0:6807]  
-	     DS = seg(_PlayQuestionflag)	// [1:6807]  PlayQuestionflag
-	     R4 = (_PlayQuestionflag) 	// [2:6807]  PlayQuestionflag
-	     DS:[R4] = R3             	// [4:6807]  
-//6808  		   TwoKeyflag =0;
+	     .stabn 68,0,6789,LM997-_Answer_F
+	     DS = seg(_Cn)            	// [1:6789]  Cn
+	     R4 = (_Cn)               	// [2:6789]  Cn
+	     R4 = DS:[R4]             	// [4:6789]  
+	     cmp R4, 5                	// [6:6789]  
+	     ja L_64_78               	// [7:6789]  
+BB25_PU64:	// 0x1a46
+// BB:25 cycle count: 7
+//6790         timeout_t =15*16;
 
 LM998:
-	     .stabn 68,0,6808,LM998-_Answer_F
-	     R3 = 0                   	// [6:6808]  
-	     DS = seg(_TwoKeyflag)    	// [7:6808]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [8:6808]  TwoKeyflag
-	     DS:[R4] = R3             	// [10:6808]  
-//6809  
-//6810       
-//6811         round =Get_Num_CategoryMemory();
+	     .stabn 68,0,6790,LM998-_Answer_F
+	     R4 = 240                 	// [0:6790]  
+	     [BP + 4] = R4            	// [2:6790]  timeout_t
+	     jmp L_64_77              	// [3:6790]  
+L_64_78:	// 0x1a4a
+// BB:26 cycle count: 8
+//6791        else
+//6792        {
+//6793        	 timeout_t=3*Cn*16;
 
 LM999:
-	     .stabn 68,0,6811,LM999-_Answer_F
-	     call _Get_Num_CategoryMemory	// [12:6811]  Get_Num_CategoryMemory
-BB24_PU64:	// 0x1a4e
-// BB:24 cycle count: 11
-	     [BP + 2] = R1            	// [0:6811]  round
-//6812         
-//6813        if(Cn<=5)  
+	     .stabn 68,0,6793,LM999-_Answer_F
+	     DS = seg(_Cn)            	// [0:6793]  Cn
+	     R4 = (_Cn)               	// [1:6793]  Cn
+	     R4 = DS:[R4]             	// [3:6793]  
+	     R4 = R4 lsl 4            	// [5:6793]  
+	     R4 = R4 + R4 lsl 1       	// [6:6793]  
+	     [BP + 4] = R4            	// [7:6793]  timeout_t
+L_64_77:	// 0x1a51
+// BB:27 cycle count: 12
+//6794        	
+//6795        }
+//6796        Key_Event=0;
 
 LM1000:
-	     .stabn 68,0,6813,LM1000-_Answer_F
-	     DS = seg(_Cn)            	// [1:6813]  Cn
-	     R4 = (_Cn)               	// [2:6813]  Cn
-	     R4 = DS:[R4]             	// [4:6813]  
-	     cmp R4, 5                	// [6:6813]  
-	     ja L_64_78               	// [7:6813]  
-BB25_PU64:	// 0x1a55
-// BB:25 cycle count: 7
-//6814         timeout_t =15*16;
+	     .stabn 68,0,6796,LM1000-_Answer_F
+	     R3 = 0                   	// [0:6796]  
+	     DS = seg(_Key_Event)     	// [1:6796]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6796]  Key_Event
+	     DS:[R4] = R3             	// [4:6796]  
+//6797        Timeout_cnt =0;
 
 LM1001:
-	     .stabn 68,0,6814,LM1001-_Answer_F
-	     R4 = 240                 	// [0:6814]  
-	     [BP + 4] = R4            	// [2:6814]  timeout_t
-	     jmp L_64_77              	// [3:6814]  
-L_64_78:	// 0x1a59
-// BB:26 cycle count: 8
-//6815        else
-//6816        {
-//6817        	 timeout_t=3*Cn*16;
+	     .stabn 68,0,6797,LM1001-_Answer_F
+	     R3 = 0                   	// [6:6797]  
+	     DS = seg(_Timeout_cnt)   	// [7:6797]  Timeout_cnt
+	     R4 = (_Timeout_cnt)      	// [8:6797]  Timeout_cnt
+	     DS:[R4] = R3             	// [10:6797]  
+L_64_79:	// 0x1a5b
+// BB:28 cycle count: 10
+//6798       while(1)
+//6799       	{
+//6800   	
+//6801   	
+//6802   	       if(Sleepflag) 
 
 LM1002:
-	     .stabn 68,0,6817,LM1002-_Answer_F
-	     DS = seg(_Cn)            	// [0:6817]  Cn
-	     R4 = (_Cn)               	// [1:6817]  Cn
-	     R4 = DS:[R4]             	// [3:6817]  
-	     R4 = R4 lsl 4            	// [5:6817]  
-	     R4 = R4 + R4 lsl 1       	// [6:6817]  
-	     [BP + 4] = R4            	// [7:6817]  timeout_t
-L_64_77:	// 0x1a60
-// BB:27 cycle count: 12
-//6818        	
-//6819        }
-//6820        Key_Event=0;
+	     .stabn 68,0,6802,LM1002-_Answer_F
+	     DS = seg(_Sleepflag)     	// [0:6802]  Sleepflag
+	     R4 = (_Sleepflag)        	// [1:6802]  Sleepflag
+	     R4 = DS:[R4]             	// [3:6802]  
+	     cmp R4, 0                	// [5:6802]  
+	     je L_64_81               	// [6:6802]  
+BB29_PU64:	// 0x1a61
+// BB:29 cycle count: 6
+//6803  		     return C_Finish ;  
 
 LM1003:
-	     .stabn 68,0,6820,LM1003-_Answer_F
-	     R3 = 0                   	// [0:6820]  
-	     DS = seg(_Key_Event)     	// [1:6820]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6820]  Key_Event
-	     DS:[R4] = R3             	// [4:6820]  
-//6821        Timeout_cnt =0;
+	     .stabn 68,0,6803,LM1003-_Answer_F
+	     SP = SP + 11             	// [0:6803]  
+	     pop BP, PC from [SP]     	// [1:6803]  
+L_64_81:	// 0x1a63
+// BB:30 cycle count: 29
+//6804   	
+//6805       	   	
+//6806       	   Key_activeflag =ALL_TouchEnable;	
 
 LM1004:
-	     .stabn 68,0,6821,LM1004-_Answer_F
-	     R3 = 0                   	// [6:6821]  
-	     DS = seg(_Timeout_cnt)   	// [7:6821]  Timeout_cnt
-	     R4 = (_Timeout_cnt)      	// [8:6821]  Timeout_cnt
-	     DS:[R4] = R3             	// [10:6821]  
-L_64_79:	// 0x1a6a
-// BB:28 cycle count: 10
-//6822       while(1)
-//6823       	{
-//6824   	
-//6825   	
-//6826   	       if(Sleepflag) 
+	     .stabn 68,0,6806,LM1004-_Answer_F
+	     R3 = 240                 	// [0:6806]  
+	     DS = seg(_Key_activeflag)	// [2:6806]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [3:6806]  Key_activeflag
+	     DS:[R4] = R3             	// [5:6806]  
+//6807       	   //Key_Event=0;
+//6808  		   TwoKeyflag = Playbutton;
 
 LM1005:
-	     .stabn 68,0,6826,LM1005-_Answer_F
-	     DS = seg(_Sleepflag)     	// [0:6826]  Sleepflag
-	     R4 = (_Sleepflag)        	// [1:6826]  Sleepflag
-	     R4 = DS:[R4]             	// [3:6826]  
-	     cmp R4, 0                	// [5:6826]  
-	     je L_64_81               	// [6:6826]  
-BB29_PU64:	// 0x1a70
-// BB:29 cycle count: 6
-//6827  		     return C_Finish ;  
+	     .stabn 68,0,6808,LM1005-_Answer_F
+	     R3 = 1                   	// [7:6808]  
+	     DS = seg(_TwoKeyflag)    	// [8:6808]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [9:6808]  TwoKeyflag
+	     DS:[R4] = R3             	// [11:6808]  
+//6809       	   PlayQuestionflag =1;
 
 LM1006:
-	     .stabn 68,0,6827,LM1006-_Answer_F
-	     SP = SP + 11             	// [0:6827]  
-	     pop BP, PC from [SP]     	// [1:6827]  
-L_64_81:	// 0x1a72
-// BB:30 cycle count: 29
-//6828   	
-//6829       	   	
-//6830       	   Key_activeflag =ALL_TouchEnable;	
+	     .stabn 68,0,6809,LM1006-_Answer_F
+	     R3 = 1                   	// [13:6809]  
+	     DS = seg(_PlayQuestionflag)	// [14:6809]  PlayQuestionflag
+	     R4 = (_PlayQuestionflag) 	// [15:6809]  PlayQuestionflag
+	     DS:[R4] = R3             	// [17:6809]  
+//6810       	   
+//6811       	   PlayA1800_ElementsInit(SFX_Timer);
 
 LM1007:
-	     .stabn 68,0,6830,LM1007-_Answer_F
-	     R3 = 240                 	// [0:6830]  
-	     DS = seg(_Key_activeflag)	// [2:6830]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [3:6830]  Key_activeflag
-	     DS:[R4] = R3             	// [5:6830]  
-//6831       	   //Key_Event=0;
-//6832  		   TwoKeyflag = Playbutton;
+	     .stabn 68,0,6811,LM1007-_Answer_F
+	     SP = SP - 1              	// [19:6811]  
+	     R3 = 132                 	// [20:6811]  
+	     R4 = SP + 1              	// [22:6811]  
+	     [R4] = R3                	// [24:6811]  
+	     call _PlayA1800_ElementsInit	// [26:6811]  PlayA1800_ElementsInit
+BB31_PU64:	// 0x1a7b
+// BB:31 cycle count: 15
+//6812       	   
+//6813       	   Timeout_cnt_En =1;
 
 LM1008:
-	     .stabn 68,0,6832,LM1008-_Answer_F
-	     R3 = 1                   	// [7:6832]  
-	     DS = seg(_TwoKeyflag)    	// [8:6832]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [9:6832]  TwoKeyflag
-	     DS:[R4] = R3             	// [11:6832]  
-//6833       	   PlayQuestionflag =1;
+	     .stabn 68,0,6813,LM1008-_Answer_F
+	     R3 = 1                   	// [0:6813]  
+	     DS = seg(_Timeout_cnt_En)	// [1:6813]  Timeout_cnt_En
+	     R4 = (_Timeout_cnt_En)   	// [2:6813]  Timeout_cnt_En
+	     DS:[R4] = R3             	// [4:6813]  
+//6814  	       temp = delay_time(timeout_t);
 
 LM1009:
-	     .stabn 68,0,6833,LM1009-_Answer_F
-	     R3 = 1                   	// [13:6833]  
-	     DS = seg(_PlayQuestionflag)	// [14:6833]  PlayQuestionflag
-	     R4 = (_PlayQuestionflag) 	// [15:6833]  PlayQuestionflag
-	     DS:[R4] = R3             	// [17:6833]  
-//6834       	   
-//6835       	   PlayA1800_ElementsInit(SFX_Timer);
+	     .stabn 68,0,6814,LM1009-_Answer_F
+	     R3 = [BP + 4]            	// [6:6814]  timeout_t
+	     R4 = SP + 1              	// [8:6814]  
+	     [R4] = R3                	// [10:6814]  
+	     call _delay_time         	// [12:6814]  delay_time
+BB32_PU64:	// 0x1a86
+// BB:32 cycle count: 11
+	     SP = SP + 1              	// [0:6814]  
+	     [BP + 0] = R1            	// [1:6814]  temp
+//6815  	       Timeout_cnt_En =0;
 
 LM1010:
-	     .stabn 68,0,6835,LM1010-_Answer_F
-	     SP = SP - 1              	// [19:6835]  
-	     R3 = 130                 	// [20:6835]  
-	     R4 = SP + 1              	// [22:6835]  
-	     [R4] = R3                	// [24:6835]  
-	     call _PlayA1800_ElementsInit	// [26:6835]  PlayA1800_ElementsInit
-BB31_PU64:	// 0x1a8a
-// BB:31 cycle count: 15
-//6836       	   
-//6837       	   Timeout_cnt_En =1;
+	     .stabn 68,0,6815,LM1010-_Answer_F
+	     R3 = 0                   	// [2:6815]  
+	     DS = seg(_Timeout_cnt_En)	// [3:6815]  Timeout_cnt_En
+	     R4 = (_Timeout_cnt_En)   	// [4:6815]  Timeout_cnt_En
+	     DS:[R4] = R3             	// [6:6815]  
+//6816  	       SACM_A1800_Stop();
 
 LM1011:
-	     .stabn 68,0,6837,LM1011-_Answer_F
-	     R3 = 1                   	// [0:6837]  
-	     DS = seg(_Timeout_cnt_En)	// [1:6837]  Timeout_cnt_En
-	     R4 = (_Timeout_cnt_En)   	// [2:6837]  Timeout_cnt_En
-	     DS:[R4] = R3             	// [4:6837]  
-//6838  	       temp = delay_time(timeout_t);
+	     .stabn 68,0,6816,LM1011-_Answer_F
+	     call _SACM_A1800_Stop    	// [8:6816]  SACM_A1800_Stop
+BB33_PU64:	// 0x1a8f
+// BB:33 cycle count: 28
+//6817  	       A1800_Flag = 0;
 
 LM1012:
-	     .stabn 68,0,6838,LM1012-_Answer_F
-	     R3 = [BP + 4]            	// [6:6838]  timeout_t
-	     R4 = SP + 1              	// [8:6838]  
-	     [R4] = R3                	// [10:6838]  
-	     call _delay_time         	// [12:6838]  delay_time
-BB32_PU64:	// 0x1a95
-// BB:32 cycle count: 11
-	     SP = SP + 1              	// [0:6838]  
-	     [BP + 0] = R1            	// [1:6838]  temp
-//6839  	       Timeout_cnt_En =0;
+	     .stabn 68,0,6817,LM1012-_Answer_F
+	     R3 = 0                   	// [0:6817]  
+	     DS = seg(_A1800_Flag)    	// [1:6817]  A1800_Flag
+	     R4 = (_A1800_Flag)       	// [2:6817]  A1800_Flag
+	     DS:[R4] = R3             	// [4:6817]  
+//6818  	       
+//6819  	       PlayQuestionflag =0;
 
 LM1013:
-	     .stabn 68,0,6839,LM1013-_Answer_F
-	     R3 = 0                   	// [2:6839]  
-	     DS = seg(_Timeout_cnt_En)	// [3:6839]  Timeout_cnt_En
-	     R4 = (_Timeout_cnt_En)   	// [4:6839]  Timeout_cnt_En
-	     DS:[R4] = R3             	// [6:6839]  
-//6840  	       SACM_A1800_Stop();
+	     .stabn 68,0,6819,LM1013-_Answer_F
+	     R3 = 0                   	// [6:6819]  
+	     DS = seg(_PlayQuestionflag)	// [7:6819]  PlayQuestionflag
+	     R4 = (_PlayQuestionflag) 	// [8:6819]  PlayQuestionflag
+	     DS:[R4] = R3             	// [10:6819]  
+//6820  	       TwoKeyflag=0;
 
 LM1014:
-	     .stabn 68,0,6840,LM1014-_Answer_F
-	     call _SACM_A1800_Stop    	// [8:6840]  SACM_A1800_Stop
-BB33_PU64:	// 0x1a9e
-// BB:33 cycle count: 28
-//6841  	       A1800_Flag = 0;
+	     .stabn 68,0,6820,LM1014-_Answer_F
+	     R3 = 0                   	// [12:6820]  
+	     DS = seg(_TwoKeyflag)    	// [13:6820]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [14:6820]  TwoKeyflag
+	     DS:[R4] = R3             	// [16:6820]  
+//6821  	       
+//6822  	            	   	
+//6823       	 	if(Sleepflag) 
 
 LM1015:
-	     .stabn 68,0,6841,LM1015-_Answer_F
-	     R3 = 0                   	// [0:6841]  
-	     DS = seg(_A1800_Flag)    	// [1:6841]  A1800_Flag
-	     R4 = (_A1800_Flag)       	// [2:6841]  A1800_Flag
-	     DS:[R4] = R3             	// [4:6841]  
-//6842  	       
-//6843  	       PlayQuestionflag =0;
+	     .stabn 68,0,6823,LM1015-_Answer_F
+	     DS = seg(_Sleepflag)     	// [18:6823]  Sleepflag
+	     R4 = (_Sleepflag)        	// [19:6823]  Sleepflag
+	     R4 = DS:[R4]             	// [21:6823]  
+	     cmp R4, 0                	// [23:6823]  
+	     je L_64_82               	// [24:6823]  
+BB34_PU64:	// 0x1aa4
+// BB:34 cycle count: 6
+//6824  		      return C_Finish ;   
 
 LM1016:
-	     .stabn 68,0,6843,LM1016-_Answer_F
-	     R3 = 0                   	// [6:6843]  
-	     DS = seg(_PlayQuestionflag)	// [7:6843]  PlayQuestionflag
-	     R4 = (_PlayQuestionflag) 	// [8:6843]  PlayQuestionflag
-	     DS:[R4] = R3             	// [10:6843]  
-//6844  	       TwoKeyflag=0;
+	     .stabn 68,0,6824,LM1016-_Answer_F
+	     SP = SP + 11             	// [0:6824]  
+	     pop BP, PC from [SP]     	// [1:6824]  
+L_64_82:	// 0x1aa6
+// BB:35 cycle count: 10
+//6825  	       
+//6826  	       
+//6827  	       if(PauseFlag)
 
 LM1017:
-	     .stabn 68,0,6844,LM1017-_Answer_F
-	     R3 = 0                   	// [12:6844]  
-	     DS = seg(_TwoKeyflag)    	// [13:6844]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [14:6844]  TwoKeyflag
-	     DS:[R4] = R3             	// [16:6844]  
-//6845  	       
-//6846  	            	   	
-//6847       	 	if(Sleepflag) 
+	     .stabn 68,0,6827,LM1017-_Answer_F
+	     DS = seg(_PauseFlag)     	// [0:6827]  PauseFlag
+	     R4 = (_PauseFlag)        	// [1:6827]  PauseFlag
+	     R4 = DS:[R4]             	// [3:6827]  
+	     cmp R4, 0                	// [5:6827]  
+	     jne BB36_PU64            	// [6:6827]  
+BB135_PU64:	// 0x1aac
+// BB:135 cycle count: 3
+	     goto L_64_84             	// [0:0]  
+BB36_PU64:	// 0x1aae
+// BB:36 cycle count: 24
+//6828  	       {
+//6829  	       	   
+//6830  			       Key_activeflag =0;
 
 LM1018:
-	     .stabn 68,0,6847,LM1018-_Answer_F
-	     DS = seg(_Sleepflag)     	// [18:6847]  Sleepflag
-	     R4 = (_Sleepflag)        	// [19:6847]  Sleepflag
-	     R4 = DS:[R4]             	// [21:6847]  
-	     cmp R4, 0                	// [23:6847]  
-	     je L_64_82               	// [24:6847]  
-BB34_PU64:	// 0x1ab3
-// BB:34 cycle count: 6
-//6848  		      return C_Finish ;   
+	     .stabn 68,0,6830,LM1018-_Answer_F
+	     R3 = 0                   	// [0:6830]  
+	     DS = seg(_Key_activeflag)	// [1:6830]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [2:6830]  Key_activeflag
+	     DS:[R4] = R3             	// [4:6830]  
+//6831  		           Key_Event=0;
 
 LM1019:
-	     .stabn 68,0,6848,LM1019-_Answer_F
-	     SP = SP + 11             	// [0:6848]  
-	     pop BP, PC from [SP]     	// [1:6848]  
-L_64_82:	// 0x1ab5
-// BB:35 cycle count: 10
-//6849  	       
-//6850  	       
-//6851  	       if(PauseFlag)
+	     .stabn 68,0,6831,LM1019-_Answer_F
+	     R3 = 0                   	// [6:6831]  
+	     DS = seg(_Key_Event)     	// [7:6831]  Key_Event
+	     R4 = (_Key_Event)        	// [8:6831]  Key_Event
+	     DS:[R4] = R3             	// [10:6831]  
+//6832  		           PlayQuestionflag =1;
 
 LM1020:
-	     .stabn 68,0,6851,LM1020-_Answer_F
-	     DS = seg(_PauseFlag)     	// [0:6851]  PauseFlag
-	     R4 = (_PauseFlag)        	// [1:6851]  PauseFlag
-	     R4 = DS:[R4]             	// [3:6851]  
-	     cmp R4, 0                	// [5:6851]  
-	     jne BB36_PU64            	// [6:6851]  
-BB132_PU64:	// 0x1abb
-// BB:132 cycle count: 3
-	     goto L_64_84             	// [0:0]  
-BB36_PU64:	// 0x1abd
-// BB:36 cycle count: 24
-//6852  	       {
-//6853  	       	   
-//6854  			       Key_activeflag =0;
+	     .stabn 68,0,6832,LM1020-_Answer_F
+	     R3 = 1                   	// [12:6832]  
+	     DS = seg(_PlayQuestionflag)	// [13:6832]  PlayQuestionflag
+	     R4 = (_PlayQuestionflag) 	// [14:6832]  PlayQuestionflag
+	     DS:[R4] = R3             	// [16:6832]  
+//6833  		           TwoKeyflag = Playbutton;
 
 LM1021:
-	     .stabn 68,0,6854,LM1021-_Answer_F
-	     R3 = 0                   	// [0:6854]  
-	     DS = seg(_Key_activeflag)	// [1:6854]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [2:6854]  Key_activeflag
-	     DS:[R4] = R3             	// [4:6854]  
-//6855  		           Key_Event=0;
+	     .stabn 68,0,6833,LM1021-_Answer_F
+	     R3 = 1                   	// [18:6833]  
+	     DS = seg(_TwoKeyflag)    	// [19:6833]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [20:6833]  TwoKeyflag
+	     DS:[R4] = R3             	// [22:6833]  
+L_64_85:	// 0x1ac2
+// BB:37 cycle count: 15
+//6834  		           do
+//6835  		           {
+//6836  		           	  PauseFlag =0;
 
 LM1022:
-	     .stabn 68,0,6855,LM1022-_Answer_F
-	     R3 = 0                   	// [6:6855]  
-	     DS = seg(_Key_Event)     	// [7:6855]  Key_Event
-	     R4 = (_Key_Event)        	// [8:6855]  Key_Event
-	     DS:[R4] = R3             	// [10:6855]  
-//6856  		           PlayQuestionflag =1;
+	     .stabn 68,0,6836,LM1022-_Answer_F
+	     R3 = 0                   	// [0:6836]  
+	     DS = seg(_PauseFlag)     	// [1:6836]  PauseFlag
+	     R4 = (_PauseFlag)        	// [2:6836]  PauseFlag
+	     DS:[R4] = R3             	// [4:6836]  
+//6837  		           	  delay_time(8);
 
 LM1023:
-	     .stabn 68,0,6856,LM1023-_Answer_F
-	     R3 = 1                   	// [12:6856]  
-	     DS = seg(_PlayQuestionflag)	// [13:6856]  PlayQuestionflag
-	     R4 = (_PlayQuestionflag) 	// [14:6856]  PlayQuestionflag
-	     DS:[R4] = R3             	// [16:6856]  
-//6857  		           TwoKeyflag = Playbutton;
+	     .stabn 68,0,6837,LM1023-_Answer_F
+	     SP = SP - 1              	// [6:6837]  
+	     R3 = 8                   	// [7:6837]  
+	     R4 = SP + 1              	// [8:6837]  
+	     [R4] = R3                	// [10:6837]  
+	     call _delay_time         	// [12:6837]  delay_time
+BB38_PU64:	// 0x1ace
+// BB:38 cycle count: 11
+	     SP = SP + 1              	// [0:6837]  
+//6838  		             
+//6839  		         
+//6840  		          if(Registerd_Num>1)	
 
 LM1024:
-	     .stabn 68,0,6857,LM1024-_Answer_F
-	     R3 = 1                   	// [18:6857]  
-	     DS = seg(_TwoKeyflag)    	// [19:6857]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [20:6857]  TwoKeyflag
-	     DS:[R4] = R3             	// [22:6857]  
-L_64_85:	// 0x1ad1
-// BB:37 cycle count: 15
-//6858  		           do
-//6859  		           {
-//6860  		           	  PauseFlag =0;
+	     .stabn 68,0,6840,LM1024-_Answer_F
+	     DS = seg(_Registerd_Num) 	// [1:6840]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [2:6840]  Registerd_Num
+	     R4 = DS:[R4]             	// [4:6840]  
+	     cmp R4, 1                	// [6:6840]  
+	     jbe L_64_86              	// [7:6840]  
+BB39_PU64:	// 0x1ad5
+// BB:39 cycle count: 19
+//6841  		              Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
 
 LM1025:
-	     .stabn 68,0,6860,LM1025-_Answer_F
-	     R3 = 0                   	// [0:6860]  
-	     DS = seg(_PauseFlag)     	// [1:6860]  PauseFlag
-	     R4 = (_PauseFlag)        	// [2:6860]  PauseFlag
-	     DS:[R4] = R3             	// [4:6860]  
-//6861  		           	  delay_time(8);
+	     .stabn 68,0,6841,LM1025-_Answer_F
+	     SP = SP - 2              	// [0:6841]  
+	     DS = seg(_Player_Activing_Cnt)	// [1:6841]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [2:6841]  Player_Activing_Cnt
+	     R3 = DS:[R4]             	// [4:6841]  
+	     R4 = SP + 1              	// [6:6841]  
+	     [R4] = R3                	// [8:6841]  
+	     R3 = 6000                	// [10:6841]  
+	     R4 = SP + 2              	// [12:6841]  
+	     [R4] = R3                	// [14:6841]  
+	     call _Play_Seq           	// [16:6841]  Play_Seq
+BB40_PU64:	// 0x1ae4
+// BB:40 cycle count: 1
+	     SP = SP + 2              	// [0:6841]  
+L_64_86:	// 0x1ae5
+// BB:41 cycle count: 3
+//6842  		              
+//6843  		              Ask_Question();//PlayA1800_Elements(Get_Question_Sound(gQuestionIdx)); 
 
 LM1026:
-	     .stabn 68,0,6861,LM1026-_Answer_F
-	     SP = SP - 1              	// [6:6861]  
-	     R3 = 8                   	// [7:6861]  
-	     R4 = SP + 1              	// [8:6861]  
-	     [R4] = R3                	// [10:6861]  
-	     call _delay_time         	// [12:6861]  delay_time
-BB38_PU64:	// 0x1add
-// BB:38 cycle count: 11
-	     SP = SP + 1              	// [0:6861]  
-//6862  		             
-//6863  		         
-//6864  		          if(Registerd_Num>1)	
+	     .stabn 68,0,6843,LM1026-_Answer_F
+	     call _Ask_Question       	// [0:6843]  Ask_Question
+Lt_64_2:	// 0x1ae7
+// BB:42 cycle count: 10
+//6844  		              
+//6845  		           }while(PauseFlag); 
 
 LM1027:
-	     .stabn 68,0,6864,LM1027-_Answer_F
-	     DS = seg(_Registerd_Num) 	// [1:6864]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [2:6864]  Registerd_Num
-	     R4 = DS:[R4]             	// [4:6864]  
-	     cmp R4, 1                	// [6:6864]  
-	     jbe L_64_86              	// [7:6864]  
-BB39_PU64:	// 0x1ae4
-// BB:39 cycle count: 19
-//6865  		              Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
+	     .stabn 68,0,6845,LM1027-_Answer_F
+	     DS = seg(_PauseFlag)     	// [0:6845]  PauseFlag
+	     R4 = (_PauseFlag)        	// [1:6845]  PauseFlag
+	     R4 = DS:[R4]             	// [3:6845]  
+	     cmp R4, 0                	// [5:6845]  
+	     jne L_64_85              	// [6:6845]  
+BB43_PU64:	// 0x1aed
+// BB:43 cycle count: 15
+//6846  		           
+//6847  		           PlayQuestionflag =0;
 
 LM1028:
-	     .stabn 68,0,6865,LM1028-_Answer_F
-	     SP = SP - 2              	// [0:6865]  
-	     DS = seg(_Player_Activing_Cnt)	// [1:6865]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [2:6865]  Player_Activing_Cnt
-	     R3 = DS:[R4]             	// [4:6865]  
-	     R4 = SP + 1              	// [6:6865]  
-	     [R4] = R3                	// [8:6865]  
-	     R3 = 6000                	// [10:6865]  
-	     R4 = SP + 2              	// [12:6865]  
-	     [R4] = R3                	// [14:6865]  
-	     call _Play_Seq           	// [16:6865]  Play_Seq
-BB40_PU64:	// 0x1af3
-// BB:40 cycle count: 1
-	     SP = SP + 2              	// [0:6865]  
-L_64_86:	// 0x1af4
-// BB:41 cycle count: 3
-//6866  		              
-//6867  		              Ask_Question();//PlayA1800_Elements(Get_Question_Sound(gQuestionIdx)); 
+	     .stabn 68,0,6847,LM1028-_Answer_F
+	     R3 = 0                   	// [0:6847]  
+	     DS = seg(_PlayQuestionflag)	// [1:6847]  PlayQuestionflag
+	     R4 = (_PlayQuestionflag) 	// [2:6847]  PlayQuestionflag
+	     DS:[R4] = R3             	// [4:6847]  
+//6848  		           TwoKeyflag=0;
 
 LM1029:
-	     .stabn 68,0,6867,LM1029-_Answer_F
-	     call _Ask_Question       	// [0:6867]  Ask_Question
-Lt_64_2:	// 0x1af6
-// BB:42 cycle count: 10
-//6868  		              
-//6869  		           }while(PauseFlag); 
+	     .stabn 68,0,6848,LM1029-_Answer_F
+	     R3 = 0                   	// [6:6848]  
+	     DS = seg(_TwoKeyflag)    	// [7:6848]  TwoKeyflag
+	     R4 = (_TwoKeyflag)       	// [8:6848]  TwoKeyflag
+	     DS:[R4] = R3             	// [10:6848]  
+	     goto L_64_83             	// [12:6848]  
+L_64_84:	// 0x1af9
+// BB:44 cycle count: 21
+//6849  	       } 
+//6850  	       else
+//6851  	         {     
+//6852  		
+//6853  				   if(Key_Event == LastCategory_Series[Currentsound])
 
 LM1030:
-	     .stabn 68,0,6869,LM1030-_Answer_F
-	     DS = seg(_PauseFlag)     	// [0:6869]  PauseFlag
-	     R4 = (_PauseFlag)        	// [1:6869]  PauseFlag
-	     R4 = DS:[R4]             	// [3:6869]  
-	     cmp R4, 0                	// [5:6869]  
-	     jne L_64_85              	// [6:6869]  
-BB43_PU64:	// 0x1afc
-// BB:43 cycle count: 15
-//6870  		           
-//6871  		           PlayQuestionflag =0;
+	     .stabn 68,0,6853,LM1030-_Answer_F
+	     R4 = [BP + 3]            	// [0:6853]  Currentsound
+	     R3 = 0                   	// [2:6853]  
+	     R1 = (_LastCategory_Series)	// [3:6853]  LastCategory_Series
+	     R2 = seg(_LastCategory_Series)	// [5:6853]  LastCategory_Series
+	     R4 = R4 + R1             	// [6:6853]  
+	     R3 = R3 + R2, Carry      	// [7:6853]  
+	     DS = R3                  	// [8:6853]  
+	     R3 = DS:[R4]             	// [9:6853]  
+	     DS = seg(_Key_Event)     	// [11:6853]  Key_Event
+	     R4 = (_Key_Event)        	// [12:6853]  Key_Event
+	     R4 = DS:[R4]             	// [14:6853]  
+	     cmp R3, R4               	// [16:6853]  
+	     je BB45_PU64             	// [17:6853]  
+BB134_PU64:	// 0x1b08
+// BB:134 cycle count: 3
+	     goto L_64_88             	// [0:0]  
+BB45_PU64:	// 0x1b0a
+// BB:45 cycle count: 14
+//6855  
+//6856                        #ifdef C_productTouch
+//6857                            Led_ON_Some(Key_Event);
+//6858                        #else
+//6859  						  Led_ON_Some(Key_Event>>4);
 
 LM1031:
-	     .stabn 68,0,6871,LM1031-_Answer_F
-	     R3 = 0                   	// [0:6871]  
-	     DS = seg(_PlayQuestionflag)	// [1:6871]  PlayQuestionflag
-	     R4 = (_PlayQuestionflag) 	// [2:6871]  PlayQuestionflag
-	     DS:[R4] = R3             	// [4:6871]  
-//6872  		           TwoKeyflag=0;
+	     .stabn 68,0,6859,LM1031-_Answer_F
+	     SP = SP - 1              	// [0:6859]  
+	     DS = seg(_Key_Event)     	// [1:6859]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6859]  Key_Event
+	     R4 = DS:[R4]             	// [4:6859]  
+	     R3 = R4 lsr 4            	// [6:6859]  
+	     R4 = SP + 1              	// [7:6859]  
+	     [R4] = R3                	// [9:6859]  
+	     call _Led_ON_Some        	// [11:6859]  Led_ON_Some
+BB46_PU64:	// 0x1b15
+// BB:46 cycle count: 14
+	     SP = SP + 1              	// [0:6859]  
+//6860  					  #endif	
+//6861  					
+//6862  					   
+//6863  		                Currentsound++;
 
 LM1032:
-	     .stabn 68,0,6872,LM1032-_Answer_F
-	     R3 = 0                   	// [6:6872]  
-	     DS = seg(_TwoKeyflag)    	// [7:6872]  TwoKeyflag
-	     R4 = (_TwoKeyflag)       	// [8:6872]  TwoKeyflag
-	     DS:[R4] = R3             	// [10:6872]  
-	     goto L_64_83             	// [12:6872]  
-L_64_84:	// 0x1b08
-// BB:44 cycle count: 21
-//6873  	       } 
-//6874  	       else
-//6875  	         {     
-//6876  		
-//6877  				   if(Key_Event == LastCategory_Series[Currentsound])
+	     .stabn 68,0,6863,LM1032-_Answer_F
+	     R4 = [BP + 3]            	// [1:6863]  Currentsound
+	     R4 = R4 + 1              	// [3:6863]  
+	     [BP + 3] = R4            	// [4:6863]  Currentsound
+//6864  		                
+//6865  		               	if(Currentsound >= round)
 
 LM1033:
-	     .stabn 68,0,6877,LM1033-_Answer_F
-	     R4 = [BP + 3]            	// [0:6877]  Currentsound
-	     R3 = 0                   	// [2:6877]  
-	     R1 = (_LastCategory_Series)	// [3:6877]  LastCategory_Series
-	     R2 = seg(_LastCategory_Series)	// [5:6877]  LastCategory_Series
-	     R4 = R4 + R1             	// [6:6877]  
-	     R3 = R3 + R2, Carry      	// [7:6877]  
-	     DS = R3                  	// [8:6877]  
-	     R3 = DS:[R4]             	// [9:6877]  
-	     DS = seg(_Key_Event)     	// [11:6877]  Key_Event
-	     R4 = (_Key_Event)        	// [12:6877]  Key_Event
-	     R4 = DS:[R4]             	// [14:6877]  
-	     cmp R3, R4               	// [16:6877]  
-	     je BB45_PU64             	// [17:6877]  
-BB131_PU64:	// 0x1b17
-// BB:131 cycle count: 3
-	     goto L_64_88             	// [0:0]  
-BB45_PU64:	// 0x1b19
-// BB:45 cycle count: 14
-//6879  
-//6880                        #ifdef C_productTouch
-//6881                            Led_ON_Some(Key_Event);
-//6882                        #else
-//6883  						  Led_ON_Some(Key_Event>>4);
+	     .stabn 68,0,6865,LM1033-_Answer_F
+	     R3 = [BP + 2]            	// [5:6865]  round
+	     R4 = [BP + 3]            	// [7:6865]  Currentsound
+	     cmp R3, R4               	// [9:6865]  
+	     ja L_64_89               	// [10:6865]  
+BB47_PU64:	// 0x1b1d
+// BB:47 cycle count: 6
+//6866  		               	    Key_activeflag =0;	 
 
 LM1034:
-	     .stabn 68,0,6883,LM1034-_Answer_F
-	     SP = SP - 1              	// [0:6883]  
-	     DS = seg(_Key_Event)     	// [1:6883]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6883]  Key_Event
-	     R4 = DS:[R4]             	// [4:6883]  
-	     R3 = R4 lsr 4            	// [6:6883]  
-	     R4 = SP + 1              	// [7:6883]  
-	     [R4] = R3                	// [9:6883]  
-	     call _Led_ON_Some        	// [11:6883]  Led_ON_Some
-BB46_PU64:	// 0x1b24
-// BB:46 cycle count: 14
-	     SP = SP + 1              	// [0:6883]  
-//6884  					  #endif	
-//6885  					
-//6886  					   
-//6887  		                Currentsound++;
+	     .stabn 68,0,6866,LM1034-_Answer_F
+	     R3 = 0                   	// [0:6866]  
+	     DS = seg(_Key_activeflag)	// [1:6866]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [2:6866]  Key_activeflag
+	     DS:[R4] = R3             	// [4:6866]  
+L_64_89:	// 0x1b22
+// BB:48 cycle count: 16
+//6867  		               	
+//6868  						Key_Event=0; 
 
 LM1035:
-	     .stabn 68,0,6887,LM1035-_Answer_F
-	     R4 = [BP + 3]            	// [1:6887]  Currentsound
-	     R4 = R4 + 1              	// [3:6887]  
-	     [BP + 3] = R4            	// [4:6887]  Currentsound
-//6888  		                
-//6889  		               	if(Currentsound >= round)
+	     .stabn 68,0,6868,LM1035-_Answer_F
+	     R3 = 0                   	// [0:6868]  
+	     DS = seg(_Key_Event)     	// [1:6868]  Key_Event
+	     R4 = (_Key_Event)        	// [2:6868]  Key_Event
+	     DS:[R4] = R3             	// [4:6868]  
+//6869  						
+//6870  						PlayA1800_Elements(SFX_Buzzer);
 
 LM1036:
-	     .stabn 68,0,6889,LM1036-_Answer_F
-	     R3 = [BP + 2]            	// [5:6889]  round
-	     R4 = [BP + 3]            	// [7:6889]  Currentsound
-	     cmp R3, R4               	// [9:6889]  
-	     ja L_64_89               	// [10:6889]  
-BB47_PU64:	// 0x1b2c
-// BB:47 cycle count: 6
-//6890  		               	    Key_activeflag =0;	 
+	     .stabn 68,0,6870,LM1036-_Answer_F
+	     SP = SP - 1              	// [6:6870]  
+	     R3 = 124                 	// [7:6870]  
+	     R4 = SP + 1              	// [9:6870]  
+	     [R4] = R3                	// [11:6870]  
+	     call _PlayA1800_Elements 	// [13:6870]  PlayA1800_Elements
+BB49_PU64:	// 0x1b2f
+// BB:49 cycle count: 8
+//6871  						delay_time(3);
 
 LM1037:
-	     .stabn 68,0,6890,LM1037-_Answer_F
-	     R3 = 0                   	// [0:6890]  
-	     DS = seg(_Key_activeflag)	// [1:6890]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [2:6890]  Key_activeflag
-	     DS:[R4] = R3             	// [4:6890]  
-L_64_89:	// 0x1b31
-// BB:48 cycle count: 16
-//6891  		               	
-//6892  						Key_Event=0; 
+	     .stabn 68,0,6871,LM1037-_Answer_F
+	     R3 = 3                   	// [0:6871]  
+	     R4 = SP + 1              	// [1:6871]  
+	     [R4] = R3                	// [3:6871]  
+	     call _delay_time         	// [5:6871]  delay_time
+BB50_PU64:	// 0x1b35
+// BB:50 cycle count: 4
+	     SP = SP + 1              	// [0:6871]  
+//6872  						Light_all_off();
 
 LM1038:
-	     .stabn 68,0,6892,LM1038-_Answer_F
-	     R3 = 0                   	// [0:6892]  
-	     DS = seg(_Key_Event)     	// [1:6892]  Key_Event
-	     R4 = (_Key_Event)        	// [2:6892]  Key_Event
-	     DS:[R4] = R3             	// [4:6892]  
-//6893  						
-//6894  						PlayA1800_Elements(SFX_Buzzer);
+	     .stabn 68,0,6872,LM1038-_Answer_F
+	     call _Light_all_off      	// [1:6872]  Light_all_off
+BB51_PU64:	// 0x1b38
+// BB:51 cycle count: 9
+//6873  		                
+//6874  	
+//6875  						if(Currentsound >= round)
 
 LM1039:
-	     .stabn 68,0,6894,LM1039-_Answer_F
-	     SP = SP - 1              	// [6:6894]  
-	     R3 = 122                 	// [7:6894]  
-	     R4 = SP + 1              	// [9:6894]  
-	     [R4] = R3                	// [11:6894]  
-	     call _PlayA1800_Elements 	// [13:6894]  PlayA1800_Elements
-BB49_PU64:	// 0x1b3e
-// BB:49 cycle count: 8
-//6895  						delay_time(3);
+	     .stabn 68,0,6875,LM1039-_Answer_F
+	     R3 = [BP + 2]            	// [0:6875]  round
+	     R4 = [BP + 3]            	// [2:6875]  Currentsound
+	     cmp R3, R4               	// [4:6875]  
+	     ja L_64_90               	// [5:6875]  
+BB52_PU64:	// 0x1b3c
+// BB:52 cycle count: 10
+//6876  							{				   
+//6877  
+//6878  		                       
+//6879  							   if(Cn<=3)//(((Cn-1)%2)== 0)
 
 LM1040:
-	     .stabn 68,0,6895,LM1040-_Answer_F
-	     R3 = 3                   	// [0:6895]  
-	     R4 = SP + 1              	// [1:6895]  
-	     [R4] = R3                	// [3:6895]  
-	     call _delay_time         	// [5:6895]  delay_time
-BB50_PU64:	// 0x1b44
-// BB:50 cycle count: 4
-	     SP = SP + 1              	// [0:6895]  
-//6896  						Light_all_off();
+	     .stabn 68,0,6879,LM1040-_Answer_F
+	     DS = seg(_Cn)            	// [0:6879]  Cn
+	     R4 = (_Cn)               	// [1:6879]  Cn
+	     R4 = DS:[R4]             	// [3:6879]  
+	     cmp R4, 3                	// [5:6879]  
+	     ja L_64_92               	// [6:6879]  
+BB53_PU64:	// 0x1b42
+// BB:53 cycle count: 9
+//6880  							  	   PlayA1800_Other(Serie_Correct1);//PlayA1800_Elements(VLMMREN_Congrate_02);
 
 LM1041:
-	     .stabn 68,0,6896,LM1041-_Answer_F
-	     call _Light_all_off      	// [1:6896]  Light_all_off
-BB51_PU64:	// 0x1b47
-// BB:51 cycle count: 9
-//6897  		                
-//6898  	
-//6899  						if(Currentsound >= round)
+	     .stabn 68,0,6880,LM1041-_Answer_F
+	     SP = SP - 1              	// [0:6880]  
+	     R3 = 0                   	// [1:6880]  
+	     R4 = SP + 1              	// [2:6880]  
+	     [R4] = R3                	// [4:6880]  
+	     call _PlayA1800_Other    	// [6:6880]  PlayA1800_Other
+BB54_PU64:	// 0x1b49
+// BB:54 cycle count: 5
+	     SP = SP + 1              	// [0:6880]  
+	     jmp L_64_91              	// [1:6880]  
+L_64_92:	// 0x1b4b
+// BB:55 cycle count: 10
+//6881  							  	else if(Cn<=8)
 
 LM1042:
-	     .stabn 68,0,6899,LM1042-_Answer_F
-	     R3 = [BP + 2]            	// [0:6899]  round
-	     R4 = [BP + 3]            	// [2:6899]  Currentsound
-	     cmp R3, R4               	// [4:6899]  
-	     ja L_64_90               	// [5:6899]  
-BB52_PU64:	// 0x1b4b
-// BB:52 cycle count: 10
-//6900  							{				   
-//6901  
-//6902  		                       
-//6903  							   if(Cn<=5)//(((Cn-1)%2)== 0)
+	     .stabn 68,0,6881,LM1042-_Answer_F
+	     DS = seg(_Cn)            	// [0:6881]  Cn
+	     R4 = (_Cn)               	// [1:6881]  Cn
+	     R4 = DS:[R4]             	// [3:6881]  
+	     cmp R4, 8                	// [5:6881]  
+	     ja L_64_94               	// [6:6881]  
+BB56_PU64:	// 0x1b51
+// BB:56 cycle count: 9
+//6882  		                           PlayA1800_Other(Serie_Correct2);
 
 LM1043:
-	     .stabn 68,0,6903,LM1043-_Answer_F
-	     DS = seg(_Cn)            	// [0:6903]  Cn
-	     R4 = (_Cn)               	// [1:6903]  Cn
-	     R4 = DS:[R4]             	// [3:6903]  
-	     cmp R4, 5                	// [5:6903]  
-	     ja L_64_92               	// [6:6903]  
-BB53_PU64:	// 0x1b51
-// BB:53 cycle count: 9
-//6904  							  	   PlayA1800_Other(Serie_Correct1);//PlayA1800_Elements(VLMMREN_Congrate_02);
+	     .stabn 68,0,6882,LM1043-_Answer_F
+	     SP = SP - 1              	// [0:6882]  
+	     R3 = 1                   	// [1:6882]  
+	     R4 = SP + 1              	// [2:6882]  
+	     [R4] = R3                	// [4:6882]  
+	     call _PlayA1800_Other    	// [6:6882]  PlayA1800_Other
+BB57_PU64:	// 0x1b58
+// BB:57 cycle count: 5
+	     SP = SP + 1              	// [0:6882]  
+	     jmp L_64_93              	// [1:6882]  
+L_64_94:	// 0x1b5a
+// BB:58 cycle count: 9
+//6883  							  	else
+//6884  							  	    PlayA1800_Other(Serie_Correct3);
 
 LM1044:
-	     .stabn 68,0,6904,LM1044-_Answer_F
-	     SP = SP - 1              	// [0:6904]  
-	     R3 = 0                   	// [1:6904]  
-	     R4 = SP + 1              	// [2:6904]  
-	     [R4] = R3                	// [4:6904]  
-	     call _PlayA1800_Other    	// [6:6904]  PlayA1800_Other
-BB54_PU64:	// 0x1b58
-// BB:54 cycle count: 5
-	     SP = SP + 1              	// [0:6904]  
-	     jmp L_64_91              	// [1:6904]  
-L_64_92:	// 0x1b5a
-// BB:55 cycle count: 10
-//6905  							  	else if(Cn<=10)
+	     .stabn 68,0,6884,LM1044-_Answer_F
+	     SP = SP - 1              	// [0:6884]  
+	     R3 = 2                   	// [1:6884]  
+	     R4 = SP + 1              	// [2:6884]  
+	     [R4] = R3                	// [4:6884]  
+	     call _PlayA1800_Other    	// [6:6884]  PlayA1800_Other
+BB59_PU64:	// 0x1b61
+// BB:59 cycle count: 1
+	     SP = SP + 1              	// [0:6884]  
+L_64_93:	// 0x1b62
+L_64_91:	// 0x1b62
+// BB:60 cycle count: 9
+//6885  		
+//6886  							     delay_time(16);
 
 LM1045:
-	     .stabn 68,0,6905,LM1045-_Answer_F
-	     DS = seg(_Cn)            	// [0:6905]  Cn
-	     R4 = (_Cn)               	// [1:6905]  Cn
-	     R4 = DS:[R4]             	// [3:6905]  
-	     cmp R4, 10               	// [5:6905]  
-	     ja L_64_94               	// [6:6905]  
-BB56_PU64:	// 0x1b60
-// BB:56 cycle count: 9
-//6906  		                           PlayA1800_Other(Serie_Correct2);
+	     .stabn 68,0,6886,LM1045-_Answer_F
+	     SP = SP - 1              	// [0:6886]  
+	     R3 = 16                  	// [1:6886]  
+	     R4 = SP + 1              	// [2:6886]  
+	     [R4] = R3                	// [4:6886]  
+	     call _delay_time         	// [6:6886]  delay_time
+BB61_PU64:	// 0x1b69
+// BB:61 cycle count: 4
+	     SP = SP + 1              	// [0:6886]  
+//6887  							     break;
 
 LM1046:
-	     .stabn 68,0,6906,LM1046-_Answer_F
-	     SP = SP - 1              	// [0:6906]  
-	     R3 = 1                   	// [1:6906]  
-	     R4 = SP + 1              	// [2:6906]  
-	     [R4] = R3                	// [4:6906]  
-	     call _PlayA1800_Other    	// [6:6906]  PlayA1800_Other
-BB57_PU64:	// 0x1b67
-// BB:57 cycle count: 5
-	     SP = SP + 1              	// [0:6906]  
-	     jmp L_64_93              	// [1:6906]  
-L_64_94:	// 0x1b69
-// BB:58 cycle count: 9
-//6907  							  	else
-//6908  							  	    PlayA1800_Other(Serie_Correct3);
-
-LM1047:
-	     .stabn 68,0,6908,LM1047-_Answer_F
-	     SP = SP - 1              	// [0:6908]  
-	     R3 = 2                   	// [1:6908]  
-	     R4 = SP + 1              	// [2:6908]  
-	     [R4] = R3                	// [4:6908]  
-	     call _PlayA1800_Other    	// [6:6908]  PlayA1800_Other
-BB59_PU64:	// 0x1b70
-// BB:59 cycle count: 1
-	     SP = SP + 1              	// [0:6908]  
-L_64_93:	// 0x1b71
-L_64_91:	// 0x1b71
-// BB:60 cycle count: 9
-//6909  		
-//6910  							     delay_time(16);
-
-LM1048:
-	     .stabn 68,0,6910,LM1048-_Answer_F
-	     SP = SP - 1              	// [0:6910]  
-	     R3 = 16                  	// [1:6910]  
-	     R4 = SP + 1              	// [2:6910]  
-	     [R4] = R3                	// [4:6910]  
-	     call _delay_time         	// [6:6910]  delay_time
-BB61_PU64:	// 0x1b78
-// BB:61 cycle count: 4
-	     SP = SP + 1              	// [0:6910]  
-//6911  							     break;
-
-LM1049:
-	     .stabn 68,0,6911,LM1049-_Answer_F
-	     goto Lt_64_3             	// [1:6911]  
-L_64_90:	// 0x1b7b
+	     .stabn 68,0,6887,LM1046-_Answer_F
+	     goto Lt_64_3             	// [1:6887]  
+L_64_90:	// 0x1b6c
 // BB:62 cycle count: 3
 
-LM1050:
-	     .stabn 68,0,6899,LM1050-_Answer_F
-	     goto L_64_87             	// [0:6899]  
-L_64_88:	// 0x1b7d
+LM1047:
+	     .stabn 68,0,6875,LM1047-_Answer_F
+	     goto L_64_87             	// [0:6875]  
+L_64_88:	// 0x1b6e
 // BB:63 cycle count: 8
-//6913  							}
-//6914  	
-//6915  		                  
-//6916  				  	}
-//6917  		           else if((temp == TimeOver)||(Key_Event))
+//6889  							}
+//6890  	
+//6891  		                  
+//6892  				  	}
+//6893  		           else if((temp == TimeOver)||(Key_Event))
+
+LM1048:
+	     .stabn 68,0,6893,LM1048-_Answer_F
+	     R4 = [BP + 0]            	// [0:6893]  temp
+	     cmp R4, 61452            	// [2:6893]  
+	     je L_64_96               	// [4:6893]  
+BB64_PU64:	// 0x1b72
+// BB:64 cycle count: 10
+	     DS = seg(_Key_Event)     	// [0:6893]  Key_Event
+	     R4 = (_Key_Event)        	// [1:6893]  Key_Event
+	     R4 = DS:[R4]             	// [3:6893]  
+	     cmp R4, 0                	// [5:6893]  
+	     jne L_64_96              	// [6:6893]  
+BB125_PU64:	// 0x1b78
+// BB:125 cycle count: 3
+	     goto L_64_95             	// [0:0]  
+L_64_96:	// 0x1b7a
+// BB:65 cycle count: 26
+//6894  		           	{     
+//6895  		           		  temp1 = Key_Event;
+
+LM1049:
+	     .stabn 68,0,6895,LM1049-_Answer_F
+	     DS = seg(_Key_Event)     	// [0:6895]  Key_Event
+	     R4 = (_Key_Event)        	// [1:6895]  Key_Event
+	     R4 = DS:[R4]             	// [3:6895]  
+	     [BP + 1] = R4            	// [5:6895]  temp1
+//6896  		           		  Key_Event=0;
+
+LM1050:
+	     .stabn 68,0,6896,LM1050-_Answer_F
+	     R3 = 0                   	// [6:6896]  
+	     DS = seg(_Key_Event)     	// [7:6896]  Key_Event
+	     R4 = (_Key_Event)        	// [8:6896]  Key_Event
+	     DS:[R4] = R3             	// [10:6896]  
+//6897  		           	      Key_activeflag =0;
 
 LM1051:
-	     .stabn 68,0,6917,LM1051-_Answer_F
-	     R4 = [BP + 0]            	// [0:6917]  temp
-	     cmp R4, 61452            	// [2:6917]  
-	     je L_64_96               	// [4:6917]  
-BB64_PU64:	// 0x1b81
-// BB:64 cycle count: 10
-	     DS = seg(_Key_Event)     	// [0:6917]  Key_Event
-	     R4 = (_Key_Event)        	// [1:6917]  Key_Event
-	     R4 = DS:[R4]             	// [3:6917]  
-	     cmp R4, 0                	// [5:6917]  
-	     jne L_64_96              	// [6:6917]  
-BB123_PU64:	// 0x1b87
-// BB:123 cycle count: 3
-	     goto L_64_95             	// [0:0]  
-L_64_96:	// 0x1b89
-// BB:65 cycle count: 26
-//6918  		           	{     
-//6919  		           		  temp1 = Key_Event;
+	     .stabn 68,0,6897,LM1051-_Answer_F
+	     R3 = 0                   	// [12:6897]  
+	     DS = seg(_Key_activeflag)	// [13:6897]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [14:6897]  Key_activeflag
+	     DS:[R4] = R3             	// [16:6897]  
+//6898  		           	      
+//6899  		           	    if(temp == TimeOver)
 
 LM1052:
-	     .stabn 68,0,6919,LM1052-_Answer_F
-	     DS = seg(_Key_Event)     	// [0:6919]  Key_Event
-	     R4 = (_Key_Event)        	// [1:6919]  Key_Event
-	     R4 = DS:[R4]             	// [3:6919]  
-	     [BP + 1] = R4            	// [5:6919]  temp1
-//6920  		           		  Key_Event=0;
+	     .stabn 68,0,6899,LM1052-_Answer_F
+	     R4 = [BP + 0]            	// [18:6899]  temp
+	     cmp R4, 61452            	// [20:6899]  
+	     je BB66_PU64             	// [22:6899]  
+BB133_PU64:	// 0x1b8d
+// BB:133 cycle count: 3
+	     goto L_64_98             	// [0:0]  
+BB66_PU64:	// 0x1b8f
+// BB:66 cycle count: 10
+//6900  		           	    {
+//6901  		           	    	PlayA1800_Elements(SFX_Gong); 
 
 LM1053:
-	     .stabn 68,0,6920,LM1053-_Answer_F
-	     R3 = 0                   	// [6:6920]  
-	     DS = seg(_Key_Event)     	// [7:6920]  Key_Event
-	     R4 = (_Key_Event)        	// [8:6920]  Key_Event
-	     DS:[R4] = R3             	// [10:6920]  
-//6921  		           	      Key_activeflag =0;
+	     .stabn 68,0,6901,LM1053-_Answer_F
+	     SP = SP - 1              	// [0:6901]  
+	     R3 = 127                 	// [1:6901]  
+	     R4 = SP + 1              	// [3:6901]  
+	     [R4] = R3                	// [5:6901]  
+	     call _PlayA1800_Elements 	// [7:6901]  PlayA1800_Elements
+BB67_PU64:	// 0x1b97
+// BB:67 cycle count: 11
+	     SP = SP + 1              	// [0:6901]  
+//6902  			       	      if(Registerd_Num>1)
 
 LM1054:
-	     .stabn 68,0,6921,LM1054-_Answer_F
-	     R3 = 0                   	// [12:6921]  
-	     DS = seg(_Key_activeflag)	// [13:6921]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [14:6921]  Key_activeflag
-	     DS:[R4] = R3             	// [16:6921]  
-//6922  		           	      
-//6923  		           	    if(temp == TimeOver)
+	     .stabn 68,0,6902,LM1054-_Answer_F
+	     DS = seg(_Registerd_Num) 	// [1:6902]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [2:6902]  Registerd_Num
+	     R4 = DS:[R4]             	// [4:6902]  
+	     cmp R4, 1                	// [6:6902]  
+	     jbe L_64_100             	// [7:6902]  
+BB68_PU64:	// 0x1b9e
+// BB:68 cycle count: 20
+//6903  			       	      {
+//6904  				       	      
+//6905  				       	      Play_Seq(TooLate_Cnt++%3,C_TooLateTable);
 
 LM1055:
-	     .stabn 68,0,6923,LM1055-_Answer_F
-	     R4 = [BP + 0]            	// [18:6923]  temp
-	     cmp R4, 61452            	// [20:6923]  
-	     je BB66_PU64             	// [22:6923]  
-BB130_PU64:	// 0x1b9c
-// BB:130 cycle count: 3
-	     goto L_64_98             	// [0:0]  
-BB66_PU64:	// 0x1b9e
-// BB:66 cycle count: 10
-//6924  		           	    {
-//6925  		           	    	PlayA1800_Elements(SFX_Gong); 
-
-LM1056:
-	     .stabn 68,0,6925,LM1056-_Answer_F
-	     SP = SP - 1              	// [0:6925]  
-	     R3 = 125                 	// [1:6925]  
-	     R4 = SP + 1              	// [3:6925]  
-	     [R4] = R3                	// [5:6925]  
-	     call _PlayA1800_Elements 	// [7:6925]  PlayA1800_Elements
-BB67_PU64:	// 0x1ba6
-// BB:67 cycle count: 11
-	     SP = SP + 1              	// [0:6925]  
-//6926  			       	      if(Registerd_Num>1)
-
-LM1057:
-	     .stabn 68,0,6926,LM1057-_Answer_F
-	     DS = seg(_Registerd_Num) 	// [1:6926]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [2:6926]  Registerd_Num
-	     R4 = DS:[R4]             	// [4:6926]  
-	     cmp R4, 1                	// [6:6926]  
-	     jbe L_64_100             	// [7:6926]  
-BB68_PU64:	// 0x1bad
-// BB:68 cycle count: 20
-//6927  			       	      {
-//6928  				       	      
-//6929  				       	      Play_Seq(TooLate_Cnt++%3,C_TooLateTable);
-
-LM1058:
-	     .stabn 68,0,6929,LM1058-_Answer_F
-	     DS = seg(_TooLate_Cnt)   	// [0:6929]  TooLate_Cnt
-	     R4 = (_TooLate_Cnt)      	// [1:6929]  TooLate_Cnt
-	     R3 = DS:[R4]             	// [3:6929]  
-	     R4 = R3 + 1              	// [5:6929]  
-	     DS = seg(_TooLate_Cnt)   	// [7:6929]  TooLate_Cnt
-	     R2 = (_TooLate_Cnt)      	// [8:6929]  TooLate_Cnt
-	     DS:[R2] = R4             	// [10:6929]  
-	     SP = SP - 2              	// [12:6929]  
-	     R4 = 3                   	// [13:6929]  
-	     push R4, R3 to [SP]      	// [14:6929]  
-	     call __modu1             	// [17:6929]  _modu1
-BB69_PU64:	// 0x1bbc
+	     .stabn 68,0,6905,LM1055-_Answer_F
+	     DS = seg(_TooLate_Cnt)   	// [0:6905]  TooLate_Cnt
+	     R4 = (_TooLate_Cnt)      	// [1:6905]  TooLate_Cnt
+	     R3 = DS:[R4]             	// [3:6905]  
+	     R4 = R3 + 1              	// [5:6905]  
+	     DS = seg(_TooLate_Cnt)   	// [7:6905]  TooLate_Cnt
+	     R2 = (_TooLate_Cnt)      	// [8:6905]  TooLate_Cnt
+	     DS:[R2] = R4             	// [10:6905]  
+	     SP = SP - 2              	// [12:6905]  
+	     R4 = 3                   	// [13:6905]  
+	     push R4, R3 to [SP]      	// [14:6905]  
+	     call __modu1             	// [17:6905]  _modu1
+BB69_PU64:	// 0x1bad
 // BB:69 cycle count: 14
 	     SP = SP + 2              	// [0:0]  
 	     R4 = SP + 1              	// [1:0]  
 	     [R4] = R1                	// [3:0]  
-	     R3 = 12500               	// [5:6929]  
-	     R4 = SP + 2              	// [7:6929]  
-	     [R4] = R3                	// [9:6929]  
-	     call _Play_Seq           	// [11:6929]  Play_Seq
-BB70_PU64:	// 0x1bc7
+	     R3 = 12500               	// [5:6905]  
+	     R4 = SP + 2              	// [7:6905]  
+	     [R4] = R3                	// [9:6905]  
+	     call _Play_Seq           	// [11:6905]  Play_Seq
+BB70_PU64:	// 0x1bb8
 // BB:70 cycle count: 5
-	     SP = SP + 2              	// [0:6929]  
-	     jmp L_64_99              	// [1:6929]  
-L_64_100:	// 0x1bc9
+	     SP = SP + 2              	// [0:6905]  
+	     jmp L_64_99              	// [1:6905]  
+L_64_100:	// 0x1bba
 // BB:71 cycle count: 20
-//6930  			       	      }
-//6931  			       	     else
-//6932  			       	      {
-//6933  			       	         Play_Seq(TooLatesolo_Cnt++%3,C_TooLateSoloTable);
+//6906  			       	      }
+//6907  			       	     else
+//6908  			       	      {
+//6909  			       	         Play_Seq(TooLatesolo_Cnt++%3,C_TooLateSoloTable);
 
-LM1059:
-	     .stabn 68,0,6933,LM1059-_Answer_F
-	     DS = seg(_TooLatesolo_Cnt)	// [0:6933]  TooLatesolo_Cnt
-	     R4 = (_TooLatesolo_Cnt)  	// [1:6933]  TooLatesolo_Cnt
-	     R3 = DS:[R4]             	// [3:6933]  
-	     R4 = R3 + 1              	// [5:6933]  
-	     DS = seg(_TooLatesolo_Cnt)	// [7:6933]  TooLatesolo_Cnt
-	     R2 = (_TooLatesolo_Cnt)  	// [8:6933]  TooLatesolo_Cnt
-	     DS:[R2] = R4             	// [10:6933]  
-	     SP = SP - 2              	// [12:6933]  
-	     R4 = 3                   	// [13:6933]  
-	     push R4, R3 to [SP]      	// [14:6933]  
-	     call __modu1             	// [17:6933]  _modu1
-BB72_PU64:	// 0x1bd8
+LM1056:
+	     .stabn 68,0,6909,LM1056-_Answer_F
+	     DS = seg(_TooLatesolo_Cnt)	// [0:6909]  TooLatesolo_Cnt
+	     R4 = (_TooLatesolo_Cnt)  	// [1:6909]  TooLatesolo_Cnt
+	     R3 = DS:[R4]             	// [3:6909]  
+	     R4 = R3 + 1              	// [5:6909]  
+	     DS = seg(_TooLatesolo_Cnt)	// [7:6909]  TooLatesolo_Cnt
+	     R2 = (_TooLatesolo_Cnt)  	// [8:6909]  TooLatesolo_Cnt
+	     DS:[R2] = R4             	// [10:6909]  
+	     SP = SP - 2              	// [12:6909]  
+	     R4 = 3                   	// [13:6909]  
+	     push R4, R3 to [SP]      	// [14:6909]  
+	     call __modu1             	// [17:6909]  _modu1
+BB72_PU64:	// 0x1bc9
 // BB:72 cycle count: 14
 	     SP = SP + 2              	// [0:0]  
 	     R4 = SP + 1              	// [1:0]  
 	     [R4] = R1                	// [3:0]  
-	     R3 = 13000               	// [5:6933]  
-	     R4 = SP + 2              	// [7:6933]  
-	     [R4] = R3                	// [9:6933]  
-	     call _Play_Seq           	// [11:6933]  Play_Seq
-BB73_PU64:	// 0x1be3
+	     R3 = 13000               	// [5:6909]  
+	     R4 = SP + 2              	// [7:6909]  
+	     [R4] = R3                	// [9:6909]  
+	     call _Play_Seq           	// [11:6909]  Play_Seq
+BB73_PU64:	// 0x1bd4
 // BB:73 cycle count: 1
-	     SP = SP + 2              	// [0:6933]  
-L_64_99:	// 0x1be4
+	     SP = SP + 2              	// [0:6909]  
+L_64_99:	// 0x1bd5
 // BB:74 cycle count: 3
 
-LM1060:
-	     .stabn 68,0,6926,LM1060-_Answer_F
-	     goto L_64_97             	// [0:6926]  
-L_64_98:	// 0x1be6
+LM1057:
+	     .stabn 68,0,6902,LM1057-_Answer_F
+	     goto L_64_97             	// [0:6902]  
+L_64_98:	// 0x1bd7
 // BB:75 cycle count: 7
-//6934  			       	      } 
-//6935  			       	      
-//6936  		           	    }
-//6937  			       	    else if(temp1)
+//6910  			       	      } 
+//6911  			       	      
+//6912  		           	    }
+//6913  			       	    else if(temp1)
 
-LM1061:
-	     .stabn 68,0,6937,LM1061-_Answer_F
-	     R4 = [BP + 1]            	// [0:6937]  temp1
-	     cmp R4, 0                	// [2:6937]  
-	     jne BB76_PU64            	// [3:6937]  
-BB126_PU64:	// 0x1be9
-// BB:126 cycle count: 3
+LM1058:
+	     .stabn 68,0,6913,LM1058-_Answer_F
+	     R4 = [BP + 1]            	// [0:6913]  temp1
+	     cmp R4, 0                	// [2:6913]  
+	     jne BB76_PU64            	// [3:6913]  
+BB128_PU64:	// 0x1bda
+// BB:128 cycle count: 3
 	     goto L_64_101            	// [0:0]  
-BB76_PU64:	// 0x1beb
+BB76_PU64:	// 0x1bdc
 // BB:76 cycle count: 10
-//6938  			       	    {
-//6939  
-//6940  
-//6941  						  if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0))
+//6914  			       	    {
+//6915  
+//6916  
+//6917  						  if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0))
 
-LM1062:
-	     .stabn 68,0,6941,LM1062-_Answer_F
-	     DS = seg(_Cn)            	// [0:6941]  Cn
-	     R4 = (_Cn)               	// [1:6941]  Cn
-	     R4 = DS:[R4]             	// [3:6941]  
-	     cmp R4, 4                	// [5:6941]  
-	     ja BB77_PU64             	// [6:6941]  
-BB129_PU64:	// 0x1bf1
-// BB:129 cycle count: 3
+LM1059:
+	     .stabn 68,0,6917,LM1059-_Answer_F
+	     DS = seg(_Cn)            	// [0:6917]  Cn
+	     R4 = (_Cn)               	// [1:6917]  Cn
+	     R4 = DS:[R4]             	// [3:6917]  
+	     cmp R4, 4                	// [5:6917]  
+	     ja BB77_PU64             	// [6:6917]  
+BB131_PU64:	// 0x1be2
+// BB:131 cycle count: 3
 	     goto L_64_102            	// [0:0]  
-BB77_PU64:	// 0x1bf3
+BB77_PU64:	// 0x1be4
 // BB:77 cycle count: 10
-	     DS = seg(_SinceLastE)    	// [0:6941]  SinceLastE
-	     R4 = (_SinceLastE)       	// [1:6941]  SinceLastE
-	     R4 = DS:[R4]             	// [3:6941]  
-	     cmp R4, 4                	// [5:6941]  
-	     jbe L_64_102             	// [6:6941]  
-L_64_104:	// 0x1bf9
+	     DS = seg(_SinceLastE)    	// [0:6917]  SinceLastE
+	     R4 = (_SinceLastE)       	// [1:6917]  SinceLastE
+	     R4 = DS:[R4]             	// [3:6917]  
+	     cmp R4, 4                	// [5:6917]  
+	     ja L_64_104              	// [6:6917]  
+BB132_PU64:	// 0x1bea
+// BB:132 cycle count: 3
+	     goto L_64_102            	// [0:0]  
+L_64_104:	// 0x1bec
 // BB:78 cycle count: 13
-	     R3 = 12307               	// [0:6941]  
-	     R4 = 0                   	// [2:6941]  
-	     DS = R4                  	// [3:6941]  
-	     R3 = DS:[R3]             	// [4:6941]  
-	     R4 = 3                   	// [6:6941]  
-	     push R4, R3 to [SP]      	// [7:6941]  
-	     call __modu1             	// [10:6941]  _modu1
-BB79_PU64:	// 0x1c02
+	     R3 = 12307               	// [0:6917]  
+	     R4 = 0                   	// [2:6917]  
+	     DS = R4                  	// [3:6917]  
+	     R3 = DS:[R3]             	// [4:6917]  
+	     R4 = 3                   	// [6:6917]  
+	     push R4, R3 to [SP]      	// [7:6917]  
+	     call __modu1             	// [10:6917]  _modu1
+BB79_PU64:	// 0x1bf5
 // BB:79 cycle count: 6
 	     SP = SP + 2              	// [0:0]  
 	     cmp R1, 0                	// [1:0]  
-	     jne L_64_102             	// [2:0]  
-L_64_103:	// 0x1c05
+	     je L_64_103              	// [2:0]  
+BB139_PU64:	// 0x1bf8
+// BB:139 cycle count: 3
+	     goto L_64_102            	// [0:0]  
+L_64_103:	// 0x1bfa
 // BB:80 cycle count: 10
-//6942  							{
-//6943  							 //Chance();
-//6944  							 PlayA1800_Elements(SFX_Event); 
+//6918  							{
+//6919  							 //Chance();
+//6920  							 PlayA1800_Elements(SFX_Wrong); 
+
+LM1060:
+	     .stabn 68,0,6920,LM1060-_Answer_F
+	     SP = SP - 1              	// [0:6920]  
+	     R3 = 136                 	// [1:6920]  
+	     R4 = SP + 1              	// [3:6920]  
+	     [R4] = R3                	// [5:6920]  
+	     call _PlayA1800_Elements 	// [7:6920]  PlayA1800_Elements
+BB81_PU64:	// 0x1c02
+// BB:81 cycle count: 8
+//6921  
+//6922  							 delay_time(8);
+
+LM1061:
+	     .stabn 68,0,6922,LM1061-_Answer_F
+	     R3 = 8                   	// [0:6922]  
+	     R4 = SP + 1              	// [1:6922]  
+	     [R4] = R3                	// [3:6922]  
+	     call _delay_time         	// [5:6922]  delay_time
+BB82_PU64:	// 0x1c08
+// BB:82 cycle count: 9
+//6923  							 PlayA1800_Elements(SFX_Event); 
+
+LM1062:
+	     .stabn 68,0,6923,LM1062-_Answer_F
+	     R3 = 126                 	// [0:6923]  
+	     R4 = SP + 1              	// [2:6923]  
+	     [R4] = R3                	// [4:6923]  
+	     call _PlayA1800_Elements 	// [6:6923]  PlayA1800_Elements
+BB83_PU64:	// 0x1c0f
+// BB:83 cycle count: 8
+//6924  							 delay_time(8);
 
 LM1063:
-	     .stabn 68,0,6944,LM1063-_Answer_F
-	     SP = SP - 1              	// [0:6944]  
-	     R3 = 124                 	// [1:6944]  
-	     R4 = SP + 1              	// [3:6944]  
-	     [R4] = R3                	// [5:6944]  
-	     call _PlayA1800_Elements 	// [7:6944]  PlayA1800_Elements
-BB81_PU64:	// 0x1c0d
-// BB:81 cycle count: 8
-//6945  							 delay_time(8);
+	     .stabn 68,0,6924,LM1063-_Answer_F
+	     R3 = 8                   	// [0:6924]  
+	     R4 = SP + 1              	// [1:6924]  
+	     [R4] = R3                	// [3:6924]  
+	     call _delay_time         	// [5:6924]  delay_time
+BB84_PU64:	// 0x1c15
+// BB:84 cycle count: 31
+	     SP = SP - 1              	// [0:6924]  
+//6925  							 SinceLastE  =0;
 
 LM1064:
-	     .stabn 68,0,6945,LM1064-_Answer_F
-	     R3 = 8                   	// [0:6945]  
-	     R4 = SP + 1              	// [1:6945]  
-	     [R4] = R3                	// [3:6945]  
-	     call _delay_time         	// [5:6945]  delay_time
-BB82_PU64:	// 0x1c13
-// BB:82 cycle count: 31
-	     SP = SP - 1              	// [0:6945]  
-//6946  							 SinceLastE  =0;
+	     .stabn 68,0,6925,LM1064-_Answer_F
+	     R3 = 0                   	// [1:6925]  
+	     DS = seg(_SinceLastE)    	// [2:6925]  SinceLastE
+	     R4 = (_SinceLastE)       	// [3:6925]  SinceLastE
+	     DS:[R4] = R3             	// [5:6925]  
+//6926  							 LastE=C_chance;
 
 LM1065:
-	     .stabn 68,0,6946,LM1065-_Answer_F
-	     R3 = 0                   	// [1:6946]  
-	     DS = seg(_SinceLastE)    	// [2:6946]  SinceLastE
-	     R4 = (_SinceLastE)       	// [3:6946]  SinceLastE
-	     DS:[R4] = R3             	// [5:6946]  
-//6947  							 LastE=C_chance;
+	     .stabn 68,0,6926,LM1065-_Answer_F
+	     R3 = 3                   	// [7:6926]  
+	     DS = seg(_LastE)         	// [8:6926]  LastE
+	     R4 = (_LastE)            	// [9:6926]  LastE
+	     DS:[R4] = R3             	// [11:6926]  
+//6927  							 Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
 
 LM1066:
-	     .stabn 68,0,6947,LM1066-_Answer_F
-	     R3 = 3                   	// [7:6947]  
-	     DS = seg(_LastE)         	// [8:6947]  LastE
-	     R4 = (_LastE)            	// [9:6947]  LastE
-	     DS:[R4] = R3             	// [11:6947]  
-//6948  							 Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
+	     .stabn 68,0,6927,LM1066-_Answer_F
+	     DS = seg(_Player_Activing_Cnt)	// [13:6927]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [14:6927]  Player_Activing_Cnt
+	     R3 = DS:[R4]             	// [16:6927]  
+	     R4 = SP + 1              	// [18:6927]  
+	     [R4] = R3                	// [20:6927]  
+	     R3 = 6000                	// [22:6927]  
+	     R4 = SP + 2              	// [24:6927]  
+	     [R4] = R3                	// [26:6927]  
+	     call _Play_Seq           	// [28:6927]  Play_Seq
+BB85_PU64:	// 0x1c2e
+// BB:85 cycle count: 9
+	     SP = SP + 1              	// [0:6927]  
+//6928  							 PlayA1800_Elements(A_VLMMREN_Chance);
 
 LM1067:
-	     .stabn 68,0,6948,LM1067-_Answer_F
-	     DS = seg(_Player_Activing_Cnt)	// [13:6948]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [14:6948]  Player_Activing_Cnt
-	     R3 = DS:[R4]             	// [16:6948]  
-	     R4 = SP + 1              	// [18:6948]  
-	     [R4] = R3                	// [20:6948]  
-	     R3 = 6000                	// [22:6948]  
-	     R4 = SP + 2              	// [24:6948]  
-	     [R4] = R3                	// [26:6948]  
-	     call _Play_Seq           	// [28:6948]  Play_Seq
-BB83_PU64:	// 0x1c2c
-// BB:83 cycle count: 9
-	     SP = SP + 1              	// [0:6948]  
-//6949  							 PlayA1800_Elements(A_VLMMREN_Chance);
+	     .stabn 68,0,6928,LM1067-_Answer_F
+	     R3 = 11                  	// [1:6928]  
+	     R4 = SP + 1              	// [2:6928]  
+	     [R4] = R3                	// [4:6928]  
+	     call _PlayA1800_Elements 	// [6:6928]  PlayA1800_Elements
+BB86_PU64:	// 0x1c35
+// BB:86 cycle count: 6
+	     SP = SP + 1              	// [0:6928]  
+//6929  							 Currentsound =0;
 
 LM1068:
-	     .stabn 68,0,6949,LM1068-_Answer_F
-	     R3 = 11                  	// [1:6949]  
-	     R4 = SP + 1              	// [2:6949]  
-	     [R4] = R3                	// [4:6949]  
-	     call _PlayA1800_Elements 	// [6:6949]  PlayA1800_Elements
-BB84_PU64:	// 0x1c33
-// BB:84 cycle count: 6
-	     SP = SP + 1              	// [0:6949]  
-//6950  							 Currentsound =0;
+	     .stabn 68,0,6929,LM1068-_Answer_F
+	     R4 = 0                   	// [1:6929]  
+	     [BP + 3] = R4            	// [2:6929]  Currentsound
+//6930  							 
+//6931  							 continue;
 
 LM1069:
-	     .stabn 68,0,6950,LM1069-_Answer_F
-	     R4 = 0                   	// [1:6950]  
-	     [BP + 3] = R4            	// [2:6950]  Currentsound
-//6951  							 
-//6952  							 continue;
+	     .stabn 68,0,6931,LM1069-_Answer_F
+	     goto Lt_64_4             	// [3:6931]  
+L_64_102:	// 0x1c3a
+// BB:87 cycle count: 11
+//6936  			       	    	
+//6937  				       	    #ifdef C_productTouch
+//6938  	                          Led_ON_Some(temp1);
+//6939  	                        #else
+//6940  							    Led_ON_Some(temp1>>4);
 
 LM1070:
-	     .stabn 68,0,6952,LM1070-_Answer_F
-	     goto Lt_64_4             	// [3:6952]  
-L_64_102:	// 0x1c38
-// BB:85 cycle count: 11
-//6957  			       	    	
-//6958  				       	    #ifdef C_productTouch
-//6959  	                          Led_ON_Some(temp1);
-//6960  	                        #else
-//6961  							    Led_ON_Some(temp1>>4);
+	     .stabn 68,0,6940,LM1070-_Answer_F
+	     SP = SP - 1              	// [0:6940]  
+	     R4 = [BP + 1]            	// [1:6940]  temp1
+	     R3 = R4 lsr 4            	// [3:6940]  
+	     R4 = SP + 1              	// [4:6940]  
+	     [R4] = R3                	// [6:6940]  
+	     call _Led_ON_Some        	// [8:6940]  Led_ON_Some
+BB88_PU64:	// 0x1c42
+// BB:88 cycle count: 9
+//6941  						     #endif
+//6942  			       	    	
+//6943  			           	      PlayA1800_Elements(SFX_Wrong);  
 
 LM1071:
-	     .stabn 68,0,6961,LM1071-_Answer_F
-	     SP = SP - 1              	// [0:6961]  
-	     R4 = [BP + 1]            	// [1:6961]  temp1
-	     R3 = R4 lsr 4            	// [3:6961]  
-	     R4 = SP + 1              	// [4:6961]  
-	     [R4] = R3                	// [6:6961]  
-	     call _Led_ON_Some        	// [8:6961]  Led_ON_Some
-BB86_PU64:	// 0x1c40
-// BB:86 cycle count: 9
-//6962  						     #endif
-//6963  			       	    	
-//6964  			           	      PlayA1800_Elements(SFX_Wrong);  
+	     .stabn 68,0,6943,LM1071-_Answer_F
+	     R3 = 136                 	// [0:6943]  
+	     R4 = SP + 1              	// [2:6943]  
+	     [R4] = R3                	// [4:6943]  
+	     call _PlayA1800_Elements 	// [6:6943]  PlayA1800_Elements
+BB89_PU64:	// 0x1c49
+// BB:89 cycle count: 4
+	     SP = SP + 1              	// [0:6943]  
+//6944  			           	      //delay_time(4);
+//6945  			                  Light_all_off();
 
 LM1072:
-	     .stabn 68,0,6964,LM1072-_Answer_F
-	     R3 = 134                 	// [0:6964]  
-	     R4 = SP + 1              	// [2:6964]  
-	     [R4] = R3                	// [4:6964]  
-	     call _PlayA1800_Elements 	// [6:6964]  PlayA1800_Elements
-BB87_PU64:	// 0x1c47
-// BB:87 cycle count: 4
-	     SP = SP + 1              	// [0:6964]  
-//6965  			           	      //delay_time(4);
-//6966  			                  Light_all_off();
+	     .stabn 68,0,6945,LM1072-_Answer_F
+	     call _Light_all_off      	// [1:6945]  Light_all_off
+BB90_PU64:	// 0x1c4c
+// BB:90 cycle count: 10
+//6947  
+//6948  
+//6949  							  
+//6950  			                  
+//6951  			                  if(Registerd_Num>1)
 
 LM1073:
-	     .stabn 68,0,6966,LM1073-_Answer_F
-	     call _Light_all_off      	// [1:6966]  Light_all_off
-BB88_PU64:	// 0x1c4a
-// BB:88 cycle count: 10
-//6968  
-//6969  
-//6970  							  
-//6971  			                  
-//6972  			                  if(Registerd_Num>1)
+	     .stabn 68,0,6951,LM1073-_Answer_F
+	     DS = seg(_Registerd_Num) 	// [0:6951]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:6951]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:6951]  
+	     cmp R4, 1                	// [5:6951]  
+	     ja BB91_PU64             	// [6:6951]  
+BB129_PU64:	// 0x1c52
+// BB:129 cycle count: 3
+	     goto L_64_105            	// [0:0]  
+BB91_PU64:	// 0x1c54
+// BB:91 cycle count: 19
+//6952  			                  {
+//6953  			                      Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);//PlayA1800_Elements(A_VLMMREN_Player_01+Player_Activing_Cnt);
 
 LM1074:
-	     .stabn 68,0,6972,LM1074-_Answer_F
-	     DS = seg(_Registerd_Num) 	// [0:6972]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6972]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6972]  
-	     cmp R4, 1                	// [5:6972]  
-	     ja BB89_PU64             	// [6:6972]  
-BB127_PU64:	// 0x1c50
-// BB:127 cycle count: 3
-	     goto L_64_105            	// [0:0]  
-BB89_PU64:	// 0x1c52
-// BB:89 cycle count: 19
-//6973  			                  {
-//6974  			                      Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);//PlayA1800_Elements(A_VLMMREN_Player_01+Player_Activing_Cnt);
+	     .stabn 68,0,6953,LM1074-_Answer_F
+	     SP = SP - 2              	// [0:6953]  
+	     DS = seg(_Player_Activing_Cnt)	// [1:6953]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [2:6953]  Player_Activing_Cnt
+	     R3 = DS:[R4]             	// [4:6953]  
+	     R4 = SP + 1              	// [6:6953]  
+	     [R4] = R3                	// [8:6953]  
+	     R3 = 6000                	// [10:6953]  
+	     R4 = SP + 2              	// [12:6953]  
+	     [R4] = R3                	// [14:6953]  
+	     call _Play_Seq           	// [16:6953]  Play_Seq
+BB92_PU64:	// 0x1c63
+// BB:92 cycle count: 11
+	     SP = SP + 2              	// [0:6953]  
+//6954  			                    
+//6955  			                       if((Cn==1)&&(Registerd_Num ==2))
 
 LM1075:
-	     .stabn 68,0,6974,LM1075-_Answer_F
-	     SP = SP - 2              	// [0:6974]  
-	     DS = seg(_Player_Activing_Cnt)	// [1:6974]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [2:6974]  Player_Activing_Cnt
-	     R3 = DS:[R4]             	// [4:6974]  
-	     R4 = SP + 1              	// [6:6974]  
-	     [R4] = R3                	// [8:6974]  
-	     R3 = 6000                	// [10:6974]  
-	     R4 = SP + 2              	// [12:6974]  
-	     [R4] = R3                	// [14:6974]  
-	     call _Play_Seq           	// [16:6974]  Play_Seq
-BB90_PU64:	// 0x1c61
-// BB:90 cycle count: 11
-	     SP = SP + 2              	// [0:6974]  
-//6975  			                    
-//6976  			                       if((Cn==1)&&(Registerd_Num ==2))
+	     .stabn 68,0,6955,LM1075-_Answer_F
+	     DS = seg(_Cn)            	// [1:6955]  Cn
+	     R4 = (_Cn)               	// [2:6955]  Cn
+	     R4 = DS:[R4]             	// [4:6955]  
+	     cmp R4, 1                	// [6:6955]  
+	     je BB93_PU64             	// [7:6955]  
+BB130_PU64:	// 0x1c6a
+// BB:130 cycle count: 3
+	     goto L_64_106            	// [0:0]  
+BB93_PU64:	// 0x1c6c
+// BB:93 cycle count: 10
+	     DS = seg(_Registerd_Num) 	// [0:6955]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:6955]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:6955]  
+	     cmp R4, 2                	// [5:6955]  
+	     jne BB130_PU64           	// [6:6955]  
+L_64_107:	// 0x1c72
+// BB:94 cycle count: 27
+//6956  			                       {
+//6957  			                       	  
+//6958  			                       	  Add_ALL_InactivePlayer_Point(1,Rounds,Pingame);
 
 LM1076:
-	     .stabn 68,0,6976,LM1076-_Answer_F
-	     DS = seg(_Cn)            	// [1:6976]  Cn
-	     R4 = (_Cn)               	// [2:6976]  Cn
-	     R4 = DS:[R4]             	// [4:6976]  
-	     cmp R4, 1                	// [6:6976]  
-	     je BB91_PU64             	// [7:6976]  
-BB128_PU64:	// 0x1c68
-// BB:128 cycle count: 3
-	     goto L_64_106            	// [0:0]  
-BB91_PU64:	// 0x1c6a
-// BB:91 cycle count: 10
-	     DS = seg(_Registerd_Num) 	// [0:6976]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:6976]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:6976]  
-	     cmp R4, 2                	// [5:6976]  
-	     jne BB128_PU64           	// [6:6976]  
-L_64_107:	// 0x1c70
-// BB:92 cycle count: 27
-//6977  			                       {
-//6978  			                       	  
-//6979  			                       	  Add_ALL_InactivePlayer_Point(1,Rounds,Pingame);
+	     .stabn 68,0,6958,LM1076-_Answer_F
+	     SP = SP - 5              	// [0:6958]  
+	     R3 = 1                   	// [1:6958]  
+	     R4 = SP + 1              	// [2:6958]  
+	     [R4] = R3                	// [4:6958]  
+	     R2 = (_Rounds)           	// [6:6958]  Rounds
+	     R3 = seg(_Rounds)        	// [8:6958]  Rounds
+	     R4 = SP + 2              	// [9:6958]  
+	     [R4++] = R2              	// [11:6958]  
+	     [R4] = R3                	// [13:6958]  
+	     R2 = (_Pingame)          	// [15:6958]  Pingame
+	     R3 = seg(_Pingame)       	// [17:6958]  Pingame
+	     R4 = SP + 4              	// [18:6958]  
+	     [R4++] = R2              	// [20:6958]  
+	     [R4] = R3                	// [22:6958]  
+	     call _Add_ALL_InactivePlayer_Point	// [24:6958]  Add_ALL_InactivePlayer_Point
+BB95_PU64:	// 0x1c87
+// BB:95 cycle count: 62
+	     SP = SP + 4              	// [0:6958]  
+//6959  			                       	  Pingame[Player_Activing_Cnt/16]&=~BitMap[Player_Activing_Cnt%16];	
 
 LM1077:
-	     .stabn 68,0,6979,LM1077-_Answer_F
-	     SP = SP - 5              	// [0:6979]  
-	     R3 = 1                   	// [1:6979]  
-	     R4 = SP + 1              	// [2:6979]  
-	     [R4] = R3                	// [4:6979]  
-	     R2 = (_Rounds)           	// [6:6979]  Rounds
-	     R3 = seg(_Rounds)        	// [8:6979]  Rounds
-	     R4 = SP + 2              	// [9:6979]  
-	     [R4++] = R2              	// [11:6979]  
-	     [R4] = R3                	// [13:6979]  
-	     R2 = (_Pingame)          	// [15:6979]  Pingame
-	     R3 = seg(_Pingame)       	// [17:6979]  Pingame
-	     R4 = SP + 4              	// [18:6979]  
-	     [R4++] = R2              	// [20:6979]  
-	     [R4] = R3                	// [22:6979]  
-	     call _Add_ALL_InactivePlayer_Point	// [24:6979]  Add_ALL_InactivePlayer_Point
-BB93_PU64:	// 0x1c85
-// BB:93 cycle count: 62
-	     SP = SP + 4              	// [0:6979]  
-//6980  			                       	  Pingame[Player_Activing_Cnt/16]&=~BitMap[Player_Activing_Cnt%16];	
+	     .stabn 68,0,6959,LM1077-_Answer_F
+	     DS = seg(_Player_Activing_Cnt)	// [1:6959]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [2:6959]  Player_Activing_Cnt
+	     R4 = DS:[R4]             	// [4:6959]  
+	     R4 = R4 lsr 4            	// [6:6959]  
+	     [BP + 5] = R4            	// [7:6959]  __save_expr_temp_18
+	     R4 = [BP + 5]            	// [8:6959]  __save_expr_temp_18
+	     R3 = 0                   	// [10:6959]  
+	     R1 = (_Pingame)          	// [11:6959]  Pingame
+	     R2 = seg(_Pingame)       	// [13:6959]  Pingame
+	     R4 = R4 + R1             	// [14:6959]  
+	     R3 = R3 + R2, Carry      	// [15:6959]  
+	     DS = R3                  	// [16:6959]  
+	     R4 = DS:[R4]             	// [17:6959]  
+	     [BP + 8] = R4            	// [19:6959]  lra_spill_temp_42
+	     DS = seg(_Player_Activing_Cnt)	// [20:6959]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [21:6959]  Player_Activing_Cnt
+	     R4 = DS:[R4]             	// [23:6959]  
+	     R4 = R4 & 15             	// [25:6959]  
+	     R3 = 0                   	// [26:6959]  
+	     R1 = (_BitMap)           	// [27:6959]  BitMap
+	     R2 = seg(_BitMap)        	// [29:6959]  BitMap
+	     R4 = R4 + R1             	// [30:6959]  
+	     R3 = R3 + R2, Carry      	// [31:6959]  
+	     DS = R3                  	// [32:6959]  
+	     R4 = DS:[R4]             	// [33:6959]  
+	     R3 = R4 ^ 65535          	// [35:6959]  
+	     R4 = [BP + 8]            	// [37:6959]  lra_spill_temp_42
+	     R4 = R4 & R3             	// [39:6959]  
+	     [BP + 9] = R4            	// [40:6959]  lra_spill_temp_43
+	     R4 = [BP + 5]            	// [41:6959]  __save_expr_temp_18
+	     R3 = 0                   	// [43:6959]  
+	     R1 = (_Pingame)          	// [44:6959]  Pingame
+	     R2 = seg(_Pingame)       	// [46:6959]  Pingame
+	     R4 = R4 + R1             	// [47:6959]  
+	     R3 = R3 + R2, Carry      	// [48:6959]  
+	     DS = R3                  	// [49:6959]  
+	     R3 = [BP + 9]            	// [50:6959]  lra_spill_temp_43
+	     DS:[R4] = R3             	// [52:6959]  
+//6960  			                       	  
+//6961  			                       	
+//6962  			                       	  PlayA1800_Elements(A_VLMMREN_2Outa);
 
 LM1078:
-	     .stabn 68,0,6980,LM1078-_Answer_F
-	     DS = seg(_Player_Activing_Cnt)	// [1:6980]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [2:6980]  Player_Activing_Cnt
-	     R4 = DS:[R4]             	// [4:6980]  
-	     R4 = R4 lsr 4            	// [6:6980]  
-	     [BP + 5] = R4            	// [7:6980]  __save_expr_temp_18
-	     R4 = [BP + 5]            	// [8:6980]  __save_expr_temp_18
-	     R3 = 0                   	// [10:6980]  
-	     R1 = (_Pingame)          	// [11:6980]  Pingame
-	     R2 = seg(_Pingame)       	// [13:6980]  Pingame
-	     R4 = R4 + R1             	// [14:6980]  
-	     R3 = R3 + R2, Carry      	// [15:6980]  
-	     DS = R3                  	// [16:6980]  
-	     R4 = DS:[R4]             	// [17:6980]  
-	     [BP + 8] = R4            	// [19:6980]  lra_spill_temp_42
-	     DS = seg(_Player_Activing_Cnt)	// [20:6980]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [21:6980]  Player_Activing_Cnt
-	     R4 = DS:[R4]             	// [23:6980]  
-	     R4 = R4 & 15             	// [25:6980]  
-	     R3 = 0                   	// [26:6980]  
-	     R1 = (_BitMap)           	// [27:6980]  BitMap
-	     R2 = seg(_BitMap)        	// [29:6980]  BitMap
-	     R4 = R4 + R1             	// [30:6980]  
-	     R3 = R3 + R2, Carry      	// [31:6980]  
-	     DS = R3                  	// [32:6980]  
-	     R4 = DS:[R4]             	// [33:6980]  
-	     R3 = R4 ^ 65535          	// [35:6980]  
-	     R4 = [BP + 8]            	// [37:6980]  lra_spill_temp_42
-	     R4 = R4 & R3             	// [39:6980]  
-	     [BP + 9] = R4            	// [40:6980]  lra_spill_temp_43
-	     R4 = [BP + 5]            	// [41:6980]  __save_expr_temp_18
-	     R3 = 0                   	// [43:6980]  
-	     R1 = (_Pingame)          	// [44:6980]  Pingame
-	     R2 = seg(_Pingame)       	// [46:6980]  Pingame
-	     R4 = R4 + R1             	// [47:6980]  
-	     R3 = R3 + R2, Carry      	// [48:6980]  
-	     DS = R3                  	// [49:6980]  
-	     R3 = [BP + 9]            	// [50:6980]  lra_spill_temp_43
-	     DS:[R4] = R3             	// [52:6980]  
-//6981  			                       	  
-//6982  			                       	
-//6983  			                       	  PlayA1800_Elements(A_VLMMREN_2Outa);
+	     .stabn 68,0,6962,LM1078-_Answer_F
+	     R3 = 3                   	// [54:6962]  
+	     R4 = SP + 1              	// [55:6962]  
+	     [R4] = R3                	// [57:6962]  
+	     call _PlayA1800_Elements 	// [59:6962]  PlayA1800_Elements
+BB96_PU64:	// 0x1cba
+// BB:96 cycle count: 8
+//6963  			                       	  PlayA1800_Elements(A_VLMMREN_Out); 
 
 LM1079:
-	     .stabn 68,0,6983,LM1079-_Answer_F
-	     R3 = 3                   	// [54:6983]  
-	     R4 = SP + 1              	// [55:6983]  
-	     [R4] = R3                	// [57:6983]  
-	     call _PlayA1800_Elements 	// [59:6983]  PlayA1800_Elements
-BB94_PU64:	// 0x1cb8
-// BB:94 cycle count: 8
-//6984  			                       	  PlayA1800_Elements(A_VLMMREN_Out); 
+	     .stabn 68,0,6963,LM1079-_Answer_F
+	     R3 = 36                  	// [0:6963]  
+	     R4 = SP + 1              	// [1:6963]  
+	     [R4] = R3                	// [3:6963]  
+	     call _PlayA1800_Elements 	// [5:6963]  PlayA1800_Elements
+BB97_PU64:	// 0x1cc0
+// BB:97 cycle count: 8
+//6964  									  delay_time(8);
 
 LM1080:
-	     .stabn 68,0,6984,LM1080-_Answer_F
-	     R3 = 36                  	// [0:6984]  
-	     R4 = SP + 1              	// [1:6984]  
-	     [R4] = R3                	// [3:6984]  
-	     call _PlayA1800_Elements 	// [5:6984]  PlayA1800_Elements
-BB95_PU64:	// 0x1cbe
-// BB:95 cycle count: 8
-//6985  									  delay_time(8);
+	     .stabn 68,0,6964,LM1080-_Answer_F
+	     R3 = 8                   	// [0:6964]  
+	     R4 = SP + 1              	// [1:6964]  
+	     [R4] = R3                	// [3:6964]  
+	     call _delay_time         	// [5:6964]  delay_time
+BB98_PU64:	// 0x1cc6
+// BB:98 cycle count: 43
+	     SP = SP - 3              	// [0:6964]  
+//6965  			                       	  Play_Serieplayer16bit(0,Registered_Play_Status&(~BitMap[Player_Activing_Cnt]),C_Play_StartAddr);
 
 LM1081:
-	     .stabn 68,0,6985,LM1081-_Answer_F
-	     R3 = 8                   	// [0:6985]  
-	     R4 = SP + 1              	// [1:6985]  
-	     [R4] = R3                	// [3:6985]  
-	     call _delay_time         	// [5:6985]  delay_time
-BB96_PU64:	// 0x1cc4
-// BB:96 cycle count: 43
-	     SP = SP - 3              	// [0:6985]  
-//6986  			                       	  Play_Serieplayer16bit(0,Registered_Play_Status&(~BitMap[Player_Activing_Cnt]),C_Play_StartAddr);
+	     .stabn 68,0,6965,LM1081-_Answer_F
+	     R3 = 0                   	// [1:6965]  
+	     R4 = SP + 1              	// [2:6965]  
+	     [R4] = R3                	// [4:6965]  
+	     DS = seg(_Player_Activing_Cnt)	// [6:6965]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [7:6965]  Player_Activing_Cnt
+	     R4 = DS:[R4]             	// [9:6965]  
+	     R3 = 0                   	// [11:6965]  
+	     R1 = (_BitMap)           	// [12:6965]  BitMap
+	     R2 = seg(_BitMap)        	// [14:6965]  BitMap
+	     R4 = R4 + R1             	// [15:6965]  
+	     R3 = R3 + R2, Carry      	// [16:6965]  
+	     DS = R3                  	// [17:6965]  
+	     R4 = DS:[R4]             	// [18:6965]  
+	     R4 = R4 ^ 65535          	// [20:6965]  
+	     DS = seg(_Registered_Play_Status)	// [22:6965]  Registered_Play_Status
+	     R3 = (_Registered_Play_Status)	// [23:6965]  Registered_Play_Status
+	     R4 = R4 & DS:[R3]        	// [25:6965]  
+	     R3 = SP + 2              	// [27:6965]  
+	     [R3] = R4                	// [29:6965]  
+	     R2 = 6000                	// [31:6965]  
+	     R3 = 0                   	// [33:6965]  
+	     R4 = SP + 3              	// [34:6965]  
+	     [R4++] = R2              	// [36:6965]  
+	     [R4] = R3                	// [38:6965]  
+	     call _Play_Serieplayer16bit	// [40:6965]  Play_Serieplayer16bit
+BB99_PU64:	// 0x1ce9
+// BB:99 cycle count: 9
+	     SP = SP + 3              	// [0:6965]  
+//6966  			                       	  
+//6967  			                       	  PlayA1800_Elements(A_VLMMREN_End_02b);
 
 LM1082:
-	     .stabn 68,0,6986,LM1082-_Answer_F
-	     R3 = 0                   	// [1:6986]  
-	     R4 = SP + 1              	// [2:6986]  
-	     [R4] = R3                	// [4:6986]  
-	     DS = seg(_Player_Activing_Cnt)	// [6:6986]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [7:6986]  Player_Activing_Cnt
-	     R4 = DS:[R4]             	// [9:6986]  
-	     R3 = 0                   	// [11:6986]  
-	     R1 = (_BitMap)           	// [12:6986]  BitMap
-	     R2 = seg(_BitMap)        	// [14:6986]  BitMap
-	     R4 = R4 + R1             	// [15:6986]  
-	     R3 = R3 + R2, Carry      	// [16:6986]  
-	     DS = R3                  	// [17:6986]  
-	     R4 = DS:[R4]             	// [18:6986]  
-	     R4 = R4 ^ 65535          	// [20:6986]  
-	     DS = seg(_Registered_Play_Status)	// [22:6986]  Registered_Play_Status
-	     R3 = (_Registered_Play_Status)	// [23:6986]  Registered_Play_Status
-	     R4 = R4 & DS:[R3]        	// [25:6986]  
-	     R3 = SP + 2              	// [27:6986]  
-	     [R3] = R4                	// [29:6986]  
-	     R2 = 6000                	// [31:6986]  
-	     R3 = 0                   	// [33:6986]  
-	     R4 = SP + 3              	// [34:6986]  
-	     [R4++] = R2              	// [36:6986]  
-	     [R4] = R3                	// [38:6986]  
-	     call _Play_Serieplayer16bit	// [40:6986]  Play_Serieplayer16bit
-BB97_PU64:	// 0x1ce7
-// BB:97 cycle count: 9
-	     SP = SP + 3              	// [0:6986]  
-//6987  			                       	  
-//6988  			                       	  PlayA1800_Elements(A_VLMMREN_End_02b);
+	     .stabn 68,0,6967,LM1082-_Answer_F
+	     R3 = 21                  	// [1:6967]  
+	     R4 = SP + 1              	// [2:6967]  
+	     [R4] = R3                	// [4:6967]  
+	     call _PlayA1800_Elements 	// [6:6967]  PlayA1800_Elements
+BB100_PU64:	// 0x1cf0
+// BB:100 cycle count: 8
+//6968  									  delay_time(8);
 
 LM1083:
-	     .stabn 68,0,6988,LM1083-_Answer_F
-	     R3 = 21                  	// [1:6988]  
-	     R4 = SP + 1              	// [2:6988]  
-	     [R4] = R3                	// [4:6988]  
-	     call _PlayA1800_Elements 	// [6:6988]  PlayA1800_Elements
-BB98_PU64:	// 0x1cee
-// BB:98 cycle count: 8
-//6989  									  delay_time(8);
+	     .stabn 68,0,6968,LM1083-_Answer_F
+	     R3 = 8                   	// [0:6968]  
+	     R4 = SP + 1              	// [1:6968]  
+	     [R4] = R3                	// [3:6968]  
+	     call _delay_time         	// [5:6968]  delay_time
+BB101_PU64:	// 0x1cf6
+// BB:101 cycle count: 8
+//6969  			                       	  PlayA1800_Elements(A_VLMMREN_2Outb);
 
 LM1084:
-	     .stabn 68,0,6989,LM1084-_Answer_F
-	     R3 = 8                   	// [0:6989]  
-	     R4 = SP + 1              	// [1:6989]  
-	     [R4] = R3                	// [3:6989]  
-	     call _delay_time         	// [5:6989]  delay_time
-BB99_PU64:	// 0x1cf4
-// BB:99 cycle count: 8
-//6990  			                       	  PlayA1800_Elements(A_VLMMREN_2Outb);
+	     .stabn 68,0,6969,LM1084-_Answer_F
+	     R3 = 4                   	// [0:6969]  
+	     R4 = SP + 1              	// [1:6969]  
+	     [R4] = R3                	// [3:6969]  
+	     call _PlayA1800_Elements 	// [5:6969]  PlayA1800_Elements
+BB102_PU64:	// 0x1cfc
+// BB:102 cycle count: 14
+//6970  			                       	  
+//6971  			                       	  End20flag =1;
 
 LM1085:
-	     .stabn 68,0,6990,LM1085-_Answer_F
-	     R3 = 4                   	// [0:6990]  
-	     R4 = SP + 1              	// [1:6990]  
-	     [R4] = R3                	// [3:6990]  
-	     call _PlayA1800_Elements 	// [5:6990]  PlayA1800_Elements
-BB100_PU64:	// 0x1cfa
-// BB:100 cycle count: 14
-//6991  			                       	  
-//6992  			                       	  End20flag =1;
+	     .stabn 68,0,6971,LM1085-_Answer_F
+	     R3 = 1                   	// [0:6971]  
+	     DS = seg(_End20flag)     	// [1:6971]  End20flag
+	     R4 = (_End20flag)        	// [2:6971]  End20flag
+	     DS:[R4] = R3             	// [4:6971]  
+//6972  			                       	  delay_time(8);
 
 LM1086:
-	     .stabn 68,0,6992,LM1086-_Answer_F
-	     R3 = 1                   	// [0:6992]  
-	     DS = seg(_End20flag)     	// [1:6992]  End20flag
-	     R4 = (_End20flag)        	// [2:6992]  End20flag
-	     DS:[R4] = R3             	// [4:6992]  
-//6993  			                       	  delay_time(8);
+	     .stabn 68,0,6972,LM1086-_Answer_F
+	     R3 = 8                   	// [6:6972]  
+	     R4 = SP + 1              	// [7:6972]  
+	     [R4] = R3                	// [9:6972]  
+	     call _delay_time         	// [11:6972]  delay_time
+BB103_PU64:	// 0x1d07
+// BB:103 cycle count: 6
+	     SP = SP + 12             	// [0:6972]  
+//6973  			                       	  return C_End20;
 
 LM1087:
-	     .stabn 68,0,6993,LM1087-_Answer_F
-	     R3 = 8                   	// [6:6993]  
-	     R4 = SP + 1              	// [7:6993]  
-	     [R4] = R3                	// [9:6993]  
-	     call _delay_time         	// [11:6993]  delay_time
-BB101_PU64:	// 0x1d05
-// BB:101 cycle count: 6
-	     SP = SP + 12             	// [0:6993]  
-//6994  			                       	  return C_End20;
+	     .stabn 68,0,6973,LM1087-_Answer_F
+	     pop BP, PC from [SP]     	// [1:6973]  
+L_64_106:	// 0x1d09
+L_64_105:	// 0x1d09
+// BB:104 cycle count: 9
+//6974  			                       }
+//6975  			                  
+//6976  			                  }
+//6977  			                  
+//6978  			                  PlayA1800_Elements(A_VLMMREN_Aie);
 
 LM1088:
-	     .stabn 68,0,6994,LM1088-_Answer_F
-	     pop BP, PC from [SP]     	// [1:6994]  
-L_64_106:	// 0x1d07
-L_64_105:	// 0x1d07
-// BB:102 cycle count: 9
-//6995  			                       }
-//6996  			                  
-//6997  			                  }
-//6998  			                  
-//6999  			                  PlayA1800_Elements(A_VLMMREN_Aie);
+	     .stabn 68,0,6978,LM1088-_Answer_F
+	     SP = SP - 1              	// [0:6978]  
+	     R3 = 5                   	// [1:6978]  
+	     R4 = SP + 1              	// [2:6978]  
+	     [R4] = R3                	// [4:6978]  
+	     call _PlayA1800_Elements 	// [6:6978]  PlayA1800_Elements
+BB105_PU64:	// 0x1d10
+// BB:105 cycle count: 13
+	     SP = SP + 1              	// [0:6978]  
+//6979  
+//6980  
+//6981  							 if((firstFlag_23b&0x100)==0)
 
 LM1089:
-	     .stabn 68,0,6999,LM1089-_Answer_F
-	     SP = SP - 1              	// [0:6999]  
-	     R3 = 5                   	// [1:6999]  
-	     R4 = SP + 1              	// [2:6999]  
-	     [R4] = R3                	// [4:6999]  
-	     call _PlayA1800_Elements 	// [6:6999]  PlayA1800_Elements
-BB103_PU64:	// 0x1d0e
-// BB:103 cycle count: 13
-	     SP = SP + 1              	// [0:6999]  
-//7000  
-//7001  
-//7002  							 if((firstFlag_23b&0x100)==0)
+	     .stabn 68,0,6981,LM1089-_Answer_F
+	     DS = seg(_firstFlag_23b) 	// [1:6981]  firstFlag_23b
+	     R4 = (_firstFlag_23b)    	// [2:6981]  firstFlag_23b
+	     R4 = DS:[R4]             	// [4:6981]  
+	     R4 = R4 & 256            	// [6:6981]  
+	     cmp R4, 0                	// [8:6981]  
+	     jne L_64_108             	// [9:6981]  
+BB106_PU64:	// 0x1d19
+// BB:106 cycle count: 9
+//6982  							 	{
+//6983  			           	           PlayA1800_Elements(A_VLMMREN_Out);
 
 LM1090:
-	     .stabn 68,0,7002,LM1090-_Answer_F
-	     DS = seg(_firstFlag_23b) 	// [1:7002]  firstFlag_23b
-	     R4 = (_firstFlag_23b)    	// [2:7002]  firstFlag_23b
-	     R4 = DS:[R4]             	// [4:7002]  
-	     R4 = R4 & 256            	// [6:7002]  
-	     cmp R4, 0                	// [8:7002]  
-	     jne L_64_108             	// [9:7002]  
-BB104_PU64:	// 0x1d17
-// BB:104 cycle count: 9
-//7003  							 	{
-//7004  			           	           PlayA1800_Elements(A_VLMMREN_Out);
+	     .stabn 68,0,6983,LM1090-_Answer_F
+	     SP = SP - 1              	// [0:6983]  
+	     R3 = 36                  	// [1:6983]  
+	     R4 = SP + 1              	// [2:6983]  
+	     [R4] = R3                	// [4:6983]  
+	     call _PlayA1800_Elements 	// [6:6983]  PlayA1800_Elements
+BB107_PU64:	// 0x1d20
+// BB:107 cycle count: 13
+	     SP = SP + 1              	// [0:6983]  
+//6984                                     firstFlag_23b|=0x100;
 
 LM1091:
-	     .stabn 68,0,7004,LM1091-_Answer_F
-	     SP = SP - 1              	// [0:7004]  
-	     R3 = 36                  	// [1:7004]  
-	     R4 = SP + 1              	// [2:7004]  
-	     [R4] = R3                	// [4:7004]  
-	     call _PlayA1800_Elements 	// [6:7004]  PlayA1800_Elements
-BB105_PU64:	// 0x1d1e
-// BB:105 cycle count: 13
-	     SP = SP + 1              	// [0:7004]  
-//7005                                     firstFlag_23b|=0x100;
+	     .stabn 68,0,6984,LM1091-_Answer_F
+	     DS = seg(_firstFlag_23b) 	// [1:6984]  firstFlag_23b
+	     R4 = (_firstFlag_23b)    	// [2:6984]  firstFlag_23b
+	     R4 = DS:[R4]             	// [4:6984]  
+	     R3 = R4 | 256            	// [6:6984]  
+	     DS = seg(_firstFlag_23b) 	// [8:6984]  firstFlag_23b
+	     R4 = (_firstFlag_23b)    	// [9:6984]  firstFlag_23b
+	     DS:[R4] = R3             	// [11:6984]  
+L_64_108:	// 0x1d2b
+L_64_101:	// 0x1d2b
+L_64_97:	// 0x1d2b
+// BB:108 cycle count: 62
+//6985  							 	}
+//6986  			       	    }
+//6987  		           	      
+//6988  		                  Pingame[Player_Activing_Cnt/16]&=~BitMap[Player_Activing_Cnt%16];	
 
 LM1092:
-	     .stabn 68,0,7005,LM1092-_Answer_F
-	     DS = seg(_firstFlag_23b) 	// [1:7005]  firstFlag_23b
-	     R4 = (_firstFlag_23b)    	// [2:7005]  firstFlag_23b
-	     R4 = DS:[R4]             	// [4:7005]  
-	     R3 = R4 | 256            	// [6:7005]  
-	     DS = seg(_firstFlag_23b) 	// [8:7005]  firstFlag_23b
-	     R4 = (_firstFlag_23b)    	// [9:7005]  firstFlag_23b
-	     DS:[R4] = R3             	// [11:7005]  
-L_64_108:	// 0x1d29
-L_64_101:	// 0x1d29
-L_64_97:	// 0x1d29
-// BB:106 cycle count: 62
-//7006  							 	}
-//7007  			       	    }
-//7008  		           	      
-//7009  		                  Pingame[Player_Activing_Cnt/16]&=~BitMap[Player_Activing_Cnt%16];	
+	     .stabn 68,0,6988,LM1092-_Answer_F
+	     DS = seg(_Player_Activing_Cnt)	// [0:6988]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [1:6988]  Player_Activing_Cnt
+	     R4 = DS:[R4]             	// [3:6988]  
+	     R4 = R4 lsr 4            	// [5:6988]  
+	     [BP + 6] = R4            	// [6:6988]  __save_expr_temp_19
+	     R4 = [BP + 6]            	// [7:6988]  __save_expr_temp_19
+	     R3 = 0                   	// [9:6988]  
+	     R1 = (_Pingame)          	// [10:6988]  Pingame
+	     R2 = seg(_Pingame)       	// [12:6988]  Pingame
+	     R4 = R4 + R1             	// [13:6988]  
+	     R3 = R3 + R2, Carry      	// [14:6988]  
+	     DS = R3                  	// [15:6988]  
+	     R4 = DS:[R4]             	// [16:6988]  
+	     [BP + 9] = R4            	// [18:6988]  lra_spill_temp_43
+	     DS = seg(_Player_Activing_Cnt)	// [19:6988]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [20:6988]  Player_Activing_Cnt
+	     R4 = DS:[R4]             	// [22:6988]  
+	     R4 = R4 & 15             	// [24:6988]  
+	     R3 = 0                   	// [25:6988]  
+	     R1 = (_BitMap)           	// [26:6988]  BitMap
+	     R2 = seg(_BitMap)        	// [28:6988]  BitMap
+	     R4 = R4 + R1             	// [29:6988]  
+	     R3 = R3 + R2, Carry      	// [30:6988]  
+	     DS = R3                  	// [31:6988]  
+	     R4 = DS:[R4]             	// [32:6988]  
+	     R3 = R4 ^ 65535          	// [34:6988]  
+	     R4 = [BP + 9]            	// [36:6988]  lra_spill_temp_43
+	     R4 = R4 & R3             	// [38:6988]  
+	     [BP + 8] = R4            	// [39:6988]  lra_spill_temp_42
+	     R4 = [BP + 6]            	// [40:6988]  __save_expr_temp_19
+	     R3 = 0                   	// [42:6988]  
+	     R1 = (_Pingame)          	// [43:6988]  Pingame
+	     R2 = seg(_Pingame)       	// [45:6988]  Pingame
+	     R4 = R4 + R1             	// [46:6988]  
+	     R3 = R3 + R2, Carry      	// [47:6988]  
+	     DS = R3                  	// [48:6988]  
+	     R3 = [BP + 8]            	// [49:6988]  lra_spill_temp_42
+	     DS:[R4] = R3             	// [51:6988]  
+//6989  		                  
+//6990  		                 // PlayA1800_Elements(SFX_Buzzer);
+//6991  		                 // Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
+//6992  						 // PlayA1800_Elements(A_VLMMREN_Out);
+//6993  		                  delay_time(16);
 
 LM1093:
-	     .stabn 68,0,7009,LM1093-_Answer_F
-	     DS = seg(_Player_Activing_Cnt)	// [0:7009]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [1:7009]  Player_Activing_Cnt
-	     R4 = DS:[R4]             	// [3:7009]  
-	     R4 = R4 lsr 4            	// [5:7009]  
-	     [BP + 6] = R4            	// [6:7009]  __save_expr_temp_19
-	     R4 = [BP + 6]            	// [7:7009]  __save_expr_temp_19
-	     R3 = 0                   	// [9:7009]  
-	     R1 = (_Pingame)          	// [10:7009]  Pingame
-	     R2 = seg(_Pingame)       	// [12:7009]  Pingame
-	     R4 = R4 + R1             	// [13:7009]  
-	     R3 = R3 + R2, Carry      	// [14:7009]  
-	     DS = R3                  	// [15:7009]  
-	     R4 = DS:[R4]             	// [16:7009]  
-	     [BP + 9] = R4            	// [18:7009]  lra_spill_temp_43
-	     DS = seg(_Player_Activing_Cnt)	// [19:7009]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [20:7009]  Player_Activing_Cnt
-	     R4 = DS:[R4]             	// [22:7009]  
-	     R4 = R4 & 15             	// [24:7009]  
-	     R3 = 0                   	// [25:7009]  
-	     R1 = (_BitMap)           	// [26:7009]  BitMap
-	     R2 = seg(_BitMap)        	// [28:7009]  BitMap
-	     R4 = R4 + R1             	// [29:7009]  
-	     R3 = R3 + R2, Carry      	// [30:7009]  
-	     DS = R3                  	// [31:7009]  
-	     R4 = DS:[R4]             	// [32:7009]  
-	     R3 = R4 ^ 65535          	// [34:7009]  
-	     R4 = [BP + 9]            	// [36:7009]  lra_spill_temp_43
-	     R4 = R4 & R3             	// [38:7009]  
-	     [BP + 8] = R4            	// [39:7009]  lra_spill_temp_42
-	     R4 = [BP + 6]            	// [40:7009]  __save_expr_temp_19
-	     R3 = 0                   	// [42:7009]  
-	     R1 = (_Pingame)          	// [43:7009]  Pingame
-	     R2 = seg(_Pingame)       	// [45:7009]  Pingame
-	     R4 = R4 + R1             	// [46:7009]  
-	     R3 = R3 + R2, Carry      	// [47:7009]  
-	     DS = R3                  	// [48:7009]  
-	     R3 = [BP + 8]            	// [49:7009]  lra_spill_temp_42
-	     DS:[R4] = R3             	// [51:7009]  
-//7010  		                  
-//7011  		                 // PlayA1800_Elements(SFX_Buzzer);
-//7012  		                 // Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
-//7013  						 // PlayA1800_Elements(A_VLMMREN_Out);
-//7014  		                  delay_time(16);
+	     .stabn 68,0,6993,LM1093-_Answer_F
+	     SP = SP - 1              	// [53:6993]  
+	     R3 = 16                  	// [54:6993]  
+	     R4 = SP + 1              	// [55:6993]  
+	     [R4] = R3                	// [57:6993]  
+	     call _delay_time         	// [59:6993]  delay_time
+BB109_PU64:	// 0x1d5e
+// BB:109 cycle count: 4
+	     SP = SP + 1              	// [0:6993]  
+//6994  						   if(Get_Length_Pingame()<2)
 
 LM1094:
-	     .stabn 68,0,7014,LM1094-_Answer_F
-	     SP = SP - 1              	// [53:7014]  
-	     R3 = 16                  	// [54:7014]  
-	     R4 = SP + 1              	// [55:7014]  
-	     [R4] = R3                	// [57:7014]  
-	     call _delay_time         	// [59:7014]  delay_time
-BB107_PU64:	// 0x1d5c
-// BB:107 cycle count: 4
-	     SP = SP + 1              	// [0:7014]  
-//7015  						   if(Get_Length_Pingame()<2)
+	     .stabn 68,0,6994,LM1094-_Answer_F
+	     call _Get_Length_Pingame 	// [1:6994]  Get_Length_Pingame
+BB110_PU64:	// 0x1d61
+// BB:110 cycle count: 5
+	     cmp R1, 1                	// [0:6994]  
+	     ja L_64_109              	// [1:6994]  
+BB111_PU64:	// 0x1d63
+// BB:111 cycle count: 3
+//6995  						   	  break;
 
 LM1095:
-	     .stabn 68,0,7015,LM1095-_Answer_F
-	     call _Get_Length_Pingame 	// [1:7015]  Get_Length_Pingame
-BB108_PU64:	// 0x1d5f
-// BB:108 cycle count: 5
-	     cmp R1, 1                	// [0:7015]  
-	     ja L_64_109              	// [1:7015]  
-BB109_PU64:	// 0x1d61
-// BB:109 cycle count: 3
-//7016  						   	  break;
+	     .stabn 68,0,6995,LM1095-_Answer_F
+	     goto Lt_64_3             	// [0:6995]  
+L_64_109:	// 0x1d65
+// BB:112 cycle count: 7
+//6996  		
+//6997  		                  if(round>=1)
 
 LM1096:
-	     .stabn 68,0,7016,LM1096-_Answer_F
-	     goto Lt_64_3             	// [0:7016]  
-L_64_109:	// 0x1d63
-// BB:110 cycle count: 7
-//7017  		
-//7018  		                  if(round>=1)
+	     .stabn 68,0,6997,LM1096-_Answer_F
+	     R4 = [BP + 2]            	// [0:6997]  round
+	     cmp R4, 0                	// [2:6997]  
+	     je L_64_110              	// [3:6997]  
+BB113_PU64:	// 0x1d68
+// BB:113 cycle count: 34
+//6998  		                     Player_Point[Player_Activing_Cnt]+=round-1;  
 
 LM1097:
-	     .stabn 68,0,7018,LM1097-_Answer_F
-	     R4 = [BP + 2]            	// [0:7018]  round
-	     cmp R4, 0                	// [2:7018]  
-	     je L_64_110              	// [3:7018]  
-BB111_PU64:	// 0x1d66
-// BB:111 cycle count: 34
-//7019  		                     Player_Point[Player_Activing_Cnt]+=round-1;  
+	     .stabn 68,0,6998,LM1097-_Answer_F
+	     DS = seg(_Player_Activing_Cnt)	// [0:6998]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [1:6998]  Player_Activing_Cnt
+	     R4 = DS:[R4]             	// [3:6998]  
+	     R3 = 0                   	// [5:6998]  
+	     R1 = (_Player_Point)     	// [6:6998]  Player_Point
+	     R2 = seg(_Player_Point)  	// [8:6998]  Player_Point
+	     R4 = R4 + R1             	// [9:6998]  
+	     R3 = R3 + R2, Carry      	// [10:6998]  
+	     DS = R3                  	// [11:6998]  
+	     R4 = DS:[R4]             	// [12:6998]  
+	     R4 = R4 + [BP + 2]       	// [14:6998]  round
+	     R4 = R4 - 1              	// [16:6998]  
+	     [BP + 8] = R4            	// [17:6998]  lra_spill_temp_42
+	     DS = seg(_Player_Activing_Cnt)	// [18:6998]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [19:6998]  Player_Activing_Cnt
+	     R4 = DS:[R4]             	// [21:6998]  
+	     R3 = 0                   	// [23:6998]  
+	     R1 = (_Player_Point)     	// [24:6998]  Player_Point
+	     R2 = seg(_Player_Point)  	// [26:6998]  Player_Point
+	     R4 = R4 + R1             	// [27:6998]  
+	     R3 = R3 + R2, Carry      	// [28:6998]  
+	     DS = R3                  	// [29:6998]  
+	     R3 = [BP + 8]            	// [30:6998]  lra_spill_temp_42
+	     DS:[R4] = R3             	// [32:6998]  
+L_64_110:	// 0x1d84
+// BB:114 cycle count: 5
+//6999  		                   
+//7000  						   Currentsound=0;
 
 LM1098:
-	     .stabn 68,0,7019,LM1098-_Answer_F
-	     DS = seg(_Player_Activing_Cnt)	// [0:7019]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [1:7019]  Player_Activing_Cnt
-	     R4 = DS:[R4]             	// [3:7019]  
-	     R3 = 0                   	// [5:7019]  
-	     R1 = (_Player_Point)     	// [6:7019]  Player_Point
-	     R2 = seg(_Player_Point)  	// [8:7019]  Player_Point
-	     R4 = R4 + R1             	// [9:7019]  
-	     R3 = R3 + R2, Carry      	// [10:7019]  
-	     DS = R3                  	// [11:7019]  
-	     R4 = DS:[R4]             	// [12:7019]  
-	     R4 = R4 + [BP + 2]       	// [14:7019]  round
-	     R4 = R4 - 1              	// [16:7019]  
-	     [BP + 8] = R4            	// [17:7019]  lra_spill_temp_42
-	     DS = seg(_Player_Activing_Cnt)	// [18:7019]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [19:7019]  Player_Activing_Cnt
-	     R4 = DS:[R4]             	// [21:7019]  
-	     R3 = 0                   	// [23:7019]  
-	     R1 = (_Player_Point)     	// [24:7019]  Player_Point
-	     R2 = seg(_Player_Point)  	// [26:7019]  Player_Point
-	     R4 = R4 + R1             	// [27:7019]  
-	     R3 = R3 + R2, Carry      	// [28:7019]  
-	     DS = R3                  	// [29:7019]  
-	     R3 = [BP + 8]            	// [30:7019]  lra_spill_temp_42
-	     DS:[R4] = R3             	// [32:7019]  
-L_64_110:	// 0x1d82
-// BB:112 cycle count: 5
-//7020  		                   
-//7021  						   Currentsound=0;
+	     .stabn 68,0,7000,LM1098-_Answer_F
+	     R4 = 0                   	// [0:7000]  
+	     [BP + 3] = R4            	// [1:7000]  Currentsound
+//7001  	                        Player_Activing_Cnt =Select_Pingamerandom();//SelectNextPingame(Player_Activing_Cnt);	 
 
 LM1099:
-	     .stabn 68,0,7021,LM1099-_Answer_F
-	     R4 = 0                   	// [0:7021]  
-	     [BP + 3] = R4            	// [1:7021]  Currentsound
-//7022  	                        Player_Activing_Cnt =Select_Pingamerandom();//SelectNextPingame(Player_Activing_Cnt);	 
+	     .stabn 68,0,7001,LM1099-_Answer_F
+	     call _Select_Pingamerandom	// [2:7001]  Select_Pingamerandom
+BB115_PU64:	// 0x1d88
+// BB:115 cycle count: 8
+	     DS = seg(_Player_Activing_Cnt)	// [0:7001]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [1:7001]  Player_Activing_Cnt
+	     DS:[R4] = R1             	// [3:7001]  
+//7007  		//				 if(Player_Activing_Cnt==Registerd_Num)
+//7008  		//				 	  Player_Activing_Cnt=0;
+//7009  		
+//7010  		
+//7011  						   Ask_Question();//PlayA1800_Elements(Get_Question_Sound(gQuestionIdx));
 
 LM1100:
-	     .stabn 68,0,7022,LM1100-_Answer_F
-	     call _Select_Pingamerandom	// [2:7022]  Select_Pingamerandom
-BB113_PU64:	// 0x1d86
-// BB:113 cycle count: 8
-	     DS = seg(_Player_Activing_Cnt)	// [0:7022]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [1:7022]  Player_Activing_Cnt
-	     DS:[R4] = R1             	// [3:7022]  
-//7028  		//				 if(Player_Activing_Cnt==Registerd_Num)
-//7029  		//				 	  Player_Activing_Cnt=0;
-//7030  		
-//7031  		
-//7032  						   Ask_Question();//PlayA1800_Elements(Get_Question_Sound(gQuestionIdx));
+	     .stabn 68,0,7011,LM1100-_Answer_F
+	     call _Ask_Question       	// [5:7011]  Ask_Question
+BB116_PU64:	// 0x1d8e
+// BB:116 cycle count: 20
+//7012  						  // delay_time(8);
+//7013  						   
+//7014  						   
+//7015  		                   //PlayA1800_Elements(A_VLMMREN_Next_01);
+//7016  		                    Play_Seq(NextCnt++%3,C_NextTable);
 
 LM1101:
-	     .stabn 68,0,7032,LM1101-_Answer_F
-	     call _Ask_Question       	// [5:7032]  Ask_Question
-BB114_PU64:	// 0x1d8c
-// BB:114 cycle count: 20
-//7033  						  // delay_time(8);
-//7034  						   
-//7035  						   
-//7036  		                   //PlayA1800_Elements(A_VLMMREN_Next_01);
-//7037  		                    Play_Seq(NextCnt++%3,C_NextTable);
-
-LM1102:
-	     .stabn 68,0,7037,LM1102-_Answer_F
-	     DS = seg(_NextCnt)       	// [0:7037]  NextCnt
-	     R4 = (_NextCnt)          	// [1:7037]  NextCnt
-	     R3 = DS:[R4]             	// [3:7037]  
-	     R4 = R3 + 1              	// [5:7037]  
-	     DS = seg(_NextCnt)       	// [7:7037]  NextCnt
-	     R2 = (_NextCnt)          	// [8:7037]  NextCnt
-	     DS:[R2] = R4             	// [10:7037]  
-	     SP = SP - 2              	// [12:7037]  
-	     R4 = 3                   	// [13:7037]  
-	     push R4, R3 to [SP]      	// [14:7037]  
-	     call __modu1             	// [17:7037]  _modu1
-BB115_PU64:	// 0x1d9b
-// BB:115 cycle count: 14
+	     .stabn 68,0,7016,LM1101-_Answer_F
+	     DS = seg(_NextCnt)       	// [0:7016]  NextCnt
+	     R4 = (_NextCnt)          	// [1:7016]  NextCnt
+	     R3 = DS:[R4]             	// [3:7016]  
+	     R4 = R3 + 1              	// [5:7016]  
+	     DS = seg(_NextCnt)       	// [7:7016]  NextCnt
+	     R2 = (_NextCnt)          	// [8:7016]  NextCnt
+	     DS:[R2] = R4             	// [10:7016]  
+	     SP = SP - 2              	// [12:7016]  
+	     R4 = 3                   	// [13:7016]  
+	     push R4, R3 to [SP]      	// [14:7016]  
+	     call __modu1             	// [17:7016]  _modu1
+BB117_PU64:	// 0x1d9d
+// BB:117 cycle count: 14
 	     SP = SP + 2              	// [0:0]  
 	     R4 = SP + 1              	// [1:0]  
 	     [R4] = R1                	// [3:0]  
-	     R3 = 12000               	// [5:7037]  
-	     R4 = SP + 2              	// [7:7037]  
-	     [R4] = R3                	// [9:7037]  
-	     call _Play_Seq           	// [11:7037]  Play_Seq
-BB116_PU64:	// 0x1da6
-// BB:116 cycle count: 1
-	     SP = SP + 2              	// [0:7037]  
-L_64_95:	// 0x1da7
-L_64_87:	// 0x1da7
-L_64_83:	// 0x1da7
-Lt_64_4:	// 0x1da7
-// BB:117 cycle count: 3
-//7042  
-//7043  	         }
-//7044  		   
-//7045  
-//7046       	}
+	     R3 = 12000               	// [5:7016]  
+	     R4 = SP + 2              	// [7:7016]  
+	     [R4] = R3                	// [9:7016]  
+	     call _Play_Seq           	// [11:7016]  Play_Seq
+BB118_PU64:	// 0x1da8
+// BB:118 cycle count: 1
+	     SP = SP + 2              	// [0:7016]  
+L_64_95:	// 0x1da9
+L_64_87:	// 0x1da9
+L_64_83:	// 0x1da9
+Lt_64_4:	// 0x1da9
+// BB:119 cycle count: 3
+//7021  
+//7022  	         }
+//7023  		   
+//7024  
+//7025       	}
+
+LM1102:
+	     .stabn 68,0,7025,LM1102-_Answer_F
+	     goto L_64_79             	// [0:7025]  
+L_64_80:	// 0x1dab
+Lt_64_3:	// 0x1dab
+// BB:120 cycle count: 60
+	     [BP + 10] = R1           	// [0:0]  lgra_spill_temp_44
+//7027  
+//7028  
+//7029  
+//7030  	     //Player_Point[Player_Activing_Cnt]=Currentsound;
+//7031           Pselected[Player_Activing_Cnt/16]|=BitMap[Player_Activing_Cnt%16];	
 
 LM1103:
-	     .stabn 68,0,7046,LM1103-_Answer_F
-	     goto L_64_79             	// [0:7046]  
-L_64_80:	// 0x1da9
-Lt_64_3:	// 0x1da9
-// BB:118 cycle count: 60
-	     [BP + 10] = R1           	// [0:0]  lgra_spill_temp_44
-//7048  
-//7049  
-//7050  
-//7051  	     //Player_Point[Player_Activing_Cnt]=Currentsound;
-//7052           Pselected[Player_Activing_Cnt/16]|=BitMap[Player_Activing_Cnt%16];	
-
-LM1104:
-	     .stabn 68,0,7052,LM1104-_Answer_F
-	     DS = seg(_Player_Activing_Cnt)	// [1:7052]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [2:7052]  Player_Activing_Cnt
-	     R4 = DS:[R4]             	// [4:7052]  
-	     R4 = R4 lsr 4            	// [6:7052]  
-	     [BP + 7] = R4            	// [7:7052]  __save_expr_temp_20
-	     R4 = [BP + 7]            	// [8:7052]  __save_expr_temp_20
-	     R3 = 0                   	// [10:7052]  
-	     R1 = (_Pselected)        	// [11:7052]  Pselected
-	     R2 = seg(_Pselected)     	// [13:7052]  Pselected
-	     R4 = R4 + R1             	// [14:7052]  
-	     R3 = R3 + R2, Carry      	// [15:7052]  
-	     DS = R3                  	// [16:7052]  
-	     R4 = DS:[R4]             	// [17:7052]  
-	     [BP + 9] = R4            	// [19:7052]  lra_spill_temp_43
-	     DS = seg(_Player_Activing_Cnt)	// [20:7052]  Player_Activing_Cnt
-	     R4 = (_Player_Activing_Cnt)	// [21:7052]  Player_Activing_Cnt
-	     R4 = DS:[R4]             	// [23:7052]  
-	     R4 = R4 & 15             	// [25:7052]  
-	     R3 = 0                   	// [26:7052]  
-	     R1 = (_BitMap)           	// [27:7052]  BitMap
-	     R2 = seg(_BitMap)        	// [29:7052]  BitMap
-	     R4 = R4 + R1             	// [30:7052]  
-	     R3 = R3 + R2, Carry      	// [31:7052]  
-	     DS = R3                  	// [32:7052]  
-	     R3 = DS:[R4]             	// [33:7052]  
-	     R4 = [BP + 9]            	// [35:7052]  lra_spill_temp_43
-	     R4 = R4 | R3             	// [37:7052]  
-	     [BP + 8] = R4            	// [38:7052]  lra_spill_temp_42
-	     R4 = [BP + 7]            	// [39:7052]  __save_expr_temp_20
-	     R3 = 0                   	// [41:7052]  
-	     R1 = (_Pselected)        	// [42:7052]  Pselected
-	     R2 = seg(_Pselected)     	// [44:7052]  Pselected
-	     R4 = R4 + R1             	// [45:7052]  
-	     R3 = R3 + R2, Carry      	// [46:7052]  
-	     DS = R3                  	// [47:7052]  
-	     R3 = [BP + 8]            	// [48:7052]  lra_spill_temp_42
-	     DS:[R4] = R3             	// [50:7052]  
-	     R1 = [BP + 10]           	// [52:7052]  lgra_spill_temp_44
-	     SP = SP + 11             	// [54:7052]  
-	     pop BP, PC from [SP]     	// [55:7052]  
+	     .stabn 68,0,7031,LM1103-_Answer_F
+	     DS = seg(_Player_Activing_Cnt)	// [1:7031]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [2:7031]  Player_Activing_Cnt
+	     R4 = DS:[R4]             	// [4:7031]  
+	     R4 = R4 lsr 4            	// [6:7031]  
+	     [BP + 7] = R4            	// [7:7031]  __save_expr_temp_20
+	     R4 = [BP + 7]            	// [8:7031]  __save_expr_temp_20
+	     R3 = 0                   	// [10:7031]  
+	     R1 = (_Pselected)        	// [11:7031]  Pselected
+	     R2 = seg(_Pselected)     	// [13:7031]  Pselected
+	     R4 = R4 + R1             	// [14:7031]  
+	     R3 = R3 + R2, Carry      	// [15:7031]  
+	     DS = R3                  	// [16:7031]  
+	     R4 = DS:[R4]             	// [17:7031]  
+	     [BP + 9] = R4            	// [19:7031]  lra_spill_temp_43
+	     DS = seg(_Player_Activing_Cnt)	// [20:7031]  Player_Activing_Cnt
+	     R4 = (_Player_Activing_Cnt)	// [21:7031]  Player_Activing_Cnt
+	     R4 = DS:[R4]             	// [23:7031]  
+	     R4 = R4 & 15             	// [25:7031]  
+	     R3 = 0                   	// [26:7031]  
+	     R1 = (_BitMap)           	// [27:7031]  BitMap
+	     R2 = seg(_BitMap)        	// [29:7031]  BitMap
+	     R4 = R4 + R1             	// [30:7031]  
+	     R3 = R3 + R2, Carry      	// [31:7031]  
+	     DS = R3                  	// [32:7031]  
+	     R3 = DS:[R4]             	// [33:7031]  
+	     R4 = [BP + 9]            	// [35:7031]  lra_spill_temp_43
+	     R4 = R4 | R3             	// [37:7031]  
+	     [BP + 8] = R4            	// [38:7031]  lra_spill_temp_42
+	     R4 = [BP + 7]            	// [39:7031]  __save_expr_temp_20
+	     R3 = 0                   	// [41:7031]  
+	     R1 = (_Pselected)        	// [42:7031]  Pselected
+	     R2 = seg(_Pselected)     	// [44:7031]  Pselected
+	     R4 = R4 + R1             	// [45:7031]  
+	     R3 = R3 + R2, Carry      	// [46:7031]  
+	     DS = R3                  	// [47:7031]  
+	     R3 = [BP + 8]            	// [48:7031]  lra_spill_temp_42
+	     DS:[R4] = R3             	// [50:7031]  
+	     R1 = [BP + 10]           	// [52:7031]  lgra_spill_temp_44
+	     SP = SP + 11             	// [54:7031]  
+	     pop BP, PC from [SP]     	// [55:7031]  
 LBE60:
 	.endp	
 	     .stabn 192,0,0,LBB60-_Answer_F
@@ -15989,61 +15968,61 @@ _PlayScoreOfwhichplay: .proc
 	// i = 0
 	// old_frame_pointer = 1
 	// return_address = 2
-//7057  
-//7058  
-//7059  
-//7060  void  PlayScoreOfwhichplay(unsigned int* BitTable)
-//7061  {
+//7036  
+//7037  
+//7038  
+//7039  void  PlayScoreOfwhichplay(unsigned int* BitTable)
+//7040  {
+
+LM1104:
+	     .stabn 68,0,7040,LM1104-_PlayScoreOfwhichplay
+BB1_PU65:	// 0x1dd9
+// BB:1 cycle count: 7
+	     push BP to [SP]          	// [0:7040]  
+	     SP = SP - 1              	// [2:7040]  
+	     BP = SP + 1              	// [3:7040]  
+LBB61:
+//7041  
+//7042  	   unsigned int  i=0;//,temp;
 
 LM1105:
-	     .stabn 68,0,7061,LM1105-_PlayScoreOfwhichplay
-BB1_PU65:	// 0x1dd7
-// BB:1 cycle count: 7
-	     push BP to [SP]          	// [0:7061]  
-	     SP = SP - 1              	// [2:7061]  
-	     BP = SP + 1              	// [3:7061]  
-LBB61:
-//7062  
-//7063  	   unsigned int  i=0;//,temp;
+	     .stabn 68,0,7042,LM1105-_PlayScoreOfwhichplay
+	     R4 = 0                   	// [5:7042]  
+	     [BP + 0] = R4            	// [6:7042]  i
+L_65_1:	// 0x1ddf
+// BB:2 cycle count: 12
+//7043  	
+//7044  		while(i<Registerd_Num)
 
 LM1106:
-	     .stabn 68,0,7063,LM1106-_PlayScoreOfwhichplay
-	     R4 = 0                   	// [5:7063]  
-	     [BP + 0] = R4            	// [6:7063]  i
-L_65_1:	// 0x1ddd
-// BB:2 cycle count: 12
-//7064  	
-//7065  		while(i<Registerd_Num)
+	     .stabn 68,0,7044,LM1106-_PlayScoreOfwhichplay
+	     R3 = [BP + 0]            	// [0:7044]  i
+	     DS = seg(_Registerd_Num) 	// [2:7044]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [3:7044]  Registerd_Num
+	     R4 = DS:[R4]             	// [5:7044]  
+	     cmp R3, R4               	// [7:7044]  
+	     jae L_65_2               	// [8:7044]  
+BB3_PU65:	// 0x1de6
+// BB:3 cycle count: 8
+//7050  					  //PlayScores(Player_Point[i]);
+//7051  	
+//7052  				   }
+//7053  	
+//7054  			   i++;
 
 LM1107:
-	     .stabn 68,0,7065,LM1107-_PlayScoreOfwhichplay
-	     R3 = [BP + 0]            	// [0:7065]  i
-	     DS = seg(_Registerd_Num) 	// [2:7065]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [3:7065]  Registerd_Num
-	     R4 = DS:[R4]             	// [5:7065]  
-	     cmp R3, R4               	// [7:7065]  
-	     jae L_65_2               	// [8:7065]  
-BB3_PU65:	// 0x1de4
-// BB:3 cycle count: 8
-//7071  					  //PlayScores(Player_Point[i]);
-//7072  	
-//7073  				   }
-//7074  	
-//7075  			   i++;
-
-LM1108:
-	     .stabn 68,0,7075,LM1108-_PlayScoreOfwhichplay
-	     R4 = [BP + 0]            	// [0:7075]  i
-	     R4 = R4 + 1              	// [2:7075]  
-	     [BP + 0] = R4            	// [3:7075]  i
-	     jmp L_65_1               	// [4:7075]  
-L_65_2:	// 0x1de8
+	     .stabn 68,0,7054,LM1107-_PlayScoreOfwhichplay
+	     R4 = [BP + 0]            	// [0:7054]  i
+	     R4 = R4 + 1              	// [2:7054]  
+	     [BP + 0] = R4            	// [3:7054]  i
+	     jmp L_65_1               	// [4:7054]  
+L_65_2:	// 0x1dea
 // BB:4 cycle count: 6
-	     SP = SP + 1              	// [0:7075]  
-	     pop BP, PC from [SP]     	// [1:7075]  
+	     SP = SP + 1              	// [0:7054]  
+	     pop BP, PC from [SP]     	// [1:7054]  
 LBE61:
 	.endp	
-	     .stabs "BitTable:p31",160,0,0,4
+	     .stabs "BitTable:p30",160,0,0,4
 	     .stabn 192,0,0,LBB61-_PlayScoreOfwhichplay
 	     .stabs "i:4",128,0,0,0
 	     .stabn 224,0,0,LBE61-_PlayScoreOfwhichplay
@@ -16064,1440 +16043,1593 @@ _End: .proc
 	// h_round_temp = 3
 	// old_frame_pointer = 6
 	// return_address = 7
-//7088  //end
-//7089  ///////////////////////////////////////////////////////
-//7090  
-//7091  unsigned int End()
-//7092  {
+//7067  //end
+//7068  ///////////////////////////////////////////////////////
+//7069  
+//7070  unsigned int End()
+//7071  {
+
+LM1108:
+	     .stabn 68,0,7071,LM1108-_End
+BB1_PU66:	// 0x1dec
+// BB:1 cycle count: 16
+	     push BP to [SP]          	// [0:7071]  
+	     SP = SP - 6              	// [2:7071]  
+	     BP = SP + 1              	// [3:7071]  
+LBB62:
+//7072  
+//7073     unsigned int memory_length =0;
 
 LM1109:
-	     .stabn 68,0,7092,LM1109-_End
-BB1_PU66:	// 0x1dea
-// BB:1 cycle count: 16
-	     push BP to [SP]          	// [0:7092]  
-	     SP = SP - 6              	// [2:7092]  
-	     BP = SP + 1              	// [3:7092]  
-LBB62:
-//7093  
-//7094     unsigned int memory_length =0;
+	     .stabn 68,0,7073,LM1109-_End
+	     R4 = 0                   	// [5:7073]  
+	     [BP + 0] = R4            	// [6:7073]  memory_length
+//7074     unsigned int temp_length,temp;
+//7075  
+//7076     unsigned int Leader_Player_temp =0;
 
 LM1110:
-	     .stabn 68,0,7094,LM1110-_End
-	     R4 = 0                   	// [5:7094]  
-	     [BP + 0] = R4            	// [6:7094]  memory_length
-//7095     unsigned int temp_length,temp;
-//7096  
-//7097     unsigned int Leader_Player_temp =0;
+	     .stabn 68,0,7076,LM1110-_End
+	     R4 = 0                   	// [7:7076]  
+	     [BP + 1] = R4            	// [8:7076]  Leader_Player_temp
+//7077     unsigned int  timeovercnt =0;
 
 LM1111:
-	     .stabn 68,0,7097,LM1111-_End
-	     R4 = 0                   	// [7:7097]  
-	     [BP + 1] = R4            	// [8:7097]  Leader_Player_temp
-//7098     unsigned int  timeovercnt =0;
+	     .stabn 68,0,7077,LM1111-_End
+	     R4 = 0                   	// [9:7077]  
+	     [BP + 2] = R4            	// [10:7077]  timeovercnt
+//7078     int  h_round_temp =0;
 
 LM1112:
-	     .stabn 68,0,7098,LM1112-_End
-	     R4 = 0                   	// [9:7098]  
-	     [BP + 2] = R4            	// [10:7098]  timeovercnt
-//7099     int  h_round_temp =0;
+	     .stabn 68,0,7078,LM1112-_End
+	     R4 = 0                   	// [11:7078]  
+	     [BP + 3] = R4            	// [12:7078]  h_round_temp
+//7079   
+//7080      memory_length=Get_Num_CategoryMemory();
 
 LM1113:
-	     .stabn 68,0,7099,LM1113-_End
-	     R4 = 0                   	// [11:7099]  
-	     [BP + 3] = R4            	// [12:7099]  h_round_temp
-//7100   
-//7101      memory_length=Get_Num_CategoryMemory();
+	     .stabn 68,0,7080,LM1113-_End
+	     call _Get_Num_CategoryMemory	// [13:7080]  Get_Num_CategoryMemory
+BB2_PU66:	// 0x1dfa
+// BB:2 cycle count: 11
+	     [BP + 0] = R1            	// [0:7080]  memory_length
+//7081   
+//7082   	 temp_length  = memory_length;
 
 LM1114:
-	     .stabn 68,0,7101,LM1114-_End
-	     call _Get_Num_CategoryMemory	// [13:7101]  Get_Num_CategoryMemory
-BB2_PU66:	// 0x1df8
-// BB:2 cycle count: 11
-	     [BP + 0] = R1            	// [0:7101]  memory_length
-//7102   
-//7103   	 temp_length  = memory_length;
+	     .stabn 68,0,7082,LM1114-_End
+	     R4 = [BP + 0]            	// [1:7082]  memory_length
+	     [BP + 4] = R4            	// [3:7082]  temp_length
+//7083  	 if(temp_length>0)
 
 LM1115:
-	     .stabn 68,0,7103,LM1115-_End
-	     R4 = [BP + 0]            	// [1:7103]  memory_length
-	     [BP + 4] = R4            	// [3:7103]  temp_length
-//7104  	 if(temp_length>0)
+	     .stabn 68,0,7083,LM1115-_End
+	     R4 = [BP + 4]            	// [4:7083]  temp_length
+	     cmp R4, 0                	// [6:7083]  
+	     je L_66_38               	// [7:7083]  
+BB3_PU66:	// 0x1e00
+// BB:3 cycle count: 4
+//7084  	 	 temp_length-=1;
 
 LM1116:
-	     .stabn 68,0,7104,LM1116-_End
-	     R4 = [BP + 4]            	// [4:7104]  temp_length
-	     cmp R4, 0                	// [6:7104]  
-	     je L_66_36               	// [7:7104]  
-BB3_PU66:	// 0x1dfe
-// BB:3 cycle count: 4
-//7105  	 	 temp_length-=1;
+	     .stabn 68,0,7084,LM1116-_End
+	     R4 = [BP + 4]            	// [0:7084]  temp_length
+	     R4 = R4 - 1              	// [2:7084]  
+	     [BP + 4] = R4            	// [3:7084]  temp_length
+L_66_38:	// 0x1e03
+// BB:4 cycle count: 22
+//7085   
+//7086   	   Key_Event =0;
 
 LM1117:
-	     .stabn 68,0,7105,LM1117-_End
-	     R4 = [BP + 4]            	// [0:7105]  temp_length
-	     R4 = R4 - 1              	// [2:7105]  
-	     [BP + 4] = R4            	// [3:7105]  temp_length
-L_66_36:	// 0x1e01
-// BB:4 cycle count: 10
-//7106   
-//7107   
-//7108  
-//7109   
-//7110    if(Registerd_Num>1)
+	     .stabn 68,0,7086,LM1117-_End
+	     R3 = 0                   	// [0:7086]  
+	     DS = seg(_Key_Event)     	// [1:7086]  Key_Event
+	     R4 = (_Key_Event)        	// [2:7086]  Key_Event
+	     DS:[R4] = R3             	// [4:7086]  
+//7087  	   Key_activeflag = 0;
 
 LM1118:
-	     .stabn 68,0,7110,LM1118-_End
-	     DS = seg(_Registerd_Num) 	// [0:7110]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:7110]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:7110]  
-	     cmp R4, 1                	// [5:7110]  
-	     ja BB5_PU66              	// [6:7110]  
-BB114_PU66:	// 0x1e07
-// BB:114 cycle count: 3
-	     goto L_66_38             	// [0:0]  
-BB5_PU66:	// 0x1e09
-// BB:5 cycle count: 27
-//7111    {
-//7112  
-//7113  
-//7114         if((Get_Num_Bigscore(Rounds,2,Registered_Play_Status)==0 ))//||(End20flag))
+	     .stabn 68,0,7087,LM1118-_End
+	     R3 = 0                   	// [6:7087]  
+	     DS = seg(_Key_activeflag)	// [7:7087]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:7087]  Key_activeflag
+	     DS:[R4] = R3             	// [10:7087]  
+//7088  
+//7089   
+//7090    if(Registerd_Num>1)
 
 LM1119:
-	     .stabn 68,0,7114,LM1119-_End
-	     SP = SP - 4              	// [0:7114]  
-	     R2 = (_Rounds)           	// [1:7114]  Rounds
-	     R3 = seg(_Rounds)        	// [3:7114]  Rounds
-	     R4 = SP + 1              	// [4:7114]  
-	     [R4++] = R2              	// [6:7114]  
-	     [R4] = R3                	// [8:7114]  
-	     R3 = 2                   	// [10:7114]  
-	     R4 = SP + 3              	// [11:7114]  
-	     [R4] = R3                	// [13:7114]  
-	     DS = seg(_Registered_Play_Status)	// [15:7114]  Registered_Play_Status
-	     R4 = (_Registered_Play_Status)	// [16:7114]  Registered_Play_Status
-	     R3 = DS:[R4]             	// [18:7114]  
-	     R4 = SP + 4              	// [20:7114]  
-	     [R4] = R3                	// [22:7114]  
-	     call _Get_Num_Bigscore   	// [24:7114]  Get_Num_Bigscore
-BB6_PU66:	// 0x1e1e
-// BB:6 cycle count: 6
-	     SP = SP + 4              	// [0:7114]  
-	     cmp R1, 0                	// [1:7114]  
-	     je BB7_PU66              	// [2:7114]  
-BB115_PU66:	// 0x1e21
-// BB:115 cycle count: 3
+	     .stabn 68,0,7090,LM1119-_End
+	     DS = seg(_Registerd_Num) 	// [12:7090]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [13:7090]  Registerd_Num
+	     R4 = DS:[R4]             	// [15:7090]  
+	     cmp R4, 1                	// [17:7090]  
+	     ja BB5_PU66              	// [18:7090]  
+BB121_PU66:	// 0x1e13
+// BB:121 cycle count: 3
 	     goto L_66_40             	// [0:0]  
-BB7_PU66:	// 0x1e23
-// BB:7 cycle count: 10
-//7115           {
-//7116  
-//7117  		    if(End20flag ==0)
+BB5_PU66:	// 0x1e15
+// BB:5 cycle count: 10
+//7091    {
+//7092  
+//7093  
+//7094        if(End20flag ==0)
 
 LM1120:
-	     .stabn 68,0,7117,LM1120-_End
-	     DS = seg(_End20flag)     	// [0:7117]  End20flag
-	     R4 = (_End20flag)        	// [1:7117]  End20flag
-	     R4 = DS:[R4]             	// [3:7117]  
-	     cmp R4, 0                	// [5:7117]  
-	     je BB8_PU66              	// [6:7117]  
-BB116_PU66:	// 0x1e29
-// BB:116 cycle count: 3
-	     goto L_66_41             	// [0:0]  
-BB8_PU66:	// 0x1e2b
-// BB:8 cycle count: 8
-//7118     	       {
-//7119  			    if(memory_length>100)
+	     .stabn 68,0,7094,LM1120-_End
+	     DS = seg(_End20flag)     	// [0:7094]  End20flag
+	     R4 = (_End20flag)        	// [1:7094]  End20flag
+	     R4 = DS:[R4]             	// [3:7094]  
+	     cmp R4, 0                	// [5:7094]  
+	     jne L_66_41              	// [6:7094]  
+BB6_PU66:	// 0x1e1b
+// BB:6 cycle count: 27
+//7095        {
+//7096          Add_SomePlayer_Point(1,Rounds,Pingame);	
 
 LM1121:
-	     .stabn 68,0,7119,LM1121-_End
-	     R4 = [BP + 0]            	// [0:7119]  memory_length
-	     cmp R4, 100              	// [2:7119]  
-	     ja BB9_PU66              	// [4:7119]  
-BB118_PU66:	// 0x1e2f
-// BB:118 cycle count: 3
-	     goto L_66_43             	// [0:0]  
-BB9_PU66:	// 0x1e31
-// BB:9 cycle count: 27
-//7120  			    {
-//7121  			    	
-//7122  			       Add_SomePlayer_Point(1,Rounds,Pingame);	
+	     .stabn 68,0,7096,LM1121-_End
+	     SP = SP - 5              	// [0:7096]  
+	     R3 = 1                   	// [1:7096]  
+	     R4 = SP + 1              	// [2:7096]  
+	     [R4] = R3                	// [4:7096]  
+	     R2 = (_Rounds)           	// [6:7096]  Rounds
+	     R3 = seg(_Rounds)        	// [8:7096]  Rounds
+	     R4 = SP + 2              	// [9:7096]  
+	     [R4++] = R2              	// [11:7096]  
+	     [R4] = R3                	// [13:7096]  
+	     R2 = (_Pingame)          	// [15:7096]  Pingame
+	     R3 = seg(_Pingame)       	// [17:7096]  Pingame
+	     R4 = SP + 4              	// [18:7096]  
+	     [R4++] = R2              	// [20:7096]  
+	     [R4] = R3                	// [22:7096]  
+	     call _Add_SomePlayer_Point	// [24:7096]  Add_SomePlayer_Point
+BB7_PU66:	// 0x1e30
+// BB:7 cycle count: 27
+//7097  	    Add_SomePlayer_Point(memory_length,Player_Point,Pingame);	
 
 LM1122:
-	     .stabn 68,0,7122,LM1122-_End
+	     .stabn 68,0,7097,LM1122-_End
+	     R3 = [BP + 0]            	// [0:7097]  memory_length
+	     R4 = SP + 1              	// [2:7097]  
+	     [R4] = R3                	// [4:7097]  
+	     R2 = (_Player_Point)     	// [6:7097]  Player_Point
+	     R3 = seg(_Player_Point)  	// [8:7097]  Player_Point
+	     R4 = SP + 2              	// [9:7097]  
+	     [R4++] = R2              	// [11:7097]  
+	     [R4] = R3                	// [13:7097]  
+	     R2 = (_Pingame)          	// [15:7097]  Pingame
+	     R3 = seg(_Pingame)       	// [17:7097]  Pingame
+	     R4 = SP + 4              	// [18:7097]  
+	     [R4++] = R2              	// [20:7097]  
+	     [R4] = R3                	// [22:7097]  
+	     call _Add_SomePlayer_Point	// [24:7097]  Add_SomePlayer_Point
+BB8_PU66:	// 0x1e44
+// BB:8 cycle count: 1
+	     SP = SP + 5              	// [0:7097]  
+L_66_41:	// 0x1e45
+// BB:9 cycle count: 27
+//7098        }
+//7099  
+//7100  
+//7101         if((Get_Num_Bigscore(Rounds,2,Registered_Play_Status)==0 ))//||(End20flag))
+
+LM1123:
+	     .stabn 68,0,7101,LM1123-_End
+	     SP = SP - 4              	// [0:7101]  
+	     R2 = (_Rounds)           	// [1:7101]  Rounds
+	     R3 = seg(_Rounds)        	// [3:7101]  Rounds
+	     R4 = SP + 1              	// [4:7101]  
+	     [R4++] = R2              	// [6:7101]  
+	     [R4] = R3                	// [8:7101]  
+	     R3 = 2                   	// [10:7101]  
+	     R4 = SP + 3              	// [11:7101]  
+	     [R4] = R3                	// [13:7101]  
+	     DS = seg(_Registered_Play_Status)	// [15:7101]  Registered_Play_Status
+	     R4 = (_Registered_Play_Status)	// [16:7101]  Registered_Play_Status
+	     R3 = DS:[R4]             	// [18:7101]  
+	     R4 = SP + 4              	// [20:7101]  
+	     [R4] = R3                	// [22:7101]  
+	     call _Get_Num_Bigscore   	// [24:7101]  Get_Num_Bigscore
+BB10_PU66:	// 0x1e5a
+// BB:10 cycle count: 6
+	     SP = SP + 4              	// [0:7101]  
+	     cmp R1, 0                	// [1:7101]  
+	     je BB11_PU66             	// [2:7101]  
+BB122_PU66:	// 0x1e5d
+// BB:122 cycle count: 3
+	     goto L_66_43             	// [0:0]  
+BB11_PU66:	// 0x1e5f
+// BB:11 cycle count: 10
+//7102           {
+//7103  
+//7104  		    if(End20flag ==0)
+
+LM1124:
+	     .stabn 68,0,7104,LM1124-_End
+	     DS = seg(_End20flag)     	// [0:7104]  End20flag
+	     R4 = (_End20flag)        	// [1:7104]  End20flag
+	     R4 = DS:[R4]             	// [3:7104]  
+	     cmp R4, 0                	// [5:7104]  
+	     je BB12_PU66             	// [6:7104]  
+BB124_PU66:	// 0x1e65
+// BB:124 cycle count: 3
+	     goto L_66_44             	// [0:0]  
+BB12_PU66:	// 0x1e67
+// BB:12 cycle count: 7
+//7105     	       {
+//7106  			    if(memory_length>50)
+
+LM1125:
+	     .stabn 68,0,7106,LM1125-_End
+	     R4 = [BP + 0]            	// [0:7106]  memory_length
+	     cmp R4, 50               	// [2:7106]  
+	     jbe L_66_46              	// [3:7106]  
+BB13_PU66:	// 0x1e6a
+// BB:13 cycle count: 27
+//7107  			    {
+//7108  			    	
+//7109  
+//7110  			    	
+//7111  			       Play_Serieplayer(0,Pingame,C_Play_StartAddr);	
+
+LM1126:
+	     .stabn 68,0,7111,LM1126-_End
+	     SP = SP - 5              	// [0:7111]  
+	     R3 = 0                   	// [1:7111]  
+	     R4 = SP + 1              	// [2:7111]  
+	     [R4] = R3                	// [4:7111]  
+	     R2 = (_Pingame)          	// [6:7111]  Pingame
+	     R3 = seg(_Pingame)       	// [8:7111]  Pingame
+	     R4 = SP + 2              	// [9:7111]  
+	     [R4++] = R2              	// [11:7111]  
+	     [R4] = R3                	// [13:7111]  
+	     R2 = 6000                	// [15:7111]  
+	     R3 = 0                   	// [17:7111]  
+	     R4 = SP + 4              	// [18:7111]  
+	     [R4++] = R2              	// [20:7111]  
+	     [R4] = R3                	// [22:7111]  
+	     call _Play_Serieplayer   	// [24:7111]  Play_Serieplayer
+BB14_PU66:	// 0x1e7f
+// BB:14 cycle count: 9
+	     SP = SP + 4              	// [0:7111]  
+//7112  			       PlayA1800_Elements(A_VLMMREN_End_03c);	
+
+LM1127:
+	     .stabn 68,0,7112,LM1127-_End
+	     R3 = 24                  	// [1:7112]  
+	     R4 = SP + 1              	// [2:7112]  
+	     [R4] = R3                	// [4:7112]  
+	     call _PlayA1800_Elements 	// [6:7112]  PlayA1800_Elements
+BB15_PU66:	// 0x1e86
+// BB:15 cycle count: 8
+//7113  			       //PlayA1800_Elements(A_VLMMREN_End_02b);
+//7114  			       delay_time(8);	 	
+
+LM1128:
+	     .stabn 68,0,7114,LM1128-_End
+	     R3 = 8                   	// [0:7114]  
+	     R4 = SP + 1              	// [1:7114]  
+	     [R4] = R3                	// [3:7114]  
+	     call _delay_time         	// [5:7114]  delay_time
+BB16_PU66:	// 0x1e8c
+// BB:16 cycle count: 4
+	     SP = SP + 1              	// [0:7114]  
+	     goto L_66_45             	// [1:7114]  
+L_66_46:	// 0x1e8f
+// BB:17 cycle count: 27
+//7118  			    {
+//7119  //			    	  Add_SomePlayer_Point(1,Rounds,Pingame);	
+//7120  //			    	  Add_SomePlayer_Point(memory_length,Player_Point,Pingame);	
+//7121  			    	  
+//7122  				     Play_Serieplayer(0,Pingame,C_Play_StartAddr);
+
+LM1129:
+	     .stabn 68,0,7122,LM1129-_End
 	     SP = SP - 5              	// [0:7122]  
-	     R3 = 1                   	// [1:7122]  
+	     R3 = 0                   	// [1:7122]  
 	     R4 = SP + 1              	// [2:7122]  
 	     [R4] = R3                	// [4:7122]  
-	     R2 = (_Rounds)           	// [6:7122]  Rounds
-	     R3 = seg(_Rounds)        	// [8:7122]  Rounds
+	     R2 = (_Pingame)          	// [6:7122]  Pingame
+	     R3 = seg(_Pingame)       	// [8:7122]  Pingame
 	     R4 = SP + 2              	// [9:7122]  
 	     [R4++] = R2              	// [11:7122]  
 	     [R4] = R3                	// [13:7122]  
-	     R2 = (_Pingame)          	// [15:7122]  Pingame
-	     R3 = seg(_Pingame)       	// [17:7122]  Pingame
+	     R2 = 6000                	// [15:7122]  
+	     R3 = 0                   	// [17:7122]  
 	     R4 = SP + 4              	// [18:7122]  
 	     [R4++] = R2              	// [20:7122]  
 	     [R4] = R3                	// [22:7122]  
-	     call _Add_SomePlayer_Point	// [24:7122]  Add_SomePlayer_Point
-BB10_PU66:	// 0x1e46
-// BB:10 cycle count: 27
-//7123  			       Add_SomePlayer_Point(memory_length,Player_Point,Pingame);	
-
-LM1123:
-	     .stabn 68,0,7123,LM1123-_End
-	     R3 = [BP + 0]            	// [0:7123]  memory_length
-	     R4 = SP + 1              	// [2:7123]  
-	     [R4] = R3                	// [4:7123]  
-	     R2 = (_Player_Point)     	// [6:7123]  Player_Point
-	     R3 = seg(_Player_Point)  	// [8:7123]  Player_Point
-	     R4 = SP + 2              	// [9:7123]  
-	     [R4++] = R2              	// [11:7123]  
-	     [R4] = R3                	// [13:7123]  
-	     R2 = (_Pingame)          	// [15:7123]  Pingame
-	     R3 = seg(_Pingame)       	// [17:7123]  Pingame
-	     R4 = SP + 4              	// [18:7123]  
-	     [R4++] = R2              	// [20:7123]  
-	     [R4] = R3                	// [22:7123]  
-	     call _Add_SomePlayer_Point	// [24:7123]  Add_SomePlayer_Point
-BB11_PU66:	// 0x1e5a
-// BB:11 cycle count: 26
-//7124  			    	
-//7125  			       Play_Serieplayer(0,Pingame,C_Play_StartAddr);	
-
-LM1124:
-	     .stabn 68,0,7125,LM1124-_End
-	     R3 = 0                   	// [0:7125]  
-	     R4 = SP + 1              	// [1:7125]  
-	     [R4] = R3                	// [3:7125]  
-	     R2 = (_Pingame)          	// [5:7125]  Pingame
-	     R3 = seg(_Pingame)       	// [7:7125]  Pingame
-	     R4 = SP + 2              	// [8:7125]  
-	     [R4++] = R2              	// [10:7125]  
-	     [R4] = R3                	// [12:7125]  
-	     R2 = 6000                	// [14:7125]  
-	     R3 = 0                   	// [16:7125]  
-	     R4 = SP + 4              	// [17:7125]  
-	     [R4++] = R2              	// [19:7125]  
-	     [R4] = R3                	// [21:7125]  
-	     call _Play_Serieplayer   	// [23:7125]  Play_Serieplayer
-BB12_PU66:	// 0x1e6e
-// BB:12 cycle count: 9
-	     SP = SP + 4              	// [0:7125]  
-//7126  			       PlayA1800_Elements(A_VLMMREN_End_03c);	
-
-LM1125:
-	     .stabn 68,0,7126,LM1125-_End
-	     R3 = 24                  	// [1:7126]  
-	     R4 = SP + 1              	// [2:7126]  
-	     [R4] = R3                	// [4:7126]  
-	     call _PlayA1800_Elements 	// [6:7126]  PlayA1800_Elements
-BB13_PU66:	// 0x1e75
-// BB:13 cycle count: 8
-//7127  			       //PlayA1800_Elements(A_VLMMREN_End_02b);
-//7128  			       delay_time(8);	 	
-
-LM1126:
-	     .stabn 68,0,7128,LM1126-_End
-	     R3 = 8                   	// [0:7128]  
-	     R4 = SP + 1              	// [1:7128]  
-	     [R4] = R3                	// [3:7128]  
-	     call _delay_time         	// [5:7128]  delay_time
-BB14_PU66:	// 0x1e7b
-// BB:14 cycle count: 4
-	     SP = SP + 1              	// [0:7128]  
-	     goto L_66_42             	// [1:7128]  
-L_66_43:	// 0x1e7e
-// BB:15 cycle count: 27
-//7129  
-//7130  			    }
-//7131  			    else
-//7132  			    {
-//7133  			    	  Add_SomePlayer_Point(1,Rounds,Pingame);	
-
-LM1127:
-	     .stabn 68,0,7133,LM1127-_End
-	     SP = SP - 5              	// [0:7133]  
-	     R3 = 1                   	// [1:7133]  
-	     R4 = SP + 1              	// [2:7133]  
-	     [R4] = R3                	// [4:7133]  
-	     R2 = (_Rounds)           	// [6:7133]  Rounds
-	     R3 = seg(_Rounds)        	// [8:7133]  Rounds
-	     R4 = SP + 2              	// [9:7133]  
-	     [R4++] = R2              	// [11:7133]  
-	     [R4] = R3                	// [13:7133]  
-	     R2 = (_Pingame)          	// [15:7133]  Pingame
-	     R3 = seg(_Pingame)       	// [17:7133]  Pingame
-	     R4 = SP + 4              	// [18:7133]  
-	     [R4++] = R2              	// [20:7133]  
-	     [R4] = R3                	// [22:7133]  
-	     call _Add_SomePlayer_Point	// [24:7133]  Add_SomePlayer_Point
-BB16_PU66:	// 0x1e93
-// BB:16 cycle count: 27
-//7134  			    	  Add_SomePlayer_Point(memory_length,Player_Point,Pingame);	
-
-LM1128:
-	     .stabn 68,0,7134,LM1128-_End
-	     R3 = [BP + 0]            	// [0:7134]  memory_length
-	     R4 = SP + 1              	// [2:7134]  
-	     [R4] = R3                	// [4:7134]  
-	     R2 = (_Player_Point)     	// [6:7134]  Player_Point
-	     R3 = seg(_Player_Point)  	// [8:7134]  Player_Point
-	     R4 = SP + 2              	// [9:7134]  
-	     [R4++] = R2              	// [11:7134]  
-	     [R4] = R3                	// [13:7134]  
-	     R2 = (_Pingame)          	// [15:7134]  Pingame
-	     R3 = seg(_Pingame)       	// [17:7134]  Pingame
-	     R4 = SP + 4              	// [18:7134]  
-	     [R4++] = R2              	// [20:7134]  
-	     [R4] = R3                	// [22:7134]  
-	     call _Add_SomePlayer_Point	// [24:7134]  Add_SomePlayer_Point
-BB17_PU66:	// 0x1ea7
-// BB:17 cycle count: 26
-//7135  			    	  
-//7136  				     Play_Serieplayer(0,Pingame,C_Play_StartAddr);
-
-LM1129:
-	     .stabn 68,0,7136,LM1129-_End
-	     R3 = 0                   	// [0:7136]  
-	     R4 = SP + 1              	// [1:7136]  
-	     [R4] = R3                	// [3:7136]  
-	     R2 = (_Pingame)          	// [5:7136]  Pingame
-	     R3 = seg(_Pingame)       	// [7:7136]  Pingame
-	     R4 = SP + 2              	// [8:7136]  
-	     [R4++] = R2              	// [10:7136]  
-	     [R4] = R3                	// [12:7136]  
-	     R2 = 6000                	// [14:7136]  
-	     R3 = 0                   	// [16:7136]  
-	     R4 = SP + 4              	// [17:7136]  
-	     [R4++] = R2              	// [19:7136]  
-	     [R4] = R3                	// [21:7136]  
-	     call _Play_Serieplayer   	// [23:7136]  Play_Serieplayer
-BB18_PU66:	// 0x1ebb
+	     call _Play_Serieplayer   	// [24:7122]  Play_Serieplayer
+BB18_PU66:	// 0x1ea4
 // BB:18 cycle count: 9
-	     SP = SP + 4              	// [0:7136]  
-//7137  				     PlayA1800_Elements(A_VLMMREN_End_01);
+	     SP = SP + 4              	// [0:7122]  
+//7123  				     PlayA1800_Elements(A_VLMMREN_End_01);
 
 LM1130:
-	     .stabn 68,0,7137,LM1130-_End
-	     R3 = 18                  	// [1:7137]  
-	     R4 = SP + 1              	// [2:7137]  
-	     [R4] = R3                	// [4:7137]  
-	     call _PlayA1800_Elements 	// [6:7137]  PlayA1800_Elements
-BB19_PU66:	// 0x1ec2
+	     .stabn 68,0,7123,LM1130-_End
+	     R3 = 18                  	// [1:7123]  
+	     R4 = SP + 1              	// [2:7123]  
+	     [R4] = R3                	// [4:7123]  
+	     call _PlayA1800_Elements 	// [6:7123]  PlayA1800_Elements
+BB19_PU66:	// 0x1eab
 // BB:19 cycle count: 8
-//7138  					 PlayA1800_Elements(A_VLMMREN_End_02);
+//7124  					 PlayA1800_Elements(A_VLMMREN_End_02);
 
 LM1131:
-	     .stabn 68,0,7138,LM1131-_End
-	     R3 = 20                  	// [0:7138]  
-	     R4 = SP + 1              	// [1:7138]  
-	     [R4] = R3                	// [3:7138]  
-	     call _PlayA1800_Elements 	// [5:7138]  PlayA1800_Elements
-BB20_PU66:	// 0x1ec8
+	     .stabn 68,0,7124,LM1131-_End
+	     R3 = 20                  	// [0:7124]  
+	     R4 = SP + 1              	// [1:7124]  
+	     [R4] = R3                	// [3:7124]  
+	     call _PlayA1800_Elements 	// [5:7124]  PlayA1800_Elements
+BB20_PU66:	// 0x1eb1
 // BB:20 cycle count: 9
-//7139  					 PlayScores(temp_length);//Player_Point[Player_Activing_Cnt]
+//7125  					 PlayScores(temp_length);//Player_Point[Player_Activing_Cnt]
 
 LM1132:
-	     .stabn 68,0,7139,LM1132-_End
-	     R3 = [BP + 4]            	// [0:7139]  temp_length
-	     R4 = SP + 1              	// [2:7139]  
-	     [R4] = R3                	// [4:7139]  
-	     call _PlayScores         	// [6:7139]  PlayScores
-BB21_PU66:	// 0x1ece
+	     .stabn 68,0,7125,LM1132-_End
+	     R3 = [BP + 4]            	// [0:7125]  temp_length
+	     R4 = SP + 1              	// [2:7125]  
+	     [R4] = R3                	// [4:7125]  
+	     call _PlayScores         	// [6:7125]  PlayScores
+BB21_PU66:	// 0x1eb7
 // BB:21 cycle count: 8
-	     SP = SP + 1              	// [0:7139]  
-//7140  			      
-//7141  			      
-//7142  				    if(memory_length<15)
+	     SP = SP + 1              	// [0:7125]  
+//7126  			      
+//7127  			      
+//7128  				    if(memory_length<15)
 
 LM1133:
-	     .stabn 68,0,7142,LM1133-_End
-	     R4 = [BP + 0]            	// [1:7142]  memory_length
-	     cmp R4, 14               	// [3:7142]  
-	     ja L_66_45               	// [4:7142]  
-BB22_PU66:	// 0x1ed2
+	     .stabn 68,0,7128,LM1133-_End
+	     R4 = [BP + 0]            	// [1:7128]  memory_length
+	     cmp R4, 14               	// [3:7128]  
+	     ja L_66_48               	// [4:7128]  
+BB22_PU66:	// 0x1ebb
 // BB:22 cycle count: 9
-//7143  					{ 
-//7144  				       PlayA1800_Elements(A_VLMMREN_End_03b);
+//7129  					{ 
+//7130  				       PlayA1800_Elements(A_VLMMREN_End_03b);
 
 LM1134:
-	     .stabn 68,0,7144,LM1134-_End
-	     SP = SP - 1              	// [0:7144]  
-	     R3 = 23                  	// [1:7144]  
-	     R4 = SP + 1              	// [2:7144]  
-	     [R4] = R3                	// [4:7144]  
-	     call _PlayA1800_Elements 	// [6:7144]  PlayA1800_Elements
-BB23_PU66:	// 0x1ed9
+	     .stabn 68,0,7130,LM1134-_End
+	     SP = SP - 1              	// [0:7130]  
+	     R3 = 23                  	// [1:7130]  
+	     R4 = SP + 1              	// [2:7130]  
+	     [R4] = R3                	// [4:7130]  
+	     call _PlayA1800_Elements 	// [6:7130]  PlayA1800_Elements
+BB23_PU66:	// 0x1ec2
 // BB:23 cycle count: 8
-//7145  				       PlayA1800_Elements(A_VLMMREN_End_02b);
+//7131  				       PlayA1800_Elements(A_VLMMREN_End_02b);
 
 LM1135:
-	     .stabn 68,0,7145,LM1135-_End
-	     R3 = 21                  	// [0:7145]  
-	     R4 = SP + 1              	// [1:7145]  
-	     [R4] = R3                	// [3:7145]  
-	     call _PlayA1800_Elements 	// [5:7145]  PlayA1800_Elements
-BB24_PU66:	// 0x1edf
+	     .stabn 68,0,7131,LM1135-_End
+	     R3 = 21                  	// [0:7131]  
+	     R4 = SP + 1              	// [1:7131]  
+	     [R4] = R3                	// [3:7131]  
+	     call _PlayA1800_Elements 	// [5:7131]  PlayA1800_Elements
+BB24_PU66:	// 0x1ec8
 // BB:24 cycle count: 5
-	     SP = SP + 1              	// [0:7145]  
-	     jmp L_66_44              	// [1:7145]  
-L_66_45:	// 0x1ee1
+	     SP = SP + 1              	// [0:7131]  
+	     jmp L_66_47              	// [1:7131]  
+L_66_48:	// 0x1eca
 // BB:25 cycle count: 10
-//7146  					}
-//7147  					else
-//7148  					{
-//7149  					   PlayA1800_Elements(VLMMREN_Correct3b);
+//7132  					}
+//7133  					else
+//7134  					{
+//7135  					   PlayA1800_Elements(VLMMREN_Correct3b);
 
 LM1136:
-	     .stabn 68,0,7149,LM1136-_End
-	     SP = SP - 1              	// [0:7149]  
-	     R3 = 212                 	// [1:7149]  
-	     R4 = SP + 1              	// [3:7149]  
-	     [R4] = R3                	// [5:7149]  
-	     call _PlayA1800_Elements 	// [7:7149]  PlayA1800_Elements
-BB26_PU66:	// 0x1ee9
+	     .stabn 68,0,7135,LM1136-_End
+	     SP = SP - 1              	// [0:7135]  
+	     R3 = 214                 	// [1:7135]  
+	     R4 = SP + 1              	// [3:7135]  
+	     [R4] = R3                	// [5:7135]  
+	     call _PlayA1800_Elements 	// [7:7135]  PlayA1800_Elements
+BB26_PU66:	// 0x1ed2
 // BB:26 cycle count: 8
-//7150  				       PlayA1800_Elements(A_VLMMREN_End_02b);
+//7136  				       PlayA1800_Elements(A_VLMMREN_End_02b);
 
 LM1137:
-	     .stabn 68,0,7150,LM1137-_End
-	     R3 = 21                  	// [0:7150]  
-	     R4 = SP + 1              	// [1:7150]  
-	     [R4] = R3                	// [3:7150]  
-	     call _PlayA1800_Elements 	// [5:7150]  PlayA1800_Elements
-BB27_PU66:	// 0x1eef
+	     .stabn 68,0,7136,LM1137-_End
+	     R3 = 21                  	// [0:7136]  
+	     R4 = SP + 1              	// [1:7136]  
+	     [R4] = R3                	// [3:7136]  
+	     call _PlayA1800_Elements 	// [5:7136]  PlayA1800_Elements
+BB27_PU66:	// 0x1ed8
 // BB:27 cycle count: 1
-	     SP = SP + 1              	// [0:7150]  
-L_66_44:	// 0x1ef0
+	     SP = SP + 1              	// [0:7136]  
+L_66_47:	// 0x1ed9
 // BB:28 cycle count: 9
-//7151  					}	
-//7152  			         delay_time(8);
+//7137  					}	
+//7138  			         delay_time(8);
 
 LM1138:
-	     .stabn 68,0,7152,LM1138-_End
-	     SP = SP - 1              	// [0:7152]  
-	     R3 = 8                   	// [1:7152]  
-	     R4 = SP + 1              	// [2:7152]  
-	     [R4] = R3                	// [4:7152]  
-	     call _delay_time         	// [6:7152]  delay_time
-BB29_PU66:	// 0x1ef7
+	     .stabn 68,0,7138,LM1138-_End
+	     SP = SP - 1              	// [0:7138]  
+	     R3 = 8                   	// [1:7138]  
+	     R4 = SP + 1              	// [2:7138]  
+	     [R4] = R3                	// [4:7138]  
+	     call _delay_time         	// [6:7138]  delay_time
+BB29_PU66:	// 0x1ee0
 // BB:29 cycle count: 1
-	     SP = SP + 1              	// [0:7152]  
-L_66_42:	// 0x1ef8
-L_66_41:	// 0x1ef8
+	     SP = SP + 1              	// [0:7138]  
+L_66_45:	// 0x1ee1
+L_66_44:	// 0x1ee1
 // BB:30 cycle count: 20
-//7157       //temp = Get_Num_Higgest_score(Registered_Play_Status);
-//7158  
-//7159      // if(Get_Num_Bigscore(Rounds,2,Registered_Play_Status)==0 )//NumRounds
-//7160       {
-//7161       	 Cn =0;
+//7143       //temp = Get_Num_Higgest_score(Registered_Play_Status);
+//7144  
+//7145      // if(Get_Num_Bigscore(Rounds,2,Registered_Play_Status)==0 )//NumRounds
+//7146       {
+//7147       	 Cn =0;
 
 LM1139:
-	     .stabn 68,0,7161,LM1139-_End
-	     R3 = 0                   	// [0:7161]  
-	     DS = seg(_Cn)            	// [1:7161]  Cn
-	     R4 = (_Cn)               	// [2:7161]  Cn
-	     DS:[R4] = R3             	// [4:7161]  
-//7162       	 CurrentRound++;
+	     .stabn 68,0,7147,LM1139-_End
+	     R3 = 0                   	// [0:7147]  
+	     DS = seg(_Cn)            	// [1:7147]  Cn
+	     R4 = (_Cn)               	// [2:7147]  Cn
+	     DS:[R4] = R3             	// [4:7147]  
+//7148       	 CurrentRound++;
 
 LM1140:
-	     .stabn 68,0,7162,LM1140-_End
-	     DS = seg(_CurrentRound)  	// [6:7162]  CurrentRound
-	     R4 = (_CurrentRound)     	// [7:7162]  CurrentRound
-	     R4 = DS:[R4]             	// [9:7162]  
-	     R4 = R4 + 1              	// [11:7162]  
-	     DS = seg(_CurrentRound)  	// [12:7162]  CurrentRound
-	     R3 = (_CurrentRound)     	// [13:7162]  CurrentRound
-	     DS:[R3] = R4             	// [15:7162]  
-//7163  		 Reset_Memory();	
+	     .stabn 68,0,7148,LM1140-_End
+	     DS = seg(_CurrentRound)  	// [6:7148]  CurrentRound
+	     R4 = (_CurrentRound)     	// [7:7148]  CurrentRound
+	     R4 = DS:[R4]             	// [9:7148]  
+	     R4 = R4 + 1              	// [11:7148]  
+	     DS = seg(_CurrentRound)  	// [12:7148]  CurrentRound
+	     R3 = (_CurrentRound)     	// [13:7148]  CurrentRound
+	     DS:[R3] = R4             	// [15:7148]  
+//7149  		 Reset_Memory();	
 
 LM1141:
-	     .stabn 68,0,7163,LM1141-_End
-	     call _Reset_Memory       	// [17:7163]  Reset_Memory
-BB31_PU66:	// 0x1f08
+	     .stabn 68,0,7149,LM1141-_End
+	     call _Reset_Memory       	// [17:7149]  Reset_Memory
+BB31_PU66:	// 0x1ef1
 // BB:31 cycle count: 3
-//7164           SetPingame();
+//7150           SetPingame();
 
 LM1142:
-	     .stabn 68,0,7164,LM1142-_End
-	     call _SetPingame         	// [0:7164]  SetPingame
-BB32_PU66:	// 0x1f0a
+	     .stabn 68,0,7150,LM1142-_End
+	     call _SetPingame         	// [0:7150]  SetPingame
+BB32_PU66:	// 0x1ef3
 // BB:32 cycle count: 3
-//7165  		 Reset_Pselected();
+//7151  		 Reset_Pselected();
 
 LM1143:
-	     .stabn 68,0,7165,LM1143-_End
-	     call _Reset_Pselected    	// [0:7165]  Reset_Pselected
-BB33_PU66:	// 0x1f0c
-// BB:33 cycle count: 27
-//7166         if(Get_All_SameNum(Rounds,1,Registered_Play_Status)==0)//(CurrentRound !=3)
+	     .stabn 68,0,7151,LM1143-_End
+	     call _Reset_Pselected    	// [0:7151]  Reset_Pselected
+BB33_PU66:	// 0x1ef5
+// BB:33 cycle count: 33
+//7152  		 
+//7153  		 randomflag =1;
 
 LM1144:
-	     .stabn 68,0,7166,LM1144-_End
-	     SP = SP - 4              	// [0:7166]  
-	     R2 = (_Rounds)           	// [1:7166]  Rounds
-	     R3 = seg(_Rounds)        	// [3:7166]  Rounds
-	     R4 = SP + 1              	// [4:7166]  
-	     [R4++] = R2              	// [6:7166]  
-	     [R4] = R3                	// [8:7166]  
-	     R3 = 1                   	// [10:7166]  
-	     R4 = SP + 3              	// [11:7166]  
-	     [R4] = R3                	// [13:7166]  
-	     DS = seg(_Registered_Play_Status)	// [15:7166]  Registered_Play_Status
-	     R4 = (_Registered_Play_Status)	// [16:7166]  Registered_Play_Status
-	     R3 = DS:[R4]             	// [18:7166]  
-	     R4 = SP + 4              	// [20:7166]  
-	     [R4] = R3                	// [22:7166]  
-	     call _Get_All_SameNum    	// [24:7166]  Get_All_SameNum
-BB34_PU66:	// 0x1f21
-// BB:34 cycle count: 6
-	     SP = SP + 4              	// [0:7166]  
-	     cmp R1, 0                	// [1:7166]  
-	     jne L_66_47              	// [2:7166]  
-BB35_PU66:	// 0x1f24
-// BB:35 cycle count: 10
-//7167         	{
-//7168         	   PlayA1800_Elements(SFX_Yeah);	
+	     .stabn 68,0,7153,LM1144-_End
+	     R3 = 1                   	// [0:7153]  
+	     DS = seg(_randomflag)    	// [1:7153]  randomflag
+	     R4 = (_randomflag)       	// [2:7153]  randomflag
+	     DS:[R4] = R3             	// [4:7153]  
+//7154  		 
+//7155         if(Get_All_SameNum(Rounds,1,Registered_Play_Status)==0)//(CurrentRound !=3)
 
 LM1145:
-	     .stabn 68,0,7168,LM1145-_End
-	     SP = SP - 1              	// [0:7168]  
-	     R3 = 135                 	// [1:7168]  
-	     R4 = SP + 1              	// [3:7168]  
-	     [R4] = R3                	// [5:7168]  
-	     call _PlayA1800_Elements 	// [7:7168]  PlayA1800_Elements
-BB36_PU66:	// 0x1f2c
-// BB:36 cycle count: 8
-//7169         	   delay_time(16);	
+	     .stabn 68,0,7155,LM1145-_End
+	     SP = SP - 4              	// [6:7155]  
+	     R2 = (_Rounds)           	// [7:7155]  Rounds
+	     R3 = seg(_Rounds)        	// [9:7155]  Rounds
+	     R4 = SP + 1              	// [10:7155]  
+	     [R4++] = R2              	// [12:7155]  
+	     [R4] = R3                	// [14:7155]  
+	     R3 = 1                   	// [16:7155]  
+	     R4 = SP + 3              	// [17:7155]  
+	     [R4] = R3                	// [19:7155]  
+	     DS = seg(_Registered_Play_Status)	// [21:7155]  Registered_Play_Status
+	     R4 = (_Registered_Play_Status)	// [22:7155]  Registered_Play_Status
+	     R3 = DS:[R4]             	// [24:7155]  
+	     R4 = SP + 4              	// [26:7155]  
+	     [R4] = R3                	// [28:7155]  
+	     call _Get_All_SameNum    	// [30:7155]  Get_All_SameNum
+BB34_PU66:	// 0x1f0f
+// BB:34 cycle count: 6
+	     SP = SP + 4              	// [0:7155]  
+	     cmp R1, 0                	// [1:7155]  
+	     jne L_66_50              	// [2:7155]  
+BB35_PU66:	// 0x1f12
+// BB:35 cycle count: 10
+//7156         	{
+//7157         	   PlayA1800_Elements(SFX_Yeah);	
 
 LM1146:
-	     .stabn 68,0,7169,LM1146-_End
-	     R3 = 16                  	// [0:7169]  
-	     R4 = SP + 1              	// [1:7169]  
-	     [R4] = R3                	// [3:7169]  
-	     call _delay_time         	// [5:7169]  delay_time
-BB37_PU66:	// 0x1f32
-// BB:37 cycle count: 9
-//7170             PlayA1800_Elements(A_VLMMREN_WinRound02a);    
+	     .stabn 68,0,7157,LM1146-_End
+	     SP = SP - 1              	// [0:7157]  
+	     R3 = 137                 	// [1:7157]  
+	     R4 = SP + 1              	// [3:7157]  
+	     [R4] = R3                	// [5:7157]  
+	     call _PlayA1800_Elements 	// [7:7157]  PlayA1800_Elements
+BB36_PU66:	// 0x1f1a
+// BB:36 cycle count: 8
+//7158         	   delay_time(16);	
 
 LM1147:
-	     .stabn 68,0,7170,LM1147-_End
-	     R3 = 80                  	// [0:7170]  
-	     R4 = SP + 1              	// [2:7170]  
-	     [R4] = R3                	// [4:7170]  
-	     call _PlayA1800_Elements 	// [6:7170]  PlayA1800_Elements
-BB38_PU66:	// 0x1f39
-// BB:38 cycle count: 8
-//7171  		   delay_time(8);
+	     .stabn 68,0,7158,LM1147-_End
+	     R3 = 16                  	// [0:7158]  
+	     R4 = SP + 1              	// [1:7158]  
+	     [R4] = R3                	// [3:7158]  
+	     call _delay_time         	// [5:7158]  delay_time
+BB37_PU66:	// 0x1f20
+// BB:37 cycle count: 9
+//7159             PlayA1800_Elements(A_VLMMREN_WinRound02a);    
 
 LM1148:
-	     .stabn 68,0,7171,LM1148-_End
-	     R3 = 8                   	// [0:7171]  
-	     R4 = SP + 1              	// [1:7171]  
-	     [R4] = R3                	// [3:7171]  
-	     call _delay_time         	// [5:7171]  delay_time
-BB39_PU66:	// 0x1f3f
-// BB:39 cycle count: 5
-	     SP = SP + 1              	// [0:7171]  
-	     jmp L_66_46              	// [1:7171]  
-L_66_47:	// 0x1f41
-// BB:40 cycle count: 3
-//7173  		   
-//7174         	}
-//7175  	   else
-//7176  	   	{
-//7177  	   	    Key_CheckScores();	
+	     .stabn 68,0,7159,LM1148-_End
+	     R3 = 82                  	// [0:7159]  
+	     R4 = SP + 1              	// [2:7159]  
+	     [R4] = R3                	// [4:7159]  
+	     call _PlayA1800_Elements 	// [6:7159]  PlayA1800_Elements
+BB38_PU66:	// 0x1f27
+// BB:38 cycle count: 8
+//7160  		   delay_time(8);
 
 LM1149:
-	     .stabn 68,0,7177,LM1149-_End
-	     call _Key_CheckScores    	// [0:7177]  Key_CheckScores
-BB41_PU66:	// 0x1f43
-// BB:41 cycle count: 9
-//7178  	   	    delay_time(16);	
+	     .stabn 68,0,7160,LM1149-_End
+	     R3 = 8                   	// [0:7160]  
+	     R4 = SP + 1              	// [1:7160]  
+	     [R4] = R3                	// [3:7160]  
+	     call _delay_time         	// [5:7160]  delay_time
+BB39_PU66:	// 0x1f2d
+// BB:39 cycle count: 4
+	     SP = SP + 1              	// [0:7160]  
+	     goto L_66_49             	// [1:7160]  
+L_66_50:	// 0x1f30
+// BB:40 cycle count: 21
+//7162  		   
+//7163         	}
+//7164  	   else
+//7165  	   	{
+//7166  	   		 Key_Event =0;
 
 LM1150:
-	     .stabn 68,0,7178,LM1150-_End
-	     SP = SP - 1              	// [0:7178]  
-	     R3 = 16                  	// [1:7178]  
-	     R4 = SP + 1              	// [2:7178]  
-	     [R4] = R3                	// [4:7178]  
-	     call _delay_time         	// [6:7178]  delay_time
-BB42_PU66:	// 0x1f4a
-// BB:42 cycle count: 9
-//7179  		    PlayA1800_Elements(A_VLMMREN_WinRound03);	 
+	     .stabn 68,0,7166,LM1150-_End
+	     R3 = 0                   	// [0:7166]  
+	     DS = seg(_Key_Event)     	// [1:7166]  Key_Event
+	     R4 = (_Key_Event)        	// [2:7166]  Key_Event
+	     DS:[R4] = R3             	// [4:7166]  
+//7167  		     Key_activeflag =Playbutton;
 
 LM1151:
-	     .stabn 68,0,7179,LM1151-_End
-	     R3 = 81                  	// [0:7179]  
-	     R4 = SP + 1              	// [2:7179]  
-	     [R4] = R3                	// [4:7179]  
-	     call _PlayA1800_Elements 	// [6:7179]  PlayA1800_Elements
-BB43_PU66:	// 0x1f51
-// BB:43 cycle count: 8
-//7180  		    delay_time(16);
+	     .stabn 68,0,7167,LM1151-_End
+	     R3 = 1                   	// [6:7167]  
+	     DS = seg(_Key_activeflag)	// [7:7167]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:7167]  Key_activeflag
+	     DS:[R4] = R3             	// [10:7167]  
+//7168   
+//7169  	   	   // Key_CheckScores();
+//7170  	   	      BlinkFlag_Data=0;	
 
 LM1152:
-	     .stabn 68,0,7180,LM1152-_End
-	     R3 = 16                  	// [0:7180]  
-	     R4 = SP + 1              	// [1:7180]  
-	     [R4] = R3                	// [3:7180]  
-	     call _delay_time         	// [5:7180]  delay_time
-BB44_PU66:	// 0x1f57
-// BB:44 cycle count: 1
-	     SP = SP + 1              	// [0:7180]  
-L_66_46:	// 0x1f58
-// BB:45 cycle count: 12
-//7181  		  
-//7182  
-//7183  	   	}
-//7184  
-//7185          Key_Event =0;
+	     .stabn 68,0,7170,LM1152-_End
+	     R3 = 0                   	// [12:7170]  
+	     DS = seg(_BlinkFlag_Data)	// [13:7170]  BlinkFlag_Data
+	     R4 = (_BlinkFlag_Data)   	// [14:7170]  BlinkFlag_Data
+	     DS:[R4] = R3             	// [16:7170]  
+//7171  	   	      Light_all_off();
 
 LM1153:
-	     .stabn 68,0,7185,LM1153-_End
+	     .stabn 68,0,7171,LM1153-_End
+	     call _Light_all_off      	// [18:7171]  Light_all_off
+BB41_PU66:	// 0x1f41
+// BB:41 cycle count: 15
+//7172                BlinkFlag_Data = All_Led_data;
+
+LM1154:
+	     .stabn 68,0,7172,LM1154-_End
+	     R3 = 15                  	// [0:7172]  
+	     DS = seg(_BlinkFlag_Data)	// [1:7172]  BlinkFlag_Data
+	     R4 = (_BlinkFlag_Data)   	// [2:7172]  BlinkFlag_Data
+	     DS:[R4] = R3             	// [4:7172]  
+//7173                
+//7174  	   	      delay_time(8);	
+
+LM1155:
+	     .stabn 68,0,7174,LM1155-_End
+	     SP = SP - 1              	// [6:7174]  
+	     R3 = 8                   	// [7:7174]  
+	     R4 = SP + 1              	// [8:7174]  
+	     [R4] = R3                	// [10:7174]  
+	     call _delay_time         	// [12:7174]  delay_time
+BB42_PU66:	// 0x1f4d
+// BB:42 cycle count: 9
+//7175                PlayA1800_Elements(A_VLMMREN_Score_01);
+
+LM1156:
+	     .stabn 68,0,7175,LM1156-_End
+	     R3 = 66                  	// [0:7175]  
+	     R4 = SP + 1              	// [2:7175]  
+	     [R4] = R3                	// [4:7175]  
+	     call _PlayA1800_Elements 	// [6:7175]  PlayA1800_Elements
+BB43_PU66:	// 0x1f54
+// BB:43 cycle count: 8
+//7176                delay_time(8); 
+
+LM1157:
+	     .stabn 68,0,7176,LM1157-_End
+	     R3 = 8                   	// [0:7176]  
+	     R4 = SP + 1              	// [1:7176]  
+	     [R4] = R3                	// [3:7176]  
+	     call _delay_time         	// [5:7176]  delay_time
+BB44_PU66:	// 0x1f5a
+// BB:44 cycle count: 27
+	     SP = SP - 3              	// [0:7176]  
+//7177                Play_Serieplayer16bit(0,Registered_Play_Status,C_Play_StartAddr);
+
+LM1158:
+	     .stabn 68,0,7177,LM1158-_End
+	     R3 = 0                   	// [1:7177]  
+	     R4 = SP + 1              	// [2:7177]  
+	     [R4] = R3                	// [4:7177]  
+	     DS = seg(_Registered_Play_Status)	// [6:7177]  Registered_Play_Status
+	     R4 = (_Registered_Play_Status)	// [7:7177]  Registered_Play_Status
+	     R3 = DS:[R4]             	// [9:7177]  
+	     R4 = SP + 2              	// [11:7177]  
+	     [R4] = R3                	// [13:7177]  
+	     R2 = 6000                	// [15:7177]  
+	     R3 = 0                   	// [17:7177]  
+	     R4 = SP + 3              	// [18:7177]  
+	     [R4++] = R2              	// [20:7177]  
+	     [R4] = R3                	// [22:7177]  
+	     call _Play_Serieplayer16bit	// [24:7177]  Play_Serieplayer16bit
+BB45_PU66:	// 0x1f6f
+// BB:45 cycle count: 10
+	     SP = SP + 3              	// [0:7177]  
+//7178                PlayA1800_Elements(A_VLMMREN_WinRound01c);
+
+LM1159:
+	     .stabn 68,0,7178,LM1159-_End
+	     R3 = 79                  	// [1:7178]  
+	     R4 = SP + 1              	// [3:7178]  
+	     [R4] = R3                	// [5:7178]  
+	     call _PlayA1800_Elements 	// [7:7178]  PlayA1800_Elements
+BB46_PU66:	// 0x1f77
+// BB:46 cycle count: 10
+	     SP = SP + 1              	// [0:7178]  
+//7179  
+//7180  			  BlinkFlag_Data =0;
+
+LM1160:
+	     .stabn 68,0,7180,LM1160-_End
+	     R3 = 0                   	// [1:7180]  
+	     DS = seg(_BlinkFlag_Data)	// [2:7180]  BlinkFlag_Data
+	     R4 = (_BlinkFlag_Data)   	// [3:7180]  BlinkFlag_Data
+	     DS:[R4] = R3             	// [5:7180]  
+//7181  			  Light_all_off();
+
+LM1161:
+	     .stabn 68,0,7181,LM1161-_End
+	     call _Light_all_off      	// [7:7181]  Light_all_off
+BB47_PU66:	// 0x1f7f
+// BB:47 cycle count: 21
+//7182  
+//7183  			  
+//7184                
+//7185  	   	    Key_Event =0;
+
+LM1162:
+	     .stabn 68,0,7185,LM1162-_End
 	     R3 = 0                   	// [0:7185]  
 	     DS = seg(_Key_Event)     	// [1:7185]  Key_Event
 	     R4 = (_Key_Event)        	// [2:7185]  Key_Event
 	     DS:[R4] = R3             	// [4:7185]  
-//7186  		Key_activeflag =Playbutton;
+//7186  		    Key_activeflag =Playbutton;	   
 
-LM1154:
-	     .stabn 68,0,7186,LM1154-_End
+LM1163:
+	     .stabn 68,0,7186,LM1163-_End
 	     R3 = 1                   	// [6:7186]  
 	     DS = seg(_Key_activeflag)	// [7:7186]  Key_activeflag
 	     R4 = (_Key_activeflag)   	// [8:7186]  Key_activeflag
 	     DS:[R4] = R3             	// [10:7186]  
-L_66_48:	// 0x1f62
-// BB:46 cycle count: 10
-//7187  
-//7188  
-//7189          while(Key_Event==0)
-
-LM1155:
-	     .stabn 68,0,7189,LM1155-_End
-	     DS = seg(_Key_Event)     	// [0:7189]  Key_Event
-	     R4 = (_Key_Event)        	// [1:7189]  Key_Event
-	     R4 = DS:[R4]             	// [3:7189]  
-	     cmp R4, 0                	// [5:7189]  
-	     jne L_66_49              	// [6:7189]  
-BB47_PU66:	// 0x1f68
-// BB:47 cycle count: 10
-//7190          	{
-//7191  
-//7192  			   if(Sleepflag)
-
-LM1156:
-	     .stabn 68,0,7192,LM1156-_End
-	     DS = seg(_Sleepflag)     	// [0:7192]  Sleepflag
-	     R4 = (_Sleepflag)        	// [1:7192]  Sleepflag
-	     R4 = DS:[R4]             	// [3:7192]  
-	     cmp R4, 0                	// [5:7192]  
-	     je L_66_50               	// [6:7192]  
-BB48_PU66:	// 0x1f6e
-// BB:48 cycle count: 8
-//7193  				 return C_Off_Mode;
-
-LM1157:
-	     .stabn 68,0,7193,LM1157-_End
-	     R1 = - 4085              	// [0:7193]  
-	     SP = SP + 6              	// [2:7193]  
-	     pop BP, PC from [SP]     	// [3:7193]  
-L_66_50:	// 0x1f72
-// BB:49 cycle count: 11
-//7194  			   
-//7195  			   timeovercnt++;
-
-LM1158:
-	     .stabn 68,0,7195,LM1158-_End
-	     R4 = [BP + 2]            	// [0:7195]  timeovercnt
-	     R4 = R4 + 1              	// [2:7195]  
-	     [BP + 2] = R4            	// [3:7195]  timeovercnt
-//7196  			   
-//7197  			   if(timeovercnt>9)
-
-LM1159:
-	     .stabn 68,0,7197,LM1159-_End
-	     R4 = [BP + 2]            	// [4:7197]  timeovercnt
-	     cmp R4, 9                	// [6:7197]  
-	     jbe L_66_51              	// [7:7197]  
-BB50_PU66:	// 0x1f78
-// BB:50 cycle count: 3
-//7198  				{
-//7199  			   
-//7200  						GameTimeout();	 
-
-LM1160:
-	     .stabn 68,0,7200,LM1160-_End
-	     call _GameTimeout        	// [0:7200]  GameTimeout
-BB51_PU66:	// 0x1f7a
-// BB:51 cycle count: 2
-//7201  						timeovercnt=0;
-
-LM1161:
-	     .stabn 68,0,7201,LM1161-_End
-	     R4 = 0                   	// [0:7201]  
-	     [BP + 2] = R4            	// [1:7201]  timeovercnt
-L_66_51:	// 0x1f7c
-// BB:52 cycle count: 9
-//7203  
-//7204  
-//7205  
-//7206  			
-//7207  		       delay_time(8);
-
-LM1162:
-	     .stabn 68,0,7207,LM1162-_End
-	     SP = SP - 1              	// [0:7207]  
-	     R3 = 8                   	// [1:7207]  
-	     R4 = SP + 1              	// [2:7207]  
-	     [R4] = R3                	// [4:7207]  
-	     call _delay_time         	// [6:7207]  delay_time
-BB53_PU66:	// 0x1f83
-// BB:53 cycle count: 9
-//7208                 PlayA1800_Elements(A_VLMMREN_SetUp_04);	 
-
-LM1163:
-	     .stabn 68,0,7208,LM1163-_End
-	     R3 = 74                  	// [0:7208]  
-	     R4 = SP + 1              	// [2:7208]  
-	     [R4] = R3                	// [4:7208]  
-	     call _PlayA1800_Elements 	// [6:7208]  PlayA1800_Elements
-BB54_PU66:	// 0x1f8a
-// BB:54 cycle count: 8
-//7209  		       PlayA1800_Elements(A_VLMMREN_Button_01a);	 
+//7187  	   	    delay_time(16);	
 
 LM1164:
-	     .stabn 68,0,7209,LM1164-_End
-	     R3 = 7                   	// [0:7209]  
-	     R4 = SP + 1              	// [1:7209]  
-	     [R4] = R3                	// [3:7209]  
-	     call _PlayA1800_Elements 	// [5:7209]  PlayA1800_Elements
-BB55_PU66:	// 0x1f90
-// BB:55 cycle count: 9
-//7210                 delay_time(20*16);
+	     .stabn 68,0,7187,LM1164-_End
+	     SP = SP - 1              	// [12:7187]  
+	     R3 = 16                  	// [13:7187]  
+	     R4 = SP + 1              	// [14:7187]  
+	     [R4] = R3                	// [16:7187]  
+	     call _delay_time         	// [18:7187]  delay_time
+BB48_PU66:	// 0x1f90
+// BB:48 cycle count: 9
+//7188  	   	    
+//7189  		    PlayA1800_Elements(A_VLMMREN_WinRound03);	 
 
 LM1165:
-	     .stabn 68,0,7210,LM1165-_End
-	     R3 = 320                 	// [0:7210]  
-	     R4 = SP + 1              	// [2:7210]  
-	     [R4] = R3                	// [4:7210]  
-	     call _delay_time         	// [6:7210]  delay_time
-BB56_PU66:	// 0x1f97
-// BB:56 cycle count: 5
-	     SP = SP + 1              	// [0:7210]  
-	     jmp L_66_48              	// [1:7210]  
-L_66_49:	// 0x1f99
-// BB:57 cycle count: 8
-//7211          	}
-//7212  		 
-//7213       	   return C_Game;
+	     .stabn 68,0,7189,LM1165-_End
+	     R3 = 83                  	// [0:7189]  
+	     R4 = SP + 1              	// [2:7189]  
+	     [R4] = R3                	// [4:7189]  
+	     call _PlayA1800_Elements 	// [6:7189]  PlayA1800_Elements
+BB49_PU66:	// 0x1f97
+// BB:49 cycle count: 8
+//7190  		    delay_time(16);
 
 LM1166:
-	     .stabn 68,0,7213,LM1166-_End
-	     R1 = - 4083              	// [0:7213]  
-	     SP = SP + 6              	// [2:7213]  
-	     pop BP, PC from [SP]     	// [3:7213]  
-L_66_40:	// 0x1f9d
-// BB:58 cycle count: 22
-//7215     	   }
-//7216  
-//7217       else
-//7218      {
-//7219      	    temp =Get_Num_Higgest_score(Rounds,Registered_Play_Status );//Pingame
+	     .stabn 68,0,7190,LM1166-_End
+	     R3 = 16                  	// [0:7190]  
+	     R4 = SP + 1              	// [1:7190]  
+	     [R4] = R3                	// [3:7190]  
+	     call _delay_time         	// [5:7190]  delay_time
+BB50_PU66:	// 0x1f9d
+// BB:50 cycle count: 1
+	     SP = SP + 1              	// [0:7190]  
+L_66_49:	// 0x1f9e
+// BB:51 cycle count: 12
+//7191  		  
+//7192  
+//7193  	   	}
+//7194  
+//7195          Key_Event =0;
 
 LM1167:
-	     .stabn 68,0,7219,LM1167-_End
-	     SP = SP - 3              	// [0:7219]  
-	     R2 = (_Rounds)           	// [1:7219]  Rounds
-	     R3 = seg(_Rounds)        	// [3:7219]  Rounds
-	     R4 = SP + 1              	// [4:7219]  
-	     [R4++] = R2              	// [6:7219]  
-	     [R4] = R3                	// [8:7219]  
-	     DS = seg(_Registered_Play_Status)	// [10:7219]  Registered_Play_Status
-	     R4 = (_Registered_Play_Status)	// [11:7219]  Registered_Play_Status
-	     R3 = DS:[R4]             	// [13:7219]  
-	     R4 = SP + 3              	// [15:7219]  
-	     [R4] = R3                	// [17:7219]  
-	     call _Get_Num_Higgest_score	// [19:7219]  Get_Num_Higgest_score
-BB59_PU66:	// 0x1fae
-// BB:59 cycle count: 40
-	     SP = SP - 2              	// [0:7219]  
-	     [BP + 5] = R1            	// [1:7219]  temp
-//7220  
-//7221              Leader_Player_temp = Leader_Player;
+	     .stabn 68,0,7195,LM1167-_End
+	     R3 = 0                   	// [0:7195]  
+	     DS = seg(_Key_Event)     	// [1:7195]  Key_Event
+	     R4 = (_Key_Event)        	// [2:7195]  Key_Event
+	     DS:[R4] = R3             	// [4:7195]  
+//7196  		Key_activeflag =Playbutton;
 
 LM1168:
-	     .stabn 68,0,7221,LM1168-_End
-	     DS = seg(_Leader_Player) 	// [2:7221]  Leader_Player
-	     R4 = (_Leader_Player)    	// [3:7221]  Leader_Player
-	     R4 = DS:[R4]             	// [5:7221]  
-	     [BP + 1] = R4            	// [7:7221]  Leader_Player_temp
-//7222              h_round_temp = Higgest_T;
+	     .stabn 68,0,7196,LM1168-_End
+	     R3 = 1                   	// [6:7196]  
+	     DS = seg(_Key_activeflag)	// [7:7196]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:7196]  Key_activeflag
+	     DS:[R4] = R3             	// [10:7196]  
+L_66_51:	// 0x1fa8
+// BB:52 cycle count: 10
+//7197  
+//7198  
+//7199          while(Key_Event==0)
 
 LM1169:
-	     .stabn 68,0,7222,LM1169-_End
-	     DS = seg(_Higgest_T)     	// [8:7222]  Higgest_T
-	     R4 = (_Higgest_T)        	// [9:7222]  Higgest_T
-	     R4 = DS:[R4]             	// [11:7222]  
-	     [BP + 3] = R4            	// [13:7222]  h_round_temp
-//7294              {
-//7295              	//delay_time(8);	
-//7296              	//PlayA1800_Elements(SFX_EndGame);            	
-//7297  	            //Play_Serieplayer16bit(0,Leader_Player,C_Play_StartAddr);//Play_Serieplayer(0,&Leader_Player,C_Play_StartAddr);
-//7298  	            Play_Serieplayer(0,Pingame,C_Play_StartAddr);
+	     .stabn 68,0,7199,LM1169-_End
+	     DS = seg(_Key_Event)     	// [0:7199]  Key_Event
+	     R4 = (_Key_Event)        	// [1:7199]  Key_Event
+	     R4 = DS:[R4]             	// [3:7199]  
+	     cmp R4, 0                	// [5:7199]  
+	     jne L_66_52              	// [6:7199]  
+BB53_PU66:	// 0x1fae
+// BB:53 cycle count: 10
+//7200          	{
+//7201  
+//7202  			   if(Sleepflag)
 
 LM1170:
-	     .stabn 68,0,7298,LM1170-_End
-	     R3 = 0                   	// [14:7298]  
-	     R4 = SP + 1              	// [15:7298]  
-	     [R4] = R3                	// [17:7298]  
-	     R2 = (_Pingame)          	// [19:7298]  Pingame
-	     R3 = seg(_Pingame)       	// [21:7298]  Pingame
-	     R4 = SP + 2              	// [22:7298]  
-	     [R4++] = R2              	// [24:7298]  
-	     [R4] = R3                	// [26:7298]  
-	     R2 = 6000                	// [28:7298]  
-	     R3 = 0                   	// [30:7298]  
-	     R4 = SP + 4              	// [31:7298]  
-	     [R4++] = R2              	// [33:7298]  
-	     [R4] = R3                	// [35:7298]  
-	     call _Play_Serieplayer   	// [37:7298]  Play_Serieplayer
-BB60_PU66:	// 0x1fce
-// BB:60 cycle count: 10
-	     SP = SP + 4              	// [0:7298]  
-//7299  	            PlayA1800_Elements(A_VLMMREN_WinRound01);	    	   
+	     .stabn 68,0,7202,LM1170-_End
+	     DS = seg(_Sleepflag)     	// [0:7202]  Sleepflag
+	     R4 = (_Sleepflag)        	// [1:7202]  Sleepflag
+	     R4 = DS:[R4]             	// [3:7202]  
+	     cmp R4, 0                	// [5:7202]  
+	     je L_66_53               	// [6:7202]  
+BB54_PU66:	// 0x1fb4
+// BB:54 cycle count: 8
+//7203  				 return C_Off_Mode;
 
 LM1171:
-	     .stabn 68,0,7299,LM1171-_End
-	     R3 = 77                  	// [1:7299]  
-	     R4 = SP + 1              	// [3:7299]  
-	     [R4] = R3                	// [5:7299]  
-	     call _PlayA1800_Elements 	// [7:7299]  PlayA1800_Elements
-BB61_PU66:	// 0x1fd6
-// BB:61 cycle count: 19
-	     SP = SP - 1              	// [0:7299]  
-//7300  	    	    Play_Seq(Higgest_T,C_RoundsTable);//PlayScores(Higgest_T);
+	     .stabn 68,0,7203,LM1171-_End
+	     R1 = - 4085              	// [0:7203]  
+	     SP = SP + 6              	// [2:7203]  
+	     pop BP, PC from [SP]     	// [3:7203]  
+L_66_53:	// 0x1fb8
+// BB:55 cycle count: 11
+//7204  			   
+//7205  			   timeovercnt++;
 
 LM1172:
-	     .stabn 68,0,7300,LM1172-_End
-	     DS = seg(_Higgest_T)     	// [1:7300]  Higgest_T
-	     R4 = (_Higgest_T)        	// [2:7300]  Higgest_T
-	     R3 = DS:[R4]             	// [4:7300]  
-	     R4 = SP + 1              	// [6:7300]  
-	     [R4] = R3                	// [8:7300]  
-	     R3 = 13050               	// [10:7300]  
-	     R4 = SP + 2              	// [12:7300]  
-	     [R4] = R3                	// [14:7300]  
-	     call _Play_Seq           	// [16:7300]  Play_Seq
-BB62_PU66:	// 0x1fe5
-// BB:62 cycle count: 9
-	     SP = SP + 1              	// [0:7300]  
-//7301  	    	    PlayA1800_Elements(A_VLMMREN_End_03);           	
+	     .stabn 68,0,7205,LM1172-_End
+	     R4 = [BP + 2]            	// [0:7205]  timeovercnt
+	     R4 = R4 + 1              	// [2:7205]  
+	     [BP + 2] = R4            	// [3:7205]  timeovercnt
+//7206  			   
+//7207  			   if(timeovercnt>18)
 
 LM1173:
-	     .stabn 68,0,7301,LM1173-_End
-	     R3 = 22                  	// [1:7301]  
-	     R4 = SP + 1              	// [2:7301]  
-	     [R4] = R3                	// [4:7301]  
-	     call _PlayA1800_Elements 	// [6:7301]  PlayA1800_Elements
-BB63_PU66:	// 0x1fec
-// BB:63 cycle count: 1
-	     SP = SP + 1              	// [0:7301]  
-L_66_39:	// 0x1fed
-// BB:64 cycle count: 3
+	     .stabn 68,0,7207,LM1173-_End
+	     R4 = [BP + 2]            	// [4:7207]  timeovercnt
+	     cmp R4, 18               	// [6:7207]  
+	     jbe L_66_54              	// [7:7207]  
+BB56_PU66:	// 0x1fbe
+// BB:56 cycle count: 3
+//7208  				{
+//7209  			   
+//7210  						GameTimeout();	 
 
 LM1174:
-	     .stabn 68,0,7114,LM1174-_End
-	     goto L_66_37             	// [0:7114]  
-L_66_38:	// 0x1fef
-// BB:65 cycle count: 10
-//7308       
-//7309  	
-//7310  	// PlayA1800_Elements(SFX_Winner);
-//7311    }
-//7312   else if(Registerd_Num==1)
+	     .stabn 68,0,7210,LM1174-_End
+	     call _GameTimeout        	// [0:7210]  GameTimeout
+BB57_PU66:	// 0x1fc0
+// BB:57 cycle count: 2
+//7211  						timeovercnt=0;
 
 LM1175:
-	     .stabn 68,0,7312,LM1175-_End
-	     DS = seg(_Registerd_Num) 	// [0:7312]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:7312]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:7312]  
-	     cmp R4, 1                	// [5:7312]  
-	     je BB66_PU66             	// [6:7312]  
-BB112_PU66:	// 0x1ff5
-// BB:112 cycle count: 3
-	     goto L_66_52             	// [0:0]  
-BB66_PU66:	// 0x1ff7
-// BB:66 cycle count: 8
-//7313   {
-//7314   	
-//7315   	 if(memory_length>100)
+	     .stabn 68,0,7211,LM1175-_End
+	     R4 = 0                   	// [0:7211]  
+	     [BP + 2] = R4            	// [1:7211]  timeovercnt
+L_66_54:	// 0x1fc2
+// BB:58 cycle count: 9
+//7213  
+//7214  
+//7215  
+//7216  			
+//7217  		       delay_time(8);
 
 LM1176:
-	     .stabn 68,0,7315,LM1176-_End
-	     R4 = [BP + 0]            	// [0:7315]  memory_length
-	     cmp R4, 100              	// [2:7315]  
-	     jbe L_66_54              	// [4:7315]  
-BB67_PU66:	// 0x1ffb
-// BB:67 cycle count: 12
-//7316   	 {
-//7317   	 	 Record=memory_length;
+	     .stabn 68,0,7217,LM1176-_End
+	     SP = SP - 1              	// [0:7217]  
+	     R3 = 8                   	// [1:7217]  
+	     R4 = SP + 1              	// [2:7217]  
+	     [R4] = R3                	// [4:7217]  
+	     call _delay_time         	// [6:7217]  delay_time
+BB59_PU66:	// 0x1fc9
+// BB:59 cycle count: 9
+//7218                 PlayA1800_Elements(A_VLMMREN_SetUp_04);	 
 
 LM1177:
-	     .stabn 68,0,7317,LM1177-_End
-	     R3 = [BP + 0]            	// [0:7317]  memory_length
-	     DS = seg(_Record)        	// [2:7317]  Record
-	     R4 = (_Record)           	// [3:7317]  Record
-	     DS:[R4] = R3             	// [5:7317]  
-	//;;
-	INT OFF
-	//;;
-//7318   	 	 
-//7319   	 	 
-//7320   	  __asm("INT OFF");
-//7321        MoveSPIDriverToRAM();		
+	     .stabn 68,0,7218,LM1177-_End
+	     R3 = 74                  	// [0:7218]  
+	     R4 = SP + 1              	// [2:7218]  
+	     [R4] = R3                	// [4:7218]  
+	     call _PlayA1800_Elements 	// [6:7218]  PlayA1800_Elements
+BB60_PU66:	// 0x1fd0
+// BB:60 cycle count: 8
+//7219  		       PlayA1800_Elements(A_VLMMREN_Button_01a);	 
 
 LM1178:
-	     .stabn 68,0,7321,LM1178-_End
-	     call _MoveSPIDriverToRAM 	// [9:7321]  MoveSPIDriverToRAM
-BB68_PU66:	// 0x2005
-// BB:68 cycle count: 15
-//7322        SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
+	     .stabn 68,0,7219,LM1178-_End
+	     R3 = 7                   	// [0:7219]  
+	     R4 = SP + 1              	// [1:7219]  
+	     [R4] = R3                	// [3:7219]  
+	     call _PlayA1800_Elements 	// [5:7219]  PlayA1800_Elements
+BB61_PU66:	// 0x1fd6
+// BB:61 cycle count: 9
+//7220                 delay_time(10*16);
 
 LM1179:
-	     .stabn 68,0,7322,LM1179-_End
-	     SP = SP - 2              	// [0:7322]  
-	     R3 = - 8192              	// [1:7322]  
-	     R4 = SP + 1              	// [3:7322]  
-	     [R4] = R3                	// [5:7322]  
-	     R3 = 31                  	// [7:7322]  
-	     R4 = SP + 2              	// [8:7322]  
-	     [R4] = R3                	// [10:7322]  
-	     call _SPI_Flash_Sector_Erase	// [12:7322]  SPI_Flash_Sector_Erase
-BB69_PU66:	// 0x2011
-// BB:69 cycle count: 24
-	     SP = SP - 1              	// [0:7322]  
-//7323        //SPI_Flash_SendNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
-//7324        SPI_Flash_SendAWord(T_Record_Secter_L,T_Record_Secter_H,Record);
+	     .stabn 68,0,7220,LM1179-_End
+	     R3 = 160                 	// [0:7220]  
+	     R4 = SP + 1              	// [2:7220]  
+	     [R4] = R3                	// [4:7220]  
+	     call _delay_time         	// [6:7220]  delay_time
+BB62_PU66:	// 0x1fdd
+// BB:62 cycle count: 5
+	     SP = SP + 1              	// [0:7220]  
+	     jmp L_66_51              	// [1:7220]  
+L_66_52:	// 0x1fdf
+// BB:63 cycle count: 16
+//7221          	}
+//7222  
+//7223  		   Key_Event =0;
 
 LM1180:
-	     .stabn 68,0,7324,LM1180-_End
-	     R3 = - 8192              	// [1:7324]  
-	     R4 = SP + 1              	// [3:7324]  
-	     [R4] = R3                	// [5:7324]  
-	     R3 = 31                  	// [7:7324]  
-	     R4 = SP + 2              	// [8:7324]  
-	     [R4] = R3                	// [10:7324]  
-	     DS = seg(_Record)        	// [12:7324]  Record
-	     R4 = (_Record)           	// [13:7324]  Record
-	     R3 = DS:[R4]             	// [15:7324]  
-	     R4 = SP + 3              	// [17:7324]  
-	     [R4] = R3                	// [19:7324]  
-	     call _SPI_Flash_SendAWord	// [21:7324]  SPI_Flash_SendAWord
-BB70_PU66:	// 0x2024
-// BB:70 cycle count: 11
-	     SP = SP + 2              	// [0:7324]  
-	//;;
-	INT FIQ,IRQ
-	//;;
-//7325          __asm("INT FIQ,IRQ");
-//7326   	 	 
-//7327   	 	 
-//7328   	 	 
-//7329   	 	 PlayA1800_Elements(A_VLMMREN_End_03d);
+	     .stabn 68,0,7223,LM1180-_End
+	     R3 = 0                   	// [0:7223]  
+	     DS = seg(_Key_Event)     	// [1:7223]  Key_Event
+	     R4 = (_Key_Event)        	// [2:7223]  Key_Event
+	     DS:[R4] = R3             	// [4:7223]  
+//7224  		   PlayA1800_Elements(SFX_Buzzer);
 
 LM1181:
-	     .stabn 68,0,7329,LM1181-_End
-	     R3 = 25                  	// [3:7329]  
-	     R4 = SP + 1              	// [4:7329]  
-	     [R4] = R3                	// [6:7329]  
-	     call _PlayA1800_Elements 	// [8:7329]  PlayA1800_Elements
-BB71_PU66:	// 0x202e
-// BB:71 cycle count: 8
-//7330   	 	 PlayA1800_Elements(A_VLMMREN_End_03Solo);
+	     .stabn 68,0,7224,LM1181-_End
+	     SP = SP - 1              	// [6:7224]  
+	     R3 = 124                 	// [7:7224]  
+	     R4 = SP + 1              	// [9:7224]  
+	     [R4] = R3                	// [11:7224]  
+	     call _PlayA1800_Elements 	// [13:7224]  PlayA1800_Elements
+BB64_PU66:	// 0x1fec
+// BB:64 cycle count: 8
+//7225  		   delay_time(16);
 
 LM1182:
-	     .stabn 68,0,7330,LM1182-_End
-	     R3 = 26                  	// [0:7330]  
-	     R4 = SP + 1              	// [1:7330]  
-	     [R4] = R3                	// [3:7330]  
-	     call _PlayA1800_Elements 	// [5:7330]  PlayA1800_Elements
-BB72_PU66:	// 0x2034
-// BB:72 cycle count: 4
-	     SP = SP + 1              	// [0:7330]  
-	     goto L_66_53             	// [1:7330]  
-L_66_54:	// 0x2037
-// BB:73 cycle count: 9
-//7331   	 }
-//7332   	else
-//7333   	{
-//7334   	
-//7335  	 	 PlayA1800_Elements(A_VLMMREN_End_02);
+	     .stabn 68,0,7225,LM1182-_End
+	     R3 = 16                  	// [0:7225]  
+	     R4 = SP + 1              	// [1:7225]  
+	     [R4] = R3                	// [3:7225]  
+	     call _delay_time         	// [5:7225]  delay_time
+BB65_PU66:	// 0x1ff2
+// BB:65 cycle count: 8
+	     SP = SP + 7              	// [0:7225]  
+//7226  
+//7227  
+//7228  		
+//7229  		 
+//7230       	   return C_Game;
 
 LM1183:
-	     .stabn 68,0,7335,LM1183-_End
-	     SP = SP - 1              	// [0:7335]  
-	     R3 = 20                  	// [1:7335]  
-	     R4 = SP + 1              	// [2:7335]  
-	     [R4] = R3                	// [4:7335]  
-	     call _PlayA1800_Elements 	// [6:7335]  PlayA1800_Elements
-BB74_PU66:	// 0x203e
-// BB:74 cycle count: 9
-//7336  	 	 PlayScores(temp_length);
+	     .stabn 68,0,7230,LM1183-_End
+	     R1 = - 4083              	// [1:7230]  
+	     pop BP, PC from [SP]     	// [3:7230]  
+L_66_43:	// 0x1ff6
+// BB:66 cycle count: 22
+//7232     	   }
+//7233  
+//7234       else
+//7235      {
+//7236      	    temp =Get_Num_Higgest_score(Rounds,Registered_Play_Status );//Pingame
 
 LM1184:
-	     .stabn 68,0,7336,LM1184-_End
-	     R3 = [BP + 4]            	// [0:7336]  temp_length
-	     R4 = SP + 1              	// [2:7336]  
-	     [R4] = R3                	// [4:7336]  
-	     call _PlayScores         	// [6:7336]  PlayScores
-BB75_PU66:	// 0x2044
-// BB:75 cycle count: 13
-	     SP = SP + 1              	// [0:7336]  
-//7337  	 	 
-//7338  	 	 if(Record<temp_length)
+	     .stabn 68,0,7236,LM1184-_End
+	     SP = SP - 3              	// [0:7236]  
+	     R2 = (_Rounds)           	// [1:7236]  Rounds
+	     R3 = seg(_Rounds)        	// [3:7236]  Rounds
+	     R4 = SP + 1              	// [4:7236]  
+	     [R4++] = R2              	// [6:7236]  
+	     [R4] = R3                	// [8:7236]  
+	     DS = seg(_Registered_Play_Status)	// [10:7236]  Registered_Play_Status
+	     R4 = (_Registered_Play_Status)	// [11:7236]  Registered_Play_Status
+	     R3 = DS:[R4]             	// [13:7236]  
+	     R4 = SP + 3              	// [15:7236]  
+	     [R4] = R3                	// [17:7236]  
+	     call _Get_Num_Higgest_score	// [19:7236]  Get_Num_Higgest_score
+BB67_PU66:	// 0x2007
+// BB:67 cycle count: 40
+	     SP = SP - 2              	// [0:7236]  
+	     [BP + 5] = R1            	// [1:7236]  temp
+//7237  
+//7238              Leader_Player_temp = Leader_Player;
 
 LM1185:
-	     .stabn 68,0,7338,LM1185-_End
-	     R3 = [BP + 4]            	// [1:7338]  temp_length
-	     DS = seg(_Record)        	// [3:7338]  Record
-	     R4 = (_Record)           	// [4:7338]  Record
-	     R4 = DS:[R4]             	// [6:7338]  
-	     cmp R3, R4               	// [8:7338]  
-	     jbe L_66_55              	// [9:7338]  
-BB76_PU66:	// 0x204c
-// BB:76 cycle count: 12
-//7339  	 	 {
-//7340  	 	 	 Record=temp_length;
+	     .stabn 68,0,7238,LM1185-_End
+	     DS = seg(_Leader_Player) 	// [2:7238]  Leader_Player
+	     R4 = (_Leader_Player)    	// [3:7238]  Leader_Player
+	     R4 = DS:[R4]             	// [5:7238]  
+	     [BP + 1] = R4            	// [7:7238]  Leader_Player_temp
+//7239              h_round_temp = Higgest_T;
 
 LM1186:
-	     .stabn 68,0,7340,LM1186-_End
-	     R3 = [BP + 4]            	// [0:7340]  temp_length
-	     DS = seg(_Record)        	// [2:7340]  Record
-	     R4 = (_Record)           	// [3:7340]  Record
-	     DS:[R4] = R3             	// [5:7340]  
+	     .stabn 68,0,7239,LM1186-_End
+	     DS = seg(_Higgest_T)     	// [8:7239]  Higgest_T
+	     R4 = (_Higgest_T)        	// [9:7239]  Higgest_T
+	     R4 = DS:[R4]             	// [11:7239]  
+	     [BP + 3] = R4            	// [13:7239]  h_round_temp
+//7311              {
+//7312              	//delay_time(8);	
+//7313              	//PlayA1800_Elements(SFX_EndGame);            	
+//7314  	            //Play_Serieplayer16bit(0,Leader_Player,C_Play_StartAddr);//Play_Serieplayer(0,&Leader_Player,C_Play_StartAddr);
+//7315  	            Play_Serieplayer(0,Pingame,C_Play_StartAddr);
+
+LM1187:
+	     .stabn 68,0,7315,LM1187-_End
+	     R3 = 0                   	// [14:7315]  
+	     R4 = SP + 1              	// [15:7315]  
+	     [R4] = R3                	// [17:7315]  
+	     R2 = (_Pingame)          	// [19:7315]  Pingame
+	     R3 = seg(_Pingame)       	// [21:7315]  Pingame
+	     R4 = SP + 2              	// [22:7315]  
+	     [R4++] = R2              	// [24:7315]  
+	     [R4] = R3                	// [26:7315]  
+	     R2 = 6000                	// [28:7315]  
+	     R3 = 0                   	// [30:7315]  
+	     R4 = SP + 4              	// [31:7315]  
+	     [R4++] = R2              	// [33:7315]  
+	     [R4] = R3                	// [35:7315]  
+	     call _Play_Serieplayer   	// [37:7315]  Play_Serieplayer
+BB68_PU66:	// 0x2027
+// BB:68 cycle count: 10
+	     SP = SP + 4              	// [0:7315]  
+//7316  	            PlayA1800_Elements(A_VLMMREN_WinRound01d);	    	   
+
+LM1188:
+	     .stabn 68,0,7316,LM1188-_End
+	     R3 = 80                  	// [1:7316]  
+	     R4 = SP + 1              	// [3:7316]  
+	     [R4] = R3                	// [5:7316]  
+	     call _PlayA1800_Elements 	// [7:7316]  PlayA1800_Elements
+BB69_PU66:	// 0x202f
+// BB:69 cycle count: 8
+//7317  	    	   // Play_Seq(Higgest_T,C_RoundsTable);//PlayScores(Higgest_T);
+//7318  	    	    PlayA1800_Elements(A_VLMMREN_End_03);           	
+
+LM1189:
+	     .stabn 68,0,7318,LM1189-_End
+	     R3 = 22                  	// [0:7318]  
+	     R4 = SP + 1              	// [1:7318]  
+	     [R4] = R3                	// [3:7318]  
+	     call _PlayA1800_Elements 	// [5:7318]  PlayA1800_Elements
+BB70_PU66:	// 0x2035
+// BB:70 cycle count: 1
+	     SP = SP + 1              	// [0:7318]  
+L_66_42:	// 0x2036
+// BB:71 cycle count: 3
+
+LM1190:
+	     .stabn 68,0,7101,LM1190-_End
+	     goto L_66_39             	// [0:7101]  
+L_66_40:	// 0x2038
+// BB:72 cycle count: 10
+//7325       
+//7326  	
+//7327  	// PlayA1800_Elements(SFX_Winner);
+//7328    }
+//7329   else if(Registerd_Num==1)
+
+LM1191:
+	     .stabn 68,0,7329,LM1191-_End
+	     DS = seg(_Registerd_Num) 	// [0:7329]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:7329]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:7329]  
+	     cmp R4, 1                	// [5:7329]  
+	     je BB73_PU66             	// [6:7329]  
+BB119_PU66:	// 0x203e
+// BB:119 cycle count: 3
+	     goto L_66_55             	// [0:0]  
+BB73_PU66:	// 0x2040
+// BB:73 cycle count: 7
+//7330   {
+//7331   	
+//7332   	 if(memory_length>50)
+
+LM1192:
+	     .stabn 68,0,7332,LM1192-_End
+	     R4 = [BP + 0]            	// [0:7332]  memory_length
+	     cmp R4, 50               	// [2:7332]  
+	     jbe L_66_57              	// [3:7332]  
+BB74_PU66:	// 0x2043
+// BB:74 cycle count: 12
+//7333   	 {
+//7334   	 	 Record=memory_length;
+
+LM1193:
+	     .stabn 68,0,7334,LM1193-_End
+	     R3 = [BP + 0]            	// [0:7334]  memory_length
+	     DS = seg(_Record)        	// [2:7334]  Record
+	     R4 = (_Record)           	// [3:7334]  Record
+	     DS:[R4] = R3             	// [5:7334]  
 	//;;
 	INT OFF
 	//;;
-//7341  	 	 	 
-//7342  			__asm("INT OFF");
-//7343  			MoveSPIDriverToRAM();		
+//7335   	 	 
+//7336   	 	 
+//7337   	  __asm("INT OFF");
+//7338        MoveSPIDriverToRAM();		
 
-LM1187:
-	     .stabn 68,0,7343,LM1187-_End
-	     call _MoveSPIDriverToRAM 	// [9:7343]  MoveSPIDriverToRAM
-BB77_PU66:	// 0x2056
-// BB:77 cycle count: 15
-//7344  			SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
+LM1194:
+	     .stabn 68,0,7338,LM1194-_End
+	     call _MoveSPIDriverToRAM 	// [9:7338]  MoveSPIDriverToRAM
+BB75_PU66:	// 0x204d
+// BB:75 cycle count: 15
+//7339        SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
 
-LM1188:
-	     .stabn 68,0,7344,LM1188-_End
-	     SP = SP - 2              	// [0:7344]  
-	     R3 = - 8192              	// [1:7344]  
-	     R4 = SP + 1              	// [3:7344]  
-	     [R4] = R3                	// [5:7344]  
-	     R3 = 31                  	// [7:7344]  
-	     R4 = SP + 2              	// [8:7344]  
-	     [R4] = R3                	// [10:7344]  
-	     call _SPI_Flash_Sector_Erase	// [12:7344]  SPI_Flash_Sector_Erase
-BB78_PU66:	// 0x2062
-// BB:78 cycle count: 24
-	     SP = SP - 1              	// [0:7344]  
-//7345  			SPI_Flash_SendAWord(T_Record_Secter_L,T_Record_Secter_H,Record);
+LM1195:
+	     .stabn 68,0,7339,LM1195-_End
+	     SP = SP - 2              	// [0:7339]  
+	     R3 = - 8192              	// [1:7339]  
+	     R4 = SP + 1              	// [3:7339]  
+	     [R4] = R3                	// [5:7339]  
+	     R3 = 31                  	// [7:7339]  
+	     R4 = SP + 2              	// [8:7339]  
+	     [R4] = R3                	// [10:7339]  
+	     call _SPI_Flash_Sector_Erase	// [12:7339]  SPI_Flash_Sector_Erase
+BB76_PU66:	// 0x2059
+// BB:76 cycle count: 24
+	     SP = SP - 1              	// [0:7339]  
+//7340        //SPI_Flash_SendNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
+//7341        SPI_Flash_SendAWord(T_Record_Secter_L,T_Record_Secter_H,Record);
 
-LM1189:
-	     .stabn 68,0,7345,LM1189-_End
-	     R3 = - 8192              	// [1:7345]  
-	     R4 = SP + 1              	// [3:7345]  
-	     [R4] = R3                	// [5:7345]  
-	     R3 = 31                  	// [7:7345]  
-	     R4 = SP + 2              	// [8:7345]  
-	     [R4] = R3                	// [10:7345]  
-	     DS = seg(_Record)        	// [12:7345]  Record
-	     R4 = (_Record)           	// [13:7345]  Record
-	     R3 = DS:[R4]             	// [15:7345]  
-	     R4 = SP + 3              	// [17:7345]  
-	     [R4] = R3                	// [19:7345]  
-	     call _SPI_Flash_SendAWord	// [21:7345]  SPI_Flash_SendAWord
-BB79_PU66:	// 0x2075
-// BB:79 cycle count: 11
-	     SP = SP + 2              	// [0:7345]  
+LM1196:
+	     .stabn 68,0,7341,LM1196-_End
+	     R3 = - 8192              	// [1:7341]  
+	     R4 = SP + 1              	// [3:7341]  
+	     [R4] = R3                	// [5:7341]  
+	     R3 = 31                  	// [7:7341]  
+	     R4 = SP + 2              	// [8:7341]  
+	     [R4] = R3                	// [10:7341]  
+	     DS = seg(_Record)        	// [12:7341]  Record
+	     R4 = (_Record)           	// [13:7341]  Record
+	     R3 = DS:[R4]             	// [15:7341]  
+	     R4 = SP + 3              	// [17:7341]  
+	     [R4] = R3                	// [19:7341]  
+	     call _SPI_Flash_SendAWord	// [21:7341]  SPI_Flash_SendAWord
+BB77_PU66:	// 0x206c
+// BB:77 cycle count: 11
+	     SP = SP + 2              	// [0:7341]  
 	//;;
 	INT FIQ,IRQ
 	//;;
-//7346  			//SPI_Flash_SendNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
-//7347  			__asm("INT FIQ,IRQ");
-//7348  	 	 	 
-//7349  	 	 	 
-//7350  	 	 	 PlayA1800_Elements(A_VLMMREN_End_01b);
-
-LM1190:
-	     .stabn 68,0,7350,LM1190-_End
-	     R3 = 19                  	// [3:7350]  
-	     R4 = SP + 1              	// [4:7350]  
-	     [R4] = R3                	// [6:7350]  
-	     call _PlayA1800_Elements 	// [8:7350]  PlayA1800_Elements
-BB80_PU66:	// 0x207f
-// BB:80 cycle count: 8
-//7351  	 	 	 PlayA1800_Elements(A_VLMMREN_End_03b);
-
-LM1191:
-	     .stabn 68,0,7351,LM1191-_End
-	     R3 = 23                  	// [0:7351]  
-	     R4 = SP + 1              	// [1:7351]  
-	     [R4] = R3                	// [3:7351]  
-	     call _PlayA1800_Elements 	// [5:7351]  PlayA1800_Elements
-BB81_PU66:	// 0x2085
-// BB:81 cycle count: 1
-	     SP = SP + 1              	// [0:7351]  
-L_66_55:	// 0x2086
-L_66_53:	// 0x2086
-L_66_52:	// 0x2086
-L_66_37:	// 0x2086
-// BB:82 cycle count: 10
-//7355   
-//7356       //if(Record==0)
-//7357       //	Record=temp_length;
-//7358   
-//7359   	 PlayA1800_Elements(SFX_Winner);
-
-LM1192:
-	     .stabn 68,0,7359,LM1192-_End
-	     SP = SP - 1              	// [0:7359]  
-	     R3 = 133                 	// [1:7359]  
-	     R4 = SP + 1              	// [3:7359]  
-	     [R4] = R3                	// [5:7359]  
-	     call _PlayA1800_Elements 	// [7:7359]  PlayA1800_Elements
-BB83_PU66:	// 0x208e
-// BB:83 cycle count: 8
-//7360   	 delay_time(8);	
-
-LM1193:
-	     .stabn 68,0,7360,LM1193-_End
-	     R3 = 8                   	// [0:7360]  
-	     R4 = SP + 1              	// [1:7360]  
-	     [R4] = R3                	// [3:7360]  
-	     call _delay_time         	// [5:7360]  delay_time
-BB84_PU66:	// 0x2094
-// BB:84 cycle count: 9
-	     SP = SP + 1              	// [0:7360]  
-//7361   	 
-//7362   	 if((memory_length>=100)&&(Registerd_Num==1))
-
-LM1194:
-	     .stabn 68,0,7362,LM1194-_End
-	     R4 = [BP + 0]            	// [1:7362]  memory_length
-	     cmp R4, 99               	// [3:7362]  
-	     jbe L_66_56              	// [5:7362]  
-BB85_PU66:	// 0x2099
-// BB:85 cycle count: 10
-	     DS = seg(_Registerd_Num) 	// [0:7362]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [1:7362]  Registerd_Num
-	     R4 = DS:[R4]             	// [3:7362]  
-	     cmp R4, 1                	// [5:7362]  
-	     jne L_66_56              	// [6:7362]  
-L_66_57:	// 0x209f
-// BB:86 cycle count: 9
-//7363   	 {
-//7364   	   PlayA1800_Elements(A_VLMMREN_End_03c); 
-
-LM1195:
-	     .stabn 68,0,7364,LM1195-_End
-	     SP = SP - 1              	// [0:7364]  
-	     R3 = 24                  	// [1:7364]  
-	     R4 = SP + 1              	// [2:7364]  
-	     [R4] = R3                	// [4:7364]  
-	     call _PlayA1800_Elements 	// [6:7364]  PlayA1800_Elements
-BB87_PU66:	// 0x20a6
-// BB:87 cycle count: 9
-//7365         PlayA1800_Elements(SFX_Winner);
-
-LM1196:
-	     .stabn 68,0,7365,LM1196-_End
-	     R3 = 133                 	// [0:7365]  
-	     R4 = SP + 1              	// [2:7365]  
-	     [R4] = R3                	// [4:7365]  
-	     call _PlayA1800_Elements 	// [6:7365]  PlayA1800_Elements
-BB88_PU66:	// 0x20ad
-// BB:88 cycle count: 1
-	     SP = SP + 1              	// [0:7365]  
-L_66_56:	// 0x20ae
-// BB:89 cycle count: 22
-//7366         
-//7367   	 }
-//7368   
-//7369  	   Key_Event =0;
+//7342          __asm("INT FIQ,IRQ");
+//7343   	 	 
+//7344   	 	 
+//7345   	 	 
+//7346   	 	 PlayA1800_Elements(A_VLMMREN_End_03d);
 
 LM1197:
-	     .stabn 68,0,7369,LM1197-_End
-	     R3 = 0                   	// [0:7369]  
-	     DS = seg(_Key_Event)     	// [1:7369]  Key_Event
-	     R4 = (_Key_Event)        	// [2:7369]  Key_Event
-	     DS:[R4] = R3             	// [4:7369]  
-//7370  	   Key_activeflag = Playbutton;
+	     .stabn 68,0,7346,LM1197-_End
+	     R3 = 25                  	// [3:7346]  
+	     R4 = SP + 1              	// [4:7346]  
+	     [R4] = R3                	// [6:7346]  
+	     call _PlayA1800_Elements 	// [8:7346]  PlayA1800_Elements
+BB78_PU66:	// 0x2076
+// BB:78 cycle count: 8
+//7347   	 	 PlayA1800_Elements(A_VLMMREN_End_03Solo);
 
 LM1198:
-	     .stabn 68,0,7370,LM1198-_End
-	     R3 = 1                   	// [6:7370]  
-	     DS = seg(_Key_activeflag)	// [7:7370]  Key_activeflag
-	     R4 = (_Key_activeflag)   	// [8:7370]  Key_activeflag
-	     DS:[R4] = R3             	// [10:7370]  
-//7371  	 
-//7372  	 
-//7373  	  if(Registerd_Num==1)
+	     .stabn 68,0,7347,LM1198-_End
+	     R3 = 26                  	// [0:7347]  
+	     R4 = SP + 1              	// [1:7347]  
+	     [R4] = R3                	// [3:7347]  
+	     call _PlayA1800_Elements 	// [5:7347]  PlayA1800_Elements
+BB79_PU66:	// 0x207c
+// BB:79 cycle count: 4
+	     SP = SP + 1              	// [0:7347]  
+	     goto L_66_56             	// [1:7347]  
+L_66_57:	// 0x207f
+// BB:80 cycle count: 9
+//7348   	 }
+//7349   	else
+//7350   	{
+//7351   	
+//7352  	 	 PlayA1800_Elements(A_VLMMREN_End_02);
 
 LM1199:
-	     .stabn 68,0,7373,LM1199-_End
-	     DS = seg(_Registerd_Num) 	// [12:7373]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [13:7373]  Registerd_Num
-	     R4 = DS:[R4]             	// [15:7373]  
-	     cmp R4, 1                	// [17:7373]  
-	     jne L_66_59              	// [18:7373]  
-BB90_PU66:	// 0x20be
-// BB:90 cycle count: 9
-//7374  	  {  
-//7375         PlayA1800_Elements(A_VLMMREN_End_04);
+	     .stabn 68,0,7352,LM1199-_End
+	     SP = SP - 1              	// [0:7352]  
+	     R3 = 20                  	// [1:7352]  
+	     R4 = SP + 1              	// [2:7352]  
+	     [R4] = R3                	// [4:7352]  
+	     call _PlayA1800_Elements 	// [6:7352]  PlayA1800_Elements
+BB81_PU66:	// 0x2086
+// BB:81 cycle count: 9
+//7353  	 	 PlayScores(temp_length);
 
 LM1200:
-	     .stabn 68,0,7375,LM1200-_End
-	     SP = SP - 1              	// [0:7375]  
-	     R3 = 27                  	// [1:7375]  
-	     R4 = SP + 1              	// [2:7375]  
-	     [R4] = R3                	// [4:7375]  
-	     call _PlayA1800_Elements 	// [6:7375]  PlayA1800_Elements
-BB91_PU66:	// 0x20c5
-// BB:91 cycle count: 8
-//7376         PlayA1800_Elements(A_VLMMREN_Button_01b);
+	     .stabn 68,0,7353,LM1200-_End
+	     R3 = [BP + 4]            	// [0:7353]  temp_length
+	     R4 = SP + 1              	// [2:7353]  
+	     [R4] = R3                	// [4:7353]  
+	     call _PlayScores         	// [6:7353]  PlayScores
+BB82_PU66:	// 0x208c
+// BB:82 cycle count: 13
+	     SP = SP + 1              	// [0:7353]  
+//7354  	 	 
+//7355  	 	 if(Record<temp_length)
 
 LM1201:
-	     .stabn 68,0,7376,LM1201-_End
-	     R3 = 8                   	// [0:7376]  
-	     R4 = SP + 1              	// [1:7376]  
-	     [R4] = R3                	// [3:7376]  
-	     call _PlayA1800_Elements 	// [5:7376]  PlayA1800_Elements
-BB92_PU66:	// 0x20cb
-// BB:92 cycle count: 5
-	     SP = SP + 1              	// [0:7376]  
-	     jmp L_66_58              	// [1:7376]  
-L_66_59:	// 0x20cd
-// BB:93 cycle count: 9
-//7377  	  }
-//7378  	 else
-//7379  	  {
-//7380         PlayA1800_Elements(A_VLMMREN_End_04);
+	     .stabn 68,0,7355,LM1201-_End
+	     R3 = [BP + 4]            	// [1:7355]  temp_length
+	     DS = seg(_Record)        	// [3:7355]  Record
+	     R4 = (_Record)           	// [4:7355]  Record
+	     R4 = DS:[R4]             	// [6:7355]  
+	     cmp R3, R4               	// [8:7355]  
+	     jbe L_66_58              	// [9:7355]  
+BB83_PU66:	// 0x2094
+// BB:83 cycle count: 12
+//7356  	 	 {
+//7357  	 	 	 Record=temp_length;
 
 LM1202:
-	     .stabn 68,0,7380,LM1202-_End
-	     SP = SP - 1              	// [0:7380]  
-	     R3 = 27                  	// [1:7380]  
-	     R4 = SP + 1              	// [2:7380]  
-	     [R4] = R3                	// [4:7380]  
-	     call _PlayA1800_Elements 	// [6:7380]  PlayA1800_Elements
-BB94_PU66:	// 0x20d4
-// BB:94 cycle count: 8
-//7381         PlayA1800_Elements(A_VLMMREN_Button_01a);	  	
+	     .stabn 68,0,7357,LM1202-_End
+	     R3 = [BP + 4]            	// [0:7357]  temp_length
+	     DS = seg(_Record)        	// [2:7357]  Record
+	     R4 = (_Record)           	// [3:7357]  Record
+	     DS:[R4] = R3             	// [5:7357]  
+	//;;
+	INT OFF
+	//;;
+//7358  	 	 	 
+//7359  			__asm("INT OFF");
+//7360  			MoveSPIDriverToRAM();		
 
 LM1203:
-	     .stabn 68,0,7381,LM1203-_End
-	     R3 = 7                   	// [0:7381]  
-	     R4 = SP + 1              	// [1:7381]  
-	     [R4] = R3                	// [3:7381]  
-	     call _PlayA1800_Elements 	// [5:7381]  PlayA1800_Elements
-BB95_PU66:	// 0x20da
-// BB:95 cycle count: 1
-	     SP = SP + 1              	// [0:7381]  
-L_66_58:	// 0x20db
-// BB:96 cycle count: 10
-//7382  	  	
-//7383  	  }  
-//7384   
-//7385  	 
-//7386  	   delay_time(10*16);
+	     .stabn 68,0,7360,LM1203-_End
+	     call _MoveSPIDriverToRAM 	// [9:7360]  MoveSPIDriverToRAM
+BB84_PU66:	// 0x209e
+// BB:84 cycle count: 15
+//7361  			SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
 
 LM1204:
-	     .stabn 68,0,7386,LM1204-_End
-	     SP = SP - 1              	// [0:7386]  
-	     R3 = 160                 	// [1:7386]  
-	     R4 = SP + 1              	// [3:7386]  
-	     [R4] = R3                	// [5:7386]  
-	     call _delay_time         	// [7:7386]  delay_time
-BB97_PU66:	// 0x20e3
-// BB:97 cycle count: 11
-	     SP = SP + 1              	// [0:7386]  
-//7387  	 
-//7388  	  if(Registerd_Num==1)
+	     .stabn 68,0,7361,LM1204-_End
+	     SP = SP - 2              	// [0:7361]  
+	     R3 = - 8192              	// [1:7361]  
+	     R4 = SP + 1              	// [3:7361]  
+	     [R4] = R3                	// [5:7361]  
+	     R3 = 31                  	// [7:7361]  
+	     R4 = SP + 2              	// [8:7361]  
+	     [R4] = R3                	// [10:7361]  
+	     call _SPI_Flash_Sector_Erase	// [12:7361]  SPI_Flash_Sector_Erase
+BB85_PU66:	// 0x20aa
+// BB:85 cycle count: 24
+	     SP = SP - 1              	// [0:7361]  
+//7362  			SPI_Flash_SendAWord(T_Record_Secter_L,T_Record_Secter_H,Record);
 
 LM1205:
-	     .stabn 68,0,7388,LM1205-_End
-	     DS = seg(_Registerd_Num) 	// [1:7388]  Registerd_Num
-	     R4 = (_Registerd_Num)    	// [2:7388]  Registerd_Num
-	     R4 = DS:[R4]             	// [4:7388]  
-	     cmp R4, 1                	// [6:7388]  
-	     jne L_66_61              	// [7:7388]  
-BB98_PU66:	// 0x20ea
-// BB:98 cycle count: 9
-//7389  	  {  
-//7390         PlayA1800_Elements(A_VLMMREN_End_04);
+	     .stabn 68,0,7362,LM1205-_End
+	     R3 = - 8192              	// [1:7362]  
+	     R4 = SP + 1              	// [3:7362]  
+	     [R4] = R3                	// [5:7362]  
+	     R3 = 31                  	// [7:7362]  
+	     R4 = SP + 2              	// [8:7362]  
+	     [R4] = R3                	// [10:7362]  
+	     DS = seg(_Record)        	// [12:7362]  Record
+	     R4 = (_Record)           	// [13:7362]  Record
+	     R3 = DS:[R4]             	// [15:7362]  
+	     R4 = SP + 3              	// [17:7362]  
+	     [R4] = R3                	// [19:7362]  
+	     call _SPI_Flash_SendAWord	// [21:7362]  SPI_Flash_SendAWord
+BB86_PU66:	// 0x20bd
+// BB:86 cycle count: 11
+	     SP = SP + 2              	// [0:7362]  
+	//;;
+	INT FIQ,IRQ
+	//;;
+//7363  			//SPI_Flash_SendNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
+//7364  			__asm("INT FIQ,IRQ");
+//7365  	 	 	 
+//7366  	 	 	 
+//7367  	 	 	 PlayA1800_Elements(A_VLMMREN_End_01b);
 
 LM1206:
-	     .stabn 68,0,7390,LM1206-_End
-	     SP = SP - 1              	// [0:7390]  
-	     R3 = 27                  	// [1:7390]  
-	     R4 = SP + 1              	// [2:7390]  
-	     [R4] = R3                	// [4:7390]  
-	     call _PlayA1800_Elements 	// [6:7390]  PlayA1800_Elements
-BB99_PU66:	// 0x20f1
-// BB:99 cycle count: 8
-//7391         PlayA1800_Elements(A_VLMMREN_Button_01b);
+	     .stabn 68,0,7367,LM1206-_End
+	     R3 = 19                  	// [3:7367]  
+	     R4 = SP + 1              	// [4:7367]  
+	     [R4] = R3                	// [6:7367]  
+	     call _PlayA1800_Elements 	// [8:7367]  PlayA1800_Elements
+BB87_PU66:	// 0x20c7
+// BB:87 cycle count: 8
+//7368  	 	 	 PlayA1800_Elements(A_VLMMREN_End_03b);
 
 LM1207:
-	     .stabn 68,0,7391,LM1207-_End
-	     R3 = 8                   	// [0:7391]  
-	     R4 = SP + 1              	// [1:7391]  
-	     [R4] = R3                	// [3:7391]  
-	     call _PlayA1800_Elements 	// [5:7391]  PlayA1800_Elements
-BB100_PU66:	// 0x20f7
-// BB:100 cycle count: 5
-	     SP = SP + 1              	// [0:7391]  
-	     jmp L_66_60              	// [1:7391]  
-L_66_61:	// 0x20f9
-// BB:101 cycle count: 9
-//7392  	  }
-//7393  	 else
-//7394  	  {
-//7395         PlayA1800_Elements(A_VLMMREN_End_04);
+	     .stabn 68,0,7368,LM1207-_End
+	     R3 = 23                  	// [0:7368]  
+	     R4 = SP + 1              	// [1:7368]  
+	     [R4] = R3                	// [3:7368]  
+	     call _PlayA1800_Elements 	// [5:7368]  PlayA1800_Elements
+BB88_PU66:	// 0x20cd
+// BB:88 cycle count: 1
+	     SP = SP + 1              	// [0:7368]  
+L_66_58:	// 0x20ce
+L_66_56:	// 0x20ce
+L_66_55:	// 0x20ce
+L_66_39:	// 0x20ce
+// BB:89 cycle count: 10
+//7372   
+//7373       //if(Record==0)
+//7374       //	Record=temp_length;
+//7375   
+//7376   	 PlayA1800_Elements(SFX_Winner);
 
 LM1208:
-	     .stabn 68,0,7395,LM1208-_End
-	     SP = SP - 1              	// [0:7395]  
-	     R3 = 27                  	// [1:7395]  
-	     R4 = SP + 1              	// [2:7395]  
-	     [R4] = R3                	// [4:7395]  
-	     call _PlayA1800_Elements 	// [6:7395]  PlayA1800_Elements
-BB102_PU66:	// 0x2100
-// BB:102 cycle count: 8
-//7396         PlayA1800_Elements(A_VLMMREN_Button_01a);	  	
+	     .stabn 68,0,7376,LM1208-_End
+	     SP = SP - 1              	// [0:7376]  
+	     R3 = 135                 	// [1:7376]  
+	     R4 = SP + 1              	// [3:7376]  
+	     [R4] = R3                	// [5:7376]  
+	     call _PlayA1800_Elements 	// [7:7376]  PlayA1800_Elements
+BB90_PU66:	// 0x20d6
+// BB:90 cycle count: 8
+//7377   	 delay_time(8);	
 
 LM1209:
-	     .stabn 68,0,7396,LM1209-_End
-	     R3 = 7                   	// [0:7396]  
-	     R4 = SP + 1              	// [1:7396]  
-	     [R4] = R3                	// [3:7396]  
-	     call _PlayA1800_Elements 	// [5:7396]  PlayA1800_Elements
-BB103_PU66:	// 0x2106
-// BB:103 cycle count: 1
-	     SP = SP + 1              	// [0:7396]  
-L_66_60:	// 0x2107
-// BB:104 cycle count: 10
-//7397  	  	
-//7398  	  }  
-//7399         
-//7400         delay_time(10*16);
+	     .stabn 68,0,7377,LM1209-_End
+	     R3 = 8                   	// [0:7377]  
+	     R4 = SP + 1              	// [1:7377]  
+	     [R4] = R3                	// [3:7377]  
+	     call _delay_time         	// [5:7377]  delay_time
+BB91_PU66:	// 0x20dc
+// BB:91 cycle count: 8
+	     SP = SP + 1              	// [0:7377]  
+//7378   	 
+//7379   	 if((memory_length>50)&&(Registerd_Num==1))
 
 LM1210:
-	     .stabn 68,0,7400,LM1210-_End
-	     SP = SP - 1              	// [0:7400]  
-	     R3 = 160                 	// [1:7400]  
-	     R4 = SP + 1              	// [3:7400]  
-	     [R4] = R3                	// [5:7400]  
-	     call _delay_time         	// [7:7400]  delay_time
-BB105_PU66:	// 0x210f
-// BB:105 cycle count: 11
-	     SP = SP + 1              	// [0:7400]  
-//7401         
-//7402  	 if(Key_Event  == Playbutton)
+	     .stabn 68,0,7379,LM1210-_End
+	     R4 = [BP + 0]            	// [1:7379]  memory_length
+	     cmp R4, 50               	// [3:7379]  
+	     jbe L_66_59              	// [4:7379]  
+BB92_PU66:	// 0x20e0
+// BB:92 cycle count: 10
+	     DS = seg(_Registerd_Num) 	// [0:7379]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [1:7379]  Registerd_Num
+	     R4 = DS:[R4]             	// [3:7379]  
+	     cmp R4, 1                	// [5:7379]  
+	     jne L_66_59              	// [6:7379]  
+L_66_60:	// 0x20e6
+// BB:93 cycle count: 9
+//7380   	 {
+//7381   	   PlayA1800_Elements(A_VLMMREN_End_03c); 
 
 LM1211:
-	     .stabn 68,0,7402,LM1211-_End
-	     DS = seg(_Key_Event)     	// [1:7402]  Key_Event
-	     R4 = (_Key_Event)        	// [2:7402]  Key_Event
-	     R4 = DS:[R4]             	// [4:7402]  
-	     cmp R4, 1                	// [6:7402]  
-	     jne L_66_63              	// [7:7402]  
-BB106_PU66:	// 0x2116
-// BB:106 cycle count: 16
-//7403  	 	{
-//7404              Key_Event=0;
+	     .stabn 68,0,7381,LM1211-_End
+	     SP = SP - 1              	// [0:7381]  
+	     R3 = 24                  	// [1:7381]  
+	     R4 = SP + 1              	// [2:7381]  
+	     [R4] = R3                	// [4:7381]  
+	     call _PlayA1800_Elements 	// [6:7381]  PlayA1800_Elements
+BB94_PU66:	// 0x20ed
+// BB:94 cycle count: 9
+//7382         PlayA1800_Elements(SFX_Winner);
 
 LM1212:
-	     .stabn 68,0,7404,LM1212-_End
-	     R3 = 0                   	// [0:7404]  
-	     DS = seg(_Key_Event)     	// [1:7404]  Key_Event
-	     R4 = (_Key_Event)        	// [2:7404]  Key_Event
-	     DS:[R4] = R3             	// [4:7404]  
-//7405              PlayA1800_Elements(SFX_Buzzer);
+	     .stabn 68,0,7382,LM1212-_End
+	     R3 = 135                 	// [0:7382]  
+	     R4 = SP + 1              	// [2:7382]  
+	     [R4] = R3                	// [4:7382]  
+	     call _PlayA1800_Elements 	// [6:7382]  PlayA1800_Elements
+BB95_PU66:	// 0x20f4
+// BB:95 cycle count: 1
+	     SP = SP + 1              	// [0:7382]  
+L_66_59:	// 0x20f5
+// BB:96 cycle count: 22
+//7383         
+//7384   	 }
+//7385   
+//7386  	   Key_Event =0;
 
 LM1213:
-	     .stabn 68,0,7405,LM1213-_End
-	     SP = SP - 1              	// [6:7405]  
-	     R3 = 122                 	// [7:7405]  
-	     R4 = SP + 1              	// [9:7405]  
-	     [R4] = R3                	// [11:7405]  
-	     call _PlayA1800_Elements 	// [13:7405]  PlayA1800_Elements
-BB107_PU66:	// 0x2123
-// BB:107 cycle count: 14
-	     SP = SP + 7              	// [0:7405]  
-//7406              Restart =1;
+	     .stabn 68,0,7386,LM1213-_End
+	     R3 = 0                   	// [0:7386]  
+	     DS = seg(_Key_Event)     	// [1:7386]  Key_Event
+	     R4 = (_Key_Event)        	// [2:7386]  Key_Event
+	     DS:[R4] = R3             	// [4:7386]  
+//7387  	   Key_activeflag = Playbutton;
 
 LM1214:
-	     .stabn 68,0,7406,LM1214-_End
-	     R3 = 1                   	// [1:7406]  
-	     DS = seg(_Restart)       	// [2:7406]  Restart
-	     R4 = (_Restart)          	// [3:7406]  Restart
-	     DS:[R4] = R3             	// [5:7406]  
-//7407  			return  C_StartGame;
+	     .stabn 68,0,7387,LM1214-_End
+	     R3 = 1                   	// [6:7387]  
+	     DS = seg(_Key_activeflag)	// [7:7387]  Key_activeflag
+	     R4 = (_Key_activeflag)   	// [8:7387]  Key_activeflag
+	     DS:[R4] = R3             	// [10:7387]  
+//7388  	 
+//7389  	 
+//7390  	  if(Registerd_Num==1)
 
 LM1215:
-	     .stabn 68,0,7407,LM1215-_End
-	     R1 = - 4093              	// [7:7407]  
-	     pop BP, PC from [SP]     	// [9:7407]  
-L_66_63:	// 0x212c
-// BB:108 cycle count: 15
-//7408  
-//7409  	 	}
-//7410        else
-//7411        	{
-//7412              Key_Event=0;
+	     .stabn 68,0,7390,LM1215-_End
+	     DS = seg(_Registerd_Num) 	// [12:7390]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [13:7390]  Registerd_Num
+	     R4 = DS:[R4]             	// [15:7390]  
+	     cmp R4, 1                	// [17:7390]  
+	     jne L_66_62              	// [18:7390]  
+BB97_PU66:	// 0x2105
+// BB:97 cycle count: 9
+//7391  	  {  
+//7392         PlayA1800_Elements(A_VLMMREN_End_04);
 
 LM1216:
-	     .stabn 68,0,7412,LM1216-_End
-	     R3 = 0                   	// [0:7412]  
-	     DS = seg(_Key_Event)     	// [1:7412]  Key_Event
-	     R4 = (_Key_Event)        	// [2:7412]  Key_Event
-	     DS:[R4] = R3             	// [4:7412]  
-//7413              PlayA1800_Elements(A_VLMMREN_Bye_02);
+	     .stabn 68,0,7392,LM1216-_End
+	     SP = SP - 1              	// [0:7392]  
+	     R3 = 27                  	// [1:7392]  
+	     R4 = SP + 1              	// [2:7392]  
+	     [R4] = R3                	// [4:7392]  
+	     call _PlayA1800_Elements 	// [6:7392]  PlayA1800_Elements
+BB98_PU66:	// 0x210c
+// BB:98 cycle count: 8
+//7393         PlayA1800_Elements(A_VLMMREN_Button_01b);
 
 LM1217:
-	     .stabn 68,0,7413,LM1217-_End
-	     SP = SP - 1              	// [6:7413]  
-	     R3 = 10                  	// [7:7413]  
-	     R4 = SP + 1              	// [8:7413]  
-	     [R4] = R3                	// [10:7413]  
-	     call _PlayA1800_Elements 	// [12:7413]  PlayA1800_Elements
-BB109_PU66:	// 0x2138
-// BB:109 cycle count: 8
-	     SP = SP + 7              	// [0:7413]  
-//7414              return C_Off_Mode;
+	     .stabn 68,0,7393,LM1217-_End
+	     R3 = 8                   	// [0:7393]  
+	     R4 = SP + 1              	// [1:7393]  
+	     [R4] = R3                	// [3:7393]  
+	     call _PlayA1800_Elements 	// [5:7393]  PlayA1800_Elements
+BB99_PU66:	// 0x2112
+// BB:99 cycle count: 5
+	     SP = SP + 1              	// [0:7393]  
+	     jmp L_66_61              	// [1:7393]  
+L_66_62:	// 0x2114
+// BB:100 cycle count: 9
+//7394  	  }
+//7395  	 else
+//7396  	  {
+//7397         PlayA1800_Elements(A_VLMMREN_End_04);
 
 LM1218:
-	     .stabn 68,0,7414,LM1218-_End
-	     R1 = - 4085              	// [1:7414]  
-	     pop BP, PC from [SP]     	// [3:7414]  
-L_66_62:	// 0x213c
-// BB:110 cycle count: 12
-//7415        	}
-//7416  
-//7417  
-//7418  	 Key_Event =0;
+	     .stabn 68,0,7397,LM1218-_End
+	     SP = SP - 1              	// [0:7397]  
+	     R3 = 27                  	// [1:7397]  
+	     R4 = SP + 1              	// [2:7397]  
+	     [R4] = R3                	// [4:7397]  
+	     call _PlayA1800_Elements 	// [6:7397]  PlayA1800_Elements
+BB101_PU66:	// 0x211b
+// BB:101 cycle count: 8
+//7398         PlayA1800_Elements(A_VLMMREN_Button_01a);	  	
 
 LM1219:
-	     .stabn 68,0,7418,LM1219-_End
-	     R3 = 0                   	// [0:7418]  
-	     DS = seg(_Key_Event)     	// [1:7418]  Key_Event
-	     R4 = (_Key_Event)        	// [2:7418]  Key_Event
-	     DS:[R4] = R3             	// [4:7418]  
-	     SP = SP + 6              	// [6:7418]  
-	     pop BP, PC from [SP]     	// [7:7418]  
+	     .stabn 68,0,7398,LM1219-_End
+	     R3 = 7                   	// [0:7398]  
+	     R4 = SP + 1              	// [1:7398]  
+	     [R4] = R3                	// [3:7398]  
+	     call _PlayA1800_Elements 	// [5:7398]  PlayA1800_Elements
+BB102_PU66:	// 0x2121
+// BB:102 cycle count: 1
+	     SP = SP + 1              	// [0:7398]  
+L_66_61:	// 0x2122
+// BB:103 cycle count: 10
+//7399  	  	
+//7400  	  }  
+//7401   
+//7402  	 
+//7403  	   delay_time(10*16);
+
+LM1220:
+	     .stabn 68,0,7403,LM1220-_End
+	     SP = SP - 1              	// [0:7403]  
+	     R3 = 160                 	// [1:7403]  
+	     R4 = SP + 1              	// [3:7403]  
+	     [R4] = R3                	// [5:7403]  
+	     call _delay_time         	// [7:7403]  delay_time
+BB104_PU66:	// 0x212a
+// BB:104 cycle count: 11
+	     SP = SP + 1              	// [0:7403]  
+//7404  	 
+//7405  	  if(Registerd_Num==1)
+
+LM1221:
+	     .stabn 68,0,7405,LM1221-_End
+	     DS = seg(_Registerd_Num) 	// [1:7405]  Registerd_Num
+	     R4 = (_Registerd_Num)    	// [2:7405]  Registerd_Num
+	     R4 = DS:[R4]             	// [4:7405]  
+	     cmp R4, 1                	// [6:7405]  
+	     jne L_66_64              	// [7:7405]  
+BB105_PU66:	// 0x2131
+// BB:105 cycle count: 9
+//7406  	  {  
+//7407         PlayA1800_Elements(A_VLMMREN_End_04);
+
+LM1222:
+	     .stabn 68,0,7407,LM1222-_End
+	     SP = SP - 1              	// [0:7407]  
+	     R3 = 27                  	// [1:7407]  
+	     R4 = SP + 1              	// [2:7407]  
+	     [R4] = R3                	// [4:7407]  
+	     call _PlayA1800_Elements 	// [6:7407]  PlayA1800_Elements
+BB106_PU66:	// 0x2138
+// BB:106 cycle count: 8
+//7408         PlayA1800_Elements(A_VLMMREN_Button_01b);
+
+LM1223:
+	     .stabn 68,0,7408,LM1223-_End
+	     R3 = 8                   	// [0:7408]  
+	     R4 = SP + 1              	// [1:7408]  
+	     [R4] = R3                	// [3:7408]  
+	     call _PlayA1800_Elements 	// [5:7408]  PlayA1800_Elements
+BB107_PU66:	// 0x213e
+// BB:107 cycle count: 5
+	     SP = SP + 1              	// [0:7408]  
+	     jmp L_66_63              	// [1:7408]  
+L_66_64:	// 0x2140
+// BB:108 cycle count: 9
+//7409  	  }
+//7410  	 else
+//7411  	  {
+//7412         PlayA1800_Elements(A_VLMMREN_End_04);
+
+LM1224:
+	     .stabn 68,0,7412,LM1224-_End
+	     SP = SP - 1              	// [0:7412]  
+	     R3 = 27                  	// [1:7412]  
+	     R4 = SP + 1              	// [2:7412]  
+	     [R4] = R3                	// [4:7412]  
+	     call _PlayA1800_Elements 	// [6:7412]  PlayA1800_Elements
+BB109_PU66:	// 0x2147
+// BB:109 cycle count: 8
+//7413         PlayA1800_Elements(A_VLMMREN_Button_01a);	  	
+
+LM1225:
+	     .stabn 68,0,7413,LM1225-_End
+	     R3 = 7                   	// [0:7413]  
+	     R4 = SP + 1              	// [1:7413]  
+	     [R4] = R3                	// [3:7413]  
+	     call _PlayA1800_Elements 	// [5:7413]  PlayA1800_Elements
+BB110_PU66:	// 0x214d
+// BB:110 cycle count: 1
+	     SP = SP + 1              	// [0:7413]  
+L_66_63:	// 0x214e
+// BB:111 cycle count: 10
+//7414  	  	
+//7415  	  }  
+//7416         
+//7417         delay_time(10*16);
+
+LM1226:
+	     .stabn 68,0,7417,LM1226-_End
+	     SP = SP - 1              	// [0:7417]  
+	     R3 = 160                 	// [1:7417]  
+	     R4 = SP + 1              	// [3:7417]  
+	     [R4] = R3                	// [5:7417]  
+	     call _delay_time         	// [7:7417]  delay_time
+BB112_PU66:	// 0x2156
+// BB:112 cycle count: 11
+	     SP = SP + 1              	// [0:7417]  
+//7418         
+//7419  	 if(Key_Event  == Playbutton)
+
+LM1227:
+	     .stabn 68,0,7419,LM1227-_End
+	     DS = seg(_Key_Event)     	// [1:7419]  Key_Event
+	     R4 = (_Key_Event)        	// [2:7419]  Key_Event
+	     R4 = DS:[R4]             	// [4:7419]  
+	     cmp R4, 1                	// [6:7419]  
+	     jne L_66_66              	// [7:7419]  
+BB113_PU66:	// 0x215d
+// BB:113 cycle count: 16
+//7420  	 	{
+//7421              Key_Event=0;
+
+LM1228:
+	     .stabn 68,0,7421,LM1228-_End
+	     R3 = 0                   	// [0:7421]  
+	     DS = seg(_Key_Event)     	// [1:7421]  Key_Event
+	     R4 = (_Key_Event)        	// [2:7421]  Key_Event
+	     DS:[R4] = R3             	// [4:7421]  
+//7422              PlayA1800_Elements(SFX_Buzzer);
+
+LM1229:
+	     .stabn 68,0,7422,LM1229-_End
+	     SP = SP - 1              	// [6:7422]  
+	     R3 = 124                 	// [7:7422]  
+	     R4 = SP + 1              	// [9:7422]  
+	     [R4] = R3                	// [11:7422]  
+	     call _PlayA1800_Elements 	// [13:7422]  PlayA1800_Elements
+BB114_PU66:	// 0x216a
+// BB:114 cycle count: 14
+	     SP = SP + 7              	// [0:7422]  
+//7423              Restart =1;
+
+LM1230:
+	     .stabn 68,0,7423,LM1230-_End
+	     R3 = 1                   	// [1:7423]  
+	     DS = seg(_Restart)       	// [2:7423]  Restart
+	     R4 = (_Restart)          	// [3:7423]  Restart
+	     DS:[R4] = R3             	// [5:7423]  
+//7424  			return  C_StartGame;
+
+LM1231:
+	     .stabn 68,0,7424,LM1231-_End
+	     R1 = - 4093              	// [7:7424]  
+	     pop BP, PC from [SP]     	// [9:7424]  
+L_66_66:	// 0x2173
+// BB:115 cycle count: 15
+//7425  
+//7426  	 	}
+//7427        else
+//7428        	{
+//7429              Key_Event=0;
+
+LM1232:
+	     .stabn 68,0,7429,LM1232-_End
+	     R3 = 0                   	// [0:7429]  
+	     DS = seg(_Key_Event)     	// [1:7429]  Key_Event
+	     R4 = (_Key_Event)        	// [2:7429]  Key_Event
+	     DS:[R4] = R3             	// [4:7429]  
+//7430              PlayA1800_Elements(A_VLMMREN_Bye_02);
+
+LM1233:
+	     .stabn 68,0,7430,LM1233-_End
+	     SP = SP - 1              	// [6:7430]  
+	     R3 = 10                  	// [7:7430]  
+	     R4 = SP + 1              	// [8:7430]  
+	     [R4] = R3                	// [10:7430]  
+	     call _PlayA1800_Elements 	// [12:7430]  PlayA1800_Elements
+BB116_PU66:	// 0x217f
+// BB:116 cycle count: 8
+	     SP = SP + 7              	// [0:7430]  
+//7431              return C_Off_Mode;
+
+LM1234:
+	     .stabn 68,0,7431,LM1234-_End
+	     R1 = - 4085              	// [1:7431]  
+	     pop BP, PC from [SP]     	// [3:7431]  
+L_66_65:	// 0x2183
+// BB:117 cycle count: 12
+//7432        	}
+//7433  
+//7434  
+//7435  	 Key_Event =0;
+
+LM1235:
+	     .stabn 68,0,7435,LM1235-_End
+	     R3 = 0                   	// [0:7435]  
+	     DS = seg(_Key_Event)     	// [1:7435]  Key_Event
+	     R4 = (_Key_Event)        	// [2:7435]  Key_Event
+	     DS:[R4] = R3             	// [4:7435]  
+	     SP = SP + 6              	// [6:7435]  
+	     pop BP, PC from [SP]     	// [7:7435]  
 LBE62:
 	.endp	
 	     .stabn 192,0,0,LBB62-_End
@@ -17520,100 +17652,100 @@ _Go_Rest: .proc
 	// i = 0
 	// old_frame_pointer = 1
 	// return_address = 2
-//7423  
-//7424  //============================================================
-//7425  //==============================================================
-//7426  void  Go_Rest()
-//7427  {
+//7440  
+//7441  //============================================================
+//7442  //==============================================================
+//7443  void  Go_Rest()
+//7444  {
 
-LM1220:
-	     .stabn 68,0,7427,LM1220-_Go_Rest
-BB1_PU67:	// 0x2137
+LM1236:
+	     .stabn 68,0,7444,LM1236-_Go_Rest
+BB1_PU67:	// 0x217e
 // BB:1 cycle count: 17
-	     push BP to [SP]          	// [0:7427]  
-	     SP = SP - 1              	// [2:7427]  
-	     BP = SP + 1              	// [3:7427]  
+	     push BP to [SP]          	// [0:7444]  
+	     SP = SP - 1              	// [2:7444]  
+	     BP = SP + 1              	// [3:7444]  
 	//;;
 	IRQ off
 	//;;
 LBB63:
-//7428  	unsigned i;
-//7429  	asm("IRQ off");
-//7430  	
-//7431  		
-//7432  	if(A1800_Flag)
+//7445  	unsigned i;
+//7446  	asm("IRQ off");
+//7447  	
+//7448  		
+//7449  	if(A1800_Flag)
 
-LM1221:
-	     .stabn 68,0,7432,LM1221-_Go_Rest
-	     DS = seg(_A1800_Flag)    	// [7:7432]  A1800_Flag
-	     R4 = (_A1800_Flag)       	// [8:7432]  A1800_Flag
-	     R4 = DS:[R4]             	// [10:7432]  
-	     cmp R4, 0                	// [12:7432]  
-	     je L_67_7                	// [13:7432]  
-BB2_PU67:	// 0x2144
+LM1237:
+	     .stabn 68,0,7449,LM1237-_Go_Rest
+	     DS = seg(_A1800_Flag)    	// [7:7449]  A1800_Flag
+	     R4 = (_A1800_Flag)       	// [8:7449]  A1800_Flag
+	     R4 = DS:[R4]             	// [10:7449]  
+	     cmp R4, 0                	// [12:7449]  
+	     je L_67_7                	// [13:7449]  
+BB2_PU67:	// 0x218b
 // BB:2 cycle count: 3
-//7433  	{
-//7434  	 SACM_A1800_Stop();
+//7450  	{
+//7451  	 SACM_A1800_Stop();
 
-LM1222:
-	     .stabn 68,0,7434,LM1222-_Go_Rest
-	     call _SACM_A1800_Stop    	// [0:7434]  SACM_A1800_Stop
-BB3_PU67:	// 0x2146
+LM1238:
+	     .stabn 68,0,7451,LM1238-_Go_Rest
+	     call _SACM_A1800_Stop    	// [0:7451]  SACM_A1800_Stop
+BB3_PU67:	// 0x218d
 // BB:3 cycle count: 6
-//7435  	 A1800_Flag =0;
+//7452  	 A1800_Flag =0;
 
-LM1223:
-	     .stabn 68,0,7435,LM1223-_Go_Rest
-	     R3 = 0                   	// [0:7435]  
-	     DS = seg(_A1800_Flag)    	// [1:7435]  A1800_Flag
-	     R4 = (_A1800_Flag)       	// [2:7435]  A1800_Flag
-	     DS:[R4] = R3             	// [4:7435]  
-L_67_7:	// 0x214b
+LM1239:
+	     .stabn 68,0,7452,LM1239-_Go_Rest
+	     R3 = 0                   	// [0:7452]  
+	     DS = seg(_A1800_Flag)    	// [1:7452]  A1800_Flag
+	     R4 = (_A1800_Flag)       	// [2:7452]  A1800_Flag
+	     DS:[R4] = R3             	// [4:7452]  
+L_67_7:	// 0x2192
 // BB:4 cycle count: 3
-//7436  	}
-//7437  //	Led_SP_Off();
-//7438  	
-//7439  	i = 1000;
+//7453  	}
+//7454  //	Led_SP_Off();
+//7455  	
+//7456  	i = 1000;
 
-LM1224:
-	     .stabn 68,0,7439,LM1224-_Go_Rest
-	     R4 = 1000                	// [0:7439]  
-	     [BP + 0] = R4            	// [2:7439]  i
-Lt_67_5:	// 0x214e
+LM1240:
+	     .stabn 68,0,7456,LM1240-_Go_Rest
+	     R4 = 1000                	// [0:7456]  
+	     [BP + 0] = R4            	// [2:7456]  i
+Lt_67_5:	// 0x2195
 // BB:5 cycle count: 12
-//7440  	while(i--) System_ServiceLoop();
+//7457  	while(i--) System_ServiceLoop();
 
-LM1225:
-	     .stabn 68,0,7440,LM1225-_Go_Rest
-	     R4 = [BP + 0]            	// [0:7440]  i
-	     R4 = R4 - 1              	// [2:7440]  
-	     [BP + 0] = R4            	// [3:7440]  i
-	     R4 = [BP + 0]            	// [4:7440]  i
-	     cmp R4, 65535            	// [6:7440]  
-	     je Lt_67_6               	// [8:7440]  
-BB6_PU67:	// 0x2155
+LM1241:
+	     .stabn 68,0,7457,LM1241-_Go_Rest
+	     R4 = [BP + 0]            	// [0:7457]  i
+	     R4 = R4 - 1              	// [2:7457]  
+	     [BP + 0] = R4            	// [3:7457]  i
+	     R4 = [BP + 0]            	// [4:7457]  i
+	     cmp R4, 65535            	// [6:7457]  
+	     je Lt_67_6               	// [8:7457]  
+BB6_PU67:	// 0x219c
 // BB:6 cycle count: 3
-	     call _System_ServiceLoop 	// [0:7440]  System_ServiceLoop
-BB7_PU67:	// 0x2157
+	     call _System_ServiceLoop 	// [0:7457]  System_ServiceLoop
+BB7_PU67:	// 0x219e
 // BB:7 cycle count: 4
-	     jmp Lt_67_5              	// [0:7440]  
-Lt_67_6:	// 0x2158
+	     jmp Lt_67_5              	// [0:7457]  
+Lt_67_6:	// 0x219f
 // BB:8 cycle count: 14
-//7455  //	i = 3000;
-//7456  //	while(i--) System_ServiceLoop();
-//7457  
-//7458     // Sleep();
-//7459  	*P_System_Reset = C_Software_Reset;
+//7472  //	i = 3000;
+//7473  //	while(i--) System_ServiceLoop();
+//7474  
+//7475     // Sleep();
+//7476  	*P_System_Reset = C_Software_Reset;
 
-LM1226:
-	     .stabn 68,0,7459,LM1226-_Go_Rest
-	     R2 = 21845               	// [0:7459]  
-	     R3 = 12337               	// [2:7459]  
-	     R4 = 0                   	// [4:7459]  
-	     DS = R4                  	// [5:7459]  
-	     DS:[R3] = R2             	// [6:7459]  
-	     SP = SP + 1              	// [8:7459]  
-	     pop BP, PC from [SP]     	// [9:7459]  
+LM1242:
+	     .stabn 68,0,7476,LM1242-_Go_Rest
+	     R2 = 21845               	// [0:7476]  
+	     R3 = 12337               	// [2:7476]  
+	     R4 = 0                   	// [4:7476]  
+	     DS = R4                  	// [5:7476]  
+	     DS:[R3] = R2             	// [6:7476]  
+	     SP = SP + 1              	// [8:7476]  
+	     pop BP, PC from [SP]     	// [9:7476]  
 LBE63:
 	.endp	
 	     .stabn 192,0,0,LBB63-_Go_Rest
@@ -17631,380 +17763,380 @@ _Sleeping: .proc
 	// cnt = 0
 	// old_frame_pointer = 1
 	// return_address = 2
-//7461  
-//7462  /**********************************************************
-//7463  *************************************************************/
-//7464  void Sleeping()
-//7465  {
-
-LM1227:
-	     .stabn 68,0,7465,LM1227-_Sleeping
-BB1_PU68:	// 0x215e
-// BB:1 cycle count: 17
-	     push BP to [SP]          	// [0:7465]  
-	     SP = SP - 1              	// [2:7465]  
-	     BP = SP + 1              	// [3:7465]  
-LBB64:
-//7466  //   unsigned int temp;//temp_Mode;
-//7467     unsigned int cnt =0;
-
-LM1228:
-	     .stabn 68,0,7467,LM1228-_Sleeping
-	     R4 = 0                   	// [5:7467]  
-	     [BP + 0] = R4            	// [6:7467]  cnt
-//7468  	
-//7469   if(A1800_Flag)
-
-LM1229:
-	     .stabn 68,0,7469,LM1229-_Sleeping
-	     DS = seg(_A1800_Flag)    	// [7:7469]  A1800_Flag
-	     R4 = (_A1800_Flag)       	// [8:7469]  A1800_Flag
-	     R4 = DS:[R4]             	// [10:7469]  
-	     cmp R4, 0                	// [12:7469]  
-	     je L_68_3                	// [13:7469]  
-BB2_PU68:	// 0x216a
-// BB:2 cycle count: 3
-//7470   {
-//7471     SACM_A1800_Stop();
-
-LM1230:
-	     .stabn 68,0,7471,LM1230-_Sleeping
-	     call _SACM_A1800_Stop    	// [0:7471]  SACM_A1800_Stop
-BB3_PU68:	// 0x216c
-// BB:3 cycle count: 6
-//7472     A1800_Flag = 0;	
-
-LM1231:
-	     .stabn 68,0,7472,LM1231-_Sleeping
-	     R3 = 0                   	// [0:7472]  
-	     DS = seg(_A1800_Flag)    	// [1:7472]  A1800_Flag
-	     R4 = (_A1800_Flag)       	// [2:7472]  A1800_Flag
-	     DS:[R4] = R3             	// [4:7472]  
-L_68_3:	// 0x2171
-// BB:4 cycle count: 3
-//7473     
-//7474   }	
-//7475  	
-//7476     Sleep_Io();	
-
-LM1232:
-	     .stabn 68,0,7476,LM1232-_Sleeping
-	     call _Sleep_Io           	// [0:7476]  Sleep_Io
-L_68_4:	// 0x2173
-// BB:5 cycle count: 3
-//7477  	
-//7478  while(1)
-//7479  {	
-//7480  	
-//7481    WatchdogClear();	
-
-LM1233:
-	     .stabn 68,0,7481,LM1233-_Sleeping
-	     call _WatchdogClear      	// [0:7481]  WatchdogClear
-Lt_68_1:	// 0x2175
-// BB:6 cycle count: 5
-//7482    //temp_Mode = Switch_Mode;	
-//7483  go_on_sleep_sw:	
-//7484         cnt =0;
-
-LM1234:
-	     .stabn 68,0,7484,LM1234-_Sleeping
-	     R4 = 0                   	// [0:7484]  
-	     [BP + 0] = R4            	// [1:7484]  cnt
-//7485  	   Sleep();	
-
-LM1235:
-	     .stabn 68,0,7485,LM1235-_Sleeping
-	     call _Sleep              	// [2:7485]  Sleep
-BB7_PU68:	// 0x2179
-// BB:7 cycle count: 3
-//7508  		//goto go_on_sleep_sw;	
-//7509  	{	
-//7510  
-//7511  
-//7512  		Sys_clock_init_Only();
-
-LM1236:
-	     .stabn 68,0,7512,LM1236-_Sleeping
-	     call _Sys_clock_init_Only	// [0:7512]  Sys_clock_init_Only
-BB8_PU68:	// 0x217b
-// BB:8 cycle count: 3
-//7513  	    //Sys_clock_init();
-//7514  	    IO_init_Wakeup();
-
-LM1237:
-	     .stabn 68,0,7514,LM1237-_Sleeping
-	     call _IO_init_Wakeup     	// [0:7514]  IO_init_Wakeup
-BB9_PU68:	// 0x217d
-// BB:9 cycle count: 10
-//7515  	    
-//7516  	    
-//7517  	    Delay1xms(100);
-
-LM1238:
-	     .stabn 68,0,7517,LM1238-_Sleeping
-	     SP = SP - 1              	// [0:7517]  
-	     R3 = 100                 	// [1:7517]  
-	     R4 = SP + 1              	// [3:7517]  
-	     [R4] = R3                	// [5:7517]  
-	     call _Delay1xms          	// [7:7517]  Delay1xms
-BB10_PU68:	// 0x2185
-// BB:10 cycle count: 4
-	     SP = SP + 1              	// [0:7517]  
-//7518  	    GetMode();
-
-LM1239:
-	     .stabn 68,0,7518,LM1239-_Sleeping
-	     call _GetMode            	// [1:7518]  GetMode
-BB11_PU68:	// 0x2188
-// BB:11 cycle count: 11
-//7519  	   // Switch_Mode = Key_Instruction;
-//7520  	    
-//7521  	 
-//7522  	 	if((Switch_Mode == Key_Game)||(Switch_Mode == Key_Game_Family))
-
-LM1240:
-	     .stabn 68,0,7522,LM1240-_Sleeping
-	     DS = seg(_Switch_Mode)   	// [0:7522]  Switch_Mode
-	     R4 = (_Switch_Mode)      	// [1:7522]  Switch_Mode
-	     R4 = DS:[R4]             	// [3:7522]  
-	     cmp R4, 512              	// [5:7522]  
-	     je L_68_8                	// [7:7522]  
-BB12_PU68:	// 0x218f
-// BB:12 cycle count: 11
-	     DS = seg(_Switch_Mode)   	// [0:7522]  Switch_Mode
-	     R4 = (_Switch_Mode)      	// [1:7522]  Switch_Mode
-	     R4 = DS:[R4]             	// [3:7522]  
-	     cmp R4, 128              	// [5:7522]  
-	     jne L_68_7               	// [7:7522]  
-L_68_8:	// 0x2196
-// BB:13 cycle count: 30
-//7523  	    {
-//7524           	cnt =Wakeup_IO_Temp^Sleep_IO_Temp;
-
-LM1241:
-	     .stabn 68,0,7524,LM1241-_Sleeping
-	     DS = seg(_Sleep_IO_Temp) 	// [0:7524]  Sleep_IO_Temp
-	     R4 = (_Sleep_IO_Temp)    	// [1:7524]  Sleep_IO_Temp
-	     R4 = DS:[R4]             	// [3:7524]  
-	     DS = seg(_Wakeup_IO_Temp)	// [5:7524]  Wakeup_IO_Temp
-	     R3 = (_Wakeup_IO_Temp)   	// [6:7524]  Wakeup_IO_Temp
-	     R4 = R4 ^ DS:[R3]        	// [8:7524]  
-	     [BP + 0] = R4            	// [10:7524]  cnt
-//7525           	
-//7526           // if(VOL1Flag)	
-//7527  	           cnt&=0x280;//200
-
-LM1242:
-	     .stabn 68,0,7527,LM1242-_Sleeping
-	     R4 = [BP + 0]            	// [11:7527]  cnt
-	     R4 = R4 & 640            	// [13:7527]  
-	     [BP + 0] = R4            	// [15:7527]  cnt
-//7528  	     // else
-//7529  	      //    cnt&=0x080;
-//7530  	        
-//7531  	       // if((cnt)&&(temp&0x200)==0))
-//7532  	       if((Wakeup_IO_Temp&cnt)!=cnt) 	
+//7478  
+//7479  /**********************************************************
+//7480  *************************************************************/
+//7481  void Sleeping()
+//7482  {
 
 LM1243:
-	     .stabn 68,0,7532,LM1243-_Sleeping
-	     R2 = [BP + 0]            	// [16:7532]  cnt
-	     R4 = [BP + 0]            	// [18:7532]  cnt
-	     DS = seg(_Wakeup_IO_Temp)	// [20:7532]  Wakeup_IO_Temp
-	     R3 = (_Wakeup_IO_Temp)   	// [21:7532]  Wakeup_IO_Temp
-	     R4 = R4 & DS:[R3]        	// [23:7532]  
-	     cmp R2, R4               	// [25:7532]  
-	     je L_68_9                	// [26:7532]  
-BB14_PU68:	// 0x21ab
-// BB:14 cycle count: 4
-//7533  	  	    {
-//7534  	  	   	  break;
+	     .stabn 68,0,7482,LM1243-_Sleeping
+BB1_PU68:	// 0x21a5
+// BB:1 cycle count: 17
+	     push BP to [SP]          	// [0:7482]  
+	     SP = SP - 1              	// [2:7482]  
+	     BP = SP + 1              	// [3:7482]  
+LBB64:
+//7483  //   unsigned int temp;//temp_Mode;
+//7484     unsigned int cnt =0;
 
 LM1244:
-	     .stabn 68,0,7534,LM1244-_Sleeping
-	     jmp Lt_68_2              	// [0:7534]  
-L_68_9:	// 0x21ac
-// BB:15 cycle count: 4
+	     .stabn 68,0,7484,LM1244-_Sleeping
+	     R4 = 0                   	// [5:7484]  
+	     [BP + 0] = R4            	// [6:7484]  cnt
+//7485  	
+//7486   if(A1800_Flag)
 
 LM1245:
-	     .stabn 68,0,7532,LM1245-_Sleeping
-	     jmp L_68_6               	// [0:7532]  
-L_68_7:	// 0x21ad
-// BB:16 cycle count: 11
-//7535  	  	    }
-//7536  
-//7537  	    }
-//7538  	  else if(Switch_Mode == Key_Instruction)
+	     .stabn 68,0,7486,LM1245-_Sleeping
+	     DS = seg(_A1800_Flag)    	// [7:7486]  A1800_Flag
+	     R4 = (_A1800_Flag)       	// [8:7486]  A1800_Flag
+	     R4 = DS:[R4]             	// [10:7486]  
+	     cmp R4, 0                	// [12:7486]  
+	     je L_68_3                	// [13:7486]  
+BB2_PU68:	// 0x21b1
+// BB:2 cycle count: 3
+//7487   {
+//7488     SACM_A1800_Stop();
 
 LM1246:
-	     .stabn 68,0,7538,LM1246-_Sleeping
-	     DS = seg(_Switch_Mode)   	// [0:7538]  Switch_Mode
-	     R4 = (_Switch_Mode)      	// [1:7538]  Switch_Mode
-	     R4 = DS:[R4]             	// [3:7538]  
-	     cmp R4, 256              	// [5:7538]  
-	     jne L_68_10              	// [7:7538]  
-BB17_PU68:	// 0x21b4
-// BB:17 cycle count: 30
-//7539  	    {
-//7540  	        //Sleep_IO_Temp&=0x7f;
-//7541  	       
-//7542  	        cnt =Wakeup_IO_Temp^Sleep_IO_Temp;
+	     .stabn 68,0,7488,LM1246-_Sleeping
+	     call _SACM_A1800_Stop    	// [0:7488]  SACM_A1800_Stop
+BB3_PU68:	// 0x21b3
+// BB:3 cycle count: 6
+//7489     A1800_Flag = 0;	
 
 LM1247:
-	     .stabn 68,0,7542,LM1247-_Sleeping
-	     DS = seg(_Sleep_IO_Temp) 	// [0:7542]  Sleep_IO_Temp
-	     R4 = (_Sleep_IO_Temp)    	// [1:7542]  Sleep_IO_Temp
-	     R4 = DS:[R4]             	// [3:7542]  
-	     DS = seg(_Wakeup_IO_Temp)	// [5:7542]  Wakeup_IO_Temp
-	     R3 = (_Wakeup_IO_Temp)   	// [6:7542]  Wakeup_IO_Temp
-	     R4 = R4 ^ DS:[R3]        	// [8:7542]  
-	     [BP + 0] = R4            	// [10:7542]  cnt
-//7543  	        cnt&=0x7f;
+	     .stabn 68,0,7489,LM1247-_Sleeping
+	     R3 = 0                   	// [0:7489]  
+	     DS = seg(_A1800_Flag)    	// [1:7489]  A1800_Flag
+	     R4 = (_A1800_Flag)       	// [2:7489]  A1800_Flag
+	     DS:[R4] = R3             	// [4:7489]  
+L_68_3:	// 0x21b8
+// BB:4 cycle count: 3
+//7490     
+//7491   }	
+//7492  	
+//7493     Sleep_Io();	
 
 LM1248:
-	     .stabn 68,0,7543,LM1248-_Sleeping
-	     R4 = [BP + 0]            	// [11:7543]  cnt
-	     R4 = R4 & 127            	// [13:7543]  
-	     [BP + 0] = R4            	// [15:7543]  cnt
-//7544  	       // temp&=cnt;	    	
-//7545  	  	   if((Wakeup_IO_Temp&cnt)!=cnt)
+	     .stabn 68,0,7493,LM1248-_Sleeping
+	     call _Sleep_Io           	// [0:7493]  Sleep_Io
+L_68_4:	// 0x21ba
+// BB:5 cycle count: 3
+//7494  	
+//7495  while(1)
+//7496  {	
+//7497  	
+//7498    WatchdogClear();	
 
 LM1249:
-	     .stabn 68,0,7545,LM1249-_Sleeping
-	     R2 = [BP + 0]            	// [16:7545]  cnt
-	     R4 = [BP + 0]            	// [18:7545]  cnt
-	     DS = seg(_Wakeup_IO_Temp)	// [20:7545]  Wakeup_IO_Temp
-	     R3 = (_Wakeup_IO_Temp)   	// [21:7545]  Wakeup_IO_Temp
-	     R4 = R4 & DS:[R3]        	// [23:7545]  
-	     cmp R2, R4               	// [25:7545]  
-	     je L_68_11               	// [26:7545]  
-BB18_PU68:	// 0x21c9
-// BB:18 cycle count: 4
-//7546  	  	   {
-//7547  	  	   	  break;
+	     .stabn 68,0,7498,LM1249-_Sleeping
+	     call _WatchdogClear      	// [0:7498]  WatchdogClear
+Lt_68_1:	// 0x21bc
+// BB:6 cycle count: 5
+//7499    //temp_Mode = Switch_Mode;	
+//7500  go_on_sleep_sw:	
+//7501         cnt =0;
 
 LM1250:
-	     .stabn 68,0,7547,LM1250-_Sleeping
-	     jmp Lt_68_2              	// [0:7547]  
-L_68_11:	// 0x21ca
-L_68_10:	// 0x21ca
-L_68_6:	// 0x21ca
-// BB:19 cycle count: 3
-//7549  	  	
-//7550  	    }
-//7551  
-//7552         
-//7553         Set_Sleep_IO();
+	     .stabn 68,0,7501,LM1250-_Sleeping
+	     R4 = 0                   	// [0:7501]  
+	     [BP + 0] = R4            	// [1:7501]  cnt
+//7502  	   Sleep();	
 
 LM1251:
-	     .stabn 68,0,7553,LM1251-_Sleeping
-	     call _Set_Sleep_IO       	// [0:7553]  Set_Sleep_IO
-BB20_PU68:	// 0x21cc
-// BB:20 cycle count: 3
-	     goto L_68_4              	// [0:7553]  
-L_68_5:	// 0x21ce
-Lt_68_2:	// 0x21ce
-// BB:21 cycle count: 27
-//7559  #if C_PassEn
-//7560     	PassFlag =0;
-//7561  #endif   	
-//7562     
-//7563     	Sleepflag =0;
+	     .stabn 68,0,7502,LM1251-_Sleeping
+	     call _Sleep              	// [2:7502]  Sleep
+BB7_PU68:	// 0x21c0
+// BB:7 cycle count: 3
+//7525  		//goto go_on_sleep_sw;	
+//7526  	{	
+//7527  
+//7528  
+//7529  		Sys_clock_init_Only();
 
 LM1252:
-	     .stabn 68,0,7563,LM1252-_Sleeping
-	     R3 = 0                   	// [0:7563]  
-	     DS = seg(_Sleepflag)     	// [1:7563]  Sleepflag
-	     R4 = (_Sleepflag)        	// [2:7563]  Sleepflag
-	     DS:[R4] = R3             	// [4:7563]  
-//7564    	LED_Cnt =0;	//xiang 20150206
+	     .stabn 68,0,7529,LM1252-_Sleeping
+	     call _Sys_clock_init_Only	// [0:7529]  Sys_clock_init_Only
+BB8_PU68:	// 0x21c2
+// BB:8 cycle count: 3
+//7530  	    //Sys_clock_init();
+//7531  	    IO_init_Wakeup();
 
 LM1253:
-	     .stabn 68,0,7564,LM1253-_Sleeping
-	     R3 = 0                   	// [6:7564]  
-	     DS = seg(_LED_Cnt)       	// [7:7564]  LED_Cnt
-	     R4 = (_LED_Cnt)          	// [8:7564]  LED_Cnt
-	     DS:[R4] = R3             	// [10:7564]  
-//7565     	BlinkFlag_Data = 0;//xiang 20150226
+	     .stabn 68,0,7531,LM1253-_Sleeping
+	     call _IO_init_Wakeup     	// [0:7531]  IO_init_Wakeup
+BB9_PU68:	// 0x21c4
+// BB:9 cycle count: 10
+//7532  	    
+//7533  	    
+//7534  	    Delay1xms(100);
 
 LM1254:
-	     .stabn 68,0,7565,LM1254-_Sleeping
-	     R3 = 0                   	// [12:7565]  
-	     DS = seg(_BlinkFlag_Data)	// [13:7565]  BlinkFlag_Data
-	     R4 = (_BlinkFlag_Data)   	// [14:7565]  BlinkFlag_Data
-	     DS:[R4] = R3             	// [16:7565]  
-//7566     	CheaterFlag =0;
+	     .stabn 68,0,7534,LM1254-_Sleeping
+	     SP = SP - 1              	// [0:7534]  
+	     R3 = 100                 	// [1:7534]  
+	     R4 = SP + 1              	// [3:7534]  
+	     [R4] = R3                	// [5:7534]  
+	     call _Delay1xms          	// [7:7534]  Delay1xms
+BB10_PU68:	// 0x21cc
+// BB:10 cycle count: 4
+	     SP = SP + 1              	// [0:7534]  
+//7535  	    GetMode();
 
 LM1255:
-	     .stabn 68,0,7566,LM1255-_Sleeping
-	     R3 = 0                   	// [18:7566]  
-	     DS = seg(_CheaterFlag)   	// [19:7566]  CheaterFlag
-	     R4 = (_CheaterFlag)      	// [20:7566]  CheaterFlag
-	     DS:[R4] = R3             	// [22:7566]  
-//7567     //	Event_List = Event_List_Init;
-//7568     	
-//7569      Sys_clock_init();
+	     .stabn 68,0,7535,LM1255-_Sleeping
+	     call _GetMode            	// [1:7535]  GetMode
+BB11_PU68:	// 0x21cf
+// BB:11 cycle count: 11
+//7536  	   // Switch_Mode = Key_Instruction;
+//7537  	    
+//7538  	 
+//7539  	 	if((Switch_Mode == Key_Game)||(Switch_Mode == Key_Game_Family))
 
 LM1256:
-	     .stabn 68,0,7569,LM1256-_Sleeping
-	     call _Sys_clock_init     	// [24:7569]  Sys_clock_init
-BB22_PU68:	// 0x21e4
-// BB:22 cycle count: 3
-//7570      Time_init();
+	     .stabn 68,0,7539,LM1256-_Sleeping
+	     DS = seg(_Switch_Mode)   	// [0:7539]  Switch_Mode
+	     R4 = (_Switch_Mode)      	// [1:7539]  Switch_Mode
+	     R4 = DS:[R4]             	// [3:7539]  
+	     cmp R4, 512              	// [5:7539]  
+	     je L_68_8                	// [7:7539]  
+BB12_PU68:	// 0x21d6
+// BB:12 cycle count: 11
+	     DS = seg(_Switch_Mode)   	// [0:7539]  Switch_Mode
+	     R4 = (_Switch_Mode)      	// [1:7539]  Switch_Mode
+	     R4 = DS:[R4]             	// [3:7539]  
+	     cmp R4, 128              	// [5:7539]  
+	     jne L_68_7               	// [7:7539]  
+L_68_8:	// 0x21dd
+// BB:13 cycle count: 30
+//7540  	    {
+//7541           	cnt =Wakeup_IO_Temp^Sleep_IO_Temp;
 
 LM1257:
-	     .stabn 68,0,7570,LM1257-_Sleeping
-	     call _Time_init          	// [0:7570]  Time_init
-BB23_PU68:	// 0x21e6
-// BB:23 cycle count: 3
-//7571      IO_init();
+	     .stabn 68,0,7541,LM1257-_Sleeping
+	     DS = seg(_Sleep_IO_Temp) 	// [0:7541]  Sleep_IO_Temp
+	     R4 = (_Sleep_IO_Temp)    	// [1:7541]  Sleep_IO_Temp
+	     R4 = DS:[R4]             	// [3:7541]  
+	     DS = seg(_Wakeup_IO_Temp)	// [5:7541]  Wakeup_IO_Temp
+	     R3 = (_Wakeup_IO_Temp)   	// [6:7541]  Wakeup_IO_Temp
+	     R4 = R4 ^ DS:[R3]        	// [8:7541]  
+	     [BP + 0] = R4            	// [10:7541]  cnt
+//7542           	
+//7543           // if(VOL1Flag)	
+//7544  	           cnt&=0x280;//200
 
 LM1258:
-	     .stabn 68,0,7571,LM1258-_Sleeping
-	     call _IO_init            	// [0:7571]  IO_init
-BB24_PU68:	// 0x21e8
-// BB:24 cycle count: 3
-//7572  
-//7573  //	SPI_Initial();
-//7574  //	SPI_Flash_Release_DP();
-//7575  	
-//7576  	Init_CTS();	
+	     .stabn 68,0,7544,LM1258-_Sleeping
+	     R4 = [BP + 0]            	// [11:7544]  cnt
+	     R4 = R4 & 640            	// [13:7544]  
+	     [BP + 0] = R4            	// [15:7544]  cnt
+//7545  	     // else
+//7546  	      //    cnt&=0x080;
+//7547  	        
+//7548  	       // if((cnt)&&(temp&0x200)==0))
+//7549  	       if((Wakeup_IO_Temp&cnt)!=cnt) 	
 
 LM1259:
-	     .stabn 68,0,7576,LM1259-_Sleeping
-	     call _Init_CTS           	// [0:7576]  Init_CTS
-BB25_PU68:	// 0x21ea
-// BB:25 cycle count: 3
-//7577  	Key_Scan_Init_Wakeup();
+	     .stabn 68,0,7549,LM1259-_Sleeping
+	     R2 = [BP + 0]            	// [16:7549]  cnt
+	     R4 = [BP + 0]            	// [18:7549]  cnt
+	     DS = seg(_Wakeup_IO_Temp)	// [20:7549]  Wakeup_IO_Temp
+	     R3 = (_Wakeup_IO_Temp)   	// [21:7549]  Wakeup_IO_Temp
+	     R4 = R4 & DS:[R3]        	// [23:7549]  
+	     cmp R2, R4               	// [25:7549]  
+	     je L_68_9                	// [26:7549]  
+BB14_PU68:	// 0x21f2
+// BB:14 cycle count: 4
+//7550  	  	    {
+//7551  	  	   	  break;
 
 LM1260:
-	     .stabn 68,0,7577,LM1260-_Sleeping
-	     call _Key_Scan_Init_Wakeup	// [0:7577]  Key_Scan_Init_Wakeup
-BB26_PU68:	// 0x21ec
-// BB:26 cycle count: 16
-//7578  
-//7579      Key_Event =0;
+	     .stabn 68,0,7551,LM1260-_Sleeping
+	     jmp Lt_68_2              	// [0:7551]  
+L_68_9:	// 0x21f3
+// BB:15 cycle count: 4
 
 LM1261:
-	     .stabn 68,0,7579,LM1261-_Sleeping
-	     R3 = 0                   	// [0:7579]  
-	     DS = seg(_Key_Event)     	// [1:7579]  Key_Event
-	     R4 = (_Key_Event)        	// [2:7579]  Key_Event
-	     DS:[R4] = R3             	// [4:7579]  
+	     .stabn 68,0,7549,LM1261-_Sleeping
+	     jmp L_68_6               	// [0:7549]  
+L_68_7:	// 0x21f4
+// BB:16 cycle count: 11
+//7552  	  	    }
+//7553  
+//7554  	    }
+//7555  	  else if(Switch_Mode == Key_Instruction)
+
+LM1262:
+	     .stabn 68,0,7555,LM1262-_Sleeping
+	     DS = seg(_Switch_Mode)   	// [0:7555]  Switch_Mode
+	     R4 = (_Switch_Mode)      	// [1:7555]  Switch_Mode
+	     R4 = DS:[R4]             	// [3:7555]  
+	     cmp R4, 256              	// [5:7555]  
+	     jne L_68_10              	// [7:7555]  
+BB17_PU68:	// 0x21fb
+// BB:17 cycle count: 30
+//7556  	    {
+//7557  	        //Sleep_IO_Temp&=0x7f;
+//7558  	       
+//7559  	        cnt =Wakeup_IO_Temp^Sleep_IO_Temp;
+
+LM1263:
+	     .stabn 68,0,7559,LM1263-_Sleeping
+	     DS = seg(_Sleep_IO_Temp) 	// [0:7559]  Sleep_IO_Temp
+	     R4 = (_Sleep_IO_Temp)    	// [1:7559]  Sleep_IO_Temp
+	     R4 = DS:[R4]             	// [3:7559]  
+	     DS = seg(_Wakeup_IO_Temp)	// [5:7559]  Wakeup_IO_Temp
+	     R3 = (_Wakeup_IO_Temp)   	// [6:7559]  Wakeup_IO_Temp
+	     R4 = R4 ^ DS:[R3]        	// [8:7559]  
+	     [BP + 0] = R4            	// [10:7559]  cnt
+//7560  	        cnt&=0x7f;
+
+LM1264:
+	     .stabn 68,0,7560,LM1264-_Sleeping
+	     R4 = [BP + 0]            	// [11:7560]  cnt
+	     R4 = R4 & 127            	// [13:7560]  
+	     [BP + 0] = R4            	// [15:7560]  cnt
+//7561  	       // temp&=cnt;	    	
+//7562  	  	   if((Wakeup_IO_Temp&cnt)!=cnt)
+
+LM1265:
+	     .stabn 68,0,7562,LM1265-_Sleeping
+	     R2 = [BP + 0]            	// [16:7562]  cnt
+	     R4 = [BP + 0]            	// [18:7562]  cnt
+	     DS = seg(_Wakeup_IO_Temp)	// [20:7562]  Wakeup_IO_Temp
+	     R3 = (_Wakeup_IO_Temp)   	// [21:7562]  Wakeup_IO_Temp
+	     R4 = R4 & DS:[R3]        	// [23:7562]  
+	     cmp R2, R4               	// [25:7562]  
+	     je L_68_11               	// [26:7562]  
+BB18_PU68:	// 0x2210
+// BB:18 cycle count: 4
+//7563  	  	   {
+//7564  	  	   	  break;
+
+LM1266:
+	     .stabn 68,0,7564,LM1266-_Sleeping
+	     jmp Lt_68_2              	// [0:7564]  
+L_68_11:	// 0x2211
+L_68_10:	// 0x2211
+L_68_6:	// 0x2211
+// BB:19 cycle count: 3
+//7566  	  	
+//7567  	    }
+//7568  
+//7569         
+//7570         Set_Sleep_IO();
+
+LM1267:
+	     .stabn 68,0,7570,LM1267-_Sleeping
+	     call _Set_Sleep_IO       	// [0:7570]  Set_Sleep_IO
+BB20_PU68:	// 0x2213
+// BB:20 cycle count: 3
+	     goto L_68_4              	// [0:7570]  
+L_68_5:	// 0x2215
+Lt_68_2:	// 0x2215
+// BB:21 cycle count: 27
+//7576  #if C_PassEn
+//7577     	PassFlag =0;
+//7578  #endif   	
+//7579     
+//7580     	Sleepflag =0;
+
+LM1268:
+	     .stabn 68,0,7580,LM1268-_Sleeping
+	     R3 = 0                   	// [0:7580]  
+	     DS = seg(_Sleepflag)     	// [1:7580]  Sleepflag
+	     R4 = (_Sleepflag)        	// [2:7580]  Sleepflag
+	     DS:[R4] = R3             	// [4:7580]  
+//7581    	LED_Cnt =0;	//xiang 20150206
+
+LM1269:
+	     .stabn 68,0,7581,LM1269-_Sleeping
+	     R3 = 0                   	// [6:7581]  
+	     DS = seg(_LED_Cnt)       	// [7:7581]  LED_Cnt
+	     R4 = (_LED_Cnt)          	// [8:7581]  LED_Cnt
+	     DS:[R4] = R3             	// [10:7581]  
+//7582     	BlinkFlag_Data = 0;//xiang 20150226
+
+LM1270:
+	     .stabn 68,0,7582,LM1270-_Sleeping
+	     R3 = 0                   	// [12:7582]  
+	     DS = seg(_BlinkFlag_Data)	// [13:7582]  BlinkFlag_Data
+	     R4 = (_BlinkFlag_Data)   	// [14:7582]  BlinkFlag_Data
+	     DS:[R4] = R3             	// [16:7582]  
+//7583     	CheaterFlag =0;
+
+LM1271:
+	     .stabn 68,0,7583,LM1271-_Sleeping
+	     R3 = 0                   	// [18:7583]  
+	     DS = seg(_CheaterFlag)   	// [19:7583]  CheaterFlag
+	     R4 = (_CheaterFlag)      	// [20:7583]  CheaterFlag
+	     DS:[R4] = R3             	// [22:7583]  
+//7584     //	Event_List = Event_List_Init;
+//7585     	
+//7586      Sys_clock_init();
+
+LM1272:
+	     .stabn 68,0,7586,LM1272-_Sleeping
+	     call _Sys_clock_init     	// [24:7586]  Sys_clock_init
+BB22_PU68:	// 0x222b
+// BB:22 cycle count: 3
+//7587      Time_init();
+
+LM1273:
+	     .stabn 68,0,7587,LM1273-_Sleeping
+	     call _Time_init          	// [0:7587]  Time_init
+BB23_PU68:	// 0x222d
+// BB:23 cycle count: 3
+//7588      IO_init();
+
+LM1274:
+	     .stabn 68,0,7588,LM1274-_Sleeping
+	     call _IO_init            	// [0:7588]  IO_init
+BB24_PU68:	// 0x222f
+// BB:24 cycle count: 3
+//7589  
+//7590  //	SPI_Initial();
+//7591  //	SPI_Flash_Release_DP();
+//7592  	
+//7593  	Init_CTS();	
+
+LM1275:
+	     .stabn 68,0,7593,LM1275-_Sleeping
+	     call _Init_CTS           	// [0:7593]  Init_CTS
+BB25_PU68:	// 0x2231
+// BB:25 cycle count: 3
+//7594  	Key_Scan_Init_Wakeup();
+
+LM1276:
+	     .stabn 68,0,7594,LM1276-_Sleeping
+	     call _Key_Scan_Init_Wakeup	// [0:7594]  Key_Scan_Init_Wakeup
+BB26_PU68:	// 0x2233
+// BB:26 cycle count: 16
+//7595  
+//7596      Key_Event =0;
+
+LM1277:
+	     .stabn 68,0,7596,LM1277-_Sleeping
+	     R3 = 0                   	// [0:7596]  
+	     DS = seg(_Key_Event)     	// [1:7596]  Key_Event
+	     R4 = (_Key_Event)        	// [2:7596]  Key_Event
+	     DS:[R4] = R3             	// [4:7596]  
 	//;;
 	FIQ ON
 	//;;
 	//;;
 	IRQ ON
 	//;;
-//7580  
-//7581  	asm("FIQ ON");
-//7582  	asm("IRQ ON");	
+//7597  
+//7598  	asm("FIQ ON");
+//7599  	asm("IRQ ON");	
 
-LM1262:
-	     .stabn 68,0,7582,LM1262-_Sleeping
-	     SP = SP + 1              	// [10:7582]  
-	     pop BP, PC from [SP]     	// [11:7582]  
+LM1278:
+	     .stabn 68,0,7599,LM1278-_Sleeping
+	     SP = SP + 1              	// [10:7599]  
+	     pop BP, PC from [SP]     	// [11:7599]  
 LBE64:
 	.endp	
 	     .stabn 192,0,0,LBB64-_Sleeping
@@ -18014,15 +18146,15 @@ LME69:
 	     .stabf LME69-_Sleeping
 
 .iram
-	     .stabs "QuestionStatus_LQA:G32=ar3;0;19;4",32,0,0,_QuestionStatus_LQA
+	     .stabs "QuestionStatus_LQA:G31=ar3;0;19;4",32,0,0,_QuestionStatus_LQA
 .public	_QuestionStatus_LQA
 _QuestionStatus_LQA:	// 0x75
 	.dw 20 dup(0)
-	     .stabs "QuestionStatus_LQ:G32",32,0,0,_QuestionStatus_LQ
+	     .stabs "QuestionStatus_LQ:G31",32,0,0,_QuestionStatus_LQ
 .public	_QuestionStatus_LQ
 _QuestionStatus_LQ:	// 0x89
 	.dw 20 dup(0)
-	     .stabs "QuestionStatus_Asked:G32",32,0,0,_QuestionStatus_Asked
+	     .stabs "QuestionStatus_Asked:G31",32,0,0,_QuestionStatus_Asked
 .public	_QuestionStatus_Asked
 _QuestionStatus_Asked:	// 0x9d
 	.dw 20 dup(0)

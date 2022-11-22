@@ -28,9 +28,9 @@
 .define	C_DnStep					40
 .define	C_AbnorDetCntEn				0			//0:Disable, 1:Enable
 .define	C_AbnorDetCnt				40
-.define C_SchmittH1                 200//400
+.define C_SchmittH1                 200//400//´¥·¢ÃÅ¼÷
 .define C_SchmittH2                 100
-.define C_SchmittL1                 100//200
+.define C_SchmittL1                 100//200 realese ÃÅ¼÷
 .define C_SchmittL2                 70
 
 //-------------Get Flash Data-----------------------//

@@ -7,10 +7,10 @@ PARAM=
 EXPORT=3
 # End Group
 # Begin Source File
-SOURCE=..\..\Rom\Link_Data\Rom_ZMM_V05.bin
+SOURCE=..\..\Rom\Link_Data\Rom_ZMM_V06.bin
 USEPARAM=FALSE
 PARAM=
-ID=RES_ROM_ZMM_V05_BIN
+ID=RES_ROM_ZMM_V06_BIN
 EXPORT=3
 # End Source File
 # End SubItem

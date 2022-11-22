@@ -23,7 +23,7 @@ Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\SPI_Flash_CE3.obj
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\RomCodeOBJ_GPCE1_CE3.obj"
-Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V05_bin.res"
+Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V06_bin.res"
 Lib: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\.\CTS\CTS_V1.1.0.lib"
 Lib: "C:\Program Files (x86)\Generalplus\unSPIDE 3.0.16.1\library\CMacro\CMacro1232.lib"
 Output: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo.TSK"
@@ -145,17 +145,17 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: NB_DATA in "Algorithm.obj" with 0 
 ;Locate: NB_DATA in "AntiCrack.obj" at 201928 
 ;Align: NB_DATA in "AntiCrack.obj" with 0 
-;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" at 203823 
+;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" at 20381F 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" with 0 
-;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 203995 
+;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 203991 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" with 0 
-;Locate: __sn_section_RES_ROM_ZMM_V05_BIN in "Rom_ZMM_V05_bin.res" at 207E10 
-;Align: __sn_section_RES_ROM_ZMM_V05_BIN in "Rom_ZMM_V05_bin.res" with 0 
-;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 203644 
+;Locate: __sn_section_RES_ROM_ZMM_V06_BIN in "Rom_ZMM_V06_bin.res" at 207E57 
+;Align: __sn_section_RES_ROM_ZMM_V06_BIN in "Rom_ZMM_V06_bin.res" with 0 
+;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 203640 
 ;Align: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
 ;Locate: CTS_ISR_Service_ROMBLOCK in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 201800 
 ;Align: CTS_ISR_Service_ROMBLOCK in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
-;Locate: CODE in "modu1" of "CMacro1232.lib"  at 203938 
+;Locate: CODE in "modu1" of "CMacro1232.lib"  at 203934 
 ;Align: CODE in "modu1" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "__clz16" of "CMacro1232.lib"  at 201869 
 ;Align: CODE in "__clz16" of "CMacro1232.lib"  with 0 
