@@ -28,7 +28,7 @@
 .define	C_DnStep					40
 .define	C_AbnorDetCntEn				0			//0:Disable, 1:Enable
 .define	C_AbnorDetCnt				40
-.define C_SchmittH1                 200//400//触发门槛
+.define C_SchmittH1                 400//400//触发门槛
 .define C_SchmittH2                 100
 .define C_SchmittL1                 100//200 realese 门槛
 .define C_SchmittL2                 70

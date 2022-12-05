@@ -27,8 +27,8 @@ volatile unsigned int T_Countdowncnt =0;
 unsigned int Restart=0;
 unsigned int Cn =0;
 unsigned int Registerd_Num =0; 
-unsigned int T1=0;
-unsigned int T2=0;
+//unsigned int T1=0;
+//unsigned int T2=0;
 unsigned int LastCategory_Series[C_RoundNum]={0,0,0,0,0,0,0,0,0,0,0,0};//Memory 
 
  
@@ -118,8 +118,8 @@ unsigned int Registered_Play_Status=0;
 
 
 //unsigned int Player_Actived_three[3]={0};
-unsigned int QuestionCycle[4] ={0};
-unsigned int Pre_Active_Player=0;//上一轮cylce的有效player
+//unsigned int QuestionCycle[4] ={0};
+//unsigned int Pre_Active_Player=0;//上一轮cylce的有效player
 //unsigned int Cur_Active_Player=0;//当前cycle的有效player
 
 
@@ -133,14 +133,14 @@ unsigned int BlinkFlag_Data =0;
 
 unsigned int Eventflag =0;
 
-unsigned int Answer_Right_Player =0;
-unsigned int Answer_Wrong_Player =0;
-unsigned int No_Answer_Player =0;
+//unsigned int Answer_Right_Player =0;
+//unsigned int Answer_Wrong_Player =0;
+//unsigned int No_Answer_Player =0;
+//
+//unsigned int Question_Answer =0;
 
-unsigned int Question_Answer =0;
-
-unsigned int SeriesAcnt =0;
-unsigned int SeriesBcnt =0;
+//unsigned int SeriesAcnt =0;
+//unsigned int SeriesBcnt =0;
 
 //unsigned int Series_Correctcnt =0;
 //unsigned int Series_Correctcnt_solo =0;
@@ -149,17 +149,17 @@ unsigned int SeriesBcnt =0;
 //unsigned int Series_grunt =0;
 //unsigned int Series_scient =0;
 //unsigned int Series_Lient =0;
-unsigned int Series_eventsolo=0;
+//unsigned int Series_eventsolo=0;
 //unsigned int Series_Team =0;
 
 unsigned int Leader_Player=0;
 unsigned int Lowest_Player =0;
 
 
-unsigned int Leader_Player_pre=0;
+//unsigned int Leader_Player_pre=0;
 
-unsigned int Special_temp =0;
-unsigned int L14flag =0;
+//unsigned int Special_temp =0;
+//unsigned int L14flag =0;
 
 //unsigned int QnAfter_Event5 =0;
 
@@ -186,7 +186,7 @@ unsigned int Key_TrueFlase_Buffer =0;
 //unsigned int ThreeQuestionRound1_Cheater[3]={0};
 
 //unsigned int Question_Asked_Lascycle[5]={0xffff,0xffff,0xffff,0xffff,0xffff};
-unsigned int Question_Quality_Last[6]={0};
+//unsigned int Question_Quality_Last[6]={0};
 
 #define Num_LastCat  6
 unsigned int Last2Cat[Num_LastCat]={0};
@@ -219,7 +219,7 @@ unsigned int Speed_BonusFlag =0;
 unsigned int Time_Countdown =0;
 unsigned int firstFlag_23b =0;
 
-unsigned int FreeKick_Flag =0;
+//unsigned int FreeKick_Flag =0;
 
 
 //unsigned int OFFsideFlag =0;
@@ -230,19 +230,19 @@ unsigned int FreeKick_Flag =0;
 unsigned int Countdownflag =0;
 
 
-unsigned int Soloflag =0;
-unsigned int Difficulty =0;
-unsigned int Diff_int =0;
-unsigned int qestion_quality =0;
-int Ca =0;
-int RecordV =0;
-unsigned int Temp_Registered_Play_Select =0;
-unsigned int Key_buffer_First_temp =0;
+//unsigned int Soloflag =0;
+//unsigned int Difficulty =0;
+//unsigned int Diff_int =0;
+//unsigned int qestion_quality =0;
+//int Ca =0;
+//int RecordV =0;
+//unsigned int Temp_Registered_Play_Select =0;
+//unsigned int Key_buffer_First_temp =0;
 
 
 unsigned int LFXFlag_Data =0;
 unsigned int LFX_Data_Cnt =0;
-unsigned int VolumeEnable =0;
+//unsigned int VolumeEnable =0;
 unsigned int NextCnt =0;
 unsigned int TooLate_Cnt =0;
 unsigned int TooLatesolo_Cnt =0;
@@ -2296,7 +2296,7 @@ unsigned  Select_Question_Three_Random()
 
 
 /*****************************************************
-******************************************************/
+******************************************************
 void Save_Question_Cycle(unsigned int temp)
 {
    unsigned int i;
@@ -4279,7 +4279,7 @@ void Read_Flash()
 	
 }
 /*****************************************************
-******************************************************/
+******************************************************
 void Save_Question_Quality_Last(unsigned int quality)
 {
    
@@ -4310,7 +4310,7 @@ void Save_Question_Category2Last(unsigned int Category)
 }
 
 /*****************************************************
-******************************************************/
+******************************************************
 unsigned int  check_Question_Quality_Last()
 {
    
@@ -4867,21 +4867,21 @@ unsigned int Get_Key(Countdown_E)
 					{	 
 						  Key_TrueFlase_Buffer =0;	 // 20160215 xiang
 						  
-                          if(VolumeEnable)
-                          	{
-							if((temp ==PB_button)||((temp ==MB_button)))
-			                   {			                   	
-
-                                 if((firstFlag_23b&0x4000)==0)
-                                 	{
-                                 	    firstFlag_23b|=0x4000;
-								        Volume(temp);
-										firstFlag_23b&=~0x4000; 
-										PauseFlag =1;
-										return 1;
-                                 	}
-			                   }
-                          	}
+//                          if(VolumeEnable)
+//                          	{
+//							if((temp ==PB_button)||((temp ==MB_button)))
+//			                   {			                   	
+//
+//                                 if((firstFlag_23b&0x4000)==0)
+//                                 	{
+//                                 	    firstFlag_23b|=0x4000;
+//								        Volume(temp);
+//										firstFlag_23b&=~0x4000; 
+//										PauseFlag =1;
+//										return 1;
+//                                 	}
+//			                   }
+//                          	}
 					}
 
         	}
@@ -4930,7 +4930,7 @@ unsigned int Get_Key(Countdown_E)
 							   {
 							   	  if(TwoKeyflag==Key_False)	
 							   	   {
-								   	   	  CheaterFlag =1;//xiang 20180517
+//								   	   	  CheaterFlag =1;//xiang 20180517
 								   	   	  Key_TrueFlase_Buffer =0;//20160215
 
 										  TwoKey_temp =0;//20160323
@@ -5369,7 +5369,7 @@ void Ask_Question()
 	  PlayQuestionflag =temp_PlayQuestionflag;
 
 
-     Question_Answer =0;
+//     Question_Answer =0;
      SP_RampDnDAC1();
      
      Key_Event =0;
@@ -5878,8 +5878,8 @@ void NewgameInit()
 	    Player_Activing_Bit =0;
   
 
-      for(i=0;i<6;i++)
-		  Question_Quality_Last[i] =0;
+//      for(i=0;i<6;i++)
+//		  Question_Quality_Last[i] =0;
 	
           Questions_init();
 	
@@ -5892,8 +5892,8 @@ void Ram_OnInit()
 {
 	   unsigned int i =0;
 		Restart =0;
-		T1=0;
-		T2=0;
+//		T1=0;
+//		T2=0;
 		
 	      i = 0;///////////////!!!!!!!!!!!!!!!!!!
 		while(i<Num_LastCat)
@@ -5988,13 +5988,13 @@ unsigned  Step1()
 	firstFlag_23b =0;
 //	OFFsideFlag =0;
 //	HattickOrOffside_Flag =0;
-	FreeKick_Flag = 0;
+//	FreeKick_Flag = 0;
 	
 //	QnAfter_Event5=0;
 	Speed_BonusFlag =0;
     Key_TrueFlase_Buffer =0;
 	
-	Soloflag =0;
+//	Soloflag =0;
 
 	Countdownflag =0;
 //	RandFof_Flag =0;
@@ -6002,8 +6002,8 @@ unsigned  Step1()
 	Tieflag =0;	
 
 	Registered_Play_Status =0;
-	Question_Answer =0;
-	L14flag =0;
+//	Question_Answer =0;
+//	L14flag =0;
 
 	TwoKeyflag =0;
 	Eventflag =0;
@@ -6095,24 +6095,49 @@ unsigned  Step1()
 	        delay_time(8);
 	      	}while(PauseFlag);
       }
-       VolumeEnable =0;
+//       VolumeEnable =0;
      Key_activeflag =Only_Play_KeyEnable;//ALL_Key_Enable&(~(Key_True|Key_False));
      Key_Event =0;    
       
+      
+     TwoKeyflag = Playbutton;		       
+	do
+	{
+	  PauseFlag =0;  
 	  PlayA1800_Elements(A_VLMMREN_SetUp_01);
       PlayA1800_Elements(A_VLMMREN_SetUp_04);
-      delay_time(8);
+      //delay_time(8);
       PlayA1800_Elements(A_VLMMREN_Button_01a);
+  	 }while(PauseFlag);
+    // TwoKeyflag =0; 
+      
      while(1) 
      {  
 
 	      if(Sleepflag)
 		  	return 0;
 
-
+          TwoKeyflag = Playbutton;		  
 	      temp = delay_time(20*16);
+	      TwoKeyflag = 0;	
 	      
-	      if(temp == TimeOver)
+	      if(PauseFlag)
+	      {  
+	      	  TwoKeyflag = Playbutton;	
+			  do
+				{
+				  PauseFlag =0;  
+				  PlayA1800_Elements(A_VLMMREN_SetUp_01);
+			      PlayA1800_Elements(A_VLMMREN_SetUp_04);
+			      //delay_time(8);
+			      PlayA1800_Elements(A_VLMMREN_Button_01a);
+			  	 }while(PauseFlag);
+			  	  TwoKeyflag = 0;	
+    // TwoKeyflag =0; 
+	      	
+	       }
+	      	  
+	     else if(temp == TimeOver)
 	      {
 	      	      timeovercnt++;
 	      	  
@@ -6240,15 +6265,22 @@ unsigned  Step1()
 				  
 		     	  Key_activeflag =Playbutton;//ALL_Key_Enable&(~(Key_True|Key_False));
 				  Key_Event =0; 
-				  
-			      PlayA1800_Elements(A_VLMMREN_SetUp_04);
-			      PlayA1800_Elements(A_VLMMREN_Button_01a);
-			      
-			      
-			     // Key_activeflag =Only_Play_KeyEnable;//ALL_Key_Enable&(~(Key_True|Key_False));
-				 // Key_Event =0;  
-			      delay_time(20*16);
-			      
+				
+				      TwoKeyflag = Playbutton;		       
+	               do
+	               {  
+	               	  PauseFlag =0;
+				      PlayA1800_Elements(A_VLMMREN_SetUp_04);
+				      PlayA1800_Elements(A_VLMMREN_Button_01a);
+				      
+				      
+				     // Key_activeflag =Only_Play_KeyEnable;//ALL_Key_Enable&(~(Key_True|Key_False));
+					 // Key_Event =0;  
+				      delay_time(20*16);
+	               }while(PauseFlag);
+			       TwoKeyflag =0;
+			       
+			       
 			      if(Key_Event==Playbutton)
 			      {  
 			      	   Key_Event =0;  
@@ -6280,11 +6312,17 @@ unsigned  Step1()
 						     }
 
 						
+		                TwoKeyflag = Playbutton;		       
+	                     do
+	                     {  
+	               	       PauseFlag =0;
 			      	       delay_time(8);
 						   
 					       PlayA1800_Elements(A_VLMMREN_SetUp_04);
 					       PlayA1800_Elements(A_VLMMREN_Button_01a);
 						   delay_time(20*16);
+	                     }while(PauseFlag);
+	                     TwoKeyflag =0;
 
 
 
@@ -7213,11 +7251,17 @@ unsigned int End()
 
 
 
-			
-		       delay_time(8);
-               PlayA1800_Elements(A_VLMMREN_SetUp_04);	 
-		       PlayA1800_Elements(A_VLMMREN_Button_01a);	 
-               delay_time(10*16);
+				TwoKeyflag = Playbutton;		       
+				do
+				{  
+				  PauseFlag =0;
+			       delay_time(8);
+	               PlayA1800_Elements(A_VLMMREN_SetUp_04);	 
+			       PlayA1800_Elements(A_VLMMREN_Button_01a);	 
+	               delay_time(10*16);
+				 }while(PauseFlag);
+	             TwoKeyflag =0;
+	          
         	}
 
 		   Key_Event =0;

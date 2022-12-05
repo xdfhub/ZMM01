@@ -24,6 +24,7 @@
 // Header File Included Area
 //**************************************************************************
 .include GPCE1_CE3.inc
+.include CTS_def.inc
 .include A1800.inc
 .include A3400Pro.inc
 .include MS02.inc
@@ -114,7 +115,9 @@ L_FIQ_TimerA:
  
     call F_ISR_Service_SACM_A1800; 
     
+ .ifndef C_DAC_EN   
 	call F_SW_MuteControl; //用于关闭硬件mute后发音过程中，如暂停
+ .endif	
 ////
 	tstb [_DAC1_RampDnFlag], 0
  	je ?L_BypassRampDn

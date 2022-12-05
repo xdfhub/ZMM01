@@ -157,8 +157,12 @@ F_SP_SwitchChannel:
 _IO_init:.proc
 
 
-
+.ifdef C_DAC_EN
+    r1= 0x100   //IOA8 VDD EN
+.else   
   	r1 = 0x0//0x137f
+.endif  	
+  	
 	[P_IOA_Buffer] = r1
 
 .ifdef C_productTouch
