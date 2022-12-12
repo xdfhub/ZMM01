@@ -443,8 +443,16 @@ LM27:
 	     .stabn 68,0,96,LM27-_Goto_Sleep
 	     call _Time_init          	// [0:96]  Time_init
 BB8_PU2:	// 0xb8
-// BB:8 cycle count: 5
-	     pop BP, PC from [SP]     	// [0:96]  
+// BB:8 cycle count: 3
+//  97      
+//  98      Test_Assembly();
+
+LM28:
+	     .stabn 68,0,98,LM28-_Goto_Sleep
+	     call _Test_Assembly      	// [0:98]  Test_Assembly
+BB9_PU2:	// 0xba
+// BB:9 cycle count: 5
+	     pop BP, PC from [SP]     	// [0:98]  
 	.endp	
 LME3:
 	     .stabf LME3-_Goto_Sleep
@@ -457,3 +465,4 @@ LME3:
 .external _AntiCrackFun
 .external _IO_init
 .external _Time_init
+.external _Test_Assembly

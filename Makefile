@@ -1,6 +1,6 @@
 #####################################################################
 #																	 
-#	Created by u'nSP IDE V3.0.16.1		16:29:18	11/30/22
+#	Created by u'nSP IDE V3.0.16.1		14:42:41	12/12/22
 #
 #####################################################################
 
@@ -33,7 +33,7 @@ BOOTPACKER	= $(APPDIR)\toolchain\BootPacker
 
 LIKMODIFIER	= $(APPDIR)\toolchain\unSP_LIKModifier 
 
-INCLUDES	= -I"D:/Prj_GPCE3400/ZMM001A(EN)_MMMMMMM/soft/V46_asV34" -I"C:/Program Files (x86)/Generalplus/unSPIDE 3.0.16.1/library/include" -I"C:/Program Files (x86)/Generalplus/unSPIDE 3.0.16.1/library/include/sys" -I"../Include"
+INCLUDES	= -I"D:/Prj_GPCE3400/ZMM001A(EN)_MMMMMMM/soft/V46_asV34" -I"C:/Program Files (x86)/Generalplus/unSPIDE 3.0.16.1/library/include" -I"C:/Program Files (x86)/Generalplus/unSPIDE 3.0.16.1/library/include/sys" -I"D:/Prj_GPL951/A1800_ADPCM_RTC_TFT_PPU_AlarmWakeup/PPU" -I"../Include"
 
 BODY	= -body GPCE3400A -nobdy -bfile "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\GPCE3400A_Demo.bdy"
 
@@ -98,95 +98,95 @@ OBJFILES	= \
 "$(OUTDIR)\main.obj": "$(OUTDIR)\main.asm"
 	$(AS) $(CASFLAGS) $(INCLUDES) -o "$(OUTDIR)\main.obj" "$(OUTDIR)\main.asm" 
 
-"$(OUTDIR)\isr.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\isr.asm" 
+"$(OUTDIR)\isr.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\isr.asm" ".\GPCE1_CE3.inc" ".\CTS_def.inc" ".\GPCE1_CE3_BODY.inc" "..\Include\A1800.inc" "..\Include\A3400Pro.inc" "..\Include\MS02.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\isr.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\isr.asm" 
 
 "$(OUTDIR)\Resource.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Resource.asm" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\Resource.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Resource.asm" 
 
-"$(OUTDIR)\BootCode_User.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\BootCode_User.asm" 
+"$(OUTDIR)\BootCode_User.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\BootCode_User.asm" "GPCE1_CE3.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\BootCode_User.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\BootCode_User.asm" 
 
-"$(OUTDIR)\ORAM_Arrangement.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\ORAM_Arrangement.asm" 
+"$(OUTDIR)\ORAM_Arrangement.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\ORAM_Arrangement.asm" "GPCE1_CE3.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\ORAM_Arrangement.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\ORAM_Arrangement.asm" 
 
-"$(OUTDIR)\SACM_A1800_User.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\SACM_A1800_User.asm" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\A1800.inc" 
+"$(OUTDIR)\SACM_A1800_User.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\SACM_A1800_User.asm" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\A1800.inc" "GPCE1_CE3.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\SACM_A1800_User.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\SACM_A1800_User.asm" 
 
-"$(OUTDIR)\system.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\system.asm" 
+"$(OUTDIR)\system.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\system.asm" "GPCE1_CE3.inc" "CTS_def.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\system.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\system.asm" 
 
-"$(OUTDIR)\flash.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\flash.asm" 
+"$(OUTDIR)\flash.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\flash.asm" ".\GPCE1_CE3.inc" ".\GPCE1_CE3_BODY.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\flash.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\flash.asm" 
 
-"$(OUTDIR)\Calc.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Calc\Calc.c" 
+"$(OUTDIR)\Calc.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Calc\Calc.c" ".\Calc\Calc.h" "..\Include\datatype.h" 
 	set PATH="$(APPDIR)\toolchain\";%PATH% & \
 	$(CC) $(CFLAGS) -o "$(OUTDIR)/Calc.asm" "D:/Prj_GPCE3400/ZMM001A(EN)_MMMMMMM/soft/V46_asV34/Calc/Calc.c" 
 
 "$(OUTDIR)\Calc.obj": "$(OUTDIR)\Calc.asm"
 	$(AS) $(CASFLAGS) $(INCLUDES) -o "$(OUTDIR)\Calc.obj" "$(OUTDIR)\Calc.asm" 
 
-"$(OUTDIR)\System_2.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\System_2.asm" 
+"$(OUTDIR)\System_2.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\System_2.asm" ".\GPCE1_CE3.inc" ".\CTS_def.inc" ".\GPCE1_CE3_BODY.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\System_2.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\System_2.asm" 
 
-"$(OUTDIR)\LED_Drive.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\LED_Drive.asm" 
+"$(OUTDIR)\LED_Drive.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\LED_Drive.asm" ".\GPCE1_CE3.inc" ".\CTS_def.inc" ".\GPCE1_CE3_BODY.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\LED_Drive.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\LED_Drive.asm" 
 
-"$(OUTDIR)\Algorithm.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Algorithm.c" 
+"$(OUTDIR)\Algorithm.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Algorithm.c" ".\Glob.h" ".\voice_A18.h" ".\GPCE1_CE3.h" ".\Led.h" ".\GPCE1_CE3_BODY.h" "..\Include\SACM.h" 
 	set PATH="$(APPDIR)\toolchain\";%PATH% & \
 	$(CC) $(CFLAGS) -o "$(OUTDIR)/Algorithm.asm" "D:/Prj_GPCE3400/ZMM001A(EN)_MMMMMMM/soft/V46_asV34/Algorithm.c" 
 
 "$(OUTDIR)\Algorithm.obj": "$(OUTDIR)\Algorithm.asm"
 	$(AS) $(CASFLAGS) $(INCLUDES) -o "$(OUTDIR)\Algorithm.obj" "$(OUTDIR)\Algorithm.asm" 
 
-"$(OUTDIR)\Play_Speech.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Play_Speech.c" 
+"$(OUTDIR)\Play_Speech.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Play_Speech.c" ".\Glob.h" ".\voice_A18.h" ".\GPCE1_CE3.h" ".\GPCE1_CE3_BODY.h" "..\Include\SACM.h" 
 	set PATH="$(APPDIR)\toolchain\";%PATH% & \
 	$(CC) $(CFLAGS) -o "$(OUTDIR)/Play_Speech.asm" "D:/Prj_GPCE3400/ZMM001A(EN)_MMMMMMM/soft/V46_asV34/Play_Speech.c" 
 
 "$(OUTDIR)\Play_Speech.obj": "$(OUTDIR)\Play_Speech.asm"
 	$(AS) $(CASFLAGS) $(INCLUDES) -o "$(OUTDIR)\Play_Speech.obj" "$(OUTDIR)\Play_Speech.asm" 
 
-"$(OUTDIR)\Key_server.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Key_server.asm" 
+"$(OUTDIR)\Key_server.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Key_server.asm" ".\GPCE1_CE3.inc" ".\GPCE1_CE3_BODY.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\Key_server.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Key_server.asm" 
 
-"$(OUTDIR)\Sleep.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Sleep.c" 
+"$(OUTDIR)\Sleep.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Sleep.c" ".\Glob.h" ".\GPCE1_CE3.h" ".\GPCE1_CE3_BODY.h" 
 	set PATH="$(APPDIR)\toolchain\";%PATH% & \
 	$(CC) $(CFLAGS) -o "$(OUTDIR)/Sleep.asm" "D:/Prj_GPCE3400/ZMM001A(EN)_MMMMMMM/soft/V46_asV34/Sleep.c" 
 
 "$(OUTDIR)\Sleep.obj": "$(OUTDIR)\Sleep.asm"
 	$(AS) $(CASFLAGS) $(INCLUDES) -o "$(OUTDIR)\Sleep.obj" "$(OUTDIR)\Sleep.asm" 
 
-"$(OUTDIR)\CheckSum_CE3400.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\TestModel\CheckSum_CE3400.asm" 
+"$(OUTDIR)\CheckSum_CE3400.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\TestModel\CheckSum_CE3400.asm" "GPCE1_CE3.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\CheckSum_CE3400.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\TestModel\CheckSum_CE3400.asm" 
 
-"$(OUTDIR)\TestBondingC.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\TestModel\TestBondingC.c" 
+"$(OUTDIR)\TestBondingC.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\TestModel\TestBondingC.c" ".\TestModel\TestBondingC.h" "GPCE1_CE3.h" 
 	set PATH="$(APPDIR)\toolchain\";%PATH% & \
 	$(CC) $(CFLAGS) -o "$(OUTDIR)/TestBondingC.asm" "D:/Prj_GPCE3400/ZMM001A(EN)_MMMMMMM/soft/V46_asV34/TestModel/TestBondingC.c" 
 
 "$(OUTDIR)\TestBondingC.obj": "$(OUTDIR)\TestBondingC.asm"
 	$(AS) $(CASFLAGS) $(INCLUDES) -o "$(OUTDIR)\TestBondingC.obj" "$(OUTDIR)\TestBondingC.asm" 
 
-"$(OUTDIR)\LED.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\LED.c" 
+"$(OUTDIR)\LED.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\LED.c" ".\Glob.h" ".\GPCE1_CE3.h" ".\datatype.h" ".\LED.h" ".\GPCE1_CE3_BODY.h" 
 	set PATH="$(APPDIR)\toolchain\";%PATH% & \
 	$(CC) $(CFLAGS) -o "$(OUTDIR)/LED.asm" "D:/Prj_GPCE3400/ZMM001A(EN)_MMMMMMM/soft/V46_asV34/LED.c" 
 
 "$(OUTDIR)\LED.obj": "$(OUTDIR)\LED.asm"
 	$(AS) $(CASFLAGS) $(INCLUDES) -o "$(OUTDIR)\LED.obj" "$(OUTDIR)\LED.asm" 
 
-"$(OUTDIR)\AntiCrack.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\AntiCrack\AntiCrack.c" 
+"$(OUTDIR)\AntiCrack.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\AntiCrack\AntiCrack.c" ".\AntiCrack\AntiCrack.h" "GPCE1_CE3.h" "..\Include\datatype.h" 
 	set PATH="$(APPDIR)\toolchain\";%PATH% & \
 	$(CC) $(CFLAGS) -o "$(OUTDIR)/AntiCrack.asm" "D:/Prj_GPCE3400/ZMM001A(EN)_MMMMMMM/soft/V46_asV34/AntiCrack/AntiCrack.c" 
 
 "$(OUTDIR)\AntiCrack.obj": "$(OUTDIR)\AntiCrack.asm"
 	$(AS) $(CASFLAGS) $(INCLUDES) -o "$(OUTDIR)\AntiCrack.obj" "$(OUTDIR)\AntiCrack.asm" 
 
-"$(OUTDIR)\SPI_Flash_CE3.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\SPI_Flash_CE3.asm" 
+"$(OUTDIR)\SPI_Flash_CE3.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\SPI_Flash_CE3.asm" "GPCE1_CE3.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\SPI_Flash_CE3.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\Include\SPI_Flash_CE3.asm" 
 
-"$(OUTDIR)\CTS_Sensor.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\CTS\CTS_Sensor.asm" 
+"$(OUTDIR)\CTS_Sensor.obj": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\CTS\CTS_Sensor.asm" ".\CTS\CTS_Sensor.inc" "GPCE1_CE3.inc" "CTS_def.inc" 
 	$(AS) $(ASFLAGS) $(INCLUDES) -o "$(OUTDIR)\CTS_Sensor.obj" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\CTS\CTS_Sensor.asm" 
 
-"$(OUTDIR)\CTS_User.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\CTS\CTS_User.c" 
+"$(OUTDIR)\CTS_User.asm": "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\CTS\CTS_User.c" ".\CTS\CTS_Sensor.h" "..\Include\datatype.h" "GPCE1_CE3.h" "LED.h" 
 	set PATH="$(APPDIR)\toolchain\";%PATH% & \
 	$(CC) $(CFLAGS) -o "$(OUTDIR)/CTS_User.asm" "D:/Prj_GPCE3400/ZMM001A(EN)_MMMMMMM/soft/V46_asV34/CTS/CTS_User.c" 
 
@@ -205,8 +205,8 @@ BEFOREBUILD :
 
 $(BINFILE) : $(OBJFILES) 
 	@echo Hint: The version of HDB file for boot packer and Rom code are Ver.1.0.0.2 and 002C.
-	$(LD) $(BINTYPE) $(ARYFILE) "$(OUTDIR)\GPCE3400A_Demo_SPI.bin" -tskMaxUsed $(LDFLAGS) $(BODY) $(EXTRAFLAGS) -exportvalues "C:\Users\xdf\AppData\Local\Temp\iniD072.tmp" -defined "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GlobalSymbol_GPCE1_CE3.ini" -bootrominfo "BootCode_SEC;0100" -undefined-opt __TgP190708CM -undefined-opt __TgP190708CL -undefined-opt __TgP190708M
-	$(BOOTPACKER) "C:\Users\xdf\AppData\Local\Temp\iniD072.tmp"
+	$(LD) $(BINTYPE) $(ARYFILE) "$(OUTDIR)\GPCE3400A_Demo_SPI.bin" -tskMaxUsed $(LDFLAGS) $(BODY) $(EXTRAFLAGS) -exportvalues "C:\Users\xdf\AppData\Local\Temp\iniD767.tmp" -defined "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GlobalSymbol_GPCE1_CE3.ini" -bootrominfo "BootCode_SEC;0100" -undefined-opt __TgP190708CM -undefined-opt __TgP190708CL -undefined-opt __TgP190708M
+	$(BOOTPACKER) "C:\Users\xdf\AppData\Local\Temp\iniD767.tmp"
 	if exist "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bin" del "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bin"
 	copy "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bintmp" "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bin" /A /Y
 	if exist "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bintmp" del "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo_SPI.bintmp"

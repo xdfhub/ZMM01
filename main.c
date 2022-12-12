@@ -631,7 +631,7 @@ void PlayBee()
 }
 
 /*********************************************************
-************************************************************
+************************************************************/
 void Test_Assembly(void)
 {
 	
@@ -642,25 +642,27 @@ void Test_Assembly(void)
 
 	unsigned int key_step =0;
   	
-	*P_IOB_Dir = 0x0000;
-	*P_IOB_Buffer = Key_Blue|Key_Pink|0x380;
-	*P_IOB_Attrib = 0x0000;
+//	*P_IOB_Dir = 0x0000;
+//	*P_IOB_Buffer = Playbutton;//Key_Blue|Key_Pink|0x380;
+//	*P_IOB_Attrib = 0x0000;
 	Delay_Xms_PowerOn(1);
 
 
-    if((*P_IOB_Data&(Key_Blue|Key_Pink|0x380)) !=0x380 )
+   // if((*P_IOB_Data&(Key_Blue|Key_Pink|0x380)) !=0x380 )
+   	if((*P_IOB_Data&(Playbutton) ==Playbutton ))
 	{
 		return;
 	}
 	
-    Sys_clock_init_Only();
+   // Sys_clock_init_Only();
 	
 	
 	
 	temp = 200;//1000;//3200
 	while(temp)
 	{
-		if((*P_IOB_Data&(Key_Blue|Key_Pink|0x380)) !=0x380)
+		//if((*P_IOB_Data&(Key_Blue|Key_Pink|0x380)) !=0x380)
+	   if((*P_IOB_Data&(Playbutton) ==Playbutton ))
 		{
 		  //	i--;
 		  return;
@@ -673,12 +675,16 @@ void Test_Assembly(void)
 		
 		Delay_Xms_PowerOn(60);
 	}	
-//	System_Initial();			// System initial
-///	asm("FIQ ON");
-//	asm("IRQ ON");
- //   Sys_Dac_test_set();
+   
+	asm("FIQ ON");
+    asm("IRQ ON");
+     Demo();
  
-	Sys_clock_init();//读语言版本
+ 
+ 
+ #if 0
+ 
+//	Sys_clock_init();//读语言版本
     IO_init();
 
  
@@ -858,7 +864,7 @@ void Test_Assembly(void)
 	
  
     CheckSum_SPIFlash();	   //如果不正确，一直beepbeep响
-
+#endif
 } 
 
 
@@ -868,9 +874,7 @@ void Test_Assembly(void)
 int main()
  {
     
- //	TestBonding();
- 
-//	Test_Assembly();
+
 			
 	Goto_Sleep();
 	
@@ -911,16 +915,11 @@ int main()
 		}
   
   
-//       gVolume1 = SPI_ReadAByte(0x20);
-//       
-//       if(gVolume1 == 0x0ff)
-//       {
-//       	  gVolume1 = 5;
-//       }
+
   
 
-     if((C_Demo_Mode == gTemp)||(gTemp ==0))//
-     	gTemp = C_Finish;
+   //  if((C_Demo_Mode == gTemp)||(gTemp ==0))//
+    // 	gTemp = C_Finish;
 
       //gTemp = C_StartON;
 
@@ -933,7 +932,7 @@ int main()
 
                  
 
-//                     Demo();
+                     Demo();
                      gTemp = C_Finish;
    	                
 			        break;

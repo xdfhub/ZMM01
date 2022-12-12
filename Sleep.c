@@ -94,6 +94,11 @@ void Goto_Sleep()
     
     GetMode();
     Time_init();
+    
+    Test_Assembly();
+    
+    
+    
 
 
 //	SPI_Initial();
