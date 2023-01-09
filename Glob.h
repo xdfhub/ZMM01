@@ -7,7 +7,9 @@
 
 
 //En
-#define C_productTouch //生产用Touch接口 IOA0起 JT
+#define C_productTouch 1//生产用Touch接口 IOA0起 JT
+#define  C_FinalPCB    1//最终生产板子，客户改动触摸与灯 IO 顺序
+//#define C_Demotest  1
 
 //#define C_TestPcb 1 //按键公共端接至IOB7
 //#define C_debugtest  1//测试用
@@ -96,10 +98,20 @@
 #define Key_True   PB_button 
 #define Key_False  MB_button
 
-#define TH_Animals     0x10
-#define TH_Humans	   0x20
-#define TH_Music       0x40
-#define TH_Vehicles    0x80
+
+
+#ifdef C_FinalPCB
+	#define TH_Animals     0x10
+	#define TH_Music 	   0x20
+	#define TH_Humans      0x40
+	#define TH_Vehicles    0x80
+#else
+	#define TH_Animals     0x10
+	#define TH_Humans	   0x20
+	#define TH_Music       0x40
+	#define TH_Vehicles    0x80
+#endif	
+	
 
 #define ALL_TouchEnable 0xf0
 
@@ -113,13 +125,20 @@
 #ifdef C_productTouch
 
 	#define All_Led_data 0x0f0
-	
-	#define LED_Blue   0x010 
-	#define LED_Orange 0x020 //red
-	#define LED_Pink   0x040 //yellow
-	#define LED_Purple 0x080 //green
-	#define LED_Yellow 0//0x400
 
+#ifdef C_FinalPCB
+	#define LED_Blue   0x040  //Animals   
+	#define LED_Orange 0x010 //Humans
+	#define LED_Pink   0x020 //Music
+	#define LED_Purple 0x080 //Vehicles
+	#define LED_Yellow 0//0x400
+#else	
+	#define LED_Blue   0x010  //Animals   
+	#define LED_Orange 0x020 //Humans
+	#define LED_Pink   0x040 //Music
+	#define LED_Purple 0x080 //Vehicles
+	#define LED_Yellow 0//0x400
+#endif
 
 #else
 
@@ -255,42 +274,42 @@
 
 
 //question
-#define	A01	0
-#define	A02	1
-#define	A03	2
-#define	A05	3
-#define	A06	4
-#define	A08	5
-#define	A09	6
-#define	A16	7
-#define	A25	8
-#define	A26	9
-#define	A34	10
-#define	H05	11
-#define	H07	12
-#define	H08	13
-#define	H09	14
-#define	H13	15
-#define	H16	16
-#define	H18	17
-#define	M06	18
-#define	M07	19
-#define	M11	20
-#define	M13	21
-#define	M15	22
-#define	M17	23
-#define	M19	24
-#define	M21	25
-#define	M30	26
-#define	M36	27
-#define	V03	28
-#define	V04	29
-#define	V05	30
-#define	V06	31
-#define	V07	32
-#define	V08	33
-#define	V09	34
-#define	V16	35
+//#define	A01	0
+//#define	A02	1
+//#define	A03	2
+//#define	A05	3
+//#define	A06	4
+//#define	A08	5
+//#define	A09	6
+//#define	A16	7
+//#define	A25	8
+//#define	A26	9
+//#define	A34	10
+//#define	H05	11
+//#define	H07	12
+//#define	H08	13
+//#define	H09	14
+//#define	H13	15
+//#define	H16	16
+//#define	H18	17
+//#define	M06	18
+//#define	M07	19
+//#define	M11	20
+//#define	M13	21
+//#define	M15	22
+//#define	M17	23
+//#define	M19	24
+//#define	M21	25
+//#define	M30	26
+//#define	M36	27
+//#define	V03	28
+//#define	V04	29
+//#define	V05	30
+//#define	V06	31
+//#define	V07	32
+//#define	V08	33
+//#define	V09	34
+//#define	V16	35
 
 
 

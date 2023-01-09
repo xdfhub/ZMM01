@@ -642,14 +642,14 @@ void Test_Assembly(void)
 
 	unsigned int key_step =0;
   	
-//	*P_IOB_Dir = 0x0000;
-//	*P_IOB_Buffer = Playbutton;//Key_Blue|Key_Pink|0x380;
-//	*P_IOB_Attrib = 0x0000;
+	*P_IOB_Dir = 0x0000;
+	*P_IOB_Buffer = Playbutton;//Key_Blue|Key_Pink|0x380;
+	*P_IOB_Attrib = 0x0000;
 	Delay_Xms_PowerOn(1);
 
 
-   // if((*P_IOB_Data&(Key_Blue|Key_Pink|0x380)) !=0x380 )
-   	if((*P_IOB_Data&(Playbutton) ==Playbutton ))
+    //if((*P_IOB_Data&(Key_Blue|Key_Pink|0x380)) !=0x380 )
+    if((*P_IOB_Data&(Playbutton)) ==Playbutton )	
 	{
 		return;
 	}
@@ -661,8 +661,8 @@ void Test_Assembly(void)
 	temp = 200;//1000;//3200
 	while(temp)
 	{
-		//if((*P_IOB_Data&(Key_Blue|Key_Pink|0x380)) !=0x380)
-	   if((*P_IOB_Data&(Playbutton) ==Playbutton ))
+	//	if((*P_IOB_Data&(Key_Blue|Key_Pink|0x380)) !=0x380)
+	   if((*P_IOB_Data&(Playbutton)) ==Playbutton )	 
 		{
 		  //	i--;
 		  return;
@@ -676,15 +676,12 @@ void Test_Assembly(void)
 		Delay_Xms_PowerOn(60);
 	}	
    
-	asm("FIQ ON");
-    asm("IRQ ON");
-     Demo();
+
  
  
+
  
- #if 0
- 
-//	Sys_clock_init();//∂¡”Ô—‘∞Ê±æ
+	Sys_clock_init();//∂¡”Ô—‘∞Ê±æ
     IO_init();
 
  
@@ -699,14 +696,21 @@ void Test_Assembly(void)
 	//}
 	
   
-    Time_init_TestMode();
-
+    GetMode();
+    //Time_init_TestMode();
+    Time_init();
     
 //    TimeCnt = 1;
 //    *(P_INT_Ctrl) |=C_IRQ7_16Hz;
      
 	asm("FIQ ON");
 	asm("IRQ ON");
+ 
+     Demo();
+     Sleeping();
+ 
+  #if 0
+ 
     
    	temp = SPI_ReadAWord_Big((unsigned long)0x30);
 	PlayA1800_Elements(temp); 
@@ -874,8 +878,8 @@ void Test_Assembly(void)
 int main()
  {
     
-
-			
+//    Test_Assembly();		
+   
 	Goto_Sleep();
 	
 	
@@ -917,10 +921,10 @@ int main()
   
 
   
-
-   //  if((C_Demo_Mode == gTemp)||(gTemp ==0))//
-    // 	gTemp = C_Finish;
-
+ #ifndef C_Demotest
+     if((C_Demo_Mode == gTemp)||(gTemp ==0))//
+     	gTemp = C_Finish;
+#endif
       //gTemp = C_StartON;
 
 
@@ -996,8 +1000,7 @@ int main()
 			      	 gTemp = C_StartGame;
 			      	 break;
 			      }
-				    Sleeping();	
-				    gTemp = C_StartON;			
+				    Sleeping();			
 				 break;					
   
 //                  case C_GameTimeout:                

@@ -42,11 +42,19 @@ void GetMode()
 		while(1) 
 		{
 			
-			
+		#ifdef C_Demotest
+		    if(Io_temp != (*P_IOB_Data & 0x301))// 0x380
+	    #else
 		     if(Io_temp != (*P_IOB_Data & 0x300))// 0x380
+	    #endif	     
+		     
 		     {
 		     	cnt =0;
-		     	Io_temp = (*P_IOB_Data & 0x300);//0x380
+			#ifdef C_Demotest
+			    Io_temp = (*P_IOB_Data & 0x301);//0x380
+		    #else
+			     Io_temp = (*P_IOB_Data & 0x300);//0x380
+		    #endif
 		     }
             else
              {
@@ -63,9 +71,24 @@ void GetMode()
 		
 	 switch(Io_temp)
 	 {
-	 	case 0x100:   Switch_Mode = Key_Game;   gTemp = C_StartON ;break;//VOL1Flag =1; break;//7+ Start_MAGIC_QUESTIONS_Step2
+	   	#ifdef C_Demotest	
+	 	
+	 	case 0x100:   Switch_Mode = Key_Game;  gTemp = C_Demo_Mode; VOL1Flag =0;break;
+	 	case 0x101:   Switch_Mode = Key_Game;   gTemp = C_StartON ;break;//VOL1Flag =1; break;//7+ Start_MAGIC_QUESTIONS_Step2
+	 	
+	 	case 0x201:
 	 	case 0x200:   Switch_Mode = Key_Instruction;  gTemp = C_Demo_Mode; VOL1Flag =0;break;
+	 	
+	 	case 0x301:
 	 	case 0x300:   Switch_Mode = Key_TryMe; gTemp = C_Off_Mode; VOL1Flag =0;break;	
+	    #else
+	  
+	  	  case 0x100:   Switch_Mode = Key_Game;   gTemp = C_StartON ;break;//VOL1Flag =1; break;//7+ Start_MAGIC_QUESTIONS_Step2
+	 	  case 0x200:   Switch_Mode = Key_Instruction;  gTemp = C_Demo_Mode; VOL1Flag =0;break;
+	 	  case 0x300:   Switch_Mode = Key_TryMe; gTemp = C_Off_Mode; VOL1Flag =0;break;	
+	    #endif	
+	 	
+	 	
 	 	//case 0x300:   Switch_Mode = Key_Game_Family;   gTemp = C_StartON ; VOL1Flag =0;break;//VOL2  14+
 	 	default:
 	 	     Switch_Mode = Key_Game;   gTemp = C_StartGame ; break;
@@ -95,7 +118,7 @@ void Goto_Sleep()
     GetMode();
     Time_init();
     
-    Test_Assembly();
+  
     
     
     

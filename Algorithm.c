@@ -246,13 +246,16 @@ unsigned int LFX_Data_Cnt =0;
 unsigned int NextCnt =0;
 unsigned int TooLate_Cnt =0;
 unsigned int TooLatesolo_Cnt =0;
-unsigned int Record =0;
+
+unsigned int Rec[2] ={0,0};//0:solo 1:multi
+
+
 unsigned int R_E =0;
 unsigned int LastE=0;
 unsigned int NumRounds =0;
 unsigned int CurrentRound =0;
 unsigned int SinceLastE =0;
-unsigned int  R_2SLoop =0;
+
 unsigned int  Tie =0;
 unsigned int  End20flag =0;
 unsigned int Answerflag =0;
@@ -323,8 +326,8 @@ Event_P Event_F[12]={//const unsigned int
 
 };
 
-unsigned int LFX_Data[4]={LED_Blue,LED_Orange,LED_Pink,LED_Purple};
-const unsigned int Led_Data_Play[5]={LED_Blue,LED_Orange,LED_Pink,LED_Purple,LED_Yellow};
+unsigned int LFX_Data[4]={LED_Orange,LED_Blue,LED_Purple,LED_Pink};
+const unsigned int Led_Data_Play[5]={LED_Blue,LED_Pink,LED_Orange,LED_Purple,LED_Yellow};
 
 
 const unsigned BitMap[] = { 0x0001,0x0002,0x0004,0x0008,0x0010,0x0020,0x0040,0x0080,
@@ -917,8 +920,7 @@ void Demo()
 
 		PlayScoresFlag =1;//不让报分数
 
-	    BlinkFlag_Data =0;
-		Light_all_off();
+
 
 	   Eventflag = E_Demo;
       
@@ -930,21 +932,39 @@ void Demo()
 		BlinkFlag_Data =0;
 		Light_all_off();
 
+      	 LFX_Data_Cnt =0;
+		 LED_Cnt =0;
+	     LFXFlag_Data =0x01;
+
 		
 		PlayA1800_Elements(A_VLMMREN_TryMe01);
         PlayA1800_Elements(A_VLMMREN_TryMe02);
+        
+        
+         LFXFlag_Data=0;
+	     Light_all_off();
+        
         delay_time(8);
+        
+       	PlayA1800_Elements(MMH05_BabyLaugh);
+        Led_ON_Some(LED1_BIT);
+        PlayA1800_Elements(A_VLMMREN_Rule_07);
+		Light_all_off();
+		
+        delay_time(8);
+        
         PlayA1800_Elements(MMA05_Elephant);
         Led_ON_Some(LED0_BIT);
         PlayA1800_Elements(A_VLMMREN_Rule_04);
 		Light_all_off();
+		delay_time(8);
 		
 	    PlayA1800_Elements(MMV07_Train);
         Led_ON_Some(LED3_BIT);
         PlayA1800_Elements(A_VLMMREN_Rule_05);
 		Light_all_off();
 		
-		
+		delay_time(8);
 		
 		
 		PlayA1800_Elements(MMM07_Banjo);
@@ -952,25 +972,26 @@ void Demo()
         PlayA1800_Elements(A_VLMMREN_Rule_06);
 		Light_all_off();	
 
+       delay_time(8);
 
-		PlayA1800_Elements(MMH05_BabyLaugh);
-        Led_ON_Some(LED1_BIT);
-        PlayA1800_Elements(A_VLMMREN_Rule_07);
-		Light_all_off();
 		
-		
-		PlayA1800_Elements(MMM07_Banjo);
-        Led_ON_Some(LED2_BIT);
-        PlayA1800_Elements(A_VLMMREN_Rule_06);
-		Light_all_off();		
-		delay_time(8);
+//		PlayA1800_Elements(MMM07_Banjo);
+//        Led_ON_Some(LED2_BIT);
+//        PlayA1800_Elements(A_VLMMREN_Rule_06);
+//		Light_all_off();		
+//		delay_time(8);
 
         PlayA1800_Elements(A_VLMMREN_TryMe03);
         delay_time(8);
+        
+         LFX_Data_Cnt =0;
+		 LED_Cnt =0;
+	     LFXFlag_Data =0x01;
+        
         PlayA1800_Elements(A_VLMMREN_TryMe01);
         PlayA1800_Elements(A_VLMMREN_TryMe04);
         
-        
+        LFXFlag_Data=0;
 		BlinkFlag_Data =0;
 		Light_all_off();
 
@@ -1965,7 +1986,7 @@ unsigned int Get_Event_F(unsigned long event_temp,unsigned int cnt)
 
 
 /***************************************************************
-******************************************************************/
+******************************************************************
 unsigned Get_LedDate_From_Play(unsigned temp_Player)
 {
 	unsigned temp = 0;
@@ -1982,7 +2003,8 @@ unsigned Get_LedDate_From_Play(unsigned temp_Player)
 
 }
 
-
+/***************************************************************
+******************************************************************/
 
 unsigned Get_Firstcnt_From_Play(unsigned temp_Player)
 {
@@ -3358,7 +3380,7 @@ void PlayScores( int scores)
 }
 
 /******************************************************
-**********************************************************/
+**********************************************************
 void Play_Activeplayer(unsigned int Ledonflag,unsigned int Player_buffer,unsigned int first_SP)
 {
      //unsigned int temp1 = Player_Activing_Bit;
@@ -4299,13 +4321,16 @@ void Read_Flash()
      SPI_Flash_ReadNWords(QuestionStatus_LQ,C_QuestionRAM,T_LQ_Secter_L,T_LQ_Secter_H);
      SPI_Flash_ReadNWords(QuestionStatus_Asked,C_QuestionRAM,T_Asked_Secter_L,T_Asked_Secter_H);
      
-    // SPI_Flash_ReadNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
-      Record=SPI_Flash_ReadAWord(T_Record_Secter_L,T_Record_Secter_H);
+     SPI_Flash_ReadNWords(Rec,2,T_Record_Secter_L,T_Record_Secter_H); 
+     // Record=SPI_Flash_ReadAWord(T_Record_Secter_L,T_Record_Secter_H);
     
      __asm("INT FIQ,IRQ");
      
-     if(Record == 0xffff)
-     	 Record=0;
+     if(Rec[0] == 0xffff)
+     	 Rec[0]=0;
+     
+      if(Rec[1] == 0xffff)
+     	 Rec[1]=0;
 	
 }
 /*****************************************************
@@ -5997,7 +6022,7 @@ unsigned  Step1()
     CurrentRound  =1;
 
     Tie =0;
-    
+    LastE =0;
     gQuestionIdx = 0xffff;
     gQuestionIdx_1 = 0xffff;//TwoSounds的第一道	
  
@@ -6254,7 +6279,7 @@ unsigned  Step1()
   	       
   	       
   	       SinceLastE  =0;
-  	        R_2SLoop =0;
+//  	        R_2SLoop =0;
   	       
 		
 		   sp_offset = 0xffff;
@@ -6299,7 +6324,7 @@ unsigned  Step1()
 		     	  Key_activeflag =Playbutton;//ALL_Key_Enable&(~(Key_True|Key_False));
 				  Key_Event =0; 
 				
-				      TwoKeyflag = Playbutton;		       
+				      TwoKeyflag = 0;//Playbutton;		       
 	               do
 	               {  
 	               	  PauseFlag =0;
@@ -6348,7 +6373,7 @@ unsigned  Step1()
 						     }
 
 						
-		                TwoKeyflag = Playbutton;		       
+		                TwoKeyflag = 0;//Playbutton;		       
 	                     do
 	                     {  
 	               	       PauseFlag =0;
@@ -6446,7 +6471,9 @@ unsigned  Step1()
 		                	}
 		                  
 		                  
-		                  
+						  Led_ON_Some(LED1_BIT);
+						  PlayA1800_Elements(A_VLMMREN_Rule_07);
+						  Light_all_off();	                  
 				      	  
 				      	  Led_ON_Some(LED0_BIT);
 						  PlayA1800_Elements(A_VLMMREN_Rule_04);
@@ -6457,9 +6484,7 @@ unsigned  Step1()
 						  Led_ON_Some(LED2_BIT);				  
 						  PlayA1800_Elements(A_VLMMREN_Rule_06);
 						  Light_all_off();
-						  Led_ON_Some(LED1_BIT);
-						  PlayA1800_Elements(A_VLMMREN_Rule_07);
-						  Light_all_off();
+
 				  	   }while(PauseFlag);
 		                 TwoKeyflag =0;
               }
@@ -6481,17 +6506,17 @@ unsigned  Step1()
          
                 PlayA1800_Elements(A_VLMMREN_Rule_11_alt);
                 
-		        if((Record>50))
+		        if((Rec[0]>50))
 		           {
 		           	  delay_time(8);
 		        	  PlayA1800_Elements(A_VLMMREN_Rule_03Max);
 		        	  PlayA1800_Elements(A_VLMMREN_Rule_03b);
 		           }
-			     else if(Record!=0)
+			     else if(Rec[0]!=0)
 			     	{
 					    //PlayA1800_Elements(A_VLMMREN_Rule_03);
 					    delay_time(8);
-		                Play_Seq(Record,C_NX);//C_NX C_Point_A_StartAddr
+		                Play_Seq(Rec[0],C_NX);//C_NX C_Point_A_StartAddr
 		                PlayA1800_Elements(A_VLMMREN_Rule_03);
 						PlayA1800_Elements(A_VLMMREN_Rule_03b);
 		      
@@ -6646,7 +6671,7 @@ void Events()
            	{
    
 		  	     R_E =C_TwoSounds;
-		  	     R_2SLoop =0;
+//		  	     R_2SLoop =0;
 				 
 				 PlayA1800_Elements(SFX_Event);	 
 		  	     PlayA1800_Elements(A_VLMMREN_TwoSounds);
@@ -6943,7 +6968,13 @@ void Answer_F()
 				  	{
 
                       #ifdef C_productTouch
-                          Led_ON_Some(Key_Event);
+                      
+	                       #ifdef C_FinalPCB
+	                          Led_ON_Some(Led_Data_Play[Get_Firstcnt_From_Play(Key_Event>>4)]);
+	                       #else  
+	                          Led_ON_Some(Key_Event);
+	                        #endif 
+                          
                       #else
 						  Led_ON_Some(Key_Event>>4);
 					  #endif	
@@ -7003,7 +7034,7 @@ void Answer_F()
 			       	    {
 
 
-						  if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0))
+						  if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0)&&(LastE!=C_chance))
 							{
 							 //Chance();
 							 PlayA1800_Elements(SFX_Wrong); 
@@ -7024,7 +7055,13 @@ void Answer_F()
 							
 			       	    	
 				       	    #ifdef C_productTouch
-	                          Led_ON_Some(temp1);
+				       	    
+				       	     #ifdef C_FinalPCB
+	                              Led_ON_Some(Led_Data_Play[Get_Firstcnt_From_Play(temp1>>4)]);
+	                         #else
+	                              Led_ON_Some(temp);
+	                          #endif
+	                          
 	                        #else
 							    Led_ON_Some(temp1>>4);
 						     #endif
@@ -7173,7 +7210,7 @@ unsigned int End()
 	 	 temp_length-=1;
  
  	   Key_Event =0;
-	   Key_activeflag = 0;
+	   Key_activeflag = Playbutton;
 
  
   if(Registerd_Num>1)
@@ -7217,11 +7254,23 @@ unsigned int End()
 
 			    }
 
-                  if(temp_length>Record)
+
+				Key_Event =0;
+
+                  if(temp_length>Rec[1])
                   	{
 
 					    PlayA1800_Elements(A_VLMMREN_End_01d);
-                        Record = temp_length;
+                        Rec[1] = temp_length;
+                        
+				      __asm("INT OFF");
+				      MoveSPIDriverToRAM();		
+				      SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
+				      //SPI_Flash_SendNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
+				      SPI_Flash_SendNWords(Rec,2,T_Record_Secter_L,T_Record_Secter_H); 
+				        __asm("INT FIQ,IRQ");
+                        
+                        
                   	}
 
 
@@ -7260,13 +7309,16 @@ unsigned int End()
 
 						    	}
 
+							 Key_Event =0;
+
 						     PlayA1800_Elements(A_VLMMREN_End_02b);
 
 						      delay_time(8);
 
                       	   }
 
-				
+
+				 Key_Event =0;
 		     	 Cn =0;
 		     	 CurrentRound++;
 				 Reset_Memory();	
@@ -7387,16 +7439,19 @@ unsigned int End()
  else if(Registerd_Num==1)
  {
  	
+ 	  // Key_Event =0;
+	  // Key_activeflag = Playbutton;
+ 	
  	 if(memory_length>50)
  	 {
- 	 	 Record=memory_length;
+ 	 	 Rec[0]=memory_length;
  	 	 
  	 	 
  	  __asm("INT OFF");
       MoveSPIDriverToRAM();		
       SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
       //SPI_Flash_SendNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
-      SPI_Flash_SendAWord(T_Record_Secter_L,T_Record_Secter_H,Record);
+      SPI_Flash_SendNWords(Rec,2,T_Record_Secter_L,T_Record_Secter_H); 
         __asm("INT FIQ,IRQ");
  	 	 
  	 	 
@@ -7410,15 +7465,15 @@ unsigned int End()
 	 	 PlayA1800_Elements(A_VLMMREN_End_02);
 	 	 PlayScores(temp_length);
 	 	 
-	 	 if(Record<temp_length)
+	 	 if(Rec[0]<temp_length)
 	 	 {
-	 	 	 Record=temp_length;
+	 	 	 Rec[0]=temp_length;
 	 	 	 
 			__asm("INT OFF");
 			MoveSPIDriverToRAM();		
 			SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
-			SPI_Flash_SendAWord(T_Record_Secter_L,T_Record_Secter_H,Record);
-			//SPI_Flash_SendNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
+		//	SPI_Flash_SendAWord(T_Record_Secter_L,T_Record_Secter_H,Record);
+			SPI_Flash_SendNWords(Rec,2,T_Record_Secter_L,T_Record_Secter_H); 
 			__asm("INT FIQ,IRQ");
 	 	 	 
 	 	 	 
@@ -7430,7 +7485,8 @@ unsigned int End()
  
      //if(Record==0)
      //	Record=temp_length;
- 
+     Key_Event =0;
+     
  	 PlayA1800_Elements(SFX_Winner);
  	 delay_time(8);	
  	 
@@ -7593,8 +7649,11 @@ go_on_sleep_sw:
 	    GetMode();
 	   // Switch_Mode = Key_Instruction;
 	    
-	 
+//	 #ifdef C_Demotest
+//	   	if((Switch_Mode == Key_Game)||(Switch_Mode == Key_Instruction))
+//	 #else
 	 	if((Switch_Mode == Key_Game)||(Switch_Mode == Key_Game_Family))
+//	 #endif
 	    {
          	cnt =Wakeup_IO_Temp^Sleep_IO_Temp;
          	

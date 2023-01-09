@@ -9,6 +9,7 @@
 .external _LFX_Data
 //.define LED_Yellow 0//0x400
 .define Blink_Fr  8
+.define LFX_Fr    6
 
 .code
 
@@ -47,7 +48,7 @@ _Led_Blink:.proc
 	r2 = [_LED_Cnt]
 	jnz  out_Blink
 	
-	r2 = Blink_Fr//[_Blink_Fr]
+	r2 = LFX_Fr//[_Blink_Fr]
 	[_LED_Cnt] = r2
 	 	
 	 	
@@ -77,7 +78,7 @@ Not_over:
 .endif	 
 	 
 	 r2|=r1
-	 [P_IOA_Buffer] = r1
+	 [P_IOA_Buffer] = r2
 	 
    retf	
    

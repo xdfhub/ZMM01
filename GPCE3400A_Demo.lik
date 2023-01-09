@@ -23,7 +23,7 @@ Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\SPI_Flash_CE3.obj
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\RomCodeOBJ_GPCE1_CE3.obj"
-Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V06_bin.res"
+Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V07_bin.res"
 Lib: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\.\CTS\CTS_V1.1.0.lib"
 Lib: "C:\Program Files (x86)\Generalplus\unSPIDE 3.0.16.1\library\CMacro\CMacro1232.lib"
 Output: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo.TSK"
@@ -149,8 +149,8 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" with 0 
 ;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 203970 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" with 0 
-;Locate: __sn_section_RES_ROM_ZMM_V06_BIN in "Rom_ZMM_V06_bin.res" at 2080A3 
-;Align: __sn_section_RES_ROM_ZMM_V06_BIN in "Rom_ZMM_V06_bin.res" with 0 
+;Locate: __sn_section_RES_ROM_ZMM_V07_BIN in "Rom_ZMM_V07_bin.res" at 207FAB 
+;Align: __sn_section_RES_ROM_ZMM_V07_BIN in "Rom_ZMM_V07_bin.res" with 0 
 ;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 20361F 
 ;Align: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
 ;Locate: CTS_ISR_Service_ROMBLOCK in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 201800 
@@ -197,15 +197,15 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: _CODE_SPI_SEC in "LED.obj" with 0 
 ;Locate: _CODE_SPI_SEC in "isr.obj" at 204C14 
 ;Align: _CODE_SPI_SEC in "isr.obj" with 0 
-;Locate: _CODE_SPI_SEC in "Sleep.obj" at 204CC6 
+;Locate: _CODE_SPI_SEC in "Sleep.obj" at 204CC8 
 ;Align: _CODE_SPI_SEC in "Sleep.obj" with 0 
 ;Locate: _CODE_SPI_SEC in "System_2.obj" at 204D81 
 ;Align: _CODE_SPI_SEC in "System_2.obj" with 0 
-;Locate: _CODE_SPI_SEC in "system.obj" at 205621 
+;Locate: _CODE_SPI_SEC in "system.obj" at 204EA3 
 ;Align: _CODE_SPI_SEC in "system.obj" with 0 
-;Locate: _CODE_SPI_SEC in "main.obj" at 205782 
+;Locate: _CODE_SPI_SEC in "main.obj" at 205621 
 ;Align: _CODE_SPI_SEC in "main.obj" with 0 
-;Locate: _CODE_SPI_SEC in "Play_Speech.obj" at 20593B 
+;Locate: _CODE_SPI_SEC in "Play_Speech.obj" at 20580F 
 ;Align: _CODE_SPI_SEC in "Play_Speech.obj" with 0 
-;Locate: _CODE_SPI_SEC in "Algorithm.obj" at 205D78 
+;Locate: _CODE_SPI_SEC in "Algorithm.obj" at 205C4C 
 ;Align: _CODE_SPI_SEC in "Algorithm.obj" with 0 

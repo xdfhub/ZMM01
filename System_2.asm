@@ -17,8 +17,8 @@
 
 .define Key_TryMe  0x01//ÎÞÐ§
 .define Key_Game  0x0200//7+
-.define Key_Instruction 0x0100
-.define Key_Game_Family    0x080//demo
+.define Key_Instruction 0x0100//demo
+.define Key_Game_Family    0x080
 
 //**************************************************************************
 // Function Call Publication Area
@@ -158,7 +158,7 @@ _IO_init:.proc
 
 
 .ifdef C_DAC_EN
-    r1= 0x100   //IOA8 VDD EN
+    r1= 0x000   //IOA8 VDD EN
 .else   
   	r1 = 0x0//0x137f
 .endif  	
@@ -430,7 +430,7 @@ _Set_Sleep_IO:.proc
 
 
 
-  	r1 = 0x0//0x137f
+  	r1 = 0x100//0x137f
 	[P_IOA_Buffer] = r1
 
 	r1 = 0xFFFF
