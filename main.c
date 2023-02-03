@@ -516,11 +516,11 @@ void  Test_three_mode()
     
 	while(1) 
 		{
-		     if(Io_temp != (*P_IOB_Data & 0x380))
+		     if(Io_temp != (*P_IOB_Data & 0x300))
 		     {
 		     	cnt =0;
 		     	changeflag =1;
-		     	Io_temp = (*P_IOB_Data & 0x380);
+		     	Io_temp = (*P_IOB_Data & 0x300);
 		     }
             else
              {
@@ -538,14 +538,14 @@ void  Test_three_mode()
 		
 	 switch(Io_temp)
 	 {
-	 	case 0x280:  //demo 
+	 	case 0x200:  //demo 
 	 	     if(changeflag)
 	 	     {
 	 	       changeflag =0;
 	 	       //TimeCnt =1;	
    	           //cnt = SPI_ReadAWord_Big((unsigned long)0x02);
 	           //PlayA1800_Elements(cnt); 
-	           PlayA1800_Elements(SFX_Whistle); 
+	           PlayA1800_Elements(SFX_Wrong); 
 
 			   cnt =0;
 			   Play_switchFlag |=0x01;
@@ -588,7 +588,7 @@ void  Test_three_mode()
    	           //cnt = SPI_ReadAWord_Big((unsigned long)0x02);
 	           //PlayA1800_Elements(cnt); 
 	           //PlayA1800_Elements(cnt); 
-               PlayA1800_Elements(VLHPQEN_HP);    
+               PlayA1800_Elements(SFX_Tong);    
 			   cnt =0;
 			   Play_switchFlag |=0x02;
 			   TimeCnt_Testingmode =0;
@@ -641,15 +641,16 @@ void Test_Assembly(void)
   	//unsigned int upflag1 =0;
 
 	unsigned int key_step =0;
-  	
+	
+  	 Delay_Xms_PowerOn(1);
 	*P_IOB_Dir = 0x0000;
-	*P_IOB_Buffer = Playbutton;//Key_Blue|Key_Pink|0x380;
+	*P_IOB_Buffer = PB_button|MB_button|0x300;//Playbutton;//
 	*P_IOB_Attrib = 0x0000;
-	Delay_Xms_PowerOn(1);
+ 	 Delay_Xms_PowerOn(1);
 
 
-    //if((*P_IOB_Data&(Key_Blue|Key_Pink|0x380)) !=0x380 )
-    if((*P_IOB_Data&(Playbutton)) ==Playbutton )	
+    if((*P_IOB_Data&(MB_button|MB_button|0x300)) !=0x200 )
+    //if((*P_IOB_Data&(Playbutton)) ==Playbutton )	
 	{
 		return;
 	}
@@ -661,8 +662,8 @@ void Test_Assembly(void)
 	temp = 200;//1000;//3200
 	while(temp)
 	{
-	//	if((*P_IOB_Data&(Key_Blue|Key_Pink|0x380)) !=0x380)
-	   if((*P_IOB_Data&(Playbutton)) ==Playbutton )	 
+		if((*P_IOB_Data&(MB_button|MB_button|0x300)) !=0x200 )
+	  // if((*P_IOB_Data&(Playbutton)) ==Playbutton )	 
 		{
 		  //	i--;
 		  return;
@@ -696,9 +697,9 @@ void Test_Assembly(void)
 	//}
 	
   
-    GetMode();
-    //Time_init_TestMode();
-    Time_init();
+    //GetMode();
+    Time_init_TestMode();
+   // Time_init();
     
 //    TimeCnt = 1;
 //    *(P_INT_Ctrl) |=C_IRQ7_16Hz;
@@ -706,15 +707,14 @@ void Test_Assembly(void)
 	asm("FIQ ON");
 	asm("IRQ ON");
  
-     Demo();
-     Sleeping();
+//     Demo();
+//     Sleeping();
  
-  #if 0
- 
+
     
-   	temp = SPI_ReadAWord_Big((unsigned long)0x30);
-	PlayA1800_Elements(temp); 
-	PlayA1800_Elements(temp); 
+   	//temp = SPI_ReadAWord_Big((unsigned long)0x30);
+	PlayA1800_Elements(238); 
+//	PlayA1800_Elements(238); 
 	
 //    PlayBee();
 //    Delay_Xms_PowerOn(60*500);
@@ -722,54 +722,74 @@ void Test_Assembly(void)
 //	  Delay_Xms_PowerOn(60*500);
 //	  PlayBee();
 
-	temp = SPI_ReadAWord_Big((unsigned long)0x00);
-     
-     if(temp!=0x4850)//HP
-     {
-        *(P_IOA_Buffer)|=LED_Blue;
-        while(1)
-        {
-        		
-        	WatchdogClear();
-        	
-        }
-        
-         return;
-        
-     }
+//	temp = SPI_ReadAWord_Big((unsigned long)0x00);
+//     
+//     if(temp!=0x4850)//HP
+//     {
+//        *(P_IOA_Buffer)|=LED_Blue;
+//        while(1)
+//        {
+//        		
+//        	WatchdogClear();
+//        	
+//        }
+//        
+//         return;
+//        
+//     }
 	
 
-
+     Init_CTS();	
      Key_Scan_Init();
      TimeCnt_Testingmode = 0;
     *(P_INT2_Ctrl) |=C_IRQ6_2048Hz+C_IRQ6_512Hz;//+C_IRQ7_16Hz;
 
+//      Key_activeflag =0;
+//      Test_three_mode();
+
+
+      Key_activeflag = 0xf0;
 
     while(1)
 	{	
 		WatchdogClear();
+		
+		 temp=TS_CTS_ServiceLoop();
+		
+		
 			
-		if(Key)
+		if(Key|temp)
 		{
 
-		   temp = Pressflag&Key;
 
-		   Key =0;
+         if(Key)
+         {
+		     temp = Pressflag&Key;
+		     Key =0;
+         }
 
            TimeCnt_Testingmode=0;
 
           // switch(temp)
 		  	 {
-		  	 	 if(temp == Key_Blue)
+		  	 	 if(temp == Playbutton)
 				 	{
 
 					 if((key_step ==0)||(key_step == 1))
 					 	{
-				 	      *(P_IOA_Buffer)^=LED_Blue;//break;
+				 	      PlayA1800_Elements(SFX_Buzzer);//*(P_IOA_Buffer)^=LED_Blue;//break;
 				 	      key_step =1;
 					 	}
 		  	 	 	}
-		  	 	 if(temp == Key_Orange)
+		  	 	 	
+//				  else if(temp &0xf0)
+//				 	{
+//                         *(P_IOA_Buffer)^ =Led_Data_Play[Get_Firstcnt_From_Play(temp>>4)];// Led_ON_Some(Led_Data_Play[Get_Firstcnt_From_Play(temp>>4)]);
+//
+//		  	 	 	}  	 	 	
+		  	 	 	
+	 	
+		  	 	 if(temp == TH_Humans)
 				 	{
 				 	  if((key_step ==1)||(key_step == 2))
 				 	  	{
@@ -777,15 +797,15 @@ void Test_Assembly(void)
 				 	       key_step =2;
 				 	  	}
 		  	 	 	}
-                 if(temp == Key_Pink)
+                 if(temp == TH_Animals)
 				 	{
 				 	 if((key_step ==2)||(key_step == 3))
 				 	 	{
-				 	      *(P_IOA_Buffer)^=LED_Pink;//break;
+				 	      *(P_IOA_Buffer)^=LED_Blue;//break;
 				 	      key_step =3;
 				 	 	}
 		  	 	 	}
-		  	 	if(temp == Key_Purple)
+		  	 	if(temp == TH_Vehicles)
 				 	{
 				 	  if((key_step ==3)||(key_step == 4))
 				 	  	{
@@ -793,62 +813,33 @@ void Test_Assembly(void)
 				 	       key_step =4;
 				 	  	}
 		  	 	 	}	 	
-		  	 	 	
-//                 if(temp ==Key_Yellow)
-//		  	 	 	{
-//
-//
-//                           if((key_step ==4)||(key_step == 5))
-//                           	{
-//                                  // Led_ON_Some(LED_Yellow);
-//                                  #ifdef C_GPCE2064
-//		  	 	                      *(P_IOA_Buffer)^=LED_Yellow;
-//		  	 	                       
-//		  	 	                    #else
-//		  	 	                      *(P_IOB_Buffer)^=LED_Yellow;
-//		  	 	                      
-//		  	 	                     #endif
-//                                  
-//                                  
-//								   key_step =5;
-//                           	}
-//									 
-//									//break;
-//		  	 	 	}
-				 
-				 
-				 
-                if(temp == Key_False)
+		  	 	 			 
+                if(temp == TH_Music)
 					{
 
 					   if(key_step ==4)
 					   	{
-                           Light_all_off();
-						   key_step =6;
-						
+                           //Light_all_off();
+						   //key_step =6;
+						   *(P_IOA_Buffer)|=LED_Pink;//break;
+						   
+						   break;
 					   	}
 					}
 
 				 
-			    if(temp == Key_True)
-			    	{
-					
-						//#ifdef C_GPCE2064  
-						//  *(P_IOB_Buffer)|=0x0f;
-						//  *(P_IOA_Buffer)|=LED_Yellow;
-		              //#else
-						//  *(P_IOB_Buffer)|=All_Led_data;
-				  
-		              // #endif
-
-						 if(key_step ==6)
-						 	{
-                              Led_ON_Some(All_Led_data);
-							  break;
-						 	}
-
-
-			    	}
+//			    if(temp == Key_True)
+//			    	{
+//					
+//
+//						 if(key_step ==6)
+//						 	{
+//                              Led_ON_Some(All_Led_data);
+//							  break;
+//						 	}
+//
+//
+//			    	}
 
 
 
@@ -862,13 +853,16 @@ void Test_Assembly(void)
 	
     }
 
-    Test_three_mode();
+  
+    Key_activeflag =0;
+    Key_Event =0; 
     
+    __asm("INT OFF");
     *(P_INT_Ctrl) =0;
-	
+	*(P_INT2_Ctrl) =0;
  
     CheckSum_SPIFlash();	   //如果不正确，一直beepbeep响
-#endif
+
 } 
 
 
@@ -878,7 +872,7 @@ void Test_Assembly(void)
 int main()
  {
     
-//    Test_Assembly();		
+    Test_Assembly();		
    
 	Goto_Sleep();
 	

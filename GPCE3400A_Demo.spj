@@ -252,7 +252,7 @@ EXPORT=3
 #PROP Default_Filter=
 USEPARAM=FALSE
 PARAM=
-EXPORT=3
+EXPORT=0
 # Begin Source File
 SOURCE=..\Include\A1800.inc
 USEPARAM=FALSE
@@ -357,27 +357,6 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
-# End Source File
-# Begin Source File
-SOURCE=..\Include\A3400Pro.inc
-USEPARAM=FALSE
-PARAM=
-ID=
-EXPORT=0
-# End Source File
-# Begin Source File
-SOURCE=..\Include\MS02.inc
-USEPARAM=FALSE
-PARAM=
-ID=
-EXPORT=0
-# End Source File
-# Begin Source File
-SOURCE=..\Include\datatype.h
-USEPARAM=FALSE
-PARAM=
-ID=
-EXPORT=0
 # End Source File
 # End Group
 # End SubItem
@@ -628,7 +607,7 @@ EXPORT=3
 #PROP Default_Filter=
 USEPARAM=FALSE
 PARAM=
-EXPORT=3
+EXPORT=0
 # Begin Source File
 SOURCE=..\Include\A1800.inc
 USEPARAM=FALSE
@@ -733,27 +712,6 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
-# End Source File
-# Begin Source File
-SOURCE=..\Include\A3400Pro.inc
-USEPARAM=FALSE
-PARAM=
-ID=
-EXPORT=0
-# End Source File
-# Begin Source File
-SOURCE=..\Include\MS02.inc
-USEPARAM=FALSE
-PARAM=
-ID=
-EXPORT=0
-# End Source File
-# Begin Source File
-SOURCE=..\Include\datatype.h
-USEPARAM=FALSE
-PARAM=
-ID=
-EXPORT=0
 # End Source File
 # End Group
 # End SubItem

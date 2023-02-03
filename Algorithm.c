@@ -217,7 +217,7 @@ unsigned int VOL1Flag =0;
 unsigned int Speed_BonusFlag =0;
 //unsigned int HattickOrOffside_Flag=0;
 unsigned int Time_Countdown =0;
-unsigned int firstFlag_23b =0;
+unsigned int firstFlag_Bit =0;
 
 //unsigned int FreeKick_Flag =0;
 
@@ -3840,7 +3840,7 @@ void Tell_Scores(unsigned int Final_Scorefalg)
 
 
 /***********************************************************
-*********************************************************/
+*********************************************************
 unsigned Key_CheckScores()
 {
 //	unsigned int FiveSec_cnt_temp;
@@ -3988,10 +3988,10 @@ void Select_Player_Random_Round1()
            	}
 				
 	
-              if((firstFlag_23b&0x02)==0)
+              if((firstFlag_Bit&0x02)==0)
               {
               	Key_activeflag = Key_True|Key_False;
-              	firstFlag_23b|=0x02;
+              	firstFlag_Bit|=0x02;
               	PlayA1800_Other(SerieAsk);
               	
               }
@@ -4869,21 +4869,22 @@ unsigned int Get_Key(Countdown_E)
 	   	{
              LongPressflag&=~0x01;
 
-			 
-            if((firstFlag_23b&0x8000)==0)
+		   //if((firstFlag_Bit&0x4000)==0x4000)	   //0x4000 pause enable
+		   {
+            if((firstFlag_Bit&0x8000)==0)
             	{
 
-				   firstFlag_23b|=0x8000;
+				   firstFlag_Bit|=0x8000;
 			       if(temp = Pause_Process())	
 			       {			   
-			 	       firstFlag_23b&=~0x8000;
+			 	       firstFlag_Bit&=~0x8000;
 			 	       return temp; 
 			 	    
 			       }
 			       
-			      firstFlag_23b&=~0x8000; 
+			      firstFlag_Bit&=~0x8000; 
             	}
-
+		   }
 	   	}
        
 		
@@ -4927,11 +4928,11 @@ unsigned int Get_Key(Countdown_E)
 //							if((temp ==PB_button)||((temp ==MB_button)))
 //			                   {			                   	
 //
-//                                 if((firstFlag_23b&0x4000)==0)
+//                                 if((firstFlag_Bit&0x4000)==0)
 //                                 	{
-//                                 	    firstFlag_23b|=0x4000;
+//                                 	    firstFlag_Bit|=0x4000;
 //								        Volume(temp);
-//										firstFlag_23b&=~0x4000; 
+//										firstFlag_Bit&=~0x4000; 
 //										PauseFlag =1;
 //										return 1;
 //                                 	}
@@ -4962,7 +4963,7 @@ unsigned int Get_Key(Countdown_E)
 								{						
 								  //if((PlayQuestionflag&0x01)&&((!PlayScoresFlag)||(TieflagAskQuestion)))	//xiang 20150106
 								    {
-									    PauseFlag =1;
+									    PauseFlag =2;//区别暂停
 									    Key_TrueFlase_Buffer =0;//20160215
                                         Pressflag&=~Playbutton;//避免抬起响应
 										TwoKey_temp =0;//20160323
@@ -6040,7 +6041,7 @@ unsigned  Step1()
 
   
 //   OffSide_Askflag =0;
-	firstFlag_23b =0;
+	firstFlag_Bit =0;
 //	OFFsideFlag =0;
 //	HattickOrOffside_Flag =0;
 //	FreeKick_Flag = 0;
@@ -6692,7 +6693,7 @@ unsigned int Game()
 
     R_E =0;
 
-    firstFlag_23b&=~0x800;
+    firstFlag_Bit&=~0x800;
     CheaterFlag =0;
     Eventflag =0;
 	End20flag =0;
@@ -6782,7 +6783,7 @@ unsigned int Game()
 		     
 			Answer_F();
             Answerflag =0;
-            
+            firstFlag_Bit&=~0x4000;
            
 		    R_E =0;
 		   
@@ -6837,7 +6838,8 @@ void Answer_F()
 	//LastCategory_Series[Currentsound] = Category;
      End20flag =0;
   
-
+     firstFlag_Bit&=~0x4000;
+     
      if((Restart ==0)&&(CurrentRound==1))//(Cn ==2)&&
      {
      	Key_activeflag =Only_Play_KeyEnable;
@@ -6982,6 +6984,8 @@ void Answer_F()
 					   
 		                Currentsound++;
 		                
+		                firstFlag_Bit|=0x4000;
+		                
 		               	if(Currentsound >= round)
 		               	    Key_activeflag =0;	 
 		               	
@@ -7104,10 +7108,10 @@ void Answer_F()
 			                  PlayA1800_Elements(A_VLMMREN_Aie);
 
 
-							 if((firstFlag_23b&0x100)==0)
+							 if((firstFlag_Bit&0x100)==0)
 							 	{
 			           	           PlayA1800_Elements(A_VLMMREN_Out);
-                                   firstFlag_23b|=0x100;
+                                   firstFlag_Bit|=0x100;
 							 	}
 			       	    }
 		           	      

@@ -21,7 +21,7 @@
 // Contant Defintion Area
 //**************************************************************************
 .define C_Checksum_SPI_StartAddr   0x3000//开始地址 0x3000以前的数据是不加密的，加密ic和不加密ic读出来的会不一样，所以不方便校验。 byte
-.define C_Checksum_SPI_EndAddr     0x582d6A //Memory Map  word
+.define C_Checksum_SPI_EndAddr     0x273d93//Memory Map  word
 
 .define C_Checksum_SPI_StartAddrH   0x20+((C_Checksum_SPI_StartAddr/2)>>16)//开始地址高位
 .define C_Checksum_SPI_StartAddrL   (C_Checksum_SPI_StartAddr/2)&0xffff//开始地址低位
@@ -34,7 +34,7 @@
 .public _CheckSum_SPIFlash
 
 T_MCU_Sum:
-.dw 0xb845,0x359b		//R3-Low word, R4-Highword
+.dw 0xbbb3,0x06f4		//R3-Low word, R4-Highword
 
 //****************************************************************
 // Function    : _CheckSum_SPI
@@ -125,7 +125,12 @@ _CheckSum_SPIFlash: .proc
 	[P_Watchdog_Clear] = R1
 	
 		//	call _MicBeep
-		call F_SACM_A1800_StartPlay
+	//	call F_SACM_A1800_StartPlay
+	
+	R1 = [P_AUDIO_Ctrl1];
+	R1 |= C_AUDIO_PWM_Enable;
+	[P_AUDIO_Ctrl1] = R1;
+	
 		call _BeepBeep_Along;
 		
 	jmp ?L_ChecksumError
