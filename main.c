@@ -906,7 +906,7 @@ int main()
 
 //      Qn_Cnt_PowerON =0;
       
-  		gVolume = SPI_ReadAByte(24);
+  		gVolume = 10;//SPI_ReadAByte(24);
 		if (!((gVolume>3)&&(gVolume<16)))
 		{
 			gVolume = 9;

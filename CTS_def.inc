@@ -1,4 +1,4 @@
 
 
 .define C_productTouch 
-//.define C_DAC_EN 1
+.define C_DAC_EN 1

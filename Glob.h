@@ -8,7 +8,7 @@
 
 //En
 #define C_productTouch 1//生产用Touch接口 IOA0起 JT
-#define  C_FinalPCB    1//最终生产板子，客户改动触摸与灯 IO 顺序
+//#define  C_FinalPCB    1//最终生产板子，客户改动触摸与灯 IO 顺序
 //#define C_Demotest  1
 
 //#define C_TestPcb 1 //按键公共端接至IOB7
@@ -44,9 +44,9 @@
 #define C_Player_Num 10
 
 #define C_RoundNum 100
-#define C_QuestionRAM  20		// 
-	 
-#define C_ElementsRAM  2//plays		// 30 * 16 = 480 > R_ElementsNum	
+
+#define C_QuestionRAM  12		// 	 12 * 16 = 162 > Question num
+#define C_ElementsRAM  2//plays		// 	
 //#define C_GobackBuffersize	40
 
 //===================
