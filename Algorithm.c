@@ -72,7 +72,7 @@ int Rounds[C_Player_Num]={0,0,0,0};
 unsigned int Pingame[C_ElementsRAM]={0};
 unsigned int Pselected[C_ElementsRAM]={0};
 
-unsigned int Pingame_temp[C_ElementsRAM]={0};
+//unsigned int Pingame_temp[C_ElementsRAM]={0};
 //unsigned int Hattrick[C_Player_Num]={0};
 
 //unsigned int Event_cnt =0;
@@ -4662,7 +4662,7 @@ void  Select_Question(void)
 
 
 
-/***************************************************************************/
+/***************************************************************************
 void Save_Some_data()
 {
     unsigned int temp;
@@ -5544,10 +5544,10 @@ void Ask_Question()
      unsigned int temp_PlayQuestionflag=PlayQuestionflag;
      
      //PlayQuestionflag =1;
-     TwoKeyflag = Playbutton;
+    
    do
 	{
-		
+		    TwoKeyflag = Playbutton;
 			Key_Event =0;
 			Key_activeflag =0;		
 			PauseFlag =0;
@@ -6440,7 +6440,7 @@ unsigned  Step1()
 				  	return C_Off_Mode;
 			      
 			      
-			    Key_activeflag =Playbutton;//Playbutton;//Only_Play_KeyEnable;//ALL_Key_Enable&(~(Key_True|Key_False));
+			    Key_activeflag =0;//Playbutton;//Playbutton;//Only_Play_KeyEnable;
 		        Key_Event =0; 
 		
 		        TwoKeyflag = Playbutton;
@@ -6490,19 +6490,27 @@ unsigned  Step1()
 			      if(Key_Event==Playbutton)
 			      {  
 			      	   Key_Event =0;  
-			      	   Key_activeflag =Playbutton;	
+			      	   Key_activeflag =0;//Playbutton;	
 			      	   PlayA1800_Elements(SFX_Buzzer);
 			      	   PlayA1800_Elements(A_VLMMREN_ChoosePlayerEnd);
 			      	   
+			      	 // Key_activeflag =Playbutton;	 
+			      	  
 			      	  if(Registerd_Num>2)
 			      	  {
 			      	  	PlayA1800_Elements(A_VLMMREN_ChoosePlayerEnd02);
 			      	  }
 					 else 
+					 {
+					 	
+					 	Key_activeflag =Playbutton;	 
 					    PlayA1800_Elements(A_VLMMREN_ChoosePlayerEnd03);
+					    
+					 }
 
 	                   Key_Event =0; 
-
+                       Key_activeflag =Playbutton;	 
+                       
 					  while(Key_Event==0)
 					  	{
 
@@ -6651,6 +6659,8 @@ unsigned  Step1()
                 Key_activeflag =Playbutton;
          
                 PlayA1800_Elements(A_VLMMREN_Rule_11_alt);
+                Key_Event =0;  
+                Key_activeflag =0;
                 
 		        if((Rec[0]>50))
 		           {
@@ -7026,6 +7036,10 @@ void Answer_F()
               
             if(Registerd_Num>1)	
             	{
+            		
+	            	Key_activeflag =ALL_TouchEnable;		
+	            	Key_Event=0;
+            		
                    Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
 				   
                    if((Restart ==0)&&(CurrentRound==1)&&(Cn ==1))
@@ -7048,7 +7062,7 @@ void Answer_F()
       	 timeout_t=3*Cn*16;
       	
       }
-      Key_Event=0;
+      Key_Event&=ALL_TouchEnable;
       Timeout_cnt =0;
      while(1)
      	{
@@ -7362,7 +7376,7 @@ unsigned int End()
    int  h_round_temp =0;
  
    
-   if((firstFlag_Bit&0x2000)==0)
+  // if((firstFlag_Bit&0x2000)==0)
    {
     memory_length=Get_Num_CategoryMemory();
  
@@ -7383,7 +7397,7 @@ unsigned int End()
 
 
      
-      Save_Some_data();
+     // Save_Some_data();
 
 
       if((End20flag ==0)&&((firstFlag_Bit&0x2000)==0))
@@ -7412,7 +7426,9 @@ unsigned int End()
 			    {
 //			    	  Add_SomePlayer_Point(1,Rounds,Pingame);	
 //			    	  Add_SomePlayer_Point(memory_length,Player_Point,Pingame);	
-			    	  
+			    	  Key_Event =0;
+	                  Key_activeflag = 0;
+	   
 				     Play_Serieplayer(0,Pingame,C_Play_StartAddr);
 				     PlayA1800_Elements(A_VLMMREN_End_01);
 					 PlayA1800_Elements(A_VLMMREN_End_02);
@@ -7447,6 +7463,9 @@ unsigned int End()
 
 			  if((Get_Num_Bigscore(Rounds,2,Registered_Play_Status)!=0 )&&(End20flag ==0))
 			  	{
+			  		     Key_Event =0;
+	                     Key_activeflag = 0;
+	                     
                          PlayQuestionflag =0;
                          PlayA1800_Elements(SFX_Yeah);
 						 PlayA1800_Elements(A_VLMMREN_WinRound01d);
@@ -7458,7 +7477,8 @@ unsigned int End()
 
                       if(End20flag ==0)
                       	{
-
+ 	                       Key_Event =0;
+	                       Key_activeflag = 0;
 
 						    if(memory_length<=50)
 						    	{
@@ -7487,13 +7507,7 @@ unsigned int End()
 
 
 				 Key_Event =0;
-		     	 Cn =0;
-		     	 CurrentRound++;
-				 Reset_Memory();	
-		         SetPingame();
-				 Reset_Pselected();
-				 
-				 randomflag =1;
+
 				 
 		       if(Get_All_SameNum(Rounds,1,Registered_Play_Status)==0)//(CurrentRound !=3)
 		       	{
@@ -7507,7 +7521,7 @@ unsigned int End()
 			   else
 			   	{
 			   		 Key_Event =0;
-				     Key_activeflag =Playbutton;
+				     Key_activeflag =0;//Playbutton;
 		 
 			   	   // Key_CheckScores();
 			   	      BlinkFlag_Data=0;	
@@ -7576,6 +7590,15 @@ unsigned int End()
 				   Key_Event =0;
 				   PlayA1800_Elements(SFX_Buzzer);
 				   delay_time(16);
+	 
+		 		    Cn =0;
+			     	 CurrentRound++;
+					 Reset_Memory();	
+			         SetPingame();
+					 Reset_Pselected();
+					 
+					 randomflag =1;
+	 
 	 
 		     	   return C_Game;
                	}
@@ -7670,12 +7693,12 @@ unsigned int End()
     	{
                 PauseFlag =0;
 
-
-		      for(temp=0;temp<C_ElementsRAM;temp++)
-		    	{
-		
-		          Pingame[temp] = Pingame_temp[temp];
-		    	}
+//
+//		      for(temp=0;temp<C_ElementsRAM;temp++)
+//		    	{
+//		
+//		          Pingame[temp] = Pingame_temp[temp];
+//		    	}
 
 				
 				firstFlag_Bit|=0x2000;

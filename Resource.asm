@@ -5,10 +5,10 @@
 .CODE
 .public _RES_Table;
 .public _SPI_Resources_Folder_Table;
-.external __RES_ROM_ZMM_V08_BIN_sa
-.public _RES_ROM_ZMM_V08_BIN_SA;
-.external __RES_ROM_ZMM_V08_BIN_ea;
-.public _RES_ROM_ZMM_V08_BIN_EA;
+.external __RES_ROM_ZMM_V09_PRO_BIN_sa
+.public _RES_ROM_ZMM_V09_PRO_BIN_SA;
+.external __RES_ROM_ZMM_V09_PRO_BIN_ea;
+.public _RES_ROM_ZMM_V09_PRO_BIN_EA;
 
 
 _RES_Table:
@@ -16,10 +16,10 @@ _RES_Table:
 
 _SPI_Resources_Folder_Table:
 
-_RES_ROM_ZMM_V08_BIN_SA:
-	.DW offset __RES_ROM_ZMM_V08_BIN_sa,seg16 __RES_ROM_ZMM_V08_BIN_sa;
-_RES_ROM_ZMM_V08_BIN_EA:
-	.DW offset __RES_ROM_ZMM_V08_BIN_ea,seg16 __RES_ROM_ZMM_V08_BIN_ea;
+_RES_ROM_ZMM_V09_PRO_BIN_SA:
+	.DW offset __RES_ROM_ZMM_V09_PRO_BIN_sa,seg16 __RES_ROM_ZMM_V09_PRO_BIN_sa;
+_RES_ROM_ZMM_V09_PRO_BIN_EA:
+	.DW offset __RES_ROM_ZMM_V09_PRO_BIN_ea,seg16 __RES_ROM_ZMM_V09_PRO_BIN_ea;
 
 
 // End Table

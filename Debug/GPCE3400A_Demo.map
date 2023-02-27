@@ -1,4 +1,4 @@
-Friday, February 10, 15:28:35, 2023
+Monday, February 27, 18:07:31, 2023
 
                     * Generalplus u'nSP Linker version 1.14.13.18
                     -------------------------------------------
@@ -18,18 +18,18 @@ _Key_Debounce                                            5FA       "D:\Prj_GPCE3
 _main                                                    205767    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\main.obj"
 _BREAK                                                   204C17    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
 _FIQ                                                     204C1B    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
-_IRQ0                                                    204C43    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
-_IRQ1                                                    204C47    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
-_IRQ2                                                    204C4F    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
-_IRQ3                                                    204C57    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
-_IRQ4                                                    204C5B    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
-_IRQ5                                                    204C62    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
-_IRQ6                                                    204C66    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
-_IRQ7                                                    204C9F    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
+_IRQ0                                                    204C45    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
+_IRQ1                                                    204C49    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
+_IRQ2                                                    204C51    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
+_IRQ3                                                    204C59    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
+_IRQ4                                                    204C5D    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
+_IRQ5                                                    204C64    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
+_IRQ6                                                    204C68    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
+_IRQ7                                                    204CA1    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
 _RES_Table                                               204800    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
 _SPI_Resources_Folder_Table                              204800    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
-_RES_ROM_ZMM_V08_BIN_SA                                  204800    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
-_RES_ROM_ZMM_V08_BIN_EA                                  204802    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
+_RES_ROM_ZMM_V09_PRO_BIN_SA                              204800    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
+_RES_ROM_ZMM_V09_PRO_BIN_EA                              204802    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
 T_SACM_A1800_SpeechTable                                 204804    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
 T_SACM_A3400_SpeechTable                                 204804    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
 T_SACM_MS02_InstrumentSet                                204804    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
@@ -58,29 +58,29 @@ F_A1800_USER_IoEvtEnd                                    205129    "D:\Prj_GPCE3
 F_A1800_USER_EvtProcess                                  20513A    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\SACM_A1800_User.obj"
 F_A1800_USER_SoundProcess                                20513B    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\SACM_A1800_User.obj"
 R_AUDIO_CH1_Data                                         5B4       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\SACM_A1800_User.obj"
-_System_ServiceLoop                                      204F45    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-F_System_ServiceLoop                                     204F45    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_WatchdogClear                                           204F40    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-F_WatchdogClear                                          204F40    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_SP_RampUpDAC1                                           204F85    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-F_SP_RampUpDAC1                                          204F85    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_SP_RampDnDAC1                                           204F52    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-F_SP_RampDnDAC1                                          204F52    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_SP_RampUpDAC2                                           204F86    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-F_SP_RampUpDAC2                                          204F86    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_SP_RampDnDAC2                                           204F6B    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-F_SP_RampDnDAC2                                          204F6B    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_SoftwareReset                                           204F48    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-F_SoftwareReset                                          204F48    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_Sys_clock_init_Only                                     204EC5    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_Sys_clock_init                                          204ED5    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_Time_init                                               204F1B    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_Time_init_TestMode                                      204F31    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_SP_RampUpDAC1_Other                                     204FA0    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-F_DAC1RampDnISR                                          204FCE    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-_A1800Stop                                               204FDF    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_System_ServiceLoop                                      204F36    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+F_System_ServiceLoop                                     204F36    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_WatchdogClear                                           204F31    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+F_WatchdogClear                                          204F31    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_SP_RampUpDAC1                                           204F75    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+F_SP_RampUpDAC1                                          204F75    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_SP_RampDnDAC1                                           204F43    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+F_SP_RampDnDAC1                                          204F43    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_SP_RampUpDAC2                                           204F8E    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+F_SP_RampUpDAC2                                          204F8E    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_SP_RampDnDAC2                                           204F5C    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+F_SP_RampDnDAC2                                          204F5C    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_SoftwareReset                                           204F39    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+F_SoftwareReset                                          204F39    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_Sys_clock_init_Only                                     204EC7    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_Sys_clock_init                                          204ED7    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_Time_init                                               204F0C    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_Time_init_TestMode                                      204F22    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_SP_RampUpDAC1_Other                                     204FA7    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+F_DAC1RampDnISR                                          204FD5    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
+_A1800Stop                                               204FE6    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
 F_SW_MuteControl                                         205000    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"
-__sn_ram_end                                             6F8       "Linker internal symbol"
+__sn_ram_end                                             6F6       "Linker internal symbol"
 _SPI_ReadAWord                                           2049FB    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\flash.obj"
 F_SPI_ReadAWord                                          2049FF    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\flash.obj"
 _SPI_ReadNWords_LH                                       204A56    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\flash.obj"
@@ -90,17 +90,17 @@ _SPI_ReadAByte                                           204A3A    "D:\Prj_GPCE3
 _mul2                                                    204804    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Calc.obj"
 _Low16                                                   204823    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Calc.obj"
 _High16                                                  20482E    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Calc.obj"
-_SP_SwitchChannel                                        204D82    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
-F_SP_SwitchChannel                                       204D82    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
+_SP_SwitchChannel                                        204D84    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
+F_SP_SwitchChannel                                       204D84    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
 _DAC1_RampDnFlag                                         5B8       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
-_Sleep                                                   204E47    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
+_Sleep                                                   204E49    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
 _OtherSph_Random_Value                                   5B9       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
-_IO_init                                                 204D83    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
-_IO_init_Wakeup                                          204DA9    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
-F_Switch_Check                                           204DC2    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
-_Sleep_Io                                                204E03    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
-_Set_Sleep_IO                                            204E27    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
-_delaytest                                               204E96    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
+_IO_init                                                 204D85    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
+_IO_init_Wakeup                                          204DAB    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
+F_Switch_Check                                           204DC4    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
+_Sleep_Io                                                204E05    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
+_Set_Sleep_IO                                            204E29    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
+_delaytest                                               204E98    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"
 _Light_all_off                                           20486F    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\LED_Drive.obj"
 _Led_Blink                                               204876    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\LED_Drive.obj"
 _Get_Question_Answer                                     205D25    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
@@ -124,51 +124,50 @@ _Player_Point                                            66E       "D:\Prj_GPCE3
 _Rounds                                                  678       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
 _Pingame                                                 682       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
 _Pselected                                               684       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Pingame_temp                                            686       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_R_QuestionNum                                           688       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Timeout_cnt                                             689       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Key_activeflag                                          68A       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_TwoKey_temp                                             68B       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Registered_Play_Status                                  68C       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Key_Event                                               68D       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_BlinkFlag_Data                                          68E       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Eventflag                                               68F       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Leader_Player                                           690       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Lowest_Player                                           691       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Higgest_T                                               692       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Lowest_T                                                693       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Cycle_Timeout_cnt                                       694       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Key_TrueFlase_Buffer                                    695       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Last2Cat                                                696       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_PlayScoresFlag                                          69C       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Sleepflag                                               69D       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Tieflag                                                 69E       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Cheater_SeletQu_Flag                                    69F       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_VOL1Flag                                                6A0       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Speed_BonusFlag                                         6A1       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Time_Countdown                                          6A2       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_firstFlag_Bit                                           6A3       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Countdownflag                                           6A4       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_LFXFlag_Data                                            6A5       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_LFX_Data_Cnt                                            6A6       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_NextCnt                                                 6A7       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_TooLate_Cnt                                             6A8       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_TooLatesolo_Cnt                                         6A9       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Rec                                                     6AA       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_R_E                                                     6AC       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_LastE                                                   6AD       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_NumRounds                                               6AE       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_CurrentRound                                            6AF       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_SinceLastE                                              6B0       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Tie                                                     6B1       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_End20flag                                               6B2       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Answerflag                                              6B3       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Last2Catcnt                                             6B4       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Timeout_cnt_En                                          6B5       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_randomflag                                              6B6       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_CatsRemain                                              6B7       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Event_F                                                 6B8       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_LFX_Data                                                6D0       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_R_QuestionNum                                           686       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Timeout_cnt                                             687       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Key_activeflag                                          688       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_TwoKey_temp                                             689       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Registered_Play_Status                                  68A       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Key_Event                                               68B       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_BlinkFlag_Data                                          68C       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Eventflag                                               68D       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Leader_Player                                           68E       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Lowest_Player                                           68F       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Higgest_T                                               690       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Lowest_T                                                691       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Cycle_Timeout_cnt                                       692       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Key_TrueFlase_Buffer                                    693       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Last2Cat                                                694       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_PlayScoresFlag                                          69A       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Sleepflag                                               69B       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Tieflag                                                 69C       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Cheater_SeletQu_Flag                                    69D       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_VOL1Flag                                                69E       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Speed_BonusFlag                                         69F       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Time_Countdown                                          6A0       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_firstFlag_Bit                                           6A1       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Countdownflag                                           6A2       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_LFXFlag_Data                                            6A3       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_LFX_Data_Cnt                                            6A4       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_NextCnt                                                 6A5       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_TooLate_Cnt                                             6A6       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_TooLatesolo_Cnt                                         6A7       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Rec                                                     6A8       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_R_E                                                     6AA       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_LastE                                                   6AB       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_NumRounds                                               6AC       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_CurrentRound                                            6AD       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_SinceLastE                                              6AE       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Tie                                                     6AF       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_End20flag                                               6B0       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Answerflag                                              6B1       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Last2Catcnt                                             6B2       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Timeout_cnt_En                                          6B3       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_randomflag                                              6B4       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_CatsRemain                                              6B5       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Event_F                                                 6B6       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_LFX_Data                                                6CE       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
 _Led_Data_Play                                           20190A    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
 _BitMap                                                  20190F    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
 _Get_Question_Category                                   205D3A    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
@@ -221,26 +220,25 @@ _Rest_Question_Asked                                     206A97    "D:\Prj_GPCE3
 _Check_LQA                                               206AD7    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
 _Read_Flash                                              206BEE    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
 _Save_Question_Category2Last                             206C52    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Save_Some_data                                          206C7B    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Get_Key                                                 206C9E    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Ask_Question                                            206E90    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Questions_init                                          206FA3    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_NewgameInit                                             206FC6    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Ram_OnInit                                              206FD1    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Reset_Memory                                            207005    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_SetPingame                                              20701F    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Step1                                                   207069    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Select_Sound                                            20758C    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Events                                                  207703    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Game                                                    20778F    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Answer_F                                                20787E    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_PlayScoreOfwhichplay                                    207D38    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_End                                                     207D4B    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Go_Rest                                                 2081B4    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_Sleeping                                                2081DC    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_QuestionStatus_LQA                                      6D4       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_QuestionStatus_LQ                                       6E0       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
-_QuestionStatus_Asked                                    6EC       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Get_Key                                                 206C7B    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Ask_Question                                            206E6D    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Questions_init                                          206F80    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_NewgameInit                                             206FA3    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Ram_OnInit                                              206FAE    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Reset_Memory                                            206FE2    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_SetPingame                                              206FFC    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Step1                                                   207046    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Select_Sound                                            20757D    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Events                                                  2076F4    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Game                                                    207780    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Answer_F                                                20786F    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_PlayScoreOfwhichplay                                    207D55    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_End                                                     207D68    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Go_Rest                                                 2081C9    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_Sleeping                                                2081F1    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_QuestionStatus_LQA                                      6D2       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_QuestionStatus_LQ                                       6DE       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
+_QuestionStatus_Asked                                    6EA       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"
 _Set_RandomVL_Index                                      2058E8    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Play_Speech.obj"
 _A1800_Flag                                              5EB       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Play_Speech.obj"
 _TwoKeyflag                                              5EC       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Play_Speech.obj"
@@ -262,9 +260,9 @@ _Pressflag                                               5C6       "D:\Prj_GPCE3
 _LongPressflag                                           5C7       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Key_server.obj"
 _Key_Scan_Init                                           204AFE    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Key_server.obj"
 _Key_Scan_Init_Wakeup                                    204B0F    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Key_server.obj"
-_Delay_Xms_PowerOn                                       204CC9    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Sleep.obj"
-_GetMode                                                 204CE2    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Sleep.obj"
-_Goto_Sleep                                              204D64    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Sleep.obj"
+_Delay_Xms_PowerOn                                       204CCB    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Sleep.obj"
+_GetMode                                                 204CE4    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Sleep.obj"
+_Goto_Sleep                                              204D66    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Sleep.obj"
 _CheckSum_SPIFlash                                       20498D    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CheckSum_CE3400.obj"
 _TestMic0                                                2049E7    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CheckSum_CE3400.obj"
 _Delay1xms                                               204936    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\TestBondingC.obj"
@@ -312,24 +310,24 @@ R_CTS_ReferenceL                                         5D5       "D:\Prj_GPCE3
 R_CTS_ScanNo                                             5D9       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
 R_CTS_Schmitt_H                                          5DD       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
 R_CTS_Schmitt_L                                          5E1       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-T_CTS_TouchInfo                                          2037E9    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-T_CTS_SchmittH                                           2037F0    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-T_CTS_SchmittL                                           2037F2    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-F_CTS_User_Init                                          203894    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-_CTS_CH_Sel                                              2038B5    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-F_CTS_CH_Sel                                             2038B5    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-_CTS_Start                                               2038C3    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-F_CTS_Start                                              2038C3    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-F_CTS_ScanOneRound                                       2038FA    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-F_CTS_Get_SchmittH                                       2038E4    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-F_CTS_Get_SchmittL                                       2038EF    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-F_CTS_GetScanTime                                        2038FB    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
-_Init_CTS                                                20395B    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
-_TS_CTS_ServiceLoop                                      203975    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
+T_CTS_TouchInfo                                          2037E7    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+T_CTS_SchmittH                                           2037EE    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+T_CTS_SchmittL                                           2037F0    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+F_CTS_User_Init                                          203892    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+_CTS_CH_Sel                                              2038B3    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+F_CTS_CH_Sel                                             2038B3    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+_CTS_Start                                               2038C1    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+F_CTS_Start                                              2038C1    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+F_CTS_ScanOneRound                                       2038F8    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+F_CTS_Get_SchmittH                                       2038E2    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+F_CTS_Get_SchmittL                                       2038ED    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+F_CTS_GetScanTime                                        2038F9    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
+_Init_CTS                                                203959    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
+_TS_CTS_ServiceLoop                                      203973    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 _TriggeredPad                                            5E9       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 _PreCtsResult                                            5EA       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
-__RES_ROM_ZMM_V08_BIN_sa                                 208273    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V08_bin.res"
-__RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V08_bin.res"
+__RES_ROM_ZMM_V09_PRO_BIN_sa                             208288    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V09_pro_bin.res"
+__RES_ROM_ZMM_V09_PRO_BIN_ea                             2C0B25    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V09_pro_bin.res"
 ***********************************************************************************************************************************************************************************************************************************************************************************************************
 
 ***********************************************************************************************************************************************************************************************************************************************************************************************************
@@ -360,7 +358,7 @@ __RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3
 *    ORAM_BANK0                                          ----                ----                ----                                                                                                                                                                                                     *
 * "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"                                                                                                                                                                                                                                      *
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
-*    _CODE_SPI_SEC(CODE)                                 204C17              204CC8              B2                                                                                                                                                                                                       *
+*    _CODE_SPI_SEC(CODE)                                 204C17              204CCA              B4                                                                                                                                                                                                       *
 *    _DATA_SPI_SEC(DATA)                                 ----                ----                ----                                                                                                                                                                                                     *
 *    TEXT                                                ----                ----                ----                                                                                                                                                                                                     *
 *    IRAM                                                ----                ----                ----                                                                                                                                                                                                     *
@@ -470,7 +468,7 @@ __RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3
 *    A1800_LibCallback_SEC(CODE)                         201880              2018F1              72                                                                                                                                                                                                       *
 * "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\system.obj"                                                                                                                                                                                                                                   *
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
-*    _CODE_SPI_SEC(CODE)                                 204EA4              204FE2              13F                                                                                                                                                                                                      *
+*    _CODE_SPI_SEC(CODE)                                 204EA6              204FE9              144                                                                                                                                                                                                      *
 *    _DATA_SPI_SEC(DATA)                                 ----                ----                ----                                                                                                                                                                                                     *
 *    TEXT                                                ----                ----                ----                                                                                                                                                                                                     *
 *    IRAM                                                ----                ----                ----                                                                                                                                                                                                     *
@@ -535,7 +533,7 @@ __RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3
 *    ORAM_BANK0                                          ----                ----                ----                                                                                                                                                                                                     *
 * "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\System_2.obj"                                                                                                                                                                                                                                 *
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
-*    _CODE_SPI_SEC(CODE)                                 204D82              204EA3              122                                                                                                                                                                                                      *
+*    _CODE_SPI_SEC(CODE)                                 204D84              204EA5              122                                                                                                                                                                                                      *
 *    _DATA_SPI_SEC(DATA)                                 ----                ----                ----                                                                                                                                                                                                     *
 *    TEXT                                                ----                ----                ----                                                                                                                                                                                                     *
 *    IRAM                                                ----                ----                ----                                                                                                                                                                                                     *
@@ -578,10 +576,10 @@ __RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3
 *    ORAM_BANK0                                          ----                ----                ----                                                                                                                                                                                                     *
 * "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Algorithm.obj"                                                                                                                                                                                                                                *
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
-*    _CODE_SPI_SEC(CODE)                                 205D25              208272              254E                                                                                                                                                                                                     *
+*    _CODE_SPI_SEC(CODE)                                 205D25              208287              2563                                                                                                                                                                                                     *
 *    _DATA_SPI_SEC(DATA)                                 ----                ----                ----                                                                                                                                                                                                     *
 *    TEXT                                                ----                ----                ----                                                                                                                                                                                                     *
-*    IRAM                                                20350D(5FB)         203609(6F7)         FD                                                                                                                                                                                                       *
+*    IRAM                                                20350D(5FB)         203607(6F5)         FB                                                                                                                                                                                                       *
 *    ISRAM                                               ----                ----                ----                                                                                                                                                                                                     *
 *    RAM                                                 ----                ----                ----                                                                                                                                                                                                     *
 *    SRAM                                                ----                ----                ----                                                                                                                                                                                                     *
@@ -641,7 +639,7 @@ __RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3
 *    ORAM_BANK0                                          ----                ----                ----                                                                                                                                                                                                     *
 * "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Sleep.obj"                                                                                                                                                                                                                                    *
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
-*    _CODE_SPI_SEC(CODE)                                 204CC9              204D81              B9                                                                                                                                                                                                       *
+*    _CODE_SPI_SEC(CODE)                                 204CCB              204D83              B9                                                                                                                                                                                                       *
 *    _DATA_SPI_SEC(DATA)                                 ----                ----                ----                                                                                                                                                                                                     *
 *    TEXT                                                ----                ----                ----                                                                                                                                                                                                     *
 *    IRAM                                                ----                ----                ----                                                                                                                                                                                                     *
@@ -768,7 +766,7 @@ __RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3
 *    SPIFC_RAMCode_SEC(CODE)                             205300(10)          205620(330)         321                                                                                                                                                                                                      *
 * "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"                                                                                                                                                                                                                               *
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
-*    _CODE_SPI_IN_FOLDER_SEC_CTS(CODE)                   2037E9              2038FD              115                                                                                                                                                                                                      *
+*    _CODE_SPI_IN_FOLDER_SEC_CTS(CODE)                   2037E7              2038FB              115                                                                                                                                                                                                      *
 *    _DATA_SPI_IN_FOLDER_SEC_CTS(DATA)                   ----                ----                ----                                                                                                                                                                                                     *
 *    TEXT                                                ----                ----                ----                                                                                                                                                                                                     *
 *    IRAM                                                ----                ----                ----                                                                                                                                                                                                     *
@@ -789,7 +787,7 @@ __RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3
 *    ORAM_BANK0                                          ----                ----                ----                                                                                                                                                                                                     *
 * "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"                                                                                                                                                                                                                                 *
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
-*    _CODE_SPI_IN_FOLDER_SEC_CTS(CODE)                   20395B              2039AE              54                                                                                                                                                                                                       *
+*    _CODE_SPI_IN_FOLDER_SEC_CTS(CODE)                   203959              2039AC              54                                                                                                                                                                                                       *
 *    _DATA_SPI_IN_FOLDER_SEC_CTS(DATA)                   ----                ----                ----                                                                                                                                                                                                     *
 *    TEXT                                                ----                ----                ----                                                                                                                                                                                                     *
 *    IRAM                                                2034FB(5E9)         2034FC(5EA)         2                                                                                                                                                                                                        *
@@ -810,11 +808,11 @@ __RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3
 *    ORAM_BANK0                                          ----                ----                ----                                                                                                                                                                                                     *
 * "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\RomCodeOBJ_GPCE1_CE3.obj"                                                                                                                                                                                                                     *
 *    ROMCODE_SPI_Data(CODE)                              201940              2034DA              1B9B                                                                                                                                                                                                     *
-* "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V08_bin.res"                                                                                                                                                                                                                          *
-*    __sn_section_RES_ROM_ZMM_V08_BIN(DATA)              208273              2C0DC9              B8B57                                                                                                                                                                                                    *
+* "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V09_pro_bin.res"                                                                                                                                                                                                                      *
+*    __sn_section_RES_ROM_ZMM_V09_PRO_BIN(DATA)          208288              2C0B24              B889D                                                                                                                                                                                                    *
 * "D:\SVN_Local\library\16-bit\HW Capacitive Touch Sensor\Source Code\LibMaker\V1.1.0\CTS_Sensor" "CTS_V1.1.0.lib"
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
-*    CODE                                                20360A              2037E8              1DF                                                                                                                                                                                                      *
+*    CODE                                                203608              2037E6              1DF                                                                                                                                                                                                      *
 *    DATA                                                ----                ----                ----                                                                                                                                                                                                     *
 *    TEXT                                                ----                ----                ----                                                                                                                                                                                                     *
 *    IRAM                                                2034FA(5E8)         2034FA(5E8)         1                                                                                                                                                                                                        *
@@ -837,7 +835,7 @@ __RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3
 *    CTS_ISR_Service_ROMBLOCK(CODE)                      201800              201868              69                                                                                                                                                                                                       *
 * "modu1" "CMacro1232.lib"                                                                                                                                                                                                                                                                                *
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
-*    CODE                                                2038FE              20395A              5D                                                                                                                                                                                                       *
+*    CODE                                                2038FC              203958              5D                                                                                                                                                                                                       *
 *    DATA                                                ----                ----                ----                                                                                                                                                                                                     *
 *    TEXT                                                ----                ----                ----                                                                                                                                                                                                     *
 *    IRAM                                                ----                ----                ----                                                                                                                                                                                                     *
@@ -970,9 +968,9 @@ __RES_ROM_ZMM_V08_BIN_ea                                 2C0DCA    "D:\Prj_GPCE3
 *     Type                          Total               Using        Remain                                                                                                                                                                                                                               *
 ***********************************************************************************************************************************************************************************************************************************************************************************************************
 * "SRam/OSRam/ISRam"                40                   30           10                                                                                                                                                                                                                                  *
-* "Ram"                             BF0                  6E8          508                                                                                                                                                                                                                                 *
+* "Ram"                             BF0                  6E6          50A                                                                                                                                                                                                                                 *
 * "First Bank Rom"                  0                    0            0                                                                                                                                                                                                                                   *
-* "Other Banks Rom"                 FFE800               BE70A        F400F6                                                                                                                                                                                                                              *
+* "Other Banks Rom"                 FFE800               BE468        F40398                                                                                                                                                                                                                              *
 ***********************************************************************************************************************************************************************************************************************************************************************************************************
 
 Linker Output Filename : D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo.TSK
@@ -982,4 +980,4 @@ Format :                 Microtek
 
 Linker Errors :          0
 Output Format :          TSK
-Max Used Address :       0x2C0DC9
+Max Used Address :       0x2C0B24

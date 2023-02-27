@@ -23,7 +23,7 @@ Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\SPI_Flash_CE3.obj
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\RomCodeOBJ_GPCE1_CE3.obj"
-Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V08_bin.res"
+Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V09_pro_bin.res"
 Lib: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\.\CTS\CTS_V1.1.0.lib"
 Lib: "C:\Program Files (x86)\Generalplus\unSPIDE 3.0.16.1\library\CMacro\CMacro1232.lib"
 Output: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo.TSK"
@@ -145,17 +145,17 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: NB_DATA in "Algorithm.obj" with 0 
 ;Locate: NB_DATA in "AntiCrack.obj" at 201928 
 ;Align: NB_DATA in "AntiCrack.obj" with 0 
-;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" at 2037E9 
+;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" at 2037E7 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" with 0 
-;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 20395B 
+;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 203959 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" with 0 
-;Locate: __sn_section_RES_ROM_ZMM_V08_BIN in "Rom_ZMM_V08_bin.res" at 208273 
-;Align: __sn_section_RES_ROM_ZMM_V08_BIN in "Rom_ZMM_V08_bin.res" with 0 
-;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 20360A 
+;Locate: __sn_section_RES_ROM_ZMM_V09_PRO_BIN in "Rom_ZMM_V09_pro_bin.res" at 208288 
+;Align: __sn_section_RES_ROM_ZMM_V09_PRO_BIN in "Rom_ZMM_V09_pro_bin.res" with 0 
+;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 203608 
 ;Align: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
 ;Locate: CTS_ISR_Service_ROMBLOCK in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 201800 
 ;Align: CTS_ISR_Service_ROMBLOCK in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
-;Locate: CODE in "modu1" of "CMacro1232.lib"  at 2038FE 
+;Locate: CODE in "modu1" of "CMacro1232.lib"  at 2038FC 
 ;Align: CODE in "modu1" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "__clz16" of "CMacro1232.lib"  at 201869 
 ;Align: CODE in "__clz16" of "CMacro1232.lib"  with 0 
@@ -197,11 +197,11 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: _CODE_SPI_SEC in "LED.obj" with 0 
 ;Locate: _CODE_SPI_SEC in "isr.obj" at 204C17 
 ;Align: _CODE_SPI_SEC in "isr.obj" with 0 
-;Locate: _CODE_SPI_SEC in "Sleep.obj" at 204CC9 
+;Locate: _CODE_SPI_SEC in "Sleep.obj" at 204CCB 
 ;Align: _CODE_SPI_SEC in "Sleep.obj" with 0 
-;Locate: _CODE_SPI_SEC in "System_2.obj" at 204D82 
+;Locate: _CODE_SPI_SEC in "System_2.obj" at 204D84 
 ;Align: _CODE_SPI_SEC in "System_2.obj" with 0 
-;Locate: _CODE_SPI_SEC in "system.obj" at 204EA4 
+;Locate: _CODE_SPI_SEC in "system.obj" at 204EA6 
 ;Align: _CODE_SPI_SEC in "system.obj" with 0 
 ;Locate: _CODE_SPI_SEC in "main.obj" at 205621 
 ;Align: _CODE_SPI_SEC in "main.obj" with 0 
