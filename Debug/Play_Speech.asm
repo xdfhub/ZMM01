@@ -698,7 +698,7 @@ L_2_1:	// 0x12d
 LM43:
 	     .stabn 68,0,321,LM43-_Volume
 	     SP = SP - 1              	// [0:321]  
-	     R3 = 255                 	// [1:321]  
+	     R3 = 262                 	// [1:321]  
 	     R4 = SP + 1              	// [3:321]  
 	     [R4] = R3                	// [5:321]  
 	     call _PlayA1800_Elements 	// [7:321]  PlayA1800_Elements
@@ -1110,14 +1110,14 @@ L_3_6:	// 0x1e3
 // 476  
 // 477  
 // 478  										
-// 479  										if(TimeCnt>180*16)
+// 479  										if(TimeCnt>300*16)
 
 LM82:
 	     .stabn 68,0,479,LM82-_Pause_Process
 	     DS = seg(_TimeCnt)       	// [0:479]  TimeCnt
 	     R4 = (_TimeCnt)          	// [1:479]  TimeCnt
 	     R4 = DS:[R4]             	// [3:479]  
-	     cmp R4, 2880             	// [5:479]  
+	     cmp R4, 4800             	// [5:479]  
 	     jbe L_3_12               	// [7:479]  
 BB20_PU3:	// 0x1ea
 // BB:20 cycle count: 15
@@ -2242,7 +2242,7 @@ LM178:
 	     DS = seg(_Player_Activing_Cnt)	// [1:984]  Player_Activing_Cnt
 	     R4 = (_Player_Activing_Cnt)	// [2:984]  Player_Activing_Cnt
 	     R4 = DS:[R4]             	// [4:984]  
-	     R4 = R4 + 34             	// [6:984]  
+	     R4 = R4 + 43             	// [6:984]  
 	     R3 = SP + 1              	// [7:984]  
 	     [R3] = R4                	// [9:984]  
 	     call _PlayA1800_Elements 	// [11:984]  PlayA1800_Elements
@@ -2318,303 +2318,6 @@ LBE6:
 	     .stabn 224,0,0,LBE6-_Play_Seq
 LME7:
 	     .stabf LME7-_Play_Seq
-.code
-	     .stabs "PlayA1800_Question:F18",36,0,0,_PlayA1800_Question
-
-	// Program Unit: PlayA1800_Question
-.public	_PlayA1800_Question
-_PlayA1800_Question: .proc	
-	     .stabn 0xa6,0,0,5
-	// Addr_temp = 1
-	// i = 0
-	// temp1 = 4
-	// temp2 = 3
-	// old_frame_pointer = 5
-	// return_address = 6
-//1073  //***********************************************************************
-//1074  //return:KeyOFF
-//1075  //***********************************************************************/
-//1076  void PlayA1800_Question(unsigned lQuestionIdx)
-//1077  {
-
-LM185:
-	     .stabn 68,0,1077,LM185-_PlayA1800_Question
-BB1_PU7:	// 0x3c4
-// BB:1 cycle count: 10
-	     push BP to [SP]          	// [0:1077]  
-	     SP = SP - 5              	// [2:1077]  
-	     BP = SP + 1              	// [3:1077]  
-LBB7:
-//1078  
-//1079  	unsigned long Addr_temp;
-//1080  	unsigned i=0;
-
-LM186:
-	     .stabn 68,0,1080,LM186-_PlayA1800_Question
-	     R4 = 0                   	// [5:1080]  
-	     [BP + 0] = R4            	// [6:1080]  i
-//1081  	unsigned temp1,temp2;
-//1082  //	unsigned Temp_Can,Temp_Does,Temp_Is,Temp_Repeat;
-//1083  //	BSR_StopRecognizer();
-//1084      SACM_A1800_Initial();
-
-LM187:
-	     .stabn 68,0,1084,LM187-_PlayA1800_Question
-	     call _SACM_A1800_Initial 	// [7:1084]  SACM_A1800_Initial
-BB2_PU7:	// 0x3cc
-// BB:2 cycle count: 15
-//1085      A1800_Flag = 1;
-
-LM188:
-	     .stabn 68,0,1085,LM188-_PlayA1800_Question
-	     R3 = 1                   	// [0:1085]  
-	     DS = seg(_A1800_Flag)    	// [1:1085]  A1800_Flag
-	     R4 = (_A1800_Flag)       	// [2:1085]  A1800_Flag
-	     DS:[R4] = R3             	// [4:1085]  
-//1087    // Led_SP_On();
-//1088  
-//1089   //	LED_Ser_Init();
-//1090  
-//1091     	Addr_temp = lQuestionIdx * 20 + C_TableQuetionAddr;
-
-LM189:
-	     .stabn 68,0,1091,LM189-_PlayA1800_Question
-	     R4 = [BP + 8]            	// [6:1091]  lQuestionIdx
-	     R4 = R4 lsl 2            	// [8:1091]  
-	     R4 = R4 + R4 lsl 2       	// [9:1091]  
-	     R4 = R4 + 900            	// [10:1091]  
-	     R3 = 0                   	// [12:1091]  
-	     [BP + 1] = R4            	// [13:1091]  Addr_temp
-	     [BP + 2] = R3            	// [14:1091]  Addr_temp+1
-L_7_14:	// 0x3d9
-// BB:3 cycle count: 7
-//1092  	while(i<5)
-
-LM190:
-	     .stabn 68,0,1092,LM190-_PlayA1800_Question
-	     R4 = [BP + 0]            	// [0:1092]  i
-	     cmp R4, 4                	// [2:1092]  
-	     jbe BB4_PU7              	// [3:1092]  
-BB20_PU7:	// 0x3dc
-// BB:20 cycle count: 3
-	     goto L_7_15              	// [0:0]  
-BB4_PU7:	// 0x3de
-// BB:4 cycle count: 10
-//1093  	{
-//1094  		
-//1095       if(Sleepflag) 
-
-LM191:
-	     .stabn 68,0,1095,LM191-_PlayA1800_Question
-	     DS = seg(_Sleepflag)     	// [0:1095]  Sleepflag
-	     R4 = (_Sleepflag)        	// [1:1095]  Sleepflag
-	     R4 = DS:[R4]             	// [3:1095]  
-	     cmp R4, 0                	// [5:1095]  
-	     je L_7_16                	// [6:1095]  
-BB5_PU7:	// 0x3e4
-// BB:5 cycle count: 6
-//1096          return ;
-
-LM192:
-	     .stabn 68,0,1096,LM192-_PlayA1800_Question
-	     SP = SP + 5              	// [0:1096]  
-	     pop BP, PC from [SP]     	// [1:1096]  
-L_7_16:	// 0x3e6
-// BB:6 cycle count: 10
-//1097  		
-//1098  		if(CheaterFlag)
-
-LM193:
-	     .stabn 68,0,1098,LM193-_PlayA1800_Question
-	     DS = seg(_CheaterFlag)   	// [0:1098]  CheaterFlag
-	     R4 = (_CheaterFlag)      	// [1:1098]  CheaterFlag
-	     R4 = DS:[R4]             	// [3:1098]  
-	     cmp R4, 0                	// [5:1098]  
-	     je L_7_17                	// [6:1098]  
-BB7_PU7:	// 0x3ec
-// BB:7 cycle count: 6
-//1099  			return;
-
-LM194:
-	     .stabn 68,0,1099,LM194-_PlayA1800_Question
-	     SP = SP + 5              	// [0:1099]  
-	     pop BP, PC from [SP]     	// [1:1099]  
-L_7_17:	// 0x3ee
-// BB:8 cycle count: 10
-//1100  		
-//1101  		if(Key_Event)
-
-LM195:
-	     .stabn 68,0,1101,LM195-_PlayA1800_Question
-	     DS = seg(_Key_Event)     	// [0:1101]  Key_Event
-	     R4 = (_Key_Event)        	// [1:1101]  Key_Event
-	     R4 = DS:[R4]             	// [3:1101]  
-	     cmp R4, 0                	// [5:1101]  
-	     je L_7_18                	// [6:1101]  
-BB9_PU7:	// 0x3f4
-// BB:9 cycle count: 6
-//1102        	     return;
-
-LM196:
-	     .stabn 68,0,1102,LM196-_PlayA1800_Question
-	     SP = SP + 5              	// [0:1102]  
-	     pop BP, PC from [SP]     	// [1:1102]  
-L_7_18:	// 0x3f6
-// BB:10 cycle count: 10
-//1103  
-//1104  		if(PauseFlag)
-
-LM197:
-	     .stabn 68,0,1104,LM197-_PlayA1800_Question
-	     DS = seg(_PauseFlag)     	// [0:1104]  PauseFlag
-	     R4 = (_PauseFlag)        	// [1:1104]  PauseFlag
-	     R4 = DS:[R4]             	// [3:1104]  
-	     cmp R4, 0                	// [5:1104]  
-	     je L_7_19                	// [6:1104]  
-BB11_PU7:	// 0x3fc
-// BB:11 cycle count: 6
-//1105  			return;
-
-LM198:
-	     .stabn 68,0,1105,LM198-_PlayA1800_Question
-	     SP = SP + 5              	// [0:1105]  
-	     pop BP, PC from [SP]     	// [1:1105]  
-L_7_19:	// 0x3fe
-// BB:12 cycle count: 14
-//1109  			 	 return;
-//1110  		#endif
-//1111  		
-//1112  			
-//1113  	   temp2 = SPI_ReadAWord_Big(Addr_temp); //how many speech
-
-LM199:
-	     .stabn 68,0,1113,LM199-_PlayA1800_Question
-	     SP = SP - 2              	// [0:1113]  
-	     R2 = [BP + 1]            	// [1:1113]  Addr_temp
-	     R3 = [BP + 2]            	// [3:1113]  Addr_temp+1
-	     R4 = SP + 1              	// [5:1113]  
-	     [R4++] = R2              	// [7:1113]  
-	     [R4] = R3                	// [9:1113]  
-	     call _SPI_ReadAWord_Big  	// [11:1113]  SPI_ReadAWord_Big
-BB13_PU7:	// 0x407
-// BB:13 cycle count: 10
-	     SP = SP + 2              	// [0:1113]  
-	     [BP + 3] = R1            	// [1:1113]  temp2
-//1114  	   
-//1115  	   if(temp2 ==9999)
-
-LM200:
-	     .stabn 68,0,1115,LM200-_PlayA1800_Question
-	     R4 = [BP + 3]            	// [2:1115]  temp2
-	     cmp R4, 9999             	// [4:1115]  
-	     jne L_7_20               	// [6:1115]  
-BB14_PU7:	// 0x40d
-// BB:14 cycle count: 4
-//1116  	   	    break;
-
-LM201:
-	     .stabn 68,0,1116,LM201-_PlayA1800_Question
-	     jmp Lt_7_1               	// [0:1116]  
-L_7_20:	// 0x40e
-// BB:15 cycle count: 16
-//1117  
-//1118  		  temp1 = SPI_ReadAWord_Big(Addr_temp+2);  //start index
-
-LM202:
-	     .stabn 68,0,1118,LM202-_PlayA1800_Question
-	     SP = SP - 2              	// [0:1118]  
-	     R3 = [BP + 1]            	// [1:1118]  Addr_temp
-	     R4 = [BP + 2]            	// [3:1118]  Addr_temp+1
-	     R3 = R3 + 2              	// [5:1118]  
-	     R4 = R4 + 0, Carry       	// [6:1118]  
-	     R2 = SP + 1              	// [7:1118]  
-	     [R2++] = R3              	// [9:1118]  
-	     [R2] = R4                	// [11:1118]  
-	     call _SPI_ReadAWord_Big  	// [13:1118]  SPI_ReadAWord_Big
-BB16_PU7:	// 0x419
-// BB:16 cycle count: 16
-	     SP = SP + 2              	// [0:1118]  
-	     [BP + 4] = R1            	// [1:1118]  temp1
-//1119  
-//1120  
-//1121  		 temp2 = *P_TimerB_CNTR % temp2;
-
-LM203:
-	     .stabn 68,0,1121,LM203-_PlayA1800_Question
-	     R3 = 12307               	// [2:1121]  
-	     R4 = 0                   	// [4:1121]  
-	     DS = R4                  	// [5:1121]  
-	     R3 = DS:[R3]             	// [6:1121]  
-	     R4 = [BP + 3]            	// [8:1121]  temp2
-	     push R4, R3 to [SP]      	// [10:1121]  
-	     call __modu1             	// [13:1121]  _modu1
-BB17_PU7:	// 0x424
-// BB:17 cycle count: 16
-	     SP = SP + 1              	// [0:0]  
-	     [BP + 3] = R1            	// [1:0]  temp2
-//1122  
-//1123  
-//1124  
-//1125  	    temp1+= temp2;
-
-LM204:
-	     .stabn 68,0,1125,LM204-_PlayA1800_Question
-	     R4 = [BP + 4]            	// [2:1125]  temp1
-	     R4 = R4 + [BP + 3]       	// [4:1125]  temp2
-	     [BP + 4] = R4            	// [6:1125]  temp1
-//1126  	    
-//1127  	    PlayA1800_Elements(temp1);
-
-LM205:
-	     .stabn 68,0,1127,LM205-_PlayA1800_Question
-	     R3 = [BP + 4]            	// [7:1127]  temp1
-	     R4 = SP + 1              	// [9:1127]  
-	     [R4] = R3                	// [11:1127]  
-	     call _PlayA1800_Elements 	// [13:1127]  PlayA1800_Elements
-BB18_PU7:	// 0x42f
-// BB:18 cycle count: 16
-	     SP = SP + 1              	// [0:1127]  
-//1128  				    
-//1129  
-//1130  		Addr_temp+=4;
-
-LM206:
-	     .stabn 68,0,1130,LM206-_PlayA1800_Question
-	     R3 = [BP + 1]            	// [1:1130]  Addr_temp
-	     R4 = [BP + 2]            	// [3:1130]  Addr_temp+1
-	     R3 = R3 + 4              	// [5:1130]  
-	     R4 = R4 + 0, Carry       	// [6:1130]  
-	     [BP + 1] = R3            	// [7:1130]  Addr_temp
-	     [BP + 2] = R4            	// [8:1130]  Addr_temp+1
-//1131  		i++;
-
-LM207:
-	     .stabn 68,0,1131,LM207-_PlayA1800_Question
-	     R4 = [BP + 0]            	// [9:1131]  i
-	     R4 = R4 + 1              	// [11:1131]  
-	     [BP + 0] = R4            	// [12:1131]  i
-	     goto L_7_14              	// [13:1131]  
-L_7_15:	// 0x43b
-Lt_7_1:	// 0x43b
-// BB:19 cycle count: 6
-//1132  	 
-//1133  	}	
-
-LM208:
-	     .stabn 68,0,1133,LM208-_PlayA1800_Question
-	     SP = SP + 5              	// [0:1133]  
-	     pop BP, PC from [SP]     	// [1:1133]  
-LBE7:
-	.endp	
-	     .stabs "lQuestionIdx:p4",160,0,0,8
-	     .stabn 192,0,0,LBB7-_PlayA1800_Question
-	     .stabs "Addr_temp:5",128,0,0,1
-	     .stabs "i:4",128,0,0,0
-	     .stabs "temp1:4",128,0,0,4
-	     .stabs "temp2:4",128,0,0,3
-	     .stabn 224,0,0,LBE7-_PlayA1800_Question
-LME8:
-	     .stabf LME8-_PlayA1800_Question
 .external _SPI_ReadAWord_Big
 .external _OtherSph_Random_Value
 .external _Get_Registered_Player_Num

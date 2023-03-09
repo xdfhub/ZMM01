@@ -470,7 +470,7 @@ L_0_50:	// 0xc1
 LM36:
 	     .stabn 68,0,780,LM36-_Test_Assembly
 	     SP = SP - 1              	// [0:780]  
-	     R3 = 245                 	// [1:780]  
+	     R3 = 252                 	// [1:780]  
 	     R4 = SP + 1              	// [3:780]  
 	     [R4] = R3                	// [5:780]  
 	     call _PlayA1800_Elements 	// [7:780]  PlayA1800_Elements
@@ -815,7 +815,7 @@ _gTemp:	// 0x6
 	     .stabs "gVolume:G4",32,0,0,_gVolume
 .public	_gVolume
 _gVolume:	// 0x7
-	.dw	10
+	.dw	8
 	// end of initialization for gVolume
 	     .stabs "Key_Debounce:G4",32,0,0,_Key_Debounce
 .public	_Key_Debounce
@@ -937,11 +937,11 @@ LM70:
 // 906  
 // 907  //      Qn_Cnt_PowerON =0;
 // 908        
-// 909    		gVolume = 10;//SPI_ReadAByte(24);
+// 909    		gVolume = 8;//SPI_ReadAByte(24);
 
 LM71:
 	     .stabn 68,0,909,LM71-_main
-	     R3 = 10                  	// [6:909]  
+	     R3 = 8                   	// [6:909]  
 	     DS = seg(_gVolume)       	// [7:909]  gVolume
 	     R4 = (_gVolume)          	// [8:909]  gVolume
 	     DS:[R4] = R3             	// [10:909]  

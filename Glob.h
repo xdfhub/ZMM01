@@ -161,14 +161,14 @@
 
 //Table Addr in SPI Flash 
 
-#define C_TableQuetionAddr				900
-#define C_TableQ_Answer_StartAddr      24900
-
-#define C_TableQ_Miroir_StartAddr      28000
-#define C_TableSwitchStartAddr         29300
-
-#define C_TableDiffiStartAddr          32000
-#define C_TableMoviesStartAddr         34000
+//#define C_TableQuetionAddr				900
+//#define C_TableQ_Answer_StartAddr      24900
+//
+//#define C_TableQ_Miroir_StartAddr      28000
+//#define C_TableSwitchStartAddr         29300
+//
+//#define C_TableDiffiStartAddr          32000
+//#define C_TableMoviesStartAddr         34000
 
 
 
@@ -186,8 +186,9 @@
 #define C_TooLateTable                  12500
 #define C_TooLateSoloTable              13000
 #define C_RoundsTable                   13050
+#define C_WinnerTable                   13550
 
-#define C_TableSpeechAddr				0x10000L //同时也在A1800_User.asm中定义  及与Tab_blank相关
+//#define C_TableSpeechAddr				0x10000L //同时也在A1800_User.asm中定义  及与Tab_blank相关
 
 
 //algorithm control
@@ -266,9 +267,12 @@
 
 
 //event
-#define C_OneMoreTime 1
-#define C_TwoSounds 2
-#define C_chance    3
+#define C_OneMoreTime 0x01
+#define C_TwoSounds   0x02
+#define C_LessTime    0x04
+#define C_chance      0x08
+
+#define Event_All  0x07
 
 
 

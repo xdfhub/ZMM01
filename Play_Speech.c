@@ -476,7 +476,7 @@ unsigned int Pause_Process()
 
 
 										
-										if(TimeCnt>180*16)
+										if(TimeCnt>300*16)
 										{
 											Key_TrueFlase_Buffer =0;
 											TimeCnt =0;
@@ -1072,7 +1072,7 @@ void PlayA1800_SFX(unsigned SpeechIndex)
 
 //***********************************************************************
 //return:KeyOFF
-//***********************************************************************/
+//***********************************************************************
 void PlayA1800_Question(unsigned lQuestionIdx)
 {
 

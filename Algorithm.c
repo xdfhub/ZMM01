@@ -34,10 +34,10 @@ unsigned int LastCategory_Series[C_RoundNum]={0,0,0,0,0,0,0,0,0,0,0,0};//Memory
  
 unsigned int Round =0;
 
-unsigned int Player_Activing_Bit =0;//
+//unsigned int Player_Activing_Bit =0;//
 unsigned int Player_Activing_Cnt =0;//CurrentP 
 
-unsigned int Player_Activing_Bit_sec =0;
+//unsigned int Player_Activing_Bit_sec =0;
 
 //unsigned LQ=0;
 unsigned LQA=0;
@@ -82,7 +82,7 @@ unsigned int Pselected[C_ElementsRAM]={0};
 
 //unsigned VAL_LowestIndex[100];			//temp RAM for Rate(Ex) and VAL(Qx)
 unsigned R_QuestionNum = 0;
-//
+unsigned int  timeout_t =0;
 //unsigned int Question_Asked_Round1[14]={0};
 
 
@@ -158,25 +158,20 @@ unsigned int Eventflag =0;
 //unsigned int Series_eventsolo=0;
 //unsigned int Series_Team =0;
 
-unsigned int Leader_Player=0;
-unsigned int Lowest_Player =0;
-
+//unsigned int Leader_Player=0;
+//unsigned int Lowest_Player =0;
 
 //unsigned int Leader_Player_pre=0;
 
-//unsigned int Special_temp =0;
-//unsigned int L14flag =0;
-
-//unsigned int QnAfter_Event5 =0;
 
 
-int Higgest_T =0;
-int Lowest_T =0;
-
+//int Higgest_T =0;
+//int Lowest_T =0;
+unsigned int Ssn =0;
 //unsigned int AnswerDuringQue =0;
 
 //unsigned int Key_Buffer =0;
-unsigned int Cycle_Timeout_cnt=0;
+//unsigned int Cycle_Timeout_cnt=0;
 
 unsigned int Key_TrueFlase_Buffer =0;
 
@@ -252,8 +247,9 @@ unsigned int LFX_Data_Cnt =0;
 unsigned int NextCnt =0;
 unsigned int TooLate_Cnt =0;
 unsigned int TooLatesolo_Cnt =0;
+//unsigned int Sere_Winnercnt=0;
 
-unsigned int Rec[2] ={0,0};//0:solo 1:multi
+unsigned int Rec[3] ={0,0};//0:solo 1:multi,2:Serie winner
 
 
 unsigned int R_E =0;
@@ -477,12 +473,12 @@ unsigned delay_time(unsigned int);
 //}
 
 
-unsigned  Get_Question_Answer(unsigned lQuestionIdx)
-{
-	unsigned long Addr;
-	Addr = lQuestionIdx + C_TableQ_Answer_StartAddr;
-	return SPI_ReadAByte(Addr);
-}
+//unsigned  Get_Question_Answer(unsigned lQuestionIdx)
+//{
+//	unsigned long Addr;
+//	Addr = lQuestionIdx + C_TableQ_Answer_StartAddr;
+//	return SPI_ReadAByte(Addr);
+//}
 
 //unsigned  Get_Question_Mode(unsigned lQuestionIdx)
 //{
@@ -531,28 +527,28 @@ unsigned GetQuality(unsigned lQuestionIdx)
 
 
 
-unsigned GetSwitch(unsigned lQuestionIdx)
-{
-	unsigned long Addr;
-	Addr = lQuestionIdx + C_TableSwitchStartAddr;
-	return SPI_ReadAByte(Addr);
-}
+//unsigned GetSwitch(unsigned lQuestionIdx)
+//{
+//	unsigned long Addr;
+//	Addr = lQuestionIdx + C_TableSwitchStartAddr;
+//	return SPI_ReadAByte(Addr);
+//}
 
-unsigned GetDifficulty(unsigned lQuestionIdx)
-{
-	unsigned long Addr;
-	Addr = lQuestionIdx + C_TableDiffiStartAddr;
-	return SPI_ReadAByte(Addr);
-}
+//unsigned GetDifficulty(unsigned lQuestionIdx)
+//{
+//	unsigned long Addr;
+//	Addr = lQuestionIdx + C_TableDiffiStartAddr;
+//	return SPI_ReadAByte(Addr);
+//}
 
 
 
-unsigned GetMovies(unsigned lQuestionIdx)
-{
-	unsigned long Addr;
-	Addr = lQuestionIdx + C_TableMoviesStartAddr;
-	return SPI_ReadAByte(Addr);
-}
+//unsigned GetMovies(unsigned lQuestionIdx)
+//{
+//	unsigned long Addr;
+//	Addr = lQuestionIdx + C_TableMoviesStartAddr;
+//	return SPI_ReadAByte(Addr);
+//}
 
 
 //unsigned GetElementsType(unsigned ElementsIdx)
@@ -944,18 +940,18 @@ void Demo()
 	     LFXFlag_Data =0x01;
 
 		
-		PlayA1800_Elements(A_VLMMREN_TryMe01);
+//		PlayA1800_Elements(A_VLMMREN_TryMe01);
         PlayA1800_Elements(A_VLMMREN_TryMe02);
         
         
          LFXFlag_Data=0;
 	     Light_all_off();
         
-        delay_time(8);
+        delay_time(4);
         
-       	PlayA1800_Elements(MMH05_BabyLaugh);
+       	PlayA1800_Elements(MMH01_Applause_TryMe);
         Led_ON_Some(LED1_BIT);
-        PlayA1800_Elements(A_VLMMREN_Rule_07);
+        PlayA1800_Elements(A_VLMMREN_Rule_07b);
 		Light_all_off();
 		
         delay_time(8);
@@ -976,7 +972,7 @@ void Demo()
 		
 		PlayA1800_Elements(MMM07_Banjo);
         Led_ON_Some(LED2_BIT);
-        PlayA1800_Elements(A_VLMMREN_Rule_06);
+        PlayA1800_Elements(A_VLMMREN_Rule_06b);
 		Light_all_off();	
 
        delay_time(8);
@@ -988,14 +984,17 @@ void Demo()
 //		Light_all_off();		
 //		delay_time(8);
 
-        PlayA1800_Elements(A_VLMMREN_TryMe03);
-        delay_time(8);
+
         
          LFX_Data_Cnt =0;
 		 LED_Cnt =0;
 	     LFXFlag_Data =0x01;
         
-        PlayA1800_Elements(A_VLMMREN_TryMe01);
+        
+         PlayA1800_Elements(A_VLMMREN_TryMe03);
+         delay_time(8);       
+        
+//        PlayA1800_Elements(A_VLMMREN_TryMe01);
         PlayA1800_Elements(A_VLMMREN_TryMe04);
         
         LFXFlag_Data=0;
@@ -1297,7 +1296,7 @@ unsigned Select_Pingamerandom()
 
 
 /*********************************************************************
-************************************************************************/
+************************************************************************
 void Supress_Question_Switch()
 {
 //	unsigned temp;
@@ -1522,6 +1521,70 @@ void Supress_Question_Category(unsigned int category)
 	     i++;	 
 		 
 	}	
+	
+}
+/*********************************************************************
+************************************************************************/
+void Supress_Question_BigThanQuality(unsigned int quality)
+{
+	//unsigned temp;
+	unsigned i = 0;
+	
+	
+
+	
+	while(i<R_QuestionNum)
+	{
+	 	WatchdogClear();
+
+       if(BitMap[i%16]&QuestionStatus_LQA[i/16])
+       {
+			 
+			 	if((GetQuality(i) >  quality))
+			 	{
+			 		QuestionStatus_LQA[i/16] &=~BitMap[i%16];				
+				//	QuestionStatus_Asked[i/16]&=~BitMap[i%16];//| xiang 20160330
+			 		
+			 	}
+	
+       }
+	 
+	     i++;	 
+		 
+	}	
+	
+}
+/*********************************************************************
+************************************************************************/
+unsigned int  Check_Question_Quality(unsigned int quality)
+{
+	//unsigned temp;
+	unsigned i = 0;
+	
+	
+
+	
+	while(i<R_QuestionNum)
+	{
+	 	WatchdogClear();
+
+       if(BitMap[i%16]&QuestionStatus_LQA[i/16])
+       {
+			 
+			 	if((GetQuality(i) ==  quality))
+			 	{
+			 		return 1;			
+				//	QuestionStatus_Asked[i/16]&=~BitMap[i%16];//| xiang 20160330
+			 		
+			 	}
+	
+       }
+	 
+	     i++;	 
+		 
+	}	
+	
+	return 0;
 	
 }
 
@@ -2043,7 +2106,7 @@ unsigned int GameTimeout()
 						  
 						  PlayA1800_Elements(A_VLMMREN_Bye_01);
 
-					      delay_time(10*16);
+					      delay_time(20*16);
 	
                           if(Key_Event==0)
                           	{
@@ -2201,7 +2264,7 @@ unsigned  Select_Registered_Player_Random(unsigned int Index,unsigned register_s
 		 	if (j == Index) 
 		 	   {
 		 	   	//Player_Activing_Cnt = i;
-		 	    return i;//BitMap[i];//i;
+		 	    return i;//BitMap[i];//
 		 	    
 		 	   }
 		 	    j++;
@@ -3174,7 +3237,7 @@ unsigned int Get_All_SameNum( int *roundsORpoint,  int score,unsigned int Play_s
 }
 
 /*****************************************************
-*******************************************************/
+*******************************************************
 unsigned int Get_Num_Higgest_score( int *roundsORpoint, unsigned int Play_status )//unsigned int* BitTable
 {
 	unsigned i = 0;
@@ -3437,7 +3500,8 @@ void Add_ALL_InactivePlayer_Point(int point,unsigned int *roundORpint,unsigned i
  		
 
 }
-
+/********************************************************************
+*************************************************************************
 //=============================================
 void Sub_ALL_InactivePlayer_Point(int point,unsigned int Player_buffer)
 {
@@ -3833,7 +3897,7 @@ unsigned int  ShootOut(void)
 
 
 /***********************************************************
-*********************************************************/
+*********************************************************
 void Tell_Scores(unsigned int Final_Scorefalg)
 {
 
@@ -4382,6 +4446,8 @@ void Rest_Question_Asked()
 ************************************************************************/
 void Check_LQA(unsigned int suppressflag)
 {
+	unsigned int temp =0;
+	
 	
 	  if((Cn==2)||(suppressflag))
 	  	   Supress_Question_Category(Get_Question_Category(gQuestionIdx));
@@ -4389,6 +4455,20 @@ void Check_LQA(unsigned int suppressflag)
 	    Supress_Question_CategoryLast2Cat();
 	    Supress_Question_CategoryFirst4Cat();
 	    Supress_Question_CategoryLast8Cat();
+	    
+	    temp = Check_Question_Quality(1);
+	   
+	    if(Ssn<11)
+	    {
+	        
+	       if(temp == 1) 
+	           Supress_Question_BigThanQuality(1);
+	        else
+	           Supress_Question_BigThanQuality(2);  
+	        
+	        
+	    }
+	    
 		LQA = Get_LQA();
 		
 		if(LQA ==0)
@@ -4409,6 +4489,21 @@ void Check_LQA(unsigned int suppressflag)
 	            Supress_Question_CategoryLast2Cat();
 	            Supress_Question_CategoryFirst4Cat();
 	            Supress_Question_CategoryLast8Cat();
+	            
+			    temp = Check_Question_Quality(1);
+			   
+			    if(Cn<11)
+			    {
+			        
+			       if(temp == 1) 
+			           Supress_Question_BigThanQuality(1);
+			        else
+			           Supress_Question_BigThanQuality(2);  
+			        
+			        
+			    }
+	            
+	            
 	             
 	            if((Cn==2)||(suppressflag))
 	  	           Supress_Question_Category(Get_Question_Category(gQuestionIdx));
@@ -4426,9 +4521,28 @@ void Check_LQA(unsigned int suppressflag)
 						 Supress_Question_CategoryLast2Cat();
 						 Supress_Question_CategoryFirst4Cat();
 						 Supress_Question_CategoryLast8Cat();
+						
+					      temp = Check_Question_Quality(1);
+						   
+						    if(Cn<11)
+						    {
+						        
+						       if(temp == 1) 
+						           Supress_Question_BigThanQuality(1);
+						        else
+						           Supress_Question_BigThanQuality(2);  
+						        
+						        
+						    }
+						
 						 
 						if((Cn==2)||(suppressflag))
 	  	                    Supress_Question_Category(Get_Question_Category(gQuestionIdx));
+						 
+						 
+						 
+						 
+						 
 						 
 						  LQA = Get_LQA();
 	     
@@ -4475,7 +4589,7 @@ void Read_Flash()
      SPI_Flash_ReadNWords(QuestionStatus_LQ,C_QuestionRAM,T_LQ_Secter_L,T_LQ_Secter_H);
      SPI_Flash_ReadNWords(QuestionStatus_Asked,C_QuestionRAM,T_Asked_Secter_L,T_Asked_Secter_H);
      
-     SPI_Flash_ReadNWords(Rec,2,T_Record_Secter_L,T_Record_Secter_H); 
+     SPI_Flash_ReadNWords(Rec,3,T_Record_Secter_L,T_Record_Secter_H); 
      // Record=SPI_Flash_ReadAWord(T_Record_Secter_L,T_Record_Secter_H);
     
      __asm("INT FIQ,IRQ");
@@ -4486,6 +4600,9 @@ void Read_Flash()
       if(Rec[1] == 0xffff)
      	 Rec[1]=0;
 	
+	
+      if(Rec[2] == 0xffff)
+     	 Rec[2]=0;	
 }
 /*****************************************************
 ******************************************************
@@ -4955,7 +5072,7 @@ unsigned int Get_Key(Countdown_E)
    	
    	  WatchdogClear();
    	  
-   	  	if(Timeout_cnt>180*16)	
+   	  	if(Timeout_cnt>300*16)	
 		  {
 		  	  //Sleepflag =1;
 		  	  Timeout_cnt=0;
@@ -5090,7 +5207,7 @@ unsigned int Get_Key(Countdown_E)
 
           	  	Key =0;
           	  	
-		    Cycle_Timeout_cnt=0;   
+//		    Cycle_Timeout_cnt=0;   
 		    
          // if(Eventflag != E_Demo)
           	{
@@ -5539,17 +5656,17 @@ unsigned int Select_Round1()
 void Ask_Question()
 {
 //  unsigned int temp=0,i;
-     unsigned int key_activetemp = Key_activeflag;
+     //unsigned int key_activetemp = Key_activeflag;
      
      unsigned int temp_PlayQuestionflag=PlayQuestionflag;
      
      //PlayQuestionflag =1;
-    
+      Key_Event =0;
    do
 	{
 		    TwoKeyflag = Playbutton;
-			Key_Event =0;
-			Key_activeflag =0;		
+		//	Key_Event =0;
+		//	Key_activeflag =0;		
 			PauseFlag =0;
 
 		    //delay_time(8);
@@ -5573,8 +5690,8 @@ void Ask_Question()
 //     Question_Answer =0;
      SP_RampDnDAC1();
      
-     Key_Event =0;
-     Key_activeflag =  key_activetemp;
+   //  Key_Event =0;
+    // Key_activeflag =  key_activetemp;
 	
 //#ifdef C_PassEn
 //	if (testqueptr<80)
@@ -6076,7 +6193,7 @@ void NewgameInit()
 //	  unsigned int i;
 	  
 
-	    Player_Activing_Bit =0;
+//	    Player_Activing_Bit =0;
   
 
 //      for(i=0;i<6;i++)
@@ -6092,7 +6209,13 @@ void NewgameInit()
 void Ram_OnInit()
 {
 	   unsigned int i =0;
+	   
+	    Ssn=0;
 		Restart =0;
+		firstFlag_Bit =0;
+//		Ins1Said=0;
+//		Ins2Said=0;
+//		Ins3Said  =0;
 //		T1=0;
 //		T2=0;
 		
@@ -6113,6 +6236,9 @@ void Ram_OnInit()
 			i++;	
 					
 		} 
+	    
+	    
+	    
 	    
 	  
 	
@@ -6162,7 +6288,9 @@ unsigned  Step1()
     randomflag =0;
     Cn =0;
     Registerd_Num =0;
-    Player_Activing_Bit =0;//CurrentP
+
+    
+//    Player_Activing_Bit =0;//CurrentP
     Player_Activing_Cnt =0;
 //    Currentsound =0;
     CurrentRound  =1;
@@ -6186,7 +6314,8 @@ unsigned  Step1()
 
   
 //   OffSide_Askflag =0;
-	firstFlag_Bit =0;
+	firstFlag_Bit &=0x50F;//Ins1Said,Ins2Said,Ins3Said 
+	
 //	OFFsideFlag =0;
 //	HattickOrOffside_Flag =0;
 //	FreeKick_Flag = 0;
@@ -6211,8 +6340,8 @@ unsigned  Step1()
 
 	Sleepflag =0;
 	
-	Leader_Player =0;
-	Lowest_Player =0;
+//	Leader_Player =0;
+//	Lowest_Player =0;
 
 	Round =0;
 	
@@ -6226,7 +6355,7 @@ unsigned  Step1()
 
 
     CheaterFlag =0;
-	Player_Activing_Bit =0;
+//	Player_Activing_Bit =0;
   
    
         Questions_init();	
@@ -6346,7 +6475,7 @@ unsigned  Step1()
 	      	  
 	      	  
 	      	
-	      	      if(timeovercnt<9)
+	      	      if(timeovercnt<15)
 	      	      {
 			         PlayA1800_Elements(A_VLMMREN_SetUp_01alt);
 			         PlayA1800_Elements(A_VLMMREN_SetUp_01);
@@ -6519,7 +6648,7 @@ unsigned  Step1()
 						   
 						   timeovercnt1++;
 						   
-						   if(timeovercnt1>9)
+						   if(timeovercnt1>=15)
 							{
 						   
 									GameTimeout();	 
@@ -6570,7 +6699,7 @@ unsigned  Step1()
 
                       timeovercnt++;
 
-					  if(timeovercnt>8)
+					  if(timeovercnt>=15)
 					  	{
 
 	      	               GameTimeout();	
@@ -6734,7 +6863,7 @@ void Select_Sound()
         CatsRemain|=Get_LQA_Categorys(); 	
        
         gQuestionIdx= Select_Questionrandom_4(*P_TimerB_CNTR % LQA);
-        
+        Ssn++;
         temp_Category= Get_Question_Category(gQuestionIdx);
         
         if(Last2Catcnt)
@@ -6795,32 +6924,89 @@ void Select_Sound()
 void Events()
 {
 	
-	//if((*P_TimerB_CNTR % 6)<3)
-    // unsigned int E_now =0;
+	 unsigned evnets_temp=Event_All;
+	 unsigned int j;
+	 
 
-       if(LastE!=C_OneMoreTime)
-          R_E= C_OneMoreTime;
-	   else if((LastE!=C_TwoSounds))//(Registerd_Num ==1)||
-	   	{
-             R_E =C_TwoSounds;
-	   	}
-
-	   
-	    if((R_E!=C_OneMoreTime)&&(R_E!=C_TwoSounds))
-	    	{
-                     if((*P_TimerB_CNTR % 6)<3)
-					 	 R_E = C_OneMoreTime;
-					 else
-					 	R_E =C_TwoSounds;
-
-	    	}
+     evnets_temp&= (~LastE);
+	 if(Cn>20)
+	 	evnets_temp&= (~C_LessTime);
+	 
 	
+	 
+	  j = Get_Registered_Player_Num(evnets_temp);
+	  j = *P_TimerB_CNTR % j;
+	  
+	  R_E = BitMap[Select_Registered_Player_Random(j,evnets_temp)];
+	
+	  PlayA1800_Elements(SFX_Event);
+	
+      if((firstFlag_Bit&0x400)==0)
+      {
+      	   PlayA1800_Elements(A_VLMMREN_Event);
+      	
+      }
 
-		   if(R_E==C_OneMoreTime)
-			{
+      firstFlag_Bit|=0x400;
+   
+    
+
+
+//       if(LastE!=C_OneMoreTime)
+//          R_E= C_OneMoreTime;
+//	   else if((LastE!=C_TwoSounds))//(Registerd_Num ==1)||
+//	   	{
+//             R_E =C_TwoSounds;
+//	   	}
+//
+//	   
+//	    if((R_E!=C_OneMoreTime)&&(R_E!=C_TwoSounds))
+//	    	{
+//                     if((*P_TimerB_CNTR % 6)<3)
+//					 	 R_E = C_OneMoreTime;
+//					 else
+//					 	R_E =C_TwoSounds;
+//
+//	    	}
+//	
+	    if(R_E ==C_LessTime)
+	     {
+	     	
+	     	Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
+	     	PlayA1800_Elements(A_VLMMREN_LessTime01);
+	     	
+	        if(Cn>4)	
+	        {
+			     	if(Cn<11)
+			     	{
+			     		 PlayA1800_Elements(A_VLMMREN_LessTime02a);
+			     		 timeout_t =10*16;
+			     	}
+			       else if(Cn<16)
+			       {
+			     		 PlayA1800_Elements(A_VLMMREN_LessTime02b);
+			     		 timeout_t =15*16;			       	
+			       	
+			       }
+			      else if(Cn<21)
+			       {
+			     		 PlayA1800_Elements(A_VLMMREN_LessTime02c);
+			     		 timeout_t =20*16;			       	
+			       	
+			       }	
+	        }
+	        
+	        //	PlayA1800_Elements(A_VLMMREN_LessTime03);  
+	        
+	        
+	     		
+	     }
+
+       else  if(R_E==C_OneMoreTime)
+	 		{
 	
 		        //R_E = C_OneMoreTime;
-				PlayA1800_Elements(SFX_Event);
+//				PlayA1800_Elements(SFX_Event);
 	            Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
 	            PlayA1800_Elements(A_VLMMREN_OneMore);	
 			}
@@ -6830,7 +7016,7 @@ void Events()
 		  	     R_E =C_TwoSounds;
 //		  	     R_2SLoop =0;
 				 
-				 PlayA1800_Elements(SFX_Event);	 
+//				 PlayA1800_Elements(SFX_Event);	 
 		  	     PlayA1800_Elements(A_VLMMREN_TwoSounds);
 		  	     
 		  	     Player_Activing_Cnt =Select_Pingamerandom();	
@@ -6988,7 +7174,7 @@ void Answer_F()
     unsigned int temp1=0;   
 	unsigned int  round =0;//Get_Num_CategoryMemory();
     unsigned int  Currentsound =0;
-    unsigned int  timeout_t =0;
+    
     //unsigned int Category= Get_Question_Category(gQuestionIdx);
 
 	//LastCategory_Series[Currentsound] = Category;
@@ -6996,7 +7182,7 @@ void Answer_F()
   
      firstFlag_Bit&=~0x4000;
      
-     if((Restart ==0)&&(CurrentRound==1))//(Cn ==2)&&
+    // if((Restart ==0)&&(CurrentRound==1))//(Cn ==2)&&
      {
      	Key_activeflag =Only_Play_KeyEnable;
      	Key_Event =0;  
@@ -7006,23 +7192,46 @@ void Answer_F()
      	{
      	  	 if(Registerd_Num==1)	
      	  	 {  
+     	  	 	
+     	  	  if((firstFlag_Bit&0x01)==0) 	
+     	  	  {
      	  	 	delay_time(8);
 		 	    PlayA1800_Elements(A_VLMMREN_Rule_02b);
+		 	    firstFlag_Bit|=0x01;
+     	  	  }
      	  	 }
 		  else
-		 	 PlayA1800_Elements(A_VLMMREN_Rule_02);	
+		  {
+		 	  if((firstFlag_Bit&0x02)==0) 	
+		 	  {
+		 	     PlayA1800_Elements(A_VLMMREN_Rule_02);	
+		 	     firstFlag_Bit|=0x02;
+		 	  }
+		 	 
+		 	 
+		  }
   		
      	}
         else if((Cn ==3)&&(Registerd_Num>1))
         {
-        	 PlayA1800_Elements(A_VLMMREN_Rule_12);
-        	 delay_time(8);
+        	
+        	 if((firstFlag_Bit&0x04)==0) 
+        	 {	
+        	
+        	    PlayA1800_Elements(A_VLMMREN_Rule_12);
+        	    delay_time(8);
+        	    firstFlag_Bit|=0x04;
+        	 }
         }  	
      	
 
      }
            Key_activeflag =0;
            Key_Event=0;
+           
+          if(Registerd_Num==1)
+          	 Key_activeflag =ALL_TouchEnable;		
+           
 //           PlayQuestionflag =1;
            TwoKeyflag = Playbutton;
            
@@ -7054,13 +7263,20 @@ void Answer_F()
 
      
        round =Get_Num_CategoryMemory();
-       
-      if(Cn<=5)  
-       timeout_t =15*16;
-      else
+      
+     if(R_E ==  C_LessTime)
       {
-      	 timeout_t=3*Cn*16;
-      	
+      }
+      else
+      {  
+       
+	      if(Cn<=5)  
+	       timeout_t =15*16;
+	      else
+	      {
+	      	 timeout_t=3*Cn*16;
+	      	
+	      }
       }
       Key_Event&=ALL_TouchEnable;
       Timeout_cnt =0;
@@ -7106,6 +7322,10 @@ void Answer_F()
 	       	   
 			       Key_activeflag =0;
 		           Key_Event=0;
+		           
+		           if(Registerd_Num==1)
+          	         Key_activeflag =ALL_TouchEnable;
+		           
 //		           PlayQuestionflag =1;
 		           TwoKeyflag = Playbutton;
 		           do
@@ -7206,7 +7426,7 @@ void Answer_F()
 			       	    {
 
 
-						  if((Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0)&&(LastE!=C_chance))
+						  if(((firstFlag_Bit&0x200)==0)&&(Cn>4)&&(SinceLastE>4)&&((*P_TimerB_CNTR % 3)==0)&&(LastE!=C_chance))
 							{
 							 //Chance();
 							 PlayA1800_Elements(SFX_Wrong); 
@@ -7219,7 +7439,7 @@ void Answer_F()
 							 Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
 							 PlayA1800_Elements(A_VLMMREN_Chance);
 							 Currentsound =0;
-							 
+							 firstFlag_Bit|=0x200;
 							 continue;
 						  
 							}
@@ -7276,9 +7496,11 @@ void Answer_F()
 			                  PlayA1800_Elements(A_VLMMREN_Aie);
 
 
-							 if((firstFlag_Bit&0x100)==0)
+							 if(((firstFlag_Bit&0x100)==0)&&(Registerd_Num>2))
 							 	{
+							 	   delay_time(8);	
 			           	           PlayA1800_Elements(A_VLMMREN_Out);
+			           	           PlayA1800_Elements(A_VLMMREN_Out01);
                                    firstFlag_Bit|=0x100;
 							 	}
 			       	    }
@@ -7306,12 +7528,25 @@ void Answer_F()
 		//				 	  Player_Activing_Cnt=0;
 		
 		
+		                if((firstFlag_Bit&0x1000)==0)
+		                {
+		                	Ask_Question();
+		                	Play_Seq(Player_Activing_Cnt,C_Play_StartAddr);
+		                	PlayA1800_Elements(A_VLMMREN_Out02);
+		                	
+		                	firstFlag_Bit|=0x1000;
+		                }		                	
+		                else
+		                  {
 						   Ask_Question();//PlayA1800_Elements(Get_Question_Sound(gQuestionIdx));
+						   Play_Seq(NextCnt++%3,C_NextTable);
+		                  }
+						   
 						  // delay_time(8);
 						   TwoKeyflag =0;
 						   
 		                   //PlayA1800_Elements(A_VLMMREN_Next_01);
-		                    Play_Seq(NextCnt++%3,C_NextTable);
+		                    
 		                   //PlayA1800_Elements(A_VLMMREN_Next_02);
 
 		
@@ -7406,7 +7641,7 @@ unsigned int End()
 	    Add_SomePlayer_Point(memory_length,Player_Point,Pingame);	
       }
        
-      firstFlag_Bit&=~0x2000;  
+      
 
       // if((Get_Num_Bigscore(Rounds,2,Registered_Play_Status)==0 ))//||(End20flag))
          {
@@ -7451,7 +7686,7 @@ unsigned int End()
 				      MoveSPIDriverToRAM();		
 				      SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
 				      //SPI_Flash_SendNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
-				      SPI_Flash_SendNWords(Rec,2,T_Record_Secter_L,T_Record_Secter_H); 
+				      SPI_Flash_SendNWords(Rec,3,T_Record_Secter_L,T_Record_Secter_H); 
 				        __asm("INT FIQ,IRQ");
                         
                         
@@ -7461,16 +7696,32 @@ unsigned int End()
 
 			  }
 
-			  if((Get_Num_Bigscore(Rounds,2,Registered_Play_Status)!=0 )&&(End20flag ==0))
+			  if((Get_Num_Bigscore(Rounds,2,Registered_Play_Status)!=0 )) //&&(End20flag ==0)
 			  	{
 			  		     Key_Event =0;
 	                     Key_activeflag = 0;
 	                     
-                         PlayQuestionflag =0;
+                         
                          PlayA1800_Elements(SFX_Yeah);
 						 PlayA1800_Elements(A_VLMMREN_WinRound01d);
-						 PlayA1800_Elements(A_VLMMREN_End_03);
-
+						 //PlayA1800_Elements(A_VLMMREN_End_03);
+                         Play_Seq(Rec[3]%3,C_WinnerTable);
+                         
+                         
+                         
+                    if((firstFlag_Bit&0x2000)==0)  
+                    {   
+                       Rec[3]++;	
+                      __asm("INT OFF");
+				      MoveSPIDriverToRAM();		
+				      SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
+				      //SPI_Flash_SendNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
+				      SPI_Flash_SendNWords(Rec,3,T_Record_Secter_L,T_Record_Secter_H); 
+				        __asm("INT FIQ,IRQ");
+				        
+                    }
+                         
+                         
 			  	}
 	   
 		     else{
@@ -7502,7 +7753,8 @@ unsigned int End()
 						     PlayA1800_Elements(A_VLMMREN_End_02b);
 
 						      delay_time(8);
-
+		       	              PlayA1800_Elements(SFX_Yeah);	
+		       	               delay_time(16);	
                       	   }
 
 
@@ -7511,9 +7763,15 @@ unsigned int End()
 				 
 		       if(Get_All_SameNum(Rounds,1,Registered_Play_Status)==0)//(CurrentRound !=3)
 		       	{
-		       	   PlayA1800_Elements(SFX_Yeah);	
-		       	   delay_time(16);	
-		           PlayA1800_Elements(A_VLMMREN_WinRound02a);    
+                  if((firstFlag_Bit&0x08)==0)  
+                  {
+		             PlayA1800_Elements(A_VLMMREN_WinRound02a); 
+                  } 
+                  else
+                      PlayA1800_Elements(A_VLMMREN_WinRound02b); 
+                    
+		           firstFlag_Bit|=0x08;
+		             
 				   delay_time(8);
 		              
 				   
@@ -7565,7 +7823,7 @@ unsigned int End()
 					   
 					   timeovercnt++;
 					   
-					   if(timeovercnt>18)
+					   if(timeovercnt>=30)
 						{
 					   
 								GameTimeout();	 
@@ -7593,6 +7851,8 @@ unsigned int End()
 	 
 		 		    Cn =0;
 			     	 CurrentRound++;
+			     	 firstFlag_Bit&=~0x200;
+			     	 
 					 Reset_Memory();	
 			         SetPingame();
 					 Reset_Pselected();
@@ -7650,7 +7910,7 @@ unsigned int End()
       MoveSPIDriverToRAM();		
       SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
       //SPI_Flash_SendNWords(&Record,1,T_Record_Secter_L,T_Record_Secter_H); 
-      SPI_Flash_SendNWords(Rec,2,T_Record_Secter_L,T_Record_Secter_H); 
+      SPI_Flash_SendNWords(Rec,3,T_Record_Secter_L,T_Record_Secter_H); 
         __asm("INT FIQ,IRQ");
  	 	 
  	 	 
@@ -7672,7 +7932,7 @@ unsigned int End()
 			MoveSPIDriverToRAM();		
 			SPI_Flash_Sector_Erase(T_Record_Secter_L,T_Record_Secter_H);
 		//	SPI_Flash_SendAWord(T_Record_Secter_L,T_Record_Secter_H,Record);
-			SPI_Flash_SendNWords(Rec,2,T_Record_Secter_L,T_Record_Secter_H); 
+			SPI_Flash_SendNWords(Rec,3,T_Record_Secter_L,T_Record_Secter_H); 
 			__asm("INT FIQ,IRQ");
 	 	 	 
 	 	 	 
@@ -7686,8 +7946,8 @@ unsigned int End()
  }
  
      //if(Record==0)
-     //	Record=temp_length;
-
+    PlayQuestionflag =0;
+    firstFlag_Bit&=~0x2000;  
 
     if(PauseFlag)//  (Registerd_Num>1)v жагаднЭЃ
     	{

@@ -237,7 +237,7 @@ volatile unsigned TimeCnt = 0;
 volatile unsigned TimeCnt_Testingmode = 0;
 //unsigned TimeCnt_Total = 0;
 unsigned gTemp = 0;
-unsigned gVolume = 10;
+unsigned gVolume = 8;
 //unsigned int gVolume1 =6;
 
 //unsigned g_GameCnt = 0;
@@ -906,7 +906,7 @@ int main()
 
 //      Qn_Cnt_PowerON =0;
       
-  		gVolume = 10;//SPI_ReadAByte(24);
+  		gVolume = 8;//SPI_ReadAByte(24);
 		if (!((gVolume>3)&&(gVolume<16)))
 		{
 			gVolume = 9;
