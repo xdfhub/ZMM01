@@ -21,7 +21,7 @@ Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\SPI_Flash_CE3.obj
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\RomCodeOBJ_GPCE1_CE3.obj"
-Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V12_pro_bin.res"
+Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V13_Pro_bin.res"
 Lib: "CMacro1232.lib"
 Lib: ".\CTS\CTS_V1.1.0.lib"
 PrjPath: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\"

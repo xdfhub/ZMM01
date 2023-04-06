@@ -11,7 +11,7 @@
 #define  C_FinalPCB    1//最终生产板子，客户改动触摸与灯 IO 顺序 Pro
 //#define C_Demotest  1
 
-//#define C_TestPcb 1 //按键公共端接至IOB7
+
 //#define C_debugtest  1//测试用
 
 
@@ -270,52 +270,155 @@
 #define C_OneMoreTime 0x01
 #define C_TwoSounds   0x02
 #define C_LessTime    0x04
-#define C_chance      0x08
-
-#define Event_All  0x07
-
+#define C_TryAgain    0x08
+#define C_chance      0x10
 
 
+#define Event_All  0x0f
 
+
+
+#ifdef C_debugtest 
 //question
-//#define	A01	0
-//#define	A02	1
-//#define	A03	2
-//#define	A05	3
-//#define	A06	4
-//#define	A08	5
-//#define	A09	6
-//#define	A16	7
-//#define	A25	8
-//#define	A26	9
-//#define	A34	10
-//#define	H05	11
-//#define	H07	12
-//#define	H08	13
-//#define	H09	14
-//#define	H13	15
-//#define	H16	16
-//#define	H18	17
-//#define	M06	18
-//#define	M07	19
-//#define	M11	20
-//#define	M13	21
-//#define	M15	22
-//#define	M17	23
-//#define	M19	24
-//#define	M21	25
-//#define	M30	26
-//#define	M36	27
-//#define	V03	28
-//#define	V04	29
-//#define	V05	30
-//#define	V06	31
-//#define	V07	32
-//#define	V08	33
-//#define	V09	34
-//#define	V16	35
+#define	MMA01	0
+#define	MMA02	1
+#define	MMA03	2
+#define	MMA04	3
+#define	MMA05	4
+#define	MMA06	5
+#define	MMA08	6
+#define	MMA10	7
+#define	MMA11	8
+#define	MMA12	9
+#define	MMA13	10
+#define	MMA14	11
+#define	MMA15	12
+#define	MMA16	13
+#define	MMA17	14
+#define	MMA20	15
+#define	MMA21	16
+#define	MMA22	17
+#define	MMA24	18
+#define	MMA25	19
+#define	MMA26	20
+#define	MMA27	21
+#define	MMA28	22
+#define	MMA29	23
+#define	MMA30	24
+#define	MMA31	25
+#define	MMA33	26
+#define	MMA34	27
+#define	MMA35	28
+#define	MMA36	29
+#define	MMA37	30
+#define	MMA38	31
+#define	MMA39	32
+#define	MMA40	33
+#define	MMA41	34
+#define	MMA45	35
+#define	MMA46	36
+#define	MMH01	37
+#define	MMH03	38
+#define	MMH04	39
+#define	MMH05	40
+#define	MMH06	41
+#define	MMH07	42
+#define	MMH08	43
+#define	MMH09	44
+#define	MMH11	45
+#define	MMH12	46
+#define	MMH13	47
+#define	MMH14	48
+#define	MMH15	49
+#define	MMH16	50
+#define	MMH17	51
+#define	MMH18	52
+#define	MMH22	53
+#define	MMH24	54
+#define	MMH25	55
+#define	MMH26	56
+#define	MMH28	57
+#define	MMH30	58
+#define	MMH31	59
+#define	MMH39	60
+#define	MMH40	61
+#define	MMH42	62
+#define	MMH44_D	63
+#define	MMH44_S	64
+#define	MMH46	65
+#define	MMH47	66
+#define	MMH48	67
+#define	MMH50	68
+#define	MMM01	69
+#define	MMM02	70
+#define	MMM03	71
+#define	MMM04	72
+#define	MMM05	73
+#define	MMM06	74
+#define	MMM07	75
+#define	MMM08	76
+#define	MMM09	77
+#define	MMM10	78
+#define	MMM11	79
+#define	MMM12	80
+#define	MMM13	81
+#define	MMM14	82
+#define	MMM15	83
+#define	MMM16	84
+#define	MMM17	85
+#define	MMM18	86
+#define	MMM19	87
+#define	MMM20	88
+#define	MMM21	89
+#define	MMM22	90
+#define	MMM23	91
+#define	MMM24	92
+#define	MMM25	93
+#define	MMM26	94
+#define	MMM27	95
+#define	MMM28	96
+#define	MMM29	97
+#define	MMM30	98
+#define	MMM31	99
+#define	MMM32	100
+#define	MMM33	101
+#define	MMM34	102
+#define	MMM35	103
+#define	MMM36	104
+#define	MMM37	105
+#define	MMM38	106
+#define	MMM39	107
+#define	MMM40	108
+#define	MMM41	109
+#define	MMM42	110
+#define	MMM43	111
+#define	MMM44	112
+#define	MMM46	113
+#define	MMM47	114
+#define	MMV01	115
+#define	MMV02	116
+#define	MMV03	117
+#define	MMV04	118
+#define	MMV05	119
+#define	MMV06	120
+#define	MMV07	121
+#define	MMV08	122
+#define	MMV09	123
+#define	MMV10	124
+#define	MMV11	125
+#define	MMV12	126
+#define	MMV13	127
+#define	MMV14	128
+#define	MMV16	129
+#define	MMV17	130
+#define	MMV18	131
+#define	MMV19	132
+#define	MMV20	133
+#define	MMV29	134
+#define	MMV36	135
 
 
+#endif
 
 
 

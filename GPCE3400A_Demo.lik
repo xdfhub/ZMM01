@@ -23,7 +23,7 @@ Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\SPI_Flash_CE3.obj
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\RomCodeOBJ_GPCE1_CE3.obj"
-Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V12_pro_bin.res"
+Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V13_Pro_bin.res"
 Lib: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\.\CTS\CTS_V1.1.0.lib"
 Lib: "C:\Program Files (x86)\Generalplus\unSPIDE 3.0.16.1\library\CMacro\CMacro1232.lib"
 Output: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo.TSK"
@@ -109,31 +109,33 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;section has ORG setting:
 ;Locate: RampUpDn_LibCallback_SEC in "system.obj" at 201920 
 ;Align: RampUpDn_LibCallback_SEC in "system.obj" with 0 
-;Locate: IRAM in "main.obj" at 203504  linkat 5F2 
+;Locate: IRAM in "main.obj" at 203504  linkat 5F3 
 ;Align: IRAM in "main.obj" with 0 
-;Locate: IRAM in "Algorithm.obj" at 20350D  linkat 5FB 
+;Locate: IRAM in "Algorithm.obj" at 20350D  linkat 5FC 
 ;Align: IRAM in "Algorithm.obj" with 0 
-;Locate: IRAM in "Play_Speech.obj" at 2034FD  linkat 5EB 
+;Locate: IRAM in "Play_Speech.obj" at 2034FD  linkat 5EC 
 ;Align: IRAM in "Play_Speech.obj" with 0 
-;Locate: IRAM in "LED.obj" at 2034F8  linkat 5E6 
+;Locate: IRAM in "LED.obj" at 2034F8  linkat 5E7 
 ;Align: IRAM in "LED.obj" with 0 
-;Locate: IRAM in "AntiCrack.obj" at 2034F9  linkat 5E7 
+;Locate: IRAM in "AntiCrack.obj" at 2034F9  linkat 5E8 
 ;Align: IRAM in "AntiCrack.obj" with 0 
-;Locate: IRAM in "CTS_User.obj" at 2034FB  linkat 5E9 
+;Locate: IRAM in "CTS_User.obj" at 2034FB  linkat 5EA 
 ;Align: IRAM in "CTS_User.obj" with 0 
-;Locate: IRAM in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 2034FA  linkat 5E8 
+;Locate: IRAM in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 2034FA  linkat 5E9 
 ;Align: IRAM in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
-;Locate: RAM in "SACM_A1800_User.obj" at 5B0 
+;Locate: RAM in "BootCode_User.obj" at 5B0 
+;Align: RAM in "BootCode_User.obj" with 0 
+;Locate: RAM in "SACM_A1800_User.obj" at 5B1 
 ;Align: RAM in "SACM_A1800_User.obj" with 0 
-;Locate: RAM in "system.obj" at 5B5 
+;Locate: RAM in "system.obj" at 5B6 
 ;Align: RAM in "system.obj" with 0 
-;Locate: RAM in "System_2.obj" at 5B8 
+;Locate: RAM in "System_2.obj" at 5B9 
 ;Align: RAM in "System_2.obj" with 0 
-;Locate: RAM in "Key_server.obj" at 5C2 
+;Locate: RAM in "Key_server.obj" at 5C3 
 ;Align: RAM in "Key_server.obj" with 0 
-;Locate: RAM in "SPI_Flash_CE3.obj" at 5C8 
+;Locate: RAM in "SPI_Flash_CE3.obj" at 5C9 
 ;Align: RAM in "SPI_Flash_CE3.obj" with 0 
-;Locate: RAM in "CTS_Sensor.obj" at 5CD 
+;Locate: RAM in "CTS_Sensor.obj" at 5CE 
 ;Align: RAM in "CTS_Sensor.obj" with 0 
 ;Locate: OVERLAP_A3400Pro_BLOCK in "ORAM_Arrangement.obj" at 10 
 ;Locate: OVERLAP_A1800_BLOCK in "ORAM_Arrangement.obj" at 2A 
@@ -145,17 +147,17 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: NB_DATA in "Algorithm.obj" with 0 
 ;Locate: NB_DATA in "AntiCrack.obj" at 201928 
 ;Align: NB_DATA in "AntiCrack.obj" with 0 
-;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" at 2037E3 
+;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" at 2037E4 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" with 0 
-;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 203955 
+;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 203956 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" with 0 
-;Locate: __sn_section_RES_ROM_ZMM_V12_PRO_BIN in "Rom_ZMM_V12_pro_bin.res" at 208155 
-;Align: __sn_section_RES_ROM_ZMM_V12_PRO_BIN in "Rom_ZMM_V12_pro_bin.res" with 0 
-;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 203604 
+;Locate: __sn_section_RES_ROM_ZMM_V13_PRO_BIN in "Rom_ZMM_V13_Pro_bin.res" at 208296 
+;Align: __sn_section_RES_ROM_ZMM_V13_PRO_BIN in "Rom_ZMM_V13_Pro_bin.res" with 0 
+;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 203605 
 ;Align: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
 ;Locate: CTS_ISR_Service_ROMBLOCK in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 201800 
 ;Align: CTS_ISR_Service_ROMBLOCK in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
-;Locate: CODE in "modu1" of "CMacro1232.lib"  at 2038F8 
+;Locate: CODE in "modu1" of "CMacro1232.lib"  at 2038F9 
 ;Align: CODE in "modu1" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "__clz16" of "CMacro1232.lib"  at 201869 
 ;Align: CODE in "__clz16" of "CMacro1232.lib"  with 0 

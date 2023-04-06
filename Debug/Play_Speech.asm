@@ -698,7 +698,7 @@ L_2_1:	// 0x12d
 LM43:
 	     .stabn 68,0,321,LM43-_Volume
 	     SP = SP - 1              	// [0:321]  
-	     R3 = 262                 	// [1:321]  
+	     R3 = 261                 	// [1:321]  
 	     R4 = SP + 1              	// [3:321]  
 	     [R4] = R3                	// [5:321]  
 	     call _PlayA1800_Elements 	// [7:321]  PlayA1800_Elements
@@ -2242,7 +2242,7 @@ LM178:
 	     DS = seg(_Player_Activing_Cnt)	// [1:984]  Player_Activing_Cnt
 	     R4 = (_Player_Activing_Cnt)	// [2:984]  Player_Activing_Cnt
 	     R4 = DS:[R4]             	// [4:984]  
-	     R4 = R4 + 43             	// [6:984]  
+	     R4 = R4 + 40             	// [6:984]  
 	     R3 = SP + 1              	// [7:984]  
 	     [R3] = R4                	// [9:984]  
 	     call _PlayA1800_Elements 	// [11:984]  PlayA1800_Elements

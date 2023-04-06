@@ -713,7 +713,7 @@ void Test_Assembly(void)
 
     
    	//temp = SPI_ReadAWord_Big((unsigned long)0x30);
-	PlayA1800_Elements(238); 
+	PlayA1800_Elements(355); 
 //	PlayA1800_Elements(238); 
 	
 //    PlayBee();
@@ -876,15 +876,7 @@ int main()
    
 	Goto_Sleep();
 	
-	
-#ifdef C_TestPcb
-      *P_IOB_Buffer&=~0x80;
-      *P_IOB_Attrib|=0x80;
-      *P_IOB_Dir|=0x80;
-
-#endif	
-	
-	
+		
 
     //CheckSum_SPIFlash();
     Init_CTS();	
@@ -911,6 +903,23 @@ int main()
 		{
 			gVolume = 9;
 		}
+  
+  
+  #ifdef C_debugtest
+  
+      Rest_LQ_LQA();
+      Rest_Question_Asked();
+      Events();
+  
+	  while(1)
+	  {
+	  	
+	
+	     Select_Sound();
+	     WatchdogClear();
+	  }
+     
+  #endif   
   
   
 
