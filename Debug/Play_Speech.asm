@@ -633,14 +633,14 @@ BB2_PU2:	// 0x10e
 // BB:2 cycle count: 10
 // 309  	{
 // 310  		 
-// 311  		 if(gVolume>6)
+// 311  		 if(gVolume>5)//6
 
 LM38:
 	     .stabn 68,0,311,LM38-_Volume
 	     DS = seg(_gVolume)       	// [0:311]  gVolume
 	     R4 = (_gVolume)          	// [1:311]  gVolume
 	     R4 = DS:[R4]             	// [3:311]  
-	     cmp R4, 6                	// [5:311]  
+	     cmp R4, 5                	// [5:311]  
 	     jbe L_2_3                	// [6:311]  
 BB3_PU2:	// 0x114
 // BB:3 cycle count: 11
@@ -667,14 +667,14 @@ L_2_2:	// 0x11e
 // 315  	}
 // 316     else
 // 317     {
-// 318     	    if(gVolume<10)
+// 318     	    if(gVolume<9)//10
 
 LM41:
 	     .stabn 68,0,318,LM41-_Volume
 	     DS = seg(_gVolume)       	// [0:318]  gVolume
 	     R4 = (_gVolume)          	// [1:318]  gVolume
 	     R4 = DS:[R4]             	// [3:318]  
-	     cmp R4, 9                	// [5:318]  
+	     cmp R4, 8                	// [5:318]  
 	     ja L_2_4                 	// [6:318]  
 BB6_PU2:	// 0x124
 // BB:6 cycle count: 11

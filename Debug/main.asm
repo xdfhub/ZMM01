@@ -815,7 +815,7 @@ _gTemp:	// 0x6
 	     .stabs "gVolume:G4",32,0,0,_gVolume
 .public	_gVolume
 _gVolume:	// 0x7
-	.dw	8
+	.dw	7
 	// end of initialization for gVolume
 	     .stabs "Key_Debounce:G4",32,0,0,_Key_Debounce
 .public	_Key_Debounce

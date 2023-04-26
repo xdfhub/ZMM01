@@ -308,14 +308,14 @@ void Volume(unsigned int button)
 	if(button ==MB_button)
 	{
 		 
-		 if(gVolume>6)
+		 if(gVolume>5)//6
 		 	 gVolume--;
 		 
 		
 	}
    else
    {
-   	    if(gVolume<10)
+   	    if(gVolume<9)//10
    	       gVolume++;
    }	
 	  PlayA1800_Elements(SFX_Volume);

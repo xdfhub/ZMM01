@@ -237,7 +237,7 @@ volatile unsigned TimeCnt = 0;
 volatile unsigned TimeCnt_Testingmode = 0;
 //unsigned TimeCnt_Total = 0;
 unsigned gTemp = 0;
-unsigned gVolume = 8;
+unsigned gVolume = 7;//8
 //unsigned int gVolume1 =6;
 
 //unsigned g_GameCnt = 0;
@@ -909,7 +909,7 @@ int main()
   
       Rest_LQ_LQA();
       Rest_Question_Asked();
-      Events();
+
   
 	  while(1)
 	  {
