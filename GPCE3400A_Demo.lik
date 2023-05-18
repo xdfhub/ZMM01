@@ -23,7 +23,7 @@ Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\SPI_Flash_CE3.obj
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_Sensor.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\RomCodeOBJ_GPCE1_CE3.obj"
-Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V13_Pro_bin.res"
+Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V14_Pro_bin.res"
 Lib: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\.\CTS\CTS_V1.1.0.lib"
 Lib: "C:\Program Files (x86)\Generalplus\unSPIDE 3.0.16.1\library\CMacro\CMacro1232.lib"
 Output: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo.TSK"
@@ -151,8 +151,8 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" with 0 
 ;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 203955 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" with 0 
-;Locate: __sn_section_RES_ROM_ZMM_V13_PRO_BIN in "Rom_ZMM_V13_Pro_bin.res" at 208342 
-;Align: __sn_section_RES_ROM_ZMM_V13_PRO_BIN in "Rom_ZMM_V13_Pro_bin.res" with 0 
+;Locate: __sn_section_RES_ROM_ZMM_V14_PRO_BIN in "Rom_ZMM_V14_Pro_bin.res" at 208342 
+;Align: __sn_section_RES_ROM_ZMM_V14_PRO_BIN in "Rom_ZMM_V14_Pro_bin.res" with 0 
 ;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 203604 
 ;Align: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
 ;Locate: CTS_ISR_Service_ROMBLOCK in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 201800 

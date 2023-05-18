@@ -1,4 +1,4 @@
-Monday, April 24, 15:22:08, 2023
+Thursday, May 18, 10:43:43, 2023
 
                     * Generalplus u'nSP Linker version 1.14.13.18
                     -------------------------------------------
@@ -28,8 +28,8 @@ _IRQ6                                                    204C68    "D:\Prj_GPCE3
 _IRQ7                                                    204CA1    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\isr.obj"
 _RES_Table                                               204800    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
 _SPI_Resources_Folder_Table                              204800    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
-_RES_ROM_ZMM_V13_PRO_BIN_SA                              204800    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
-_RES_ROM_ZMM_V13_PRO_BIN_EA                              204802    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
+_RES_ROM_ZMM_V14_PRO_BIN_SA                              204800    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
+_RES_ROM_ZMM_V14_PRO_BIN_EA                              204802    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
 T_SACM_A1800_SpeechTable                                 204804    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
 T_SACM_A3400_SpeechTable                                 204804    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
 T_SACM_MS02_InstrumentSet                                204804    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Resource.obj"
@@ -314,8 +314,8 @@ _Init_CTS                                                203955    "D:\Prj_GPCE3
 _TS_CTS_ServiceLoop                                      20396F    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 _TriggeredPad                                            5EA       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 _PreCtsResult                                            5EB       "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
-__RES_ROM_ZMM_V13_PRO_BIN_sa                             208342    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V13_Pro_bin.res"
-__RES_ROM_ZMM_V13_PRO_BIN_ea                             2CB044    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V13_Pro_bin.res"
+__RES_ROM_ZMM_V14_PRO_BIN_sa                             208342    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V14_Pro_bin.res"
+__RES_ROM_ZMM_V14_PRO_BIN_ea                             2CBC54    "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V14_Pro_bin.res"
 ***********************************************************************************************************************************************************************************************************************************************************************************************************
 
 ***********************************************************************************************************************************************************************************************************************************************************************************************************
@@ -407,7 +407,7 @@ __RES_ROM_ZMM_V13_PRO_BIN_ea                             2CB044    "D:\Prj_GPCE3
 *    RAM_BANK0                                           ----                ----                ----                                                                                                                                                                                                     *
 *    IRAM_BANK0                                          ----                ----                ----                                                                                                                                                                                                     *
 *    ORAM_BANK0                                          ----                ----                ----                                                                                                                                                                                                     *
-*    BootCode_SEC(CODE)                                  200100(100)         200396(396)         297                                                                                                                                                                                                      *
+*    BootCode_SEC(CODE)                                  200100(100)         20039A(39A)         29B                                                                                                                                                                                                      *
 * "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\ORAM_Arrangement.obj"                                                                                                                                                                                                                         *
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
 *    _CODE_SPI_SEC(CODE)                                 ----                ----                ----                                                                                                                                                                                                     *
@@ -796,8 +796,8 @@ __RES_ROM_ZMM_V13_PRO_BIN_ea                             2CB044    "D:\Prj_GPCE3
 *    ORAM_BANK0                                          ----                ----                ----                                                                                                                                                                                                     *
 * "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\RomCodeOBJ_GPCE1_CE3.obj"                                                                                                                                                                                                                     *
 *    ROMCODE_SPI_Data(CODE)                              201940              2034DA              1B9B                                                                                                                                                                                                     *
-* "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V13_Pro_bin.res"                                                                                                                                                                                                                      *
-*    __sn_section_RES_ROM_ZMM_V13_PRO_BIN(DATA)          208342              2CB043              C2D02                                                                                                                                                                                                    *
+* "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V14_Pro_bin.res"                                                                                                                                                                                                                      *
+*    __sn_section_RES_ROM_ZMM_V14_PRO_BIN(DATA)          208342              2CBC53              C3912                                                                                                                                                                                                    *
 * "D:\SVN_Local\library\16-bit\HW Capacitive Touch Sensor\Source Code\LibMaker\V1.1.0\CTS_Sensor" "CTS_V1.1.0.lib"
 *    DEBUG                                               ----                ----                ----                                                                                                                                                                                                     *
 *    CODE                                                203604              2037E2              1DF                                                                                                                                                                                                      *
@@ -958,7 +958,7 @@ __RES_ROM_ZMM_V13_PRO_BIN_ea                             2CB044    "D:\Prj_GPCE3
 * "SRam/OSRam/ISRam"                40                   30           10                                                                                                                                                                                                                                  *
 * "Ram"                             BF0                  6E3          50D                                                                                                                                                                                                                                 *
 * "First Bank Rom"                  0                    0            0                                                                                                                                                                                                                                   *
-* "Other Banks Rom"                 FFE800               C897F        F35E81                                                                                                                                                                                                                              *
+* "Other Banks Rom"                 FFE800               C958F        F35271                                                                                                                                                                                                                              *
 ***********************************************************************************************************************************************************************************************************************************************************************************************************
 
 Linker Output Filename : D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo.TSK
@@ -968,4 +968,4 @@ Format :                 Microtek
 
 Linker Errors :          0
 Output Format :          TSK
-Max Used Address :       0x2CB043
+Max Used Address :       0x2CBC53
