@@ -21,7 +21,7 @@
 // Contant Defintion Area
 //**************************************************************************
 .define C_Checksum_SPI_StartAddr   0x3000//开始地址 0x3000以前的数据是不加密的，加密ic和不加密ic读出来的会不一样，所以不方便校验。 byte
-.define C_Checksum_SPI_EndAddr     0x273d93//Memory Map  word
+.define C_Checksum_SPI_EndAddr     0x2cbc53//Memory Map  word
 
 .define C_Checksum_SPI_StartAddrH   0x20+((C_Checksum_SPI_StartAddr/2)>>16)//开始地址高位
 .define C_Checksum_SPI_StartAddrL   (C_Checksum_SPI_StartAddr/2)&0xffff//开始地址低位
@@ -34,7 +34,7 @@
 .public _CheckSum_SPIFlash
 
 T_MCU_Sum:
-.dw 0xbbb3,0x06f4		//R3-Low word, R4-Highword
+.dw 0xaeaf,0x0c47		//R3-Low word, R4-Highword
 
 //****************************************************************
 // Function    : _CheckSum_SPI

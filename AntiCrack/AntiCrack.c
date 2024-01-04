@@ -21,7 +21,7 @@
 //**************************************************************************
 #define normalIC_enable  1//1--允许使用不加密的普通芯片;0-不允许使用；
 #define SzjtIC_enable    1//1--允许使用加密的捷通芯片;0-不允许使用；
-#define YutongIC_enable  1//1--允许使用加密的语通芯片;0-不允许使用；
+#define YutongIC_enable  0//1--允许使用加密的语通芯片;0-不允许使用；
 
 
 const unsigned int T_Scr[]={0x05a0};

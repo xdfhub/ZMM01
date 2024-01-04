@@ -5,6 +5,7 @@
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # End Group
 # Begin Source File
 SOURCE=..\..\Rom\Link_Data\Rom_ZMM_V14_Pro.bin
@@ -12,6 +13,7 @@ USEPARAM=FALSE
 PARAM=
 ID=RES_ROM_ZMM_V14_PRO_BIN
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # End SubItem
 # End Project

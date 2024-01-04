@@ -429,8 +429,11 @@ _Set_Sleep_IO:.proc
 
 
 
-
+.ifdef C_DAC_EN
   	r1 = 0x100//0x137f
+.else
+    r1 = 0x00
+.endif
 	[P_IOA_Buffer] = r1
 
 	r1 = 0xFFFF
@@ -502,7 +505,7 @@ _Sleep: .proc
 L_Sleep:		
 	
 //.ifdef C_GPCE2064
-	r1 =0xfd00   // ~(1<<9)//
+	r1 =0xfdf8   // ~(1<<9)//
 	[P_IOB_WakeUp_Mask] = r1
 	
 	 r1 =0xffff

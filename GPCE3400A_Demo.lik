@@ -25,7 +25,7 @@ Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\CTS_User.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\RomCodeOBJ_GPCE1_CE3.obj"
 Obj: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\Rom_ZMM_V14_Pro_bin.res"
 Lib: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\.\CTS\CTS_V1.1.0.lib"
-Lib: "C:\Program Files (x86)\Generalplus\unSPIDE 3.0.16.1\library\CMacro\CMacro1232.lib"
+Lib: "C:\Program Files (x86)\Generalplus\unSPIDE 4.0.6\library\CMacro\CMacro1232.lib"
 Output: "D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\Debug\GPCE3400A_Demo.TSK"
 Define: TEXT in "IntISR.obj" with TEXT_IntISR 
 Define: TEXT in "A3400Pro_StepTable.obj" with TEXT_A3400Pro_StepTable 
@@ -82,11 +82,12 @@ Define: CODE in "CTS_Sensor.obj" with _CODE_SPI_IN_FOLDER_SEC_CTS
 Define: DATA in "CTS_Sensor.obj" with _DATA_SPI_IN_FOLDER_SEC_CTS 
 Define: CODE in "CTS_User.obj" with _CODE_SPI_IN_FOLDER_SEC_CTS 
 Define: DATA in "CTS_User.obj" with _DATA_SPI_IN_FOLDER_SEC_CTS 
-Locate: ROMCODE_SPI_Data at 201940
-Locate: __sn_init_table at 2034DB
-Locate: IRAM after __sn_init_table linkat #RAM
 Locate: _CODE_SPI_SEC at 204800
 Locate: _DATA_SPI_SEC after _CODE_SPI_SEC
+Locate: ROMCODE_SPI_Data at 201940
+Locate: __sn_init_table at 20385B
+Locate: IRAM after __sn_init_table linkat #RAM
+Locate: IRam_Bank0 after __sn_init_table linkat #RAM
 Locate: SleepCode_RAMCode_SEC in "System_2.obj" at 205200 linkat 10
 ;Align: SleepCode_RAMCode_SEC in "System_2.obj" with 0 
 Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
@@ -109,19 +110,19 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;section has ORG setting:
 ;Locate: RampUpDn_LibCallback_SEC in "system.obj" at 201920 
 ;Align: RampUpDn_LibCallback_SEC in "system.obj" with 0 
-;Locate: IRAM in "main.obj" at 203504  linkat 5F3 
+;Locate: IRAM in "main.obj" at 203884  linkat 5F3 
 ;Align: IRAM in "main.obj" with 0 
-;Locate: IRAM in "Algorithm.obj" at 20350D  linkat 5FC 
+;Locate: IRAM in "Algorithm.obj" at 20388D  linkat 5FC 
 ;Align: IRAM in "Algorithm.obj" with 0 
-;Locate: IRAM in "Play_Speech.obj" at 2034FD  linkat 5EC 
+;Locate: IRAM in "Play_Speech.obj" at 20387D  linkat 5EC 
 ;Align: IRAM in "Play_Speech.obj" with 0 
-;Locate: IRAM in "LED.obj" at 2034F8  linkat 5E7 
+;Locate: IRAM in "LED.obj" at 203878  linkat 5E7 
 ;Align: IRAM in "LED.obj" with 0 
-;Locate: IRAM in "AntiCrack.obj" at 2034F9  linkat 5E8 
+;Locate: IRAM in "AntiCrack.obj" at 203879  linkat 5E8 
 ;Align: IRAM in "AntiCrack.obj" with 0 
-;Locate: IRAM in "CTS_User.obj" at 2034FB  linkat 5EA 
+;Locate: IRAM in "CTS_User.obj" at 20387B  linkat 5EA 
 ;Align: IRAM in "CTS_User.obj" with 0 
-;Locate: IRAM in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 2034FA  linkat 5E9 
+;Locate: IRAM in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 20387A  linkat 5E9 
 ;Align: IRAM in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
 ;Locate: RAM in "BootCode_User.obj" at 5B0 
 ;Align: RAM in "BootCode_User.obj" with 0 
@@ -145,19 +146,19 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: BootCode_SEC in "BootCode_User.obj" with 0 
 ;Locate: NB_DATA in "Algorithm.obj" at 20190A 
 ;Align: NB_DATA in "Algorithm.obj" with 0 
-;Locate: NB_DATA in "AntiCrack.obj" at 201928 
+;Locate: NB_DATA in "AntiCrack.obj" at 20187E 
 ;Align: NB_DATA in "AntiCrack.obj" with 0 
-;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" at 2037E3 
+;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" at 203B63 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_Sensor.obj" with 0 
-;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 203955 
+;Locate: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" at 203CD5 
 ;Align: _CODE_SPI_IN_FOLDER_SEC_CTS in "CTS_User.obj" with 0 
-;Locate: __sn_section_RES_ROM_ZMM_V14_PRO_BIN in "Rom_ZMM_V14_Pro_bin.res" at 208342 
+;Locate: __sn_section_RES_ROM_ZMM_V14_PRO_BIN in "Rom_ZMM_V14_Pro_bin.res" at 208348 
 ;Align: __sn_section_RES_ROM_ZMM_V14_PRO_BIN in "Rom_ZMM_V14_Pro_bin.res" with 0 
-;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 203604 
+;Locate: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 203984 
 ;Align: CODE in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
 ;Locate: CTS_ISR_Service_ROMBLOCK in "CTS_Sensor" of "CTS_V1.1.0.lib"  at 201800 
 ;Align: CTS_ISR_Service_ROMBLOCK in "CTS_Sensor" of "CTS_V1.1.0.lib"  with 0 
-;Locate: CODE in "modu1" of "CMacro1232.lib"  at 2038F8 
+;Locate: CODE in "modu1" of "CMacro1232.lib"  at 203C78 
 ;Align: CODE in "modu1" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "__clz16" of "CMacro1232.lib"  at 201869 
 ;Align: CODE in "__clz16" of "CMacro1232.lib"  with 0 
@@ -169,10 +170,6 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: CODE in "rshu1" of "CMacro1232.lib"  with 0 
 ;Locate: CODE in "_GPTag" of "CMacro1232.lib"  at 201902 
 ;Align: CODE in "_GPTag" of "CMacro1232.lib"  with 0 
-;Locate: ROMCODE_SPI_Data in "RomCodeOBJ_GPCE1_CE3.obj" at 201940 
-;Align: ROMCODE_SPI_Data in "RomCodeOBJ_GPCE1_CE3.obj" with 0 
-;Locate: __sn_init_table in "<internal obj.>" of "<internal lib.>"  at 2034DB 
-;Align: __sn_init_table in "<internal obj.>" of "<internal lib.>"  with 0 
 ;Locate: _CODE_SPI_SEC in "Resource.obj" at 204800 
 ;Align: _CODE_SPI_SEC in "Resource.obj" with 0 
 ;Locate: _CODE_SPI_SEC in "Calc.obj" at 204804 
@@ -185,29 +182,33 @@ Locate: SPIFC_RAMCode_SEC in "SPI_Flash_CE3.obj" at 205300 linkat 10
 ;Align: _CODE_SPI_SEC in "BootCode_User.obj" with 0 
 ;Locate: _CODE_SPI_SEC in "AntiCrack.obj" at 2048E8 
 ;Align: _CODE_SPI_SEC in "AntiCrack.obj" with 0 
-;Locate: _CODE_SPI_SEC in "TestBondingC.obj" at 204936 
+;Locate: _CODE_SPI_SEC in "TestBondingC.obj" at 20492D 
 ;Align: _CODE_SPI_SEC in "TestBondingC.obj" with 0 
-;Locate: _CODE_SPI_SEC in "CheckSum_CE3400.obj" at 20498B 
+;Locate: _CODE_SPI_SEC in "CheckSum_CE3400.obj" at 204982 
 ;Align: _CODE_SPI_SEC in "CheckSum_CE3400.obj" with 0 
-;Locate: _CODE_SPI_SEC in "flash.obj" at 2049FB 
+;Locate: _CODE_SPI_SEC in "flash.obj" at 2049F2 
 ;Align: _CODE_SPI_SEC in "flash.obj" with 0 
-;Locate: _CODE_SPI_SEC in "SPI_Flash_CE3.obj" at 204A7A 
+;Locate: _CODE_SPI_SEC in "SPI_Flash_CE3.obj" at 204A71 
 ;Align: _CODE_SPI_SEC in "SPI_Flash_CE3.obj" with 0 
-;Locate: _CODE_SPI_SEC in "Key_server.obj" at 204AFE 
+;Locate: _CODE_SPI_SEC in "Key_server.obj" at 204AF5 
 ;Align: _CODE_SPI_SEC in "Key_server.obj" with 0 
-;Locate: _CODE_SPI_SEC in "LED.obj" at 204B8A 
+;Locate: _CODE_SPI_SEC in "LED.obj" at 204B81 
 ;Align: _CODE_SPI_SEC in "LED.obj" with 0 
-;Locate: _CODE_SPI_SEC in "isr.obj" at 204C17 
+;Locate: _CODE_SPI_SEC in "isr.obj" at 204C0E 
 ;Align: _CODE_SPI_SEC in "isr.obj" with 0 
-;Locate: _CODE_SPI_SEC in "Sleep.obj" at 204CCB 
+;Locate: _CODE_SPI_SEC in "Sleep.obj" at 204CC2 
 ;Align: _CODE_SPI_SEC in "Sleep.obj" with 0 
-;Locate: _CODE_SPI_SEC in "System_2.obj" at 204D84 
+;Locate: _CODE_SPI_SEC in "System_2.obj" at 204D7B 
 ;Align: _CODE_SPI_SEC in "System_2.obj" with 0 
-;Locate: _CODE_SPI_SEC in "system.obj" at 204EA6 
+;Locate: _CODE_SPI_SEC in "system.obj" at 204E9C 
 ;Align: _CODE_SPI_SEC in "system.obj" with 0 
 ;Locate: _CODE_SPI_SEC in "main.obj" at 205621 
 ;Align: _CODE_SPI_SEC in "main.obj" with 0 
-;Locate: _CODE_SPI_SEC in "Play_Speech.obj" at 2058E8 
+;Locate: _CODE_SPI_SEC in "Play_Speech.obj" at 2058EE 
 ;Align: _CODE_SPI_SEC in "Play_Speech.obj" with 0 
-;Locate: _CODE_SPI_SEC in "Algorithm.obj" at 205CAC 
+;Locate: _CODE_SPI_SEC in "Algorithm.obj" at 205CB2 
 ;Align: _CODE_SPI_SEC in "Algorithm.obj" with 0 
+;Locate: ROMCODE_SPI_Data in "RomCodeOBJ_GPCE1_CE3.obj" at 201940 
+;Align: ROMCODE_SPI_Data in "RomCodeOBJ_GPCE1_CE3.obj" with 0 
+;Locate: __sn_init_table in "<internal obj.>" of "<internal lib.>"  at 20385B 
+;Align: __sn_init_table in "<internal obj.>" of "<internal lib.>"  with 0 

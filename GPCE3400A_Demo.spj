@@ -4,7 +4,7 @@
 #TARTYPE (GPCE3400A)Application
 CFG=Debug
 
-VER=3.0.16.1 
+VER=4.0.6 
 # Begin Project
 #Name Begin GPCE3400A-Debug
 # Begin SubItem "GPCE3100A_Demo  files"
@@ -13,12 +13,14 @@ VER=3.0.16.1
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=GPCE3100A_Demo.rc
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # End Group
 # Begin Group "Head Files"
@@ -26,12 +28,14 @@ EXPORT=3
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=Resource.inc
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3_Body.h
@@ -39,6 +43,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3_Body.inc
@@ -46,6 +51,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE2_Body.h
@@ -53,6 +59,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE2_Body.inc
@@ -60,6 +67,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Resource.h
@@ -67,6 +75,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # End Group
 # Begin Group "External Dependencies"
@@ -74,12 +83,14 @@ EXPORT=3
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=Makefile
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # End Group
 # Begin Group "SPI_Files_Folder"
@@ -87,12 +98,14 @@ EXPORT=3
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=main.c
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=isr.asm
@@ -100,6 +113,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Resource.asm
@@ -107,6 +121,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\BootCode_User.asm
@@ -114,6 +129,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\ORAM_Arrangement.asm
@@ -121,6 +137,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\SACM_A1800_User.asm
@@ -128,6 +145,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\system.asm
@@ -135,6 +153,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=flash.asm
@@ -142,6 +161,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Calc\Calc.c
@@ -149,6 +169,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=System_2.asm
@@ -156,6 +177,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=LED_Drive.asm
@@ -163,6 +185,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Algorithm.c
@@ -170,6 +193,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Play_Speech.c
@@ -177,6 +201,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Key_server.asm
@@ -184,6 +209,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Sleep.c
@@ -191,6 +217,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=TestModel\CheckSum_CE3400.asm
@@ -198,6 +225,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=TestModel\TestBondingC.c
@@ -205,6 +233,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=LED.c
@@ -212,6 +241,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=AntiCrack\AntiCrack.c
@@ -219,6 +249,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\SPI_Flash_CE3.asm
@@ -226,18 +257,21 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Group "CTS"
 #PROP Default_Filter=
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=CTS\CTS_Sensor.asm
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=CTS\CTS_User.c
@@ -245,6 +279,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # End Group
 # End Group
@@ -252,13 +287,15 @@ EXPORT=3
 #PROP Default_Filter=
 USEPARAM=FALSE
 PARAM=
-EXPORT=0
+EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=..\Include\A1800.inc
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3_BODY.inc
@@ -266,6 +303,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3_BODY.h
@@ -273,6 +311,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3.h
@@ -280,6 +319,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3.inc
@@ -287,6 +327,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Calc\Calc.h
@@ -294,6 +335,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Glob.h
@@ -301,6 +343,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=voice_A18.h
@@ -308,6 +351,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=TestModel\TestBondingC.h
@@ -315,6 +359,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=AntiCrack\AntiCrack.h
@@ -322,6 +367,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=CTS\CTS_Sensor.inc
@@ -329,6 +375,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=CTS\CTS_Sensor.h
@@ -336,6 +383,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=datatype.h
@@ -343,6 +391,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=LED.h
@@ -350,6 +399,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=CTS_def.inc
@@ -357,6 +407,39 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
+# End Source File
+# Begin Source File
+SOURCE=..\Include\A3400Pro.inc
+USEPARAM=FALSE
+PARAM=
+ID=
+EXPORT=7172864
+SPECIFICFLAG=0
+# End Source File
+# Begin Source File
+SOURCE=..\Include\MS02.inc
+USEPARAM=FALSE
+PARAM=
+ID=
+EXPORT=1764648549
+SPECIFICFLAG=0
+# End Source File
+# Begin Source File
+SOURCE=..\Include\datatype.h
+USEPARAM=FALSE
+PARAM=
+ID=
+EXPORT=1668047171
+SPECIFICFLAG=0
+# End Source File
+# Begin Source File
+SOURCE=..\Include\SACM.h
+USEPARAM=FALSE
+PARAM=
+ID=
+EXPORT=1668047171
+SPECIFICFLAG=0
 # End Source File
 # End Group
 # End SubItem
@@ -368,12 +451,14 @@ EXPORT=3
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=GPCE3100A_Demo.rc
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # End Group
 # Begin Group "Head Files"
@@ -381,12 +466,14 @@ EXPORT=3
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=Resource.inc
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3_Body.h
@@ -394,6 +481,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3_Body.inc
@@ -401,6 +489,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE2_Body.h
@@ -408,6 +497,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE2_Body.inc
@@ -415,6 +505,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Resource.h
@@ -422,6 +513,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # End Group
 # Begin Group "External Dependencies"
@@ -429,12 +521,14 @@ EXPORT=3
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=Makefile
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # End Group
 # Begin Group "SPI_Files_Folder"
@@ -442,12 +536,14 @@ EXPORT=3
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=main.c
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=isr.asm
@@ -455,6 +551,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Resource.asm
@@ -462,6 +559,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\BootCode_User.asm
@@ -469,6 +567,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\ORAM_Arrangement.asm
@@ -476,6 +575,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\SACM_A1800_User.asm
@@ -483,6 +583,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\system.asm
@@ -490,6 +591,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=flash.asm
@@ -497,6 +599,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Calc\Calc.c
@@ -504,6 +607,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=System_2.asm
@@ -511,6 +615,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=LED_Drive.asm
@@ -518,6 +623,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Algorithm.c
@@ -525,6 +631,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Play_Speech.c
@@ -532,6 +639,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Key_server.asm
@@ -539,6 +647,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Sleep.c
@@ -546,6 +655,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=TestModel\CheckSum_CE3400.asm
@@ -553,6 +663,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=TestModel\TestBondingC.c
@@ -560,6 +671,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=LED.c
@@ -567,6 +679,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=AntiCrack\AntiCrack.c
@@ -574,6 +687,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=..\Include\SPI_Flash_CE3.asm
@@ -581,18 +695,21 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Group "CTS"
 #PROP Default_Filter=
 USEPARAM=FALSE
 PARAM=
 EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=CTS\CTS_Sensor.asm
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=CTS\CTS_User.c
@@ -600,6 +717,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # End Group
 # End Group
@@ -607,13 +725,15 @@ EXPORT=3
 #PROP Default_Filter=
 USEPARAM=FALSE
 PARAM=
-EXPORT=0
+EXPORT=3
+SPECIFICFLAG=0
 # Begin Source File
 SOURCE=..\Include\A1800.inc
 USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3_BODY.inc
@@ -621,6 +741,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3_BODY.h
@@ -628,6 +749,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3.h
@@ -635,6 +757,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=GPCE1_CE3.inc
@@ -642,6 +765,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Calc\Calc.h
@@ -649,6 +773,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=Glob.h
@@ -656,6 +781,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=voice_A18.h
@@ -663,6 +789,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=TestModel\TestBondingC.h
@@ -670,6 +797,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=AntiCrack\AntiCrack.h
@@ -677,6 +805,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=CTS\CTS_Sensor.inc
@@ -684,6 +813,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=CTS\CTS_Sensor.h
@@ -691,6 +821,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=datatype.h
@@ -698,6 +829,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=LED.h
@@ -705,6 +837,7 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
 # End Source File
 # Begin Source File
 SOURCE=CTS_def.inc
@@ -712,6 +845,39 @@ USEPARAM=FALSE
 PARAM=
 ID=
 EXPORT=3
+SPECIFICFLAG=0
+# End Source File
+# Begin Source File
+SOURCE=..\Include\A3400Pro.inc
+USEPARAM=FALSE
+PARAM=
+ID=
+EXPORT=7172864
+SPECIFICFLAG=0
+# End Source File
+# Begin Source File
+SOURCE=..\Include\MS02.inc
+USEPARAM=FALSE
+PARAM=
+ID=
+EXPORT=1764648549
+SPECIFICFLAG=0
+# End Source File
+# Begin Source File
+SOURCE=..\Include\datatype.h
+USEPARAM=FALSE
+PARAM=
+ID=
+EXPORT=1668047171
+SPECIFICFLAG=0
+# End Source File
+# Begin Source File
+SOURCE=..\Include\SACM.h
+USEPARAM=FALSE
+PARAM=
+ID=
+EXPORT=1668047171
+SPECIFICFLAG=0
 # End Source File
 # End Group
 # End SubItem

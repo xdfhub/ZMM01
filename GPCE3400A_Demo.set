@@ -39,8 +39,8 @@ AS_LOC=$(APPDIR)\toolchain\xasm16
 AS_FLAG_D=-t4 -d -sr
 AS_FLAG_R=-t4 -sr
 LD_LOC=$(APPDIR)\toolchain\xlink16_GPCE3
-LD_FLAG_D= -blank 0x00
-LD_FLAG_R= -blank 0x00
+LD_FLAG_D=-Wno-L0062 -blank 0x00
+LD_FLAG_R= -blank 0x00 -Wno-L0062
 DebugOpt=1
 ReleaseOpt=1
 IsGenMakefile=1
@@ -51,6 +51,7 @@ IsGenList=0
 CurIsa=ISA20
 IsWall=0
 POINTER=1
+IsPage0RAM=0
 
 [AdvancedHard]
 nStackSize=2047

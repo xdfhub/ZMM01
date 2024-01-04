@@ -649,7 +649,7 @@ void Test_Assembly(void)
  	 Delay_Xms_PowerOn(1);
 
 
-    if((*P_IOB_Data&(MB_button|MB_button|0x300)) !=0x200 )
+    if((*P_IOB_Data&(PB_button|MB_button|0x300)) !=0x200 )
     //if((*P_IOB_Data&(Playbutton)) ==Playbutton )	
 	{
 		return;
@@ -662,7 +662,7 @@ void Test_Assembly(void)
 	temp = 200;//1000;//3200
 	while(temp)
 	{
-		if((*P_IOB_Data&(MB_button|MB_button|0x300)) !=0x200 )
+		if((*P_IOB_Data&(PB_button|MB_button|0x300)) !=0x200 )
 	  // if((*P_IOB_Data&(Playbutton)) ==Playbutton )	 
 		{
 		  //	i--;
@@ -713,7 +713,7 @@ void Test_Assembly(void)
 
     
    	//temp = SPI_ReadAWord_Big((unsigned long)0x30);
-	PlayA1800_Elements(355); 
+	PlayA1800_Elements(357); 
 //	PlayA1800_Elements(238); 
 	
 //    PlayBee();
@@ -880,14 +880,15 @@ int main()
 
     //CheckSum_SPIFlash();
     Init_CTS();	
+    
+
+    
     Key_Scan_Init();
 
 	Delay_Xms_PowerOn(1);
 //	Delay_Xms(1000);
 	asm("FIQ ON");
 	asm("IRQ ON");
-
-
 
      R_QuestionNum = SPI_ReadAWord_Big((unsigned long int)0x40);
      //Rest_LQA();
@@ -909,16 +910,7 @@ int main()
   
       Rest_LQ_LQA();
       Rest_Question_Asked();
-
-  
-	  while(1)
-	  {
-	  	
-	
-	     Select_Sound();
-	     WatchdogClear();
-	  }
-     
+ 
   #endif   
   
   

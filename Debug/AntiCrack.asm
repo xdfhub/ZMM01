@@ -1,4 +1,4 @@
-	//  C:\PROGRA~2\GENERA~1\UNSPID~1.1\TOOLCH~2\be::1.1.3
+	//  C:\PROGRA~2\GENERA~1\UNSPID~1.6\TOOLCH~2\be::1.1.3
 
 	//-----------------------------------------------------------
 	// Compiling D:\Prj_GPCE3400\ZMM001A(EN)_MMMMMMM\soft\V46_asV34\AntiCrack\AntiCrack.c (C:\Users\xdf\AppData\Local\Temp\ccB.3)
@@ -103,7 +103,7 @@ LM5:
 	     R4 = [BP + 0]            	// [9:76]  paddr32
 	     R4 = R4 & 32768          	// [11:76]  
 	     cmp R4, 0                	// [13:76]  
-	     je L_0_9                 	// [14:76]  
+	     je L_0_7                 	// [14:76]  
 BB3_PU0:	// 0x16
 // BB:3 cycle count: 4
 //  77  	{
@@ -114,7 +114,7 @@ LM6:
 	     R4 = [BP + 1]            	// [0:78]  paddr32+1
 	     R4 = R4 + 1              	// [2:78]  
 	     [BP + 1] = R4            	// [3:78]  paddr32+1
-L_0_9:	// 0x19
+L_0_7:	// 0x19
 // BB:4 cycle count: 20
 //  79  	}
 //  80  	paddr32.prt.low*=2;
@@ -160,7 +160,7 @@ LM10:
 	     R3 = DS:[R4]             	// [11:86]  
 	     R4 = [BP + 2]            	// [13:86]  temp1
 	     cmp R3, R4               	// [15:86]  
-	     jne L_0_10               	// [16:86]  
+	     jne L_0_8                	// [16:86]  
 BB6_PU0:	// 0x35
 // BB:6 cycle count: 6
 //  87  	{
@@ -170,7 +170,7 @@ LM11:
 	     .stabn 68,0,88,LM11-_AntiCrackFun
 	     SP = SP + 3              	// [0:88]  
 	     pop BP, PC from [SP]     	// [1:88]  
-L_0_10:	// 0x37
+L_0_8:	// 0x37
 // BB:7 cycle count: 12
 //  89  	}
 //  90  	#endif
@@ -184,7 +184,7 @@ LM12:
 	     R3 = DS:[R4]             	// [3:92]  
 	     R4 = [BP + 2]            	// [5:92]  temp1
 	     cmp R3, R4               	// [7:92]  
-	     jne L_0_11               	// [8:92]  
+	     jne L_0_9                	// [8:92]  
 BB8_PU0:	// 0x3e
 // BB:8 cycle count: 6
 //  93  	{
@@ -194,38 +194,16 @@ LM13:
 	     .stabn 68,0,94,LM13-_AntiCrackFun
 	     SP = SP + 3              	// [0:94]  
 	     pop BP, PC from [SP]     	// [1:94]  
-L_0_11:	// 0x40
+L_0_9:	// 0x40
 // BB:9 cycle count: 12
-//  95  	}
-//  96  	#endif
-//  97  	#if YutongIC_enable
-//  98  	if(temp1==T_Yutong_enc[0])
-
-LM14:
-	     .stabn 68,0,98,LM14-_AntiCrackFun
-	     DS = seg(_T_Yutong_enc)  	// [0:98]  T_Yutong_enc
-	     R4 = (_T_Yutong_enc)     	// [1:98]  T_Yutong_enc
-	     R3 = DS:[R4]             	// [3:98]  
-	     R4 = [BP + 2]            	// [5:98]  temp1
-	     cmp R3, R4               	// [7:98]  
-	     jne L_0_12               	// [8:98]  
-BB10_PU0:	// 0x47
-// BB:10 cycle count: 6
 //  99  	{
 // 100  		return;
-
-LM15:
-	     .stabn 68,0,100,LM15-_AntiCrackFun
-	     SP = SP + 3              	// [0:100]  
-	     pop BP, PC from [SP]     	// [1:100]  
-L_0_12:	// 0x49
-// BB:11 cycle count: 12
 // 101  	}
 // 102  	#endif
 // 103  	R_WrongICflag=1;//Ð¾Æ¬´íÎó¡£
 
-LM16:
-	     .stabn 68,0,103,LM16-_AntiCrackFun
+LM14:
+	     .stabn 68,0,103,LM14-_AntiCrackFun
 	     R3 = 1                   	// [0:103]  
 	     DS = seg(_R_WrongICflag) 	// [1:103]  R_WrongICflag
 	     R4 = (_R_WrongICflag)    	// [2:103]  R_WrongICflag
@@ -252,11 +230,6 @@ _T_Scr:	// 0x0
 _T_Szjt_enc:	// 0x1
 	.dw	21258
 	// end of initialization for T_Szjt_enc
-	     .stabs "T_Yutong_enc:G27=ar3;0;-1;4",32,0,0,_T_Yutong_enc
-.public	_T_Yutong_enc
-_T_Yutong_enc:	// 0x2
-	.dw	5711
-	// end of initialization for T_Yutong_enc
 
 .iram
 	     .stabs "R_WrongICflag:G4",32,0,0,_R_WrongICflag
